@@ -438,35 +438,89 @@ const GenericLoadingScreen = ({ config, navigate }) => {
  const isVR = ['hidden_word', 'move_letter', 'missing_letter', 'math_equations'].includes(mode);
  const theme = isMaths ? THEMES.maths : (isVR ? THEMES.vr : THEMES.english);
 
- // Moved OUTSIDE useEffect so the button can use it
  const processData = (rows) => {
+  // Remove header row if present
   if (rows.length > 0 && (rows[0][0].toLowerCase().includes('question') || rows[0][0].toLowerCase().includes('id'))) rows.shift();
+  
   let filtered = rows;
   let title = config.mode.charAt(0).toUpperCase() + config.mode.slice(1).replace('_', ' ');
   let isMaths = config.mode === 'maths';
+  let selected = [];
 
   if (isMaths) {
     const diffMode = config.difficulty;
+    let pool = [];
+
+    // 1. Filter by Difficulty
     if (diffMode === "Mixed") {
       title = "Full Practice Paper";
-      const sortedAll = [...rows].sort((a,b) => (parseInt(a[8])||0) - (parseInt(b[8])||0));
-      filtered = sortedAll;
+      pool = rows;
     } else {
-      filtered = rows.filter(r => {
-       if (!r || r.length < 9) return false;
-       let d = parseInt(r[8]); if (isNaN(d)) d = parseInt(r[9]); if (isNaN(d)) return false;
-       if (diffMode === "Easy") return d <= 25;
-       if (diffMode === "Medium") return d >= 13 && d <= 38;
-       if (diffMode === "Hard") return d >= 26;
-       return false;
+      pool = rows.filter(r => {
+        if (!r || r.length < 12) return false;
+        let d = parseInt(r[8]); if (isNaN(d)) d = parseInt(r[9]); if (isNaN(d)) return false;
+        if (diffMode === "Easy") return d <= 25;
+        if (diffMode === "Medium") return d >= 13 && d <= 38;
+        if (diffMode === "Hard") return d >= 26;
+        return false;
       });
       title = `${diffMode} Maths`;
     }
-  }
 
+    if (pool.length === 0) { alert("No questions found."); return; }
+
+    // 2. SMARTER GROUPING: Split by "_" to get the exact ID (e.g. "P2Q1")
+    const groups = {};
+    pool.forEach(row => {
+      const ref = (row[11] || "").toString().trim();
+      const parts = ref.split('_');
+      const groupKey = parts[0]; 
+      
+      if (groupKey && groupKey.length > 1) {
+        if (!groups[groupKey]) groups[groupKey] = [];
+        groups[groupKey].push(row);
+      }
+    });
+
+    // 3. ROUND ROBIN SELECTION
+    let groupKeys = Object.keys(groups);
+    groupKeys.sort(() => 0.5 - Math.random()); // Shuffle topics
+
+    let picked = []; // Temporary list
+    const countNeeded = config.count || 10;
+    
+    // Loop through groups until we have enough questions
+    while (picked.length < countNeeded && groupKeys.length > 0) {
+      for (let i = 0; i < groupKeys.length; i++) {
+        if (picked.length >= countNeeded) break;
+        
+        const key = groupKeys[i];
+        const groupList = groups[key];
+        
+        if (groupList.length > 0) {
+          const randIndex = Math.floor(Math.random() * groupList.length);
+          picked.push(groupList[randIndex]);
+          groupList.splice(randIndex, 1); // Remove so we don't pick it again immediately
+        }
+      }
+      groupKeys = groupKeys.filter(k => groups[k].length > 0);
+    }
+    
+    selected = picked; 
+
+    // 4. Sort by Ref for nice exam order
+    selected.sort((a, b) => {
+       const refA = (a[11] || "").toString(); 
+       const refB = (b[11] || "").toString();
+       return refA.localeCompare(refB, undefined, { numeric: true, sensitivity: 'base' });
+    });
+
+    navigate('quiz_maths', { questions: selected, title, mode: config.mode });
+    return; // Exit early so we don't run the English logic below
+  } 
+
+  // --- Logic for English/Other subjects ---
   if (filtered.length === 0) { alert("No questions found."); return; }
-
-  let selected = [];
 
   if (config.mode === 'grammar') {
     const startIndices = [];
@@ -485,10 +539,8 @@ const GenericLoadingScreen = ({ config, navigate }) => {
     selected = filtered.slice(0, config.count || 10);
   }
   
-  if (isMaths) {
-   selected.sort((a,b) => (parseInt(a[8])||0) - (parseInt(b[8])||0));
-   navigate('quiz_maths', { questions: selected, title, mode: config.mode });
-  } else if (config.mode === 'spelling') {
+  // Navigation for non-maths
+  if (config.mode === 'spelling') {
    navigate('quiz_spelling', { questions: selected, title: "Spelling Practice" });
   } else if (config.mode === 'grammar') {
    navigate('quiz_grammar', { questions: selected, title: "Grammar Practice" });
