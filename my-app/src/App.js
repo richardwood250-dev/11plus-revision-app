@@ -432,11 +432,79 @@ const GenericLoadingScreen = ({ config, navigate }) => {
  const [showUpload, setShowUpload] = useState(false);
  const [debugLog, setDebugLog] = useState([]);
  const addLog = (msg) => setDebugLog(prev => [...prev, msg]);
-  // Theme for loader
+ 
  const mode = config.mode;
  const isMaths = mode === 'maths';
  const isVR = ['hidden_word', 'move_letter', 'missing_letter', 'math_equations'].includes(mode);
  const theme = isMaths ? THEMES.maths : (isVR ? THEMES.vr : THEMES.english);
+
+ // Moved OUTSIDE useEffect so the button can use it
+ const processData = (rows) => {
+  if (rows.length > 0 && (rows[0][0].toLowerCase().includes('question') || rows[0][0].toLowerCase().includes('id'))) rows.shift();
+  let filtered = rows;
+  let title = config.mode.charAt(0).toUpperCase() + config.mode.slice(1).replace('_', ' ');
+  let isMaths = config.mode === 'maths';
+
+  if (isMaths) {
+    const diffMode = config.difficulty;
+    if (diffMode === "Mixed") {
+      title = "Full Practice Paper";
+      const sortedAll = [...rows].sort((a,b) => (parseInt(a[8])||0) - (parseInt(b[8])||0));
+      filtered = sortedAll;
+    } else {
+      filtered = rows.filter(r => {
+       if (!r || r.length < 9) return false;
+       let d = parseInt(r[8]); if (isNaN(d)) d = parseInt(r[9]); if (isNaN(d)) return false;
+       if (diffMode === "Easy") return d <= 25;
+       if (diffMode === "Medium") return d >= 13 && d <= 38;
+       if (diffMode === "Hard") return d >= 26;
+       return false;
+      });
+      title = `${diffMode} Maths`;
+    }
+  }
+
+  if (filtered.length === 0) { alert("No questions found."); return; }
+
+  let selected = [];
+
+  if (config.mode === 'grammar') {
+    const startIndices = [];
+    filtered.forEach((r, idx) => {
+      if (r.length > 1 && r[1].toString().trim() === '1') startIndices.push(idx);
+    });
+
+    if (startIndices.length === 0) {
+      selected = filtered.slice(0, 10);
+    } else {
+      const rndStart = startIndices[Math.floor(Math.random() * startIndices.length)];
+      selected = filtered.slice(rndStart, rndStart + 10);
+    }
+  } else {
+    filtered.sort(() => 0.5 - Math.random());
+    selected = filtered.slice(0, config.count || 10);
+  }
+  
+  if (isMaths) {
+   selected.sort((a,b) => (parseInt(a[8])||0) - (parseInt(b[8])||0));
+   navigate('quiz_maths', { questions: selected, title, mode: config.mode });
+  } else if (config.mode === 'spelling') {
+   navigate('quiz_spelling', { questions: selected, title: "Spelling Practice" });
+  } else if (config.mode === 'grammar') {
+   navigate('quiz_grammar', { questions: selected, title: "Grammar Practice" });
+  } else {
+   navigate('quiz_generic', { questions: selected, title, mode: config.mode });
+  }
+ };
+
+ const handleManualUpload = (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  setStatus("Reading file...");
+  const reader = new FileReader();
+  reader.onload = (evt) => processData(parseCSV(evt.target.result));
+  reader.readAsText(file);
+ };
 
  useEffect(() => {
   let isMounted = true;
@@ -495,81 +563,9 @@ const GenericLoadingScreen = ({ config, navigate }) => {
     navigate('cloze_selection', { groups });
   };
 
-  const handleManualUpload = (e) => {
-   const file = e.target.files[0];
-   if (!file) return;
-   setStatus("Reading file...");
-   const reader = new FileReader();
-   reader.onload = (evt) => processData(parseCSV(evt.target.result));
-   reader.readAsText(file);
-  };
-
   fetchData();
   return () => { isMounted = false; clearTimeout(timeoutId); };
  }, []);
-
- const processData = (rows) => {
-  if (rows.length > 0 && (rows[0][0].toLowerCase().includes('question') || rows[0][0].toLowerCase().includes('id'))) rows.shift();
-  let filtered = rows;
-  let title = config.mode.charAt(0).toUpperCase() + config.mode.slice(1).replace('_', ' ');
-  let isMaths = config.mode === 'maths';
-  const isEnglish = ['grammar', 'spelling'].includes(config.mode);
-
-  if (isMaths) {
-    const diffMode = config.difficulty;
-    if (diffMode === "Mixed") {
-      title = "Full Practice Paper";
-      const sortedAll = [...rows].sort((a,b) => (parseInt(a[8])||0) - (parseInt(b[8])||0));
-      filtered = sortedAll;
-    } else {
-      filtered = rows.filter(r => {
-       if (!r || r.length < 9) return false;
-       let d = parseInt(r[8]); if (isNaN(d)) d = parseInt(r[9]); if (isNaN(d)) return false;
-       if (diffMode === "Easy") return d <= 25;
-       if (diffMode === "Medium") return d >= 13 && d <= 38;
-       if (diffMode === "Hard") return d >= 26;
-       return false;
-      });
-      title = `${diffMode} Maths`;
-    }
-  }
-
-  if (filtered.length === 0) { alert("No questions found."); return; }
-
-  let selected = [];
-
-  if (config.mode === 'grammar') {
-    // --- GRAMMAR LOGIC: CONSECUTIVE Q1-10 ---
-    // Look in Column 1 (Index 1) for the question number "1"
-    const startIndices = [];
-    filtered.forEach((r, idx) => {
-      // Use Index 1 for Grammar Q Num
-      if (r.length > 1 && r[1].toString().trim() === '1') startIndices.push(idx);
-    });
-
-    if (startIndices.length === 0) {
-      selected = filtered.slice(0, 10);
-    } else {
-      const rndStart = startIndices[Math.floor(Math.random() * startIndices.length)];
-      selected = filtered.slice(rndStart, rndStart + 10);
-    }
-  } else {
-    // Random sort for Spelling/Maths/VR
-    filtered.sort(() => 0.5 - Math.random());
-    selected = filtered.slice(0, config.count || 10);
-  }
-  
-  if (isMaths) {
-   selected.sort((a,b) => (parseInt(a[8])||0) - (parseInt(b[8])||0));
-   navigate('quiz_maths', { questions: selected, title, mode: config.mode });
-  } else if (config.mode === 'spelling') {
-   navigate('quiz_spelling', { questions: selected, title: "Spelling Practice" });
-  } else if (config.mode === 'grammar') {
-   navigate('quiz_grammar', { questions: selected, title: "Grammar Practice" });
-  } else {
-   navigate('quiz_generic', { questions: selected, title, mode: config.mode });
-  }
- };
 
  return (
   <div className={`flex flex-col items-center justify-center min-h-screen p-6 text-center ${theme.bg}`}>
