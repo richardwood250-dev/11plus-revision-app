@@ -447,63 +447,21 @@ const GenericLoadingScreen = ({ config, navigate }) => {
 
   if (isMaths) {
     const diffMode = config.difficulty;
-    let pool = [];
-
-    // 1. First, filter by difficulty as before
     if (diffMode === "Mixed") {
       title = "Full Practice Paper";
-      pool = rows;
+      const sortedAll = [...rows].sort((a,b) => (parseInt(a[8])||0) - (parseInt(b[8])||0));
+      filtered = sortedAll;
     } else {
-      pool = rows.filter(r => {
-        if (!r || r.length < 12) return false; // Ensure row has Ref column
-        let d = parseInt(r[8]); if (isNaN(d)) d = parseInt(r[9]); if (isNaN(d)) return false;
-        if (diffMode === "Easy") return d <= 25;
-        if (diffMode === "Medium") return d >= 13 && d <= 38;
-        if (diffMode === "Hard") return d >= 26;
-        return false;
+      filtered = rows.filter(r => {
+       if (!r || r.length < 9) return false;
+       let d = parseInt(r[8]); if (isNaN(d)) d = parseInt(r[9]); if (isNaN(d)) return false;
+       if (diffMode === "Easy") return d <= 25;
+       if (diffMode === "Medium") return d >= 13 && d <= 38;
+       if (diffMode === "Hard") return d >= 26;
+       return false;
       });
       title = `${diffMode} Maths`;
     }
-
-    if (pool.length === 0) { alert("No questions found."); return; }
-
-    // 2. GROUPING LOGIC: Group by first 5 chars of Ref (Col 11)
-    const groups = {};
-    pool.forEach(row => {
-      const ref = (row[11] || "").toString().trim();
-      const groupKey = ref.substring(0, 5); // Take first 5 chars (e.g., "P2Q1_")
-      if (groupKey.length > 0) {
-        if (!groups[groupKey]) groups[groupKey] = [];
-        groups[groupKey].push(row);
-      }
-    });
-
-    // 3. SELECTION LOGIC: Pick one random Q from each group
-    const groupKeys = Object.keys(groups);
-    
-    // Shuffle the groups so we get different topics each time
-    groupKeys.sort(() => 0.5 - Math.random());
-
-    // Select one question from each group until we hit the count
-    let count = config.count || 10;
-    selected = [];
-    
-    for (let i = 0; i < groupKeys.length && selected.length < count; i++) {
-      const key = groupKeys[i];
-      const questionsInGroup = groups[key];
-      // Pick a random specific question from this group
-      const randomQ = questionsInGroup[Math.floor(Math.random() * questionsInGroup.length)];
-      selected.push(randomQ);
-    }
-
-    // 4. Final sort by Ref so they appear in a nice order (optional, but looks better)
-    selected.sort((a, b) => {
-       const refA = (a[11] || "").toString(); 
-       const refB = (b[11] || "").toString();
-       return refA.localeCompare(refB, undefined, { numeric: true, sensitivity: 'base' });
-    });
-
-    navigate('quiz_maths', { questions: selected, title, mode: config.mode });
   }
 
   if (filtered.length === 0) { alert("No questions found."); return; }
