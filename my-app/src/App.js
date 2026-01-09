@@ -200,7 +200,12 @@ const MenuScreen = ({ navigate }) => (
     <header className="bg-gradient-to-br from-indigo-600 to-indigo-800 py-4 px-4 md:px-8 rounded-b-2xl shadow-xl relative z-10 overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white/10 to-transparent pointer-events-none"></div>
       <div className="max-w-7xl mx-auto flex items-center gap-4 md:gap-6">
-        <img src="https://raw.githubusercontent.com/richardwood250-dev/11plus-revision-app/main/Main%20logo.jpg" alt="Free 4 All Logo" className="h-16 md:h-20 w-auto rounded-lg shadow-md border-2 border-white/20 bg-white"/>
+        
+        {/* LOGO REPLACEMENT: Uses built-in icon so it never fails */}
+        <div className="bg-white p-3 rounded-xl shadow-lg border-2 border-white/20">
+           <GraduationCap size={40} className="text-indigo-600" />
+        </div>
+
         <div className="text-left">
           <h1 className="text-2xl md:text-4xl font-black text-white tracking-tight drop-shadow-lg leading-tight">Free 4 All <span className="text-orange-300">Education</span></h1>
           <p className="text-indigo-100 font-medium opacity-90 text-sm md:text-base">Your Complete 11+ Revision Companion</p>
@@ -683,7 +688,6 @@ const ScrollableQuizScreen = ({ data, navigate }) => {
 // --- DATA LOADER ---
 const GenericLoadingScreen = ({ config, navigate }) => {
  const [status, setStatus] = useState("Connecting...");
- const [showUpload, setShowUpload] = useState(false);
  const mode = config.mode;
  const theme = THEMES[mode] || THEMES.default;
 
