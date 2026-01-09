@@ -1,918 +1,972 @@
 import React, { useState, useEffect } from 'react';
-import {
- BookOpen,
- Lightbulb,
- Calculator,
- Puzzle,
- ChevronLeft,
- Check,
- X,
- ArrowRight,
- Menu,
- Brain,
- Search,
- MoveUp,
- MoreHorizontal,
- Link as LinkIcon,
- ArrowLeftRight,
- GraduationCap,
- RefreshCw,
- WifiOff,
- Upload,
- AlertTriangle,
- Home,
- Play,
- FileText,
- List,
- Star
-} from 'lucide-react';
+import { Upload, X, Check, Calculator, Book, Lightbulb, Puzzle, GraduationCap, ChevronLeft, Home, Info, Star, FileText, ZoomIn, Eye, Lock, Zap, Award } from 'lucide-react';
 
 // --- CONFIGURATION ---
-const CSV_URLS = {
- // Corrected Maths URL with encoded spaces
- maths: "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/refs/heads/main/Questions%20-%20Maths.csv",
- hidden_word: "",
- move_letter: "",
- math_equations: "",
- missing_letter: "",
- comprehension: "https://raw.githubusercontent.com/richardwood250-dev/11plus-english/refs/heads/main/questions.csv",
- grammar: "https://raw.githubusercontent.com/richardwood250-dev/11plus-english/refs/heads/main/Questions%20-%20Grammar.csv",
- spelling: "https://raw.githubusercontent.com/richardwood250-dev/11plus-english/refs/heads/main/Questions%20-%20Spelling.csv",
- cloze: "https://raw.githubusercontent.com/richardwood250-dev/11plus-english/refs/heads/main/Questions%20-%20Cloze.csv"
+
+const ENGLISH_URLS = {
+  comprehension: 'https://raw.githubusercontent.com/richardwood250-dev/11plus-english/refs/heads/main/questions%20comprehension.csv',
+  spelling:      'https://raw.githubusercontent.com/richardwood250-dev/11plus-english/refs/heads/main/Questions%20-%20Spelling.csv',
+  grammar:       'https://raw.githubusercontent.com/richardwood250-dev/11plus-english/refs/heads/main/Questions%20-%20Grammar.csv',
+  cloze:         'https://raw.githubusercontent.com/richardwood250-dev/11plus-english/refs/heads/main/Questions%20-%20Cloze.csv'
 };
 
-const SUBJECT_IMAGE_URLS = {
- maths: "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/refs/heads/main/",
-};
+const MATHS_URL = 'https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/refs/heads/main/Questions%20-%20Maths.csv';
+const MATHS_IMG_BASE = 'https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/refs/heads/main/';
+const ENGLISH_TEXT_BASE = 'https://raw.githubusercontent.com/richardwood250-dev/11plus-english/refs/heads/main/';
+const REPO_BASE_VR = 'https://raw.githubusercontent.com/richardwood250-dev/11plus-verbal/refs/heads/main/';
 
-// Base URL for fetching text files
-const ENGLISH_TEXT_BASE_URL = "https://raw.githubusercontent.com/richardwood250-dev/11plus-english/refs/heads/main/";
-
-// --- THEME SYSTEM ---
+// --- THEMES ---
 const THEMES = {
- maths: {
-  id: 'maths',
-  label: 'Maths',
-  icon: Calculator,
-  bg: 'bg-gradient-to-br from-rose-50 via-white to-orange-50',
-  header: 'bg-rose-600',
-  headerGradient: 'from-rose-600 to-orange-500',
-  button: 'bg-white border-rose-100 text-rose-700 hover:bg-rose-50 shadow-sm hover:shadow-md',
-  buttonPrimary: 'bg-gradient-to-r from-rose-600 to-orange-500 text-white shadow-lg hover:shadow-xl hover:from-rose-700 hover:to-orange-600',
-  accentText: 'text-rose-600',
-  lightRing: 'ring-rose-200'
- },
- english: {
-  id: 'english',
-  label: 'English',
-  icon: BookOpen,
-  bg: 'bg-gradient-to-br from-blue-50 via-white to-indigo-50',
-  header: 'bg-blue-600',
-  headerGradient: 'from-blue-600 to-indigo-600',
-  button: 'bg-white border-blue-100 text-blue-700 hover:bg-blue-50 shadow-sm hover:shadow-md',
-  buttonPrimary: 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-indigo-700',
-  accentText: 'text-blue-600',
-  lightRing: 'ring-blue-200'
- },
- vr: {
-  id: 'vr',
-  label: 'Verbal Reasoning',
-  icon: Lightbulb,
-  bg: 'bg-gradient-to-br from-amber-50 via-white to-yellow-50',
-  header: 'bg-amber-500',
-  headerGradient: 'from-amber-500 to-yellow-500',
-  button: 'bg-white border-amber-100 text-amber-800 hover:bg-amber-50 shadow-sm hover:shadow-md',
-  buttonPrimary: 'bg-gradient-to-r from-amber-500 to-yellow-500 text-white shadow-lg hover:shadow-xl hover:from-amber-600 hover:to-yellow-600',
-  accentText: 'text-amber-600',
-  lightRing: 'ring-amber-200'
- },
- nvr: {
-  id: 'nvr',
-  label: 'Non-Verbal',
-  icon: Puzzle,
-  bg: 'bg-gradient-to-br from-emerald-50 via-white to-teal-50',
-  header: 'bg-emerald-600',
-  headerGradient: 'from-emerald-600 to-teal-600',
-  button: 'bg-white border-emerald-100 text-emerald-700 hover:bg-emerald-50 shadow-sm hover:shadow-md',
-  buttonPrimary: 'bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-lg hover:shadow-xl hover:from-emerald-700 hover:to-teal-700',
-  accentText: 'text-emerald-600',
-  lightRing: 'ring-emerald-200'
- }
+  maths: { bg: 'bg-orange-50', text: 'text-orange-600', border: 'border-orange-500', accent: 'bg-orange-500', header: 'bg-orange-600' },
+  english: { bg: 'bg-blue-50', text: 'text-blue-600', border: 'border-blue-500', accent: 'bg-blue-600', header: 'bg-blue-600' },
+  vr: { bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-500', accent: 'bg-purple-600', header: 'bg-purple-600' },
+  nvr: { bg: 'bg-emerald-50', text: 'text-emerald-600', border: 'border-emerald-500', accent: 'bg-emerald-600', header: 'bg-emerald-600' },
+  default: { bg: 'bg-slate-50', text: 'text-slate-700', border: 'border-slate-400', accent: 'bg-slate-600', header: 'bg-slate-700' },
+  mixed: { bg: 'bg-pink-50', text: 'text-pink-600', border: 'border-pink-500', accent: 'bg-pink-500', header: 'bg-gradient-to-r from-pink-500 to-rose-500' }
 };
 
-// --- ERROR BOUNDARY ---
-class ErrorBoundary extends React.Component {
- constructor(props) {
-  super(props);
-  this.state = { hasError: false, error: null };
- }
- static getDerivedStateFromError(error) { return { hasError: true, error }; }
- componentDidCatch(error, errorInfo) { console.error("Crash:", error, errorInfo); }
- render() {
-  if (this.state.hasError) {
-   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-slate-50 p-6 text-center">
-     <div className="bg-red-100 p-4 rounded-full mb-4"><AlertTriangle className="text-red-500" size={48} /></div>
-     <h1 className="text-xl font-bold text-slate-800 mb-2">Something went wrong.</h1>
-     <p className="text-slate-500 mb-6 text-sm">{this.state.error?.message || "Unknown Error"}</p>
-     <button
-      onClick={() => { this.setState({ hasError: false }); this.props.onReset(); }}
-      className="bg-slate-800 text-white px-6 py-3 rounded-xl font-bold shadow-lg"
-     >
-      Restart App
-     </button>
-    </div>
-   );
-  }
-  return this.props.children;
- }
-}
-
-// --- HELPERS ---
-const MathRenderer = ({ text }) => {
- if (!text || typeof text !== 'string') return <span>{text}</span>;
- try {
-  const parts = text.split(/(\\frac\{[^}]+\}\{[^}]+\})/g);
-  return (
-   <span className="inline-flex items-center flex-wrap justify-center font-medium">
-    {parts.map((part, i) => {
-     const match = part.match(/\\frac\{([^}]+)\}\{([^}]+)\}/);
-     if (match) {
-      return (
-       <span key={i} className="inline-flex flex-col text-center align-middle mx-1 relative -top-1">
-        <span className="border-b-2 border-current px-1 text-sm leading-tight">{match[1]}</span>
-        <span className="px-1 text-sm leading-tight">{match[2]}</span>
-       </span>
-      );
-     }
-     let cleanText = part.replace(/\\times/g, '×').replace(/\\div/g, '÷').replace(/\^2/g, '²').replace(/\^3/g, '³').replace(/\\deg/g, '°').replace(/degrees/g, '°');
-     return <span key={i} className="whitespace-pre-wrap">{cleanText}</span>;
-    })}
-   </span>
-  );
- } catch (e) {
-  return <span>{text}</span>;
- }
+// --- CONTENT DICTIONARIES ---
+const ENGLISH_INSTRUCTIONS = {
+  "spelling": { title: "Spelling", instruction: "Read the sentence options. Select the part that contains a spelling mistake, or select 'No Mistake'.", tip: "Read phonetically. Does it look right?" },
+  "grammar": { title: "Grammar", instruction: "Select the option that contains a punctuation or grammatical error. If there are no errors, select 'No Mistake'.", tip: "Check for capital letters, full stops, and correct verb tenses." },
+  "cloze": { title: "Cloze", instruction: "Fill in the missing words to complete the passage.", tip: "Use the context of the whole sentence." },
+  "default": { title: "English", instruction: "Answer the questions below.", tip: "Take your time." }
 };
 
-const ResilientImage = ({ src, onClick, alt, className }) => {
- const [currentSrc, setCurrentSrc] = useState(src);
- const [hidden, setHidden] = useState(false);
- const [retryCount, setRetryCount] = useState(0);
-
- useEffect(() => { setCurrentSrc(src); setHidden(false); setRetryCount(0); }, [src]);
-
- const handleError = () => {
-  if (!currentSrc || currentSrc.includes('drive.google.com')) { setHidden(true); return; }
-  const lastSlash = currentSrc.lastIndexOf('/');
-  if (lastSlash === -1) { setHidden(true); return; }
-  const base = currentSrc.substring(0, lastSlash);
-  const file = currentSrc.substring(lastSlash + 1);
-
-  if (retryCount === 0) { setCurrentSrc(`${base}/${file.toLowerCase()}`); setRetryCount(1); }
-  else if (retryCount === 1) { setCurrentSrc(`${base}/${file.toUpperCase()}`); setRetryCount(2); }
-  else { setHidden(true); }
- };
-
- if (hidden || !src) return null;
- return <img src={currentSrc} alt={alt} className={className} onClick={() => onClick && onClick(currentSrc)} onError={handleError} />;
+const MATHS_INSTRUCTION = { 
+  title: "Maths", 
+  instruction: "Solve the problems below. You can click on any image to make it bigger!", 
+  tip: "Double-check your working out before selecting an answer." 
 };
 
-const parseCSV = (text) => {
- if (!text || typeof text !== 'string') return [];
- if (text.trim().startsWith('<')) return [];
- const rows = [];
- let currentRow = [];
- let currentCell = "";
- let inQuotes = false;
- for (let i = 0; i < text.length; i++) {
-  const char = text[i];
-  const nextChar = text[i + 1];
-  if (char === '"') {
-   if (inQuotes && nextChar === '"') { currentCell += '"'; i++; }
-   else { inQuotes = !inQuotes; }
-  } else if (char === ',' && !inQuotes) {
-   currentRow.push(currentCell.trim()); currentCell = "";
-  } else if ((char === '\n' || (char === '\r' && nextChar === '\n')) && !inQuotes) {
-   currentRow.push(currentCell.trim()); rows.push(currentRow); currentRow = []; currentCell = ""; if (char === '\r') i++;
-  } else if (char === '\r' && !inQuotes) {
-   currentRow.push(currentCell.trim()); rows.push(currentRow); currentRow = []; currentCell = "";
-  } else { currentCell += char; }
- }
- if (currentCell || currentRow.length > 0) { currentRow.push(currentCell.trim()); rows.push(currentRow); }
- return rows;
+const VR_CONTENT = {
+  "Hidden Words": { header: "Hidden Words", instruction: "Find the hidden word that is formed by joining the end of one word and the start of the next.", tip: "Read the sentence aloud slowly." },
+  "Move a Letter": { header: "Move a Letter", instruction: "Move one letter from the first word to the second word to make two new words.", tip: "The letter is usually a vowel or 's'." },
+  "Compound Word Bridge": { header: "Make a New Word", instruction: "Select one word from each group to combine into a new compound word.", tip: "Must form a real single word." },
+  "Letters for Numbers": { header: "Word Algebra", instruction: "Letters stand for numbers. Solve the sum.", tip: "Write values above the letters." },
+  "Missing 3 Letters": { header: "Complete the Word", instruction: "The word in capitals has had three consecutive letters removed. Find the missing letters.", tip: "Use the sentence context to guess the big word first." },
+  "Synonyms & Antonyms": { header: "Synonyms & Antonyms", instruction: "Select two words closest in meaning (Synonym) or most opposite (Antonym).", tip: "Check the header to see which one is required!" },
+  "Verbal Analogies": { header: "Word Connections", instruction: "Identify the relationship between the first pair of words. Select the word that completes the second pair using the same relationship.", tip: "Create a sentence linking the first two words (e.g. 'A Glove goes on a Hand'), then apply it to the second pair." },
+  "Logical Deduction": { header: "Logic Puzzle", instruction: "Read the scenario carefully. Use the information provided to deduce the correct answer.", tip: "Only use the facts provided in the text. Do not guess!" },
+  "Corresponding Letters": { header: "Alphabet Relations", instruction: "Find the letters that complete the pattern.", tip: "Count the jumps between letters." },
+  "Letter Codes": { header: "Crack the Code", instruction: "Work out the code pattern to find the answer.", tip: "Check the first and last letters." },
+  "Sequences": { header: "Number Series", instruction: "Find the number that continues the sequence.", tip: "Look for gaps (add, subtract, double)." },
+  "Missing Letter": { header: "Insert a Letter", instruction: "Find the letter that finishes the first word and starts the second.", tip: "Try vowels first." },
+  "Letter Sequences": { header: "Letter Series", instruction: "Choose the pair of letters that comes next.", tip: "Treat first and second letters as separate patterns." },
+  "Compound Words": { header: "Middle Word Link", instruction: "Find the word that bridges the two others.", tip: "Must make sense with both sides." },
+  "Homonyms": { header: "One Word for Two Pairs", instruction: "Find one word that fits both pairs.", tip: "Think of words with double meanings." },
+  "Odd 2 Out": { header: "Odd Ones Out", instruction: "Select the TWO words that do not belong in the group.", tip: "Find the three words that are related first, then pick the other two." },
+  "Code Words": { header: "Code Matching", instruction: "Match the correct number code to the word.", tip: "Look for repeated letters." },
+  "default": { header: "Verbal Reasoning", instruction: "Answer the questions below.", tip: "Read carefully." }
 };
 
-const getDirectImageSrc = (url, subjectBaseUrl) => {
- if (!url) return null;
- let finalUrl = url.toString().trim();
- if (!finalUrl) return null;
- if (finalUrl.startsWith('http')) return finalUrl;
- if (subjectBaseUrl) {
-  const safeBase = subjectBaseUrl.endsWith('/') ? subjectBaseUrl : subjectBaseUrl + '/';
-  finalUrl = safeBase + finalUrl;
- }
- return finalUrl;
-};
+const VR_TOPICS = [
+  { name: "Hidden Words", file: "Questions%20-%20Hidden%20word%20(1).csv" },
+  { name: "Move a Letter", file: "Questions%20-%20Move%20a%20letter%20(1).csv" },
+  { name: "Compound Word Bridge", file: "Questions%20-%20Compound%20word%20bridge.csv" },
+  { name: "Letters for Numbers", file: "Questions%20-%20Letters%20for%20numbers.csv" },
+  { name: "Missing 3 Letters", file: "Questions%20-%20M3L.csv" },
+  { name: "Synonyms & Antonyms", file: "Questions%20-%20Syn-Ant.csv" },
+  { name: "Verbal Analogies", file: "Questions%20-%20Verbal%20analogies.csv" },
+  { name: "Logical Deduction", file: "Questions%20-%20Logical%20deduction.csv" },
+  { name: "Corresponding Letters", file: "Questions%20-%20Corresponding%20letters.csv" },
+  { name: "Letter Codes", file: "Questions%20-%20Letter%20codes.csv" },
+  { name: "Sequences", file: "Questions%20-%20Sequences.csv" },
+  { name: "Missing Letter", file: "Questions%20-%20Missing%20letter.csv" },
+  { name: "Letter Sequences", file: "Questions%20-%20Letter%20sequences.csv" },
+  { name: "Compound Words", file: "Questions%20-%20Compound%20words.csv" },
+  { name: "Homonyms", file: "Questions%20-%20Homonyms.csv" },
+  { name: "Odd 2 Out", file: "Questions%20-%20Odd%202%20out.csv" },
+  { name: "Code Words", file: "Questions%20-%20Word%20codes..csv" },
+];
 
-// --- MAIN APP SHELL ---
-export default function App() {
- const [screen, setScreen] = useState('menu');
- const [screenData, setScreenData] = useState(null);
- const navigate = (to, data) => { setScreen(to); setScreenData(data); };
- const safeData = screenData || { questions: [] };
+// --- HELPER COMPONENTS ---
 
- return (
-  <ErrorBoundary onReset={() => setScreen('menu')}>
-   <div className="font-sans text-slate-900 bg-slate-50 min-h-screen">
-    {screen === 'menu' && <MenuScreen navigate={navigate} />}
-    
-    {/* Menus */}
-    {screen === 'english_menu' && <EnglishOptionsScreen navigate={navigate} />}
-    {screen === 'vr_menu' && <VerbalReasoningScreen navigate={navigate} />}
-    {screen === 'maths_menu' && <MathsScreen navigate={navigate} />}
-    
-    {/* Loaders */}
-    {screen === 'loading' && <GenericLoadingScreen config={screenData} navigate={navigate} />}
-    
-    {/* Selection Screens */}
-    {screen === 'comprehension_selection' && <ComprehensionSelectionScreen data={safeData} navigate={navigate} />}
-    {screen === 'cloze_selection' && <ClozeSelectionScreen data={safeData} navigate={navigate} />}
-
-    {/* Quizzes */}
-    {screen === 'quiz_maths' && <MathsQuizScreen data={safeData} navigate={navigate} />}
-    {screen === 'quiz_generic' && <GenericMultipleChoiceQuiz data={safeData} navigate={navigate} />}
-    {screen === 'quiz_spelling' && <SpellingQuizScreen data={safeData} navigate={navigate} />}
-    {screen === 'quiz_grammar' && <GrammarQuizScreen data={safeData} navigate={navigate} />}
-    {screen === 'quiz_cloze' && <ClozeQuizScreen data={safeData} navigate={navigate} />}
-    
-    {/* Specific English/VR Quiz Screens */}
-    {screen === 'quiz_comprehension' && <ComprehensionQuizScreen data={safeData} navigate={navigate} />}
-    
-    {screen === 'coming_soon' && (
-      <div className="flex flex-col items-center justify-center h-screen bg-slate-50 p-6 text-center">
-      <div className="bg-indigo-100 p-6 rounded-full mb-4"><Puzzle size={48} className="text-indigo-600"/></div>
-      <h2 className="text-2xl font-bold mb-2">Coming Soon</h2>
-      <button onClick={() => navigate('menu')} className="bg-indigo-600 text-white px-6 py-3 rounded-lg font-bold mt-4">Back to Menu</button>
+const QuizHeader = ({ title, onBack, themeColor = "bg-slate-700", subText }) => (
+  <div className={`${themeColor} text-white p-4 shadow-md`}>
+    <div className="max-w-5xl mx-auto flex items-center justify-between">
+      <button onClick={onBack} className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-white/20 transition-colors">
+        <ChevronLeft size={20} />
+        <span className="font-bold text-sm uppercase tracking-wide">Back</span>
+      </button>
+      <div className="text-center">
+        <h2 className="text-lg md:text-xl font-bold truncate max-w-xs md:max-w-md">{title}</h2>
+        {subText && <p className="text-xs opacity-80">{subText}</p>}
       </div>
-    )}
-   </div>
-  </ErrorBoundary>
- );
-}
+      <div className="w-16"></div> 
+    </div>
+  </div>
+);
+
+// Alphabet Bar for Letter Codes / Sequences / Code Words
+const AlphabetBar = () => (
+  <div className="bg-white border-b border-slate-200 shadow-sm overflow-x-auto py-2">
+    <div className="max-w-4xl mx-auto px-4 flex justify-between min-w-[600px]">
+      {"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map(char => (
+        <div key={char} className="flex flex-col items-center w-6">
+          <span className="text-[10px] font-bold text-slate-400">{char.charCodeAt(0) - 64}</span>
+          <span className="text-base font-black text-slate-700">{char}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+const SubjectMenuHeader = ({ title, onHome, themeColor = "bg-slate-700" }) => (
+  <div className={`${themeColor} text-white p-6 shadow-xl rounded-b-3xl mb-6 relative overflow-hidden`}>
+    <div className="absolute top-0 left-0 w-full h-full bg-white/5 pointer-events-none"></div>
+    <div className="max-w-5xl mx-auto flex items-center justify-between relative z-10">
+      <button onClick={onHome} className="flex items-center gap-2 px-4 py-2 bg-white/20 rounded-xl hover:bg-white/30 transition-colors backdrop-blur-sm">
+        <Home size={20} />
+        <span className="font-bold text-sm">Home</span>
+      </button>
+      <h1 className="text-3xl md:text-4xl font-black tracking-tight drop-shadow-md">{title}</h1>
+      <div className="w-24"></div> 
+    </div>
+  </div>
+);
+
+const ImageWithFallback = ({ filename, baseUrl, alt }) => {
+  const [src, setSrc] = useState(baseUrl + filename);
+  const [attempt, setAttempt] = useState(0); 
+  const [isZoomed, setIsZoomed] = useState(false);
+
+  const handleError = () => {
+    if (attempt === 0) { setSrc(baseUrl + filename.toLowerCase()); setAttempt(1); }
+    else if (attempt === 1) { setSrc(baseUrl + filename.toUpperCase()); setAttempt(2); }
+    else { setSrc(null); }
+  };
+
+  if (!src) return null;
+
+  return (
+    <>
+      <div className="mt-4 relative group cursor-zoom-in inline-block" onClick={() => setIsZoomed(true)}>
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors rounded-xl flex items-center justify-center pointer-events-none">
+           <ZoomIn className="text-white opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all drop-shadow-md" size={32} />
+        </div>
+        <img src={src} alt={alt} onError={handleError} className="rounded-xl border border-slate-200 max-h-64 object-contain bg-white" />
+        <p className="text-xs text-slate-400 mt-2 text-center font-medium italic">Click to zoom</p>
+      </div>
+      {isZoomed && (
+        <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 cursor-pointer" onClick={(e) => { e.stopPropagation(); setIsZoomed(false); }}>
+           <img src={src} alt="Zoomed" className="max-w-full max-h-full rounded-lg shadow-2xl" />
+           <button className="absolute top-6 right-6 text-white bg-white/20 p-2 rounded-full hover:bg-white/30"><X size={32}/></button>
+        </div>
+      )}
+    </>
+  );
+};
+
+// --- DATA NORMALIZATION ---
+const parseCSV = (text) => {
+  if (!text) return [];
+  const rows = [];
+  let currentRow = [];
+  let currentVal = '';
+  let inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    const nextChar = text[i + 1];
+    if (char === '"') {
+      if (inQuotes && nextChar === '"') { currentVal += '"'; i++; } else { inQuotes = !inQuotes; }
+    } else if (char === ',' && !inQuotes) {
+      currentRow.push(currentVal.trim()); currentVal = '';
+    } else if ((char === '\n' || char === '\r') && !inQuotes) {
+      if (currentVal || currentRow.length > 0) currentRow.push(currentVal.trim());
+      if (currentRow.length > 0) rows.push(currentRow);
+      currentRow = []; currentVal = '';
+      if (char === '\r' && nextChar === '\n') i++;
+    } else { currentVal += char; }
+  }
+  if (currentVal || currentRow.length > 0) { currentRow.push(currentVal.trim()); rows.push(currentRow); }
+  return rows;
+};
 
 // --- SCREENS ---
 
-const SubjectHeader = ({ theme, title, onBack }) => (
- <header className={`p-4 shadow-md flex items-center bg-gradient-to-r ${theme.headerGradient} text-white`}>
-   <button onClick={onBack} className="p-2 hover:bg-white/20 rounded-full transition-colors mr-3"><ChevronLeft /></button>
-   <h1 className="font-bold text-lg tracking-wide">{title}</h1>
-   <div className="ml-auto opacity-50"><theme.icon size={24}/></div>
- </header>
-);
-
-const QuizHeader = ({ theme, title, onBack, onHome }) => (
-  <header className={`p-4 shadow-md flex items-center justify-between bg-gradient-to-r ${theme.headerGradient} text-white sticky top-0 z-50`}>
-    <div className="flex items-center">
-     <button onClick={onBack} className="p-2 hover:bg-white/20 rounded-full transition-colors mr-3">
-       <ChevronLeft size={24} />
-     </button>
-     <h1 className="font-bold text-lg tracking-wide truncate max-w-[200px] md:max-w-md">{title}</h1>
+const DashboardButton = ({ theme, onClick, label, icon: Icon }) => (
+  <button onClick={onClick} className="group relative flex flex-col items-center justify-center bg-white p-6 md:p-8 rounded-3xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full h-48 md:h-64 overflow-hidden">
+    <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 ${theme.bg} transition-opacity duration-300`}></div>
+    <div className={`p-5 md:p-6 rounded-full ${theme.bg} ${theme.text} mb-4 md:mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 shadow-sm z-10`}>
+      {Icon ? <Icon size={48} className="md:w-16 md:h-16" /> : <span className="text-4xl">?</span>}
     </div>
-    <button onClick={onHome} className="p-2 hover:bg-white/20 rounded-full transition-colors">
-     <Home size={24} />
-    </button>
-  </header>
-);
-
-const MenuButton = ({ title, sub, icon: Icon, theme, onClick }) => (
- <button
-  onClick={onClick}
-  className={`w-full p-4 rounded-xl shadow-sm border border-slate-100 bg-white text-left flex items-center transition-all hover:shadow-md active:scale-95 group mb-3`}
- >
-  <div className={`p-3 rounded-lg mr-4 ${theme.bg} ${theme.accentText}`}>
-    <Icon size={24}/>
-  </div>
-  <div>
-    <div className="font-bold text-slate-800 group-hover:text-indigo-900">{title}</div>
-    {sub && <div className="text-xs text-slate-400">{sub}</div>}
-  </div>
-  <ArrowRight className="ml-auto text-slate-300 group-hover:text-indigo-400" size={18} />
- </button>
-);
-
-const DashboardButton = ({ theme, onClick }) => (
- <button
-  onClick={onClick}
-  className={`aspect-square flex flex-col items-center justify-center p-4 rounded-3xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 active:scale-95 bg-white border border-slate-100 group relative overflow-hidden`}
- >
-  <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity bg-gradient-to-br ${theme.headerGradient}`}></div>
-  <div className={`p-4 rounded-2xl mb-3 ${theme.bg} ${theme.accentText} group-hover:scale-110 transition-transform duration-300`}>
-    <theme.icon size={32} />
-  </div>
-  <span className="font-bold text-slate-700 group-hover:text-slate-900">{theme.label}</span>
- </button>
-);
-
-const MenuScreen = ({ navigate }) => (
- <div className="flex flex-col min-h-screen bg-slate-50">
-  <header className="bg-indigo-700 p-8 rounded-b-[3rem] shadow-xl text-center relative overflow-hidden">
-   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white/10 to-transparent pointer-events-none"></div>
-   <div className="inline-block bg-white/20 p-4 rounded-full mb-4 backdrop-blur-sm shadow-inner"><GraduationCap size={48} className="text-white drop-shadow-md" /></div>
-   <h1 className="text-3xl font-black text-white tracking-tight drop-shadow-md mb-2">Free 4 All <span className="text-orange-300">Education</span></h1>
-   <p className="text-indigo-100 font-medium opacity-90">11+ Revision Companion</p>
-  </header>
-  
-  <main className="flex-1 p-6 max-w-lg mx-auto w-full">
-   <div className="grid grid-cols-2 gap-4">
-     <DashboardButton theme={THEMES.maths} onClick={() => navigate('maths_menu')} />
-     <DashboardButton theme={THEMES.english} onClick={() => navigate('english_menu')} />
-     <DashboardButton theme={THEMES.vr} onClick={() => navigate('vr_menu')} />
-     <DashboardButton theme={THEMES.nvr} onClick={() => navigate('coming_soon')} />
-   </div>
-  </main>
- </div>
-);
-
-const MathsScreen = ({ navigate }) => {
- const [showModal, setShowModal] = useState(false);
- const [selectedDiff, setSelectedDiff] = useState(null);
- const startMaths = (count) => { setShowModal(false); navigate('loading', { mode: 'maths', difficulty: selectedDiff, count }); };
- const theme = THEMES.maths;
-
- return (
-  <div className={`min-h-screen ${theme.bg}`}>
-   <SubjectHeader theme={theme} title="Maths Practice" onBack={() => navigate('menu')} />
-   <main className="p-6 max-w-md mx-auto">
-    <h2 className={`text-center font-bold uppercase text-xs tracking-wider mb-4 ${theme.accentText}`}>Select Difficulty</h2>
-    <MenuButton theme={theme} title="Easy" sub="0-25 Range" icon={Check} onClick={() => { setSelectedDiff("Easy"); setShowModal(true); }} />
-    <MenuButton theme={theme} title="Medium" sub="13-38 Range" icon={Lightbulb} onClick={() => { setSelectedDiff("Medium"); setShowModal(true); }} />
-    <MenuButton theme={theme} title="Hard" sub="26-50 Range" icon={Brain} onClick={() => { setSelectedDiff("Hard"); setShowModal(true); }} />
-    <div className="my-2 border-t border-slate-200/50"></div>
-    <MenuButton theme={theme} title="Full Paper" sub="Mixed Difficulty (50 Qs)" icon={FileText} onClick={() => navigate('loading', { mode: 'maths', difficulty: 'Mixed', count: 50 })} />
-   </main>
-   {showModal && (
-    <div className="fixed inset-0 bg-black/60 flex items-end justify-center z-50 animate-in slide-in-from-bottom-10 backdrop-blur-sm">
-     <div className="bg-white w-full max-w-md p-6 rounded-t-3xl shadow-2xl">
-      <div className="flex justify-between items-center mb-6">
-       <h3 className="text-2xl font-bold text-slate-800">{selectedDiff} Maths</h3>
-       <button onClick={() => setShowModal(false)} className="bg-slate-100 p-2 rounded-full hover:bg-slate-200"><X size={20}/></button>
-      </div>
-      <div className="space-y-3">
-       {[10, 25, 50].map(n => <button key={n} onClick={() => startMaths(n)} className={`w-full py-4 rounded-xl font-bold text-lg border transition-colors ${theme.button} hover:bg-rose-100`}>{n} Questions</button>)}
-      </div>
-      <div className="h-6" />
-     </div>
-    </div>
-   )}
-  </div>
- );
-};
-
-const VerbalReasoningScreen = ({ navigate }) => {
- const [showModal, setShowModal] = useState(false);
- const [selectedMode, setSelectedMode] = useState(null);
- const [selectedTitle, setSelectedTitle] = useState("");
- const handleTypeClick = (mode, title) => { setSelectedMode(mode); setSelectedTitle(title); setShowModal(true); };
- const startQuiz = (count) => { setShowModal(false); navigate('loading', { mode: selectedMode, count }); };
- const theme = THEMES.vr;
-
- return (
-  <div className={`min-h-screen ${theme.bg}`}>
-   <SubjectHeader theme={theme} title="Verbal Reasoning" onBack={() => navigate('menu')} />
-   <main className="p-6 max-w-md mx-auto">
-    <h2 className={`text-center font-bold uppercase text-xs tracking-wider mb-4 ${theme.accentText}`}>Select Type</h2>
-    <MenuButton theme={theme} title="Type 1: Hidden Word" sub="Find the hidden word" icon={Search} onClick={() => handleTypeClick('hidden_word', "Hidden Word")} />
-    <MenuButton theme={theme} title="Type 2: Move a Letter" sub="Make new words" icon={MoveUp} onClick={() => handleTypeClick('move_letter', "Move a Letter")} />
-    <MenuButton theme={theme} title="Type 3: Missing Letters" sub="Complete the word in capitals" icon={MoreHorizontal} onClick={() => handleTypeClick('missing_letter', "Missing Letters")} />
-    <MenuButton theme={theme} title="Type 7: Math Equations" sub="Solve with letters" icon={Calculator} onClick={() => handleTypeClick('math_equations', "Math Equations")} />
-   </main>
-    {showModal && (
-     <div className="fixed inset-0 bg-black/60 flex items-end justify-center z-50 animate-in slide-in-from-bottom-10 backdrop-blur-sm">
-      <div className="bg-white w-full max-w-md p-6 rounded-t-3xl shadow-2xl">
-       <div className="flex justify-between items-center mb-6"><h3 className="text-2xl font-bold text-slate-800">{selectedTitle}</h3><button onClick={() => setShowModal(false)} className="bg-slate-100 p-2 rounded-full hover:bg-slate-200"><X size={20}/></button></div>
-       <div className="space-y-3">
-        {[10, 25, 50].map(n => <button key={n} onClick={() => startQuiz(n)} className={`w-full py-4 rounded-xl font-bold text-lg border transition-colors ${theme.button} hover:bg-amber-100`}>{n} Questions</button>)}
-       </div>
-       <div className="h-6" />
-      </div>
-     </div>
-   )}
-  </div>
- );
-};
-
-const VRButton = ({ title, sub, icon, onClick }) => (
-  <button onClick={onClick} className="bg-white p-5 rounded-xl shadow-sm border border-orange-100 text-left flex items-center active:scale-95 transition-transform w-full">
-    <div className="bg-orange-100 text-orange-600 p-3 rounded-full mr-4">{icon}</div>
-    <div><div className="font-bold text-slate-800">{title}</div><div className="text-xs text-slate-500">{sub}</div></div>
-    <ArrowRight className="ml-auto text-orange-300" size={20}/>
+    <span className="text-xl md:text-3xl font-black text-slate-800 z-10 tracking-tight">{label}</span>
   </button>
 );
 
-const EnglishOptionsScreen = ({ navigate }) => {
- const theme = THEMES.english;
- return (
-  <div className={`min-h-screen ${theme.bg}`}>
-   <SubjectHeader theme={theme} title="English" onBack={() => navigate('menu')} />
-   <main className="p-6 max-w-md mx-auto">
-    <h2 className={`text-center font-bold uppercase text-xs tracking-wider mb-4 ${theme.accentText}`}>Select Topic</h2>
-    <MenuButton theme={theme} title="Comprehension" sub="Read passages & answer" icon={BookOpen} onClick={() => navigate('loading', { mode: 'comprehension' })} />
-    <MenuButton theme={theme} title="Grammar & Punctuation" sub="Identify mistakes" icon={Lightbulb} onClick={() => navigate('loading', { mode: 'grammar' })} />
-    <MenuButton theme={theme} title="Spelling Practice" sub="Spot the error" icon={Check} onClick={() => navigate('loading', { mode: 'spelling' })} />
-    <MenuButton theme={theme} title="Cloze (Fill in Blanks)" sub="Complete the passage" icon={MoreHorizontal} onClick={() => navigate('loading', { mode: 'cloze' })} />
-   </main>
+const MenuScreen = ({ navigate }) => (
+  <div className="flex flex-col min-h-screen bg-slate-50">
+    <header className="bg-gradient-to-br from-indigo-600 to-indigo-800 py-4 px-4 md:px-8 rounded-b-2xl shadow-xl relative z-10 overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white/10 to-transparent pointer-events-none"></div>
+      <div className="max-w-7xl mx-auto flex items-center gap-4 md:gap-6">
+        <img src="https://raw.githubusercontent.com/richardwood250-dev/11plus-revision-app/main/Main%20logo.jpg" alt="Free 4 All Logo" className="h-16 md:h-20 w-auto rounded-lg shadow-md border-2 border-white/20 bg-white"/>
+        <div className="text-left">
+          <h1 className="text-2xl md:text-4xl font-black text-white tracking-tight drop-shadow-lg leading-tight">Free 4 All <span className="text-orange-300">Education</span></h1>
+          <p className="text-indigo-100 font-medium opacity-90 text-sm md:text-base">Your Complete 11+ Revision Companion</p>
+        </div>
+      </div>
+    </header>
+    <main className="flex-1 p-6 w-full max-w-7xl mx-auto flex flex-col items-center justify-center">
+      
+      {/* QUICK START BUTTON */}
+      <button onClick={() => navigate('loading', { mode: 'mixed', title: 'Quick Start' })} className="w-full mb-8 group relative flex items-center justify-between p-6 bg-gradient-to-r from-rose-500 to-pink-600 rounded-3xl shadow-xl hover:shadow-2xl hover:scale-[1.01] transition-all duration-300 overflow-hidden">
+         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+         <div className="flex items-center gap-6 z-10">
+            <div className="p-4 bg-white/20 rounded-full backdrop-blur-sm">
+               <Zap size={40} className="text-white fill-yellow-300" />
+            </div>
+            <div className="text-left">
+               <h2 className="text-2xl md:text-3xl font-black text-white">Quick Start</h2>
+               <p className="text-pink-100 font-medium">A bit of everything! (Maths, English & VR)</p>
+            </div>
+         </div>
+         <div className="bg-white text-pink-600 px-6 py-2 rounded-full font-bold text-lg shadow-md group-hover:translate-x-1 transition-transform">Go!</div>
+      </button>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 w-full mb-12">
+        <DashboardButton theme={THEMES.maths} label="Maths" icon={Calculator} onClick={() => navigate('maths_menu')} />
+        <DashboardButton theme={THEMES.english} label="English" icon={Book} onClick={() => navigate('english_menu')} />
+        <DashboardButton theme={THEMES.vr} label="Verbal" icon={Lightbulb} onClick={() => navigate('vr_menu')} />
+        <DashboardButton theme={THEMES.nvr} label="Non-Verbal" icon={Puzzle} onClick={() => navigate('coming_soon')} />
+      </div>
+
+      {/* FOOTER BANNER */}
+      <div className="w-full bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 shadow-2xl relative overflow-hidden text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+         
+         <div className="shrink-0 p-6 bg-white/10 rounded-full backdrop-blur-md border border-white/10">
+            <Award size={64} className="text-yellow-400" />
+         </div>
+         
+         <div className="relative z-10 flex-1">
+            <h3 className="text-2xl font-bold text-white mb-3">Education should be free for everyone.</h3>
+            <p className="text-slate-300 leading-relaxed text-sm md:text-base">
+               We believe that everyone, regardless of economic background, should get a fair shot at passing the 11+ exams. 
+               To that end we have made this resource, with thousands of practice questions, free to all who need or want to use it. 
+               Please use it to your own advantage, and feel free to provide feedback on how we can make it even better.
+            </p>
+         </div>
+      </div>
+
+    </main>
+    <footer className="text-center p-4 text-slate-400 text-xs font-semibold">© 2024 Free 4 All Education</footer>
   </div>
- );
+);
+
+// --- COMPREHENSION SCREEN ---
+const ComprehensionScreen = ({ data, navigate }) => {
+  const [answers, setAnswers] = useState({});
+  const [showResult, setShowResult] = useState(false);
+  const [reviewMode, setReviewMode] = useState(false); 
+  const [storyText, setStoryText] = useState("Loading story...");
+  
+  const questions = data.questions || [];
+  const filename = data.filename;
+
+  useEffect(() => {
+    if (filename) {
+        fetch(ENGLISH_TEXT_BASE + filename)
+            .then(r => {
+                if(!r.ok) throw new Error("Failed to load text");
+                return r.text();
+            })
+            .then(text => setStoryText(text))
+            .catch(err => setStoryText("Error loading story text: " + err.message));
+    }
+  }, [filename]);
+
+  const handleSelect = (qIndex, option) => {
+    if (showResult && !reviewMode) return;
+    setAnswers(prev => ({ ...prev, [qIndex]: option }));
+  };
+
+  const calculateScore = () => {
+    let s = 0;
+    questions.forEach((q, idx) => { if (answers[idx] === q.correct) s++; });
+    return s;
+  };
+
+  const allAnswered = Object.keys(answers).length === questions.length;
+
+  if (showResult && !reviewMode) {
+    const score = calculateScore();
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-blue-50">
+        <div className="bg-white p-8 rounded-3xl shadow-xl text-center max-w-md w-full">
+          <h2 className="text-4xl font-black text-blue-600 mb-4">Reading Complete!</h2>
+          <div className="text-6xl font-black text-slate-800 mb-2">{score} / {questions.length}</div>
+          <p className="text-slate-500 mb-8 font-medium text-lg">{score === questions.length ? "Perfect Score! 🌟" : "Great Effort! 📚"}</p>
+          <button onClick={() => setReviewMode(true)} className="w-full py-4 rounded-xl text-blue-600 font-bold text-lg border-2 border-blue-100 hover:bg-blue-50 mb-4 flex items-center justify-center gap-2"><Eye size={20}/> Review Answers</button>
+          <button onClick={() => navigate('english_menu')} className="w-full py-4 rounded-xl text-white font-bold text-lg shadow-lg bg-blue-600 hover:opacity-90">Back to English</button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex flex-col h-screen bg-slate-100 overflow-hidden">
+      <QuizHeader title={reviewMode ? "Review Answers" : "Comprehension"} onBack={() => reviewMode ? setReviewMode(false) : navigate('english_menu')} themeColor="bg-blue-600" />
+      <div className="flex flex-1 flex-col md:flex-row overflow-hidden">
+        <div className="flex-1 bg-white p-8 overflow-y-auto border-r border-slate-200 shadow-inner">
+           <h3 className="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2 sticky top-0 bg-white py-2"><FileText size={24}/> The Story</h3>
+           <div className="prose max-w-none text-slate-700 leading-8 text-lg font-serif whitespace-pre-wrap">{storyText}</div>
+        </div>
+        <div className="flex-1 bg-slate-50 p-6 overflow-y-auto">
+          <h3 className="text-xl font-bold text-slate-800 mb-4">{reviewMode ? "Review" : "Questions"}</h3>
+          <div className="space-y-6 pb-20">
+            {questions.map((q, idx) => {
+              return (
+                <div key={idx} className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                   <div className="flex gap-3 mb-4">
+                     <span className="bg-blue-100 text-blue-700 font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm shrink-0">{idx+1}</span>
+                     <p className="font-semibold text-slate-800 text-lg">{q.question}</p>
+                   </div>
+                   <div className="flex flex-col gap-3">
+                     {q.options.map((opt, i) => {
+                       let btnClass = "border-slate-200 hover:border-blue-300";
+                       if (reviewMode) {
+                          if (opt === q.correct) btnClass = "bg-green-100 border-green-500 text-green-800 font-bold";
+                          else if (answers[idx] === opt) btnClass = "bg-red-100 border-red-500 text-red-800";
+                          else btnClass = "opacity-50 border-slate-100";
+                       } else {
+                          if (answers[idx] === opt) btnClass = "border-blue-500 bg-blue-50 text-blue-700 ring-1 ring-blue-500";
+                       }
+                       return (
+                         <button disabled={reviewMode} key={i} onClick={() => handleSelect(idx, opt)} className={`w-full p-4 text-left text-base rounded-lg border-2 transition-all ${btnClass}`}>{opt}</button>
+                       );
+                     })}
+                   </div>
+                   {reviewMode && q.explanation && (
+                     <div className="mt-4 p-3 bg-blue-50 text-blue-800 rounded-lg text-sm border border-blue-200">
+                       <strong>Explanation:</strong> {q.explanation}
+                     </div>
+                   )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      {!reviewMode && (
+        <div className="bg-white p-4 border-t shadow-lg z-20">
+           <button onClick={() => setShowResult(true)} disabled={!allAnswered} className={`w-full max-w-md mx-auto block py-3 text-white font-bold rounded-xl transition-all ${allAnswered ? 'bg-blue-600 hover:bg-blue-700' : 'bg-slate-300 cursor-not-allowed flex items-center justify-center gap-2'}`}>
+             {allAnswered ? 'Submit Answers' : <><Lock size={18}/> Answer All Questions</>}
+           </button>
+        </div>
+      )}
+    </div>
+  );
 };
 
-// --- DATA FETCHING ---
+// --- CLOZE SCREEN ---
+const ClozeScreen = ({ data, navigate }) => {
+  const [answers, setAnswers] = useState({});
+  const [showResult, setShowResult] = useState(false);
+  const [reviewMode, setReviewMode] = useState(false); 
+  
+  const questions = data.questions || [];
+  const storyText = questions.length > 0 ? questions[0].text : "No text found.";
+
+  const handleSelect = (qIndex, option) => {
+    if (showResult && !reviewMode) return;
+    setAnswers(prev => ({ ...prev, [qIndex]: option }));
+  };
+
+  const calculateScore = () => {
+    let s = 0;
+    questions.forEach((q, idx) => { if (answers[idx] === q.correct) s++; });
+    return s;
+  };
+
+  const allAnswered = Object.keys(answers).length === questions.length;
+
+  if (showResult && !reviewMode) {
+    const score = calculateScore();
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-blue-50">
+        <div className="bg-white p-8 rounded-3xl shadow-xl text-center max-w-md w-full">
+          <h2 className="text-4xl font-black text-blue-600 mb-4">Cloze Complete!</h2>
+          <div className="text-6xl font-black text-slate-800 mb-2">{score} / {questions.length}</div>
+          <p className="text-slate-500 mb-8 font-medium text-lg">{score === questions.length ? "Perfect Score! 🌟" : "Good Practice! 📚"}</p>
+          <button onClick={() => setReviewMode(true)} className="w-full py-4 rounded-xl text-blue-600 font-bold text-lg border-2 border-blue-100 hover:bg-blue-50 mb-4 flex items-center justify-center gap-2"><Eye size={20}/> Review Answers</button>
+          <button onClick={() => navigate('english_menu')} className="w-full py-4 rounded-xl text-white font-bold text-lg shadow-lg bg-blue-600 hover:opacity-90">Back to English</button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex flex-col h-screen bg-slate-100 overflow-hidden">
+      <QuizHeader title={reviewMode ? "Review Answers" : "Cloze Exercise"} onBack={() => reviewMode ? setReviewMode(false) : navigate('english_menu')} themeColor="bg-blue-600" />
+      <div className="flex flex-1 flex-col md:flex-row overflow-hidden">
+        <div className="flex-1 bg-white p-8 overflow-y-auto border-r border-slate-200 shadow-inner">
+           <h3 className="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2 sticky top-0 bg-white py-2"><FileText size={24}/> The Passage</h3>
+           <div className="prose max-w-none text-slate-700 leading-8 text-lg font-serif whitespace-pre-wrap">{storyText}</div>
+        </div>
+        <div className="flex-1 bg-slate-50 p-6 overflow-y-auto">
+          <h3 className="text-xl font-bold text-slate-800 mb-4">{reviewMode ? "Review" : "Fill the Gaps"}</h3>
+          <div className="space-y-6 pb-20">
+            {questions.map((q, idx) => {
+              return (
+                <div key={idx} className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                   <div className="flex gap-3 mb-4">
+                     <span className="bg-blue-100 text-blue-700 font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm shrink-0">{idx+1}</span>
+                     <p className="font-semibold text-slate-800 text-lg">Question {q.question}</p> 
+                   </div>
+                   <div className="flex flex-wrap gap-3">
+                     {q.options.map((opt, i) => {
+                       let btnClass = "border-slate-200 hover:border-blue-300";
+                       if (reviewMode) {
+                          if (opt === q.correct) btnClass = "bg-green-100 border-green-500 text-green-800 font-bold";
+                          else if (answers[idx] === opt) btnClass = "bg-red-100 border-red-500 text-red-800";
+                          else btnClass = "opacity-50 border-slate-100";
+                       } else {
+                          if (answers[idx] === opt) btnClass = "border-blue-500 bg-blue-50 text-blue-700 ring-1 ring-blue-500";
+                       }
+                       return (
+                         <button disabled={reviewMode} key={i} onClick={() => handleSelect(idx, opt)} className={`flex-1 min-w-[80px] p-3 text-center text-base rounded-lg border-2 transition-all ${btnClass}`}>{opt}</button>
+                       );
+                     })}
+                   </div>
+                   {reviewMode && q.explanation && (
+                     <div className="mt-4 p-3 bg-blue-50 text-blue-800 rounded-lg text-sm border border-blue-200">
+                       <strong>Explanation:</strong> {q.explanation}
+                     </div>
+                   )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      {!reviewMode && (
+        <div className="bg-white p-4 border-t shadow-lg z-20">
+           <button onClick={() => setShowResult(true)} disabled={!allAnswered} className={`w-full max-w-md mx-auto block py-3 text-white font-bold rounded-xl transition-all ${allAnswered ? 'bg-blue-600 hover:bg-blue-700' : 'bg-slate-300 cursor-not-allowed flex items-center justify-center gap-2'}`}>
+             {allAnswered ? 'Submit Answers' : <><Lock size={18}/> Answer All Questions</>}
+           </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+// --- SCROLLABLE QUIZ (WORKSHEET) ---
+const ScrollableQuizScreen = ({ data, navigate }) => {
+  const [answers, setAnswers] = useState({});
+  const [showResult, setShowResult] = useState(false);
+  const [reviewMode, setReviewMode] = useState(false); 
+  const [zoomedImg, setZoomedImg] = useState(null); 
+  const questions = data.questions || [];
+  const mode = data.mode;
+  
+  const theme = THEMES[mode] || THEMES.default;
+  
+  // Title Logic
+  const title = data.title || (mode === 'maths' ? "Maths" : "Quiz");
+  const isOdd2Out = title === 'Odd 2 Out';
+  const showAlphabet = ['Letter Codes', 'Letter Sequences', 'Code Words'].includes(title);
+  
+  let content;
+  let headerColor;
+  if (mode === 'maths') {
+    content = { ...MATHS_INSTRUCTION, title: "Maths" };
+    headerColor = THEMES.maths.header;
+  } else if (mode === 'vr') {
+    content = VR_CONTENT[title] || VR_CONTENT["default"];
+    headerColor = THEMES.vr.header;
+  } else if (mode === 'mixed') {
+    content = { title: "Quick Start", instruction: "A mix of Maths, English, and Verbal Reasoning!", tip: "Switch your brain gears quickly!" };
+    headerColor = THEMES.mixed.header;
+  } else {
+    // English (Spelling, Grammar, etc when standalone)
+    content = ENGLISH_INSTRUCTIONS[mode] || ENGLISH_INSTRUCTIONS["default"];
+    headerColor = THEMES.english.header;
+  }
+
+  const handleSelect = (qIndex, option) => {
+    if (showResult && !reviewMode) return;
+    
+    // ODD 2 OUT LOGIC (Multi-Select, max 2)
+    if (isOdd2Out) {
+        const currentSelected = answers[qIndex] || [];
+        let newSelected;
+        if (currentSelected.includes(option)) {
+            newSelected = currentSelected.filter(o => o !== option);
+        } else {
+            if (currentSelected.length < 2) {
+                newSelected = [...currentSelected, option];
+            } else {
+                newSelected = [currentSelected[1], option];
+            }
+        }
+        setAnswers(prev => ({ ...prev, [qIndex]: newSelected }));
+    } else {
+        setAnswers(prev => ({ ...prev, [qIndex]: option }));
+    }
+  };
+
+  // Helper to check answer loose match 
+  const isCorrect = (q, selected) => {
+      if(!q.correct || !selected) return false;
+      const cleanCorrect = (q.correct || "").toString().trim();
+      
+      // ODD 2 OUT LOGIC
+      if (isOdd2Out) {
+          if (!Array.isArray(selected) || selected.length !== 2) return false;
+          // Parse correct string "AD" -> indices 0 and 3 -> Options[0] and Options[3]
+          const correctIndices = cleanCorrect.split('').map(char => char.charCodeAt(0) - 65); // A=0, B=1...
+          const correctOptions = correctIndices.map(i => q.options[i]);
+          
+          // Check if both selected options are in the correctOptions array
+          return selected.every(s => correctOptions.includes(s));
+      }
+
+      const cleanSelected = (selected || "").toString().trim();
+      
+      // Strict matching for Maths/VR (except specific types)
+      if (mode === 'maths') {
+          return cleanCorrect === cleanSelected;
+      }
+
+      // Exact match
+      if(cleanCorrect === cleanSelected) return true;
+      if(cleanCorrect.toLowerCase() === cleanSelected.toLowerCase()) return true;
+
+      // Single Letter mapping 
+      if((mode === 'english' || mode === 'vr' || mode === 'mixed') && cleanCorrect.length === 1 && cleanCorrect >= 'A' && cleanCorrect <= 'E') {
+         const index = cleanCorrect.toUpperCase().charCodeAt(0) - 65; 
+         if(q.options && q.options[index] === selected) return true;
+      }
+
+      // English Loose Match (Explanation check)
+      if (mode === 'english' || (mode === 'mixed' && q.subject === 'english')) {
+          if (q.explanation && q.explanation.toLowerCase().includes(cleanSelected.toLowerCase())) return true;
+      }
+      
+      // VR Hidden Word specific (ignore spaces)
+      if ((mode === 'vr' || mode === 'mixed') && q.topic === 'Hidden Words') {
+          if (cleanSelected.replace(/\s+/g, '').toLowerCase().includes(cleanCorrect.toLowerCase())) return true;
+      }
+
+      return false;
+  };
+
+  const calculateScore = () => {
+    let s = 0;
+    questions.forEach((q, idx) => { 
+        if (isCorrect(q, answers[idx])) s++; 
+    });
+    return s;
+  };
+
+  const isAnsweredCorrectly = (idx) => {
+      if (isOdd2Out) return (answers[idx] && answers[idx].length === 2);
+      return answers[idx] !== undefined;
+  }
+
+  const allAnswered = questions.every((_, idx) => isAnsweredCorrectly(idx));
+
+  if (showResult && !reviewMode) {
+    const score = calculateScore();
+    return (
+      <div className={`min-h-screen flex flex-col items-center justify-center p-6 ${theme.bg}`}>
+        <div className="bg-white p-8 rounded-3xl shadow-xl text-center max-w-md w-full">
+          <h2 className={`text-4xl font-black ${theme.text} mb-4`}>Quiz Complete!</h2>
+          <div className="text-6xl font-black text-slate-800 mb-2">{score} / {questions.length}</div>
+          <p className="text-slate-500 mb-8 font-medium text-lg">{score === questions.length ? "Perfect! 🌟" : "Good Practice! 📚"}</p>
+          <button onClick={() => setReviewMode(true)} className={`w-full py-4 rounded-xl ${theme.text} font-bold text-lg border-2 border-slate-200 hover:bg-slate-50 mb-4 flex items-center justify-center gap-2`}><Eye size={20}/> Review Answers</button>
+          <button onClick={() => navigate('menu')} className={`w-full py-4 rounded-xl text-white font-bold text-lg shadow-lg hover:opacity-90 transition-all ${theme.accent}`}>Back to Menu</button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className={`min-h-screen flex flex-col ${theme.bg}`}>
+      {zoomedImg && (
+        <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 cursor-pointer" onClick={() => setZoomedImg(null)}>
+           <img src={zoomedImg} alt="Zoomed" className="max-w-full max-h-full rounded-lg shadow-2xl transition-transform transform scale-100 hover:scale-105" />
+           <button className="absolute top-6 right-6 text-white bg-white/20 p-2 rounded-full"><X size={32}/></button>
+        </div>
+      )}
+      
+      <div className="sticky top-0 z-40">
+        <QuizHeader title={reviewMode ? "Reviewing Answers" : (content.header || content.title || title)} subText={reviewMode ? "Check your mistakes" : `${questions.length} Questions`} onBack={() => reviewMode ? setReviewMode(false) : navigate('menu')} themeColor={headerColor} />
+        {showAlphabet && <AlphabetBar />}
+      </div>
+
+      <div className="flex-1 overflow-y-auto p-4">
+        <div className="max-w-4xl mx-auto space-y-8 pb-24 pt-4">
+          {!reviewMode && (content.instruction || content.tip) && (
+          <div className="bg-white p-6 rounded-[2rem] border-4 border-dashed border-slate-200 shadow-sm relative overflow-hidden">
+             <div className="flex flex-col md:flex-row gap-6 items-start">
+                <div className="flex-1">
+                   <div className="flex items-center gap-2 mb-2"><Info className={`${theme.text}`} size={24} /><h3 className={`text-xl font-black ${theme.text} uppercase tracking-wider`}>Mission</h3></div>
+                   <p className="text-lg text-slate-700 font-medium leading-relaxed">{content.instruction}</p>
+                </div>
+                {content.tip && <div className="relative bg-gradient-to-br from-yellow-50 to-amber-50 p-5 rounded-2xl shadow-sm border border-amber-100 max-w-sm w-full"><div className="absolute top-4 -left-2 w-4 h-4 bg-yellow-50 border-l border-b border-amber-100 transform rotate-45"></div><div className="flex items-start gap-3"><div className="bg-amber-100 p-2 rounded-full text-amber-600"><Star size={20} fill="currentColor" /></div><div><h4 className="font-bold text-amber-800 text-sm uppercase mb-1">Pro Tip</h4><p className="text-amber-900 text-sm font-medium italic">"{content.tip}"</p></div></div></div>}
+             </div>
+          </div>
+          )}
+          {questions.map((q, idx) => {
+            const isAnswered = isOdd2Out ? (answers[idx] && answers[idx].length > 0) : (answers[idx] !== undefined);
+            const correctState = isCorrect(q, answers[idx]);
+            
+            // Determine header for mixed mode
+            let qHeader = q.topic || (mode === 'maths' ? "Maths" : "Question");
+            
+            return (
+              <div key={idx} className={`bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow ${reviewMode && !correctState ? 'ring-2 ring-red-200' : ''}`}>
+                <div className="flex gap-5 mb-6">
+                  <span className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-black text-lg shadow-sm ${reviewMode ? (correctState ? 'bg-green-500 text-white' : 'bg-red-500 text-white') : (isAnswered ? theme.accent + ' text-white' : 'bg-slate-100 text-slate-400')}`}>{reviewMode && correctState ? <Check size={20}/> : (reviewMode ? <X size={20}/> : idx + 1)}</span>
+                  <div className="flex-1">
+                    {/* Header for Mixed Mode */}
+                    {mode === 'mixed' && <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1 block">{qHeader}</span>}
+
+                    {/* HIDE QUESTION ID IF MODE IS VR OR SPELLING/GRAMMAR */}
+                    {q.question && <h3 className="text-xl font-bold text-slate-800 leading-relaxed whitespace-pre-wrap">{q.question}</h3>}
+                    
+                    {/* MOVE A LETTER FORMATTING */}
+                    {q.topic === 'Move a Letter' && !q.question && q.options && (
+                        <h3 className="text-xl font-bold text-slate-800 leading-relaxed tracking-wide text-center bg-slate-50 p-4 rounded-xl border border-slate-200 mb-4">
+                           Move a letter from the left word to the right.
+                        </h3>
+                    )}
+                    
+                    {q.image && <ImageWithFallback filename={q.image} baseUrl={MATHS_IMG_BASE} alt={`Question ${idx + 1}`} />}
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-3 pl-0 md:pl-16">
+                  {q.options.map((opt, i) => {
+                    let btnClass = "border-slate-100 bg-white text-slate-600";
+                    const isSelected = isOdd2Out ? (answers[idx] || []).includes(opt) : (answers[idx] === opt);
+
+                    if (reviewMode) {
+                        let isThisOptCorrect = false;
+                        if (isOdd2Out) {
+                            const correctIndices = (q.correct || "").toString().trim().split('').map(c => c.charCodeAt(0) - 65);
+                            const correctOptions = correctIndices.map(ci => q.options[ci]);
+                            isThisOptCorrect = correctOptions.includes(opt);
+                        } else {
+                            isThisOptCorrect = isCorrect(q, opt);
+                        }
+
+                        if (isThisOptCorrect) btnClass = "bg-green-100 border-green-500 text-green-800 ring-2 ring-green-200 font-bold";
+                        else if (isSelected) btnClass = "bg-red-100 border-red-500 text-red-800";
+                        else btnClass = "opacity-50 grayscale";
+                    } else {
+                        if (isSelected) btnClass = `border-${theme.text.split('-')[1]}-500 bg-${theme.text.split('-')[1]}-50 text-${theme.text.split('-')[1]}-700 ring-2 ring-${theme.text.split('-')[1]}-200`;
+                        else btnClass = "hover:border-slate-300 hover:bg-slate-50";
+                    }
+                    return (
+                      <button disabled={reviewMode} key={i} onClick={() => handleSelect(idx, opt)} className={`flex-1 min-w-[120px] p-4 rounded-2xl text-left text-base font-semibold transition-all border-2 shadow-sm ${btnClass}`}>{opt}</button>
+                    );
+                  })}
+                </div>
+                {reviewMode && q.explanation && (
+                  <div className="mt-4 p-3 bg-blue-50 text-blue-800 rounded-lg text-sm border border-blue-200 flex gap-2">
+                    <Info size={18} className="shrink-0 mt-0.5" />
+                    <div><strong>Explanation:</strong> {q.explanation}</div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {!reviewMode && <div className="fixed bottom-0 left-0 w-full bg-white border-t p-4 shadow-[0_-5px_20px_rgba(0,0,0,0.05)] z-30"><div className="max-w-3xl mx-auto"><button onClick={() => setShowResult(true)} disabled={!allAnswered} className={`w-full py-4 rounded-2xl font-bold text-xl shadow-lg transition-all transform active:scale-95 ${allAnswered ? theme.accent + ' text-white hover:brightness-110' : 'bg-slate-200 text-slate-400 cursor-not-allowed flex items-center justify-center gap-2'}`}>{allAnswered ? 'Submit Answers! 🚀' : <><Lock size={20}/> Answer All Questions</>}</button></div></div>}
+    </div>
+  );
+};
+
+// --- DATA LOADER ---
 const GenericLoadingScreen = ({ config, navigate }) => {
  const [status, setStatus] = useState("Connecting...");
  const [showUpload, setShowUpload] = useState(false);
- const [debugLog, setDebugLog] = useState([]);
- const addLog = (msg) => setDebugLog(prev => [...prev, msg]);
- 
  const mode = config.mode;
- const isMaths = mode === 'maths';
- const isVR = ['hidden_word', 'move_letter', 'missing_letter', 'math_equations'].includes(mode);
- const theme = isMaths ? THEMES.maths : (isVR ? THEMES.vr : THEMES.english);
+ const theme = THEMES[mode] || THEMES.default;
 
- const processData = (rows) => {
-  // Remove header row if present
-  if (rows.length > 0 && (rows[0][0].toLowerCase().includes('question') || rows[0][0].toLowerCase().includes('id'))) rows.shift();
-  
-  let filtered = rows;
-  let title = config.mode.charAt(0).toUpperCase() + config.mode.slice(1).replace('_', ' ');
-  let isMaths = config.mode === 'maths';
-  let selected = [];
-
-  if (isMaths) {
-    const diffMode = config.difficulty;
-    let pool = [];
-
-    // 1. Filter by Difficulty
-    if (diffMode === "Mixed") {
-      title = "Full Practice Paper";
-      pool = rows;
-    } else {
-      pool = rows.filter(r => {
-        if (!r || r.length < 12) return false;
-        let d = parseInt(r[8]); if (isNaN(d)) d = parseInt(r[9]); if (isNaN(d)) return false;
-        if (diffMode === "Easy") return d <= 25;
-        if (diffMode === "Medium") return d >= 13 && d <= 38;
-        if (diffMode === "Hard") return d >= 26;
-        return false;
-      });
-      title = `${diffMode} Maths`;
-    }
-
-    if (pool.length === 0) { alert("No questions found."); return; }
-
-    // 2. SMARTER GROUPING: Split by "_" to get the exact ID (e.g. "P2Q1")
-    const groups = {};
-    pool.forEach(row => {
-      const ref = (row[11] || "").toString().trim();
-      const parts = ref.split('_');
-      const groupKey = parts[0]; 
-      
-      if (groupKey && groupKey.length > 1) {
-        if (!groups[groupKey]) groups[groupKey] = [];
-        groups[groupKey].push(row);
-      }
-    });
-
-    // 3. ROUND ROBIN SELECTION
-    let groupKeys = Object.keys(groups);
-    groupKeys.sort(() => 0.5 - Math.random()); // Shuffle topics
-
-    let picked = []; // Temporary list
-    const countNeeded = config.count || 10;
+ const mapQuestionData = (row, mode, subMode, title) => {
+    if (!row || row.length === 0) return {};
+    let q = { topic: title, subject: mode }; 
     
-    // Loop through groups until we have enough questions
-    while (picked.length < countNeeded && groupKeys.length > 0) {
-      for (let i = 0; i < groupKeys.length; i++) {
-        if (picked.length >= countNeeded) break;
-        
-        const key = groupKeys[i];
-        const groupList = groups[key];
-        
-        if (groupList.length > 0) {
-          const randIndex = Math.floor(Math.random() * groupList.length);
-          picked.push(groupList[randIndex]);
-          groupList.splice(randIndex, 1); // Remove so we don't pick it again immediately
-        }
-      }
-      groupKeys = groupKeys.filter(k => groups[k].length > 0);
+    if (mode === 'maths') {
+       q = { ...q, question: row[0], image: (row[1] || "").trim() || null, options: [row[2], row[3], row[4], row[5], row[6]].filter(x => x && x.trim()), correct: row[7], difficulty: parseInt(row[8]) || 0, ref: row[11] || "" };
+    } else if (mode === 'vr') {
+       if (title === 'Move a Letter') {
+          const w1 = row[1]; const w2 = row[2];
+          q = { ...q, question: `${w1}  ➔  ${w2}`, options: [row[3], row[4], row[5], row[6], row[7]].filter(x => x), correct: row[8], explanation: row[9] };
+       } 
+       else if (title === 'Compound Word Bridge') {
+          q = { ...q, question: row[0], options: [row[1], row[2], row[3], row[4], row[5]].filter(x => x), correct: row[6], difficulty: parseInt(row[7]), explanation: "" };
+       }
+       else if (title === 'Letters for Numbers') {
+          let correct = row[8]; if (correct && correct.startsWith("Option")) correct = correct.replace("Option", "");
+          q = { ...q, question: `Key: ${row[1] || ""}\n\nEquation: ${row[2] || ""}`, options: [row[3], row[4], row[5], row[6], row[7]].filter(x => x), correct: correct, explanation: row[9] };
+       }
+       else if (title === 'Missing 3 Letters') { 
+          q = { ...q, question: row[1], options: [row[2], row[3], row[4], row[5], row[6]].filter(x => x), correct: row[7], explanation: row[8] };
+       }
+       else if (title === 'Synonyms & Antonyms') {
+          q = { ...q, question: row[0], options: [row[1], row[2], row[3], row[4], row[5]].filter(x => x), correct: row[6], difficulty: parseInt((row[7] || "").replace('Level ', '')) || 1, explanation: "" };
+       }
+       else if (title === 'Verbal Analogies') {
+          q = { ...q, question: row[1], options: [row[2], row[3], row[4], row[5], row[6]].filter(x => x), correct: row[7], explanation: row[8] };
+       }
+       else if (title === 'Logical Deduction') {
+          q = { ...q, question: row[2], options: [row[3], row[4], row[5], row[6], row[7]].filter(x => x), correct: row[8], explanation: row[9] };
+       }
+       else if (title === 'Missing Letter' || title === 'Letter Sequences') {
+          q = { ...q, question: row[0], options: [row[1], row[2], row[3], row[4], row[5]].filter(x => x), correct: row[6], explanation: row[7] };
+       }
+       else if (title === 'Homonyms') {
+          q = { ...q, question: row[2], options: [row[3], row[4], row[5], row[6], row[7]].filter(x => x), correct: row[8], explanation: row[9] };
+       }
+       else if (title === 'Sequences') {
+          q = { ...q, question: row[1], options: [row[2], row[3], row[4], row[5], row[6]].filter(x => x), correct: row[7], difficulty: parseInt(row[8]), explanation: "" };
+       }
+       else if (['Corresponding Letters', 'Letter Codes', 'Compound Words', 'Odd 2 Out', 'Code Words'].includes(title)) {
+          q = { ...q, question: row[1], options: [row[2], row[3], row[4], row[5], row[6]].filter(x => x), correct: row[7], explanation: row[8] };
+       }
+       else {
+          q = { ...q, question: null, options: [row[2], row[3], row[4], row[5], row[6]].filter(x => x), correct: row[7], explanation: row[9] || row[8] || "" };
+       }
+    } 
+    else if (mode === 'english') {
+       if (subMode === 'spelling') {
+          const opts = [row[1], row[2], row[3], row[4]].filter(x => x); if(opts.length === 4) opts.push("No mistake");
+          let correct = (row[5] || "").trim(); if(correct === 'N' || correct === 'n') correct = "No mistake";
+          q = { ...q, question: null, options: opts, correct: correct, explanation: row[6] };
+       }
+       else if (subMode === 'grammar') {
+          const opts = [row[2], row[3], row[4], row[5]].filter(x => x); if(opts.length === 4) opts.push("No mistake");
+          let correctRaw = (row[6] || "").trim();
+          let correct = correctRaw;
+          if (correctRaw.length === 1) { const upper = correctRaw.toUpperCase(); if (upper === 'A') correct = opts[0]; else if (upper === 'B') correct = opts[1]; else if (upper === 'C') correct = opts[2]; else if (upper === 'D') correct = opts[3]; else if (upper === 'E' || upper === 'N') correct = opts[4]; }
+          else if (correctRaw.toLowerCase() === 'no mistake') { correct = opts[4]; }
+          q = { ...q, question: null, options: opts, correct: correct, explanation: row[7] };
+       }
+       else if (subMode === 'cloze') {
+          const opts = [row[4], row[5], row[6], row[7], row[8]].filter(x => x);
+          q = { ...q, question: row[3], text: row[2], options: opts, correct: row[9], passageId: row[0], explanation: row[10] };
+       }
     }
-    
-    selected = picked; 
-
-    // 4. Sort by Ref for nice exam order
-    selected.sort((a, b) => {
-       const refA = (a[11] || "").toString(); 
-       const refB = (b[11] || "").toString();
-       return refA.localeCompare(refB, undefined, { numeric: true, sensitivity: 'base' });
-    });
-
-    navigate('quiz_maths', { questions: selected, title, mode: config.mode });
-    return; // Exit early so we don't run the English logic below
-  } 
-
-  // --- Logic for English/Other subjects ---
-  if (filtered.length === 0) { alert("No questions found."); return; }
-
-  if (config.mode === 'grammar') {
-    const startIndices = [];
-    filtered.forEach((r, idx) => {
-      if (r.length > 1 && r[1].toString().trim() === '1') startIndices.push(idx);
-    });
-
-    if (startIndices.length === 0) {
-      selected = filtered.slice(0, 10);
-    } else {
-      const rndStart = startIndices[Math.floor(Math.random() * startIndices.length)];
-      selected = filtered.slice(rndStart, rndStart + 10);
-    }
-  } else {
-    filtered.sort(() => 0.5 - Math.random());
-    selected = filtered.slice(0, config.count || 10);
-  }
-  
-  // Navigation for non-maths
-  if (config.mode === 'spelling') {
-   navigate('quiz_spelling', { questions: selected, title: "Spelling Practice" });
-  } else if (config.mode === 'grammar') {
-   navigate('quiz_grammar', { questions: selected, title: "Grammar Practice" });
-  } else {
-   navigate('quiz_generic', { questions: selected, title, mode: config.mode });
-  }
+    return q;
  };
 
- const handleManualUpload = (e) => {
-  const file = e.target.files[0];
-  if (!file) return;
-  setStatus("Reading file...");
-  const reader = new FileReader();
-  reader.onload = (evt) => processData(parseCSV(evt.target.result));
-  reader.readAsText(file);
+ const processData = async () => {
+  if (mode === 'mixed' && config.title === 'Quick Start') {
+      try {
+          const mathRes = await fetch(MATHS_URL);
+          const mathRows = parseCSV(await mathRes.text()); mathRows.shift();
+          const maths = mathRows.map(r => mapQuestionData(r, 'maths')).filter(q => q.difficulty >= 13 && q.difficulty <= 38).sort(() => 0.5 - Math.random()).slice(0, 3);
+
+          const engTypes = ['grammar', 'spelling', 'cloze'];
+          const pickedEngType = engTypes[Math.floor(Math.random() * engTypes.length)];
+          const engRes = await fetch(ENGLISH_URLS[pickedEngType]);
+          const engRows = parseCSV(await engRes.text()); engRows.shift();
+          let engQs = [];
+          if(pickedEngType === 'cloze') {
+             const groups = {}; engRows.forEach(r => { if(r.length>5) { const k=r[0]; if(!groups[k]) groups[k]=[]; groups[k].push(mapQuestionData(r, 'english', 'cloze')); }});
+             const keys = Object.keys(groups);
+             if(keys.length > 0) { const randKey = keys[Math.floor(Math.random()*keys.length)]; engQs = groups[randKey].slice(0, 3); }
+          } else {
+             engQs = engRows.map(r => mapQuestionData(r, 'english', pickedEngType)).sort(() => 0.5 - Math.random()).slice(0, 3);
+          }
+
+          const vrTopicsShuffled = VR_TOPICS.sort(() => 0.5 - Math.random()).slice(0, 2);
+          let vrQs = [];
+          for (const topic of vrTopicsShuffled) {
+              try {
+                  const res = await fetch(REPO_BASE_VR + topic.file);
+                  const rows = parseCSV(await res.text()); rows.shift();
+                  const qs = rows.map(r => mapQuestionData(r, 'vr', null, topic.name)).sort(() => 0.5 - Math.random()).slice(0, 3);
+                  vrQs = [...vrQs, ...qs];
+              } catch(e) { console.error("Skip topic", topic); }
+          }
+
+          const combined = [...maths, ...engQs, ...vrQs];
+          navigate('quiz_scrollable', { questions: combined, title: 'Quick Start', mode: 'mixed' });
+
+      } catch (e) {
+          alert("Error loading quick start: " + e.message);
+          navigate('menu');
+      }
+      return;
+  }
+
+  const url = config.url || (config.mode === 'maths' ? MATHS_URL : null); 
+  if (!url) return;
+  
+  try {
+      const res = await fetch(url);
+      const rows = parseCSV(await res.text());
+      if (rows.length > 0 && (rows[0][0].toLowerCase().includes('question') || rows[0][0].toLowerCase().includes('id') || rows[0][0].toLowerCase().includes('passage'))) rows.shift();
+
+      if (mode === 'english' && config.subMode === 'cloze') {
+         const groups = {};
+         rows.forEach(r => { if(r.length < 5) return; const key = r[0]; if(!groups[key]) groups[key] = []; groups[key].push(mapQuestionData(r, mode, config.subMode, config.title)); });
+         const keys = Object.keys(groups); const randomKey = keys[Math.floor(Math.random() * keys.length)];
+         navigate('cloze_screen', { questions: groups[randomKey], mode: 'english' });
+         return;
+      }
+
+      if (mode === 'english' && config.subMode === 'grammar') {
+         const groups = {};
+         rows.forEach(r => { if(r.length < 5) return; const key = r[0]; if(!groups[key]) groups[key] = []; groups[key].push(mapQuestionData(r, mode, config.subMode, config.title)); });
+         const keys = Object.keys(groups); const randomKey = keys[Math.floor(Math.random() * keys.length)];
+         navigate('quiz_scrollable', { questions: groups[randomKey], title: config.title, mode: config.subMode });
+         return;
+      }
+
+      if (mode === 'english' && config.subMode === 'comprehension') {
+         const groups = {};
+         rows.forEach(r => { if(r.length < 5) return; const rawQ = mapQuestionData(r, mode, config.subMode, config.title); const key = rawQ.file; if(!key) return; if(!groups[key]) groups[key] = []; groups[key].push(rawQ); });
+         const keys = Object.keys(groups); const randomKey = keys[Math.floor(Math.random() * keys.length)];
+         navigate('comprehension_screen', { questions: groups[randomKey], filename: randomKey, mode: 'english' });
+         return;
+      }
+
+      let pool = rows.map(r => mapQuestionData(r, mode, config.subMode, config.title)).filter(q => q.options && q.options.length > 1);
+
+      if (mode === 'maths') {
+        let diffMode = config.difficulty;
+        if (diffMode && diffMode !== "Mixed") {
+          pool = pool.filter(q => {
+             let d = q.difficulty;
+             if (diffMode === "Easy") return d >= 1 && d <= 25;
+             if (diffMode === "Medium") return d >= 13 && d <= 38;
+             if (diffMode === "Hard") return d >= 26 && d <= 50;
+             return false;
+          });
+        }
+        const groups = {}; pool.forEach(q => { const key = q.ref && q.ref.length >= 5 ? q.ref.substring(0, 5) : "MISC"; if (!groups[key]) groups[key] = []; groups[key].push(q); });
+        let groupKeys = Object.keys(groups).sort(() => 0.5 - Math.random());
+        let selected = []; const targetCount = config.count || 10;
+        while (selected.length < targetCount && groupKeys.length > 0) {
+          for (let i = 0; i < groupKeys.length; i++) {
+            if (selected.length >= targetCount) break;
+            const list = groups[groupKeys[i]];
+            if (list.length > 0) { const randIndex = Math.floor(Math.random() * list.length); selected.push(list[randIndex]); list.splice(randIndex, 1); }
+          }
+          groupKeys = groupKeys.filter(k => groups[k].length > 0);
+        }
+        pool = selected.sort((a, b) => a.difficulty - b.difficulty);
+      } else {
+        if (config.title === 'Compound Word Bridge') { pool.sort(() => 0.5 - Math.random()); pool = pool.slice(0, 8).sort((a, b) => a.difficulty - b.difficulty); } 
+        else if (config.title === 'Synonyms & Antonyms' || config.title === 'Sequences') { pool.sort(() => 0.5 - Math.random()); pool = pool.slice(0, 10).sort((a, b) => a.difficulty - b.difficulty); }
+        else { pool.sort(() => 0.5 - Math.random()); const count = mode === 'vr' ? 8 : 10; pool = pool.slice(0, count); }
+      }
+
+      if (pool.length === 0) { alert("No questions found."); navigate('menu'); return; }
+      navigate('quiz_scrollable', { questions: pool, title: config.title, mode: config.subMode || mode });
+
+  } catch (e) {
+      alert("Error: " + e.message);
+      navigate('menu');
+  }
  };
 
  useEffect(() => {
-  let isMounted = true;
-  const timeoutId = setTimeout(() => { if (isMounted) handleError("Connection timed out (15s)."); }, 15000);
-  const handleError = (msg) => { clearTimeout(timeoutId); addLog(`Error: ${msg}`); setShowUpload(true); setStatus("Failed"); };
-
-  const fetchData = async () => {
-   const url = CSV_URLS[config.mode];
-   if (!url) { handleError(`No URL configured for ${config.mode}`); return; }
-   setStatus("Downloading...");
-   addLog(`Attempting fetch from: ${url}`);
-   try {
-    const response = await fetch(url, { cache: 'no-cache' });
-    if (!response.ok) { addLog(`Direct failed (${response.status}).`); throw new Error(`HTTP Error ${response.status}`); }
-    const text = await response.text();
-    if (text.trim().startsWith('<')) throw new Error("Received HTML.");
-    const rows = parseCSV(text);
-    if (rows.length < 2) throw new Error("File empty.");
-    if (isMounted) {
-      clearTimeout(timeoutId);
-      if (config.mode === 'comprehension') processComprehensionData(rows);
-      else if (config.mode === 'cloze') processClozeData(rows);
-      else processData(rows);
-    }
-   } catch (e) { if (isMounted) handleError(e.message); }
-  };
-
-  const processComprehensionData = async (rows) => {
-    if (rows.length > 0 && rows[0][0].toLowerCase().includes('id')) rows.shift();
-    let filenameIndex = 8;
-    if (rows.length > 0) rows[0].forEach((c, i) => { if (c && c.toString().includes('.txt')) filenameIndex = i; });
-    const groups = {};
-    rows.forEach(r => {
-      if (r.length <= filenameIndex) return;
-      const file = r[filenameIndex].trim();
-      if (!file || file.length < 3 || !file.includes('.')) return;
-      if (!groups[file]) groups[file] = [];
-      groups[file].push(r);
-    });
-    const filenames = Object.keys(groups);
-    if (filenames.length === 0) { handleError("No stories found in CSV."); return; }
-    navigate('comprehension_selection', { groups: groups });
-  };
-
-  const processClozeData = (rows) => {
-    if (rows.length > 0 && rows[0][0].toLowerCase().includes('id')) rows.shift();
-    const groups = {};
-    rows.forEach(r => {
-      if (!r[0]) return;
-      const storyName = r[0].trim();
-      if (!groups[storyName]) groups[storyName] = [];
-      groups[storyName].push(r);
-    });
-    const filenames = Object.keys(groups);
-    if (filenames.length === 0) { handleError("No Cloze stories found."); return; }
-    navigate('cloze_selection', { groups });
-  };
-
-  fetchData();
-  return () => { isMounted = false; clearTimeout(timeoutId); };
+   processData();
  }, []);
 
  return (
   <div className={`flex flex-col items-center justify-center min-h-screen p-6 text-center ${theme.bg}`}>
-    {!showUpload ? (
-     <>
-      <div className={`animate-spin rounded-full h-12 w-12 border-b-2 ${theme.accentText} mb-4`}></div>
-      <p className="text-lg text-slate-600 font-semibold">{status}</p>
-     </>
-    ) : (
-     <div className="bg-white p-6 rounded-2xl shadow-xl max-w-sm w-full border-t-4 border-red-500">
-      <h3 className="text-xl font-bold mb-2 text-slate-800">Connection Failed</h3>
-      <div className="bg-red-50 text-red-700 text-xs p-2 rounded mb-4 text-left font-mono h-24 overflow-y-auto">{debugLog.join("\n")}</div>
-      <label className="block w-full cursor-pointer group"><div className="flex items-center justify-center w-full h-12 bg-indigo-600 text-white rounded-xl font-bold hover:bg-indigo-700 transition-colors"><Upload className="mr-2" size={20}/> Upload CSV Manually</div><input type="file" accept=".csv" className="hidden" onChange={handleManualUpload} /></label>
-      <button onClick={() => navigate('menu')} className="mt-4 text-sm text-slate-400 hover:text-slate-600 underline">Cancel</button>
-     </div>
-    )}
+    <div className={`animate-spin rounded-full h-12 w-12 border-b-2 ${theme.text} mb-4`}></div>
+    <p>{status}</p>
   </div>
  );
 };
 
-// --- SELECTION SCREENS (Styled) ---
-const ComprehensionSelectionScreen = ({ data, navigate }) => {
-  const groups = data.groups || {};
-  const filenames = Object.keys(groups);
-  const loadStory = async (filename) => {
-    try { const textUrl = ENGLISH_TEXT_BASE_URL + filename; const res = await fetch(textUrl); const textContent = await res.text(); navigate('quiz_comprehension', { questions: groups[filename], title: "Comprehension", passageText: textContent, filename, groups }); } catch(e){alert("Error")}
+// --- APP ROUTER ---
+const App = () => {
+  const [screen, setScreen] = useState('menu');
+  const [config, setConfig] = useState({});
+  const [data, setData] = useState({});
+  const [mathsDiff, setMathsDiff] = useState(null);
+
+  const navigate = (nextScreen, params = {}) => {
+    if (params) {
+      if (params.title) setConfig(c => ({ ...c, ...params }));
+      if (params.questions) setData(d => ({ ...d, questions: params.questions }));
+      if (params.filename) setData(d => ({ ...d, filename: params.filename }));
+      if (params.mode) setConfig(c => ({ ...c, mode: params.mode }));
+      if (params.subMode) setConfig(c => ({ ...c, subMode: params.subMode })); 
+      if (params.url) setConfig(c => ({ ...c, url: params.url }));
+    }
+    setScreen(nextScreen);
   };
-  const pickRandom = () => { if (filenames.length>0) loadStory(filenames[Math.floor(Math.random()*filenames.length)]) };
 
-  return (
-   <div className={`flex flex-col min-h-screen ${THEMES.english.bg}`}>
-     <SubjectHeader theme={THEMES.english} title="Select a Story" onBack={() => navigate('english_menu')} />
-     <main className="p-6 flex-1 overflow-y-auto">
-       <button onClick={pickRandom} className={`w-full ${THEMES.english.buttonPrimary} p-5 rounded-xl font-bold shadow-lg mb-6 flex items-center justify-center`}>
-         <Brain className="mr-2" /> Surprise Me (Random)
-       </button>
-       <h2 className={`text-sm font-bold uppercase tracking-wider mb-3 ${THEMES.english.accentText}`}>Available Texts</h2>
-       <div className="space-y-3">{filenames.map((file, idx) => (
-         <button key={idx} onClick={() => loadStory(file)} className="w-full bg-white p-4 rounded-lg border border-blue-100 text-left hover:bg-white hover:shadow-md transition-all flex items-center">
-           <div className="bg-blue-100 text-blue-600 w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs mr-3">{idx + 1}</div>
-           <span className="font-medium text-slate-700">{file.replace('.txt', '').replace(/_/g, ' ')}</span>
-           <ArrowRight className="ml-auto text-blue-200" size={16} />
-         </button>
-       ))}</div>
-     </main>
-   </div>
- );
-};
-
-const ClozeSelectionScreen = ({ data, navigate }) => {
-  const groups = data.groups || {};
-  const ids = Object.keys(groups);
-  const loadCloze = (id) => {
-    const q = groups[id];
-    let p = "";
-    const q1Row = q.find(r => r[3] && r[3].toString().trim() === '1');
-    if (q1Row) p = q1Row[2];
-    let t = id;
-    navigate('quiz_cloze', { questions: q, title: t, passageText: p, groups });
-  };
-  const pickRandom = () => { if(ids.length>0) loadCloze(ids[Math.floor(Math.random()*ids.length)]); };
-
-  return (
-    <div className={`flex flex-col min-h-screen ${THEMES.english.bg}`}>
-      <SubjectHeader theme={THEMES.english} title="Select Cloze Passage" onBack={() => navigate('english_menu')} />
-      <main className="p-6 flex-1 overflow-y-auto">
-        <button onClick={pickRandom} className={`w-full ${THEMES.english.buttonPrimary} p-5 rounded-xl font-bold shadow-lg mb-6 flex items-center justify-center`}>
-          <Brain className="mr-2" /> Surprise Me (Random)
-        </button>
-        <div className="space-y-3">{ids.map((id, idx) => {
-          let preview = id;
-          if (groups[id]) {
-            const q1 = groups[id].find(r => r[3] && r[3].toString().trim() === '1');
-            if (q1 && q1[2]) {
-              const firstLine = q1[2].split('\n')[0];
-              if (firstLine.length < 40) preview = firstLine;
-            }
-          }
-          return (
-            <button key={idx} onClick={() => loadCloze(id)} className="w-full bg-white p-4 rounded-lg border border-purple-100 text-left hover:shadow-md transition-all flex items-center">
-              <div className="bg-purple-100 text-purple-600 w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs mr-3">{idx + 1}</div>
-              <span className="font-medium text-slate-700">{preview}</span>
-              <ArrowRight className="ml-auto text-purple-200" size={16} />
-            </button>
-          );
-        })}</div>
-      </main>
-    </div>
-  );
-};
-
-// --- QUIZZES ---
-const MathsQuizScreen = ({ data, navigate }) => {
-  const theme = THEMES.maths;
-  const [answers, setAnswers] = useState({});
-  const [submitted, setSubmitted] = useState(false);
-  const [zoomImg, setZoomImg] = useState(null);
-  const questions = data.questions || [];
-  if (questions.length === 0) return null;
-  
-  // Logic ... (Same as before)
-  const getResultInfo = (row, idx) => {
-    let qText = row[0]; let imgUrl = getDirectImageSrc(row[1], SUBJECT_IMAGE_URLS['maths']);
-    let opts = [row[2], row[3], row[4], row[5], row[6]]; let rawAns = (row[7] || "").trim();
-    let correctVal = String(rawAns);
-    const letters = ['A','B','C','D','E'];
-    if (letters.includes(rawAns.toUpperCase())) { const i = letters.indexOf(rawAns.toUpperCase()); correctVal = opts[i] ? String(opts[i]).toUpperCase() : String(rawAns).toUpperCase(); } else { correctVal = String(rawAns).toUpperCase(); }
-    return { qText, opts, correctVal, imgUrl };
-  };
-  const currentScore = questions.reduce((acc, row, idx) => { const { correctVal } = getResultInfo(row, idx); const userVal = (answers[idx] || "").toString().trim().toUpperCase(); return acc + (userVal === correctVal ? 1 : 0); }, 0);
-
-  return (
-    <div className="flex flex-col h-screen bg-slate-50">
-      <header className={`bg-gradient-to-r ${theme.headerGradient} text-white p-4 shadow-md flex items-center justify-between`}>
-        <div className="flex items-center"><button onClick={() => navigate('maths_menu')} className="mr-3"><ChevronLeft/></button><h1 className="font-bold">{data.title}</h1></div>
-      </header>
-      <div className="flex-1 overflow-y-auto p-4 space-y-6">
-        {questions.map((row, idx) => {
-          const { qText, opts, correctVal, imgUrl } = getResultInfo(row, idx);
-          const userSelIdx = answers[idx];
-          return (
-            <div key={idx} className="bg-white rounded-xl shadow-sm border border-slate-100 p-5">
-               <div className="text-xs font-bold text-slate-400 mb-3 tracking-wide">QUESTION {idx+1}</div>
-               <div className="text-lg font-bold text-slate-800 mb-6 text-center"><MathRenderer text={qText} /></div>
-               {imgUrl && (<div className="flex justify-center mb-6"><ResilientImage src={imgUrl} alt="Question" className="max-h-48 rounded-lg shadow-sm border border-slate-100 cursor-zoom-in" onClick={(src) => setZoomImg(src)} /></div>)}
-               <div className="flex flex-wrap gap-3 justify-center">
-                 {opts.map((opt, i) => { if (!opt) return null; const letter = ['A','B','C','D','E'][i]; const optStr = String(opt).trim().toUpperCase(); const isSel = userSelIdx === optStr;
-                   let btnClass = "bg-slate-50 text-slate-600 border border-slate-200 hover:bg-rose-50 hover:border-rose-200";
-                   if (!submitted) { if (isSel) btnClass = "bg-rose-600 text-white border-rose-600 shadow-md transform scale-105"; }
-                   else { if (optStr === correctVal.toUpperCase()) btnClass = "bg-green-500 text-white border-green-500"; else if (isSel) btnClass = "bg-red-500 text-white border-red-500"; else btnClass = "opacity-40 bg-slate-50"; }
-                   return (<button key={i} onClick={() => !submitted && setAnswers(p => ({...p, [idx]: optStr}))} className={`py-4 px-6 min-w-[4rem] rounded-xl font-bold text-sm flex flex-col items-center justify-center transition-all duration-200 ${btnClass}`}><span className="text-[10px] opacity-70 mb-1 font-normal">{letter}</span><MathRenderer text={opt} /></button>)
-                 })}
+  if (screen === 'maths_menu') {
+    return (
+      <div className="min-h-screen bg-orange-50">
+        <SubjectMenuHeader title="Maths Practice" onHome={() => setScreen('menu')} themeColor="bg-orange-600" />
+        <div className="p-6 flex flex-col items-center">
+          {!mathsDiff ? (
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-4xl">
+               {['Easy', 'Medium', 'Hard'].map(lvl => (
+                 <button key={lvl} onClick={() => setMathsDiff(lvl)} className="bg-white p-8 rounded-2xl shadow-lg hover:scale-105 transition-all text-xl font-bold text-orange-600 border-l-8 border-orange-400">{lvl}</button>
+               ))}
+               <button onClick={() => { setConfig({ mode: 'maths', difficulty: 'Mixed', count: 50 }); setScreen('loading'); }} className="bg-orange-600 p-8 rounded-2xl shadow-lg hover:scale-105 transition-all text-xl font-bold text-white">Mixed <span className="block text-sm text-white/80 font-normal mt-1">(50 Questions)</span></button>
+             </div>
+          ) : (
+             <div className="bg-white p-8 rounded-3xl shadow-xl w-full max-w-lg text-center">
+               <h3 className="text-2xl font-bold text-slate-700 mb-6">How many questions?</h3>
+               <div className="flex gap-4 justify-center">
+                 <button onClick={() => { setConfig({ mode: 'maths', difficulty: mathsDiff, count: 10 }); setScreen('loading'); }} className="px-8 py-4 bg-orange-100 text-orange-700 font-bold rounded-xl hover:bg-orange-200 text-xl">10</button>
+                 <button onClick={() => { setConfig({ mode: 'maths', difficulty: mathsDiff, count: 25 }); setScreen('loading'); }} className="px-8 py-4 bg-orange-600 text-white font-bold rounded-xl hover:bg-orange-700 text-xl">25</button>
                </div>
-               {submitted && (answers[idx] || "") !== correctVal && (<div className="mt-4 p-3 bg-rose-50 text-rose-700 text-sm rounded-lg border border-rose-100 text-center"><span className="font-bold">Correct Answer:</span> {correctVal}</div>)}
-            </div>
-          )
-        })}
+               <button onClick={() => setMathsDiff(null)} className="mt-6 text-slate-400 underline">Back</button>
+             </div>
+          )}
+        </div>
       </div>
-      <div className="p-4 bg-white border-t shadow-lg z-10">{!submitted ? (<button disabled={Object.keys(answers).length !== questions.length} onClick={() => setSubmitted(true)} className={`w-full ${theme.buttonPrimary} py-4 rounded-xl font-bold shadow-lg disabled:opacity-50 disabled:shadow-none transition-all`}>Submit Answers</button>) : (<div className="text-center"><div className="text-3xl font-black text-slate-800 mb-2">{currentScore} <span className="text-lg text-slate-400 font-medium">/ {questions.length}</span></div><button onClick={() => navigate('maths_menu')} className="w-full bg-slate-800 text-white py-4 rounded-xl font-bold">Finish Review</button></div>)}</div>
-      {zoomImg && <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 cursor-zoom-out" onClick={()=>setZoomImg(null)}><img src={zoomImg} className="max-w-full max-h-full rounded-lg shadow-2xl"/></div>}
-    </div>
-  )
-};
+    );
+  }
 
-const GenericMultipleChoiceQuiz = ({ data, navigate, color = "bg-orange-500" }) => {
-  const theme = THEMES.vr;
-  const [answers, setAnswers] = useState({});
-  const [submitted, setSubmitted] = useState(false);
-  const questions = data?.questions || [];
-  if (questions.length === 0) return null;
-  const getResultInfo = (row) => { const qText = row[1]; const opts = [row[3], row[4], row[5], row[6], row[7]]; let correctVal = (row[8] || "").trim().toUpperCase(); const matchIdx = opts.findIndex(o => o && String(o).trim().toUpperCase() === correctVal); if (matchIdx === -1) { const letters = ['A','B','C','D','E']; const letterIdx = letters.indexOf(correctVal); if (letterIdx > -1 && opts[letterIdx]) { correctVal = String(opts[letterIdx]).trim().toUpperCase(); } } else { correctVal = String(opts[matchIdx]).trim().toUpperCase(); } return { qText, opts, correctVal }; };
-  const currentScore = questions.reduce((acc, row, idx) => { const { correctVal } = getResultInfo(row, idx); const userVal = (answers[idx] || "").toString().trim().toUpperCase(); return acc + (userVal === correctVal ? 1 : 0); }, 0);
-
-  return (
-    <div className="flex flex-col h-screen bg-slate-50">
-      <QuizHeader theme={theme} title={data.title} onBack={() => navigate('vr_menu')} onHome={() => navigate('menu')} />
-      <div className="flex-1 overflow-y-auto p-4 space-y-6">
-        {questions.map((row, idx) => {
-          const { qText, opts, correctVal } = getResultInfo(row, idx);
-          const userSelIdx = answers[idx];
-          return (
-            <div key={idx} className="bg-white rounded-xl shadow-sm p-5 border border-slate-100">
-               <div className="text-xs font-bold text-slate-400 mb-2">Question {idx+1}</div>
-               <div className="text-lg font-bold text-slate-800 mb-4 whitespace-pre-wrap text-center">{qText}</div>
-               <div className="flex flex-wrap gap-2 justify-center">{opts.map((opt, i) => { if (!opt) return null; const letter = ['A','B','C','D','E'][i]; const isSel = userSelIdx === i; let btnClass = "bg-slate-50 border-slate-200 text-slate-600"; if (!submitted) { if (isSel) btnClass = "bg-amber-500 text-white border-amber-500 shadow-md"; } else { const optVal = String(opt).trim().toUpperCase(); if (optVal === correctVal) btnClass = "bg-green-500 text-white border-green-500"; else if (isSel) btnClass = "bg-red-500 text-white border-red-500"; else btnClass = "opacity-40"; } return (<button key={i} onClick={() => !submitted && setAnswers(p => ({...p, [idx]: i}))} className={`px-4 py-3 rounded-lg border font-bold text-sm transition-all ${btnClass}`}><span className="mr-2 opacity-70 text-xs">{letter}.</span> {opt}</button>) })}</div>
-            </div>
-          )
-        })}
+  if (screen === 'english_menu') {
+    return (
+      <div className="min-h-screen bg-blue-50">
+        <SubjectMenuHeader title="English Practice" onHome={() => setScreen('menu')} themeColor="bg-blue-600" />
+        <div className="p-6 flex flex-col items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
+             <button onClick={() => { setConfig({ mode: 'english', subMode: 'comprehension', url: ENGLISH_URLS.comprehension, title: "Comprehension" }); setScreen('loading'); }} className="bg-white p-8 rounded-2xl shadow-lg hover:scale-105 transition-all text-xl font-bold text-blue-600 border-l-8 border-blue-400">Comprehension</button>
+             <button onClick={() => { setConfig({ mode: 'english', subMode: 'spelling', url: ENGLISH_URLS.spelling, title: "Spelling" }); setScreen('loading'); }} className="bg-white p-8 rounded-2xl shadow-lg hover:scale-105 transition-all text-xl font-bold text-blue-600 border-l-8 border-blue-400">Spelling</button>
+             <button onClick={() => { setConfig({ mode: 'english', subMode: 'grammar', url: ENGLISH_URLS.grammar, title: "Grammar" }); setScreen('loading'); }} className="bg-white p-8 rounded-2xl shadow-lg hover:scale-105 transition-all text-xl font-bold text-blue-600 border-l-8 border-blue-400">Grammar</button>
+             <button onClick={() => { setConfig({ mode: 'english', subMode: 'cloze', url: ENGLISH_URLS.cloze, title: "Cloze" }); setScreen('loading'); }} className="bg-white p-8 rounded-2xl shadow-lg hover:scale-105 transition-all text-xl font-bold text-blue-600 border-l-8 border-blue-400">Cloze</button>
+          </div>
+        </div>
       </div>
-      <div className="p-4 bg-white border-t">{!submitted ? (<button disabled={Object.keys(answers).length !== questions.length} onClick={() => setSubmitted(true)} className={`w-full ${theme.buttonPrimary} py-3 rounded-xl font-bold shadow-lg`}>Submit Answers</button>) : (<div className="text-center"><div className="text-xl font-bold mb-2">Score: {currentScore} / {questions.length}</div><button onClick={() => navigate('vr_menu')} className="w-full bg-slate-800 text-white py-3 rounded-lg font-bold">Finish</button></div>)}</div>
-    </div>
-  )
-};
+    );
+  }
 
-// --- SPELLING (Random: 0=QNum, 1-4=Opts, 5=Ans) ---
-const SpellingQuizScreen = ({ data, navigate }) => {
-  const theme = THEMES.english;
-  const [answers, setAnswers] = useState({});
-  const [submitted, setSubmitted] = useState(false);
-  const questions = data.questions || [];
-
-  const currentScore = questions.reduce((acc, q, idx) => {
-    // Answer is at Index 5 (Col F) for Spelling
-    const correctVal = (q[5] || "").trim().toUpperCase();
-    const userVal = (answers[idx] || "").toString().trim().toUpperCase();
-    return acc + (userVal === correctVal ? 1 : 0);
-  }, 0);
-
-  return (
-    <div className="flex flex-col h-screen bg-slate-50">
-      <QuizHeader theme={theme} title={data.title || "Spelling"} onBack={() => navigate('english_menu')} onHome={() => navigate('menu')} />
-      <div className="bg-indigo-50 text-indigo-900 p-3 text-xs font-bold text-center border-b border-indigo-100 sticky top-0 z-10">Identify the mistake. Select 'No Mistake' (N) if none found.</div>
-      <div className="flex-1 overflow-y-auto p-4 space-y-6">
-        {questions.map((row, idx) => {
-          const qText = row[0]; // Q Num (Index 0)
-          // Options A-D are indices 1, 2, 3, 4
-          const opts = [row[1], row[2], row[3], row[4]];
-          const correctVal = (row[5] || "").trim().toUpperCase(); // Answer is Col 6
-          const explanation = row[6]; // Expl is Col 7
-          const userSel = answers[idx];
-
-          return (
-            <div key={idx} className="bg-white rounded-xl shadow-sm p-4 border border-slate-100">
-               <div className="text-xs font-bold text-slate-400 mb-2">Question {qText}</div>
-               <div className="flex flex-row gap-2 mb-3 overflow-x-auto pb-2">{opts.map((opt, i) => { const letter = ['A','B','C','D'][i]; const isSel = userSel === letter; let btnClass = "bg-white border-slate-200 text-slate-600 hover:bg-blue-50"; if (!submitted && isSel) btnClass = "bg-indigo-600 text-white border-indigo-600 shadow-md"; if (submitted) { if (letter === correctVal) btnClass = "bg-green-500 text-white border-green-500"; else if (isSel) btnClass = "bg-red-500 text-white border-red-500"; else btnClass = "opacity-40 border-slate-100"; } return (<button key={i} onClick={() => !submitted && setAnswers(p => ({...p, [idx]: letter}))} className={`border rounded-lg p-3 text-center flex-1 flex flex-col items-center justify-center transition-all min-w-[4rem] ${btnClass}`}><span className="text-[10px] font-bold opacity-60 mb-1">{letter}</span> <span className="text-sm font-medium">{opt}</span></button>) })}</div>
-               <button onClick={() => !submitted && setAnswers(p => ({...p, [idx]: 'N'}))} className={`w-full border rounded-lg p-3 font-bold text-center transition-all ${!submitted ? (userSel === 'N' ? "bg-indigo-600 text-white border-indigo-600 shadow-md" : "bg-slate-50 text-slate-500 hover:bg-slate-100") : (correctVal === 'N' ? "bg-green-500 text-white border-green-500" : (userSel === 'N' ? "bg-red-500 text-white border-red-500" : "opacity-40 border-slate-100"))}`}>N. No Mistake</button>
-               {submitted && userSel !== correctVal && explanation && (<div className="mt-3 text-sm text-red-600 bg-red-50 p-3 rounded-lg border border-red-100 flex items-start"><div className="font-bold mr-2">Explanation:</div>{explanation}</div>)}
-            </div>
-          )
-        })}
+  if (screen === 'vr_menu') {
+    return (
+      <div className="min-h-screen bg-purple-50">
+        <SubjectMenuHeader title="Verbal Reasoning" onHome={() => setScreen('menu')} themeColor="bg-purple-600" />
+        <div className="p-6 flex flex-col items-center">
+           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-6xl pb-10">
+             {VR_TOPICS.map((topic, idx) => (
+               <button key={idx} onClick={() => { setConfig({ mode: 'vr', url: REPO_BASE_VR + topic.file, title: topic.name }); setScreen('loading'); }} className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all border-b-4 border-purple-200 group">
+                 <div className="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform"><Lightbulb size={24} /></div>
+                 <span className="text-lg font-bold text-slate-700 block leading-tight">{topic.name}</span>
+               </button>
+             ))}
+           </div>
+        </div>
       </div>
-      <div className="p-4 bg-white border-t shadow-lg z-10">{!submitted ? (<button disabled={Object.keys(answers).length !== questions.length} onClick={() => setSubmitted(true)} className={`w-full ${theme.buttonPrimary} py-3 rounded-xl font-bold shadow-lg disabled:opacity-50`}>Submit Answers</button>) : (<div className="text-center"><div className="text-xl font-bold mb-2">You scored {currentScore} / {questions.length}</div><button onClick={() => navigate('english_menu')} className="w-full bg-slate-800 text-white py-3 rounded-lg font-bold">Finish</button></div>)}</div>
-    </div>
-  )
-};
-
-// --- QUIZ: GRAMMAR (Consecutive: 1=QNum, 2-5=Opts, 6=Ans) ---
-const GrammarQuizScreen = ({ data, navigate, title = "Grammar", color = "bg-blue-500" }) => {
-  const [answers, setAnswers] = useState({});
-  const [submitted, setSubmitted] = useState(false);
-  const questions = data.questions || [];
-
-  const currentScore = questions.reduce((acc, q, idx) => {
-    // Answer is at Index 6 (Col G) for Grammar
-    const correctVal = (q[6] || "").trim().toUpperCase();
-    const userVal = (answers[idx] || "").toString().trim().toUpperCase();
-    return acc + (userVal === correctVal ? 1 : 0);
-  }, 0);
-
-  return (
-    <div className="flex flex-col h-screen bg-slate-50">
-      <QuizHeader theme={THEMES.english} title={title} onBack={() => navigate('english_menu')} onHome={() => navigate('menu')} />
-      <div className={`bg-opacity-10 text-slate-800 p-3 text-xs font-bold text-center border-b border-slate-100 sticky top-0 z-10 ${color.replace('500', '50').replace('600', '50')}`}>Identify the mistake. Select 'No Mistake' (N) if none found.</div>
-      <div className="flex-1 overflow-y-auto p-4 space-y-6">
-        {questions.map((row, idx) => {
-          const qText = row[1]; // Q Num (Index 1)
-          const opts = [row[2], row[3], row[4], row[5]]; // A-D (Indices 2-5)
-          const correctVal = (row[6] || "").trim().toUpperCase(); // Ans (Index 6)
-          const explanation = row[7]; // Expl (Index 7)
-          const userSel = answers[idx];
-
-          return (
-            <div key={idx} className="bg-white rounded-xl shadow p-4 border border-slate-100">
-               <div className="text-xs font-bold text-slate-400 mb-2">Question {qText}</div>
-               <div className="flex flex-row gap-2 mb-3 overflow-x-auto">{opts.map((opt, i) => { const letter = ['A','B','C','D'][i]; const isSel = userSel === letter; let btnClass = `bg-white border-slate-200 text-slate-700 hover:bg-opacity-10`; if (!submitted && isSel) btnClass = `${color} text-white border-transparent`; if (submitted) { if (letter === correctVal) btnClass = "bg-green-500 text-white border-green-500"; else if (isSel) btnClass = "bg-red-500 text-white border-red-500"; else btnClass = "opacity-40 border-slate-100"; } return (<button key={i} onClick={() => !submitted && setAnswers(p => ({...p, [idx]: letter}))} className={`border rounded p-3 text-center flex-1 flex flex-col items-center justify-center transition-all ${btnClass}`}><span className="text-[10px] font-bold opacity-60 mb-1">{letter}</span> <span className="text-sm">{opt}</span></button>) })}</div>
-               <button onClick={() => !submitted && setAnswers(p => ({...p, [idx]: 'N'}))} className={`w-full border rounded p-3 font-bold text-center transition-all ${!submitted ? (userSel === 'N' ? `${color} text-white` : "bg-slate-50 text-slate-600 hover:bg-slate-100") : (correctVal === 'N' ? "bg-green-500 text-white border-green-500" : (userSel === 'N' ? "bg-red-500 text-white border-red-500" : "opacity-40 border-slate-100"))}`}>N. No Mistake</button>
-               {submitted && userSel !== correctVal && explanation && (<div className="mt-3 text-sm text-red-600 bg-red-50 p-2 rounded">{explanation}</div>)}
-            </div>
-          )
-        })}
-      </div>
-      <div className="p-4 bg-white border-t">{!submitted ? (<button disabled={Object.keys(answers).length !== questions.length} onClick={() => setSubmitted(true)} className={`w-full ${color} text-white py-3 rounded-lg font-bold shadow-lg disabled:opacity-50`}>Submit Answers</button>) : (<div className="text-center"><div className="text-xl font-bold mb-2">You scored {currentScore} / {questions.length}</div><button onClick={() => navigate('english_menu')} className="w-full bg-slate-800 text-white py-3 rounded-lg font-bold">Finish</button></div>)}</div>
-    </div>
-  )
-};
-
-// --- CLOZE QUIZ SCREEN ---
-const ClozeQuizScreen = ({ data, navigate }) => {
-  const theme = THEMES.english;
-  const [score, setScore] = useState(0); const [answers, setAnswers] = useState({}); const [submitted, setSubmitted] = useState(false); const questions = data.questions || [];
-  if (questions.length === 0) return <div>No data.</div>;
-  const calculateScore = () => { let currentScore = 0; questions.forEach((q, idx) => { const correctLetter = (q[9] || "").trim().toUpperCase(); const userChoice = answers[idx]; if (userChoice === correctLetter) currentScore++; }); return currentScore; };
-  const handleAnswerClick = (qIdx, choiceLetter) => { if (submitted) return; setAnswers(prev => ({ ...prev, [qIdx]: choiceLetter })); };
-  const handleSubmit = () => { setScore(calculateScore()); setSubmitted(true); };
+    );
+  }
   
-  return (
-    <div className="flex flex-col h-screen bg-slate-50 md:flex-row">
-      <header className={`bg-gradient-to-r ${theme.headerGradient} text-white p-3 flex items-center justify-between shadow z-10 md:fixed md:top-0 md:left-0 md:right-0 md:h-16`}><button onClick={() => navigate('cloze_selection', { groups: data.groups })} className="mr-2"><ChevronLeft/></button><span className="font-bold text-sm">Cloze: {data.title}</span></header>
-      <div className="flex flex-col md:flex-row flex-1 md:mt-16 h-full overflow-hidden">
-        <div className="bg-purple-50 p-6 border-b-4 md:border-b-0 md:border-r-4 border-purple-100 shadow-inner h-[40%] md:h-full md:w-1/2 overflow-y-auto"><h3 className="text-xs font-bold text-purple-400 mb-2 uppercase tracking-wide sticky top-0 bg-purple-50 py-2">Passage</h3><p className="text-lg leading-relaxed font-serif text-slate-800 whitespace-pre-wrap">{data.passageText || "Loading passage..."}</p></div>
-        <div className="bg-slate-100 p-4 flex-1 md:w-1/2 h-full overflow-y-auto"><h3 className="text-xs font-bold text-slate-400 mb-4 uppercase tracking-wide">Fill the Gaps</h3><div className="space-y-6 pb-24"> {questions.map((currentQ, idx) => { const userAnswer = answers[idx]; const correctLetter = (currentQ[9] || "").trim().toUpperCase(); return (<div key={idx} className="bg-white p-4 rounded-xl shadow-sm border border-slate-200"><div className="flex justify-between items-start mb-3"><span className="text-xs font-bold text-slate-400 bg-slate-100 px-2 py-1 rounded">Gap {currentQ[3]}</span>{submitted && (userAnswer === correctLetter ? <span className="text-green-600 font-bold text-xs flex items-center"><Check size={14} className="mr-1"/> Correct</span> : <span className="text-red-500 font-bold text-xs flex items-center"><X size={14} className="mr-1"/> Wrong (Ans: {correctLetter})</span>)}</div><div className="flex flex-wrap gap-2">{['A', 'B', 'C', 'D', 'E'].map((letter, i) => { const optText = currentQ[4 + i]; if (!optText) return null; const isSelected = userAnswer === letter; let btnClass = "border-slate-200 hover:bg-purple-50 text-slate-600"; if (!submitted) { if (isSelected) btnClass = "bg-purple-600 text-white border-purple-600 ring-2 ring-purple-200"; } else { if (letter === correctLetter) btnClass = "bg-green-500 text-white border-green-500"; else if (isSelected) btnClass = "bg-red-500 text-white border-red-500"; else btnClass = "opacity-50"; } return (<button key={letter} onClick={() => handleAnswerClick(idx, letter)} className={`px-4 py-2 rounded-lg border text-sm font-medium transition-all ${btnClass} flex-grow`}><span className="opacity-60 text-xs mr-1">{letter}.</span> {optText}</button>) })}</div></div>); })}</div></div></div>
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-4 shadow-lg md:left-1/2 z-30">{!submitted ? (<button onClick={handleSubmit} disabled={Object.keys(answers).length !== questions.length} className={`w-full ${theme.buttonPrimary} py-3 rounded-xl font-bold shadow-md disabled:opacity-50`}>Submit All Answers</button>) : (<div className="flex items-center justify-between"><div className="text-xl font-bold text-slate-800">Score: {score} <span className="text-slate-400 text-sm">/ {questions.length}</span></div><button onClick={() => navigate('english_menu')} className="bg-slate-800 text-white px-6 py-3 rounded-xl font-bold">Finish</button></div>)}</div>
-    </div>
-  );
+  if (screen === 'coming_soon') return <div className="p-10 text-center text-2xl">Coming Soon! <br/><button onClick={()=>setScreen('menu')} className="text-sm underline mt-4">Back</button></div>;
+  if (screen === 'loading') return <GenericLoadingScreen config={config} navigate={navigate} />;
+  if (screen === 'comprehension_screen') return <ComprehensionScreen data={{...data, title: config.title}} navigate={navigate} />;
+  if (screen === 'cloze_screen') return <ClozeScreen data={{...data, title: config.title}} navigate={navigate} />;
+  if (screen === 'quiz_scrollable') return <ScrollableQuizScreen data={{...data, title: config.title, mode: config.mode}} navigate={navigate} />;
+  
+  return <MenuScreen navigate={navigate} />;
 };
 
-// --- COMPREHENSION ---
-const ComprehensionQuizScreen = ({ data, navigate }) => {
-  // Reuse logic from before, just wrapped in styled layout
-  const theme = THEMES.english;
-  const [score, setScore] = useState(0); const [answers, setAnswers] = useState({}); const [submitted, setSubmitted] = useState(false);
-  const questions = data.questions || [];
-  if (questions.length === 0) return <div>No data</div>;
-  const calculateScore = () => { let c=0; questions.forEach((q,i)=>{ if(answers[i] === (q[8]||"").trim().toUpperCase()) c++ }); return c; };
-  const handleAnswerClick = (idx, lettr) => { if(submitted)return; setAnswers(prev=>({...prev, [idx]:lettr})); };
-  const handleSubmit = () => { setScore(calculateScore()); setSubmitted(true); };
-
-  return (
-    <div className="flex flex-col h-screen bg-slate-50 md:flex-row">
-      <header className={`bg-gradient-to-r ${theme.headerGradient} text-white p-3 flex items-center justify-between shadow z-10 md:fixed md:top-0 md:left-0 md:right-0 md:h-16`}><button onClick={() => navigate('comprehension_selection', { groups: data.groups })} className="mr-2"><ChevronLeft/></button><span className="font-bold text-sm">Comprehension</span></header>
-      <div className="flex flex-col md:flex-row flex-1 md:mt-16 h-full overflow-hidden">
-        <div className="bg-yellow-50 p-6 border-b-4 md:border-b-0 md:border-r-4 border-indigo-100 shadow-inner h-[40%] md:h-full md:w-1/2 overflow-y-auto"><h3 className="text-xs font-bold text-slate-400 mb-2 uppercase tracking-wide sticky top-0 bg-yellow-50 py-2">Passage</h3><p className="text-lg leading-relaxed font-serif text-slate-800 whitespace-pre-wrap">{data.passageText}</p></div>
-        <div className="bg-slate-100 p-4 flex-1 md:w-1/2 h-full overflow-y-auto"><h3 className="text-xs font-bold text-slate-400 mb-4 uppercase tracking-wide">Questions</h3><div className="space-y-6 pb-24">{questions.map((q, idx) => { const user = answers[idx]; const correct = (q[8]||"").trim().toUpperCase(); return (<div key={idx} className="bg-white p-4 rounded-xl shadow-sm border border-slate-200"><div className="flex justify-between items-start mb-3"><span className="text-xs font-bold text-slate-400 bg-slate-100 px-2 py-1 rounded">Q{idx+1}</span>{submitted && (user === correct ? <span className="text-green-600 font-bold text-xs flex items-center"><Check size={14} className="mr-1"/> Correct</span> : <span className="text-red-500 font-bold text-xs flex items-center"><X size={14} className="mr-1"/> Wrong (Ans: {correct})</span>)}</div><p className="font-bold text-md mb-4 text-slate-800">{q[1]}</p><div className="flex flex-wrap gap-2">{['A','B','C','D','E'].map((l, i)=>{ const txt = q[3+i]; if(!txt)return null; const isSel = user===l; let cls = "border-slate-200 hover:bg-blue-50 text-slate-600"; if(!submitted){ if(isSel) cls="bg-blue-600 text-white border-blue-600 shadow-md"; } else { if(l===correct) cls="bg-green-500 text-white border-green-500"; else if(isSel) cls="bg-red-500 text-white border-red-500"; else cls="opacity-50"; } return (<button key={l} onClick={()=>handleAnswerClick(idx,l)} className={`px-3 py-2 rounded-lg border text-sm font-medium transition-all ${cls} flex-grow`}>{l}. {txt}</button>) })}</div></div>) })}</div></div>
-      </div>
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-4 shadow-lg md:left-1/2 z-30">{!submitted ? (<button onClick={handleSubmit} disabled={Object.keys(answers).length !== questions.length} className={`w-full ${theme.buttonPrimary} py-3 rounded-xl font-bold shadow-md disabled:opacity-50`}>Submit All</button>) : (<div className="flex items-center justify-between"><div className="text-xl font-bold text-slate-800">Score: {score} <span className="text-slate-400 text-sm">/ {questions.length}</span></div><button onClick={() => navigate('english_menu')} className="bg-slate-800 text-white px-6 py-3 rounded-xl font-bold">Finish</button></div>)}</div>
-    </div>
-  )
-}
+export default App;
