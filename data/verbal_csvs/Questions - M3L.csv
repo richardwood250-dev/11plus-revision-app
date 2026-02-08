@@ -1,0 +1,1203 @@
+ID,Question,A,B,C,D,E,Correct Answer,Explanation
+M3L_01,The giant lived in a CAS.,ANT,EAT,TLE,ALE,TEN,C,The missing letters are TLE.
+M3L_02,She put the flowers in the V.,ARE,ASE,AIL,ANT,ALE,B,The missing letters are ASE.
+M3L_03,The doctor gave him a TAB.,LET,SUL,TIO,MAT,EAT,A,The missing letters are LET.
+M3L_04,The teacher asked for QU.,AIL,OAT,IET,EEN,ART,C,The missing letters are IET.
+M3L_05,He was feeling very HUN.,TED,GRY,DED,DRY,GRT,B,The missing letters are GRY.
+M3L_06,They watched the television SCN.,REE,EAM,RUE,EEN,ANT,A,The missing letters are REE.
+M3L_07,The boy kicked SS along the street.,LOG,HOE,CAN,TIN,ALE,B,The missing letters are HOE.
+M3L_08,The doctor asked how she was FING today.,TIN,AIL,DEN,EEL,LAY,D,The missing letters are EEL.
+M3L_09,They will be INNING the race soon.,RAT,OUT,TOP,BEG,HOW,D,The missing letters are BEG.
+M3L_10,His hair looked NR after it was cut.,ICE,ATE,WIG,EAR,ASS,A,The missing letters are ICE.
+M3L_11,Please wipe your feet on the CAT.,CAR,RPE,ARP,RAP,PET,B,The missing letters are RPE.
+M3L_12,He ate a yellow BNA.,AND,NAN,ANA,ANN,ANT,C,The missing letters are ANA.
+M3L_13,Open the bedroom WOW.,IND,AND,WIN,WIT,END,A,The missing letters are IND.
+M3L_14,Write with a sharp PIL.,ILL,ENC,INC,CIL,PEN,B,The missing letters are ENC.
+M3L_15,We went to the MET to buy food.,ARK,EAT,ARE,ARM,ART,A,The missing letters are ARK.
+M3L_16,His FER is very tall.,HER,OTH,FAT,ATH,EAR,D,The missing letters are ATH.
+M3L_17,Her MER is very kind.,ORE,THE,OTH,HER,EAR,C,The missing letters are OTH.
+M3L_18,The lion is a wild ANL.,IMA,IMU,INE,ANI,MAL,A,The missing letters are IMA.
+M3L_19,Go to see a DOR.,TOR,DOC,ACT,OAR,OCT,E,The missing letters are OCT.
+M3L_20,The bus DER was late.,RIV,VER,ROV,IVE,RID,A,The missing letters are RIV.
+M3L_21,She ate a juicy ORE.,ANT,AGE,RAN,AND,ANG,E,The missing letters are ANG.
+M3L_22,The summer sun is YEW.,LOW,ELL,LLO,ALL,OWL,C,The missing letters are LLO.
+M3L_23,She wore a PLE coat.,PUR,URE,URP,RUP,PER,C,The missing letters are URP.
+M3L_24,He used a SIR spoon.,ERL,LVE,ILV,VER,LIV,B,The missing letters are LVE.
+M3L_25,We go to SOL every day.,CHO,CHU,HOO,COO,OOL,A,The missing letters are CHO.
+M3L_26,The maths LON was hard.,SON,SEN,LES,SES,ESS,E,The missing letters are ESS.
+M3L_27,It was a hot SER day.,UMM,SUM,MER,NUM,MME,A,The missing letters are UMM.
+M3L_28,It was a cold WER day.,INT,ENT,WIN,ANT,TER,A,The missing letters are INT.
+M3L_29,The green SNG grass grew.,PRI,RIN,SPR,ING,PIN,A,The missing letters are PRI.
+M3L_30,Gold AUN leaves fell.,UMN,TUN,TUM,AME,AUT,C,The missing letters are TUM.
+M3L_31,We play SOR in the park.,COR,OCC,CCE,CER,SOC,C,The missing letters are CCE.
+M3L_32,We play TES on the court.,ENN,NNI,NIS,NES,TEN,B,The missing letters are NNI.
+M3L_33,We play HOY on the ice.,CKE,HOC,OCK,COK,KEY,A,The missing letters are CKE.
+M3L_34,Put it in the wicker BET.,SKE,ASK,BAS,AST,KET,B,The missing letters are ASK.
+M3L_35,The cute KEN played.,KIT,TIN,TEN,TTE,ITT,E,The missing letters are ITT.
+M3L_36,The white RAT hopped.,ABB,BBI,BAT,BIT,RAB,B,The missing letters are BBI.
+M3L_37,The cheeky MEY climbed.,ONE,NKE,MON,ONK,KEY,D,The missing letters are ONK.
+M3L_38,Ride a DOY on the beach.,DON,ONE,NKE,KEY,ONK,C,The missing letters are NKE.
+M3L_39,A scary SPR spun a web.,PID,DER,RED,IDE,SPI,D,The missing letters are IDE.
+M3L_40,Flowers grow in the GEN.,ARE,ARD,GAR,DEN,RED,B,The missing letters are ARD.
+M3L_41,Trees grow in the FST.,ORT,FOR,ORE,RES,EST,C,The missing letters are ORE.
+M3L_42,Lions live in the JUE.,UNG,JUN,GLE,JUG,NGL,E,The missing letters are NGL.
+M3L_43,Camels live in the DRT.,ESE,DES,SET,SER,ERT,A,The missing letters are ESE.
+M3L_44,Mars is a red PLT.,PLA,ANE,NET,LAN,ANT,B,The missing letters are ANE.
+M3L_45,Fly a RET to the moon.,CKE,OCK,ROC,KET,OCT,B,The missing letters are OCK.
+M3L_46,Fish swim in the STM.,EAM,STR,RAM,REA,TRE,D,The missing letters are REA.
+M3L_47,Cross the river BGE.,RIG,RID,BRI,IDG,DGE,B,The missing letters are RID.
+M3L_48,Cars drive on the STT.,REE,SEE,EET,TRE,STR,A,The missing letters are REE.
+M3L_49,Pray in the old CHH.,RCH,UCH,URC,CHU,HUR,C,The missing letters are URC.
+M3L_50,King lives in a PAE.,PAL,ACE,ALA,LAE,LAC,E,The missing letters are LAC.
+M3L_001,The MON climbed the tree.,TOP,KEY,SIT,COT,WIT,B,The missing letters are KEY (MONKEY).
+M3L_002,The KEY carried the load.,EYE,DON,TOP,BAD,FOX,B,The missing letters are DON (DONKEY).
+M3L_003,We ate TUR for dinner.,NAG,YAK,SKY,KEY,ART,D,The missing letters are KEY (TURKEY).
+M3L_004,Lions live in the JLE.,UNG,COO,HAD,IRE,HAY,A,The missing letters are UNG (JUNGLE).
+M3L_005,Bears live in the FST.,SAT,ARK,TOP,ORE,IVY,D,The missing letters are ORE (FOREST).
+M3L_006,We bought fruit at the KET.,ASH,SAT,MAR,AND,CAN,C,The missing letters are MAR (MARKET).
+M3L_007,Put the apples in the BAT.,WEE,SKE,HOP,LET,NEW,B,The missing letters are SKE (BASKET).
+M3L_008,Write with a sharp PEL.,FAD,NCI,DOT,JOY,EEL,B,The missing letters are NCI (PENCIL).
+M3L_009,Flowers grow in the DEN.,GAR,ATE,OUR,HIT,PIT,A,The missing letters are GAR (GARDEN).
+M3L_010,Cook food in the KITN.,CHE,THE,JAY,ODD,FIT,A,The missing letters are CHE (KITCHEN).
+M3L_011,Park the car in the GGE.,WIT,RUN,OAK,ARA,CAD,D,The missing letters are ARA (GARAGE).
+M3L_012,Sleep in the BOOM.,OLD,SAT,EDR,AIR,FOX,C,The missing letters are EDR (BEDROOM).
+M3L_013,Open the DOW to let air in.,WIN,MOO,PAY,WIT,SHY,A,The missing letters are WIN (WINDOW).
+M3L_014,We learn at SOL.,CHO,COT,SKY,FOR,RUN,A,The missing letters are CHO (SCHOOL).
+M3L_015,The maths LEN was hard.,USE,ORB,BAT,FOR,SSO,E,The missing letters are SSO (LESSON).
+M3L_016,The TEER wrote on the board.,ACH,MAT,BOY,JOY,YET,A,The missing letters are ACH (TEACHER).
+M3L_017,The TOR gave me medicine.,WAG,WIT,ORE,DOC,YAK,D,The missing letters are DOC (DOCTOR).
+M3L_018,My FAR is tall.,EAR,TOO,BOO,THE,SAG,D,The missing letters are THE (FATHER).
+M3L_019,My HER is kind.,ORB,BIG,MOT,BOO,FAD,C,The missing letters are MOT (MOTHER).
+M3L_020,My SIS plays with me.,AID,MOO,BIT,TER,SIT,D,The missing letters are TER (SISTER).
+M3L_021,My BRER is older.,ATE,EAR,WEE,TAG,OTH,E,The missing letters are OTH (BROTHER).
+M3L_022,My best FRD came over.,PAD,WHY,OUT,IEN,NOT,D,The missing letters are IEN (FRIEND).
+M3L_023,We had roast chicken for DIR.,NNE,SAD,SAG,MAG,IVY,A,The missing letters are NNE (DINNER).
+M3L_024,We ate a light SER.,UPP,LIT,INN,WET,LAG,A,The missing letters are UPP (SUPPER).
+M3L_025,I had a sandwich for CH.,ILL,INN,LUN,IRE,EAT,C,The missing letters are LUN (LUNCH).
+M3L_026,I ate toast for BREAKF.,CRY,BY,OPT,TOY,AST,E,The missing letters are AST (BREAKFAST).
+M3L_027,It is hot in SER.,HAT,ASK,NAG,JOY,UMM,E,The missing letters are UMM (SUMMER).
+M3L_028,It is cold in TER.,PIT,RAD,WIN,BAT,MAG,C,The missing letters are WIN (WINTER).
+M3L_029,Leaves fall in AUT.,LEE,BIG,FIT,WIT,UMN,E,The missing letters are UMN (AUTUMN).
+M3L_030,Flowers bloom in SPR.,BIG,ING,KAY,AGE,HAG,B,The missing letters are ING (SPRING).
+M3L_031,The sun is YEL.,PET,YAK,LOW,OUT,ODD,C,The missing letters are LOW (YELLOW).
+M3L_032,Grapes are often PUE.,HAD,BOY,RPL,MAD,ION,C,The missing letters are RPL (PURPLE).
+M3L_033,An ORE is a fruit.,JAY,NAG,SAG,ANG,GET,D,The missing letters are ANG (ORANGE).
+M3L_034,The spoon is made of SIL.,VER,HOT,ARM,FOX,WHY,A,The missing letters are VER (SILVER).
+M3L_035,The ring is GOL.,SEE,DEN,LIT,NAY,DAY,B,The missing letters are DEN (GOLDEN).
+M3L_036,The LLE boy ran fast.,ITT,OAR,YAK,NET,TAG,A,The missing letters are ITT (LITTLE).
+M3L_037,The flower is very PTY.,SAD,NAG,ENT,PAT,RET,E,The missing letters are RET (PRETTY).
+M3L_038,This one is BER than that.,ETT,DOG,MY,BIT,TAG,A,The missing letters are ETT (BETTER).
+M3L_039,I wrote a LET to him.,ICE,TER,SAT,RED,BEE,B,The missing letters are TER (LETTER).
+M3L_040,Put BER on the toast.,UTT,WHY,SAD,NAG,OUT,A,The missing letters are UTT (BUTTER).
+M3L_041,Salt and PER go together.,AND,AIR,ONE,EPP,OUT,D,The missing letters are EPP (PEPPER).
+M3L_042,Eat your DIR.,DOT,WEE,BAY,NNE,EST,D,The missing letters are NNE (DINNER).
+M3L_043,Time for SER.,HOT,ARM,EGG,UPP,JET,D,The missing letters are UPP (SUPPER).
+M3L_044,Erase it with a BER.,RUB,NAG,DAD,BOO,SEE,A,The missing letters are RUB (RUBBER).
+M3L_045,Climb the LAR.,DDE,ADO,NEW,JET,OUR,A,The missing letters are DDE (LADDER).
+M3L_046,Hit the nail with a HER.,LET,LIT,AMM,WIT,CAN,C,The missing letters are AMM (HAMMER).
+M3L_047,They waved a big BAR.,NNE,PAY,OAK,SEE,WHY,A,The missing letters are NNE (BANNER).
+M3L_048,Stand in the CER.,ORN,PET,KAY,ION,COT,A,The missing letters are ORN (CORNER).
+M3L_049,Point with your FIN.,SIT,DOT,FLY,BET,GER,E,The missing letters are GER (FINGER).
+M3L_050,"Keep out, DAR.",FLY,NAY,NGE,WIT,NAG,C,The missing letters are NGE (DANGER).
+M3L_051,I like GER biscuits.,ING,SAD,FAT,PAT,EAR,A,The missing letters are ING (GINGER).
+M3L_052,I am very GRY.,EGG,HUN,LEE,MAN,TOO,B,The missing letters are HUN (HUNGRY).
+M3L_053,I am very THTY.,SIT,LAD,ICE,IRS,WEE,D,The missing letters are IRS (THIRSTY).
+M3L_054,He was very AY.,BAT,GAG,CRY,NGR,ACT,D,The missing letters are NGR (ANGRY).
+M3L_055,She was very HA.,COO,PPY,OFF,WIT,EAR,B,The missing letters are PPY (HAPPY).
+M3L_056,The baby is EPY.,RED,SLE,OAR,WAG,ARK,B,The missing letters are SLE (SLEEPY).
+M3L_057,The man is SNG.,PAY,HOT,HAG,AIR,TRO,E,The missing letters are TRO (STRONG).
+M3L_058,Cars drive on the STT.,REE,CAT,PRY,RAG,OPT,A,The missing letters are REE (STREET).
+M3L_059,Cross the river BGE.,WAY,BOO,RID,PRY,PET,C,The missing letters are RID (BRIDGE).
+M3L_060,Fish swim in the STR.,JOY,RED,EAM,AND,ASH,C,The missing letters are EAM (STREAM).
+M3L_061,Mars is a red NET.,PLA,WHY,AND,THE,BAG,A,The missing letters are PLA (PLANET).
+M3L_062,Fly a ROC to space.,BAY,OIL,KET,RUN,LET,C,The missing letters are KET (ROCKET).
+M3L_063,Put it in your POC.,RAD,ION,TOY,PAD,KET,E,The missing letters are KET (POCKET).
+M3L_064,Wear a warm JET.,OUR,TEE,OLD,ASK,ACK,E,The missing letters are ACK (JACKET).
+M3L_065,Buy a bus KET.,MAG,TIC,ZOO,GAG,JAG,B,The missing letters are TIC (TICKET).
+M3L_066,Fill the BUT with water.,HOT,COO,MOO,CKE,FAT,D,The missing letters are CKE (BUCKET).
+M3L_067,A KET of crisps.,PAC,HAY,IVY,JOY,GAG,A,The missing letters are PAC (PACKET).
+M3L_068,Plug it into the SOT.,SHY,CKE,POT,NAY,LIT,B,The missing letters are CKE (SOCKET).
+M3L_069,We play CKET in summer.,LET,INN,RIC,DRY,PAD,C,The missing letters are RIC (CRICKET).
+M3L_070,Hit the WIT.,SUN,CKE,TION,KAY,WET,B,The missing letters are CKE (WICKET).
+M3L_071,The RAB hopped away.,TOP,BIT,SHY,MY,PIT,B,The missing letters are BIT (RABBIT).
+M3L_072,The KIN purred.,LAG,WET,AID,TTE,BOO,D,The missing letters are TTE (KITTEN).
+M3L_073,The PU barked.,EEL,PPY,GAY,HOT,LOO,B,The missing letters are PPY (PUPPY).
+M3L_074,The lion is an ANI.,FIT,NAG,HOT,AND,MAL,E,The missing letters are MAL (ANIMAL).
+M3L_075,See the DOR.,WIT,BAG,OCT,NOT,ACE,C,The missing letters are OCT (DOCTOR).
+M3L_076,The DIST checked my teeth.,GAY,ENT,ROT,SET,ASK,B,The missing letters are ENT (DENTIST).
+M3L_077,The AST painted a picture.,OUR,FAD,RTI,CAN,LOT,C,The missing letters are RTI (ARTIST).
+M3L_078,The bus DRI stopped.,SEE,TRY,GAY,VER,OWN,D,The missing letters are VER (DRIVER).
+M3L_079,The FAR milked the cow.,EGO,ZOO,MER,CRY,IVE,C,The missing letters are MER (FARMER).
+M3L_080,The BR made bread.,AKE,EGG,BAD,ILL,LIT,A,The missing letters are AKE (BAKER).
+M3L_081,The BUTC sold meat.,VET,HER,SPY,HAT,CAT,B,The missing letters are HER (BUTCHER).
+M3L_082,The CER sold fruit.,WET,GRO,BIT,FOX,PAT,B,The missing letters are GRO (GROCER).
+M3L_083,The WAI brought food.,FIT,BIG,TER,LAY,SIT,C,The missing letters are TER (WAITER).
+M3L_084,The PER carried bags.,OFF,CAT,SAT,ORT,ONE,D,The missing letters are ORT (PORTER).
+M3L_085,The BER cut hair.,THE,FOR,ARB,FAD,MAT,C,The missing letters are ARB (BARBER).
+M3L_086,The YER went to court.,RAD,LAW,OUT,GET,YAK,B,The missing letters are LAW (LAWYER).
+M3L_087,The KER counts money.,AGE,LIT,TRY,CAD,BAN,E,The missing letters are BAN (BANKER).
+M3L_088,He is a good PLR.,MY,IRE,MAG,OAK,AYE,E,The missing letters are AYE (PLAYER).
+M3L_089,The GER sang a song.,ADD,SIN,JOY,FLY,MAN,B,The missing letters are SIN (SINGER).
+M3L_090,The CER moved well.,DAN,LET,LAD,IVE,ADO,A,The missing letters are DAN (DANCER).
+M3L_091,He is a fast WAR.,MAD,ING,LKE,WET,PAY,C,The missing letters are LKE (WALKER).
+M3L_092,The RUN won the race.,TION,ASH,SKY,ION,NER,E,The missing letters are NER (RUNNER).
+M3L_093,Wear a woolly JER.,TOY,HAD,UMP,SAG,CAT,C,The missing letters are UMP (JUMPER).
+M3L_094,Wear a warm SLIP.,TION,PER,EVE,PAT,ASK,B,The missing letters are PER (SLIPPER).
+M3L_095,A coin made of CER.,OAR,PAT,RUN,OPP,OPT,D,The missing letters are OPP (COPPER).
+M3L_096,Do a PER job.,TAG,WAG,OUT,ARK,PRO,E,The missing letters are PRO (PROPER).
+M3L_097,Eat your SUR.,MAT,MET,PPE,RAG,RAD,C,The missing letters are PPE (SUPPER).
+M3L_098,Cook the NER.,CAT,JAG,ASK,DIN,ODD,D,The missing letters are DIN (DINNER).
+M3L_099,He is the WER.,EYE,PIT,JAG,INN,LEE,D,The missing letters are INN (WINNER).
+M3L_100,Hot SUM days.,MET,BAT,EGG,DOG,MER,E,The missing letters are MER (SUMMER).
+M3L_101,Cold WIR nights.,ONE,NTE,JET,YAK,FOR,B,The missing letters are NTE (WINTER).
+M3L_102,Pick a NUM.,COT,BER,POT,ZOO,WHY,B,The missing letters are BER (NUMBER).
+M3L_103,Wood is TER.,MOO,SKY,IMB,LEE,SEE,C,The missing letters are IMB (TIMBER).
+M3L_104,He is a club BER.,EGO,WEE,IVY,NEW,MEM,E,The missing letters are MEM (MEMBER).
+M3L_105,School starts in SEPTER.,EAT,EMB,COT,OUS,ACT,B,The missing letters are EMB (SEPTEMBER).
+M3L_106,Halloween is in OCTO.,BER,SKY,SAG,LOO,ASH,A,The missing letters are BER (OCTOBER).
+M3L_107,Fireworks in NOVEM.,BER,BAD,PAT,CRY,DRY,A,The missing letters are BER (NOVEMBER).
+M3L_108,Christmas is in DECER.,WEE,OUR,AIR,EMB,ZOO,D,The missing letters are EMB (DECEMBER).
+M3L_109,New Year is in JARY.,ANU,ZOO,TOY,ONE,PAT,A,The missing letters are ANU (JANUARY).
+M3L_110,Valentine's in FEBRY.,ACT,JET,AND,OLD,UAR,E,The missing letters are UAR (FEBRUARY).
+M3L_111,Summer holidays in AST.,LAG,OUT,BAT,END,UGU,E,The missing letters are UGU (AUGUST).
+M3L_112,Church on SUN.,ENT,LET,ICE,ARM,DAY,E,The missing letters are DAY (SUNDAY).
+M3L_113,School starts on DAY.,EGG,HAT,MON,WIT,PAT,C,The missing letters are MON (MONDAY).
+M3L_114,Fish on FRI.,DAY,YET,FOX,INK,YAK,A,The missing letters are DAY (FRIDAY).
+M3L_115,Go on HOLI.,AGE,DAY,ATE,APE,OUR,B,The missing letters are DAY (HOLIDAY).
+M3L_116,Happy THDAY to you.,ING,RAD,THY,BIR,OIL,D,The missing letters are BIR (BIRTHDAY).
+M3L_117,It rained TERDAY.,YES,FAD,ORE,SHY,NAG,A,The missing letters are YES (YESTERDAY).
+M3L_118,I will go TOMOW.,NAG,RRO,YET,JOY,JAY,B,The missing letters are RRO (TOMORROW).
+M3L_119,The ELEPH has a trunk.,BEE,ANT,OUT,BOO,OWL,B,The missing letters are ANT (ELEPHANT).
+M3L_120,The CODILE has big teeth.,ODD,FAT,OIL,ROC,OLD,D,The missing letters are ROC (CROCODILE).
+M3L_121,See the AGATOR swim.,GET,AIR,LLI,OPT,DAD,C,The missing letters are LLI (ALLIGATOR).
+M3L_122,The KANGO jumps high.,BY,OLD,ARO,FOR,MET,C,The missing letters are ARO (KANGAROO).
+M3L_123,The GORI is big.,OUT,LLA,MET,ADO,BAG,B,The missing letters are LLA (GORILLA).
+M3L_124,The CHINZEE is clever.,MPA,LIT,AIR,EGG,THY,A,The missing letters are MPA (CHIMPANZEE).
+M3L_125,The SQUIR eats nuts.,JET,REL,FLY,JOY,END,B,The missing letters are REL (SQUIRREL).
+M3L_126,The HEDOG has spines.,GEH,WEE,OUT,BIG,OAK,A,The missing letters are GEH (HEDGEHOG).
+M3L_127,The BAD lives in a sett.,GER,TOP,EST,ACT,SAY,A,The missing letters are GER (BADGER).
+M3L_128,The WEL is small.,ATE,VET,LET,MAG,ASE,E,The missing letters are ASE (WEASEL).
+M3L_129,A pet RET.,OFF,NAG,FER,FIT,INK,C,The missing letters are FER (FERRET).
+M3L_130,My pet HTER runs.,IRE,FAD,SAD,AMS,IVY,D,The missing letters are AMS (HAMSTER).
+M3L_131,A small BIL.,GER,ENT,BAD,YET,ING,A,The missing letters are GER (GERBIL).
+M3L_132,A GUA pig.,INE,MAG,OLD,EAR,AND,A,The missing letters are INE (GUINEA).
+M3L_133,The POT talks.,JOY,ARR,COT,SIT,EYE,B,The missing letters are ARR (PARROT).
+M3L_134,Feed the PIN.,ODD,GEO,LIT,AGE,ART,B,The missing letters are GEO (PIGEON).
+M3L_135,A small SPOW bird.,OAT,INN,COO,PAD,ARR,E,The missing letters are ARR (SPARROW).
+M3L_136,The EA flies high.,EVE,KAY,EST,GLE,FLY,D,The missing letters are GLE (EAGLE).
+M3L_137,A fast CON.,SAY,LAG,MAD,FAL,BAT,D,The missing letters are FAL (FALCON).
+M3L_138,The OICH runs fast.,GAG,CRY,STR,DAD,WHY,C,The missing letters are STR (OSTRICH).
+M3L_139,The GUIN swims well.,YET,PEN,LOO,EEL,TAD,B,The missing letters are PEN (PENGUIN).
+M3L_140,The DOLP jumped.,SIT,WAY,FAD,HIN,WHY,D,The missing letters are HIN (DOLPHIN).
+M3L_141,A blue WH.,ENT,BAD,ALE,HAT,ACE,C,The missing letters are ALE (WHALE).
+M3L_142,A great white SH.,DAD,ARK,ONE,OUR,SAY,B,The missing letters are ARK (SHARK).
+M3L_143,Pink SON.,JAG,ALM,OUT,SAD,BIG,B,The missing letters are ALM (SALMON).
+M3L_144,River TT.,TAD,ROU,MAY,MAT,OAK,B,The missing letters are ROU (TROUT).
+M3L_145,A red RING.,LAG,PAT,OPT,HER,KIT,D,The missing letters are HER (HERRING).
+M3L_146,Smoked HOCK.,FAT,HOP,ADD,RAD,HAT,C,The missing letters are ADD (HADDOCK).
+M3L_147,Fresh MACEL.,ASH,ROT,KER,KAY,TEE,C,The missing letters are KER (MACKEREL).
+M3L_148,A tin of SARD.,OUT,DOT,INE,MAN,TEE,C,The missing letters are INE (SARDINE).
+M3L_149,Tinned A.,EST,AID,BIT,TUN,OAT,D,The missing letters are TUN (TUNA).
+M3L_150,Eat an AP.,ODD,LIT,ORB,FIT,PLE,E,The missing letters are PLE (APPLE).
+M3L_151,Peel an ORE.,MAN,OWL,BOY,AND,ANG,E,The missing letters are ANG (ORANGE).
+M3L_152,A yellow BAN.,ANA,WAY,OAK,EGG,TOY,A,The missing letters are ANA (BANANA).
+M3L_153,A juicy P.,SAY,EAR,ARM,FOR,BAY,B,The missing letters are EAR (PEAR).
+M3L_154,A ripe M.,PLU,PIT,JAG,OUT,CAD,A,The missing letters are PLU (PLUM).
+M3L_155,A green PE.,THE,OWL,ONE,ICE,GRA,E,The missing letters are GRA (GRAPE).
+M3L_156,A sour LE.,MON,ICE,ION,EYE,THE,A,The missing letters are MON (LEMON).
+M3L_157,A green L.,BAG,OWL,IME,OUS,OFF,C,The missing letters are IME (LIME).
+M3L_158,A sweet ME.,FEE,LET,LON,JOY,ROT,C,The missing letters are LON (MELON).
+M3L_159,A soft CH.,MAD,PEA,TRY,DAD,AIM,B,The missing letters are PEA (PEACH).
+M3L_160,A red CHE.,BOO,BOX,SAD,RRY,SIT,D,The missing letters are RRY (CHERRY).
+M3L_161,A wild BE.,PRY,RRY,ART,AID,DRY,B,The missing letters are RRY (BERRY).
+M3L_162,A red STRERRY.,AWB,ZOO,HOT,HAD,FLY,A,The missing letters are AWB (STRAWBERRY).
+M3L_163,A pink RASRRY.,POT,PBE,SIT,PAD,MOO,B,The missing letters are PBE (RASPBERRY).
+M3L_164,A small BLURRY.,DAD,BOX,EBE,RAT,JAG,C,The missing letters are EBE (BLUEBERRY).
+M3L_165,Pick a BLACRRY.,EYE,ARK,ENT,KBE,GAY,D,The missing letters are KBE (BLACKBERRY).
+M3L_166,A baked PTO.,OTA,PIT,BEE,ARK,ASK,A,The missing letters are OTA (POTATO).
+M3L_167,A red TTO.,WIT,OMA,OIL,MOO,COO,B,The missing letters are OMA (TOMATO).
+M3L_168,A crunchy COT.,COT,YAK,LET,FOX,ARR,E,The missing letters are ARR (CARROT).
+M3L_169,Chop an ON.,YAK,RAT,ONI,BIT,NET,C,The missing letters are ONI (ONION).
+M3L_170,A big TUP.,RNI,VET,URN,HAD,OFF,A,The missing letters are RNI (TURNIP).
+M3L_171,Roast SNIP.,ENT,CAT,OIL,PAR,EYE,D,The missing letters are PAR (PARSNIP).
+M3L_172,Green BAGE.,CAB,KIT,NAG,SAY,TEE,A,The missing letters are CAB (CABBAGE).
+M3L_173,Fresh TUCE.,LET,LOT,OAT,ICE,OUS,A,The missing letters are LET (LETTUCE).
+M3L_174,Cool as a CUCUM.,USE,SPY,ONE,NOT,BER,E,The missing letters are BER (CUCUMBER).
+M3L_175,Red PER.,PEP,SET,RED,LAY,HAT,A,The missing letters are PEP (PEPPER).
+M3L_176,Green SPIN.,ACE,ACH,ROT,OAK,BIT,B,The missing letters are ACH (SPINACH).
+M3L_177,Eat your CCOLI.,BRO,LEE,TOY,IVE,THE,A,The missing letters are BRO (BROCCOLI).
+M3L_178,White CAULIWER.,FLO,URN,GAY,HAT,OWN,A,The missing letters are FLO (CAULIFLOWER).
+M3L_179,Baked BS.,OLD,NET,MAN,TAG,EAN,E,The missing letters are EAN (BEANS).
+M3L_180,Green P.,MAN,EAS,PIT,HOP,AIM,B,The missing letters are EAS (PEAS).
+M3L_181,Yellow SWEERN.,ONE,BIG,VET,OLD,TCO,E,The missing letters are TCO (SWEETCORN).
+M3L_182,Red RSH.,WEE,OWN,ADI,OPT,DAY,C,The missing letters are ADI (RADISH).
+M3L_183,Crunchy ERY.,AIM,CEL,MAT,LOO,SET,B,The missing letters are CEL (CELERY).
+M3L_184,A wild MUSHR.,OOM,EGO,ICE,JAG,ING,A,The missing letters are OOM (MUSHROOM).
+M3L_185,Slice of BR.,TAG,BAD,EAD,BAT,SIT,C,The missing letters are EAD (BREAD).
+M3L_186,Hot TT.,INN,EEL,MAD,OAS,WIT,D,The missing letters are OAS (TOAST).
+M3L_187,Bread and BUT.,NET,TRY,COO,TER,URN,D,The missing letters are TER (BUTTER).
+M3L_188,Ham and CSE.,DOT,SPY,INN,HEE,JET,D,The missing letters are HEE (CHEESE).
+M3L_189,Drink M.,ILK,BIT,MAT,HAY,YAK,A,The missing letters are ILK (MILK).
+M3L_190,Fruit YURT.,GAY,OGH,AIM,TAG,MOO,B,The missing letters are OGH (YOGHURT).
+M3L_191,Ice AM.,ADO,RAG,CRE,LAG,CAT,C,The missing letters are CRE (CREAM).
+M3L_192,Sweet SR.,KIT,UGA,HOT,USE,SPY,B,The missing letters are UGA (SUGAR).
+M3L_193,Bake with FR.,BIG,LOU,RUN,HAY,TION,B,The missing letters are LOU (FLOUR).
+M3L_194,Italian PA.,HAD,BAY,FIT,SKY,AST,E,The missing letters are AST (PASTA).
+M3L_195,Pepperoni ZA.,TAD,MAY,BOY,PAD,PIZ,E,The missing letters are PIZ (PIZZA).
+M3L_196,Beef BUR.,MOO,BIT,GER,SIT,WEE,C,The missing letters are GER (BURGER).
+M3L_197,Fish and CH.,HOP,TOO,POT,IPS,MOO,D,The missing letters are IPS (CHIPS).
+M3L_198,Pork SAUS.,INK,END,AGE,EST,AIR,C,The missing letters are AGE (SAUSAGE).
+M3L_199,Eggs and BA.,AGE,THE,CON,COO,ILL,C,The missing letters are CON (BACON).
+M3L_200,Juicy AK.,FEE,HOP,HIT,SAY,STE,E,The missing letters are STE (STEAK).
+M3L_201,Roast CHIC.,FRY,BAT,ADD,KEN,SET,D,The missing letters are KEN (CHICKEN).
+M3L_202,Christmas TEY.,URK,EGG,ARM,JAG,CAN,A,The missing letters are URK (TURKEY).
+M3L_203,Roast B.,GET,LAM,RAY,HAT,BAG,B,The missing letters are LAM (LAMB).
+M3L_204,Roast F.,IVE,OUS,AGE,FOR,BEE,E,The missing letters are BEE (BEEF).
+M3L_205,Roast K.,POR,OAR,JET,IVE,YET,A,The missing letters are POR (PORK).
+M3L_206,Fried H.,MET,INN,LAY,FIS,CAT,D,The missing letters are FIS (FISH).
+M3L_207,Drink WA.,MOO,EAT,BEE,ONE,TER,E,The missing letters are TER (WATER).
+M3L_208,Orange CE.,JUI,IRE,RAD,HAD,HOT,A,The missing letters are JUI (JUICE).
+M3L_209,Hot COF.,TOP,FEE,FAD,AID,TRY,B,The missing letters are FEE (COFFEE).
+M3L_210,Hot CHOCOL.,MAG,BIT,ATE,AID,BEE,C,The missing letters are ATE (CHOCOLATE).
+M3L_211,Fizzy ONADE.,MAD,LEM,LEE,AIM,TEE,B,The missing letters are LEM (LEMONADE).
+M3L_212,Eat a BUIT.,PAT,BY,RED,ISC,ARM,D,The missing letters are ISC (BISCUIT).
+M3L_213,Birthday C.,ADD,AKE,MAD,DAY,OPT,B,The missing letters are AKE (CAKE).
+M3L_214,A sticky SW.,EET,SEE,HAY,PAD,ADO,A,The missing letters are EET (SWEET).
+M3L_215,Cotton CY.,JET,AND,ORB,FAT,HOT,B,The missing letters are AND (CANDY).
+M3L_216,Chewy TOF.,KAY,TEE,FEE,ONE,TOP,C,The missing letters are FEE (TOFFEE).
+M3L_217,Sweet GE.,OUR,CAD,MAY,FUD,AIM,D,The missing letters are FUD (FUDGE).
+M3L_218,Wobbly JY.,ATE,PAD,ART,NET,ELL,E,The missing letters are ELL (JELLY).
+M3L_219,Rice PUDD.,LAD,ING,BIG,HAG,THE,B,The missing letters are ING (PUDDING).
+M3L_220,Sweet SERT.,HAY,DES,TRY,OUS,BOX,B,The missing letters are DES (DESSERT).
+M3L_221,Sit at the TE.,FIT,WAY,PAT,ABL,SAG,D,The missing letters are ABL (TABLE).
+M3L_222,Sit on the CH.,IVE,SAT,AGE,ATE,AIR,E,The missing letters are AIR (CHAIR).
+M3L_223,Sit on the A.,SOF,DAY,HAG,YAK,DOT,A,The missing letters are SOF (SOFA).
+M3L_224,Sit on a OL.,LOO,RAY,OAT,EVE,STO,E,The missing letters are STO (STOOL).
+M3L_225,Park CH.,BET,SKY,ACT,BEN,POT,D,The missing letters are BEN (BENCH).
+M3L_226,School K.,DES,PAT,OUS,MAY,INK,A,The missing letters are DES (DESK).
+M3L_227,Book SF.,ASK,HEL,ARM,OWL,OUR,B,The missing letters are HEL (SHELF).
+M3L_228,In the CUARD.,IVE,PBO,SPY,OWN,FAD,B,The missing letters are PBO (CUPBOARD).
+M3L_229,In the DRR.,ILL,INN,ION,AWE,RED,D,The missing letters are AWE (DRAWER).
+M3L_230,Turn on the P.,FLY,VET,EYE,TOO,LAM,E,The missing letters are LAM (LAMP).
+M3L_231,Bright LI.,ONE,GAY,GHT,LOT,RUN,C,The missing letters are GHT (LIGHT).
+M3L_232,Light B.,SKY,FAD,POT,BUL,RUN,D,The missing letters are BUL (BULB).
+M3L_233,Light SWI.,TAD,WIT,FLY,TCH,MAT,D,The missing letters are TCH (SWITCH).
+M3L_234,Electric P.,LUG,APE,KIT,EAR,OPT,A,The missing letters are LUG (PLUG).
+M3L_235,Wall SET.,DRY,FEE,URN,HIT,OCK,E,The missing letters are OCK (SOCKET).
+M3L_236,Electric E.,WIR,EEL,ROT,OUS,LAG,A,The missing letters are WIR (WIRE).
+M3L_237,New BATY.,TER,BEE,EAR,JAY,TOY,A,The missing letters are TER (BATTERY).
+M3L_238,Flash TO.,ARK,RCH,SAD,RED,AIM,B,The missing letters are RCH (TORCH).
+M3L_239,Alarm CL.,OCK,JET,ASH,MAG,COO,A,The missing letters are OCK (CLOCK).
+M3L_240,Wrist WH.,MET,HAD,OLD,BIT,ATC,E,The missing letters are ATC (WATCH).
+M3L_241,Mobile PE.,HON,OUT,YET,OWL,ICE,A,The missing letters are HON (PHONE).
+M3L_242,Listen to the RO.,ADI,IVY,TRY,LIT,SAT,A,The missing letters are ADI (RADIO).
+M3L_243,Watch EVISION.,GAY,AND,NAG,TEL,FOR,D,The missing letters are TEL (TELEVISION).
+M3L_244,Use the CUTER.,HAY,ENT,ICE,GAY,OMP,E,The missing letters are OMP (COMPUTER).
+M3L_245,Touch SEN.,DOT,MAN,CRE,BIG,BAY,C,The missing letters are CRE (SCREEN).
+M3L_246,Type on the KOARD.,EYB,ADO,PAD,YET,DOG,A,The missing letters are EYB (KEYBOARD).
+M3L_247,Click the SE.,JOY,ART,FRY,MOU,GAG,D,The missing letters are MOU (MOUSE).
+M3L_248,Inkjet PTER.,RIN,BIG,PAD,LAD,ONE,A,The missing letters are RIN (PRINTER).
+M3L_249,Open the LAP.,ACE,NET,AID,PTO,ZOO,D,The missing letters are PTO (LAPTOP).
+M3L_250,Use the LET.,FEE,TAB,RAD,PAY,GAY,B,The missing letters are TAB (TABLET).
+M3L_251,Take a photo with the CAA.,WAY,OUS,MAD,MAT,MER,E,The missing letters are MER (CAMERA).
+M3L_252,Watch a VI.,AIM,ION,OAR,PAD,DEO,E,The missing letters are DEO (VIDEO).
+M3L_253,Listen to IC.,OUT,AIR,MUS,OPT,OIL,C,The missing letters are MUS (MUSIC).
+M3L_254,Sing a S.,ONE,SIT,ONG,BAD,RUN,C,The missing letters are ONG (SONG).
+M3L_255,Do a DA.,NCE,TOP,EVE,ING,GAG,A,The missing letters are NCE (DANCE).
+M3L_256,Read a B.,INN,OOK,BIG,OUT,ORB,B,The missing letters are OOK (BOOK).
+M3L_257,Write on ER.,OUT,USE,PAP,AIM,ALL,C,The missing letters are PAP (PAPER).
+M3L_258,Sharp PIL.,INN,ENC,RED,PAD,ARK,B,The missing letters are ENC (PENCIL).
+M3L_259,Eraser RER.,SAG,UBB,AIM,RAG,LOO,B,The missing letters are UBB (RUBBER).
+M3L_260,Measure with a RR.,ULE,WIT,AND,EAT,ONE,A,The missing letters are ULE (RULER).
+M3L_261,Cut with SCORS.,ISS,EAT,WHY,JAY,LAD,A,The missing letters are ISS (SCISSORS).
+M3L_262,Stick with G.,AGE,EAR,RAG,EAT,LUE,E,The missing letters are LUE (GLUE).
+M3L_263,Wet NT.,PIT,AND,ORB,OFF,PAI,E,The missing letters are PAI (PAINT).
+M3L_264,Paint BR.,USH,TEE,OPT,PIT,ILL,A,The missing letters are USH (BRUSH).
+M3L_265,Wax YON.,BAT,CRA,WAG,SIT,OLD,B,The missing letters are CRA (CRAYON).
+M3L_266,White CK.,SIT,PAT,VET,APE,HAL,E,The missing letters are HAL (CHALK).
+M3L_267,Black RD.,OUT,BOA,WIT,POT,SIT,B,The missing letters are BOA (BOARD).
+M3L_268,World GL.,BAT,AGE,PRY,SUN,OBE,E,The missing letters are OBE (GLOBE).
+M3L_269,Map AS.,BOO,ENT,ATE,BAD,TLA,E,The missing letters are TLA (ATLAS).
+M3L_270,Look it up in the DICNARY.,TIO,TAD,LOO,BY,HAY,A,The missing letters are TIO (DICTIONARY).
+M3L_271,Borrow books from the LIBY.,RAR,BEE,WIT,OLD,OUS,A,The missing letters are RAR (LIBRARY).
+M3L_272,Go to SS.,OPT,PAT,CLA,OUT,MAY,C,The missing letters are CLA (CLASS).
+M3L_273,Clean your M.,CAN,ATE,ART,ROO,TAD,D,The missing letters are ROO (ROOM).
+M3L_274,School L.,HAL,IVE,BIG,SIT,PIT,A,The missing letters are HAL (HALL).
+M3L_275,Football FI.,ELD,WHY,BOX,VET,AIR,A,The missing letters are ELD (FIELD).
+M3L_276,Play in the PLROUND.,BAT,AYG,THE,LEE,ODD,B,The missing letters are AYG (PLAYGROUND).
+M3L_277,Go to the K.,TOY,MET,PAR,END,ILL,C,The missing letters are PAR (PARK).
+M3L_278,Play on the SG.,COO,AIM,JAY,WIN,HAT,D,The missing letters are WIN (SWING).
+M3L_279,Go down the SL.,CAD,JAG,SEE,IDE,YET,D,The missing letters are IDE (SLIDE).
+M3L_280,Up and down on the SAW.,EES,THY,BAG,ASK,ACT,A,The missing letters are EES (SEESAW).
+M3L_281,Spin on the ROUNOUT.,LOO,ASK,DAB,NEW,ROT,C,The missing letters are DAB (ROUNDABOUT).
+M3L_282,Dig in the SPIT.,ENT,RUN,JAG,TOY,AND,E,The missing letters are AND (SANDPIT).
+M3L_283,Swim in the P.,RUN,DRY,RAG,OOL,EAT,D,The missing letters are OOL (POOL).
+M3L_284,Sandy BE.,ACH,PAT,LIT,ILL,EEL,A,The missing letters are ACH (BEACH).
+M3L_285,Deep AN.,WIT,FOX,OCE,EST,GET,C,The missing letters are OCE (OCEAN).
+M3L_286,Flowing ER.,RIV,NOT,OWL,JAG,CAN,A,The missing letters are RIV (RIVER).
+M3L_287,Big L.,SPY,SET,COT,AKE,EAT,D,The missing letters are AKE (LAKE).
+M3L_288,Duck P.,JAG,OND,MAN,URN,MOO,B,The missing letters are OND (POND).
+M3L_289,Babbling SAM.,ZOO,ENT,TRE,FOR,ASH,C,The missing letters are TRE (STREAM).
+M3L_290,Boat on the CL.,WHY,ANA,OAK,FEE,SUN,B,The missing letters are ANA (CANAL).
+M3L_291,Steep L.,HIL,FEE,OIL,AND,MAN,A,The missing letters are HIL (HILL).
+M3L_292,High NTAIN.,PRY,INN,MY,MOU,TOO,D,The missing letters are MOU (MOUNTAIN).
+M3L_293,Green VEY.,IVE,DAD,ENT,ALL,OUR,D,The missing letters are ALL (VALLEY).
+M3L_294,Dark FOR.,EST,LAD,TAG,IRE,SAD,A,The missing letters are EST (FOREST).
+M3L_295,Walk in the W.,OOD,VET,CAN,BOO,RAD,A,The missing letters are OOD (WOOD).
+M3L_296,Climb a T.,TOO,KAY,OFF,THY,REE,E,The missing letters are REE (TREE).
+M3L_297,Green B.,MAT,HAG,ARK,HAY,USH,E,The missing letters are USH (BUSH).
+M3L_298,Green GR.,BOY,ASS,RED,IVY,EGO,B,The missing letters are ASS (GRASS).
+M3L_299,Pretty WER.,OLD,FLO,ASK,HOT,LET,B,The missing letters are FLO (FLOWER).
+M3L_300,Green L.,EAF,OLD,CRY,JET,SET,A,The missing letters are EAF (LEAF).
+M3L_301,Tree R.,OOT,FOR,OUT,WIT,SKY,A,The missing letters are OOT (ROOT).
+M3L_302,Tree BRH.,YAK,ANC,NET,HIT,TAG,B,The missing letters are ANC (BRANCH).
+M3L_303,Flower S.,RED,OAK,LIT,AIR,TEM,E,The missing letters are TEM (STEM).
+M3L_304,Rose PE.,EEL,ONE,TAL,ODD,SAD,C,The missing letters are TAL (PETAL).
+M3L_305,Sharp TN.,SIT,HOR,PIT,OUS,AID,B,The missing letters are HOR (THORN).
+M3L_306,Red R.,THE,OSE,SAT,FOR,SEE,B,The missing letters are OSE (ROSE).
+M3L_307,White Y.,KAY,LIL,PAD,FIT,SET,B,The missing letters are LIL (LILY).
+M3L_308,Yellow SY.,DAI,HOT,EGG,MAN,ASK,A,The missing letters are DAI (DAISY).
+M3L_309,Red TU.,ARM,LIP,LET,JAY,BAD,B,The missing letters are LIP (TULIP).
+M3L_310,Red P.,SET,OPP,GAY,LAD,SAY,B,The missing letters are OPP (POPPY).
+M3L_311,Tall SUNWER.,FLO,HAG,MET,WET,ODD,A,The missing letters are FLO (SUNFLOWER).
+M3L_312,Wet R.,SET,AIN,ASK,OLD,HOT,B,The missing letters are AIN (RAIN).
+M3L_313,White W.,EAR,SNO,ODD,OUT,ILL,B,The missing letters are SNO (SNOW).
+M3L_314,Strong D.,EVE,AND,SAY,WIN,INN,D,The missing letters are WIN (WIND).
+M3L_315,Thunder SM.,ODD,TOR,ILL,JET,CRY,B,The missing letters are TOR (STORM).
+M3L_316,Fluffy CUD.,EEL,SET,LOA,TOP,LIT,C,The missing letters are LOA (CLOUD).
+M3L_317,Bright N.,ARM,TOP,SU,RUN,JET,C,The missing letters are SU (SUN).
+M3L_318,Full M.,MET,OON,BOY,HOT,SEE,B,The missing letters are OON (MOON).
+M3L_319,Twinkle S.,TAG,SAT,TAR,HOT,OUS,C,The missing letters are TAR (STAR).
+M3L_320,Blue Y.,WET,OUS,SK,AIR,FOR,C,The missing letters are SK (SKY).
+M3L_321,Outer SP.,ACE,LET,SIT,HAY,FOR,A,The missing letters are ACE (SPACE).
+M3L_322,Planet E.,ARTH,OAK,CRY,ASK,WHY,A,The missing letters are ARTH (EARTH).
+M3L_323,The whole RLD.,OFF,HAY,OUS,ENT,WO,E,The missing letters are WO (WORLD).
+M3L_324,Live in a T.,RED,OWN,TOP,RUN,OUR,B,The missing letters are OWN (TOWN).
+M3L_325,Big C.,ITY,HIT,AIR,WEE,LIT,A,The missing letters are ITY (CITY).
+M3L_326,Small VIAGE.,MET,LL,SET,IVY,BAT,B,The missing letters are LL (VILLAGE).
+M3L_327,Live in a HO.,AIR,FIT,USE,IVY,THE,C,The missing letters are USE (HOUSE).
+M3L_328,Go H.,PIT,OME,HAY,JAY,MAD,B,The missing letters are OME (HOME).
+M3L_329,Live in a F.,OAR,LAT,WIT,MAN,SAT,B,The missing letters are LAT (FLAT).
+M3L_330,Country TAGE.,COT,PAT,EAT,JAG,WHY,A,The missing letters are COT (COTTAGE).
+M3L_331,Old TLE.,CAS,FOR,ARM,IVY,PIT,A,The missing letters are CAS (CASTLE).
+M3L_332,Royal PALE.,HAG,AID,CAN,HOT,AC,D,The missing letters are AC (PALACE).
+M3L_333,High TR.,EGG,OWE,EEL,MAN,THE,B,The missing letters are OWE (TOWER).
+M3L_334,Cross the DGE.,CRY,EGG,ARM,BOO,BRI,E,The missing letters are BRI (BRIDGE).
+M3L_335,Walk on the RD.,OA,OLD,MET,FOR,HIT,A,The missing letters are OA (ROAD).
+M3L_336,Narrow P.,BIT,ATH,WIT,TOP,LET,B,The missing letters are ATH (PATH).
+M3L_337,Country L.,OUS,EGG,ANE,WET,SET,C,The missing letters are ANE (LANE).
+M3L_338,Car DR.,NET,IVE,ILL,IVY,AIR,B,The missing letters are IVE (DRIVE).
+M3L_339,Which Y?,EGG,WA,ONE,OFF,MAN,B,The missing letters are WA (WAY).
+M3L_340,Drive a R.,JAY,CA,SET,BAT,AID,B,The missing letters are CA (CAR).
+M3L_341,Ride the S.,WEE,HAG,BU,ILL,SAD,C,The missing letters are BU (BUS).
+M3L_342,Catch the TN.,OLD,GAY,CRY,RAI,OAT,D,The missing letters are RAI (TRAIN).
+M3L_343,Fly in a NE.,PLA,EGG,CAN,MET,TOO,A,The missing letters are PLA (PLANE).
+M3L_344,Sail a S.,HIP,EAR,HAD,PAD,ARM,A,The missing letters are HIP (SHIP).
+M3L_345,Row a B.,OAT,ODD,BOY,JOY,HOT,A,The missing letters are OAT (BOAT).
+M3L_346,Ride a KE.,ODD,BI,IVY,TAG,OAK,B,The missing letters are BI (BIKE).
+M3L_347,Ride a CLE.,WET,MAN,FOR,CY,ONE,D,The missing letters are CY (CYCLE).
+M3L_348,Drive a V.,THE,AN,EGG,LET,LIT,B,The missing letters are AN (VAN).
+M3L_349,Big LRY.,OUR,LO,OR,HAY,OUT,C,The missing letters are OR (LORRY).
+M3L_350,Big TCK.,PAD,SAD,PIT,RU,THE,D,The missing letters are RU (TRUCK).
+ID,Question,A,B,C,D,E,Correct Answer,Explanation
+M3L_NEW_001,The PARD runs fast.,CRY,LEO,ROT,DAD,TION,B,The missing letters are LEO (LEOPARD).
+M3L_NEW_002,A big FALO.,ATE,HAT,BAT,ASH,BUF,E,The missing letters are BUF (BUFFALO).
+M3L_NEW_003,Fast CHEE.,BIT,PIT,TAD,YAK,TAH,E,The missing letters are TAH (CHEETAH).
+M3L_NEW_004,Tall GIRA.,IVY,EYE,INN,OAR,FFE,E,The missing letters are FFE (GIRAFFE).
+M3L_NEW_005,Horned RH.,RAG,BAT,RAT,INO,FEE,D,The missing letters are INO (RHINO).
+M3L_NEW_006,Big HO.,ZOO,IPP,ENT,FAT,BY,B,The missing letters are IPP (HIPPO).
+M3L_NEW_007,Noisy OON.,BAB,NEW,AND,EVE,GAG,A,The missing letters are BAB (BABOON).
+M3L_NEW_008,Desert CA.,SIT,ACE,MAD,ONE,MEL,E,The missing letters are MEL (CAMEL).
+M3L_NEW_009,Slow TUE.,URN,NEW,RTL,COO,OWN,C,The missing letters are RTL (TURTLE).
+M3L_NEW_010,Green ARD.,JOY,DRY,NAY,LIZ,ATE,D,The missing letters are LIZ (LIZARD).
+M3L_NEW_011,Long SE.,NAK,ACT,AID,THE,JAY,A,The missing letters are NAK (SNAKE).
+M3L_NEW_012,Ugly D.,RAY,TOA,EAR,BIG,BY,B,The missing letters are TOA (TOAD).
+M3L_NEW_013,Breakfast CEL.,IVY,NAG,SAD,SIT,REA,E,The missing letters are REA (CEREAL).
+M3L_NEW_014,Chicken NOO.,SHY,DLE,LAY,HAY,ROT,B,The missing letters are DLE (NOODLE).
+M3L_NEW_015,Green AD.,CAD,SAG,FAD,MAD,SAL,E,The missing letters are SAL (SALAD).
+M3L_NEW_016,Ham SANCH.,THY,LAD,GET,DWI,INN,D,The missing letters are DWI (SANDWICH).
+M3L_NEW_017,Tomato SE.,RAY,INN,TAD,AUC,PAY,D,The missing letters are AUC (SAUCE).
+M3L_NEW_018,Beef GR.,LIT,AVY,GET,TION,YET,B,The missing letters are AVY (GRAVY).
+M3L_NEW_019,White ST.,TOY,OAT,PAD,PAY,HIR,E,The missing letters are HIR (SHIRT).
+M3L_NEW_020,Short SK.,IRT,ORE,MOO,DOT,ING,A,The missing letters are IRT (SKIRT).
+M3L_NEW_021,Pink DR.,ESS,KIT,ACE,OLD,FOX,A,The missing letters are ESS (DRESS).
+M3L_NEW_022,Blue PA.,BY,NTS,HAT,THY,HAY,B,The missing letters are NTS (PANTS).
+M3L_NEW_023,Woolly KS.,ONE,NAY,SOC,PET,FIT,C,The missing letters are SOC (SOCKS).
+M3L_NEW_024,Shiny SS.,PAD,MOO,BOO,HIT,HOE,E,The missing letters are HOE (SHOES).
+M3L_NEW_025,Warm T.,APE,OAK,MOO,COA,MAT,D,The missing letters are COA (COAT).
+M3L_NEW_026,Hand GL.,OIL,SET,HOT,OVE,JAY,D,The missing letters are OVE (GLOVE).
+M3L_NEW_027,Rain BO.,OTS,TION,ARM,ZOO,FEE,A,The missing letters are OTS (BOOTS).
+M3L_NEW_028,Leather B.,CAD,COO,RAT,ELT,MAN,D,The missing letters are ELT (BELT).
+M3L_NEW_029,My H hurts.,WET,DRY,EAD,NET,OUR,C,The missing letters are EAD (HEAD).
+M3L_NEW_030,Long H.,END,OUT,AIR,SPY,ACE,C,The missing letters are AIR (HAIR).
+M3L_NEW_031,Wash your E.,CAD,POT,ACT,FAC,EGO,D,The missing letters are FAC (FACE).
+M3L_NEW_032,Blue E.,MOO,YES,MAN,RAG,AGE,B,The missing letters are YES (EYES).
+M3L_NEW_033,Red N.,OSE,ORB,CRY,END,ACE,A,The missing letters are OSE (NOSE).
+M3L_NEW_034,Open MO.,SAD,UTH,ORE,ATE,VET,B,The missing letters are UTH (MOUTH).
+M3L_NEW_035,Big S.,EAR,THY,LOO,EYE,FOR,A,The missing letters are EAR (EARS).
+M3L_NEW_036,Strong A.,PRY,OPT,RMS,ING,SIT,C,The missing letters are RMS (ARMS).
+M3L_NEW_037,Long L.,EGS,ENT,AID,BIG,FAD,A,The missing letters are EGS (LEGS).
+M3L_NEW_038,Two T.,RAT,FIT,KIT,NEW,FEE,E,The missing letters are FEE (FEET).
+M3L_NEW_039,Left H.,RUN,SPY,AND,APE,LIT,C,The missing letters are AND (HAND).
+M3L_NEW_040,Ten S.,TOY,ODD,BAG,TOE,EGO,D,The missing letters are TOE (TOES).
+M3L_NEW_041,Bony ES.,SIT,YET,KNE,YAK,OPT,C,The missing letters are KNE (KNEES).
+M3L_NEW_042,Bumpy OW.,ELB,MET,GET,OAT,FOX,A,The missing letters are ELB (ELBOW).
+M3L_NEW_043,Long N.,MAG,ORE,LOO,ECK,BAD,D,The missing letters are ECK (NECK).
+M3L_NEW_044,Broad CT.,DOT,HES,LOO,AGE,BEE,B,The missing letters are HES (CHEST).
+M3L_NEW_045,Full MACH.,ONE,GET,OPT,TOP,STO,E,The missing letters are STO (STOMACH).
+M3L_NEW_046,Boil the KEE.,ATE,AIM,EGO,TTL,OUR,D,The missing letters are TTL (KETTLE).
+M3L_NEW_047,Cold FRE.,BIT,TOP,EST,HAG,IDG,E,The missing letters are IDG (FRIDGE).
+M3L_NEW_048,Ice FRER.,ODD,EEZ,ASH,EYE,COO,B,The missing letters are EEZ (FREEZER).
+M3L_NEW_049,Hot O.,VEN,RAG,APE,ING,TOO,A,The missing letters are VEN (OVEN).
+M3L_NEW_050,Kitchen S.,OPT,FOX,INK,KIT,MET,C,The missing letters are INK (SINK).
+M3L_NEW_051,Hot H.,BAG,APE,BAT,FRY,USE,C,The missing letters are BAT (BATH).
+M3L_NEW_052,Take a SHO.,WER,OAT,NEW,TAD,RAY,A,The missing letters are WER (SHOWER).
+M3L_NEW_053,Dry EL.,EGO,JAY,ENT,TOW,LAD,D,The missing letters are TOW (TOWEL).
+M3L_NEW_054,Wash with S.,MOO,ICE,YAK,HAG,OAP,E,The missing letters are OAP (SOAP).
+M3L_NEW_055,Hair MPOO.,MAN,OFF,SHA,PIT,KIT,C,The missing letters are SHA (SHAMPOO).
+M3L_NEW_056,Hair C.,OMB,TOY,OUR,ATE,RED,A,The missing letters are OMB (COMB).
+M3L_NEW_057,Look in the MIR.,RRO,SIT,GAG,BAY,OUT,A,The missing letters are RRO (MIRROR).
+M3L_NEW_058,School IL.,JOY,LAY,PUP,HAG,YET,C,The missing letters are PUP (PUPIL).
+M3L_NEW_059,University SENT.,COO,TUD,APE,SHY,LOO,B,The missing letters are TUD (STUDENT).
+M3L_NEW_060,School PCIPAL.,RIN,DOG,GAY,EAR,SIT,A,The missing letters are RIN (PRINCIPAL).
+M3L_NEW_061,School UNIM.,AGE,ENT,FOR,OPT,ATE,C,The missing letters are FOR (UNIFORM).
+M3L_NEW_062,Play SPS.,BIT,ORT,YAK,ASK,FEE,B,The missing letters are ORT (SPORTS).
+M3L_NEW_063,Hard MA.,SKY,NAY,BY,WEE,THS,E,The missing letters are THS (MATHS).
+M3L_NEW_064,Speak ENGH.,OAT,LIS,DAY,LAD,DAD,B,The missing letters are LIS (ENGLISH).
+M3L_NEW_065,Lab SCIE.,MAT,CAN,ENC,NET,RAT,C,The missing letters are ENC (SCIENCE).
+M3L_NEW_066,Past HIRY.,DAD,STO,YET,LOT,BAY,B,The missing letters are STO (HISTORY).
+M3L_NEW_067,Act in DA.,HAD,RAM,THE,WET,YAK,B,The missing letters are RAM (DRAMA).
+M3L_NEW_068,Steep CL.,IFF,ATE,IVE,DOG,MAG,A,The missing letters are IFF (CLIFF).
+M3L_NEW_069,Yellow D.,ONE,LOT,HAG,SAN,RED,D,The missing letters are SAN (SAND).
+M3L_NEW_070,Hard K.,ART,POT,COO,ROC,ARM,D,The missing letters are ROC (ROCK).
+M3L_NEW_071,Smooth NE.,INN,EVE,EST,STO,LIT,D,The missing letters are STO (STONE).
+M3L_NEW_072,Small PEE.,OUT,SKY,DOG,CAN,BBL,E,The missing letters are BBL (PEBBLE).
+M3L_NEW_073,Brown T.,ONE,EAT,RAD,WEE,DIR,E,The missing letters are DIR (DIRT).
+M3L_NEW_074,Green NT.,INN,ACE,DOT,PLA,PAY,D,The missing letters are PLA (PLANT).
+M3L_NEW_075,Garden W.,COT,BAY,EED,ASH,WIT,C,The missing letters are EED (WEED).
+M3L_NEW_076,Baby WL.,BOX,EAT,AGE,TAD,CRA,E,The missing letters are CRA (CRAWL).
+M3L_NEW_077,Don't HT.,FIG,EVE,ASK,ADO,FRY,A,The missing letters are FIG (FIGHT).
+M3L_NEW_078,Don't AR.,GUE,THE,ADO,HIT,TAD,A,The missing letters are GUE (ARGUE).
+M3L_NEW_079,Please T.,ALK,ADO,OIL,HAT,IVY,A,The missing letters are ALK (TALK).
+M3L_NEW_080,Can you AK?,IRE,JAG,WIT,SPE,LIT,D,The missing letters are SPE (SPEAK).
+M3L_NEW_081,Don't UT.,LAD,ATE,SAG,ART,SHO,E,The missing letters are SHO (SHOUT).
+M3L_NEW_082,Quiet WPER.,HIS,URN,RAT,SET,IVY,A,The missing letters are HIS (WHISPER).
+M3L_NEW_083,Funny LA.,SET,FRY,ODD,UGH,TOO,D,The missing letters are UGH (LAUGH).
+M3L_NEW_084,Big LE.,NAG,MAD,SMI,WET,YAK,C,The missing letters are SMI (SMILE).
+M3L_NEW_085,Sad FN.,MAT,BAG,USE,ROW,SAY,D,The missing letters are ROW (FROWN).
+M3L_NEW_086,Go to SL.,SAY,HOP,MET,EEP,JET,D,The missing letters are EEP (SLEEP).
+M3L_NEW_087,Time to W.,ARM,EAR,ILL,AKE,TOP,D,The missing letters are AKE (WAKE).
+M3L_NEW_088,Cold DR.,AIR,INK,OUT,ART,TRY,B,The missing letters are INK (DRINK).
+M3L_NEW_089,Chef C.,WAG,OOK,BOY,TAG,OUR,B,The missing letters are OOK (COOK).
+M3L_NEW_090,Cake B.,EGO,DRY,AKE,MAN,WHY,C,The missing letters are AKE (BAKE).
+M3L_NEW_091,Water L.,EAR,OUT,RUN,BOI,MAN,D,The missing letters are BOI (BOIL).
+M3L_NEW_092,Hands W.,GAY,PRY,ASH,EAT,LEE,C,The missing letters are ASH (WASH).
+M3L_NEW_093,Clean W.,NAY,BIG,IPE,IVY,IVE,C,The missing letters are IPE (WIPE).
+M3L_NEW_094,Floor SW.,YAK,EYE,EEP,LAG,URN,C,The missing letters are EEP (SWEEP).
+M3L_NEW_095,Clean D.,INN,SIT,UST,MAN,EGG,C,The missing letters are UST (DUST).
+M3L_NEW_096,Ghost SY.,ONE,FAT,ZOO,CAR,RUN,D,The missing letters are CAR (SCARY).
+M3L_NEW_097,Hero VE.,FAT,FRY,RAT,BRA,EAT,D,The missing letters are BRA (BRAVE).
+M3L_NEW_098,Scared COD.,MAY,ORB,HOT,OUT,WAR,E,The missing letters are WAR (COWARD).
+M3L_NEW_099,Desert ISD.,LAD,OUS,ACE,LAN,BIT,D,The missing letters are LAN (ISLAND).
+M3L_NEW_100,Old MUM.,MY,JET,TAG,SEU,WAG,D,The missing letters are SEU (MUSEUM).
+M3L_NEW_101,Sick HOTAL.,OUT,YAK,SPI,LEE,WIT,C,The missing letters are SPI (HOSPITAL).
+M3L_NEW_102,Health CIC.,LAY,LIN,PIT,SKY,USE,B,The missing letters are LIN (CLINIC).
+M3L_NEW_103,Kind NE.,EST,DAY,GAG,URS,MAY,D,The missing letters are URS (NURSE).
+M3L_NEW_104,Call the ICE.,RUN,POL,OLD,SIT,THY,B,The missing letters are POL (POLICE).
+M3L_NEW_105,Brave FMAN.,MY,FLY,IRE,BOO,SUN,C,The missing letters are IRE (FIREMAN).
+M3L_NEW_106,Army DIER.,MY,KAY,SOL,FRY,MAG,C,The missing letters are SOL (SOLDIER).
+M3L_NEW_107,Navy SAR.,ILO,HOP,WAG,USE,VET,A,The missing letters are ILO (SAILOR).
+M3L_NEW_108,Plane PI.,INK,EVE,FOR,HAG,LOT,E,The missing letters are LOT (PILOT).
+M3L_NEW_109,Car MANIC.,ECH,RAT,AID,ORE,NAG,A,The missing letters are ECH (MECHANIC).
+M3L_NEW_110,Pipe PBER.,WHY,SHY,LET,LUM,SKY,D,The missing letters are LUM (PLUMBER).
+M3L_NEW_111,House BDER.,OWN,UIL,ALL,SAT,TOP,B,The missing letters are UIL (BUILDER).
+M3L_NEW_112,Art PAER.,GET,INT,SAG,HOP,RAG,B,The missing letters are INT (PAINTER).
+M3L_NEW_113,Head C.,NAG,HEF,ARM,BOO,ILL,B,The missing letters are HEF (CHEF).
+M3L_NEW_114,Film AC.,HOP,TOR,JAG,COO,OLD,B,The missing letters are TOR (ACTOR).
+M3L_NEW_115,Book WRR.,AIM,ARM,ITE,HOT,MET,C,The missing letters are ITE (WRITER).
+M3L_NEW_116,Rhyme P.,OET,DOT,END,LOO,AND,A,The missing letters are OET (POET).
+M3L_NEW_117,Team CH.,OAT,OAC,ONE,FOR,COO,B,The missing letters are OAC (COACH).
+M3L_NEW_118,Match REEE.,THY,EYE,AIR,FER,JAY,D,The missing letters are FER (REFEREE).
+M3L_NEW_119,Court GE.,END,WEE,OAR,JUD,EGG,D,The missing letters are JUD (JUDGE).
+M3L_NEW_120,Royal K.,THY,TEE,VET,ING,ADO,D,The missing letters are ING (KING).
+M3L_NEW_121,Royal QN.,SEE,BEE,WAY,UEE,POT,D,The missing letters are UEE (QUEEN).
+M3L_NEW_122,Royal PCE.,CRY,RIN,BET,TOY,TRY,B,The missing letters are RIN (PRINCE).
+M3L_NEW_123,Royal NCESS.,EVE,WAY,PRI,OWN,RED,C,The missing letters are PRI (PRINCESS).
+M3L_NEW_124,Race CK.,TRA,URN,POT,NET,JAY,A,The missing letters are TRA (TRACK).
+M3L_NEW_125,Train RWAY.,AGE,EAR,AIL,FOR,AND,C,The missing letters are AIL (RAILWAY).
+M3L_NEW_126,Bus STAN.,SKY,JOY,TIO,LOO,WIT,C,The missing letters are TIO (STATION).
+M3L_NEW_127,Plane AIRT.,AIM,POR,FAD,ENT,SUN,B,The missing letters are POR (AIRPORT).
+M3L_NEW_128,Boat HARR.,LAD,BOU,SET,TION,OLD,B,The missing letters are BOU (HARBOUR).
+M3L_NEW_129,Ship T.,POR,COO,ARM,OWL,WHY,A,The missing letters are POR (PORT).
+M3L_NEW_130,Sailing YT.,ACH,AIM,ING,AND,MAT,A,The missing letters are ACH (YACHT).
+M3L_NEW_131,Car FE.,LOT,SIT,END,RRY,SHY,D,The missing letters are RRY (FERRY).
+M3L_NEW_132,Ocean ER.,THE,LIN,OUT,OWL,TOP,B,The missing letters are LIN (LINER).
+M3L_NEW_133,Deep SUBMNE.,HAT,MET,PAY,ARI,ILL,D,The missing letters are ARI (SUBMARINE).
+M3L_NEW_134,Paddle OE.,ROT,MAT,HAY,CAN,CAT,D,The missing letters are CAN (CANOE).
+M3L_NEW_135,Log R.,KIT,CAT,NAY,TAD,AFT,E,The missing letters are AFT (RAFT).
+M3L_NEW_136,Ride a OTER.,SCO,BAG,ALL,ROT,LAG,A,The missing letters are SCO (SCOOTER).
+M3L_NEW_137,Fly a HELICOP.,MOO,ICE,URN,POT,TER,E,The missing letters are TER (HELICOPTER).
+M3L_NEW_138,Alien SPACES.,SKY,NAG,HIP,BIT,BAT,C,The missing letters are HIP (SPACESHIP).
+M3L_NEW_139,Space SATELE.,LIT,MAT,ASH,ING,BAD,A,The missing letters are LIT (SATELLITE).
+M3L_NEW_140,Metal OT.,FOX,LAG,ORE,ROB,END,D,The missing letters are ROB (ROBOT).
+M3L_NEW_141,Washing MANE.,END,EGO,CHI,EGG,ADO,C,The missing letters are CHI (MACHINE).
+M3L_NEW_142,Car MO.,WAY,TOR,NAG,URN,FRY,B,The missing letters are TOR (MOTOR).
+M3L_NEW_143,Change R.,AID,GEA,JOY,TOY,AND,B,The missing letters are GEA (GEAR).
+M3L_NEW_144,Bike PE.,NET,DAL,BAY,ASK,RED,B,The missing letters are DAL (PEDAL).
+M3L_NEW_145,Door DLE.,SIT,LET,OAT,BOX,HAN,E,The missing letters are HAN (HANDLE).
+M3L_NEW_146,Horse SAD.,ONE,SAT,POT,OWN,DLE,E,The missing letters are DLE (SADDLE).
+M3L_NEW_147,Bird G.,LEE,BIT,WIN,ILL,PAT,C,The missing letters are WIN (WING).
+M3L_NEW_148,Dog T.,SET,AIL,MAD,AGE,SIT,B,The missing letters are AIL (TAIL).
+M3L_NEW_149,Loose TH.,TOO,MY,EVE,FOX,ONE,A,The missing letters are TOO (TOOTH).
+M3L_NEW_150,Pink TUE.,ODD,HAY,GAY,RAD,ONG,E,The missing letters are ONG (TONGUE).
+M3L_NEW_151,Suck TB.,DAD,CRY,NAY,HUM,FIT,D,The missing letters are HUM (THUMB).
+M3L_NEW_152,Finger N.,CAN,AIL,MOO,LET,FEE,B,The missing letters are AIL (NAIL).
+M3L_NEW_153,Slim WT.,TION,OUT,AIS,BIG,BAT,C,The missing letters are AIS (WAIST).
+M3L_NEW_154,Sprain LE.,OUS,YAK,RED,ANK,VET,D,The missing letters are ANK (ANKLE).
+M3L_NEW_155,Left F.,SEE,THE,INN,OOT,BAT,D,The missing letters are OOT (FOOT).
+M3L_NEW_156,Dog E.,NAG,MAT,ILL,BON,ONE,D,The missing letters are BON (BONE).
+M3L_NEW_157,Soft S.,WHY,MAT,KIN,BEE,SHY,C,The missing letters are KIN (SKIN).
+M3L_NEW_158,Red BD.,CRY,ION,LOO,HAT,YET,C,The missing letters are LOO (BLOOD).
+M3L_NEW_159,Beat HE.,BET,ART,RAY,YET,NET,B,The missing letters are ART (HEART).
+M3L_NEW_160,Mind BN.,OWL,APE,RAI,WIT,SKY,C,The missing letters are RAI (BRAIN).
+M3L_NEW_161,Breath G.,OUR,MET,TOY,MY,LUN,E,The missing letters are LUN (LUNG).
+M3L_NEW_162,Strong MUE.,ARK,RED,NEW,SCL,NET,D,The missing letters are SCL (MUSCLE).
+M3L_NEW_163,Calm VE.,COT,IVE,NER,CAD,EYE,C,The missing letters are NER (NERVE).
+M3L_NEW_164,Eye ST.,IGH,GET,TRY,BAG,IVY,A,The missing letters are IGH (SIGHT).
+M3L_NEW_165,Deep THOT.,COT,SAD,IRE,UGH,FIT,D,The missing letters are UGH (THOUGHT).
+M3L_NEW_166,Lost MEY.,ALL,ZOO,MOR,FIT,NAG,C,The missing letters are MOR (MEMORY).
+M3L_NEW_167,Scared R.,FEA,LAD,LEE,TEE,FAT,A,The missing letters are FEA (FEAR).
+M3L_NEW_168,Red AN.,INN,LEE,GER,HAY,DRY,C,The missing letters are GER (ANGER).
+M3L_NEW_169,Crying SADN.,END,RED,ESS,TRY,ATE,C,The missing letters are ESS (SADNESS).
+M3L_NEW_170,Ouch N.,ADD,SIT,LOT,PAI,AND,D,The missing letters are PAI (PAIN).
+M3L_NEW_171,Sick ILLS.,NES,HAG,WIT,EGO,MAD,A,The missing letters are NES (ILLNESS).
+M3L_NEW_172,Bad DASE.,ILL,ISE,ADD,WAY,EYE,B,The missing letters are ISE (DISEASE).
+M3L_NEW_173,High FE.,VER,TION,BAG,DAD,HAY,A,The missing letters are VER (FEVER).
+M3L_NEW_174,Blue ISE.,LAG,WIT,ARK,BRU,MAN,D,The missing letters are BRU (BRUISE).
+M3L_NEW_175,Fire B.,SET,ARM,OWN,INN,URN,E,The missing letters are URN (BURN).
+M3L_NEW_176,Bee NG.,STI,CRY,MAN,SIT,EVE,A,The missing letters are STI (STING).
+M3L_NEW_177,Dog B.,SPY,THE,ACT,CAT,ITE,E,The missing letters are ITE (BITE).
+M3L_NEW_178,Cat ATCH.,AIR,LET,SIT,SCR,DRY,D,The missing letters are SCR (SCRATCH).
+M3L_NEW_179,Old R.,WET,SUN,OUR,OPT,SCA,E,The missing letters are SCA (SCAR).
+M3L_NEW_180,Red S.,GAY,POT,OLD,EGO,WAG,B,The missing letters are POT (SPOT).
+M3L_NEW_181,Itchy H.,EST,END,RAS,OIL,IVY,C,The missing letters are RAS (RASH).
+M3L_NEW_182,Take MEINE.,FLY,PRY,DIC,IRE,LAD,C,The missing letters are DIC (MEDICINE).
+M3L_NEW_183,Swallow P.,PAD,ILL,SAT,BAG,BET,B,The missing letters are ILL (PILL).
+M3L_NEW_184,Take a TET.,ING,RAT,ORE,ABL,MET,D,The missing letters are ABL (TABLET).
+M3L_NEW_185,Wrap BAGE.,CAN,ORE,NDA,LAD,PET,C,The missing letters are NDA (BANDAGE).
+M3L_NEW_186,Stick PLAS.,JET,TER,FLY,OUR,THY,B,The missing letters are TER (PLASTER).
+M3L_NEW_187,Plaster T.,SUN,RED,WAY,ART,CAS,E,The missing letters are CAS (CAST).
+M3L_NEW_188,Walk with CRH.,SAD,SHY,GAG,UTC,ACT,D,The missing letters are UTC (CRUTCH).
+M3L_NEW_189,Sit in WHEELCH.,ADD,AIR,CAD,GAG,TAD,B,The missing letters are AIR (WHEELCHAIR).
+M3L_NEW_190,Wear GSES.,BAY,AIR,TOP,LAS,MOO,D,The missing letters are LAS (GLASSES).
+M3L_NEW_191,Walking ST.,SKY,ICK,RUN,WIT,IRE,B,The missing letters are ICK (STICK).
+M3L_NEW_192,Rain UMBRE.,OFF,NAY,IRE,ARM,LLA,E,The missing letters are LLA (UMBRELLA).
+M3L_NEW_193,Ten DDE.,APE,ECA,HIT,FRY,EAR,B,The missing letters are ECA (DECADE).
+M3L_NEW_194,Hundred CENY.,NAG,ONE,TUR,MAN,PAD,C,The missing letters are TUR (CENTURY).
+M3L_NEW_195,Good MING.,SAG,FIT,SUN,AGE,ORN,E,The missing letters are ORN (MORNING).
+M3L_NEW_196,High N.,WET,WIT,MAY,NOO,AID,D,The missing letters are NOO (NOON).
+M3L_NEW_197,Good AFTERN.,SPY,ADD,ARK,ORB,NOO,E,The missing letters are NOO (AFTERNOON).
+M3L_NEW_198,Good EVEG.,HAT,LAD,AND,NIN,KAY,D,The missing letters are NIN (EVENING).
+M3L_NEW_199,Good HT.,PRY,IRE,BEE,NIG,USE,D,The missing letters are NIG (NIGHT).
+M3L_NEW_200,Twelve MIDNT.,LIT,SHY,IGH,NAG,SAG,C,The missing letters are IGH (MIDNIGHT).
+M3L_NEW_201,Fly a HELICOR.,BAT,ENT,WAY,ODD,PTE,E,The missing letters are PTE (HELICOPTER).
+M3L_NEW_202,Dive in a SUBMAR.,ART,OWN,INE,WIT,WEE,C,The missing letters are INE (SUBMARINE).
+M3L_NEW_203,Call an AMBUCE.,ACE,YET,SEE,LAN,INN,D,The missing letters are LAN (AMBULANCE).
+M3L_NEW_204,Ride a SCER.,EEL,WEE,ODD,COT,OOT,E,The missing letters are OOT (SCOOTER).
+M3L_NEW_205,Horse and CARRE.,PRY,ATE,SET,EGG,IAG,E,The missing letters are IAG (CARRIAGE).
+M3L_NEW_206,Roman CHAR.,KIT,AIM,DAD,SAY,IOT,E,The missing letters are IOT (CHARIOT).
+M3L_NEW_207,Pull a WA.,COT,KAY,ING,APE,GON,E,The missing letters are GON (WAGON).
+M3L_NEW_208,Ride a BICY.,CAT,CLE,DRY,FIT,HAD,B,The missing letters are CLE (BICYCLE).
+M3L_NEW_209,Three wheel TYCLE.,OAK,RIC,WAG,FOR,FIT,B,The missing letters are RIC (TRICYCLE).
+M3L_NEW_210,Ride a TEBOARD.,EEL,MAG,SKA,ARK,COT,C,The missing letters are SKA (SKATEBOARD).
+M3L_NEW_211,Play the GAR.,MAT,FAT,OAR,UIT,GAY,D,The missing letters are UIT (GUITAR).
+M3L_NEW_212,Play the VIO.,LIN,WIT,ONE,APE,YAK,A,The missing letters are LIN (VIOLIN).
+M3L_NEW_213,Blow the TRUM.,KIT,HIT,PET,TION,BOO,C,The missing letters are PET (TRUMPET).
+M3L_NEW_214,Beat the MS.,VET,DOG,DRU,EVE,AGE,C,The missing letters are DRU (DRUMS).
+M3L_NEW_215,Play the FE.,ONE,BOY,DOT,SIT,LUT,E,The missing letters are LUT (FLUTE).
+M3L_NEW_216,Play the CLART.,OUT,INE,MY,RUN,MOO,B,The missing letters are INE (CLARINET).
+M3L_NEW_217,Jazz SPHONE.,DAY,AXO,ARK,ADO,END,B,The missing letters are AXO (SAXOPHONE).
+M3L_NEW_218,Play the CO.,HIT,INK,LAY,EAR,ELL,E,The missing letters are ELL (CELLO).
+M3L_NEW_219,Pluck the H.,AID,HOT,FIT,ARP,BY,D,The missing letters are ARP (HARP).
+M3L_NEW_220,Strum the BO.,SPY,BOX,IVY,LOT,ANJ,E,The missing letters are ANJ (BANJO).
+M3L_NEW_221,Loud NDER.,URN,THU,ASK,NAY,LIT,B,The missing letters are THU (THUNDER).
+M3L_NEW_222,Flash of LIGING.,YET,OPT,HTN,KAY,TRY,C,The missing letters are HTN (LIGHTNING).
+M3L_NEW_223,Colourful RAIN.,BET,BOW,CAT,TAG,FAD,B,The missing letters are BOW (RAINBOW).
+M3L_NEW_224,Light DZLE.,ARM,FRY,RIZ,ING,ALL,C,The missing letters are RIZ (DRIZZLE).
+M3L_NEW_225,Ice HAIONE.,OUT,SUN,ENT,LOT,LST,E,The missing letters are LST (HAILSTONE).
+M3L_NEW_226,Snow BZARD.,LAG,HOT,ASK,LIZ,CAT,D,The missing letters are LIZ (BLIZZARD).
+M3L_NEW_227,Windy NADO.,LIT,BAY,ATE,TOR,FLY,D,The missing letters are TOR (TORNADO).
+M3L_NEW_228,Strong HURANE.,AIM,RIC,FOR,WET,HAT,B,The missing letters are RIC (HURRICANE).
+M3L_NEW_229,Heavy rain MOON.,RAG,NSO,HOT,BOY,ING,B,The missing letters are NSO (MONSOON).
+M3L_NEW_230,Wear AMAS to bed.,WIT,CAN,ROT,PYJ,RAY,D,The missing letters are PYJ (PYJAMAS).
+M3L_NEW_231,Wear TROUS.,INK,ERS,TRY,RAG,APE,B,The missing letters are ERS (TROUSERS).
+M3L_NEW_232,Woolly CARAN.,BAT,DIG,EST,BAY,JAY,B,The missing letters are DIG (CARDIGAN).
+M3L_NEW_233,Smart WAIOAT.,IVY,STC,IRE,HAY,BAG,B,The missing letters are STC (WAISTCOAT).
+M3L_NEW_234,Running TRAIN.,OUS,ODD,FIT,BAY,ERS,E,The missing letters are ERS (TRAINERS).
+M3L_NEW_235,Summer DALS.,BOY,ONE,APE,SHY,SAN,E,The missing letters are SAN (SANDALS).
+M3L_NEW_236,Comfy PPERS.,SPY,WEE,TAG,SLI,AGE,D,The missing letters are SLI (SLIPPERS).
+M3L_NEW_237,School UNRM.,TEE,IFO,ORE,BAY,NOT,B,The missing letters are IFO (UNIFORM).
+M3L_NEW_238,Fancy dress TUME.,COS,FEE,OAR,EGO,HOP,A,The missing letters are COS (COSTUME).
+M3L_NEW_239,Clothes in WARBE.,WET,PIT,ODD,DRO,EGO,D,The missing letters are DRO (WARDROBE).
+M3L_NEW_240,Books on KCASE.,MAN,EEL,SPY,BOO,HAG,D,The missing letters are BOO (BOOKCASE).
+M3L_NEW_241,Sit in ARMCH.,MAG,NEW,AIR,GAG,PAD,C,The missing letters are AIR (ARMCHAIR).
+M3L_NEW_242,Close the TAIN.,KIT,OUR,GAG,CUR,SPY,D,The missing letters are CUR (CURTAIN).
+M3L_NEW_243,Soft CUON.,JAY,SHI,AIR,ADD,ROT,B,The missing letters are SHI (CUSHION).
+M3L_NEW_244,Warm BLAT.,AID,NKE,OUR,TAG,EVE,B,The missing letters are NKE (BLANKET).
+M3L_NEW_245,Sleep under ET.,DUV,EGO,DRY,MAT,SUN,A,The missing letters are DUV (DUVET).
+M3L_NEW_246,Head on PIW.,HOP,IVE,NET,PAY,LLO,E,The missing letters are LLO (PILLOW).
+M3L_NEW_247,Soft TRESS.,URN,TOP,MAT,FRY,SAG,C,The missing letters are MAT (MATTRESS).
+M3L_NEW_248,Big church CADRAL.,RAD,THE,CAT,TAD,SKY,B,The missing letters are THE (CATHEDRAL).
+M3L_NEW_249,Football STAM.,TOO,DIU,FOX,ION,WHY,B,The missing letters are DIU (STADIUM).
+M3L_NEW_250,Quiet LIBY.,OUR,TOO,URN,FAT,RAR,E,The missing letters are RAR (LIBRARY).
+M3L_NEW_251,Watch a play in ATRE.,PRY,THE,WIT,JAY,COO,B,The missing letters are THE (THEATRE).
+M3L_NEW_252,Watch a film in CIA.,SIT,LAD,WIT,NEM,PRY,D,The missing letters are NEM (CINEMA).
+M3L_NEW_253,History MUM.,OWL,URN,RUN,TION,USE,E,The missing letters are USE (MUSEUM).
+M3L_NEW_254,King's CAE.,ACT,JAG,GET,RAT,STL,E,The missing letters are STL (CASTLE).
+M3L_NEW_255,Queen's PCE.,NOT,OAT,ALA,HOP,WAG,C,The missing letters are ALA (PALACE).
+M3L_NEW_256,Small TAGE.,FAT,OWL,PAT,DOG,COT,E,The missing letters are COT (COTTAGE).
+M3L_NEW_257,One floor GALOW.,FRY,ENT,AGE,BUN,ILL,D,The missing letters are BUN (BUNGALOW).
+M3L_NEW_258,Large SION.,WET,MAN,OAK,MAG,ACT,B,The missing letters are MAN (MANSION).
+M3L_NEW_259,Flat APARTM.,OAT,OUR,SHY,WAY,ENT,E,The missing letters are ENT (APARTMENT).
+M3L_NEW_260,Erupting VOLO.,SHY,ADD,BY,CAN,HAT,D,The missing letters are CAN (VOLCANO).
+M3L_NEW_261,Ice GIER.,FRY,LAC,WAY,GAG,ACT,B,The missing letters are LAC (GLACIER).
+M3L_NEW_262,Sandy ERT.,MAT,DES,USE,CRY,GAG,B,The missing letters are DES (DESERT).
+M3L_NEW_263,Deep CAN.,BAT,CRY,MOO,FRY,NYO,E,The missing letters are NYO (CANYON).
+M3L_NEW_264,Green JUN.,RAY,TEE,LOO,GLE,BY,D,The missing letters are GLE (JUNGLE).
+M3L_NEW_265,Grassy MOW.,EAD,OWL,INK,LET,COO,A,The missing letters are EAD (MEADOW).
+M3L_NEW_266,Cow PURE.,ZOO,AST,FLY,DAD,SET,B,The missing letters are AST (PASTURE).
+M3L_NEW_267,Apple OARD.,EVE,RCH,GAY,HAY,EST,B,The missing letters are RCH (ORCHARD).
+M3L_NEW_268,Grape VINED.,HIT,ZOO,SIT,WIT,YAR,E,The missing letters are YAR (VINEYARD).
+M3L_NEW_269,Good FRDSHIP.,ENT,ACT,LAY,IEN,IVE,D,The missing letters are IEN (FRIENDSHIP).
+M3L_NEW_270,Full of HAPPSS.,INE,DAD,PAY,INK,JET,A,The missing letters are INE (HAPPINESS).
+M3L_NEW_271,Feel NESS.,ORE,SAD,SPY,OUT,HAY,B,The missing letters are SAD (SADNESS).
+M3L_NEW_272,Feel AR.,NGE,RED,LOO,PAY,EAR,A,The missing letters are NGE (ANGER).
+M3L_NEW_273,Be brave CAGE.,BIT,EVE,OUR,ORE,NOT,C,The missing letters are OUR (COURAGE).
+M3L_NEW_274,In GER.,BET,DAN,RUN,WAG,NAG,B,The missing letters are DAN (DANGER).
+M3L_NEW_275,Keep in STY.,PIT,ATE,AFE,BAG,ILL,C,The missing letters are AFE (SAFETY).
+M3L_NEW_276,Quiet SILE.,JET,ENC,AGE,WIT,THY,B,The missing letters are ENC (SILENCE).
+M3L_NEW_277,Loud NE.,OIS,OUS,IVE,OUT,EVE,A,The missing letters are OIS (NOISE).
+M3L_NEW_278,Listen to MC.,TION,OWN,USI,COT,LIT,C,The missing letters are USI (MUSIC).
+M3L_NEW_279,Full of UTY.,SHY,JAG,BEA,FAT,OIL,C,The missing letters are BEA (BEAUTY).
+M3L_NEW_280,Tell the TH.,NET,ADD,RUT,CAN,HOT,C,The missing letters are RUT (TRUTH).
+M3L_NEW_281,War and PE.,ACE,BIT,MAD,VET,COT,A,The missing letters are ACE (PEACE).
+M3L_NEW_282,Very BTIFUL.,TION,MAG,LAG,LOO,EAU,E,The missing letters are EAU (BEAUTIFUL).
+M3L_NEW_283,Very WERFUL.,OND,OFF,RAT,TOO,MAG,A,The missing letters are OND (WONDERFUL).
+M3L_NEW_284,Very TEBLE.,EAT,RRI,NAY,OWN,ORE,B,The missing letters are RRI (TERRIBLE).
+M3L_NEW_285,Very RIBLE.,BAG,ACE,HAG,HOR,PAY,D,The missing letters are HOR (HORRIBLE).
+M3L_NEW_286,Very AMNG.,AZI,FOR,RAY,WAY,END,A,The missing letters are AZI (AMAZING).
+M3L_NEW_287,Very ETING.,ARK,PAD,YET,BAG,XCI,E,The missing letters are XCI (EXCITING).
+M3L_NEW_288,Very BNG.,LEE,ORI,FLY,PET,ACT,B,The missing letters are ORI (BORING).
+M3L_NEW_289,Very DIFFIC.,RED,FLY,FAD,RAT,ULT,E,The missing letters are ULT (DIFFICULT).
+M3L_NEW_290,Very IMPORT.,GET,BIT,OUR,JAG,TAN,E,The missing letters are TAN (IMPORTANT).
+M3L_NEW_291,Very DANOUS.,RED,EAT,MOO,GER,TOP,D,The missing letters are GER (DANGEROUS).
+M3L_NEW_292,Be CARL.,THY,IVY,EFU,FOX,GAG,C,The missing letters are EFU (CAREFUL).
+M3L_NEW_293,Don't be ELESS.,ORB,CAR,MAN,IRE,OWN,B,The missing letters are CAR (CARELESS).
+M3L_NEW_294,Very USE.,LAD,INN,ART,FUL,MAG,D,The missing letters are FUL (USEFUL).
+M3L_NEW_295,Very LESS.,OIL,USE,LAD,YET,FOR,B,The missing letters are USE (USELESS).
+M3L_NEW_296,Do you RMBER?,EME,JAY,JET,WEE,HAT,A,The missing letters are EME (REMEMBER).
+M3L_NEW_297,Don't FOR.,COO,GET,URN,JAY,JET,B,The missing letters are GET (FORGET).
+M3L_NEW_298,I BEVE you.,SHY,VET,DRY,ELI,AND,D,The missing letters are ELI (BELIEVE).
+M3L_NEW_299,Make a PISE.,ASK,JET,EVE,ROM,BOO,D,The missing letters are ROM (PROMISE).
+M3L_NEW_300,You must IDE.,DAY,USE,DEC,PAY,OAR,C,The missing letters are DEC (DECIDE).
+M3L_NEW_301,Did you ISH?,FIN,ENT,EAR,SAG,ING,A,The missing letters are FIN (FINISH).
+M3L_NEW_302,Let's ST.,TRY,MAY,ODD,TAR,TOO,D,The missing letters are TAR (START).
+M3L_NEW_303,Let's BN.,AND,DRY,MET,SAY,EGI,E,The missing letters are EGI (BEGIN).
+M3L_NEW_304,When do we IVE?,ARR,FAT,FLY,SET,WET,A,The missing letters are ARR (ARRIVE).
+M3L_NEW_305,When do we ART?,SKY,ILL,DEP,WIT,ACE,C,The missing letters are DEP (DEPART).
+M3L_NEW_306,Go VEL.,WIT,TRA,ORE,AIM,YAK,B,The missing letters are TRA (TRAVEL).
+M3L_NEW_307,Go EXPE.,TOO,LOR,GET,TRY,THE,B,The missing letters are LOR (EXPLORE).
+M3L_NEW_308,Go DISCO.,THE,SAT,USE,GAG,VER,E,The missing letters are VER (DISCOVER).
+M3L_NEW_309,Go INV.,MAD,CRY,COT,ENT,RAY,D,The missing letters are ENT (INVENT).
+M3L_NEW_310,Church OR.,SAY,GAN,LAG,GET,DOT,B,The missing letters are GAN (ORGAN).
+M3L_NEW_311,Pop SIR.,YET,AND,RAG,NEW,NGE,E,The missing letters are NGE (SINGER).
+M3L_NEW_312,Talented ICIAN.,ADO,MUS,HAD,ONE,FIT,B,The missing letters are MUS (MUSICIAN).
+M3L_NEW_313,Big ORCHEA.,EAT,STR,AGE,OWL,IVY,B,The missing letters are STR (ORCHESTRA).
+M3L_NEW_314,Live CERT.,CON,NEW,ADO,RUN,AIM,A,The missing letters are CON (CONCERT).
+M3L_NEW_315,Sweet MEL.,VET,ODY,BY,EEL,FLY,B,The missing letters are ODY (MELODY).
+M3L_NEW_316,Fast RHY.,SHY,WAY,HAG,LAD,THM,E,The missing letters are THM (RHYTHM).
+M3L_NEW_317,Song LCS.,YRI,OUT,BET,DRY,PAT,A,The missing letters are YRI (LYRICS).
+M3L_NEW_318,Sing the CHS.,OAT,TOP,HOT,TEE,ORU,E,The missing letters are ORU (CHORUS).
+M3L_NEW_319,First VE.,RSE,EAR,NET,LOO,DOG,A,The missing letters are RSE (VERSE).
+M3L_NEW_320,Catchy E.,GET,WIT,TUN,AGE,OFF,C,The missing letters are TUN (TUNE).
+M3L_NEW_321,High E.,SIT,NOT,ION,TOP,SAG,B,The missing letters are NOT (NOTE).
+M3L_NEW_322,Major SC.,ALE,IVE,OLD,RAD,DRY,A,The missing letters are ALE (SCALE).
+M3L_NEW_323,Play a RD.,NAG,BIG,BET,NET,CHO,E,The missing letters are CHO (CHORD).
+M3L_NEW_324,Loud ND.,EEL,BAY,SOU,RAG,FOX,C,The missing letters are SOU (SOUND).
+M3L_NEW_325,Loud CE.,LEE,VOI,WHY,EGO,PAT,B,The missing letters are VOI (VOICE).
+M3L_NEW_326,Blow a STLE.,WHI,SAT,NAY,AIR,ASH,A,The missing letters are WHI (WHISTLE).
+M3L_NEW_327,Loud SCR.,EAM,LAD,OUS,BET,ADO,A,The missing letters are EAM (SCREAM).
+M3L_NEW_328,Don't SH.,PRY,OUT,DAD,SET,WEE,B,The missing letters are OUT (SHOUT).
+M3L_NEW_329,Soft SPER.,NET,ONE,WHI,BY,AND,C,The missing letters are WHI (WHISPER).
+M3L_NEW_330,Don't MUM.,OAK,FEE,TRY,SIT,BLE,E,The missing letters are BLE (MUMBLE).
+M3L_NEW_331,Loud GR.,OAN,HAY,LOT,FLY,HOP,A,The missing letters are OAN (GROAN).
+M3L_NEW_332,Stop N.,MOA,RUN,DOG,DOT,FIT,A,The missing letters are MOA (MOAN).
+M3L_NEW_333,Big GH.,SET,LAU,ADO,MAT,RAY,B,The missing letters are LAU (LAUGH).
+M3L_NEW_334,Nice SM.,INK,NEW,WAY,YET,ILE,E,The missing letters are ILE (SMILE).
+M3L_NEW_335,Cheeky G.,OPT,PIT,RIN,ING,BAY,C,The missing letters are RIN (GRIN).
+M3L_NEW_336,Sad FR.,TOO,OWN,HAG,CAD,EAT,B,The missing letters are OWN (FROWN).
+M3L_NEW_337,Don't SE.,NAG,HIT,ACT,SUN,TAR,E,The missing letters are TAR (STARE).
+M3L_NEW_338,Quick NCE.,COT,ORE,GLA,IVY,BIG,C,The missing letters are GLA (GLANCE).
+M3L_NEW_339,Don't NK.,GAG,FAT,BLI,INN,ART,C,The missing letters are BLI (BLINK).
+M3L_NEW_340,Give a K.,CRY,ASK,GAG,WIN,KAY,D,The missing letters are WIN (WINK).
+M3L_NEW_341,Hand SH.,AKE,SAG,ACE,OUT,BIT,A,The missing letters are AKE (SHAKE).
+M3L_NEW_342,Hand W.,MAN,LET,AIR,MAG,AVE,E,The missing letters are AVE (WAVE).
+M3L_NEW_343,Finger PT.,WET,OIN,HAY,BY,LOT,B,The missing letters are OIN (POINT).
+M3L_NEW_344,Hands C.,LAP,ADO,EYE,PIT,COT,A,The missing letters are LAP (CLAP).
+M3L_NEW_345,Feet MP.,URN,SAT,WAY,STA,FEE,D,The missing letters are STA (STAMP).
+M3L_NEW_346,Ball K.,NAY,ICK,AID,RAY,ALL,B,The missing letters are ICK (KICK).
+M3L_NEW_347,Don't PH.,YET,UNC,MAY,BOY,DRY,B,The missing letters are UNC (PUNCH).
+M3L_NEW_348,Don't P.,SLA,DOT,NEW,WEE,ION,A,The missing letters are SLA (SLAP).
+M3L_NEW_349,Don't P.,SIT,PAY,ORB,USH,OUT,D,The missing letters are USH (PUSH).
+M3L_NEW_350,Don't L.,PUL,ODD,AIM,JOY,FOX,A,The missing letters are PUL (PULL).
+M3L_NEW_351,Heavy T.,SPY,HIT,LIF,POT,ING,C,The missing letters are LIF (LIFT).
+M3L_NEW_352,Don't D.,ROP,OAT,ADD,BEE,BET,A,The missing letters are ROP (DROP).
+M3L_NEW_353,Don't F.,LAY,FOR,SAG,ALL,OAK,D,The missing letters are ALL (FALL).
+M3L_NEW_354,Don't P.,FOR,AGE,LOO,TRI,MAT,D,The missing letters are TRI (TRIP).
+M3L_NEW_355,Don't P.,FOR,SLI,CRY,BY,BIT,B,The missing letters are SLI (SLIP).
+M3L_NEW_356,Down the DE.,ARM,WHY,FLY,SLI,USE,D,The missing letters are SLI (SLIDE).
+M3L_NEW_357,Up the CB.,RUN,WET,LIM,AIR,THY,C,The missing letters are LIM (CLIMB).
+M3L_NEW_358,Baby CR.,TRY,ION,AWL,BET,NOT,C,The missing letters are AWL (CRAWL).
+M3L_NEW_359,Go for a K.,SAT,TAD,EEL,WAL,ROT,D,The missing letters are WAL (WALK).
+M3L_NEW_360,Fast SPR.,EGO,KIT,ARM,INT,SAT,D,The missing letters are INT (SPRINT).
+M3L_NEW_361,Win the E.,COO,DRY,WAG,BEE,RAC,E,The missing letters are RAC (RACE).
+M3L_NEW_362,Dog CE.,PAD,HAS,RAD,AGE,ZOO,B,The missing letters are HAS (CHASE).
+M3L_NEW_363,Ball CH.,HIT,AID,PET,CAT,OLD,D,The missing letters are CAT (CATCH).
+M3L_NEW_364,Ball TW.,HOT,NAG,HRO,ASK,ONE,C,The missing letters are HRO (THROW).
+M3L_NEW_365,Ball P.,IVE,RED,ATE,ASS,ILL,D,The missing letters are ASS (PASS).
+M3L_NEW_366,Goal ST.,BET,RAG,NOT,HOO,LAY,D,The missing letters are HOO (SHOOT).
+M3L_NEW_367,Goal RE.,ORE,THE,SCO,MOO,MAT,C,The missing letters are SCO (SCORE).
+M3L_NEW_368,We E.,OPT,LOS,JAY,OUT,NOT,B,The missing letters are LOS (LOSE).
+M3L_NEW_369,We W.,DRA,RAD,BIT,LAD,ROT,A,The missing letters are DRA (DRAW).
+M3L_NEW_370,Go Y.,VET,APE,OAK,PLA,YAK,D,The missing letters are PLA (PLAY).
+M3L_NEW_371,Fun G.,PRY,WET,RAT,AME,JAG,D,The missing letters are AME (GAME).
+M3L_NEW_372,Team ST.,POR,SAD,SET,SHY,OWL,A,The missing letters are POR (SPORT).
+M3L_NEW_373,My M.,SEE,TEA,BAY,NET,THY,B,The missing letters are TEA (TEAM).
+M3L_NEW_374,Join C.,ARM,LUB,MY,OLD,MAG,B,The missing letters are LUB (CLUB).
+M3L_NEW_375,Team AD.,SQU,NEW,MAN,BOO,ZOO,A,The missing letters are SQU (SQUAD).
+M3L_NEW_376,Small GR.,SUN,MAT,OUP,AIM,RAD,C,The missing letters are OUP (GROUP).
+M3L_NEW_377,Big WD.,CRO,COO,HIT,BY,AND,A,The missing letters are CRO (CROWD).
+M3L_NEW_378,Street G.,VET,ION,SAD,ANG,ZOO,D,The missing letters are ANG (GANG).
+M3L_NEW_379,Ship C.,AIM,REW,DOT,MAT,LAG,B,The missing letters are REW (CREW).
+M3L_NEW_380,Office ST.,AID,DAD,BY,USE,AFF,E,The missing letters are AFF (STAFF).
+M3L_NEW_381,School SS.,CLA,BOO,OAR,RED,NOT,A,The missing letters are CLA (CLASS).
+M3L_NEW_382,Good PU.,IRE,LET,PAY,PIL,DAD,D,The missing letters are PIL (PUPIL).
+M3L_NEW_383,Uni STUD.,ATE,PAT,SET,WAY,ENT,E,The missing letters are ENT (STUDENT).
+M3L_NEW_384,Kind TEAR.,MOO,CHE,EEL,CAT,MY,B,The missing letters are CHE (TEACHER).
+M3L_NEW_385,Head TER.,EYE,ZOO,EVE,MAS,MAY,D,The missing letters are MAS (MASTER).
+M3L_NEW_386,My D.,HEA,MAY,ADO,JAG,RED,A,The missing letters are HEA (HEAD).
+M3L_NEW_387,My Y.,SIT,BOD,OUT,NAG,ALL,B,The missing letters are BOD (BODY).
+M3L_NEW_388,My T.,ACT,OWL,ATE,BAG,FOO,E,The missing letters are FOO (FOOT).
+M3L_NEW_389,My H.,HIT,URN,ALL,KAY,AND,E,The missing letters are AND (HAND).
+M3L_NEW_390,My FER.,ING,GET,AIM,PIT,LIT,A,The missing letters are ING (FINGER).
+M3L_NEW_391,My TB.,HUM,ACE,RED,NEW,CAN,A,The missing letters are HUM (THUMB).
+M3L_NEW_392,Bony KNLE.,ALL,MET,COT,UCK,SKY,D,The missing letters are UCK (KNUCKLE).
+M3L_NEW_393,My ST.,VET,WRI,ORB,ODD,KIT,B,The missing letters are WRI (WRIST).
+M3L_NEW_394,My EL.,LIT,BOW,DAY,AID,ZOO,B,The missing letters are BOW (ELBOW).
+M3L_NEW_395,My SHOUR.,LDE,DOT,PAT,ADO,AID,A,The missing letters are LDE (SHOULDER).
+M3L_NEW_396,My K.,SAD,SPY,FAT,NEC,INN,D,The missing letters are NEC (NECK).
+M3L_NEW_397,My C.,POT,HIT,WHY,HIN,LAD,D,The missing letters are HIN (CHIN).
+M3L_NEW_398,Rosy EK.,RAG,COO,LIT,OAT,CHE,E,The missing letters are CHE (CHEEK).
+M3L_NEW_399,My N.,TAD,PET,OSE,RUN,AID,C,The missing letters are OSE (NOSE).
+M3L_NEW_400,My H.,BEE,TAD,EST,BOO,AIR,E,The missing letters are AIR (HAIR).
+M3L_NEW_401,Boil in a SAUCE.,WAY,BIT,PAN,OUT,MAG,C,The missing letters are PAN (SAUCEPAN).
+M3L_NEW_402,Cook in a FRYING.,ZOO,DOT,PAN,MAT,SAT,C,The missing letters are PAN (FRYINGPAN).
+M3L_NEW_403,Make toast in STER.,PAT,TOA,ASK,VET,CAT,B,The missing letters are TOA (TOASTER).
+M3L_NEW_404,Heat in the ROWAVE.,WEE,MAN,MIC,OUS,ASH,C,The missing letters are MIC (MICROWAVE).
+M3L_NEW_405,Mix in the BDER.,ONE,BAD,WET,LEN,ARM,D,The missing letters are LEN (BLENDER).
+M3L_NEW_406,Cheese GER.,PAT,RAT,INK,LEE,LAD,B,The missing letters are RAT (GRATER).
+M3L_NEW_407,Potato PER.,OUR,URN,EEL,GAG,JET,C,The missing letters are EEL (PEELER).
+M3L_NEW_408,Beat eggs with WK.,AID,GAY,HIS,ICE,WIT,C,The missing letters are HIS (WHISK).
+M3L_NEW_409,Eat with a SN.,FAD,EYE,ARM,OFF,POO,E,The missing letters are POO (SPOON).
+M3L_NEW_410,Eat with a F.,ORK,JET,LIT,CAT,TAG,A,The missing letters are ORK (FORK).
+M3L_NEW_411,Cut with a KN.,FIT,SIT,ARK,IFE,NAY,D,The missing letters are IFE (KNIFE).
+M3L_NEW_412,Dinner PL.,SEE,LAY,BIT,COT,ATE,E,The missing letters are ATE (PLATE).
+M3L_NEW_413,Cereal L.,KIT,BOW,SAD,PAD,EGG,B,The missing letters are BOW (BOWL).
+M3L_NEW_414,Soap H.,FAD,URN,OUS,ATE,DIS,E,The missing letters are DIS (DISH).
+M3L_NEW_415,Drink from a SS.,OFF,IVE,GLA,LEE,SHY,C,The missing letters are GLA (GLASS).
+M3L_NEW_416,Boil the TLE.,IVE,ACE,WIT,KET,ING,D,The missing letters are KET (KETTLE).
+M3L_NEW_417,Cold FGE.,RID,RAG,JAY,ENT,ORB,A,The missing letters are RID (FRIDGE).
+M3L_NEW_418,Ice FRER.,EZE,TAD,EYE,MOO,FLY,A,The missing letters are EZE (FREEZER).
+M3L_NEW_419,Hot N.,COO,SAT,HAT,OVE,LEE,D,The missing letters are OVE (OVEN).
+M3L_NEW_420,Electric KER.,DOG,EEL,HAY,COO,CRY,D,The missing letters are COO (COOKER).
+M3L_NEW_421,Store in CUPBO.,GAY,SUN,ARD,ENT,LOO,C,The missing letters are ARD (CUPBOARD).
+M3L_NEW_422,Cutlery DER.,HAD,OUT,SHY,RAW,EYE,D,The missing letters are RAW (DRAWER).
+M3L_NEW_423,Wash in S.,MET,TRY,INK,TOO,ART,C,The missing letters are INK (SINK).
+M3L_NEW_424,Dish TH.,CLO,PIT,LOO,ALL,SHY,A,The missing letters are CLO (CLOTH).
+M3L_NEW_425,Tea TO.,WEL,SKY,OPT,AND,SPY,A,The missing letters are WEL (TOWEL).
+M3L_NEW_426,Wash with NGE.,SPO,CAT,SAY,IVY,CAN,A,The missing letters are SPO (SPONGE).
+M3L_NEW_427,Washing up UID.,LIQ,MAD,GAG,TION,LOO,A,The missing letters are LIQ (LIQUID).
+M3L_NEW_428,Washing PER.,ORB,YET,EYE,OWD,GET,D,The missing letters are OWD (POWDER).
+M3L_NEW_429,Laundry BAT.,NAY,ROT,FIT,SKE,URN,D,The missing letters are SKE (BASKET).
+M3L_NEW_430,Mop and BUC.,EAR,TOP,OAT,POT,KET,E,The missing letters are KET (BUCKET).
+M3L_NEW_431,Sweep with OM.,SAY,TAG,IVY,BRO,CAN,D,The missing letters are BRO (BROOM).
+M3L_NEW_432,Scrubbing SH.,BRU,DOT,PAY,OUR,VET,A,The missing letters are BRU (BRUSH).
+M3L_NEW_433,Feather DER.,TION,HAG,DAD,BIG,UST,E,The missing letters are UST (DUSTER).
+M3L_NEW_434,Clean with VAM.,LAG,HIT,CUU,SAG,MY,C,The missing letters are CUU (VACUUM).
+M3L_NEW_435,Vacuum CLER.,HOT,ONE,ANE,ATE,OAR,C,The missing letters are ANE (CLEANER).
+M3L_NEW_436,Press with N.,IRO,EAT,DAD,LOT,OAR,A,The missing letters are IRO (IRON).
+M3L_NEW_437,Ironing RD.,WAY,OUT,ILL,BOA,MAY,D,The missing letters are BOA (BOARD).
+M3L_NEW_438,Bed ST.,MOO,MAD,HEE,ASK,BOX,C,The missing letters are HEE (SHEET).
+M3L_NEW_439,Wool BLAN.,FOX,DOG,KET,ART,PAT,C,The missing letters are KET (BLANKET).
+M3L_NEW_440,Soft PIL.,BAG,WIT,WEE,LOW,SAD,D,The missing letters are LOW (PILLOW).
+M3L_NEW_441,Warm DU.,TOY,GAG,FAD,JET,VET,E,The missing letters are VET (DUVET).
+M3L_NEW_442,Sleep on MRESS.,OFF,BAY,INN,DOG,ATT,E,The missing letters are ATT (MATTRESS).
+M3L_NEW_443,Cover the BEREAD.,TOP,DSP,WET,HOT,EST,B,The missing letters are DSP (BEDSPREAD).
+M3L_NEW_444,Patchwork QU.,ILT,PAY,RAT,ORE,BIG,A,The missing letters are ILT (QUILT).
+M3L_NEW_445,Wall to wall CAR.,PET,RAD,BEE,AGE,SAY,A,The missing letters are PET (CARPET).
+M3L_NEW_446,Draw the CUIN.,LOO,TAG,OFF,HIT,RTA,E,The missing letters are RTA (CURTAIN).
+M3L_NEW_447,Window ND.,SKY,THY,BLI,THE,EAT,C,The missing letters are BLI (BLIND).
+M3L_NEW_448,Close the STER.,HUT,JAY,BAY,IRE,WET,A,The missing letters are HUT (SHUTTER).
+M3L_NEW_449,Table P.,LEE,FOR,ADD,EAT,LAM,E,The missing letters are LAM (LAMP).
+M3L_NEW_450,Ceiling LI.,ODD,BIT,BOX,GHT,WIT,D,The missing letters are GHT (LIGHT).
+M3L_NEW_451,Lamp DE.,SHA,MAD,RAT,ILL,ASH,A,The missing letters are SHA (SHADE).
+M3L_NEW_452,Light B.,ONE,ULB,RAD,OWN,LOT,B,The missing letters are ULB (BULB).
+M3L_NEW_453,Light SCH.,FOX,DAD,CRY,WIT,AIR,D,The missing letters are WIT (SWITCH).
+M3L_NEW_454,Plug SET.,SPY,BAY,BAT,OCK,EGO,D,The missing letters are OCK (SOCKET).
+M3L_NEW_455,Electric G.,GAY,HIT,PLU,OIL,MAG,C,The missing letters are PLU (PLUG).
+M3L_NEW_456,Copper W.,MAG,FRY,OUT,TAD,IRE,E,The missing letters are IRE (WIRE).
+M3L_NEW_457,Blown E.,KAY,FUS,LAD,AID,OWL,B,The missing letters are FUS (FUSE).
+M3L_NEW_458,Double A BARY.,SAT,TTE,ACE,ONE,NOT,B,The missing letters are TTE (BATTERY).
+M3L_NEW_459,Wall CL.,ENT,OCK,OFF,ODD,EVE,B,The missing letters are OCK (CLOCK).
+M3L_NEW_460,Fire AM.,LAR,OUR,BOX,WEE,EST,A,The missing letters are LAR (ALARM).
+M3L_NEW_461,Listen to IO.,ENT,BAY,EGG,SUN,RAD,E,The missing letters are RAD (RADIO).
+M3L_NEW_462,Watch TEISION.,BEE,ROT,CAD,LEV,MOO,D,The missing letters are LEV (TELEVISION).
+M3L_NEW_463,Control REE.,MOT,HAD,CRY,ONE,RUN,A,The missing letters are MOT (REMOTE).
+M3L_NEW_464,Flat SCN.,HOP,REE,RAT,WEE,ACT,B,The missing letters are REE (SCREEN).
+M3L_NEW_465,Play a VI.,AIR,DEO,WIT,SET,FOX,B,The missing letters are DEO (VIDEO).
+M3L_NEW_466,MP3 PLR.,BIG,RAY,AYE,ARK,PAD,C,The missing letters are AYE (PLAYER).
+M3L_NEW_467,Laptop COMPU.,OAT,PAY,WEE,NAG,TER,E,The missing letters are TER (COMPUTER).
+M3L_NEW_468,Click the SE.,TION,ORE,MOU,COT,OIL,C,The missing letters are MOU (MOUSE).
+M3L_NEW_469,Type on BOARD.,ILL,INK,KEY,HIT,COT,C,The missing letters are KEY (KEYBOARD).
+M3L_NEW_470,Laser PRIR.,AIM,SUN,BET,NTE,BEE,D,The missing letters are NTE (PRINTER).
+M3L_NEW_471,Document SNER.,CAN,COT,RUN,ARM,LAD,A,The missing letters are CAN (SCANNER).
+M3L_NEW_472,Mobile PE.,FEE,FAT,HON,BAT,OFF,C,The missing letters are HON (PHONE).
+M3L_NEW_473,Digital CAA.,OIL,MER,BAY,OUT,PET,B,The missing letters are MER (CAMERA).
+M3L_NEW_474,Take a PH.,OTO,GAY,JOY,INK,IRE,A,The missing letters are OTO (PHOTO).
+M3L_NEW_475,Frame the PICE.,FIT,CAN,TUR,LAG,ROT,C,The missing letters are TUR (PICTURE).
+M3L_NEW_476,Photo FR.,THE,HOP,AME,OAT,WET,C,The missing letters are AME (FRAME).
+M3L_NEW_477,Photo AL.,POT,ASK,BUM,WET,WIT,C,The missing letters are BUM (ALBUM).
+M3L_NEW_478,Oil PAING.,RAG,PRY,EST,INT,AGE,D,The missing letters are INT (PAINTING).
+M3L_NEW_479,Wall PER.,OST,YET,BIG,THE,INK,A,The missing letters are OST (POSTER).
+M3L_NEW_480,Stone STA.,TUE,EAR,MET,DRY,SUN,A,The missing letters are TUE (STATUE).
+M3L_NEW_481,Flower V.,ODD,ASE,BOY,WIT,SKY,B,The missing letters are ASE (VASE).
+M3L_NEW_482,House PL.,PAT,ANT,TOO,OUS,ADO,B,The missing letters are ANT (PLANT).
+M3L_NEW_483,Fresh WER.,FLO,BET,USE,OAR,GAG,A,The missing letters are FLO (FLOWER).
+M3L_NEW_484,Light a CAN.,DLE,CAD,ORE,LOO,FAD,A,The missing letters are DLE (CANDLE).
+M3L_NEW_485,Strike a CH.,MAT,RAG,CRY,RAT,LAG,A,The missing letters are MAT (MATCH).
+M3L_NEW_486,Gas F.,LET,IRE,OUR,GAY,MAY,B,The missing letters are IRE (FIRE).
+M3L_NEW_487,Electric HER.,ATE,WAY,BY,JAG,LAD,A,The missing letters are ATE (HEATER).
+M3L_NEW_488,Hot RATOR.,MY,LET,OUS,IRE,ADI,E,The missing letters are ADI (RADIATOR).
+M3L_NEW_489,Air CITIONER.,USE,DOT,URN,ONE,OND,E,The missing letters are OND (CONDITIONER).
+M3L_NEW_490,Open WIN.,ARK,LAD,ING,EAT,DOW,E,The missing letters are DOW (WINDOW).
+M3L_NEW_491,Shut R.,DOO,PAT,OWL,SAD,DOT,A,The missing letters are DOO (DOOR).
+M3L_NEW_492,Door HAN.,ALL,BAG,DRY,OUT,DLE,E,The missing letters are DLE (HANDLE).
+M3L_NEW_493,Door B.,ACT,THY,OUT,KNO,WET,D,The missing letters are KNO (KNOB).
+M3L_NEW_494,Key and K.,IVY,LOC,NEW,TION,YAK,B,The missing letters are LOC (LOCK).
+M3L_NEW_495,Door L.,BIG,TAG,RAY,BEL,ING,D,The missing letters are BEL (BELL).
+M3L_NEW_496,Post a LER.,OAK,ORE,INK,ETT,AIR,D,The missing letters are ETT (LETTER).
+M3L_NEW_497,Morning T.,HIT,YET,ALL,POS,BOX,D,The missing letters are POS (POST).
+M3L_NEW_498,Junk L.,LOT,MAI,MAD,MAY,TOY,B,The missing letters are MAI (MAIL).
+M3L_NEW_499,Wrap a PEL.,ARC,YAK,EST,OIL,MOO,A,The missing letters are ARC (PARCEL).
+M3L_NEW_500,Heavy PACK.,SIT,WIT,FOX,AGE,PET,D,The missing letters are AGE (PACKAGE).
+M3L_NEW_501,Postage ST.,BOY,TAD,HAY,EYE,AMP,E,The missing letters are AMP (STAMP).
+M3L_NEW_502,Sealed ENVPE.,ELO,DAD,EST,ILL,TOO,A,The missing letters are ELO (ENVELOPE).
+M3L_NEW_503,Write the ADDR.,LOO,BEE,EAR,RAT,ESS,E,The missing letters are ESS (ADDRESS).
+M3L_NEW_504,Full N.,USE,ENT,MAN,PAY,AME,E,The missing letters are AME (NAME).
+M3L_NEW_505,Phone NUR.,AND,OAK,MBE,JET,HIT,C,The missing letters are MBE (NUMBER).
+M3L_NEW_506,High SET.,OWL,TRE,AND,LOO,THY,B,The missing letters are TRE (STREET).
+M3L_NEW_507,Main R.,POT,FOR,OAD,FLY,ROT,C,The missing letters are OAD (ROAD).
+M3L_NEW_508,Park AUE.,HOT,CAN,OWL,VEN,ART,D,The missing letters are VEN (AVENUE).
+M3L_NEW_509,Country L.,MAY,ANE,FLY,AND,EST,B,The missing letters are ANE (LANE).
+M3L_NEW_510,Private VE.,PAT,CAD,MAD,DRI,WIT,D,The missing letters are DRI (DRIVE).
+M3L_NEW_511,Foot P.,EAT,SUN,ATH,KAY,TRY,C,The missing letters are ATH (PATH).
+M3L_NEW_512,Side K.,WAL,MAT,BIT,MAY,SIT,A,The missing letters are WAL (WALK).
+M3L_NEW_513,Walk on EMENT.,HAG,FAD,GET,SKY,PAV,E,The missing letters are PAV (PAVEMENT).
+M3L_NEW_514,Step off B.,PIT,BIG,KER,MY,SAD,C,The missing letters are KER (KERB).
+M3L_NEW_515,Roof GUT.,OUS,NOT,CAN,LEE,TER,E,The missing letters are TER (GUTTER).
+M3L_NEW_516,Down the DR.,AIN,RAG,INK,IVY,OAR,A,The missing letters are AIN (DRAIN).
+M3L_NEW_517,Water P.,IPE,FAT,JAY,ACE,NET,A,The missing letters are IPE (PIPE).
+M3L_NEW_518,Inner T.,UBE,BIT,HAT,ARM,MAT,A,The missing letters are UBE (TUBE).
+M3L_NEW_519,Car E.,TYR,OWL,TAG,SUN,ONE,A,The missing letters are TYR (TYRE).
+M3L_NEW_520,Steering WL.,HEE,HOP,OIL,LET,LAD,A,The missing letters are HEE (WHEEL).
+M3L_NEW_521,Hand KE.,ASH,URN,BRA,FEE,NOT,C,The missing letters are BRA (BRAKE).
+M3L_NEW_522,Low G.,EGG,EAR,SHY,NEW,OWN,B,The missing letters are EAR (GEAR).
+M3L_NEW_523,Press TCH.,CLU,DAY,RAY,JOY,ORB,A,The missing letters are CLU (CLUTCH).
+M3L_NEW_524,Gas AL.,ADO,PED,VET,USE,MY,B,The missing letters are PED (PEDAL).
+M3L_NEW_525,Rear view MIR.,RRO,EEL,AIR,HOT,LEE,A,The missing letters are RRO (MIRROR).
+M3L_NEW_526,Windscreen WI.,JOY,BEE,RUN,PER,MET,D,The missing letters are PER (WIPER).
+M3L_NEW_527,Wind EEN.,NAY,GAY,SCR,OUS,HAD,C,The missing letters are SCR (SCREEN).
+M3L_NEW_528,Car BET.,BET,ONN,RAY,IVE,EYE,B,The missing letters are ONN (BONNET).
+M3L_NEW_529,Car T.,RAT,BOO,MAG,FIT,BET,B,The missing letters are BOO (BOOT).
+M3L_NEW_530,Car D.,ORB,ONE,ING,OOR,FAD,D,The missing letters are OOR (DOOR).
+M3L_NEW_531,Back S.,EAT,IRE,ADO,AGE,INK,A,The missing letters are EAT (SEAT).
+M3L_NEW_532,Seat B.,EYE,ODD,IVY,ELT,MOO,D,The missing letters are ELT (BELT).
+M3L_NEW_533,Car ENE.,IVE,NGI,RAY,CAN,TAD,B,The missing letters are NGI (ENGINE).
+M3L_NEW_534,Fill with PET.,HAY,ILL,ROL,WIT,FRY,C,The missing letters are ROL (PETROL).
+M3L_NEW_535,Fill with DEL.,IES,FAD,WIT,HOP,AIM,A,The missing letters are IES (DIESEL).
+M3L_NEW_536,Petrol STAT.,VET,SIT,DOG,ION,DOT,D,The missing letters are ION (STATION).
+M3L_NEW_537,Mechanic GAE.,RAG,SHY,SEE,TOO,OWN,A,The missing letters are RAG (GARAGE).
+M3L_NEW_538,Car K.,PAR,EYE,LEE,IRE,ING,A,The missing letters are PAR (PARK).
+M3L_NEW_539,Parking CE.,ENT,SPA,WAG,JET,EGG,B,The missing letters are SPA (SPACE).
+M3L_NEW_540,Parking TIC.,KET,WEE,PRY,TEE,DAD,A,The missing letters are KET (TICKET).
+M3L_NEW_541,Parking ME.,ORE,TER,END,ENT,HAD,B,The missing letters are TER (METER).
+M3L_NEW_542,Traffic WAR.,CRY,ONE,DEN,AND,POT,C,The missing letters are DEN (WARDEN).
+M3L_NEW_543,Parking E.,OWL,FIN,PIT,OUT,BEE,B,The missing letters are FIN (FINE).
+M3L_NEW_544,Road S.,IGN,JOY,ARM,SIT,CAN,A,The missing letters are IGN (SIGN).
+M3L_NEW_545,Traffic LI.,DOG,WAY,END,GHT,HIT,D,The missing letters are GHT (LIGHT).
+M3L_NEW_546,Zebra CROSG.,BIT,SAD,SIN,ENT,ARK,C,The missing letters are SIN (CROSSING).
+M3L_NEW_547,Humber DGE.,LAY,COO,BRI,BAD,KAY,C,The missing letters are BRI (BRIDGE).
+M3L_NEW_548,Dark TEL.,OPT,UNN,MET,SKY,CAN,B,The missing letters are UNN (TUNNEL).
+M3L_NEW_549,Go round ROUNDUT.,ABO,END,RAG,LET,SEE,A,The missing letters are ABO (ROUNDABOUT).
+M3L_NEW_550,Busy JUNON.,OFF,ASK,BIG,CTI,OPT,D,The missing letters are CTI (JUNCTION).
+M3L_NEW_551,Street COR.,ALL,GET,RNE,TEE,AGE,C,The missing letters are RNE (CORNER).
+M3L_NEW_552,Sharp B.,BIT,NAY,END,OUT,ONE,C,The missing letters are END (BEND).
+M3L_NEW_553,Steep L.,FAD,FEE,OAT,SET,HIL,E,The missing letters are HIL (HILL).
+M3L_NEW_554,Gentle SL.,NAY,DRY,SET,ONE,OPE,E,The missing letters are OPE (SLOPE).
+M3L_NEW_555,Deep LEY.,RAY,BOY,VAL,ARK,WET,C,The missing letters are VAL (VALLEY).
+M3L_NEW_556,High MOUNT.,AIN,CRY,LAG,SUN,CAD,A,The missing letters are AIN (MOUNTAIN).
+M3L_NEW_557,Mountain K.,HOT,TOY,PEA,JET,INN,C,The missing letters are PEA (PEAK).
+M3L_NEW_558,Reach the SIT.,OAR,IVY,UMM,ORB,JOY,C,The missing letters are UMM (SUMMIT).
+M3L_NEW_559,White FF.,ORB,ART,LOO,LAG,CLI,E,The missing letters are CLI (CLIFF).
+M3L_NEW_560,Hard R.,RAG,IRE,WAY,OCK,ORB,D,The missing letters are OCK (ROCK).
+M3L_NEW_561,Rolling ST.,OAR,ONE,APE,BIG,MOO,B,The missing letters are ONE (STONE).
+M3L_NEW_562,Beach PEB.,BLE,PAY,EGG,EAT,GAY,A,The missing letters are BLE (PEBBLE).
+M3L_NEW_563,Golden S.,ARM,POT,AND,FOX,DOG,C,The missing letters are AND (SAND).
+M3L_NEW_564,Speck of D.,THY,UST,TAG,HOP,ADO,B,The missing letters are UST (DUST).
+M3L_NEW_565,Potter's Y.,LET,INN,CLA,ROT,MET,C,The missing letters are CLA (CLAY).
+M3L_NEW_566,Rich L.,NAG,PAT,ADO,LAY,SOI,E,The missing letters are SOI (SOIL).
+M3L_NEW_567,Solid GND.,PAT,ROU,EEL,ADO,EAT,B,The missing letters are ROU (GROUND).
+M3L_NEW_568,Mother EA.,LOT,EAT,SIT,RTH,HIT,D,The missing letters are RTH (EARTH).
+M3L_NEW_569,Dry D.,EAR,CAD,EGG,LAN,ATE,D,The missing letters are LAN (LAND).
+M3L_NEW_570,Pacific OC.,LAD,OUR,IVE,EVE,EAN,E,The missing letters are EAN (OCEAN).
+M3L_NEW_571,Big W.,THY,AVE,ONE,BOY,SAY,B,The missing letters are AVE (WAVE).
+M3L_NEW_572,High E.,BIG,MAY,HAT,TID,EYE,D,The missing letters are TID (TIDE).
+M3L_NEW_573,Sea M.,MAY,NAG,FOA,MOO,OUT,C,The missing letters are FOA (FOAM).
+M3L_NEW_574,Sea SP.,PAD,ART,BEE,BAG,RAY,E,The missing letters are RAY (SPRAY).
+M3L_NEW_575,Sea S.,RAD,ACT,SAT,ALT,CAD,D,The missing letters are ALT (SALT).
+M3L_NEW_576,Fresh WR.,ATE,LEE,HAD,LAG,THY,A,The missing letters are ATE (WATER).
+M3L_NEW_577,Wide RR.,DRY,PAY,AIR,PRY,IVE,E,The missing letters are IVE (RIVER).
+M3L_NEW_578,Flowing STM.,REA,POT,ASH,YAK,BAY,A,The missing letters are REA (STREAM).
+M3L_NEW_579,Babbling OK.,BRO,BOX,DOT,TAG,CAD,A,The missing letters are BRO (BROOK).
+M3L_NEW_580,Up the CK.,USE,KIT,SIT,EGG,REE,E,The missing letters are REE (CREEK).
+M3L_NEW_581,Barge on CA.,NAL,ORB,GET,PRY,ARK,A,The missing letters are NAL (CANAL).
+M3L_NEW_582,Great L.,TOY,ENT,JOY,AKE,APE,D,The missing letters are AKE (LAKE).
+M3L_NEW_583,Ness H.,DAY,IVY,OAK,LOC,JAY,D,The missing letters are LOC (LOCH).
+M3L_NEW_584,Garden P.,HIT,OND,COT,EAR,KAY,B,The missing letters are OND (POND).
+M3L_NEW_585,Swimming L.,POO,INK,IVY,KAY,RAY,A,The missing letters are POO (POOL).
+M3L_NEW_586,Muddy PLE.,SEE,MAN,OAT,UDD,SET,D,The missing letters are UDD (PUDDLE).
+M3L_NEW_587,Pouring R.,AIN,END,PAT,MAY,FLY,A,The missing letters are AIN (RAIN).
+M3L_NEW_588,Light SHO.,ODD,WIT,WER,FRY,ONE,C,The missing letters are WER (SHOWER).
+M3L_NEW_589,Thunder RM.,JET,FEE,STO,NEW,GET,C,The missing letters are STO (STORM).
+M3L_NEW_590,Loud THUR.,RAG,CAN,WIT,NDE,OUS,D,The missing letters are NDE (THUNDER).
+M3L_NEW_591,Flash of LIGHTN.,ING,ONE,YAK,LET,TAD,A,The missing letters are ING (LIGHTNING).
+M3L_NEW_592,Grey UD.,MOO,TRY,CLO,YET,BIG,C,The missing letters are CLO (CLOUD).
+M3L_NEW_593,Silver N.,HIT,MOO,BOO,BAD,RAT,B,The missing letters are MOO (MOON).
+M3L_NEW_594,Bright R.,FOR,HAT,NOT,STA,DOT,D,The missing letters are STA (STAR).
+M3L_NEW_595,Strong W.,NOT,HAD,EGO,IND,ADD,D,The missing letters are IND (WIND).
+M3L_NEW_596,Gentle EZE.,FAT,OLD,BRE,NAG,LAY,C,The missing letters are BRE (BREEZE).
+M3L_NEW_597,Force G.,ILL,ALE,YAK,MY,MAG,B,The missing letters are ALE (GALE).
+M3L_NEW_598,Big HURRIE.,DAD,PRY,WAG,CAN,ARK,D,The missing letters are CAN (HURRICANE).
+M3L_NEW_599,Twisting TORO.,LIT,NAD,SAT,BIT,DRY,B,The missing letters are NAD (TORNADO).
+M3L_NEW_600,White S.,ACE,NOW,WHY,BIG,YAK,B,The missing letters are NOW (SNOW).
+M3L_NEW_601,Snow KE.,POT,FLA,BAY,JOY,APE,B,The missing letters are FLA (FLAKE).
+M3L_NEW_602,Jack FT.,ROS,OLD,RUN,TOP,EGO,A,The missing letters are ROS (FROST).
+M3L_NEW_603,Frozen H.,SET,MAY,ICE,AIL,RUN,D,The missing letters are AIL (HAIL).
+M3L_NEW_604,Morning M.,SAT,BAG,NAY,IST,FAD,D,The missing letters are IST (MIST).
+M3L_NEW_605,Summer H.,IRE,EAT,PET,FLY,RAT,B,The missing letters are EAT (HEAT).
+M3L_NEW_606,Winter D.,HAY,WIT,KAY,COL,GET,D,The missing letters are COL (COLD).
+M3L_NEW_607,Bad THER.,FAD,POT,FLY,WEA,LAG,D,The missing letters are WEA (WEATHER).
+M3L_NEW_608,Change CATE.,SHY,LIM,OAR,THE,YAK,B,The missing letters are LIM (CLIMATE).
+M3L_NEW_609,Festive SON.,RAG,WIT,HAD,SEA,WET,D,The missing letters are SEA (SEASON).
+M3L_NEW_610,Early SPG.,TION,IVY,PAT,ARM,RIN,E,The missing letters are RIN (SPRING).
+M3L_NEW_611,Hot SER.,UMM,LAD,PIT,MAT,MAG,A,The missing letters are UMM (SUMMER).
+M3L_NEW_612,Late UMN.,TOY,TOO,IVE,AUT,BAT,D,The missing letters are AUT (AUTUMN).
+M3L_NEW_613,Cold WIN.,ORE,LOO,RAG,HOT,TER,E,The missing letters are TER (WINTER).
+M3L_NEW_614,Month JANU.,TRY,OUS,ARY,TEE,HAY,C,The missing letters are ARY (JANUARY).
+M3L_NEW_615,Month FEBRU.,PAY,ARY,OAR,SHY,AIM,B,The missing letters are ARY (FEBRUARY).
+M3L_NEW_616,Month MA.,OIL,NAY,RCH,BIG,BEE,C,The missing letters are RCH (MARCH).
+M3L_NEW_617,Month IL.,HOT,AIM,OUS,TION,APR,E,The missing letters are APR (APRIL).
+M3L_NEW_618,Month J.,ONE,THY,OAR,UNE,WAG,D,The missing letters are UNE (JUNE).
+M3L_NEW_619,Month J.,YET,ADD,WAY,ULY,ACT,D,The missing letters are ULY (JULY).
+M3L_NEW_620,Month AUG.,PRY,FRY,LIT,UST,OAT,D,The missing letters are UST (AUGUST).
+M3L_NEW_621,Month SEPTER.,OAK,ALL,MBE,WIT,SAT,C,The missing letters are MBE (SEPTEMBER).
+M3L_NEW_622,Month OBER.,FEE,OCT,EVE,DAY,ARM,B,The missing letters are OCT (OCTOBER).
+M3L_NEW_623,Month NMBER.,MAY,OLD,HAD,OVE,ODD,D,The missing letters are OVE (NOVEMBER).
+M3L_NEW_624,Month DEBER.,LOO,GET,BAY,RAT,CEM,E,The missing letters are CEM (DECEMBER).
+M3L_NEW_625,Day DAY.,CAD,MON,RAY,OAT,APE,B,The missing letters are MON (MONDAY).
+M3L_NEW_626,Day TDAY.,UES,CAT,ODD,ONE,MY,A,The missing letters are UES (TUESDAY).
+M3L_NEW_627,Day WEDDAY.,WAY,NES,OAT,OWN,LIT,B,The missing letters are NES (WEDNESDAY).
+M3L_NEW_628,Day THDAY.,URS,JET,BIG,VET,ASK,A,The missing letters are URS (THURSDAY).
+M3L_NEW_629,Day DAY.,EST,MAT,OAT,HAG,FRI,E,The missing letters are FRI (FRIDAY).
+M3L_NEW_630,Day SATUR.,TRY,BET,BOY,ACE,DAY,E,The missing letters are DAY (SATURDAY).
+M3L_NEW_631,Day SUY.,CAT,ARM,NDA,TAG,SIT,C,The missing letters are NDA (SUNDAY).
+M3L_NEW_632,Last K.,MET,WEE,SAD,BIT,FEE,B,The missing letters are WEE (WEEK).
+M3L_NEW_633,Next TH.,MON,COO,MAD,RAD,SIT,A,The missing letters are MON (MONTH).
+M3L_NEW_634,Leap Y.,DRY,EAR,FOR,AIM,OLD,B,The missing letters are EAR (YEAR).
+M3L_NEW_635,New DEE.,ACT,PET,CAD,SET,ASH,C,The missing letters are CAD (DECADE).
+M3L_NEW_636,Last CERY.,GET,OUT,RAD,NTU,JOY,D,The missing letters are NTU (CENTURY).
+M3L_NEW_637,New MINNIUM.,HAG,LLE,PIT,AID,TRY,B,The missing letters are LLE (MILLENNIUM).
+M3L_NEW_638,What D?,KIT,SHY,TRY,ATE,THY,D,The missing letters are ATE (DATE).
+M3L_NEW_639,What E?,TIM,LOO,EYE,YAK,SAT,A,The missing letters are TIM (TIME).
+M3L_NEW_640,Happy R.,PAD,HOU,IVY,ONE,EEL,B,The missing letters are HOU (HOUR).
+M3L_NEW_641,Wait a MIN.,BEE,YET,LIT,HOT,UTE,E,The missing letters are UTE (MINUTE).
+M3L_NEW_642,Split OND.,TOY,NET,NAY,SEC,JAG,D,The missing letters are SEC (SECOND).
+M3L_NEW_643,Just a ENT.,MOM,HAG,SIT,LAD,AIR,A,The missing letters are MOM (MOMENT).
+M3L_NEW_644,Good MORN.,ING,FOX,BAD,CAD,NOT,A,The missing letters are ING (MORNING).
+M3L_NEW_645,High N.,HOP,OUR,LAY,NOO,NAG,D,The missing letters are NOO (NOON).
+M3L_NEW_646,Good ERNOON.,EAT,ENT,AFT,RAT,LOO,C,The missing letters are AFT (AFTERNOON).
+M3L_NEW_647,Good EVNG.,POT,ASH,MAG,FRY,ENI,E,The missing letters are ENI (EVENING).
+M3L_NEW_648,Good HT.,NIG,FLY,GET,LAY,LAD,A,The missing letters are NIG (NIGHT).
+M3L_NEW_649,At MIDNI.,ASH,GHT,ZOO,ADO,LOO,B,The missing letters are GHT (MIDNIGHT).
+M3L_NEW_650,At D.,AWN,TOP,ZOO,ONE,ILL,A,The missing letters are AWN (DAWN).
+M3L_NEW_651,At D.,USK,ADD,SAG,WET,EYE,A,The missing letters are USK (DUSK).
+M3L_NEW_652,In LIGHT.,MET,TWI,FAD,THE,CAT,B,The missing letters are TWI (TWILIGHT).
+M3L_NEW_653,Watch RISE.,SUN,NEW,HAG,RAT,RAD,A,The missing letters are SUN (SUNRISE).
+M3L_NEW_654,Watch SUN.,SET,CAN,ODD,BAT,YET,A,The missing letters are SET (SUNSET).
+M3L_NEW_655,Bank IDAY.,HOL,SAD,THE,DOT,ACT,A,The missing letters are HOL (HOLIDAY).
+M3L_NEW_656,Summer VACON.,ATI,WHY,HOT,FEE,AGE,A,The missing letters are ATI (VACATION).
+M3L_NEW_657,Tea BK.,BIG,JAY,OUT,REA,BY,D,The missing letters are REA (BREAK).
+M3L_NEW_658,Have a R.,GET,LEE,MOO,EST,HAD,D,The missing letters are EST (REST).
+M3L_NEW_659,Deep SP.,RED,INK,LIT,LEE,MAN,D,The missing letters are LEE (SLEEP).
+M3L_NEW_660,Sweet DR.,FAT,WAY,SIT,EAM,WHY,D,The missing letters are EAM (DREAM).
+M3L_NEW_661,Bad NTMARE.,LET,FIT,ACE,IGH,MET,D,The missing letters are IGH (NIGHTMARE).
+M3L_NEW_662,Wide KE.,AWA,POT,ILL,FIT,GAG,A,The missing letters are AWA (AWAKE).
+M3L_NEW_663,Sit D.,NET,NOT,OWN,NAY,BOY,C,The missing letters are OWN (DOWN).
+M3L_NEW_664,Jump R.,OVE,OWL,SAY,FAD,TOY,A,The missing letters are OVE (OVER).
+M3L_NEW_665,Duck UN.,FOX,GAG,INN,EVE,DER,E,The missing letters are DER (UNDER).
+M3L_NEW_666,Go OUGH.,MAN,OAR,NET,THR,HAG,D,The missing letters are THR (THROUGH).
+M3L_NEW_667,Go RO.,ATE,UND,LOO,SUN,ARM,B,The missing letters are UND (ROUND).
+M3L_NEW_668,Go OSS.,ACR,ING,MAT,INK,LAG,A,The missing letters are ACR (ACROSS).
+M3L_NEW_669,Go AG.,POT,NAY,LON,EAT,ZOO,C,The missing letters are LON (ALONG).
+M3L_NEW_670,Walk P.,AST,MET,PAY,RAT,JAY,A,The missing letters are AST (PAST).
+M3L_NEW_671,Go ORE.,OUS,ILL,BAG,BEF,TOY,D,The missing letters are BEF (BEFORE).
+M3L_NEW_672,Go ER.,WHY,TOP,AFT,EST,DOT,C,The missing letters are AFT (AFTER).
+M3L_NEW_673,Go T.,LOO,BET,AIR,NEX,BAT,D,The missing letters are NEX (NEXT).
+M3L_NEW_674,Go L.,EAR,FOR,KAY,BOO,AST,E,The missing letters are AST (LAST).
+M3L_NEW_675,Go FT.,GAY,TEE,IRS,ADD,HOP,C,The missing letters are IRS (FIRST).
+M3L_NEW_676,Go SED.,CON,SET,TAD,HAD,GAY,A,The missing letters are CON (SECOND).
+M3L_NEW_677,Go TH.,JOY,ALL,MAG,IRD,CAT,D,The missing letters are IRD (THIRD).
+M3L_NEW_678,Go FTH.,OAK,OAR,PET,OUR,CRY,D,The missing letters are OUR (FOURTH).
+M3L_NEW_679,Go FI.,FTH,HOP,PAD,LAD,ILL,A,The missing letters are FTH (FIFTH).
+M3L_NEW_680,Lucky NUM.,BAD,BER,DAY,FEE,FRY,B,The missing letters are BER (NUMBER).
+M3L_NEW_681,Head CO.,UNT,THE,TAD,LEE,ADD,A,The missing letters are UNT (COUNT).
+M3L_NEW_682,Take SUBCT.,BAY,ALL,ACE,AIM,TRA,E,The missing letters are TRA (SUBTRACT).
+M3L_NEW_683,Times MULTY.,DAD,IPL,YET,POT,BOY,B,The missing letters are IPL (MULTIPLY).
+M3L_NEW_684,Share IDE.,LET,RUN,DIV,WAY,EGG,C,The missing letters are DIV (DIVIDE).
+M3L_NEW_685,Sum TO.,BOO,COT,TAL,MAN,ACT,C,The missing letters are TAL (TOTAL).
+M3L_NEW_686,Is AL.,FAD,EQU,KIT,MAY,WHY,B,The missing letters are EQU (EQUAL).
+M3L_NEW_687,More or L.,FAD,SIT,ESS,MOO,EEL,C,The missing letters are ESS (LESS).
+M3L_NEW_688,Once E.,OIL,HAY,OWN,MOR,APE,D,The missing letters are MOR (MORE).
+M3L_NEW_689,The M.,OST,TOO,ASK,JAY,THY,A,The missing letters are OST (MOST).
+M3L_NEW_690,At LT.,EAS,ENT,ODD,RUN,EYE,A,The missing letters are EAS (LEAST).
+M3L_NEW_691,How Y?,MAD,MAN,OFF,ADD,INN,B,The missing letters are MAN (MANY).
+M3L_NEW_692,How H?,LIT,CAT,NOT,LAG,MUC,E,The missing letters are MUC (MUCH).
+M3L_NEW_693,A PE.,IEC,LOO,FAD,AIM,PAD,A,The missing letters are IEC (PIECE).
+M3L_NEW_694,A T.,PAT,CAT,YAK,TOO,PAR,E,The missing letters are PAR (PART).
+M3L_NEW_695,The WH.,OLE,OAK,OUT,ACT,DOT,A,The missing letters are OLE (WHOLE).
+M3L_NEW_696,A F.,WAY,LOT,OPT,ACE,HAL,E,The missing letters are HAL (HALF).
+M3L_NEW_697,A QTER.,NAY,UAR,ODD,OUT,AGE,B,The missing letters are UAR (QUARTER).
+M3L_NEW_698,In PE.,OWN,DAY,WAG,SHA,SUN,D,The missing letters are SHA (SHAPE).
+M3L_NEW_699,Round CIR.,EYE,FRY,CLE,SKY,POT,C,The missing letters are CLE (CIRCLE).
+M3L_NEW_700,Box ARE.,HOP,IVE,SQU,MOO,BET,C,The missing letters are SQU (SQUARE).
+M3L_NEW_701,Three ANGLE.,HOT,EAR,ZOO,TRI,LAG,D,The missing letters are TRI (TRIANGLE).
+M3L_NEW_702,Long RECTLE.,FRY,ANG,CRY,MAY,BIT,B,The missing letters are ANG (RECTANGLE).
+M3L_NEW_703,Five S.,TOP,RAG,TAR,IVY,EGG,C,The missing letters are TAR (STAR).
+M3L_NEW_704,Love H.,EGG,ARM,YET,EAR,TOO,D,The missing letters are EAR (HEART).
+M3L_NEW_705,Gem DIAM.,OAR,FIT,HAD,OND,CAN,D,The missing letters are OND (DIAMOND).
+M3L_NEW_706,Egg AL.,OV,IVY,ODD,BOO,USE,A,The missing letters are OV (OVAL).
+M3L_NEW_707,Ice E.,CUB,OLD,SET,ASK,EYE,A,The missing letters are CUB (CUBE).
+M3L_NEW_708,Ball SPE.,HER,OAK,RUN,DAY,GET,A,The missing letters are HER (SPHERE).
+M3L_NEW_709,Ice cream E.,NET,CRY,CON,FOR,JAG,C,The missing letters are CON (CONE).
+M3L_NEW_710,Tube CYDER.,LIN,MAY,SUN,EGG,ASK,A,The missing letters are LIN (CYLINDER).
+M3L_NEW_711,Egypt PYID.,YAK,AND,RAM,MAN,BAG,C,The missing letters are RAM (PYRAMID).
+M3L_NEW_712,Straight E.,PAY,LIN,SET,OLD,TOO,B,The missing letters are LIN (LINE).
+M3L_NEW_713,Dot NT.,OAK,POI,JAG,RAT,ILL,B,The missing letters are POI (POINT).
+M3L_NEW_714,Right GLE.,AN,ARM,USE,GET,HOT,A,The missing letters are AN (ANGLE).
+M3L_NEW_715,Left DE.,WIT,WAY,SI,ART,BIG,C,The missing letters are SI (SIDE).
+M3L_NEW_716,Sharp E.,HAG,ORE,DGE,JOY,OFF,C,The missing letters are DGE (EDGE).
+M3L_NEW_717,Quiet NER.,COR,OIL,RED,HAD,EVE,A,The missing letters are COR (CORNER).
+M3L_NEW_718,Town CEN.,ALL,TER,BAT,HOT,ODD,B,The missing letters are TER (CENTER).
+M3L_NEW_719,In the DLE.,BOY,MID,JET,MAN,SUN,B,The missing letters are MID (MIDDLE).
+M3L_NEW_720,On P.,TO,RUN,HOT,RED,MAY,A,The missing letters are TO (TOP).
+M3L_NEW_721,At the BOTT.,EAR,OM,OUT,MAN,GET,B,The missing letters are OM (BOTTOM).
+M3L_NEW_722,In ONT.,FR,FOR,USE,OUT,SIT,A,The missing letters are FR (FRONT).
+M3L_NEW_723,At the CK.,OAR,IVY,BA,END,NET,C,The missing letters are BA (BACK).
+M3L_NEW_724,Look INSE.,MET,ID,CRY,ODD,ASK,B,The missing letters are ID (INSIDE).
+M3L_NEW_725,Look OUTS.,IDE,TOO,WIT,USE,RED,A,The missing letters are IDE (OUTSIDE).
+M3L_NEW_726,Jump GH.,EAT,IVY,HI,ORE,END,C,The missing letters are HI (HIGH).
+M3L_NEW_727,Stoop W.,OLD,LO,BOO,YAK,HIT,B,The missing letters are LO (LOW).
+M3L_NEW_728,Dig EP.,DE,OUR,WEE,BOY,ART,A,The missing letters are DE (DEEP).
+M3L_NEW_729,Water SHAOW.,OAR,ILL,LL,HOT,AGE,C,The missing letters are LL (SHALLOW).
+M3L_NEW_730,Open W.,IDE,WAG,THE,ORE,OAT,A,The missing letters are IDE (WIDE).
+M3L_NEW_731,Path NAR.,GET,HAD,ROW,FIT,MAY,C,The missing letters are ROW (NARROW).
+M3L_NEW_732,Fog TH.,ALL,EYE,OAR,ICK,BIG,D,The missing letters are ICK (THICK).
+M3L_NEW_733,Ice IN.,OUT,JAY,TH,ASK,OLD,C,The missing letters are TH (THIN).
+M3L_NEW_734,Cat T.,FA,OAK,WIT,MET,BIG,A,The missing letters are FA (FAT).
+M3L_NEW_735,Jim M.,GET,SLI,DAY,ORE,AGE,B,The missing letters are SLI (SLIM).
+M3L_NEW_736,Tree LL.,TA,NET,SET,OUR,NEW,A,The missing letters are TA (TALL).
+M3L_NEW_737,Story ORT.,PAY,SH,FOR,CRY,WIT,B,The missing letters are SH (SHORT).
+M3L_NEW_738,Way NG.,LO,THE,AND,ONE,ODD,A,The missing letters are LO (LONG).
+M3L_NEW_739,Deal G.,ART,FOR,BI,BAG,OAR,C,The missing letters are BI (BIG).
+M3L_NEW_740,World SMA.,ODD,LL,ACT,RUN,WIT,B,The missing letters are LL (SMALL).
+M3L_NEW_741,Giant GE.,ARM,OUT,IVY,HU,BOO,D,The missing letters are HU (HUGE).
+M3L_NEW_742,Ant Y.,ART,WAY,TIN,JAG,HOT,C,The missing letters are TIN (TINY).
+M3L_NEW_743,Friendly GIA.,FOR,NT,EGG,OUS,OAR,B,The missing letters are NT (GIANT).
+M3L_NEW_744,Seven DWA.,RF,TOO,ALL,OFF,THE,A,The missing letters are RF (DWARF).
+M3L_NEW_745,Load AVY.,ASK,EGG,HE,RED,DAY,C,The missing letters are HE (HEAVY).
+M3L_NEW_746,Feather LIG.,SET,RUN,HT,FOR,OAT,C,The missing letters are HT (LIGHT).
+M3L_NEW_747,Rock RD.,EVE,OUT,HA,HOT,BAT,C,The missing letters are HA (HARD).
+M3L_NEW_749,Sea GH.,OUR,WIT,ROU,FIT,WEE,C,The missing letters are ROU (ROUGH).
+M3L_NEW_750,Skin SMO.,OTH,ODD,ILL,MET,PAY,A,The missing letters are OTH (SMOOTH).
+M3L_NEW_751,Knife ARP.,ACT,JAY,SH,RED,PIT,C,The missing letters are SH (SHARP).
+M3L_NEW_752,Pencil BL.,CRY,UNT,OLD,TOP,USE,B,The missing letters are UNT (BLUNT).
+M3L_NEW_753,Dog H.,OT,IVY,EVE,SET,MET,A,The missing letters are OT (HOT).
+M3L_NEW_754,Feet LD.,SET,CO,WAY,NET,RUN,B,The missing letters are CO (COLD).
+M3L_NEW_755,Heart RM.,WA,OAR,WEE,BAG,OAK,A,The missing letters are WA (WARM).
+M3L_NEW_756,Dude OL.,GAY,CO,AGE,JAG,EGG,B,The missing letters are CO (COOL).
+M3L_NEW_757,Paint T.,HOT,WE,ODD,SIT,NET,B,The missing letters are WE (WET).
+M3L_NEW_758,Bone Y.,DR,ALL,BIG,CRY,MET,A,The missing letters are DR (DRY).
+M3L_NEW_759,Shirt CL.,EAN,ARM,OUT,HIT,ASK,A,The missing letters are EAN (CLEAN).
+M3L_NEW_760,Dog RTY.,DI,FOR,ART,ILL,EVE,A,The missing letters are DI (DIRTY).
+M3L_NEW_761,Year W.,HAY,NE,EVE,RED,JET,B,The missing letters are NE (NEW).
+M3L_NEW_762,Hat D.,OL,AND,ORE,SKY,PAY,A,The missing letters are OL (OLD).
+M3L_NEW_763,Man YNG.,SET,OU,MET,RED,SUN,B,The missing letters are OU (YOUNG).
+M3L_NEW_764,Man CH.,THE,ART,BOO,RI,OAR,D,The missing letters are RI (RICH).
+M3L_NEW_765,Boy P.,OOR,SET,MAN,WEE,NET,A,The missing letters are OOR (POOR).
+M3L_NEW_766,Car ST.,FA,SIT,ACT,HIT,USE,A,The missing letters are FA (FAST).
+M3L_NEW_767,Worm OW.,SL,BIG,IVY,HOT,NET,A,The missing letters are SL (SLOW).
+M3L_NEW_768,March QCK.,UI,IVY,THE,HOT,OUT,A,The missing letters are UI (QUICK).
+M3L_NEW_769,Job OD.,GO,RED,HAD,ACT,OLD,A,The missing letters are GO (GOOD).
+M3L_NEW_770,News D.,BOO,BA,ORE,SUN,AGE,B,The missing letters are BA (BAD).
+M3L_NEW_771,Friend ST.,BE,HOT,OAR,OUT,RED,A,The missing letters are BE (BEST).
+M3L_NEW_772,Enemy RST.,MET,EGG,WO,ARM,OUT,C,The missing letters are WO (WORST).
+M3L_NEW_773,Luck BER.,AND,TTE,RED,MET,HOT,B,The missing letters are TTE (BETTER).
+M3L_NEW_774,Luck RSE.,EVE,WO,SKY,ALL,JAY,B,The missing letters are WO (WORSE).
+M3L_NEW_775,Hand GHT.,WIT,RI,ASK,HOT,BOY,B,The missing letters are RI (RIGHT).
+M3L_NEW_776,Way WNG.,RO,EVE,SET,ARM,ODD,A,The missing letters are RO (WRONG).
+M3L_NEW_777,Story UE.,FIT,FOR,TR,IVY,USE,C,The missing letters are TR (TRUE).
+M3L_NEW_778,Teeth SE.,AND,FAL,FOR,EVE,BOY,B,The missing letters are FAL (FALSE).
+M3L_NEW_779,Life AL.,ODD,RE,BOO,OUS,BIG,B,The missing letters are RE (REAL).
+M3L_NEW_780,Fur KE.,OAK,FA,NET,HAD,PAY,B,The missing letters are FA (FAKE).
+M3L_NEW_781,House FE.,BOY,SA,MAY,ILL,MAN,B,The missing letters are SA (SAFE).
+M3L_NEW_782,Zone DAN.,HAY,GER,OUT,PIT,HOT,B,The missing letters are GER (DANGER).
+M3L_NEW_783,Peasy SY.,FOR,EA,SET,WET,RED,B,The missing letters are EA (EASY).
+M3L_NEW_784,Work RD.,ASK,HA,BOO,USE,JAG,B,The missing letters are HA (HARD).
+M3L_NEW_785,Simon MPLE.,FOR,SI,IVY,NET,HOT,B,The missing letters are SI (SIMPLE).
+M3L_NEW_786,Clogs CVER.,LE,RED,OUT,MET,OLD,A,The missing letters are LE (CLEVER).
+M3L_NEW_787,Boy PID.,HOT,WIT,STU,HIT,BIG,C,The missing letters are STU (STUPID).
+M3L_NEW_788,Billy LLY.,PAY,SI,OUR,ART,PIT,B,The missing letters are SI (SILLY).
+M3L_NEW_789,Joke FUY.,WIT,NN,OAR,BOO,GAY,B,The missing letters are NN (FUNNY).
+M3L_NEW_790,Song D.,SA,OLD,ORE,ARM,SET,A,The missing letters are SA (SAD).
+M3L_NEW_791,Face HAP.,MET,PY,RED,SIT,IVY,B,The missing letters are PY (HAPPY).
+M3L_NEW_792,Bird GRY.,EVE,AN,ASK,WIT,OUS,B,The missing letters are AN (ANGRY).
+M3L_NEW_793,Bun OSS.,OAR,NET,CR,IVY,WET,C,The missing letters are CR (CROSS).
+M3L_NEW_794,Down LM.,CRY,CA,JAY,TOP,JET,B,The missing letters are CA (CALM).
+M3L_NEW_795,West LD.,HOT,WI,SUN,ORE,RUN,B,The missing letters are WI (WILD).
+M3L_NEW_796,Lion ME.,NET,TA,OAR,USE,EGG,B,The missing letters are TA (TAME).
+M3L_NEW_797,Shop P.,JAG,IVY,ET,WET,SET,C,The missing letters are ET (PET).
+M3L_NEW_798,Farm IMAL.,HAG,AN,OLD,ORE,SET,B,The missing letters are AN (ANIMAL).
+M3L_NEW_799,Keeper Z.,OUT,OO,EGG,USE,TOP,B,The missing letters are OO (ZOO).
+
+M3L_NEW_800,Theme RK.,PA,ORE,RUN,JAG,ARM,A,The missing letters are PA (PARK).
+

@@ -1,0 +1,13 @@
+// Polyfill for Node 18 compatibility
+// Expo SDK 52+ uses Array.prototype.toReversed which is only in Node 20+
+if (!Array.prototype.toReversed) {
+    Array.prototype.toReversed = function () {
+        return this.slice().reverse();
+    };
+}
+
+const { getDefaultConfig } = require('expo/metro-config');
+
+const config = getDefaultConfig(__dirname);
+
+module.exports = config;

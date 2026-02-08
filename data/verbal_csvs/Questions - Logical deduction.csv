@@ -1,0 +1,621 @@
+id,Question Type,Question Text,Option A,Option B,Option C,Option D,Option E,Correct Answer,Logic Explanation
+1,Type 1: Temporal,"Read the schedule below:
+1. Choir is on Tuesday.
+2. Football is the day after Choir.
+3. Judo is two days before Football.
+4. Tennis is the day before Judo.
+
+On which day is Tennis?",Tuesday,Sunday,Thursday,Wednesday,Monday,Sunday,"1. Start: Choir is Tuesday.
+2. Football is day after (Wednesday).
+3. Judo is 2 days before Football (Monday).
+4. Tennis is day before Judo -> Sunday."
+2,Type 1: Temporal,"Read the schedule below:
+1. Choir is on Thursday.
+2. Football is the day after Choir.
+3. Judo is two days before Football.
+4. Tennis is the day before Judo.
+
+On which day is Tennis?",Monday,Tuesday,Thursday,Wednesday,Friday,Tuesday,"1. Start: Choir is Thursday.
+2. Football is day after (Friday).
+3. Judo is 2 days before Football (Wednesday).
+4. Tennis is day before Judo -> Tuesday."
+3,Type 1: Temporal,"Read the schedule below:
+1. Choir is on Tuesday.
+2. Football is the day after Choir.
+3. Judo is two days before Football.
+4. Tennis is the day before Judo.
+
+On which day is Tennis?",Sunday,Monday,Tuesday,Thursday,Wednesday,Sunday,"1. Start: Choir is Tuesday.
+2. Football is day after (Wednesday).
+3. Judo is 2 days before Football (Monday).
+4. Tennis is day before Judo -> Sunday."
+4,Type 1: Temporal,"Read the schedule below:
+1. Choir is on Tuesday.
+2. Football is the day after Choir.
+3. Judo is two days before Football.
+4. Tennis is the day before Judo.
+
+On which day is Tennis?",Wednesday,Monday,Tuesday,Thursday,Sunday,Sunday,"1. Start: Choir is Tuesday.
+2. Football is day after (Wednesday).
+3. Judo is 2 days before Football (Monday).
+4. Tennis is day before Judo -> Sunday."
+5,Type 1: Temporal,"Read the schedule below:
+1. Choir is on Saturday.
+2. Football is the day after Choir.
+3. Judo is two days before Football.
+4. Tennis is the day before Judo.
+
+On which day is Tennis?",Thursday,Monday,Friday,Wednesday,Tuesday,Thursday,"1. Start: Choir is Saturday.
+2. Football is day after (Sunday).
+3. Judo is 2 days before Football (Friday).
+4. Tennis is day before Judo -> Thursday."
+6,Type 1: Temporal,"Read the schedule below:
+1. Choir is on Saturday.
+2. Football is the day after Choir.
+3. Judo is two days before Football.
+4. Tennis is the day before Judo.
+
+On which day is Tennis?",Wednesday,Tuesday,Friday,Thursday,Monday,Thursday,"1. Start: Choir is Saturday.
+2. Football is day after (Sunday).
+3. Judo is 2 days before Football (Friday).
+4. Tennis is day before Judo -> Thursday."
+7,Type 1: Temporal,"Read the schedule below:
+1. Choir is on Tuesday.
+2. Football is the day after Choir.
+3. Judo is two days before Football.
+4. Tennis is the day before Judo.
+
+On which day is Tennis?",Wednesday,Thursday,Monday,Sunday,Tuesday,Sunday,"1. Start: Choir is Tuesday.
+2. Football is day after (Wednesday).
+3. Judo is 2 days before Football (Monday).
+4. Tennis is day before Judo -> Sunday."
+8,Type 1: Temporal,"Read the schedule below:
+1. Choir is on Thursday.
+2. Football is the day after Choir.
+3. Judo is two days before Football.
+4. Tennis is the day before Judo.
+
+On which day is Tennis?",Thursday,Tuesday,Monday,Wednesday,Friday,Tuesday,"1. Start: Choir is Thursday.
+2. Football is day after (Friday).
+3. Judo is 2 days before Football (Wednesday).
+4. Tennis is day before Judo -> Tuesday."
+9,Type 1: Temporal,"Read the schedule below:
+1. Choir is on Saturday.
+2. Football is the day after Choir.
+3. Judo is two days before Football.
+4. Tennis is the day before Judo.
+
+On which day is Tennis?",Thursday,Monday,Tuesday,Wednesday,Friday,Thursday,"1. Start: Choir is Saturday.
+2. Football is day after (Sunday).
+3. Judo is 2 days before Football (Friday).
+4. Tennis is day before Judo -> Thursday."
+10,Type 1: Temporal,"Read the schedule below:
+1. Choir is on Friday.
+2. Football is the day after Choir.
+3. Judo is two days before Football.
+4. Tennis is the day before Judo.
+
+On which day is Tennis?",Thursday,Monday,Tuesday,Wednesday,Friday,Wednesday,"1. Start: Choir is Friday.
+2. Football is day after (Saturday).
+3. Judo is 2 days before Football (Thursday).
+4. Tennis is day before Judo -> Wednesday."
+11,Type 2: Linear,"Five friends (Daniel, Jack, James, Oliver, Thomas) live in row of houses 1 to 5.
+1. Daniel lives in house 3.
+2. Oliver lives in house 1.
+3. James lives between Oliver and Daniel.
+4. Jack lives next to Daniel, but does not live in house 5.
+
+Who lives in house 5?",Daniel,Jack,James,Oliver,Thomas,Thomas,"1. House 3 is Daniel.
+2. House 1 is Oliver.
+3. James is between H1 and H3 -> House 2.
+4. Jack is next to H3 (so H2 or H4). H2 is taken. So Jack is H4.
+5. Only House 5 is left for Thomas."
+12,Type 2: Linear,"Five friends (Emily, Jessica, Oliver, Sophie, William) live in row of houses 1 to 5.
+1. Oliver lives in house 3.
+2. Sophie lives in house 1.
+3. Emily lives between Sophie and Oliver.
+4. Jessica lives next to Oliver, but does not live in house 5.
+
+Who lives in house 5?",Emily,Jessica,Oliver,Sophie,William,William,"1. House 3 is Oliver.
+2. House 1 is Sophie.
+3. Emily is between H1 and H3 -> House 2.
+4. Jessica is next to H3 (so H2 or H4). H2 is taken. So Jessica is H4.
+5. Only House 5 is left for William."
+13,Type 2: Linear,"Five friends (Emily, Harry, Jack, Jessica, Lucy) live in row of houses 1 to 5.
+1. Lucy lives in house 3.
+2. Harry lives in house 1.
+3. Jack lives between Harry and Lucy.
+4. Emily lives next to Lucy, but does not live in house 5.
+
+Who lives in house 5?",Emily,Harry,Jack,Jessica,Lucy,Jessica,"1. House 3 is Lucy.
+2. House 1 is Harry.
+3. Jack is between H1 and H3 -> House 2.
+4. Emily is next to H3 (so H2 or H4). H2 is taken. So Emily is H4.
+5. Only House 5 is left for Jessica."
+14,Type 2: Linear,"Five friends (Chloe, George, Harry, James, William) live in row of houses 1 to 5.
+1. James lives in house 3.
+2. George lives in house 1.
+3. Harry lives between George and James.
+4. William lives next to James, but does not live in house 5.
+
+Who lives in house 5?",Chloe,George,Harry,James,William,Chloe,"1. House 3 is James.
+2. House 1 is George.
+3. Harry is between H1 and H3 -> House 2.
+4. William is next to H3 (so H2 or H4). H2 is taken. So William is H4.
+5. Only House 5 is left for Chloe."
+15,Type 2: Linear,"Five friends (Amara, Jack, James, Lucy, Sarah) live in row of houses 1 to 5.
+1. James lives in house 3.
+2. Lucy lives in house 1.
+3. Amara lives between Lucy and James.
+4. Jack lives next to James, but does not live in house 5.
+
+Who lives in house 5?",Amara,Jack,James,Lucy,Sarah,Sarah,"1. House 3 is James.
+2. House 1 is Lucy.
+3. Amara is between H1 and H3 -> House 2.
+4. Jack is next to H3 (so H2 or H4). H2 is taken. So Jack is H4.
+5. Only House 5 is left for Sarah."
+16,Type 2: Linear,"Five friends (Amara, George, Jack, James, William) live in row of houses 1 to 5.
+1. Jack lives in house 3.
+2. William lives in house 1.
+3. James lives between William and Jack.
+4. George lives next to Jack, but does not live in house 5.
+
+Who lives in house 5?",Amara,George,Jack,James,William,Amara,"1. House 3 is Jack.
+2. House 1 is William.
+3. James is between H1 and H3 -> House 2.
+4. George is next to H3 (so H2 or H4). H2 is taken. So George is H4.
+5. Only House 5 is left for Amara."
+17,Type 2: Linear,"Five friends (Amara, Chloe, Emily, Jessica, Lucy) live in row of houses 1 to 5.
+1. Amara lives in house 3.
+2. Jessica lives in house 1.
+3. Emily lives between Jessica and Amara.
+4. Chloe lives next to Amara, but does not live in house 5.
+
+Who lives in house 5?",Amara,Chloe,Emily,Jessica,Lucy,Lucy,"1. House 3 is Amara.
+2. House 1 is Jessica.
+3. Emily is between H1 and H3 -> House 2.
+4. Chloe is next to H3 (so H2 or H4). H2 is taken. So Chloe is H4.
+5. Only House 5 is left for Lucy."
+18,Type 2: Linear,"Five friends (James, Oliver, Sophie, Thomas, William) live in row of houses 1 to 5.
+1. William lives in house 3.
+2. James lives in house 1.
+3. Thomas lives between James and William.
+4. Oliver lives next to William, but does not live in house 5.
+
+Who lives in house 5?",James,Oliver,Sophie,Thomas,William,Sophie,"1. House 3 is William.
+2. House 1 is James.
+3. Thomas is between H1 and H3 -> House 2.
+4. Oliver is next to H3 (so H2 or H4). H2 is taken. So Oliver is H4.
+5. Only House 5 is left for Sophie."
+19,Type 2: Linear,"Five friends (Emily, George, Harry, Jack, Sophie) live in row of houses 1 to 5.
+1. Emily lives in house 3.
+2. Harry lives in house 1.
+3. George lives between Harry and Emily.
+4. Jack lives next to Emily, but does not live in house 5.
+
+Who lives in house 5?",Emily,George,Harry,Jack,Sophie,Sophie,"1. House 3 is Emily.
+2. House 1 is Harry.
+3. George is between H1 and H3 -> House 2.
+4. Jack is next to H3 (so H2 or H4). H2 is taken. So Jack is H4.
+5. Only House 5 is left for Sophie."
+20,Type 2: Linear,"Five friends (Amara, Emily, Jessica, Lucy, William) live in row of houses 1 to 5.
+1. Emily lives in house 3.
+2. Amara lives in house 1.
+3. Lucy lives between Amara and Emily.
+4. William lives next to Emily, but does not live in house 5.
+
+Who lives in house 5?",Amara,Emily,Jessica,Lucy,William,Jessica,"1. House 3 is Emily.
+2. House 1 is Amara.
+3. Lucy is between H1 and H3 -> House 2.
+4. William is next to H3 (so H2 or H4). H2 is taken. So William is H4.
+5. Only House 5 is left for Jessica."
+21,Type 3: Attributes,"Five children (Amara, Jessica, Oliver, Sarah, Sophie) each have a different fruit: Grapes, Kiwi, Mango, Melon, Pear.
+* Amara has the Melon.
+* Oliver has the Kiwi.
+* Jessica does not have the Mango or Pear.
+* Sophie does not have the Pear.
+
+Who has the Pear?",Amara,Jessica,Oliver,Sarah,Sophie,Sarah,"1. Amara = Melon. Oliver = Kiwi.
+2. Jessica is not Mango or Pear, so Jessica = Grapes.
+3. Sophie is not Pear, so Sophie = Mango.
+4. Only Sarah is left for the Pear."
+22,Type 3: Attributes,"Five children (Amara, Jack, Oliver, Sarah, Sophie) each have a different fruit: Banana, Grapes, Mango, Melon, Plum.
+* Jack has the Banana.
+* Sarah has the Grapes.
+* Sophie does not have the Mango or Plum.
+* Oliver does not have the Plum.
+
+Who has the Plum?",Amara,Jack,Oliver,Sarah,Sophie,Amara,"1. Jack = Banana. Sarah = Grapes.
+2. Sophie is not Mango or Plum, so Sophie = Melon.
+3. Oliver is not Plum, so Oliver = Mango.
+4. Only Amara is left for the Plum."
+23,Type 3: Attributes,"Five children (Daniel, Harry, Jack, Oliver, Sophie) each have a different fruit: Apple, Banana, Kiwi, Melon, Plum.
+* Jack has the Melon.
+* Oliver has the Plum.
+* Daniel does not have the Kiwi or Banana.
+* Harry does not have the Banana.
+
+Who has the Banana?",Daniel,Harry,Jack,Oliver,Sophie,Sophie,"1. Jack = Melon. Oliver = Plum.
+2. Daniel is not Kiwi or Banana, so Daniel = Apple.
+3. Harry is not Banana, so Harry = Kiwi.
+4. Only Sophie is left for the Banana."
+24,Type 3: Attributes,"Five children (Daniel, George, Jessica, Lucy, Oliver) each have a different fruit: Banana, Kiwi, Mango, Melon, Pear.
+* George has the Banana.
+* Oliver has the Mango.
+* Daniel does not have the Melon or Kiwi.
+* Lucy does not have the Kiwi.
+
+Who has the Kiwi?",Daniel,George,Jessica,Lucy,Oliver,Jessica,"1. George = Banana. Oliver = Mango.
+2. Daniel is not Melon or Kiwi, so Daniel = Pear.
+3. Lucy is not Kiwi, so Lucy = Melon.
+4. Only Jessica is left for the Kiwi."
+25,Type 3: Attributes,"Five children (Emily, Harry, Oliver, Sarah, William) each have a different fruit: Banana, Mango, Orange, Peach, Plum.
+* William has the Mango.
+* Sarah has the Plum.
+* Harry does not have the Banana or Peach.
+* Oliver does not have the Peach.
+
+Who has the Peach?",Emily,Harry,Oliver,Sarah,William,Emily,"1. William = Mango. Sarah = Plum.
+2. Harry is not Banana or Peach, so Harry = Orange.
+3. Oliver is not Peach, so Oliver = Banana.
+4. Only Emily is left for the Peach."
+26,Type 3: Attributes,"Five children (Amara, Chloe, George, Jack, Jessica) each have a different fruit: Apple, Grapes, Mango, Peach, Plum.
+* Amara has the Plum.
+* Jessica has the Grapes.
+* Jack does not have the Mango or Peach.
+* George does not have the Peach.
+
+Who has the Peach?",Amara,Chloe,George,Jack,Jessica,Chloe,"1. Amara = Plum. Jessica = Grapes.
+2. Jack is not Mango or Peach, so Jack = Apple.
+3. George is not Peach, so George = Mango.
+4. Only Chloe is left for the Peach."
+27,Type 3: Attributes,"Five children (Daniel, Emily, George, Jessica, Thomas) each have a different fruit: Banana, Grapes, Kiwi, Melon, Pear.
+* George has the Kiwi.
+* Jessica has the Grapes.
+* Daniel does not have the Melon or Banana.
+* Thomas does not have the Banana.
+
+Who has the Banana?",Daniel,Emily,George,Jessica,Thomas,Emily,"1. George = Kiwi. Jessica = Grapes.
+2. Daniel is not Melon or Banana, so Daniel = Pear.
+3. Thomas is not Banana, so Thomas = Melon.
+4. Only Emily is left for the Banana."
+28,Type 3: Attributes,"Five children (Chloe, Daniel, Harry, Lucy, William) each have a different fruit: Banana, Grapes, Melon, Peach, Pear.
+* Lucy has the Grapes.
+* Daniel has the Peach.
+* William does not have the Melon or Banana.
+* Harry does not have the Banana.
+
+Who has the Banana?",Chloe,Daniel,Harry,Lucy,William,Chloe,"1. Lucy = Grapes. Daniel = Peach.
+2. William is not Melon or Banana, so William = Pear.
+3. Harry is not Banana, so Harry = Melon.
+4. Only Chloe is left for the Banana."
+29,Type 3: Attributes,"Five children (Amara, Chloe, Jack, Lucy, Thomas) each have a different fruit: Grapes, Kiwi, Melon, Peach, Plum.
+* Amara has the Kiwi.
+* Jack has the Plum.
+* Thomas does not have the Peach or Grapes.
+* Lucy does not have the Grapes.
+
+Who has the Grapes?",Amara,Chloe,Jack,Lucy,Thomas,Chloe,"1. Amara = Kiwi. Jack = Plum.
+2. Thomas is not Peach or Grapes, so Thomas = Melon.
+3. Lucy is not Grapes, so Lucy = Peach.
+4. Only Chloe is left for the Grapes."
+30,Type 3: Attributes,"Five children (Chloe, Emily, George, James, Sarah) each have a different fruit: Grapes, Mango, Orange, Pear, Plum.
+* Chloe has the Mango.
+* Sarah has the Orange.
+* Emily does not have the Plum or Pear.
+* George does not have the Pear.
+
+Who has the Pear?",Chloe,Emily,George,James,Sarah,James,"1. Chloe = Mango. Sarah = Orange.
+2. Emily is not Plum or Pear, so Emily = Grapes.
+3. George is not Pear, so George = Plum.
+4. Only James is left for the Pear."
+31,Type 4: Ranking,"Five coloured cars raced. Read the clues:
+* The White car was faster than the Blue car.
+* The Black car was slower than the Blue car.
+* The Yellow car was faster than the Red car but slower than the Black car.
+
+Which car finished in the middle (3rd place)?",Black,Blue,Red,White,Yellow,Black,"Order from Fast to Slow:
+1. White > Blue
+2. Blue > Black
+3. Black > Yellow > Red
+Middle car is Black."
+32,Type 4: Ranking,"Five coloured cars raced. Read the clues:
+* The Black car was faster than the Brown car.
+* The Yellow car was slower than the Brown car.
+* The Green car was faster than the Blue car but slower than the Yellow car.
+
+Which car finished in the middle (3rd place)?",Black,Blue,Brown,Green,Yellow,Yellow,"Order from Fast to Slow:
+1. Black > Brown
+2. Brown > Yellow
+3. Yellow > Green > Blue
+Middle car is Yellow."
+33,Type 4: Ranking,"Five coloured cars raced. Read the clues:
+* The White car was faster than the Brown car.
+* The Red car was slower than the Brown car.
+* The Orange car was faster than the Yellow car but slower than the Red car.
+
+Which car finished in the middle (3rd place)?",Brown,Orange,Red,White,Yellow,Red,"Order from Fast to Slow:
+1. White > Brown
+2. Brown > Red
+3. Red > Orange > Yellow
+Middle car is Red."
+34,Type 4: Ranking,"Five coloured cars raced. Read the clues:
+* The Black car was faster than the Blue car.
+* The Green car was slower than the Blue car.
+* The Pink car was faster than the Yellow car but slower than the Green car.
+
+Which car finished in the middle (3rd place)?",Black,Blue,Green,Pink,Yellow,Green,"Order from Fast to Slow:
+1. Black > Blue
+2. Blue > Green
+3. Green > Pink > Yellow
+Middle car is Green."
+35,Type 4: Ranking,"Five coloured cars raced. Read the clues:
+* The Blue car was faster than the Black car.
+* The Brown car was slower than the Black car.
+* The White car was faster than the Orange car but slower than the Brown car.
+
+Which car finished in the middle (3rd place)?",Black,Blue,Brown,Orange,White,Brown,"Order from Fast to Slow:
+1. Blue > Black
+2. Black > Brown
+3. Brown > White > Orange
+Middle car is Brown."
+36,Type 4: Ranking,"Five coloured cars raced. Read the clues:
+* The White car was faster than the Yellow car.
+* The Pink car was slower than the Yellow car.
+* The Red car was faster than the Purple car but slower than the Pink car.
+
+Which car finished in the middle (3rd place)?",Pink,Purple,Red,White,Yellow,Pink,"Order from Fast to Slow:
+1. White > Yellow
+2. Yellow > Pink
+3. Pink > Red > Purple
+Middle car is Pink."
+37,Type 4: Ranking,"Five coloured cars raced. Read the clues:
+* The Blue car was faster than the Green car.
+* The Purple car was slower than the Green car.
+* The Black car was faster than the Pink car but slower than the Purple car.
+
+Which car finished in the middle (3rd place)?",Black,Blue,Green,Pink,Purple,Purple,"Order from Fast to Slow:
+1. Blue > Green
+2. Green > Purple
+3. Purple > Black > Pink
+Middle car is Purple."
+38,Type 4: Ranking,"Five coloured cars raced. Read the clues:
+* The Brown car was faster than the Orange car.
+* The Purple car was slower than the Orange car.
+* The Pink car was faster than the Red car but slower than the Purple car.
+
+Which car finished in the middle (3rd place)?",Brown,Orange,Pink,Purple,Red,Purple,"Order from Fast to Slow:
+1. Brown > Orange
+2. Orange > Purple
+3. Purple > Pink > Red
+Middle car is Purple."
+39,Type 4: Ranking,"Five coloured cars raced. Read the clues:
+* The Purple car was faster than the Red car.
+* The Orange car was slower than the Red car.
+* The Black car was faster than the Brown car but slower than the Orange car.
+
+Which car finished in the middle (3rd place)?",Black,Brown,Orange,Purple,Red,Orange,"Order from Fast to Slow:
+1. Purple > Red
+2. Red > Orange
+3. Orange > Black > Brown
+Middle car is Orange."
+40,Type 4: Ranking,"Five coloured cars raced. Read the clues:
+* The Purple car was faster than the Yellow car.
+* The White car was slower than the Yellow car.
+* The Brown car was faster than the Blue car but slower than the White car.
+
+Which car finished in the middle (3rd place)?",Blue,Brown,Purple,White,Yellow,White,"Order from Fast to Slow:
+1. Purple > Yellow
+2. Yellow > White
+3. White > Brown > Blue
+Middle car is White."
+41,Type 5: Spatial,"Five towns are located along a straight road running West to East.
+* Exeter is West of Gloucester.
+* Chester is East of Gloucester.
+* Folkestone is between Chester and Bristol.
+* Bristol is the furthest East.
+
+Which town is in the middle?",Bristol,Chester,Exeter,Folkestone,Gloucester,Chester,"Order West to East:
+1. Exeter - Gloucester
+2. Gloucester - Chester
+3. Bristol is last.
+4. Folkestone is between Chester and Bristol.
+Sequence: Exeter-Gloucester-Chester-Folkestone-Bristol.
+Middle is Chester."
+42,Type 5: Spatial,"Five towns are located along a straight road running West to East.
+* Ashford is West of Exeter.
+* Derby is East of Exeter.
+* Chester is between Derby and Gloucester.
+* Gloucester is the furthest East.
+
+Which town is in the middle?",Ashford,Chester,Derby,Exeter,Gloucester,Derby,"Order West to East:
+1. Ashford - Exeter
+2. Exeter - Derby
+3. Gloucester is last.
+4. Chester is between Derby and Gloucester.
+Sequence: Ashford-Exeter-Derby-Chester-Gloucester.
+Middle is Derby."
+43,Type 5: Spatial,"Five towns are located along a straight road running West to East.
+* Folkestone is West of Chester.
+* Derby is East of Chester.
+* Bristol is between Derby and Gloucester.
+* Gloucester is the furthest East.
+
+Which town is in the middle?",Bristol,Chester,Derby,Folkestone,Gloucester,Derby,"Order West to East:
+1. Folkestone - Chester
+2. Chester - Derby
+3. Gloucester is last.
+4. Bristol is between Derby and Gloucester.
+Sequence: Folkestone-Chester-Derby-Bristol-Gloucester.
+Middle is Derby."
+44,Type 5: Spatial,"Five towns are located along a straight road running West to East.
+* Ashford is West of Gloucester.
+* Folkestone is East of Gloucester.
+* Exeter is between Folkestone and Derby.
+* Derby is the furthest East.
+
+Which town is in the middle?",Ashford,Derby,Exeter,Folkestone,Gloucester,Folkestone,"Order West to East:
+1. Ashford - Gloucester
+2. Gloucester - Folkestone
+3. Derby is last.
+4. Exeter is between Folkestone and Derby.
+Sequence: Ashford-Gloucester-Folkestone-Exeter-Derby.
+Middle is Folkestone."
+45,Type 5: Spatial,"Five towns are located along a straight road running West to East.
+* Exeter is West of Chester.
+* Bristol is East of Chester.
+* Gloucester is between Bristol and Derby.
+* Derby is the furthest East.
+
+Which town is in the middle?",Bristol,Chester,Derby,Exeter,Gloucester,Bristol,"Order West to East:
+1. Exeter - Chester
+2. Chester - Bristol
+3. Derby is last.
+4. Gloucester is between Bristol and Derby.
+Sequence: Exeter-Chester-Bristol-Gloucester-Derby.
+Middle is Bristol."
+46,Type 5: Spatial,"Five towns are located along a straight road running West to East.
+* Exeter is West of Bristol.
+* Ashford is East of Bristol.
+* Derby is between Ashford and Gloucester.
+* Gloucester is the furthest East.
+
+Which town is in the middle?",Ashford,Bristol,Derby,Exeter,Gloucester,Ashford,"Order West to East:
+1. Exeter - Bristol
+2. Bristol - Ashford
+3. Gloucester is last.
+4. Derby is between Ashford and Gloucester.
+Sequence: Exeter-Bristol-Ashford-Derby-Gloucester.
+Middle is Ashford."
+47,Type 5: Spatial,"Five towns are located along a straight road running West to East.
+* Exeter is West of Gloucester.
+* Folkestone is East of Gloucester.
+* Ashford is between Folkestone and Bristol.
+* Bristol is the furthest East.
+
+Which town is in the middle?",Ashford,Bristol,Exeter,Folkestone,Gloucester,Folkestone,"Order West to East:
+1. Exeter - Gloucester
+2. Gloucester - Folkestone
+3. Bristol is last.
+4. Ashford is between Folkestone and Bristol.
+Sequence: Exeter-Gloucester-Folkestone-Ashford-Bristol.
+Middle is Folkestone."
+48,Type 5: Spatial,"Five towns are located along a straight road running West to East.
+* Folkestone is West of Ashford.
+* Bristol is East of Ashford.
+* Chester is between Bristol and Gloucester.
+* Gloucester is the furthest East.
+
+Which town is in the middle?",Ashford,Bristol,Chester,Folkestone,Gloucester,Bristol,"Order West to East:
+1. Folkestone - Ashford
+2. Ashford - Bristol
+3. Gloucester is last.
+4. Chester is between Bristol and Gloucester.
+Sequence: Folkestone-Ashford-Bristol-Chester-Gloucester.
+Middle is Bristol."
+49,Type 5: Spatial,"Five towns are located along a straight road running West to East.
+* Exeter is West of Derby.
+* Folkestone is East of Derby.
+* Chester is between Folkestone and Ashford.
+* Ashford is the furthest East.
+
+Which town is in the middle?",Ashford,Chester,Derby,Exeter,Folkestone,Folkestone,"Order West to East:
+1. Exeter - Derby
+2. Derby - Folkestone
+3. Ashford is last.
+4. Chester is between Folkestone and Ashford.
+Sequence: Exeter-Derby-Folkestone-Chester-Ashford.
+Middle is Folkestone."
+50,Type 5: Spatial,"Five towns are located along a straight road running West to East.
+* Exeter is West of Ashford.
+* Chester is East of Ashford.
+* Bristol is between Chester and Derby.
+* Derby is the furthest East.
+
+Which town is in the middle?",Ashford,Bristol,Chester,Derby,Exeter,Chester,"Order West to East:
+1. Exeter - Ashford
+2. Ashford - Chester
+3. Derby is last.
+4. Bristol is between Chester and Derby.
+Sequence: Exeter-Ashford-Chester-Bristol-Derby.
+Middle is Chester."
+51,Type 6: Conditional,"Read the statements about the school sports rules:
+1. If you play Golf, you must also play Cricket.
+2. If you play Cricket, you cannot play Football.
+3. Amara plays Golf.
+
+Which statement MUST be true?",Amara does not play Cricket,Amara plays Football,Amara does not play Football,Amara plays all sports,Amara only plays Golf,Amara does not play Football,"1. Amara plays Golf -> Must play Cricket.
+2. Plays Cricket -> Cannot play Football.
+Therefore, Amara does not play Football."
+52,Type 6: Conditional,"Read the statements about the school sports rules:
+1. If you play Judo, you must also play Football.
+2. If you play Football, you cannot play Rugby.
+3. George plays Judo.
+
+Which statement MUST be true?",George only plays Judo,George does not play Rugby,George does not play Football,George plays Rugby,George plays all sports,George does not play Rugby,"1. George plays Judo -> Must play Football.
+2. Plays Football -> Cannot play Rugby.
+Therefore, George does not play Rugby."
+53,Type 6: Conditional,"Read the statements about the school sports rules:
+1. If you play Netball, you must also play Hockey.
+2. If you play Hockey, you cannot play Running.
+3. Jack plays Netball.
+
+Which statement MUST be true?",Jack does not play Hockey,Jack plays all sports,Jack only plays Netball,Jack does not play Running,Jack plays Running,Jack does not play Running,"1. Jack plays Netball -> Must play Hockey.
+2. Plays Hockey -> Cannot play Running.
+Therefore, Jack does not play Running."
+54,Type 6: Conditional,"Read the statements about the school sports rules:
+1. If you play Swimming, you must also play Golf.
+2. If you play Golf, you cannot play Cricket.
+3. Emily plays Swimming.
+
+Which statement MUST be true?",Emily only plays Swimming,Emily does not play Golf,Emily plays all sports,Emily does not play Cricket,Emily plays Cricket,Emily does not play Cricket,"1. Emily plays Swimming -> Must play Golf.
+2. Plays Golf -> Cannot play Cricket.
+Therefore, Emily does not play Cricket."
+55,Type 6: Conditional,"Read the statements about the school sports rules:
+1. If you play Rugby, you must also play Swimming.
+2. If you play Swimming, you cannot play Cricket.
+3. Harry plays Rugby.
+
+Which statement MUST be true?",Harry plays all sports,Harry only plays Rugby,Harry does not play Cricket,Harry plays Cricket,Harry does not play Swimming,Harry does not play Cricket,"1. Harry plays Rugby -> Must play Swimming.
+2. Plays Swimming -> Cannot play Cricket.
+Therefore, Harry does not play Cricket."
+56,Type 6: Conditional,"Read the statements about the school sports rules:
+1. If you play Judo, you must also play Football.
+2. If you play Football, you cannot play Rugby.
+3. Oliver plays Judo.
+
+Which statement MUST be true?",Oliver does not play Rugby,Oliver does not play Football,Oliver only plays Judo,Oliver plays all sports,Oliver plays Rugby,Oliver does not play Rugby,"1. Oliver plays Judo -> Must play Football.
+2. Plays Football -> Cannot play Rugby.
+Therefore, Oliver does not play Rugby."
+57,Type 6: Conditional,"Read the statements about the school sports rules:
+1. If you play Golf, you must also play Hockey.
+2. If you play Hockey, you cannot play Rugby.
+3. Jessica plays Golf.
+
+Which statement MUST be true?",Jessica does not play Rugby,Jessica plays Rugby,Jessica only plays Golf,Jessica does not play Hockey,Jessica plays all sports,Jessica does not play Rugby,"1. Jessica plays Golf -> Must play Hockey.
+2. Plays Hockey -> Cannot play Rugby.
+Therefore, Jessica does not play Rugby."
+58,Type 6: Conditional,"Read the statements about the school sports rules:
+1. If you play Cricket, you must also play Judo.
+2. If you play Judo, you cannot play Golf.
+3. Sophie plays Cricket.
+
+Which statement MUST be true?",Sophie only plays Cricket,Sophie does not play Golf,Sophie plays Golf,Sophie does not play Judo,Sophie plays all sports,Sophie does not play Golf,"1. Sophie plays Cricket -> Must play Judo.
+2. Plays Judo -> Cannot play Golf.
+Therefore, Sophie does not play Golf."
+59,Type 6: Conditional,"Read the statements about the school sports rules:
+1. If you play Swimming, you must also play Cricket.
+2. If you play Cricket, you cannot play Rugby.
+3. Daniel plays Swimming.
+
+Which statement MUST be true?",Daniel plays all sports,Daniel only plays Swimming,Daniel plays Rugby,Daniel does not play Rugby,Daniel does not play Cricket,Daniel does not play Rugby,"1. Daniel plays Swimming -> Must play Cricket.
+2. Plays Cricket -> Cannot play Rugby.
+Therefore, Daniel does not play Rugby."
+60,Type 6: Conditional,"Read the statements about the school sports rules:
+1. If you play Hockey, you must also play Tennis.
+2. If you play Tennis, you cannot play Cricket.
+3. Oliver plays Hockey.
+
+Which statement MUST be true?",Oliver plays all sports,Oliver does not play Cricket,Oliver plays Cricket,Oliver does not play Tennis,Oliver only plays Hockey,Oliver does not play Cricket,"1. Oliver plays Hockey -> Must play Tennis.
+2. Plays Tennis -> Cannot play Cricket.
+Therefore, Oliver does not play Cricket."

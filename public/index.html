@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>11PlusNinja - Master the 11+ Exam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        ninja: {
+                            blue: '#2563EB',
+                            dark: '#1F2937',
+                            gold: '#F59E0B',
+                            red: '#DC2626',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Gateway Overlay Styles */
+        #gateway-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #F0F2F5;
+            /* Pillarbox Background */
+            z-index: 9999;
+            overflow-y: auto;
+            transition: opacity 0.5s ease-out, visibility 0.5s;
+        }
+
+        /* Utility for hiding */
+        .gateway-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        /* Marquee / Carousel Styles */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding: 40px 0;
+            background: #F9FAFB;
+        }
+
+        .marquee-track {
+            display: flex;
+            gap: 40px;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+
+        .phone-mockup {
+            width: 280px;
+            height: 580px;
+            border: 12px solid #1F2937;
+            /* Dark Gray Bezel */
+            border-radius: 36px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        /* Camera Notch Simulation */
+        .phone-mockup::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+            height: 24px;
+            background: #1F2937;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            z-index: 10;
+        }
+
+        .phone-mockup img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-50% - 20px));
+                /* Move by half width + half gap */
+            }
+        }
+
+        /* Pause on Hover */
+        .marquee-container:hover .marquee-track {
+            animation-play-state: paused;
+        }
+
+        /* Global Header Styles */
+        /* Global Header Styles - Updated for Pillarbox */
+        .global-header {
+            position: sticky;
+            /* Sticky within wrapper */
+            top: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 10000;
+            padding: 1rem 0;
+            border-bottom: 4px solid #2563EB;
+        }
+
+        /* Mobile Wrapper / Pillarbox */
+        .mobile-wrapper {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
+            position: relative;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .global-header .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .global-header-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #1F2937;
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        /* Adjust layout to prevent overlap */
+        /* Removed padding-top as layout is now flex/sticky */
+        /*
+        #gateway-overlay,
+        #root {
+            padding-top: 80px;
+        }
+        */
+    </style>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- Global Header Removed from here (Moved inside gateway-overlay) -->
+
+    <!-- React App Root (Hidden initially by overlay, but functionally active) -->
+    <div id="root"></div>
+
+    <!-- Gateway Landing Page Overlay -->
+    <div id="gateway-overlay">
+
+        <!-- Mobile Wrapper -->
+        <div class="mobile-wrapper">
+
+            <!-- Global Header -->
+            <header class="global-header">
+                <div class="container mx-auto px-6 flex justify-between items-center">
+                    <a href="/" class="global-header-logo">
+                        <img src="/assets/ninja_header.png" alt="11PlusNinja" class="h-10 w-auto">
+                    </a>
+                    <div class="flex items-center gap-4">
+                        <a href="#"
+                            class="text-gray-600 font-medium hover:text-ninja-blue transition hidden sm:block">Login</a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Navigation Bar Removed (Replaced by Global Header) -->
+
+            <!-- Hero Section -->
+            <header class="bg-gray-50 pt-16 pb-24 relative overflow-hidden">
+                <!-- Background Decoration -->
+                <div class="absolute inset-0 opacity-10 pointer-events-none"
+                    style="background-image: radial-gradient(#2563EB 0.5px, transparent 0.5px); background-size: 20px 20px;">
+                </div>
+
+                <div class="container mx-auto px-6 text-center relative z-10">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight">
+                        Master the 11+ Exam.<br class="hidden md:block" />
+                        <span class="text-ninja-blue">Train Like a Ninja.</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+                        Free, gamified preparation for UK Grammar School Entrance Exams.<br />
+                        Fun for students, reassuring for parents.
+                    </p>
+
+                    <!-- The Split Paths -->
+                    <div class="flex flex-row justify-center items-stretch gap-4 max-w-4xl mx-auto">
+                        <!-- Card A: Student Dojo -->
+                        <div class="flex-1 bg-white border border-blue-100 rounded-2xl p-4 md:p-8 shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1 group cursor-pointer relative overflow-hidden"
+                            onclick="enterStudentDojo()">
+                            <div class="absolute top-0 left-0 w-full h-2 bg-ninja-blue"></div>
+                            <div
+                                class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-blue-100 transition">
+                                <span class="text-3xl">🥷</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">I am a Student</h3>
+                            <p class="text-gray-500 mb-8">Play quizzes, earn belts, and level up your skills.</p>
+                            <button
+                                class="w-full bg-ninja-blue text-white py-3 rounded-xl font-bold text-lg hover:bg-blue-700 transition flex items-center justify-center gap-2">
+                                Enter the Dojo
+                                <span>→</span>
+                            </button>
+                        </div>
+
+                        <!-- Card B: Parent Dojo -->
+                        <div class="flex-1 bg-white border border-yellow-100 rounded-2xl p-4 md:p-8 shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1 group cursor-pointer relative overflow-hidden"
+                            onclick="window.location.href='/parent-dojo.html'">
+                            <div class="absolute top-0 left-0 w-full h-2 bg-ninja-gold"></div>
+                            <div
+                                class="w-16 h-16 bg-yellow-50 rounded-full flex items-center justify-center mb-6 mx-auto group-hover:bg-yellow-100 transition">
+                                <span class="text-3xl">📜</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">I am a Parent</h3>
+                            <p class="text-gray-500 mb-8">Get expert guides, analytics, and exam strategies.</p>
+                            <button
+                                class="w-full bg-ninja-gold text-white border-2 border-ninja-gold py-3 rounded-xl font-bold text-lg hover:bg-yellow-600 hover:border-yellow-600 transition flex items-center justify-center gap-2">
+                                Visit Parent Dojo
+                                <span class="text-white">→</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Mission Section -->
+            <section class="py-20 bg-white border-t border-gray-100">
+                <div class="container mx-auto px-6 text-center max-w-3xl">
+                    <span class="text-ninja-blue font-bold tracking-widest uppercase text-sm mb-4 block">Our
+                        Mission</span>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">To democratise 11+ success.</h2>
+                    <p class="text-xl text-gray-600 leading-relaxed">
+                        We replace expensive tuition with smart, gamified learning that builds confidence and reduces
+                        exam
+                        anxiety. expert education should be accessible to everyone.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Product Showcase (Carousel) -->
+            <section class="py-20 bg-gray-50 overflow-hidden">
+                <div class="container mx-auto px-6 mb-12">
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Peek Inside the Dojo</h2>
+                        <p class="text-gray-500 text-lg">Swipe through the training grounds.</p>
+                    </div>
+                </div>
+
+                <!-- Infinite Marquee -->
+                <div class="marquee-container">
+                    <div class="marquee-track">
+                        <!-- Set 1 -->
+                        <!-- Dashboard -->
+                        <div class="phone-mockup">
+                            <img src="/assets/screenshots/Dashboard.png" alt="Dashboard"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <!-- Maths -->
+                        <div class="phone-mockup">
+                            <img src="/assets/screenshots/Maths.png" alt="Maths" class="w-full h-full object-cover">
+                        </div>
+                        <!-- English -->
+                        <div class="phone-mockup">
+                            <img src="/assets/screenshots/English.png" alt="English" class="w-full h-full object-cover">
+                        </div>
+                        <!-- VR -->
+                        <div class="phone-mockup">
+                            <img src="/assets/screenshots/VR.png" alt="Verbal Reasoning"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <!-- NVR -->
+                        <div class="phone-mockup">
+                            <img src="/assets/screenshots/NVR.png" alt="Non-Verbal Reasoning"
+                                class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Set 2 (Duplicate for Loop) -->
+                        <!-- Dashboard -->
+                        <div class="phone-mockup">
+                            <img src="/assets/screenshots/Dashboard.png" alt="Dashboard"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <!-- Maths -->
+                        <div class="phone-mockup">
+                            <img src="/assets/screenshots/Maths.png" alt="Maths" class="w-full h-full object-cover">
+                        </div>
+                        <!-- English -->
+                        <div class="phone-mockup">
+                            <img src="/assets/screenshots/English.png" alt="English" class="w-full h-full object-cover">
+                        </div>
+                        <!-- VR -->
+                        <div class="phone-mockup">
+                            <img src="/assets/screenshots/VR.png" alt="Verbal Reasoning"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <!-- NVR -->
+                        <div class="phone-mockup">
+                            <img src="/assets/screenshots/NVR.png" alt="Non-Verbal Reasoning"
+                                class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-gray-900 text-gray-400 py-12">
+                <div class="container mx-auto px-6 text-center">
+                    <div class="flex justify-center gap-8 mb-8">
+                        <a href="/settings" class="hover:text-white transition">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition">Contact Us</a>
+                        <a href="#" class="hover:text-white transition">Disclaimer</a>
+                    </div>
+                    <p>&copy; 2026 11PlusNinja. All rights reserved.</p>
+                </div>
+            </footer>
+        </div> <!-- End Mobile Wrapper -->
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function enterStudentDojo() {
+            console.log('Enter Student Dojo clicked');
+            const gateway = document.getElementById('gateway-overlay');
+            if (gateway) {
+                gateway.classList.add('gateway-hidden');
+                // Optional: Save preference to localStorage so returning students skip the gateway
+                // localStorage.setItem('userType', 'student');
+            } else {
+                console.error('Gateway overlay not found!');
+            }
+        }
+
+        // Optional: Check if user already chose student
+        // if (localStorage.getItem('userType') === 'student') {
+        //     document.getElementById('gateway-overlay').style.display = 'none';
+        // }
+    </script>
+</body>
+
+</html>

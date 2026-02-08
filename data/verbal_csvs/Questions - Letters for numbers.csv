@@ -1,0 +1,556 @@
+ID,Key,Equation,OptionA,OptionB,OptionC,OptionD,OptionE,CorrectAnswer,Explanation
+P1-Q8-06,"A=6, B=12, C=24, D=30, E=36",A x B - E = [?],A,B,C,D,E,OptionE,Substitute the values: 6 x 12 - 36. Calculate 72 - 36 = 36. The number 36 corresponds to letter E.
+P1-Q8-07,"A=2, B=4, C=8, D=12, E=16",B x C - E = [?],A,B,C,D,E,OptionE,Substitute the values: 4 x 8 - 16. Calculate 32 - 16 = 16. The number 16 corresponds to letter E.
+P2-Q51-Var-12,"A=4, B=8, C=16, D=24, E=32",C / A x B = [?],A,B,C,D,E,OptionE,Substitute: 16 / 4 x 8. Calculate: 4 x 8 = 32. The number 32 corresponds to letter E.
+P2-Q51-Var-14,"A=5, B=15, C=25, D=30, E=45",B x A - D = [?],A,B,C,D,E,OptionE,Substitute: 15 x 5 - 30. Calculate: 75 - 30 = 45. The number 45 corresponds to letter E.
+P6-Q21-Var-14,"A=6, B=12, C=18, D=3, E=9",C / A x D = [?],A,B,C,D,E,OptionE,Substitute: 18 / 6 x 3. Calculate: 3 x 3 = 9. The number 9 corresponds to letter E.
+BatchA-15,"A=2, B=4, C=6, D=8, E=10",D + A = [?],A,B,C,D,E,OptionE,Substitute: 8 + 2 = 10. Corresponds to E.
+BatchA-19,"A=2, B=5, C=7, D=9, E=12",B + C = [?],A,B,C,D,E,OptionE,Substitute: 5 + 7 = 12. Corresponds to E.
+BatchA-39,"A=5, B=10, C=20, D=25, E=30",D + A = [?],A,B,C,D,E,OptionE,Substitute: 25 + 5 = 30. Corresponds to E.
+BatchB-08,"A=4, B=8, C=16, D=24, E=32",B x C / A = [?],A,B,C,D,E,OptionE,Substitute: 8 x 16 / 4 = 32. Corresponds to E.
+BatchB-21,"A=2, B=4, C=8, D=10, E=20",B x D / A = [?],A,B,C,D,E,OptionE,Substitute: 4 x 10 / 2 = 20. Corresponds to E.
+BatchB-27,"A=3, B=6, C=12, D=18, E=24",B x C / A = [?],A,B,C,D,E,OptionE,Substitute: 6 x 12 / 3 = 24. Corresponds to E.
+BatchB-38,"A=2, B=4, C=10, D=20, E=40",D / A x B = [?],A,B,C,D,E,OptionE,Substitute: 20 / 2 x 4 = 40. Corresponds to E.
+BatchC-27,"A=5, B=10, C=15, D=20, E=25",B + B + A = [?],A,B,C,D,E,OptionE,Substitute: 10 + 10 + 5 = 25. Corresponds to E.
+BatchD-15,"A=2, B=4, C=6, D=8, E=10",D / A + C = [?],A,B,C,D,E,OptionE,Substitute: 8 / 2 + 6 = 10. Corresponds to E.
+BatchF-20,"A=5, B=10, C=15, D=20, E=25",D - B + C = [?],A,B,C,D,E,OptionE,Substitute values: 20 - 10 + 15 = 25. 25 is E.
+BatchF-28,"A=4, B=8, C=12, D=16, E=20",C + B = [?],A,B,C,D,E,OptionE,Substitute values: 12 + 8 = 20. 20 is E.
+BatchG-04,"A=1, B=2, C=3, D=4, E=5",A x E = [?],A,B,C,D,E,OptionE,Substitute values: 1 x 5 = 5. 5 is E.
+BatchG-15,"A=3, B=6, C=9, D=12, E=15",A x 5 = [?],A,B,C,D,E,OptionE,Substitute values: 3 x 5 = 15. 15 is E.
+BatchG-19,"A=5, B=10, C=15, D=20, E=25",A x 5 = [?],A,B,C,D,E,OptionE,Substitute values: 5 x 5 = 25. 25 is E.
+BatchG-24,"A=10, B=20, C=30, D=40, E=50",A x 5 = [?],A,B,C,D,E,OptionE,Substitute values: 10 x 5 = 50. 50 is E.
+BatchG-29,"A=4, B=8, C=12, D=16, E=20",A x 5 = [?],A,B,C,D,E,OptionE,Substitute values: 4 x 5 = 20. 20 is E.
+BatchG-34,"A=6, B=12, C=18, D=24, E=30",A x 5 = [?],A,B,C,D,E,OptionE,Substitute values: 6 x 5 = 30. 30 is E.
+BatchG-39,"A=7, B=14, C=21, D=28, E=35",A x 5 = [?],A,B,C,D,E,OptionE,Substitute values: 7 x 5 = 35. 35 is E.
+BatchG-44,"A=8, B=16, C=24, D=32, E=40",A x 5 = [?],A,B,C,D,E,OptionE,Substitute values: 8 x 5 = 40. 40 is E.
+BatchG-49,"A=9, B=18, C=27, D=36, E=45",A x 5 = [?],A,B,C,D,E,OptionE,Substitute values: 9 x 5 = 45. 45 is E.
+BatchH-05,"A=1, B=2, C=3, D=4, E=5",E x B / B = [?],A,B,C,D,E,OptionE,Substitute values: 5 x 2 / 2 = 5. 5 is E.
+BatchH-14,"A=3, B=6, C=9, D=12, E=15",E / A x A = [?],A,B,C,D,E,OptionE,Substitute values: 15 / 3 x 3 = 15. 15 is E.
+BatchH-19,"A=5, B=10, C=15, D=20, E=25",E / A x A = [?],A,B,C,D,E,OptionE,Substitute values: 25 / 5 x 5 = 25. 25 is E.
+BatchH-24,"A=10, B=20, C=30, D=40, E=50",E / A x A = [?],A,B,C,D,E,OptionE,Substitute values: 50 / 10 x 10 = 50. 50 is E.
+BatchH-29,"A=4, B=8, C=12, D=16, E=20",E / A x A = [?],A,B,C,D,E,OptionE,Substitute values: 20 / 4 x 4 = 20. 20 is E.
+BatchH-34,"A=6, B=12, C=18, D=24, E=30",E / A x A = [?],A,B,C,D,E,OptionE,Substitute values: 30 / 6 x 6 = 30. 30 is E.
+BatchH-39,"A=7, B=14, C=21, D=28, E=35",E / A x A = [?],A,B,C,D,E,OptionE,Substitute values: 35 / 7 x 7 = 35. 35 is E.
+BatchH-44,"A=8, B=16, C=24, D=32, E=40",E / A x A = [?],A,B,C,D,E,OptionE,Substitute values: 40 / 8 x 8 = 40. 40 is E.
+BatchH-49,"A=9, B=18, C=27, D=36, E=45",E / A x A = [?],A,B,C,D,E,OptionE,Substitute values: 45 / 9 x 9 = 45. 45 is E.
+BatchI-09,"A=2, B=4, C=6, D=8, E=10",B x A + A = [?],A,B,C,D,E,OptionE,Substitute values: 4 x 2 + 2 = 10. 10 is E.
+BatchJ-02,"A=1, B=2, C=3, D=4, E=5",B + B + A = [?],A,B,C,D,E,OptionE,Substitute: 2 + 2 + 1 = 5. 5 is E.
+BatchJ-12,"A=3, B=6, C=9, D=12, E=15",B + B + A = [?],A,B,C,D,E,OptionE,Substitute: 6 + 6 + 3 = 15. 15 is E.
+BatchJ-22,"A=10, B=20, C=30, D=40, E=50",B + B + A = [?],A,B,C,D,E,OptionE,Substitute: 20 + 20 + 10 = 50. 50 is E.
+BatchJ-32,"A=6, B=12, C=18, D=24, E=30",B + B + A = [?],A,B,C,D,E,OptionE,Substitute: 12 + 12 + 6 = 30. 30 is E.
+BatchJ-42,"A=8, B=16, C=24, D=32, E=40",B + B + A = [?],A,B,C,D,E,OptionE,Substitute: 16 + 16 + 8 = 40. 40 is E.
+BatchK-05,"A=1, B=2, C=3, D=4, E=5",A + B + B = [?],A,B,C,D,E,OptionE,Substitute: 1 + 2 + 2 = 5. 5 is E.
+BatchK-15,"A=3, B=6, C=9, D=12, E=15",A + A + C = [?],A,B,C,D,E,OptionE,Substitute: 3 + 3 + 9 = 15. 15 is E.
+BatchK-25,"A=10, B=20, C=30, D=40, E=50",A + B + B = [?],A,B,C,D,E,OptionE,Substitute: 10 + 20 + 20 = 50. 50 is E.
+BatchK-30,"A=4, B=8, C=12, D=16, E=20",A + A + C = [?],A,B,C,D,E,OptionE,Substitute: 4 + 4 + 12 = 20. 20 is E.
+BatchK-35,"A=6, B=12, C=18, D=24, E=30",A + B + B = [?],A,B,C,D,E,OptionE,Substitute: 6 + 12 + 12 = 30. 30 is E.
+BatchK-40,"A=7, B=14, C=21, D=28, E=35",A + B + B = [?],A,B,C,D,E,OptionE,Substitute: 7 + 14 + 14 = 35. 35 is E.
+BatchK-45,"A=8, B=16, C=24, D=32, E=40",A + A + C = [?],A,B,C,D,E,OptionE,Substitute: 8 + 8 + 24 = 40. 40 is E.
+BatchK-50,"A=9, B=18, C=27, D=36, E=45",A + A + C = [?],A,B,C,D,E,OptionE,Substitute: 9 + 9 + 27 = 45. 45 is E.
+BatchL-08,"A=3, B=6, C=9, D=12, E=15",A + D = [?],A,B,C,D,E,OptionE,Substitute: 3 + 12 = 15. 15 is E.
+BatchL-11,"A=5, B=10, C=15, D=20, E=25",A x A = [?],A,B,C,D,E,OptionE,Substitute: 5 x 5 = 25. 25 is E.
+BatchL-38,"A=8, B=16, C=24, D=32, E=40",A + D = [?],A,B,C,D,E,OptionE,Substitute: 8 + 32 = 40. 40 is E.
+BatchM-05,"A=1, B=2, C=3, D=4, E=5",B x B + A = [?],A,B,C,D,E,OptionE,Substitute: 2 x 2 + 1 = 5. 5 is E.
+BatchM-13,"A=3, B=6, C=9, D=12, E=15",A + B + B = [?],A,B,C,D,E,OptionE,Substitute: 3 + 6 + 6 = 15. 15 is E.
+BatchM-15,"A=3, B=6, C=9, D=12, E=15",C / A + D = [?],A,B,C,D,E,OptionE,Substitute: 9 / 3 + 12 = 15. 15 is E.
+BatchM-30,"A=4, B=8, C=12, D=16, E=20",A x A + A = [?],A,B,C,D,E,OptionE,Substitute: 4 x 4 + 4 = 20. 20 is E.
+BatchM-33,"A=6, B=12, C=18, D=24, E=30",C + A + A = [?],A,B,C,D,E,OptionE,Substitute: 18 + 6 + 6 = 30. 30 is E.
+BatchM-43,"A=8, B=16, C=24, D=32, E=40",C + A + A = [?],A,B,C,D,E,OptionE,Substitute: 24 + 8 + 8 = 40. 40 is E.
+P1-Q8-01,"A=3, B=6, C=12, D=18, E=24",A x C - D = [?],A,B,C,D,E,OptionD,Substitute the values: 3 x 12 - 18. Calculate 36 - 18 = 18. The number 18 corresponds to letter D.
+P1-Q8-04,"A=5, B=10, C=15, D=25, E=30",A x B - D = [?],A,B,C,D,E,OptionD,Substitute the values: 5 x 10 - 25. Calculate 50 - 25 = 25. The number 25 corresponds to letter D.
+P1-Q8-09,"A=4, B=12, C=20, D=28, E=36",A x B - C = [?],A,B,C,D,E,OptionD,Substitute the values: 4 x 12 - 20. Calculate 48 - 20 = 28. The number 28 corresponds to letter D.
+P2-Q51-04,"A=4, B=8, C=16, D=2, E=32",B x A / C = [?],A,B,C,D,E,OptionD,Substitute: 8 x 4 / 16. Order of operations: 32 / 16 = 2. The number 2 corresponds to letter D.
+P4-Q28-01,"A=15, B=25, C=30, D=45, E=60",D + C - A - A = [?],A,B,C,D,E,OptionD,Substitute: 45 + 30 - 15 - 15. Calculate: 75 - 15 - 15 = 45. The number 45 corresponds to letter D.
+P4-Q28-02,"A=10, B=20, C=40, D=50, E=70",D + B - A - A = [?],A,B,C,D,E,OptionD,Substitute: 50 + 20 - 10 - 10. Calculate: 70 - 10 - 10 = 50. The number 50 corresponds to letter D.
+P4-Q28-04,"A=8, B=16, C=24, D=32, E=40",D + B - A - A = [?],A,B,C,D,E,OptionD,Substitute: 32 + 16 - 8 - 8. Calculate: 48 - 16 = 32. The number 32 corresponds to letter D.
+P1-Q8-Var-12,"A=2, B=4, C=6, D=12, E=20",C x B - D = [?],A,B,C,D,E,OptionD,Substitute: 6 x 4 - 12. Calculate: 24 - 12 = 12. The number 12 corresponds to letter D.
+P1-Q8-Var-13,"A=5, B=10, C=15, D=25, E=50",A x B - D = [?],A,B,C,D,E,OptionD,Substitute: 5 x 10 - 25. Calculate: 50 - 25 = 25. The number 25 corresponds to letter D.
+P1-Q8-Var-16,"A=6, B=12, C=18, D=36, E=42",B x C / A = [?],A,B,C,D,E,OptionD,Substitute: 12 x 18 / 6. Order of ops: 12 x 3 = 36. The number 36 corresponds to letter D.
+P1-Q8-Var-19,"A=5, B=25, C=30, D=50, E=75",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 30 + 25 - 5. Calculate: 55 - 5 = 50. The number 50 corresponds to letter D.
+P1-Q8-Var-20,"A=3, B=6, C=12, D=15, E=21",A x B - A = [?],A,B,C,D,E,OptionD,Substitute: 3 x 6 - 3. Calculate: 18 - 3 = 15. The number 15 corresponds to letter D.
+P2-Q51-Var-20,"A=10, B=20, C=30, D=60, E=90",C x B / A = [?],A,B,C,D,E,OptionD,Substitute: 30 x 20 / 10. Calculate: 600 / 10 = 60. The number 60 corresponds to letter D.
+P4-Q28-Var-14,"A=11, B=22, C=33, D=44, E=55",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 33 + 22 - 11. Calculate: 55 - 11 = 44. The number 44 corresponds to letter D.
+P4-Q28-Var-17,"A=25, B=50, C=75, D=100, E=125",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 75 + 50 - 25. Calculate: 125 - 25 = 100. The number 100 corresponds to letter D.
+BatchA-10,"A=10, B=20, C=30, D=40, E=50",C + A = [?],A,B,C,D,E,OptionD,Substitute: 30 + 10 = 40. Corresponds to D.
+BatchA-18,"A=3, B=5, C=8, D=11, E=14",C + A = [?],A,B,C,D,E,OptionD,Substitute: 8 + 3 = 11. Corresponds to D.
+BatchA-20,"A=1, B=3, C=4, D=7, E=10",B + C = [?],A,B,C,D,E,OptionD,Substitute: 3 + 4 = 7. Corresponds to D.
+BatchA-21,"A=5, B=10, C=15, D=20, E=25",B x 2 = [?],A,B,C,D,E,OptionD,Substitute: 10 x 2 = 20. Corresponds to D.
+BatchA-23,"A=3, B=6, C=9, D=12, E=15",B x 2 = [?],A,B,C,D,E,OptionD,Substitute: 6 x 2 = 12. Corresponds to D.
+BatchA-24,"A=2, B=4, C=6, D=8, E=10",C x A - B = [?],A,B,C,D,E,OptionD,Substitute: 6 x 2 - 4 = 8. Corresponds to D.
+BatchA-28,"A=6, B=12, C=18, D=24, E=30",A x 4 = [?],A,B,C,D,E,OptionD,Substitute: 6 x 4 = 24. Corresponds to D.
+BatchA-32,"A=4, B=12, C=20, D=24, E=28",C + A = [?],A,B,C,D,E,OptionD,Substitute: 20 + 4 = 24. Corresponds to D.
+BatchA-38,"A=2, B=6, C=10, D=14, E=18",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 10 + 6 - 2 = 14. Corresponds to D.
+BatchB-02,"A=3, B=6, C=9, D=12, E=15",B x B / A = [?],A,B,C,D,E,OptionD,Substitute: 6 x 6 / 3 = 12. Corresponds to D.
+BatchB-11,"A=2, B=4, C=6, D=8, E=12",B x D / B = [?],A,B,C,D,E,OptionD,Substitute: 4 x 8 / 4 = 8. Corresponds to D.
+BatchB-19,"A=9, B=18, C=27, D=36, E=45",B x B / A = [?],A,B,C,D,E,OptionD,Substitute: 18 x 18 / 9 = 36. Corresponds to D.
+BatchB-25,"A=8, B=16, C=24, D=32, E=40",D / A x A = [?],A,B,C,D,E,OptionD,Substitute: 32 / 8 x 8 = 32. Corresponds to D.
+BatchB-28,"A=4, B=8, C=16, D=24, E=32",B x D / B = [?],A,B,C,D,E,OptionD,Substitute: 8 x 24 / 8 = 24. Corresponds to D.
+BatchC-04,"A=5, B=10, C=15, D=20, E=25",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 25 - 20 + 15 = 20. Corresponds to D.
+BatchC-07,"A=7, B=14, C=21, D=28, E=35",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 21 + 14 - 7 = 28. Corresponds to D.
+BatchC-18,"A=3, B=5, C=8, D=11, E=14",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 14 - 11 + 8 = 11. Corresponds to D.
+BatchC-28,"A=6, B=12, C=18, D=24, E=30",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 18 + 12 - 6 = 24. Corresponds to D.
+BatchC-30,"A=3, B=9, C=12, D=15, E=21",E - D + B = [?],A,B,C,D,E,OptionD,Substitute: 21 - 15 + 9 = 15. Corresponds to D.
+BatchC-39,"A=5, B=10, C=20, D=25, E=30",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 30 - 25 + 20 = 25. Corresponds to D.
+BatchD-01,"A=2, B=4, C=6, D=8, E=10",D / A + B = [?],A,B,C,D,E,OptionD,Substitute: 8 / 2 + 4 = 8. Corresponds to D.
+BatchD-30,"A=3, B=9, C=12, D=15, E=21",B / A + C = [?],A,B,C,D,E,OptionD,Substitute: 9 / 3 + 12 = 15. Corresponds to D.
+BatchF-03,"A=1, B=2, C=3, D=4, E=5",C + A = [?],A,B,C,D,E,OptionD,Substitute values: 3 + 1 = 4. 4 is D.
+BatchF-05,"A=1, B=2, C=3, D=4, E=5",B + B = [?],A,B,C,D,E,OptionD,Substitute values: 2 + 2 = 4. 4 is D.
+BatchF-08,"A=2, B=4, C=6, D=8, E=10",C + A = [?],A,B,C,D,E,OptionD,Substitute values: 6 + 2 = 8. 8 is D.
+BatchF-14,"A=3, B=6, C=9, D=12, E=15",C + B - A = [?],A,B,C,D,E,OptionD,Substitute values: 9 + 6 - 3 = 12. 12 is D.
+BatchF-24,"A=10, B=20, C=30, D=40, E=50",B + B = [?],A,B,C,D,E,OptionD,Substitute values: 20 + 20 = 40. 40 is D.
+BatchF-39,"A=7, B=14, C=21, D=28, E=35",B + B = [?],A,B,C,D,E,OptionD,Substitute values: 14 + 14 = 28. 28 is D.
+BatchF-45,"A=8, B=16, C=24, D=32, E=40",B + A + A = [?],A,B,C,D,E,OptionD,Substitute values: 16 + 8 + 8 = 32. 32 is D.
+BatchF-48,"A=9, B=18, C=27, D=36, E=45",C + A = [?],A,B,C,D,E,OptionD,Substitute values: 27 + 9 = 36. 36 is D.
+BatchG-02,"A=1, B=2, C=3, D=4, E=5",B x B = [?],A,B,C,D,E,OptionD,Substitute values: 2 x 2 = 4. 4 is D.
+BatchG-07,"A=2, B=4, C=6, D=8, E=10",A x B = [?],A,B,C,D,E,OptionD,Substitute values: 2 x 4 = 8. 8 is D.
+BatchG-08,"A=2, B=4, C=6, D=8, E=10",A x C - B = [?],A,B,C,D,E,OptionD,Substitute values: 2 x 6 - 4 = 8. 8 is D.
+BatchG-14,"A=3, B=6, C=9, D=12, E=15",A x 4 = [?],A,B,C,D,E,OptionD,Substitute values: 3 x 4 = 12. 12 is D.
+BatchG-18,"A=5, B=10, C=15, D=20, E=25",A x 4 = [?],A,B,C,D,E,OptionD,Substitute values: 5 x 4 = 20. 20 is D.
+BatchG-23,"A=10, B=20, C=30, D=40, E=50",A x 4 = [?],A,B,C,D,E,OptionD,Substitute values: 10 x 4 = 40. 40 is D.
+BatchG-28,"A=4, B=8, C=12, D=16, E=20",A x 4 = [?],A,B,C,D,E,OptionD,Substitute values: 4 x 4 = 16. 16 is D.
+BatchG-33,"A=6, B=12, C=18, D=24, E=30",A x 4 = [?],A,B,C,D,E,OptionD,Substitute values: 6 x 4 = 24. 24 is D.
+BatchG-38,"A=7, B=14, C=21, D=28, E=35",A x 4 = [?],A,B,C,D,E,OptionD,Substitute values: 7 x 4 = 28. 28 is D.
+BatchG-43,"A=8, B=16, C=24, D=32, E=40",A x 4 = [?],A,B,C,D,E,OptionD,Substitute values: 8 x 4 = 32. 32 is D.
+BatchG-48,"A=9, B=18, C=27, D=36, E=45",A x 4 = [?],A,B,C,D,E,OptionD,Substitute values: 9 x 4 = 36. 36 is D.
+BatchH-17,"A=5, B=10, C=15, D=20, E=25",D / A x A = [?],A,B,C,D,E,OptionD,Substitute values: 20 / 5 x 5 = 20. 20 is D.
+BatchH-23,"A=10, B=20, C=30, D=40, E=50",D / A x A = [?],A,B,C,D,E,OptionD,Substitute values: 40 / 10 x 10 = 40. 40 is D.
+BatchH-28,"A=4, B=8, C=12, D=16, E=20",D / A x A = [?],A,B,C,D,E,OptionD,Substitute values: 16 / 4 x 4 = 16. 16 is D.
+BatchH-33,"A=6, B=12, C=18, D=24, E=30",D / A x A = [?],A,B,C,D,E,OptionD,Substitute values: 24 / 6 x 6 = 24. 24 is D.
+BatchH-38,"A=7, B=14, C=21, D=28, E=35",D / A x A = [?],A,B,C,D,E,OptionD,Substitute values: 28 / 7 x 7 = 28. 28 is D.
+BatchH-43,"A=8, B=16, C=24, D=32, E=40",D / A x A = [?],A,B,C,D,E,OptionD,Substitute values: 32 / 8 x 8 = 32. 32 is D.
+BatchH-48,"A=9, B=18, C=27, D=36, E=45",D / A x A = [?],A,B,C,D,E,OptionD,Substitute values: 36 / 9 x 9 = 36. 36 is D.
+BatchI-08,"A=2, B=4, C=6, D=8, E=10",E - D + C = [?],A,B,C,D,E,OptionD,Substitute values: 10 - 8 + 6 = 8. 8 is D.
+BatchI-13,"A=3, B=6, C=9, D=12, E=15",E - D + C = [?],A,B,C,D,E,OptionD,Substitute values: 15 - 12 + 9 = 12. 12 is D.
+BatchI-18,"A=5, B=10, C=15, D=20, E=25",E - D + C = [?],A,B,C,D,E,OptionD,Substitute values: 25 - 20 + 15 = 20. 20 is D.
+BatchI-23,"A=10, B=20, C=30, D=40, E=50",E - D + C = [?],A,B,C,D,E,OptionD,Substitute values: 50 - 40 + 30 = 40. 40 is D.
+BatchI-25,"A=10, B=20, C=30, D=40, E=50",A + A + B = [?],A,B,C,D,E,OptionD,Substitute values: 10 + 10 + 20 = 40. 40 is D.
+BatchI-28,"A=4, B=8, C=12, D=16, E=20",E - D + C = [?],A,B,C,D,E,OptionD,Substitute values: 20 - 16 + 12 = 16. 16 is D.
+BatchI-29,"A=4, B=8, C=12, D=16, E=20",B / A x B = [?],A,B,C,D,E,OptionD,Substitute values: 8 / 4 x 8 = 16. 16 is D.
+BatchI-30,"A=4, B=8, C=12, D=16, E=20",A + A + B = [?],A,B,C,D,E,OptionD,Substitute values: 4 + 4 + 8 = 16. 16 is D.
+BatchI-33,"A=6, B=12, C=18, D=24, E=30",E - D + C = [?],A,B,C,D,E,OptionD,Substitute values: 30 - 24 + 18 = 24. 24 is D.
+BatchI-34,"A=6, B=12, C=18, D=24, E=30",B / A x B = [?],A,B,C,D,E,OptionD,Substitute values: 12 / 6 x 12 = 24. 24 is D.
+BatchI-35,"A=6, B=12, C=18, D=24, E=30",A + A + B = [?],A,B,C,D,E,OptionD,Substitute values: 6 + 6 + 12 = 24. 24 is D.
+BatchI-38,"A=7, B=14, C=21, D=28, E=35",E - D + C = [?],A,B,C,D,E,OptionD,Substitute values: 35 - 28 + 21 = 28. 28 is D.
+BatchI-39,"A=7, B=14, C=21, D=28, E=35",B / A x B = [?],A,B,C,D,E,OptionD,Substitute values: 14 / 7 x 14 = 28. 28 is D.
+BatchI-40,"A=7, B=14, C=21, D=28, E=35",A + A + B = [?],A,B,C,D,E,OptionD,Substitute values: 7 + 7 + 14 = 28. 28 is D.
+BatchI-43,"A=8, B=16, C=24, D=32, E=40",E - D + C = [?],A,B,C,D,E,OptionD,Substitute values: 40 - 32 + 24 = 32. 32 is D.
+BatchI-44,"A=8, B=16, C=24, D=32, E=40",B / A x B = [?],A,B,C,D,E,OptionD,Substitute values: 16 / 8 x 16 = 32. 32 is D.
+BatchI-45,"A=8, B=16, C=24, D=32, E=40",A + A + B = [?],A,B,C,D,E,OptionD,Substitute values: 8 + 8 + 16 = 32. 32 is D.
+BatchI-48,"A=9, B=18, C=27, D=36, E=45",E - D + C = [?],A,B,C,D,E,OptionD,Substitute values: 45 - 36 + 27 = 36. 36 is D.
+BatchI-49,"A=9, B=18, C=27, D=36, E=45",B / A x B = [?],A,B,C,D,E,OptionD,Substitute values: 18 / 9 x 18 = 36. 36 is D.
+BatchI-50,"A=9, B=18, C=27, D=36, E=45",A + A + B = [?],A,B,C,D,E,OptionD,Substitute values: 9 + 9 + 18 = 36. 36 is D.
+BatchJ-03,"A=1, B=2, C=3, D=4, E=5",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 3 + 2 - 1 = 4. 4 is D.
+BatchJ-04,"A=1, B=2, C=3, D=4, E=5",E - C + B = [?],A,B,C,D,E,OptionD,Substitute: 5 - 3 + 2 = 4. 4 is D.
+BatchJ-06,"A=2, B=4, C=6, D=8, E=10",A + A + B = [?],A,B,C,D,E,OptionD,Substitute: 2 + 2 + 4 = 8. 8 is D.
+BatchJ-07,"A=2, B=4, C=6, D=8, E=10",C - A + B = [?],A,B,C,D,E,OptionD,Substitute: 6 - 2 + 4 = 8. 8 is D.
+BatchJ-13,"A=3, B=6, C=9, D=12, E=15",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 9 + 6 - 3 = 12. 12 is D.
+BatchJ-16,"A=5, B=10, C=15, D=20, E=25",A + A + B = [?],A,B,C,D,E,OptionD,Substitute: 5 + 5 + 10 = 20. 20 is D.
+BatchJ-19,"A=5, B=10, C=15, D=20, E=25",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 25 - 20 + 15 = 20. 20 is D.
+BatchJ-20,"A=5, B=10, C=15, D=20, E=25",B / A x B = [?],A,B,C,D,E,OptionD,Substitute: 10 / 5 x 10 = 20. 20 is D.
+BatchJ-23,"A=10, B=20, C=30, D=40, E=50",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 30 + 20 - 10 = 40. 40 is D.
+BatchJ-26,"A=4, B=8, C=12, D=16, E=20",A + A + B = [?],A,B,C,D,E,OptionD,Substitute: 4 + 4 + 8 = 16. 16 is D.
+BatchJ-27,"A=4, B=8, C=12, D=16, E=20",C - A + B = [?],A,B,C,D,E,OptionD,Substitute: 12 - 4 + 8 = 16. 16 is D.
+BatchJ-29,"A=4, B=8, C=12, D=16, E=20",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 20 - 16 + 12 = 16. 16 is D.
+BatchJ-30,"A=4, B=8, C=12, D=16, E=20",B / A x B = [?],A,B,C,D,E,OptionD,Substitute: 8 / 4 x 8 = 16. 16 is D.
+BatchJ-33,"A=6, B=12, C=18, D=24, E=30",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 18 + 12 - 6 = 24. 24 is D.
+BatchJ-36,"A=7, B=14, C=21, D=28, E=35",A + A + B = [?],A,B,C,D,E,OptionD,Substitute: 7 + 7 + 14 = 28. 28 is D.
+BatchJ-39,"A=7, B=14, C=21, D=28, E=35",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 35 - 28 + 21 = 28. 28 is D.
+BatchJ-40,"A=7, B=14, C=21, D=28, E=35",B / A x B = [?],A,B,C,D,E,OptionD,Substitute: 14 / 7 x 14 = 28. 28 is D.
+BatchJ-43,"A=8, B=16, C=24, D=32, E=40",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 24 + 16 - 8 = 32. 32 is D.
+BatchJ-46,"A=9, B=18, C=27, D=36, E=45",A + A + B = [?],A,B,C,D,E,OptionD,Substitute: 9 + 9 + 18 = 36. 36 is D.
+BatchJ-49,"A=9, B=18, C=27, D=36, E=45",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 45 - 36 + 27 = 36. 36 is D.
+BatchJ-50,"A=9, B=18, C=27, D=36, E=45",B / A x B = [?],A,B,C,D,E,OptionD,Substitute: 18 / 9 x 18 = 36. 36 is D.
+BatchK-01,"A=1, B=2, C=3, D=4, E=5",B x B / A = [?],A,B,C,D,E,OptionD,Substitute: 2 x 2 / 1 = 4. 4 is D.
+BatchK-04,"A=1, B=2, C=3, D=4, E=5",E - C + B = [?],A,B,C,D,E,OptionD,Substitute: 5 - 3 + 2 = 4. 4 is D.
+BatchK-07,"A=2, B=4, C=6, D=8, E=10",D / B + C = [?],A,B,C,D,E,OptionD,Substitute: 8 / 4 + 6 = 8. 8 is D.
+BatchK-13,"A=3, B=6, C=9, D=12, E=15",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 9 + 6 - 3 = 12. 12 is D.
+BatchK-20,"A=5, B=10, C=15, D=20, E=25",A + A + B = [?],A,B,C,D,E,OptionD,Substitute: 5 + 5 + 10 = 20. 20 is D.
+BatchK-24,"A=10, B=20, C=30, D=40, E=50",E - C + B = [?],A,B,C,D,E,OptionD,Substitute: 50 - 30 + 20 = 40. 40 is D.
+BatchK-28,"A=4, B=8, C=12, D=16, E=20",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 12 + 8 - 4 = 16. 16 is D.
+BatchK-34,"A=6, B=12, C=18, D=24, E=30",E - C + B = [?],A,B,C,D,E,OptionD,Substitute: 30 - 18 + 12 = 24. 24 is D.
+BatchK-38,"A=7, B=14, C=21, D=28, E=35",C + B - A = [?],A,B,C,D,E,OptionD,Substitute: 21 + 14 - 7 = 28. 28 is D.
+BatchK-39,"A=7, B=14, C=21, D=28, E=35",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 35 - 28 + 21 = 28. 28 is D.
+BatchL-01,"A=2, B=4, C=6, D=8, E=10",A x B = [?],A,B,C,D,E,OptionD,Substitute: 2 x 4 = 8. 8 is D.
+BatchL-13,"A=5, B=10, C=15, D=20, E=25",B + B = [?],A,B,C,D,E,OptionD,Substitute: 10 + 10 = 20. 20 is D.
+BatchL-18,"A=10, B=20, C=30, D=40, E=50",A + C = [?],A,B,C,D,E,OptionD,Substitute: 10 + 30 = 40. 40 is D.
+BatchL-28,"A=6, B=12, C=18, D=24, E=30",A + C = [?],A,B,C,D,E,OptionD,Substitute: 6 + 18 = 24. 24 is D.
+BatchL-33,"A=7, B=14, C=21, D=28, E=35",A + C = [?],A,B,C,D,E,OptionD,Substitute: 7 + 21 = 28. 28 is D.
+BatchL-43,"A=9, B=18, C=27, D=36, E=45",A + C = [?],A,B,C,D,E,OptionD,Substitute: 9 + 27 = 36. 36 is D.
+BatchM-03,"A=1, B=2, C=3, D=4, E=5",B + A + A = [?],A,B,C,D,E,OptionD,Substitute: 2 + 1 + 1 = 4. 4 is D.
+BatchM-10,"A=2, B=4, C=6, D=8, E=10",B x B - D = [?],A,B,C,D,E,OptionD,Substitute: 4 x 4 - 8 = 8. 8 is D.
+BatchM-11,"A=3, B=6, C=9, D=12, E=15",B / A x B = [?],A,B,C,D,E,OptionD,Substitute: 6 / 3 x 6 = 12. 12 is D.
+BatchM-14,"A=3, B=6, C=9, D=12, E=15",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 15 - 12 + 9 = 12. 12 is D.
+BatchM-21,"A=10, B=20, C=30, D=40, E=50",B / A x B = [?],A,B,C,D,E,OptionD,Substitute: 20 / 10 x 20 = 40. 40 is D.
+BatchM-22,"A=10, B=20, C=30, D=40, E=50",C - A + B = [?],A,B,C,D,E,OptionD,Substitute: 30 - 10 + 20 = 40. 40 is D.
+BatchM-24,"A=10, B=20, C=30, D=40, E=50",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 50 - 40 + 30 = 40. 40 is D.
+BatchM-29,"A=4, B=8, C=12, D=16, E=20",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 20 - 16 + 12 = 16. 16 is D.
+BatchM-31,"A=6, B=12, C=18, D=24, E=30",B / A x B = [?],A,B,C,D,E,OptionD,Substitute: 12 / 6 x 12 = 24. 24 is D.
+BatchM-34,"A=6, B=12, C=18, D=24, E=30",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 30 - 24 + 18 = 24. 24 is D.
+BatchM-36,"A=7, B=14, C=21, D=28, E=35",B / A x B = [?],A,B,C,D,E,OptionD,Substitute: 14 / 7 x 14 = 28. 28 is D.
+BatchM-39,"A=7, B=14, C=21, D=28, E=35",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 35 - 28 + 21 = 28. 28 is D.
+BatchM-44,"A=8, B=16, C=24, D=32, E=40",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 40 - 32 + 24 = 32. 32 is D.
+BatchM-46,"A=9, B=18, C=27, D=36, E=45",B / A x B = [?],A,B,C,D,E,OptionD,Substitute: 18 / 9 x 18 = 36. 36 is D.
+BatchM-49,"A=9, B=18, C=27, D=36, E=45",E - D + C = [?],A,B,C,D,E,OptionD,Substitute: 45 - 36 + 27 = 36. 36 is D.
+P1-Q8-03,"A=4, B=8, C=16, D=32, E=40",A x B - C = [?],A,B,C,D,E,OptionC,Substitute the values: 4 x 8 - 16. Calculate 32 - 16 = 16. The number 16 corresponds to letter C.
+P2-Q51-01,"A=2, B=4, C=6, D=3, E=8",B x D / A = [?],A,B,C,D,E,OptionC,Substitute: 4 x 3 / 2. Order of operations: 4 x 3 = 12. 12 / 2 = 6. The number 6 corresponds to letter C.
+P2-Q51-Var-17,"A=8, B=16, C=24, D=32, E=40",D - B + A = [?],A,B,C,D,E,OptionC,Substitute: 32 - 16 + 8. Calculate: 16 + 8 = 24. The number 24 corresponds to letter C.
+P4-Q28-Var-11,"A=12, B=24, C=36, D=48, E=60",D - B + A = [?],A,B,C,D,E,OptionC,Substitute: 48 - 24 + 12. Calculate: 24 + 12 = 36. The number 36 corresponds to letter C.
+P4-Q28-Var-16,"A=2, B=18, C=20, D=38, E=40",D + A - C = [?],A,B,C,D,E,OptionC,Substitute: 38 + 2 - 20. Calculate: 40 - 20 = 20. The number 20 corresponds to letter C.
+P4-Q28-Var-18,"A=7, B=14, C=28, D=35, E=42",E - C + B = [?],A,B,C,D,E,OptionC,Substitute: 42 - 28 + 14. Calculate: 14 + 14 = 28. The number 28 corresponds to letter C.
+BatchA-01,"A=2, B=4, C=6, D=8, E=10",A + B = [?],A,B,C,D,E,OptionC,Substitute: 2 + 4 = 6. Corresponds to C.
+BatchA-04,"A=5, B=10, C=15, D=20, E=25",A x 2 + A = [?],A,B,C,D,E,OptionC,Substitute: 5 x 2 + 5 = 15. Corresponds to C.
+BatchA-05,"A=6, B=12, C=18, D=24, E=30",B + A = [?],A,B,C,D,E,OptionC,Substitute: 12 + 6 = 18. Corresponds to C.
+BatchA-08,"A=8, B=16, C=24, D=32, E=40",A + B = [?],A,B,C,D,E,OptionC,Substitute: 8 + 16 = 24. Corresponds to C.
+BatchA-11,"A=3, B=6, C=9, D=12, E=15",A x A = [?],A,B,C,D,E,OptionC,Substitute: 3 x 3 = 9. Corresponds to C.
+BatchA-12,"A=4, B=8, C=12, D=16, E=20",E - D + B = [?],A,B,C,D,E,OptionC,Substitute: 20 - 16 + 8 = 12. Corresponds to C.
+BatchA-16,"A=12, B=24, C=36, D=48, E=60",B + A = [?],A,B,C,D,E,OptionC,Substitute: 24 + 12 = 36. Corresponds to C.
+BatchA-22,"A=4, B=8, C=12, D=16, E=20",A x 3 = [?],A,B,C,D,E,OptionC,Substitute: 4 x 3 = 12. Corresponds to C.
+BatchA-25,"A=10, B=20, C=30, D=40, E=50",A x 3 = [?],A,B,C,D,E,OptionC,Substitute: 10 x 3 = 30. Corresponds to C.
+BatchA-34,"A=10, B=30, C=40, D=50, E=60",D - A = [?],A,B,C,D,E,OptionC,Substitute: 50 - 10 = 40. Corresponds to C.
+BatchA-40,"A=7, B=14, C=28, D=35, E=49",B + B = [?],A,B,C,D,E,OptionC,Substitute: 14 + 14 = 28. Corresponds to C.
+BatchB-10,"A=10, B=20, C=40, D=60, E=80",B x B / A = [?],A,B,C,D,E,OptionC,Substitute: 20 x 20 / 10 = 40. Corresponds to C.
+BatchB-16,"A=6, B=12, C=24, D=30, E=36",C / A x A = [?],A,B,C,D,E,OptionC,Substitute: 24 / 6 x 6 = 24. Corresponds to C.
+BatchB-17,"A=7, B=14, C=28, D=35, E=42",B x C / B = [?],A,B,C,D,E,OptionC,Substitute: 14 x 28 / 14 = 28. Corresponds to C.
+BatchB-20,"A=3, B=9, C=15, D=21, E=27",B x C / B = [?],A,B,C,D,E,OptionC,Substitute: 9 x 15 / 9 = 15. Corresponds to C.
+BatchB-22,"A=4, B=12, C=16, D=20, E=24",C / A x A = [?],A,B,C,D,E,OptionC,Substitute: 16 / 4 x 4 = 16. Corresponds to C.
+BatchB-23,"A=5, B=10, C=20, D=30, E=40",B x B / A = [?],A,B,C,D,E,OptionC,Substitute: 10 x 10 / 5 = 20. Corresponds to C.
+BatchB-29,"A=5, B=15, C=25, D=35, E=45",B x C / B = [?],A,B,C,D,E,OptionC,Substitute: 15 x 25 / 15 = 25. Corresponds to C.
+BatchB-31,"A=2, B=4, C=8, D=16, E=32",D / B x A = [?],A,B,C,D,E,OptionC,Substitute: 16 / 4 x 2 = 8. Corresponds to C.
+BatchB-32,"A=3, B=9, C=12, D=15, E=18",C / A x A = [?],A,B,C,D,E,OptionC,Substitute: 12 / 3 x 3 = 12. Corresponds to C.
+BatchB-33,"A=4, B=16, C=20, D=24, E=28",C / A x A = [?],A,B,C,D,E,OptionC,Substitute: 20 / 4 x 4 = 20. Corresponds to C.
+BatchB-35,"A=6, B=12, C=18, D=36, E=48",D / A + B = [?],A,B,C,D,E,OptionC,Substitute: 36 / 6 + 12 = 18. Corresponds to C.
+BatchC-01,"A=2, B=4, C=6, D=8, E=10",D - C + B = [?],A,B,C,D,E,OptionC,Substitute: 8 - 6 + 4 = 6. Corresponds to C.
+BatchC-05,"A=6, B=12, C=18, D=24, E=30",D - C + B = [?],A,B,C,D,E,OptionC,Substitute: 24 - 18 + 12 = 18. Corresponds to C.
+BatchC-09,"A=9, B=18, C=27, D=36, E=45",B + B - A = [?],A,B,C,D,E,OptionC,Substitute: 18 + 18 - 9 = 27. Corresponds to C.
+BatchC-13,"A=11, B=22, C=33, D=44, E=55",E - C + A = [?],A,B,C,D,E,OptionC,Substitute: 55 - 33 + 11 = 33. Corresponds to C.
+BatchC-29,"A=8, B=16, C=24, D=32, E=40",E - C + A = [?],A,B,C,D,E,OptionC,Substitute: 40 - 24 + 8 = 24. Corresponds to C.
+BatchC-35,"A=6, B=12, C=24, D=30, E=36",D - B + A = [?],A,B,C,D,E,OptionC,Substitute: 30 - 12 + 6 = 24. Corresponds to C.
+BatchC-37,"A=4, B=8, C=16, D=20, E=28",E - D + B = [?],A,B,C,D,E,OptionC,Substitute: 28 - 20 + 8 = 16. Corresponds to C.
+BatchC-38,"A=2, B=6, C=10, D=14, E=18",D - B + A = [?],A,B,C,D,E,OptionC,Substitute: 14 - 6 + 2 = 10. Corresponds to C.
+BatchC-40,"A=7, B=14, C=28, D=35, E=49",E - D + B = [?],A,B,C,D,E,OptionC,Substitute: 49 - 35 + 14 = 28. Corresponds to C.
+BatchD-24,"A=2, B=4, C=6, D=8, E=10",D / A + A = [?],A,B,C,D,E,OptionC,Substitute: 8 / 2 + 2 = 6. Corresponds to C.
+BatchF-01,"A=1, B=2, C=3, D=4, E=5",A + B = [?],A,B,C,D,E,OptionC,Substitute values: 1 + 2 = 3. 3 is C.
+BatchF-02,"A=1, B=2, C=3, D=4, E=5",E - B = [?],A,B,C,D,E,OptionC,Substitute values: 5 - 2 = 3. 3 is C.
+BatchF-04,"A=1, B=2, C=3, D=4, E=5",D - A = [?],A,B,C,D,E,OptionC,Substitute values: 4 - 1 = 3. 3 is C.
+BatchF-06,"A=2, B=4, C=6, D=8, E=10",A + B = [?],A,B,C,D,E,OptionC,Substitute values: 2 + 4 = 6. 6 is C.
+BatchF-07,"A=2, B=4, C=6, D=8, E=10",E - B = [?],A,B,C,D,E,OptionC,Substitute values: 10 - 4 = 6. 6 is C.
+BatchF-10,"A=2, B=4, C=6, D=8, E=10",B + D - C = [?],A,B,C,D,E,OptionC,Substitute values: 4 + 8 - 6 = 6. 6 is C.
+BatchF-15,"A=3, B=6, C=9, D=12, E=15",D - A = [?],A,B,C,D,E,OptionC,Substitute values: 12 - 3 = 9. 9 is C.
+BatchF-16,"A=5, B=10, C=15, D=20, E=25",B + A = [?],A,B,C,D,E,OptionC,Substitute values: 10 + 5 = 15. 15 is C.
+BatchF-19,"A=5, B=10, C=15, D=20, E=25",A + A + A = [?],A,B,C,D,E,OptionC,Substitute values: 5 + 5 + 5 = 15. 15 is C.
+BatchF-21,"A=10, B=20, C=30, D=40, E=50",A + B = [?],A,B,C,D,E,OptionC,Substitute values: 10 + 20 = 30. 30 is C.
+BatchF-22,"A=10, B=20, C=30, D=40, E=50",E - B = [?],A,B,C,D,E,OptionC,Substitute values: 50 - 20 = 30. 30 is C.
+BatchF-26,"A=4, B=8, C=12, D=16, E=20",A + B = [?],A,B,C,D,E,OptionC,Substitute values: 4 + 8 = 12. 12 is C.
+BatchF-31,"A=6, B=12, C=18, D=24, E=30",B + A = [?],A,B,C,D,E,OptionC,Substitute values: 12 + 6 = 18. 18 is C.
+BatchF-33,"A=6, B=12, C=18, D=24, E=30",D - B + A = [?],A,B,C,D,E,OptionC,Substitute values: 24 - 12 + 6 = 18. 18 is C.
+BatchF-35,"A=6, B=12, C=18, D=24, E=30",E - D + B = [?],A,B,C,D,E,OptionC,Substitute values: 30 - 24 + 12 = 18. 18 is C.
+BatchF-40,"A=7, B=14, C=21, D=28, E=35",D - A = [?],A,B,C,D,E,OptionC,Substitute values: 28 - 7 = 21. 21 is C.
+BatchF-41,"A=8, B=16, C=24, D=32, E=40",A + B = [?],A,B,C,D,E,OptionC,Substitute values: 8 + 16 = 24. 24 is C.
+BatchF-47,"A=9, B=18, C=27, D=36, E=45",E - D + B = [?],A,B,C,D,E,OptionC,Substitute values: 45 - 36 + 18 = 27. 27 is C.
+BatchF-50,"A=9, B=18, C=27, D=36, E=45",A + A + A = [?],A,B,C,D,E,OptionC,Substitute values: 9 + 9 + 9 = 27. 27 is C.
+BatchG-03,"A=1, B=2, C=3, D=4, E=5",A x C = [?],A,B,C,D,E,OptionC,Substitute values: 1 x 3 = 3. 3 is C.
+BatchG-09,"A=2, B=4, C=6, D=8, E=10",A x B - A = [?],A,B,C,D,E,OptionC,Substitute values: 2 x 4 - 2 = 6. 6 is C.
+BatchG-11,"A=3, B=6, C=9, D=12, E=15",A x A = [?],A,B,C,D,E,OptionC,Substitute values: 3 x 3 = 9. 9 is C.
+BatchG-12,"A=3, B=6, C=9, D=12, E=15",A x B - C = [?],A,B,C,D,E,OptionC,Substitute values: 3 x 6 - 9 = 9. 9 is C.
+BatchG-17,"A=5, B=10, C=15, D=20, E=25",A x 3 = [?],A,B,C,D,E,OptionC,Substitute values: 5 x 3 = 15. 15 is C.
+BatchG-20,"A=5, B=10, C=15, D=20, E=25",A x 2 + A = [?],A,B,C,D,E,OptionC,Substitute values: 5 x 2 + 5 = 15. 15 is C.
+BatchG-22,"A=10, B=20, C=30, D=40, E=50",A x 3 = [?],A,B,C,D,E,OptionC,Substitute values: 10 x 3 = 30. 30 is C.
+BatchG-25,"A=10, B=20, C=30, D=40, E=50",A x 2 + A = [?],A,B,C,D,E,OptionC,Substitute values: 10 x 2 + 10 = 30. 30 is C.
+BatchG-27,"A=4, B=8, C=12, D=16, E=20",A x 3 = [?],A,B,C,D,E,OptionC,Substitute values: 4 x 3 = 12. 12 is C.
+BatchG-30,"A=4, B=8, C=12, D=16, E=20",A x 2 + A = [?],A,B,C,D,E,OptionC,Substitute values: 4 x 2 + 4 = 12. 12 is C.
+BatchG-32,"A=6, B=12, C=18, D=24, E=30",A x 3 = [?],A,B,C,D,E,OptionC,Substitute values: 6 x 3 = 18. 18 is C.
+BatchG-35,"A=6, B=12, C=18, D=24, E=30",A x 2 + A = [?],A,B,C,D,E,OptionC,Substitute values: 6 x 2 + 6 = 18. 18 is C.
+BatchG-37,"A=7, B=14, C=21, D=28, E=35",A x 3 = [?],A,B,C,D,E,OptionC,Substitute values: 7 x 3 = 21. 21 is C.
+BatchG-40,"A=7, B=14, C=21, D=28, E=35",A x 2 + A = [?],A,B,C,D,E,OptionC,Substitute values: 7 x 2 + 7 = 21. 21 is C.
+BatchG-42,"A=8, B=16, C=24, D=32, E=40",A x 3 = [?],A,B,C,D,E,OptionC,Substitute values: 8 x 3 = 24. 24 is C.
+BatchG-45,"A=8, B=16, C=24, D=32, E=40",A x 2 + A = [?],A,B,C,D,E,OptionC,Substitute values: 8 x 2 + 8 = 24. 24 is C.
+BatchG-47,"A=9, B=18, C=27, D=36, E=45",A x 3 = [?],A,B,C,D,E,OptionC,Substitute values: 9 x 3 = 27. 27 is C.
+BatchG-50,"A=9, B=18, C=27, D=36, E=45",A x 2 + A = [?],A,B,C,D,E,OptionC,Substitute values: 9 x 2 + 9 = 27. 27 is C.
+BatchH-03,"A=1, B=2, C=3, D=4, E=5",C x B / B = [?],A,B,C,D,E,OptionC,Substitute values: 3 x 2 / 2 = 3. 3 is C.
+BatchH-04,"A=1, B=2, C=3, D=4, E=5",D / B + A = [?],A,B,C,D,E,OptionC,Substitute values: 4 / 2 + 1 = 3. 3 is C.
+BatchH-13,"A=3, B=6, C=9, D=12, E=15",C / A x A = [?],A,B,C,D,E,OptionC,Substitute values: 9 / 3 x 3 = 9. 9 is C.
+BatchH-18,"A=5, B=10, C=15, D=20, E=25",C / A x A = [?],A,B,C,D,E,OptionC,Substitute values: 15 / 5 x 5 = 15. 15 is C.
+BatchH-22,"A=10, B=20, C=30, D=40, E=50",C / A x A = [?],A,B,C,D,E,OptionC,Substitute values: 30 / 10 x 10 = 30. 30 is C.
+BatchH-27,"A=4, B=8, C=12, D=16, E=20",C / A x A = [?],A,B,C,D,E,OptionC,Substitute values: 12 / 4 x 4 = 12. 12 is C.
+BatchH-32,"A=6, B=12, C=18, D=24, E=30",C / A x A = [?],A,B,C,D,E,OptionC,Substitute values: 18 / 6 x 6 = 18. 18 is C.
+BatchH-37,"A=7, B=14, C=21, D=28, E=35",C / A x A = [?],A,B,C,D,E,OptionC,Substitute values: 21 / 7 x 7 = 21. 21 is C.
+BatchH-42,"A=8, B=16, C=24, D=32, E=40",C / A x A = [?],A,B,C,D,E,OptionC,Substitute values: 24 / 8 x 8 = 24. 24 is C.
+BatchH-47,"A=9, B=18, C=27, D=36, E=45",C / A x A = [?],A,B,C,D,E,OptionC,Substitute values: 27 / 9 x 9 = 27. 27 is C.
+BatchI-03,"A=1, B=2, C=3, D=4, E=5",D + A - B = [?],A,B,C,D,E,OptionC,Substitute values: 4 + 1 - 2 = 3. 3 is C.
+BatchI-04,"A=1, B=2, C=3, D=4, E=5",E - C + A = [?],A,B,C,D,E,OptionC,Substitute values: 5 - 3 + 1 = 3. 3 is C.
+BatchI-05,"A=1, B=2, C=3, D=4, E=5",B x B - A = [?],A,B,C,D,E,OptionC,Substitute values: 2 x 2 - 1 = 3. 3 is C.
+BatchI-07,"A=2, B=4, C=6, D=8, E=10",D - C + B = [?],A,B,C,D,E,OptionC,Substitute values: 8 - 6 + 4 = 6. 6 is C.
+BatchI-12,"A=3, B=6, C=9, D=12, E=15",D - C + B = [?],A,B,C,D,E,OptionC,Substitute values: 12 - 9 + 6 = 9. 9 is C.
+BatchI-17,"A=5, B=10, C=15, D=20, E=25",D - C + B = [?],A,B,C,D,E,OptionC,Substitute values: 20 - 15 + 10 = 15. 15 is C.
+BatchI-20,"A=5, B=10, C=15, D=20, E=25",A x 2 + A = [?],A,B,C,D,E,OptionC,Substitute values: 5 x 2 + 5 = 15. 15 is C.
+BatchI-22,"A=10, B=20, C=30, D=40, E=50",D - C + B = [?],A,B,C,D,E,OptionC,Substitute values: 40 - 30 + 20 = 30. 30 is C.
+BatchI-27,"A=4, B=8, C=12, D=16, E=20",D - C + B = [?],A,B,C,D,E,OptionC,Substitute values: 16 - 12 + 8 = 12. 12 is C.
+BatchI-32,"A=6, B=12, C=18, D=24, E=30",D - C + B = [?],A,B,C,D,E,OptionC,Substitute values: 24 - 18 + 12 = 18. 18 is C.
+BatchI-37,"A=7, B=14, C=21, D=28, E=35",D - C + B = [?],A,B,C,D,E,OptionC,Substitute values: 28 - 21 + 14 = 21. 21 is C.
+BatchI-42,"A=8, B=16, C=24, D=32, E=40",D - C + B = [?],A,B,C,D,E,OptionC,Substitute values: 32 - 24 + 16 = 24. 24 is C.
+BatchI-47,"A=9, B=18, C=27, D=36, E=45",D - C + B = [?],A,B,C,D,E,OptionC,Substitute values: 36 - 27 + 18 = 27. 27 is C.
+BatchJ-01,"A=1, B=2, C=3, D=4, E=5",A + A + A = [?],A,B,C,D,E,OptionC,Substitute: 1 + 1 + 1 = 3. 3 is C.
+BatchJ-08,"A=2, B=4, C=6, D=8, E=10",E - C + A = [?],A,B,C,D,E,OptionC,Substitute: 10 - 6 + 2 = 6. 6 is C.
+BatchJ-11,"A=3, B=6, C=9, D=12, E=15",A + A + A = [?],A,B,C,D,E,OptionC,Substitute: 3 + 3 + 3 = 9. 9 is C.
+BatchJ-14,"A=3, B=6, C=9, D=12, E=15",D - B + A = [?],A,B,C,D,E,OptionC,Substitute: 12 - 6 + 3 = 9. 9 is C.
+BatchJ-15,"A=3, B=6, C=9, D=12, E=15",E - C + A = [?],A,B,C,D,E,OptionC,Substitute: 15 - 9 + 3 = 9. 9 is C.
+BatchJ-18,"A=5, B=10, C=15, D=20, E=25",D - C + B = [?],A,B,C,D,E,OptionC,Substitute: 20 - 15 + 10 = 15. 15 is C.
+BatchJ-21,"A=10, B=20, C=30, D=40, E=50",A + A + A = [?],A,B,C,D,E,OptionC,Substitute: 10 + 10 + 10 = 30. 30 is C.
+BatchJ-25,"A=10, B=20, C=30, D=40, E=50",E - D + B = [?],A,B,C,D,E,OptionC,Substitute: 50 - 40 + 20 = 30. 30 is C.
+BatchJ-31,"A=6, B=12, C=18, D=24, E=30",A + A + A = [?],A,B,C,D,E,OptionC,Substitute: 6 + 6 + 6 = 18. 18 is C.
+BatchJ-35,"A=6, B=12, C=18, D=24, E=30",E - D + B = [?],A,B,C,D,E,OptionC,Substitute: 30 - 24 + 12 = 18. 18 is C.
+BatchJ-38,"A=7, B=14, C=21, D=28, E=35",D - C + B = [?],A,B,C,D,E,OptionC,Substitute: 28 - 21 + 14 = 21. 21 is C.
+BatchJ-41,"A=8, B=16, C=24, D=32, E=40",A + A + A = [?],A,B,C,D,E,OptionC,Substitute: 8 + 8 + 8 = 24. 24 is C.
+BatchJ-45,"A=8, B=16, C=24, D=32, E=40",E - D + B = [?],A,B,C,D,E,OptionC,Substitute: 40 - 32 + 16 = 24. 24 is C.
+BatchJ-48,"A=9, B=18, C=27, D=36, E=45",D - C + B = [?],A,B,C,D,E,OptionC,Substitute: 36 - 27 + 18 = 27. 27 is C.
+BatchK-03,"A=1, B=2, C=3, D=4, E=5",D / B + A = [?],A,B,C,D,E,OptionC,Substitute: 4 / 2 + 1 = 3. 3 is C.
+BatchK-11,"A=3, B=6, C=9, D=12, E=15",B x C / B = [?],A,B,C,D,E,OptionC,Substitute: 6 x 9 / 6 = 9. 9 is C.
+BatchK-27,"A=4, B=8, C=12, D=16, E=20",D / A + B = [?],A,B,C,D,E,OptionC,Substitute: 16 / 4 + 8 = 12. 12 is C.
+BatchL-03,"A=2, B=4, C=6, D=8, E=10",B + A = [?],A,B,C,D,E,OptionC,Substitute: 4 + 2 = 6. 6 is C.
+BatchL-04,"A=2, B=4, C=6, D=8, E=10",E - B = [?],A,B,C,D,E,OptionC,Substitute: 10 - 4 = 6. 6 is C.
+BatchL-09,"A=3, B=6, C=9, D=12, E=15",E - B = [?],A,B,C,D,E,OptionC,Substitute: 15 - 6 = 9. 9 is C.
+BatchL-19,"A=10, B=20, C=30, D=40, E=50",E - B = [?],A,B,C,D,E,OptionC,Substitute: 50 - 20 = 30. 30 is C.
+BatchL-23,"A=4, B=8, C=12, D=16, E=20",A + B = [?],A,B,C,D,E,OptionC,Substitute: 4 + 8 = 12. 12 is C.
+BatchL-29,"A=6, B=12, C=18, D=24, E=30",E - B = [?],A,B,C,D,E,OptionC,Substitute: 30 - 12 = 18. 18 is C.
+BatchL-39,"A=8, B=16, C=24, D=32, E=40",E - B = [?],A,B,C,D,E,OptionC,Substitute: 40 - 16 = 24. 24 is C.
+BatchL-48,"A=11, B=22, C=33, D=44, E=55",D - A = [?],A,B,C,D,E,OptionC,Substitute: 44 - 11 = 33. 33 is C.
+BatchL-50,"A=11, B=22, C=33, D=44, E=55",B + A = [?],A,B,C,D,E,OptionC,Substitute: 22 + 11 = 33. 33 is C.
+BatchM-08,"A=2, B=4, C=6, D=8, E=10",D - B + A = [?],A,B,C,D,E,OptionC,Substitute: 8 - 4 + 2 = 6. 6 is C.
+BatchM-09,"A=2, B=4, C=6, D=8, E=10",E - D + B = [?],A,B,C,D,E,OptionC,Substitute: 10 - 8 + 4 = 6. 6 is C.
+BatchM-12,"A=3, B=6, C=9, D=12, E=15",D - C + B = [?],A,B,C,D,E,OptionC,Substitute: 12 - 9 + 6 = 9. 9 is C.
+BatchM-19,"A=5, B=10, C=15, D=20, E=25",E - D + B = [?],A,B,C,D,E,OptionC,Substitute: 25 - 20 + 10 = 15. 15 is C.
+BatchM-23,"A=10, B=20, C=30, D=40, E=50",D - C + B = [?],A,B,C,D,E,OptionC,Substitute: 40 - 30 + 20 = 30. 30 is C.
+BatchM-25,"A=10, B=20, C=30, D=40, E=50",C / A x A = [?],A,B,C,D,E,OptionC,Substitute: 30 / 10 x 10 = 30. 30 is C.
+BatchM-32,"A=6, B=12, C=18, D=24, E=30",D - C + B = [?],A,B,C,D,E,OptionC,Substitute: 24 - 18 + 12 = 18. 18 is C.
+BatchM-35,"A=6, B=12, C=18, D=24, E=30",C / A x A = [?],A,B,C,D,E,OptionC,Substitute: 18 / 6 x 6 = 18. 18 is C.
+BatchM-42,"A=8, B=16, C=24, D=32, E=40",D - C + B = [?],A,B,C,D,E,OptionC,Substitute: 32 - 24 + 16 = 24. 24 is C.
+BatchM-45,"A=8, B=16, C=24, D=32, E=40",C / A x A = [?],A,B,C,D,E,OptionC,Substitute: 24 / 8 x 8 = 24. 24 is C.
+P1-Q8-02,"A=2, B=5, C=10, D=15, E=20",A x C - D = [?],A,B,C,D,E,OptionB,Substitute the values: 2 x 10 - 15. Calculate 20 - 15 = 5. The number 5 corresponds to letter B.
+P1-Q8-05,"A=3, B=9, C=18, D=27, E=36",A x B - C = [?],A,B,C,D,E,OptionB,Substitute the values: 3 x 9 - 18. Calculate 27 - 18 = 9. The number 9 corresponds to letter B.
+P2-Q51-03,"A=3, B=9, C=12, D=4, E=27",C x A / D = [?],A,B,C,D,E,OptionB,Substitute: 12 x 3 / 4. Order of operations: 12 x 3 = 36. 36 / 4 = 9. The number 9 corresponds to letter B.
+P2-Q51-08,"A=3, B=6, C=18, D=9, E=27",C x A / D = [?],A,B,C,D,E,OptionB,Substitute: 18 x 3 / 9. Order of operations: 54 / 9 = 6. The number 6 corresponds to letter B.
+P2-Q51-09,"A=4, B=16, C=32, D=8, E=64",C / D x A = [?],A,B,C,D,E,OptionB,Substitute: 32 / 8 x 4. Order of operations: 4 x 4 = 16. The number 16 corresponds to letter B.
+P4-Q28-06,"A=12, B=24, C=36, D=48, E=60",E - B - A = [?],A,B,C,D,E,OptionB,Substitute: 60 - 24 - 12. Calculate: 36 - 12 = 24. The number 24 corresponds to letter B.
+P4-Q28-07,"A=9, B=18, C=27, D=36, E=45",E - B - A = [?],A,B,C,D,E,OptionB,Substitute: 45 - 18 - 9. Calculate: 27 - 9 = 18. The number 18 corresponds to letter B.
+P4-Q28-08,"A=11, B=22, C=33, D=44, E=55",E - B - A = [?],A,B,C,D,E,OptionB,Substitute: 55 - 22 - 11. Calculate: 33 - 11 = 22. The number 22 corresponds to letter B.
+P4-Q28-10,"A=50, B=100, C=150, D=200, E=250",D + A - B - A = [?],A,B,C,D,E,OptionB,Substitute: 200 + 50 - 100 - 50. Calculate: 100. The number 100 corresponds to letter B.
+P6-Q21-01,"A=2, B=4, C=3, D=12, E=6",C x B / E + A = [?],A,B,C,D,E,OptionB,Substitute: 3 x 4 / 6 + 2. Order of operations: 3 x 4 = 12. 12 / 6 = 2. 2 + 2 = 4. The number 4 corresponds to letter B.
+P6-Q21-02,"A=3, B=6, C=4, D=16, E=8",C x B / E + A = [?],A,B,C,D,E,OptionB,Substitute: 4 x 6 / 8 + 3. Order of operations: 24 / 8 = 3. 3 + 3 = 6. The number 6 corresponds to letter B.
+P6-Q21-03,"A=5, B=10, C=2, D=20, E=4",C x B / E + A = [?],A,B,C,D,E,OptionB,Substitute: 2 x 10 / 4 + 5. Order of operations: 20 / 4 = 5. 5 + 5 = 10. The number 10 corresponds to letter B.
+P6-Q21-05,"A=4, B=8, C=3, D=24, E=6",C x B / E + A = [?],A,B,C,D,E,OptionB,Substitute: 3 x 8 / 6 + 4. Order of operations: 24 / 6 = 4. 4 + 4 = 8. The number 8 corresponds to letter B.
+P6-Q21-06,"A=10, B=20, C=5, D=30, E=10",C x B / E + A = [?],A,B,C,D,E,OptionB,Substitute: 5 x 20 / 10 + 10. Order of operations: 100 / 10 = 10. 10 + 10 = 20. The number 20 corresponds to letter B.
+P6-Q21-07,"A=2, B=6, C=4, D=12, E=3",C x B / E - A = [?],A,B,C,D,E,OptionB,Substitute: 4 x 6 / 3 - 2. Order of operations: 24 / 3 = 8. 8 - 2 = 6. The number 6 corresponds to letter B.
+P6-Q21-08,"A=6, B=12, C=3, D=18, E=6",C x B / E + A = [?],A,B,C,D,E,OptionB,Substitute: 3 x 12 / 6 + 6. Order of operations: 36 / 6 = 6. 6 + 6 = 12. The number 12 corresponds to letter B.
+P6-Q21-09,"A=8, B=16, C=2, D=32, E=4",C x B / E + A = [?],A,B,C,D,E,OptionB,Substitute: 2 x 16 / 4 + 8. Order of operations: 32 / 4 = 8. 8 + 8 = 16. The number 16 corresponds to letter B.
+P6-Q21-10,"A=3, B=9, C=6, D=27, E=18",C x A - B = [?],A,B,C,D,E,OptionB,Substitute: 6 x 3 - 9. Order of operations: 18 - 9 = 9. The number 9 corresponds to letter B.
+P7-Q29-01,"A=3, B=6, C=9, D=18, E=27",D / B + A = [?],A,B,C,D,E,OptionB,Substitute: 18 / 6 + 3. Order of operations: 3 + 3 = 6. The number 6 corresponds to letter B.
+P2-Q51-Var-13,"A=2, B=10, C=20, D=40, E=50",D / A - B = [?],A,B,C,D,E,OptionB,Substitute: 40 / 2 - 10. Calculate: 20 - 10 = 10. The number 10 corresponds to letter B.
+P4-Q28-Var-19,"A=15, B=30, C=45, D=60, E=75",C + A - B = [?],A,B,C,D,E,OptionB,Substitute: 45 + 15 - 30. Calculate: 60 - 30 = 30. The number 30 corresponds to letter B.
+P6-Q21-Var-19,"A=8, B=16, C=32, D=4, E=64",C / A + D = [?],A,B,C,D,E,OptionB,Substitute: 32 / 8 + 4 = 4 + 4 = 8. The number 8 corresponds to letter A.
+P6-Q21-Var-20,"A=3, B=9, C=15, D=30, E=5",D / E + A = [?],A,B,C,D,E,OptionB,Substitute: 30 / 5 + 3 = 6 + 3 = 9. The number 9 corresponds to letter B.
+BatchA-02,"A=3, B=6, C=9, D=12, E=15",E - C = [?],A,B,C,D,E,OptionB,Substitute: 15 - 9 = 6. Corresponds to B.
+BatchA-06,"A=2, B=4, C=6, D=8, E=10",E - B - A = [?],A,B,C,D,E,OptionB,Substitute: 10 - 4 - 2 = 4. Corresponds to B.
+BatchA-14,"A=5, B=10, C=15, D=20, E=25",E - C = [?],A,B,C,D,E,OptionB,Substitute: 25 - 15 = 10. Corresponds to B.
+BatchA-26,"A=7, B=14, C=21, D=28, E=35",A x 2 = [?],A,B,C,D,E,OptionB,Substitute: 7 x 2 = 14. Corresponds to B.
+BatchA-27,"A=5, B=10, C=15, D=20, E=25",C - A = [?],A,B,C,D,E,OptionB,Substitute: 15 - 5 = 10. Corresponds to B.
+BatchA-30,"A=3, B=9, C=12, D=15, E=21",C - A = [?],A,B,C,D,E,OptionB,Substitute: 12 - 3 = 9. Corresponds to B.
+BatchA-31,"A=2, B=4, C=8, D=16, E=32",C / A = [?],A,B,C,D,E,OptionB,Substitute: 8 / 2 = 4. Corresponds to B.
+BatchA-35,"A=6, B=12, C=24, D=30, E=36",E - D + A = [?],A,B,C,D,E,OptionB,Substitute: 36 - 30 + 6 = 12. Corresponds to B.
+BatchA-36,"A=3, B=6, C=12, D=18, E=21",D - C = [?],A,B,C,D,E,OptionB,Substitute: 18 - 12 = 6. Corresponds to B.
+BatchB-12,"A=3, B=6, C=12, D=15, E=18",A x C / B = [?],A,B,C,D,E,OptionB,Substitute: 3 x 12 / 6 = 6. Corresponds to B.
+BatchB-24,"A=6, B=18, C=24, D=30, E=36",B / A x A = [?],A,B,C,D,E,OptionB,Substitute: 18 / 6 x 6 = 18. Corresponds to B.
+BatchB-36,"A=7, B=14, C=21, D=49, E=56",D / A + A = [?],A,B,C,D,E,OptionB,Substitute: 49 / 7 + 7 = 14. Corresponds to B.
+BatchC-02,"A=3, B=6, C=9, D=12, E=15",E - D + A = [?],A,B,C,D,E,OptionB,Substitute: 15 - 12 + 3 = 6. Corresponds to B.
+BatchC-03,"A=4, B=8, C=12, D=16, E=20",C - B + A = [?],A,B,C,D,E,OptionB,Substitute: 12 - 8 + 4 = 8. Corresponds to B.
+BatchC-10,"A=10, B=20, C=30, D=40, E=50",E - B - A = [?],A,B,C,D,E,OptionB,Substitute: 50 - 20 - 10 = 20. Corresponds to B.
+BatchC-12,"A=4, B=8, C=12, D=16, E=20",A + C - B = [?],A,B,C,D,E,OptionB,Substitute: 4 + 12 - 8 = 8. Corresponds to B.
+BatchC-14,"A=5, B=10, C=15, D=20, E=25",C + A - B = [?],A,B,C,D,E,OptionB,Substitute: 15 + 5 - 10 = 10. Corresponds to B.
+BatchC-15,"A=2, B=4, C=6, D=8, E=10",D - A - A = [?],A,B,C,D,E,OptionB,Substitute: 8 - 2 - 2 = 4. Corresponds to B.
+BatchC-17,"A=6, B=12, C=18, D=24, E=30",D + A - C = [?],A,B,C,D,E,OptionB,Substitute: 24 + 6 - 18 = 12. Corresponds to B.
+BatchC-23,"A=3, B=6, C=9, D=12, E=15",C + A - B = [?],A,B,C,D,E,OptionB,Substitute: 9 + 3 - 6 = 6. Corresponds to B.
+BatchC-24,"A=2, B=4, C=6, D=8, E=10",E - D + A = [?],A,B,C,D,E,OptionB,Substitute: 10 - 8 + 2 = 4. Corresponds to B.
+BatchD-11,"A=3, B=6, C=9, D=12, E=15",C / A + A = [?],A,B,C,D,E,OptionB,Substitute: 9 / 3 + 3 = 6. Corresponds to B.
+BatchD-12,"A=4, B=8, C=12, D=16, E=20",D / A + A = [?],A,B,C,D,E,OptionB,Substitute: 16 / 4 + 4 = 8. Corresponds to B.
+BatchD-19,"A=2, B=5, C=7, D=9, E=12",E - D + A = [?],A,B,C,D,E,OptionB,Substitute: 12 - 9 + 2 = 5. Corresponds to B.
+BatchF-12,"A=3, B=6, C=9, D=12, E=15",A + A = [?],A,B,C,D,E,OptionB,Substitute values: 3 + 3 = 6. 6 is B.
+BatchF-13,"A=3, B=6, C=9, D=12, E=15",E - C = [?],A,B,C,D,E,OptionB,Substitute values: 15 - 9 = 6. 6 is B.
+BatchF-17,"A=5, B=10, C=15, D=20, E=25",E - D + A = [?],A,B,C,D,E,OptionB,Substitute values: 25 - 20 + 5 = 10. 10 is B.
+BatchF-23,"A=10, B=20, C=30, D=40, E=50",D - C + A = [?],A,B,C,D,E,OptionB,Substitute values: 40 - 30 + 10 = 20. 20 is B.
+BatchF-25,"A=10, B=20, C=30, D=40, E=50",C - A = [?],A,B,C,D,E,OptionB,Substitute values: 30 - 10 = 20. 20 is B.
+BatchF-27,"A=4, B=8, C=12, D=16, E=20",E - D + A = [?],A,B,C,D,E,OptionB,Substitute values: 20 - 16 + 4 = 8. 8 is B.
+BatchF-29,"A=4, B=8, C=12, D=16, E=20",D - B = [?],A,B,C,D,E,OptionB,Substitute values: 16 - 8 = 8. 8 is B.
+BatchF-30,"A=4, B=8, C=12, D=16, E=20",A + C - B = [?],A,B,C,D,E,OptionB,Substitute values: 4 + 12 - 8 = 8. 8 is B.
+BatchF-32,"A=6, B=12, C=18, D=24, E=30",E - C = [?],A,B,C,D,E,OptionB,Substitute values: 30 - 18 = 12. 12 is B.
+BatchF-34,"A=6, B=12, C=18, D=24, E=30",C - A = [?],A,B,C,D,E,OptionB,Substitute values: 18 - 6 = 12. 12 is B.
+BatchF-36,"A=7, B=14, C=21, D=28, E=35",A + A = [?],A,B,C,D,E,OptionB,Substitute values: 7 + 7 = 14. 14 is B.
+BatchF-37,"A=7, B=14, C=21, D=28, E=35",C - B + A = [?],A,B,C,D,E,OptionB,Substitute values: 21 - 14 + 7 = 14. 14 is B.
+BatchF-38,"A=7, B=14, C=21, D=28, E=35",E - C = [?],A,B,C,D,E,OptionB,Substitute values: 35 - 21 = 14. 14 is B.
+BatchF-42,"A=8, B=16, C=24, D=32, E=40",E - D + A = [?],A,B,C,D,E,OptionB,Substitute values: 40 - 32 + 8 = 16. 16 is B.
+BatchF-44,"A=8, B=16, C=24, D=32, E=40",D - B = [?],A,B,C,D,E,OptionB,Substitute values: 32 - 16 = 16. 16 is B.
+BatchF-49,"A=9, B=18, C=27, D=36, E=45",D - C + A = [?],A,B,C,D,E,OptionB,Substitute values: 36 - 27 + 9 = 18. 18 is B.
+BatchG-01,"A=1, B=2, C=3, D=4, E=5",A x B = [?],A,B,C,D,E,OptionB,Substitute values: 1 x 2 = 2. 2 is B.
+BatchG-06,"A=2, B=4, C=6, D=8, E=10",A x A = [?],A,B,C,D,E,OptionB,Substitute values: 2 x 2 = 4. 4 is B.
+BatchG-13,"A=3, B=6, C=9, D=12, E=15",A x 2 = [?],A,B,C,D,E,OptionB,Substitute values: 3 x 2 = 6. 6 is B.
+BatchG-16,"A=5, B=10, C=15, D=20, E=25",A x 2 = [?],A,B,C,D,E,OptionB,Substitute values: 5 x 2 = 10. 10 is B.
+BatchG-21,"A=10, B=20, C=30, D=40, E=50",A x 2 = [?],A,B,C,D,E,OptionB,Substitute values: 10 x 2 = 20. 20 is B.
+BatchG-26,"A=4, B=8, C=12, D=16, E=20",A x 2 = [?],A,B,C,D,E,OptionB,Substitute values: 4 x 2 = 8. 8 is B.
+BatchG-31,"A=6, B=12, C=18, D=24, E=30",A x 2 = [?],A,B,C,D,E,OptionB,Substitute values: 6 x 2 = 12. 12 is B.
+BatchG-36,"A=7, B=14, C=21, D=28, E=35",A x 2 = [?],A,B,C,D,E,OptionB,Substitute values: 7 x 2 = 14. 14 is B.
+BatchG-41,"A=8, B=16, C=24, D=32, E=40",A x 2 = [?],A,B,C,D,E,OptionB,Substitute values: 8 x 2 = 16. 16 is B.
+BatchG-46,"A=9, B=18, C=27, D=36, E=45",A x 2 = [?],A,B,C,D,E,OptionB,Substitute values: 9 x 2 = 18. 18 is B.
+BatchH-01,"A=1, B=2, C=3, D=4, E=5",B / A = [?],A,B,C,D,E,OptionB,Substitute values: 2 / 1 = 2. 2 is B.
+BatchH-02,"A=1, B=2, C=3, D=4, E=5",D / B = [?],A,B,C,D,E,OptionB,Substitute values: 4 / 2 = 2. 2 is B.
+BatchH-15,"A=3, B=6, C=9, D=12, E=15",D / B x A = [?],A,B,C,D,E,OptionB,Substitute values: 12 / 6 x 3 = 6. 6 is B.
+BatchH-16,"A=5, B=10, C=15, D=20, E=25",B / A x A = [?],A,B,C,D,E,OptionB,Substitute values: 10 / 5 x 5 = 10. 10 is B.
+BatchH-20,"A=5, B=10, C=15, D=20, E=25",B x A / A = [?],A,B,C,D,E,OptionB,Substitute values: 10 x 5 / 5 = 10. 10 is B.
+BatchH-21,"A=10, B=20, C=30, D=40, E=50",B / A x A = [?],A,B,C,D,E,OptionB,Substitute values: 20 / 10 x 10 = 20. 20 is B.
+BatchH-25,"A=10, B=20, C=30, D=40, E=50",D / B x A = [?],A,B,C,D,E,OptionB,Substitute values: 40 / 20 x 10 = 20. 20 is B.
+BatchH-26,"A=4, B=8, C=12, D=16, E=20",B / A x A = [?],A,B,C,D,E,OptionB,Substitute values: 8 / 4 x 4 = 8. 8 is B.
+BatchH-30,"A=4, B=8, C=12, D=16, E=20",D / B x A = [?],A,B,C,D,E,OptionB,Substitute values: 16 / 8 x 4 = 8. 8 is B.
+BatchH-31,"A=6, B=12, C=18, D=24, E=30",B / A x A = [?],A,B,C,D,E,OptionB,Substitute values: 12 / 6 x 6 = 12. 12 is B.
+BatchH-35,"A=6, B=12, C=18, D=24, E=30",D / B x A = [?],A,B,C,D,E,OptionB,Substitute values: 24 / 12 x 6 = 12. 12 is B.
+BatchH-36,"A=7, B=14, C=21, D=28, E=35",B / A x A = [?],A,B,C,D,E,OptionB,Substitute values: 14 / 7 x 7 = 14. 14 is B.
+BatchH-40,"A=7, B=14, C=21, D=28, E=35",D / B x A = [?],A,B,C,D,E,OptionB,Substitute values: 28 / 14 x 7 = 14. 14 is B.
+BatchH-41,"A=8, B=16, C=24, D=32, E=40",B / A x A = [?],A,B,C,D,E,OptionB,Substitute values: 16 / 8 x 8 = 16. 16 is B.
+BatchH-45,"A=8, B=16, C=24, D=32, E=40",D / B x A = [?],A,B,C,D,E,OptionB,Substitute values: 32 / 16 x 8 = 16. 16 is B.
+BatchH-46,"A=9, B=18, C=27, D=36, E=45",B / A x A = [?],A,B,C,D,E,OptionB,Substitute values: 18 / 9 x 9 = 18. 18 is B.
+BatchH-50,"A=9, B=18, C=27, D=36, E=45",D / B x A = [?],A,B,C,D,E,OptionB,Substitute values: 36 / 18 x 9 = 18. 18 is B.
+BatchI-06,"A=2, B=4, C=6, D=8, E=10",C - B + A = [?],A,B,C,D,E,OptionB,Substitute values: 6 - 4 + 2 = 4. 4 is B.
+BatchI-14,"A=3, B=6, C=9, D=12, E=15",C / A + A = [?],A,B,C,D,E,OptionB,Substitute values: 9 / 3 + 3 = 6. 6 is B.
+BatchI-16,"A=5, B=10, C=15, D=20, E=25",C - B + A = [?],A,B,C,D,E,OptionB,Substitute values: 15 - 10 + 5 = 10. 10 is B.
+BatchI-21,"A=10, B=20, C=30, D=40, E=50",C - B + A = [?],A,B,C,D,E,OptionB,Substitute values: 30 - 20 + 10 = 20. 20 is B.
+BatchI-24,"A=10, B=20, C=30, D=40, E=50",B / A x A = [?],A,B,C,D,E,OptionB,Substitute values: 20 / 10 x 10 = 20. 20 is B.
+BatchI-26,"A=4, B=8, C=12, D=16, E=20",C - B + A = [?],A,B,C,D,E,OptionB,Substitute values: 12 - 8 + 4 = 8. 8 is B.
+BatchI-31,"A=6, B=12, C=18, D=24, E=30",C - B + A = [?],A,B,C,D,E,OptionB,Substitute values: 18 - 12 + 6 = 12. 12 is B.
+BatchI-36,"A=7, B=14, C=21, D=28, E=35",C - B + A = [?],A,B,C,D,E,OptionB,Substitute values: 21 - 14 + 7 = 14. 14 is B.
+BatchI-41,"A=8, B=16, C=24, D=32, E=40",C - B + A = [?],A,B,C,D,E,OptionB,Substitute values: 24 - 16 + 8 = 16. 16 is B.
+BatchI-46,"A=9, B=18, C=27, D=36, E=45",C - B + A = [?],A,B,C,D,E,OptionB,Substitute values: 27 - 18 + 9 = 18. 18 is B.
+BatchJ-10,"A=2, B=4, C=6, D=8, E=10",B x A / A = [?],A,B,C,D,E,OptionB,Substitute: 4 x 2 / 2 = 4. 4 is B.
+BatchJ-17,"A=5, B=10, C=15, D=20, E=25",C - B + A = [?],A,B,C,D,E,OptionB,Substitute: 15 - 10 + 5 = 10. 10 is B.
+BatchJ-28,"A=4, B=8, C=12, D=16, E=20",D - C + A = [?],A,B,C,D,E,OptionB,Substitute: 16 - 12 + 4 = 8. 8 is B.
+BatchJ-37,"A=7, B=14, C=21, D=28, E=35",C - B + A = [?],A,B,C,D,E,OptionB,Substitute: 21 - 14 + 7 = 14. 14 is B.
+BatchJ-47,"A=9, B=18, C=27, D=36, E=45",C - B + A = [?],A,B,C,D,E,OptionB,Substitute: 27 - 18 + 9 = 18. 18 is B.
+BatchK-02,"A=1, B=2, C=3, D=4, E=5",C x B - D = [?],A,B,C,D,E,OptionB,Substitute: 3 x 2 - 4 = 2. 2 is B.
+BatchK-14,"A=3, B=6, C=9, D=12, E=15",E - B - A = [?],A,B,C,D,E,OptionB,Substitute: 15 - 6 - 3 = 6. 6 is B.
+BatchL-07,"A=3, B=6, C=9, D=12, E=15",C - A = [?],A,B,C,D,E,OptionB,Substitute: 9 - 3 = 6. 6 is B.
+BatchL-12,"A=5, B=10, C=15, D=20, E=25",C - A = [?],A,B,C,D,E,OptionB,Substitute: 15 - 5 = 10. 10 is B.
+BatchL-17,"A=10, B=20, C=30, D=40, E=50",C - A = [?],A,B,C,D,E,OptionB,Substitute: 30 - 10 = 20. 20 is B.
+BatchL-20,"A=10, B=20, C=30, D=40, E=50",D / B x A = [?],A,B,C,D,E,OptionB,Substitute: 40 / 20 x 10 = 20. 20 is B.
+BatchL-30,"A=6, B=12, C=18, D=24, E=30",D / B x A = [?],A,B,C,D,E,OptionB,Substitute: 24 / 12 x 6 = 12. 12 is B.
+BatchL-37,"A=8, B=16, C=24, D=32, E=40",C - A = [?],A,B,C,D,E,OptionB,Substitute: 24 - 8 = 16. 16 is B.
+BatchL-40,"A=8, B=16, C=24, D=32, E=40",D / B x A = [?],A,B,C,D,E,OptionB,Substitute: 32 / 16 x 8 = 16. 16 is B.
+BatchL-45,"A=9, B=18, C=27, D=36, E=45",D / B x A = [?],A,B,C,D,E,OptionB,Substitute: 36 / 18 x 9 = 18. 18 is B.
+BatchL-46,"A=11, B=22, C=33, D=44, E=55",A + A = [?],A,B,C,D,E,OptionB,Substitute: 11 + 11 = 22. 22 is B.
+BatchL-49,"A=11, B=22, C=33, D=44, E=55",E - C = [?],A,B,C,D,E,OptionB,Substitute: 55 - 33 = 22. 22 is B.
+BatchM-01,"A=1, B=2, C=3, D=4, E=5",A x D - B = [?],A,B,C,D,E,OptionB,Substitute: 1 x 4 - 2 = 2. 2 is B.
+BatchM-17,"A=5, B=10, C=15, D=20, E=25",C - B + A = [?],A,B,C,D,E,OptionB,Substitute: 15 - 10 + 5 = 10. 10 is B.
+BatchM-27,"A=4, B=8, C=12, D=16, E=20",C - B + A = [?],A,B,C,D,E,OptionB,Substitute: 12 - 8 + 4 = 8. 8 is B.
+BatchM-37,"A=7, B=14, C=21, D=28, E=35",C - B + A = [?],A,B,C,D,E,OptionB,Substitute: 21 - 14 + 7 = 14. 14 is B.
+BatchM-47,"A=9, B=18, C=27, D=36, E=45",C - B + A = [?],A,B,C,D,E,OptionB,Substitute: 27 - 18 + 9 = 18. 18 is B.
+P2-Q51-05,"A=6, B=12, C=18, D=3, E=24",B x D / A = [?],A,B,C,D,E,OptionA,Substitute: 12 x 3 / 6. Order of operations: 36 / 6 = 6. The number 6 corresponds to letter A.
+P4-Q28-Var-20,"A=8, B=12, C=20, D=28, E=36",D - A - B = [?],A,B,C,D,E,OptionA,Substitute: 28 - 8 - 12. Calculate: 20 - 12 = 8. The number 8 corresponds to letter A.
+BatchA-03,"A=4, B=8, C=12, D=16, E=20",D / A = [?],A,B,C,D,E,OptionA,Substitute: 16 / 4 = 4. Corresponds to A.
+BatchA-07,"A=7, B=14, C=21, D=28, E=35",C - B = [?],A,B,C,D,E,OptionA,Substitute: 21 - 14 = 7. Corresponds to A.
+BatchA-17,"A=6, B=12, C=18, D=24, E=30",D - C = [?],A,B,C,D,E,OptionA,Substitute: 24 - 18 = 6. Corresponds to A.
+BatchA-29,"A=8, B=16, C=24, D=32, E=40",B - A = [?],A,B,C,D,E,OptionA,Substitute: 16 - 8 = 8. Corresponds to A.
+BatchB-04,"A=5, B=10, C=15, D=20, E=25",B x B / D = [?],A,B,C,D,E,OptionA,Substitute: 10 x 10 / 20 = 5. Corresponds to A.
+BatchB-06,"A=2, B=4, C=8, D=16, E=32",C x B / D = [?],A,B,C,D,E,OptionA,Substitute: 8 x 4 / 16 = 2. Corresponds to A.
+BatchB-15,"A=5, B=25, C=50, D=75, E=100",C / A - A = [?],A,B,C,D,E,OptionA,Substitute: 50 / 5 - 5 = 5. Corresponds to A.
+BatchB-18,"A=8, B=16, C=32, D=40, E=48",B x A / B = [?],A,B,C,D,E,OptionA,Substitute: 16 x 8 / 16 = 8. Corresponds to A.
+BatchB-34,"A=5, B=10, C=25, D=35, E=50",E / A - A = [?],A,B,C,D,E,OptionA,Substitute: 50 / 5 - 5 = 5. Corresponds to A.
+BatchC-06,"A=2, B=4, C=6, D=8, E=10",E - B - B = [?],A,B,C,D,E,OptionA,Substitute: 10 - 4 - 4 = 2. Corresponds to A.
+BatchC-08,"A=8, B=16, C=24, D=32, E=40",D - A - B = [?],A,B,C,D,E,OptionA,Substitute: 32 - 8 - 16 = 8. Corresponds to A.
+BatchC-11,"A=3, B=6, C=9, D=12, E=15",B + C - D = [?],A,B,C,D,E,OptionA,Substitute: 6 + 9 - 12 = 3. Corresponds to A.
+BatchC-16,"A=12, B=24, C=36, D=48, E=60",E - C - A = [?],A,B,C,D,E,OptionA,Substitute: 60 - 36 - 12 = 12. Corresponds to A.
+BatchC-21,"A=5, B=10, C=15, D=20, E=25",B + C - D = [?],A,B,C,D,E,OptionA,Substitute: 10 + 15 - 20 = 5. Corresponds to A.
+BatchC-22,"A=4, B=8, C=12, D=16, E=20",E - B - B = [?],A,B,C,D,E,OptionA,Substitute: 20 - 8 - 8 = 4. Corresponds to A.
+BatchC-25,"A=10, B=20, C=30, D=40, E=50",C - A - A = [?],A,B,C,D,E,OptionA,Substitute: 30 - 10 - 10 = 10. Corresponds to A.
+BatchC-26,"A=7, B=14, C=21, D=28, E=35",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 28 - 14 - 7 = 7. Corresponds to A.
+BatchC-34,"A=10, B=30, C=40, D=50, E=60",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 50 - 30 - 10 = 10. Corresponds to A.
+BatchE-01,"A=2, B=4, C=6, D=8, E=10",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 8 - 4 - 2 = 2. Corresponds to A.
+BatchE-02,"A=3, B=6, C=9, D=12, E=15",E - C - A = [?],A,B,C,D,E,OptionA,Substitute: 15 - 9 - 3 = 3. Corresponds to A.
+BatchE-03,"A=4, B=8, C=12, D=16, E=20",E - C - A = [?],A,B,C,D,E,OptionA,Substitute: 20 - 12 - 4 = 4. Corresponds to A.
+BatchE-04,"A=5, B=10, C=15, D=20, E=25",E - C - A = [?],A,B,C,D,E,OptionA,Substitute: 25 - 15 - 5 = 5. Corresponds to A.
+BatchE-05,"A=6, B=12, C=18, D=24, E=30",E - C - A = [?],A,B,C,D,E,OptionA,Substitute: 30 - 18 - 6 = 6. Corresponds to A.
+BatchE-06,"A=2, B=4, C=6, D=8, E=10",E - C - A = [?],A,B,C,D,E,OptionA,Substitute: 10 - 6 - 2 = 2. Corresponds to A.
+BatchE-07,"A=7, B=14, C=21, D=28, E=35",E - C - A = [?],A,B,C,D,E,OptionA,Substitute: 35 - 21 - 7 = 7. Corresponds to A.
+BatchE-08,"A=8, B=16, C=24, D=32, E=40",E - C - A = [?],A,B,C,D,E,OptionA,Substitute: 40 - 24 - 8 = 8. Corresponds to A.
+BatchE-09,"A=9, B=18, C=27, D=36, E=45",E - C - A = [?],A,B,C,D,E,OptionA,Substitute: 45 - 27 - 9 = 9. Corresponds to A.
+BatchE-10,"A=10, B=20, C=30, D=40, E=50",E - C - A = [?],A,B,C,D,E,OptionA,Substitute: 50 - 30 - 10 = 10. Corresponds to A.
+BatchE-11,"A=3, B=6, C=9, D=12, E=15",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 12 - 6 - 3 = 3. Corresponds to A.
+BatchE-12,"A=4, B=8, C=12, D=16, E=20",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 16 - 8 - 4 = 4. Corresponds to A.
+BatchE-13,"A=11, B=22, C=33, D=44, E=55",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 44 - 22 - 11 = 11. Corresponds to A.
+BatchE-14,"A=5, B=10, C=15, D=20, E=25",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 20 - 10 - 5 = 5. Corresponds to A.
+BatchE-15,"A=2, B=4, C=6, D=8, E=10",C - A - A = [?],A,B,C,D,E,OptionA,Substitute: 6 - 2 - 2 = 2. Corresponds to A.
+BatchE-16,"A=12, B=24, C=36, D=48, E=60",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 48 - 24 - 12 = 12. Corresponds to A.
+BatchE-17,"A=6, B=12, C=18, D=24, E=30",C - A - A = [?],A,B,C,D,E,OptionA,Substitute: 18 - 6 - 6 = 6. Corresponds to A.
+BatchE-18,"A=3, B=5, C=8, D=11, E=14",D - C = [?],A,B,C,D,E,OptionA,Substitute: 11 - 8 = 3. Corresponds to A.
+BatchE-19,"A=2, B=5, C=7, D=9, E=12",D - C = [?],A,B,C,D,E,OptionA,Substitute: 9 - 7 = 2. Corresponds to A.
+BatchE-20,"A=1, B=3, C=4, D=7, E=10",C - B = [?],A,B,C,D,E,OptionA,Substitute: 4 - 3 = 1. Corresponds to A.
+BatchE-21,"A=5, B=10, C=15, D=20, E=25",C - A - A = [?],A,B,C,D,E,OptionA,Substitute: 15 - 5 - 5 = 5. Corresponds to A.
+BatchE-22,"A=4, B=8, C=12, D=16, E=20",C - A - A = [?],A,B,C,D,E,OptionA,Substitute: 12 - 4 - 4 = 4. Corresponds to A.
+BatchE-23,"A=3, B=6, C=9, D=12, E=15",C - A - A = [?],A,B,C,D,E,OptionA,Substitute: 9 - 3 - 3 = 3. Corresponds to A.
+BatchE-24,"A=2, B=4, C=6, D=8, E=10",B - A = [?],A,B,C,D,E,OptionA,Substitute: 4 - 2 = 2. Corresponds to A.
+BatchE-25,"A=10, B=20, C=30, D=40, E=50",B - A = [?],A,B,C,D,E,OptionA,Substitute: 20 - 10 = 10. Corresponds to A.
+BatchE-26,"A=7, B=14, C=21, D=28, E=35",B - A = [?],A,B,C,D,E,OptionA,Substitute: 14 - 7 = 7. Corresponds to A.
+BatchE-27,"A=5, B=10, C=15, D=20, E=25",B - A = [?],A,B,C,D,E,OptionA,Substitute: 10 - 5 = 5. Corresponds to A.
+BatchE-28,"A=6, B=12, C=18, D=24, E=30",B - A = [?],A,B,C,D,E,OptionA,Substitute: 12 - 6 = 6. Corresponds to A.
+BatchE-29,"A=8, B=16, C=24, D=32, E=40",B - A = [?],A,B,C,D,E,OptionA,Substitute: 16 - 8 = 8. Corresponds to A.
+BatchE-30,"A=3, B=9, C=12, D=15, E=21",C - B = [?],A,B,C,D,E,OptionA,Substitute: 12 - 9 = 3. Corresponds to A.
+BatchE-31,"A=2, B=4, C=8, D=16, E=32",B - A = [?],A,B,C,D,E,OptionA,Substitute: 4 - 2 = 2. Corresponds to A.
+BatchE-32,"A=4, B=12, C=20, D=24, E=28",D - C = [?],A,B,C,D,E,OptionA,Substitute: 24 - 20 = 4. Corresponds to A.
+BatchE-33,"A=5, B=15, C=25, D=30, E=40",D - C = [?],A,B,C,D,E,OptionA,Substitute: 30 - 25 = 5. Corresponds to A.
+BatchE-34,"A=10, B=30, C=40, D=50, E=60",C - B = [?],A,B,C,D,E,OptionA,Substitute: 40 - 30 = 10. Corresponds to A.
+BatchE-35,"A=6, B=12, C=24, D=30, E=36",D - C = [?],A,B,C,D,E,OptionA,Substitute: 30 - 24 = 6. Corresponds to A.
+BatchE-36,"A=3, B=6, C=12, D=18, E=21",E - D = [?],A,B,C,D,E,OptionA,Substitute: 21 - 18 = 3. Corresponds to A.
+BatchE-37,"A=4, B=8, C=16, D=20, E=28",D - C = [?],A,B,C,D,E,OptionA,Substitute: 20 - 16 = 4. Corresponds to A.
+BatchE-38,"A=2, B=6, C=10, D=14, E=18",B - A - A = [?],A,B,C,D,E,OptionA,Substitute: 6 - 2 - 2 = 2. Corresponds to A.
+BatchE-39,"A=5, B=10, C=20, D=25, E=30",D - C = [?],A,B,C,D,E,OptionA,Substitute: 25 - 20 = 5. Corresponds to A.
+BatchE-40,"A=7, B=14, C=28, D=35, E=49",D - C = [?],A,B,C,D,E,OptionA,Substitute: 35 - 28 = 7. Corresponds to A.
+BatchF-09,"A=2, B=4, C=6, D=8, E=10",D - C = [?],A,B,C,D,E,OptionA,Substitute values: 8 - 6 = 2. 2 is A.
+BatchF-11,"A=3, B=6, C=9, D=12, E=15",B - A = [?],A,B,C,D,E,OptionA,Substitute values: 6 - 3 = 3. 3 is A.
+BatchF-18,"A=5, B=10, C=15, D=20, E=25",C - B = [?],A,B,C,D,E,OptionA,Substitute values: 15 - 10 = 5. 5 is A.
+BatchF-43,"A=8, B=16, C=24, D=32, E=40",C - B = [?],A,B,C,D,E,OptionA,Substitute values: 24 - 16 = 8. 8 is A.
+BatchF-46,"A=9, B=18, C=27, D=36, E=45",B - A = [?],A,B,C,D,E,OptionA,Substitute values: 18 - 9 = 9. 9 is A.
+BatchG-05,"A=1, B=2, C=3, D=4, E=5",B x B - C = [?],A,B,C,D,E,OptionA,Substitute values: 2 x 2 - 3 = 1. 1 is A.
+BatchH-06,"A=2, B=4, C=6, D=8, E=10",B / A = [?],A,B,C,D,E,OptionA,Substitute values: 4 / 2 = 2. 2 is A.
+BatchH-07,"A=2, B=4, C=6, D=8, E=10",D / B = [?],A,B,C,D,E,OptionA,Substitute values: 8 / 4 = 2. 2 is A.
+BatchH-09,"A=2, B=4, C=6, D=8, E=10",D / A - A = [?],A,B,C,D,E,OptionA,Substitute values: 8 / 2 - 2 = 2. 2 is A.
+BatchI-01,"A=1, B=2, C=3, D=4, E=5",B + B - C = [?],A,B,C,D,E,OptionA,Substitute values: 2 + 2 - 3 = 1. 1 is A.
+BatchI-02,"A=1, B=2, C=3, D=4, E=5",C + B - D = [?],A,B,C,D,E,OptionA,Substitute values: 3 + 2 - 4 = 1. 1 is A.
+BatchJ-05,"A=1, B=2, C=3, D=4, E=5",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 4 - 2 - 1 = 1. 1 is A.
+BatchJ-09,"A=2, B=4, C=6, D=8, E=10",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 8 - 4 - 2 = 2. 2 is A.
+BatchJ-24,"A=10, B=20, C=30, D=40, E=50",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 40 - 20 - 10 = 10. 10 is A.
+BatchJ-34,"A=6, B=12, C=18, D=24, E=30",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 24 - 12 - 6 = 6. 6 is A.
+BatchJ-44,"A=8, B=16, C=24, D=32, E=40",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 32 - 16 - 8 = 8. 8 is A.
+BatchK-09,"A=2, B=4, C=6, D=8, E=10",C + B - D = [?],A,B,C,D,E,OptionA,Substitute: 6 + 4 - 8 = 2. 2 is A.
+BatchK-10,"A=2, B=4, C=6, D=8, E=10",E - B - B = [?],A,B,C,D,E,OptionA,Substitute: 10 - 4 - 4 = 2. 2 is A.
+BatchK-16,"A=5, B=10, C=15, D=20, E=25",B x A / B = [?],A,B,C,D,E,OptionA,Substitute: 10 x 5 / 10 = 5. 5 is A.
+BatchK-19,"A=5, B=10, C=15, D=20, E=25",E - B - B = [?],A,B,C,D,E,OptionA,Substitute: 25 - 10 - 10 = 5. 5 is A.
+BatchK-21,"A=10, B=20, C=30, D=40, E=50",B x B / D = [?],A,B,C,D,E,OptionA,Substitute: 20 x 20 / 40 = 10. 10 is A.
+BatchK-23,"A=10, B=20, C=30, D=40, E=50",C + B - D = [?],A,B,C,D,E,OptionA,Substitute: 30 + 20 - 40 = 10. 10 is A.
+BatchK-29,"A=4, B=8, C=12, D=16, E=20",E - B - B = [?],A,B,C,D,E,OptionA,Substitute: 20 - 8 - 8 = 4. 4 is A.
+BatchK-36,"A=7, B=14, C=21, D=28, E=35",B x B / D = [?],A,B,C,D,E,OptionA,Substitute: 14 x 14 / 28 = 7. 7 is A.
+BatchK-44,"A=8, B=16, C=24, D=32, E=40",E - B - B = [?],A,B,C,D,E,OptionA,Substitute: 40 - 16 - 16 = 8. 8 is A.
+BatchK-46,"A=9, B=18, C=27, D=36, E=45",B x B / D = [?],A,B,C,D,E,OptionA,Substitute: 18 x 18 / 36 = 9. 9 is A.
+BatchK-48,"A=9, B=18, C=27, D=36, E=45",C + B - D = [?],A,B,C,D,E,OptionA,Substitute: 27 + 18 - 36 = 9. 9 is A.
+BatchK-49,"A=9, B=18, C=27, D=36, E=45",E - B - B = [?],A,B,C,D,E,OptionA,Substitute: 45 - 18 - 18 = 9. 9 is A.
+BatchL-02,"A=2, B=4, C=6, D=8, E=10",D - C = [?],A,B,C,D,E,OptionA,Substitute: 8 - 6 = 2. 2 is A.
+BatchL-05,"A=2, B=4, C=6, D=8, E=10",D / B = [?],A,B,C,D,E,OptionA,Substitute: 8 / 4 = 2. 2 is A.
+BatchL-14,"A=5, B=10, C=15, D=20, E=25",E - D = [?],A,B,C,D,E,OptionA,Substitute: 25 - 20 = 5. 5 is A.
+BatchL-22,"A=4, B=8, C=12, D=16, E=20",C - B = [?],A,B,C,D,E,OptionA,Substitute: 12 - 8 = 4. 4 is A.
+BatchL-24,"A=4, B=8, C=12, D=16, E=20",E - D = [?],A,B,C,D,E,OptionA,Substitute: 20 - 16 = 4. 4 is A.
+BatchL-25,"A=4, B=8, C=12, D=16, E=20",D / A = [?],A,B,C,D,E,OptionA,Substitute: 16 / 4 = 4. 4 is A.
+BatchL-27,"A=6, B=12, C=18, D=24, E=30",C - B = [?],A,B,C,D,E,OptionA,Substitute: 18 - 12 = 6. 6 is A.
+BatchL-32,"A=7, B=14, C=21, D=28, E=35",C - B = [?],A,B,C,D,E,OptionA,Substitute: 21 - 14 = 7. 7 is A.
+BatchL-34,"A=7, B=14, C=21, D=28, E=35",E - D = [?],A,B,C,D,E,OptionA,Substitute: 35 - 28 = 7. 7 is A.
+BatchL-42,"A=9, B=18, C=27, D=36, E=45",C - B = [?],A,B,C,D,E,OptionA,Substitute: 27 - 18 = 9. 9 is A.
+BatchL-44,"A=9, B=18, C=27, D=36, E=45",E - D = [?],A,B,C,D,E,OptionA,Substitute: 45 - 36 = 9. 9 is A.
+BatchL-47,"A=11, B=22, C=33, D=44, E=55",C - B = [?],A,B,C,D,E,OptionA,Substitute: 33 - 22 = 11. 11 is A.
+BatchM-02,"A=1, B=2, C=3, D=4, E=5",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 4 - 2 - 1 = 1. 1 is A.
+BatchM-04,"A=1, B=2, C=3, D=4, E=5",E - C - A = [?],A,B,C,D,E,OptionA,Substitute: 5 - 3 - 1 = 1. 1 is A.
+BatchM-07,"A=2, B=4, C=6, D=8, E=10",A x B - C = [?],A,B,C,D,E,OptionA,Substitute: 2 x 4 - 6 = 2. 2 is A.
+BatchM-18,"A=5, B=10, C=15, D=20, E=25",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 20 - 10 - 5 = 5. 5 is A.
+BatchM-28,"A=4, B=8, C=12, D=16, E=20",D - A - B = [?],A,B,C,D,E,OptionA,Substitute: 16 - 4 - 8 = 4. 4 is A.
+BatchM-38,"A=7, B=14, C=21, D=28, E=35",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 28 - 14 - 7 = 7. 7 is A.
+BatchM-48,"A=9, B=18, C=27, D=36, E=45",D - B - A = [?],A,B,C,D,E,OptionA,Substitute: 36 - 18 - 9 = 9. 9 is A.

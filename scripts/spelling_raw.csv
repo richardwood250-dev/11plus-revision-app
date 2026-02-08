@@ -1,0 +1,1753 @@
+QuestionID,PartA,PartB,PartC,PartD,CorrectAnswer,Explanation,,,,,
+Spelling_001,The absence of,fresh water was,a serious problem,for the travellers.,N,No error.,,,14,65,19
+Spelling_002,There was an,abundence of food,at the wedding,reception yesterday.,B,Error: 'abundence' should be 'abundance' (ance).,,,12,63,20
+Spelling_003,The new library,is fully accesable,to people using,wheelchairs now.,B,Error: 'accesable' should be 'accessible' (ible).,,,15,64,18
+Spelling_004,I accidently dropped,the expensive vase,on the kitchen,floor today.,A,Error: 'accidently' should be 'accidentally' (ally).,,,12,64,20
+Spelling_005,The hotel could,not accommodate all,the guests during,the festival.,N,No error.,,,13,64,19
+Spelling_006,I will accompany,you to the,station to make,sure you arrive.,N,No error.,,,10,57,16
+Spelling_007,According to the,weather forecast it,will rain heavily,tomorrow morning.,N,No error.,,,16,69,19
+Spelling_008,He worked hard,to acheive his,goal of becoming,a doctor.,B,Error: 'acheive' should be 'achieve' (i before e).,,,9,53,16
+Spelling_009,We ran accross,the muddy field,to catch the,last bus home.,A,Error: 'accross' should be 'across' (one c).,,,12,55,15
+Spelling_010,Please write your,home adress clearly,on the back,of the envelope.,B,Error: 'adress' should be 'address' (double d).,,,11,63,19
+Spelling_011,The dog became,very agressive when,the postman walked,up the path.,B,Error: 'agressive' should be 'aggressive' (double g).,,,12,63,19
+Spelling_012,He is an,amature photographer who,likes taking photos,of birds.,B,Error: 'amature' should be 'amateur' (eur).,,,8,60,24
+Spelling_013,The ancient ruins,were discovered by,a team of,archaeologists.,N,No error.,,,9,59,18
+Spelling_014,It became apparant,that we had,taken the wrong,turning earlier.,A,Error: 'apparant' should be 'apparent' (ent).,,,11,60,18
+Spelling_015,His apperance was,very neat and,tidy for the,job interview.,A,Error: 'apperance' should be 'appearance' (ear).,,,12,56,17
+Spelling_016,I really appreciate,all the help,you have given,me today.,N,No error.,,,9,54,19
+Spelling_017,The arguement between,the two brothers,lasted for over,an hour.,A,Error: 'arguement' should be 'argument' (no e).,,,8,60,21
+Spelling_018,The young athalete,ran faster than,anyone else in,the race.,A,Error: 'athalete' should be 'athlete' (thl).,,,9,56,18
+Spelling_019,Basicly I do,not want to,go to the,party tonight.,A,Error: 'Basicly' should be 'Basically' (ally).,,,9,46,14
+Spelling_020,At the begining,of the film,the hero was,very poor.,A,Error: 'begining' should be 'beginning' (double n).,,,10,48,15
+Spelling_021,I truely beleive,that he is,telling the truth,about it.,A,"Error: 'beleive' should be 'believe' (ie) AND 'truely' is wrong but 'beleive' is in A. Wait, 'truely' is also error. Let's fix A to 'I truly beleive'. A has error beleive.",,,9,52,17
+Spelling_021_REV,I truly beleive,that he is,telling the truth,about it.,A,Error: 'beleive' should be 'believe' (ie).,,,9,51,17
+Spelling_022,I ate a,chocolate biscut with,my cup of,tea today.,B,Error: 'biscut' should be 'biscuit' (cuit).,,,7,47,21
+Spelling_023,It was a,bizzare situation to,be in given,the circumstances.,B,"Error: 'bizzare' should be 'bizarre' (one z, double r).",,,8,57,20
+Spelling_024,The cricket boundry,was marked with,a long white,rope.,A,Error: 'boundry' should be 'boundary' (ary).,,,5,51,19
+Spelling_025,Take a deep,breath and try,to calm down,right now.,N,No error.,,,10,47,14
+Spelling_026,I can breathe,much better now,that the window,is open.,N,No error.,,,8,51,15
+Spelling_027,The fireworks display,was briliant and,lit up the,night sky.,B,Error: 'briliant' should be 'brilliant' (double l).,,,10,57,21
+Spelling_028,I ate all,my brocoli because,it is good,for me.,B,Error: 'brocoli' should be 'broccoli' (double c).,,,7,44,18
+Spelling_029,The small buisness,grew rapidly into,a large global,company.,A,Error: 'buisness' should be 'business' (usi).,,,8,57,18
+Spelling_030,I checked the,calender to see,when the school,holidays start.,B,Error: 'calender' should be 'calendar' (dar).,,,13,58,15
+Spelling_031,The team captians,shook hands before,the match started,today.,A,Error: 'captians' should be 'captains' (tain).,,,6,58,18
+Spelling_032,She chose a,carrer in medicine,because she likes,helping people.,B,Error: 'carrer' should be 'career' (reer).,,,11,61,18
+Spelling_033,The Carribean sea,is warm and,clear all year,round.,A,"Error: 'Carribean' should be 'Caribbean' (one r, double b).",,,6,48,17
+Spelling_034,Which catagory does,this book belong,in on the,shelf?,A,Error: 'catagory' should be 'category' (teg).,,,6,50,19
+Spelling_036,The cieling was,painted white to,make the room,look bigger.,A,Error: 'cieling' should be 'ceiling' (ei).,,,12,56,16
+Spelling_037,The old cemetary,looked spooky in,the pale moonlight,tonight.,B,Error: 'cemetary' should be 'cemetery' (ery).,,,8,58,18
+Spelling_038,I am certain,that I locked,the front door,this morning.,N,No error.,,,12,52,14
+Spelling_039,His caractor is,very honest and,kind to everyone,he meets.,A,Error: 'caractor' should be 'character' (char).,,,9,55,16
+Spelling_040,The cheif of,police arrived at,the scene very,quickly.,A,Error: 'cheif' should be 'chief' (ief).,,,8,51,17
+Spelling_041,The church chior,sang beautifully during,the service on,Sunday.,A,Error: 'chior' should be 'choir' (oir).,,,7,60,23
+Spelling_042,Smoking a cigerette,is very bad,for your health,and lungs.,A,Error: 'cigerette' should be 'cigarette' (gar).,,,10,55,19
+Spelling_043,We went to,the cinama to,watch the new,action movie.,B,Error: 'cinama' should be 'cinema' (nema).,,,10,49,13
+Spelling_044,The electrical circut,failed and the,lights went out,suddenly.,A,Error: 'circut' should be 'circuit' (cuit).,,,9,59,21
+Spelling_045,He is a,proud citezen of,this country and,works hard.,B,Error: 'citezen' should be 'citizen' (tizen).,,,7,50,16
+Spelling_046,My work collegue,helped me to,finish the report,on time.,A,Error: 'collegue' should be 'colleague' (league).,,,8,53,17
+Spelling_047,Add the numbers,in the right,hand colum please,carefully.,C,Error: 'colum' should be 'column' (umn).,,,10,54,17
+Spelling_048,He is comming,to stay with,us for the,weekend.,A,Error: 'comming' should be 'coming' (one m).,,,8,43,13
+Spelling_049,I did not,commit any crime,so let me,go.,N,No error.,,,3,37,16
+Spelling_050,The school comittee,decided to buy,new equipment for,the gym.,A,Error: 'comittee' should be 'committee' (double m).,,,8,58,19
+Spelling_051,We can communicate,with people all,over the world,easily.,N,No error.,,,7,54,18
+Spelling_052,The local comunity,worked together to,build a new,park.,A,Error: 'comunity' should be 'community' (double m).,,,5,52,18
+Spelling_054,I am completely,sure that this,is the correct,answer.,N,No error.,,,7,50,15
+Spelling_055,My concience is,clear because I,told the absolute,truth.,A,Error: 'concience' should be 'conscience' (sci).,,,6,53,17
+Spelling_056,He was concious,of the fact,that everyone was,watching.,A,Error: 'concious' should be 'conscious' (sci).,,,9,52,17
+Spelling_057,The plan was,concieved by the,architect many years,ago.,B,Error: 'concieved' should be 'conceived' (cei).,,,4,52,20
+Spelling_058,The weather condition,was perfect for,playing cricket in,the park.,N,No error.,,,9,63,21
+Spelling_059,I am confidant,that our team,will win the,match.,A,Error: 'confidant' (noun) should be 'confident' (adj).,,,6,45,14
+Spelling_060,The continious rain,caused the river,to flood the,fields.,A,Error: 'continious' should be 'continuous' (nuo).,,,7,54,19
+Spelling_061,The decision caused,a lot of,contreversy in the,town.,C,Error: 'contreversy' should be 'controversy' (tro).,,,5,50,19
+Spelling_062,For your convenience,the shop will,remain open until,late.,N,No error.,,,5,55,20
+Spelling_063,Please corespond with,us by email,if you have,questions.,A,Error: 'corespond' should be 'correspond' (rr).,,,10,53,21
+Spelling_064,The town council,meets every month,to discuss local,issues.,N,No error.,,,7,56,17
+Spelling_065,He acted as,legal counsel for,the defence in,court.,N,No error.,,,6,48,17
+Spelling_066,The soldier was,very corageous in,the face of,danger.,B,Error: 'corageous' should be 'courageous' (our).,,,7,50,17
+Spelling_067,Always be courtious,to others and,mind your manners,please.,A,Error: 'courtious' should be 'courteous' (teous).,,,7,56,19
+Spelling_068,Do not critisise,people unless you,know all the,facts.,B,Error: 'critisise' should be 'criticise' (tic).,,,6,51,17
+Spelling_069,His curiosity led,him to explore,the old empty,house.,N,No error.,,,6,50,17
+Spelling_070,He was curious,to know what,was inside the,box.,N,No error.,,,4,44,14
+Spelling_071,Use a measuring,cylannder to measure,the liquid for,science.,B,Error: 'cylannder' should be 'cylinder' (lind).,,,8,57,20
+Spelling_072,Do not try,to decieve me,because I know,the truth.,B,Error: 'decieve' should be 'deceive' (cei).,,,10,47,14
+Spelling_073,I will decide,which shirt to,wear for the,party.,N,No error.,,,6,45,14
+Spelling_074,It was a,difficult decision to,make but I,did it.,N,No error.,,,7,46,21
+Spelling_075,It is definate,that we are,going on holiday,soon.,A,Error: 'definate' should be 'definite' (ini).,,,5,46,16
+Spelling_077,We will descend,the mountain before,it gets too,dark.,N,No error.,,,5,50,19
+Spelling_078,Please discribe the,man you saw,running away from,here.,A,Error: 'discribe' should be 'describe' (des).,,,5,52,19
+Spelling_079,A full description,of the event,was given to,police.,N,No error.,,,7,49,18
+Spelling_080,The sahara desert,is a very,hot and dry,place.,N,No error.,,,6,43,17
+Spelling_081,He was desparate,to find his,lost keys before,work.,A,Error: 'desparate' should be 'desperate' (pe).,,,5,48,16
+Spelling_082,We must develope,a better way,of working together,now.,A,Error: 'develope' should be 'develop' (op).,,,4,51,19
+Spelling_083,I write in,my diary every,night before I,sleep.,N,No error.,,,6,44,14
+Spelling_084,Use a dictionary,to find the,meaning of words,you know.,N,"No error. (Wait, logical error in text 'words you know', usually 'words you don't know', but grammatically/spelling wise it's N).",,,9,52,16
+Spelling_085,It is different,from what I,expected it to,be.,N,No error.,,,3,43,15
+Spelling_086,It is dificult,to see in,the dark without,light.,A,Error: 'dificult' should be 'difficult' (ff).,,,6,45,16
+Spelling_087,The sun will,disapear behind the,hills in the,evening.,B,Error: 'disapear' should be 'disappear' (pp).,,,8,51,19
+Spelling_088,I do not,want to dissapoint,my parents with,bad grades.,B,"Error: 'dissapoint' should be 'disappoint' (one s, double p).",,,8,52,18
+Spelling_089,The flood was,a major disaster,for the small,village.,N,No error.,,,8,50,16
+Spelling_091,You need self,disipline to study,hard for your,exams.,B,Error: 'disipline' should be 'discipline' (sci).,,,6,50,18
+Spelling_092,Do not disturb,the baby while,she is sleeping,soundly.,N,No error.,,,8,51,15
+Spelling_093,I doubt that,he will arrive,on time for,dinner.,N,No error.,,,7,44,14
+Spelling_094,There are a,dozen eggs in,the box on,the table.,N,No error.,,,10,44,13
+Spelling_095,The earth revolves,around the sun,once every single,year.,N,No error.,,,5,54,18
+Spelling_096,She was in,ecstacy when she,won the first,prize.,B,Error: 'ecstacy' should be 'ecstasy' (sy).,,,6,45,16
+Spelling_097,The medicine had,no effect on,his terrible headache,today.,N,No error.,,,6,55,21
+Spelling_098,There are eight,people coming to,dinner at our,house.,N,No error.,,,6,50,16
+Spelling_099,Please do not,embarass me in,front of my,friends.,B,Error: 'embarass' should be 'embarrass' (rr).,,,8,46,14
+Spelling_100,The roman emporer,ruled over a,vast and powerful,empire.,A,Error: 'emporer' should be 'emperor' (ror).,,,7,53,17
+Spelling_1000,The expensive yatch,was moored in,the harbour at,sunset.,A,Error: 'yatch' should be 'yacht' (yacht).,,,7,53,19
+Spelling_1001,The absence of,fresh water was,a serious problem,for the travellers.,N,No error.,,,14,65,19
+Spelling_1002,There was an,abundence of food,at the wedding,reception yesterday.,B,Error: 'abundence' should be 'abundance' (ance).,,,12,63,20
+Spelling_1003,The new library,is fully accesable,to people using,wheelchairs now.,B,Error: 'accesable' should be 'accessible' (ible).,,,15,64,18
+Spelling_1004,I accidently dropped,the expensive vase,on the kitchen,floor today.,A,Error: 'accidently' should be 'accidentally' (ally).,,,12,64,20
+Spelling_1005,The hotel could,not accommodate all,the guests during,the festival.,N,No error.,,,13,64,19
+Spelling_1006,I will accompany,you to the,station to make,sure you arrive.,N,No error.,,,10,57,16
+Spelling_1007,According to the,weather forecast it,will rain heavily,tomorrow morning.,N,No error.,,,16,69,19
+Spelling_1008,He worked hard,to acheive his,goal of becoming,a doctor.,B,Error: 'acheive' should be 'achieve' (i before e).,,,9,53,16
+Spelling_1009,We ran accross,the muddy field,to catch the,last bus home.,A,Error: 'accross' should be 'across' (one c).,,,12,55,15
+Spelling_101,She needs some,encouragment to try,harder at her,maths.,B,Error: 'encouragment' should be 'encouragement' (gem).,,,6,52,19
+Spelling_1010,Please write your,home adress clearly,on the back,of the envelope.,B,Error: 'adress' should be 'address' (double d).,,,11,63,19
+Spelling_1011,The dog became,very agressive when,the postman walked,up the path.,B,Error: 'agressive' should be 'aggressive' (double g).,,,12,63,19
+Spelling_1012,He is an,amature photographer who,likes taking photos,of birds.,B,Error: 'amature' should be 'amateur' (eur).,,,8,60,24
+Spelling_1013,The ancient ruins,were discovered by,a team of,archaeologists.,N,No error.,,,9,59,18
+Spelling_1014,It became apparant,that we had,taken the wrong,turning earlier.,A,Error: 'apparant' should be 'apparent' (ent).,,,11,60,18
+Spelling_1015,His apperance was,very neat and,tidy for the,job interview.,A,Error: 'apperance' should be 'appearance' (ear).,,,12,56,17
+Spelling_1016,I really appreciate,all the help,you have given,me today.,N,No error.,,,9,54,19
+Spelling_1017,The arguement between,the two brothers,lasted for over,an hour.,A,Error: 'arguement' should be 'argument' (no e).,,,8,60,21
+Spelling_1018,The young athalete,ran faster than,anyone else in,the race.,A,Error: 'athalete' should be 'athlete' (thl).,,,9,56,18
+Spelling_1019,Basicly I do,not want to,go to the,party tonight.,A,Error: 'Basicly' should be 'Basically' (ally).,,,9,46,14
+Spelling_102,The enemy retreated,after losing the,battle on the,field.,N,No error.,,,6,54,19
+Spelling_1020,At the begining,of the film,the hero was,very poor.,A,Error: 'begining' should be 'beginning' (double n).,,,10,48,15
+Spelling_1021,I truly beleive,that he is,telling the truth,about it.,B,Error: 'beleive' should be 'believe' (lieve).,,,9,51,17
+Spelling_1022,I ate a,chocolate biscut with,my cup of,tea today.,B,Error: 'biscut' should be 'biscuit' (cuit).,,,7,47,21
+Spelling_1023,It was a,bizzare situation to,be in given,the circumstances.,B,Error: 'bizzare' should be 'bizarre' (zarre).,,,8,57,20
+Spelling_1024,The cricket boundry,was marked with,a long white,rope.,A,Error: 'boundry' should be 'boundary' (ary).,,,5,51,19
+Spelling_1025,Take a deep,breath and try,to calm down,right now.,N,No error.,,,10,47,14
+Spelling_1026,I can breathe,much better now,that the window,is open.,N,No error.,,,8,51,15
+Spelling_1027,The fireworks display,was briliant and,lit up the,night sky.,B,Error: 'briliant' should be 'brilliant' (lliant).,,,10,57,21
+Spelling_1028,I ate all,my brocoli because,it is good,for me.,B,Error: 'brocoli' should be 'broccoli' (occoli).,,,7,44,18
+Spelling_1029,The small buisness,grew rapidly into,a large global,company.,A,Error: 'buisness' should be 'business' (siness).,,,8,57,18
+Spelling_103,The variety of,entertinment at the,party was very,good.,B,Error: 'entertinment' should be 'entertainment' (tain).,,,5,52,19
+Spelling_1030,I checked the,calender to see,when the school,holidays start.,B,Error: 'calender' should be 'calendar' (endar).,,,13,58,15
+Spelling_1031,The team captians,shook hands before,the match started,today.,A,Error: 'captians' should be 'captains' (ptains).,,,6,58,18
+Spelling_1032,She chose a,carrer in medicine,because she likes,helping people.,B,Error: 'carrer' should be 'career' (areer).,,,11,61,18
+Spelling_1033,The Carribean sea,is warm and,clear all year,round.,A,Error: 'Carribean' should be 'Caribbean' (ribbean).,,,6,48,17
+Spelling_1034,Which catagory does,this book belong,in on the,shelf?,A,Error: 'catagory' should be 'category' (tegory).,,,6,50,19
+Spelling_1035,The cause of,the accident is,still being investigated,by police.,N,No error.,,,10,61,24
+Spelling_1036,The cieling was,painted white to,make the room,look bigger.,A,Error: 'cieling' should be 'ceiling' (eiling).,,,12,56,16
+Spelling_1037,The old cemetary,looked spooky in,the pale moonlight,tonight.,B,Error: 'cemetary' should be 'cemetery' (etery).,,,8,58,18
+Spelling_1038,I am certain,that I locked,the front door,this morning.,N,No error.,,,12,52,14
+Spelling_1039,His caractor is,very honest and,kind to everyone,he meets.,A,Error: 'caractor' should be 'character' (char).,,,9,55,16
+Spelling_104,We must protect,the enviroment for,future generations to,enjoy.,B,Error: 'enviroment' should be 'environment' (nm).,,,6,60,21
+Spelling_1040,The cheif of,police arrived at,the scene very,quickly.,A,Error: 'cheif' should be 'chief' (hief).,,,8,51,17
+Spelling_1042,Smoking a cigerette,is very bad,for your health,and lungs.,A,Error: 'cigerette' should be 'cigarette' (garette).,,,10,55,19
+Spelling_1043,We went to,the cinama to,watch the new,action movie.,B,Error: 'cinama' should be 'cinema' (inema).,,,10,49,13
+Spelling_1044,The electrical circut,failed and the,lights went out,suddenly.,A,Error: 'circut' should be 'circuit' (rcuit).,,,9,59,21
+Spelling_1045,He is a,proud citezen of,this country and,works hard.,B,Error: 'citezen' should be 'citizen' (tizen).,,,7,50,16
+Spelling_1046,My work collegue,helped me to,finish the report,on time.,A,Error: 'collegue' should be 'colleague' (league).,,,8,53,17
+Spelling_1047,Add the numbers,in the right,hand colum please,carefully.,C,Error: 'colum' should be 'column' (olumn).,,,10,54,17
+Spelling_1048,He is comming,to stay with,us for the,weekend.,A,Error: 'comming' should be 'coming' (oming).,,,8,43,13
+Spelling_1049,I did not,commit any crime,so let me,go.,N,No error.,,,3,37,16
+Spelling_105,We need proper,equiptment to play,hockey safely on,grass.,B,Error: 'equiptment' should be 'equipment' (ment).,,,6,54,18
+Spelling_1050,The school comittee,decided to buy,new equipment for,the gym.,A,Error: 'comittee' should be 'committee' (mittee).,,,8,58,19
+Spelling_1051,We can communicate,with people all,over the world,easily.,N,No error.,,,7,54,18
+Spelling_1052,The local comunity,worked together to,build a new,park.,A,Error: 'comunity' should be 'community' (mmunity).,,,5,52,18
+Spelling_1053,The swimming compitition,was held at,the leisure centre,today.,A,Error: 'compitition' should be 'competition' (pet).,,,6,59,24
+Spelling_1054,I am completely,sure that this,is the correct,answer.,N,No error.,,,7,50,15
+Spelling_1055,My concience is,clear because I,told the absolute,truth.,A,Error: 'concience' should be 'conscience' (science).,,,6,53,17
+Spelling_1056,He was concious,of the fact,that everyone was,watching.,A,Error: 'concious' should be 'conscious' (scious).,,,9,52,17
+Spelling_1057,The plan was,concieved by the,architect many years,ago.,B,Error: 'concieved' should be 'conceived' (ceived).,,,4,52,20
+Spelling_1058,The weather condition,was perfect for,playing cricket in,the park.,N,No error.,,,9,63,21
+Spelling_1059,I am confidant,that our team,will win the,match.,A,Error: 'confidant' should be 'confident' (fident).,,,6,45,14
+Spelling_106,The car is,fully equipped with,safety features and,bags.,N,No error.,,,5,53,19
+Spelling_1060,The continious rain,caused the river,to flood the,fields.,A,Error: 'continious' should be 'continuous' (tinuous).,,,7,54,19
+Spelling_1061,The decision caused,a lot of,contreversy in the,town.,C,Error: 'contreversy' should be 'controversy' (troversy).,,,5,50,19
+Spelling_1062,For your convenience,the shop will,remain open until,late.,N,No error.,,,5,55,20
+Spelling_1063,Please corespond with,us by email,if you have,questions.,A,Error: 'corespond' should be 'correspond' (rrespond).,,,10,53,21
+Spelling_1064,The town council,meets every month,to discuss local,issues.,N,No error.,,,7,56,17
+Spelling_1065,He acted as,legal counsel for,the defence in,court.,N,No error.,,,6,48,17
+Spelling_1066,The soldier was,very corageous in,the face of,danger.,B,Error: 'corageous' should be 'courageous' (ourage).,,,7,50,17
+Spelling_1067,Always be courtious,to others and,mind your manners,please.,A,Error: 'courtious' should be 'courteous' (urteous).,,,7,56,19
+Spelling_1068,Do not critisise,people unless you,know all the,facts.,B,Error: 'critisise' should be 'criticise' (ticise).,,,6,51,17
+Spelling_1069,His curiosity led,him to explore,the old empty,house.,N,No error.,,,6,50,17
+Spelling_107,I like fruit,especialy apples and,pears from the,garden.,B,Error: 'especialy' should be 'especially' (lly).,,,7,53,20
+Spelling_1070,He was curious,to know what,was inside the,box.,N,No error.,,,4,44,14
+Spelling_1071,Use a measuring,cylannder to measure,the liquid for,science.,B,Error: 'cylannder' should be 'cylinder' (linder).,,,8,57,20
+Spelling_1072,Do not try,to decieve me,because I know,the truth.,B,Error: 'decieve' should be 'deceive' (ceive).,,,10,47,14
+Spelling_1073,I will decide,which shirt to,wear for the,party.,N,No error.,,,6,45,14
+Spelling_1074,It was a,difficult decision to,make but I,did it.,N,No error.,,,7,46,21
+Spelling_1075,It is definate,that we are,going on holiday,soon.,A,Error: 'definate' should be 'definite' (finite).,,,5,46,16
+Spelling_1076,The meal was,absolutely deliscious and,we ate it,all.,B,Error: 'deliscious' should be 'delicious' (licious).,,,4,50,25
+Spelling_1077,We will descend,the mountain before,it gets too,dark.,N,No error.,,,5,50,19
+Spelling_1078,Please discribe the,man you saw,running away from,here.,A,Error: 'discribe' should be 'describe' (describe).,,,5,52,19
+Spelling_1079,A full description,of the event,was given to,police.,N,No error.,,,7,49,18
+Spelling_108,Do not exagerate,the story to,make it sound,better.,B,Error: 'exagerate' should be 'exaggerate' (gg).,,,7,48,16
+Spelling_1080,The sahara desert,is a very,hot and dry,place.,N,No error.,,,6,43,17
+Spelling_1081,He was desparate,to find his,lost keys before,work.,A,Error: 'desparate' should be 'desperate' (sperate).,,,5,48,16
+Spelling_1082,We must develope,a better way,of working together,now.,A,Error: 'develope' should be 'develop' (velop).,,,4,51,19
+Spelling_1083,I write in,my diary every,night before I,sleep.,N,No error.,,,6,44,14
+Spelling_1084,Use a dictionary,to find the,meaning of the,word.,N,No error.,,,5,46,16
+Spelling_1085,It is different,from what I,expected it to,be.,N,No error.,,,3,43,15
+Spelling_1086,It is dificult,to see in,the dark without,light.,A,Error: 'dificult' should be 'difficult' (ffi).,,,6,45,16
+Spelling_1087,The sun will,disapear behind the,hills in the,evening.,B,Error: 'disapear' should be 'disappear' (ppear).,,,8,51,19
+Spelling_1088,I do not,want to dissapoint,my parents with,bad grades.,B,Error: 'dissapoint' should be 'disappoint' (sappoint).,,,8,52,18
+Spelling_1089,The flood was,a major disaster,for the small,village.,N,No error.,,,8,50,16
+Spelling_1090,The play was,disasterous because the,actors forgot their,lines.,B,Error: 'disasterous' should be 'disastrous' (strous).,,,6,60,23
+Spelling_1091,You need self,disipline to study,hard for your,exams.,B,Error: 'disipline' should be 'discipline' (scip).,,,6,50,18
+Spelling_1092,Do not disturb,the baby while,she is sleeping,soundly.,N,No error.,,,8,51,15
+Spelling_1093,I doubt that,he will arrive,on time for,dinner.,N,No error.,,,7,44,14
+Spelling_1094,There are a,dozen eggs in,the box on,the table.,N,No error.,,,10,44,13
+Spelling_1095,The earth revolves,around the sun,once every single,year.,N,No error.,,,5,54,18
+Spelling_1096,She was in,ecstacy when she,won the first,prize.,B,Error: 'ecstacy' should be 'ecstasy' (stasy).,,,6,45,16
+Spelling_1097,The medicine had,no effect on,his terrible headache,today.,N,No error.,,,6,55,21
+Spelling_1098,There are eight,people coming to,dinner at our,house.,N,No error.,,,6,50,16
+Spelling_1099,Please do not,embarass me in,front of my,friends.,B,Error: 'embarass' should be 'embarrass' (rrass).,,,8,46,14
+Spelling_110,There is no,exception to the,rule for anyone,here.,N,No error.,,,5,47,16
+Spelling_1100,The roman emporer,ruled over a,vast and powerful,empire.,A,Error: 'emporer' should be 'emperor' (peror).,,,7,53,17
+Spelling_1101,She needs some,encouragment to try,harder at her,maths.,B,Error: 'encouragment' should be 'encouragement' (gement).,,,6,52,19
+Spelling_1102,The enemy retreated,after losing the,battle on the,field.,N,No error.,,,6,54,19
+Spelling_1103,The variety of,entertinment at the,party was very,good.,B,Error: 'entertinment' should be 'entertainment' (tain).,,,5,52,19
+Spelling_1104,We must protect,the enviroment for,future generations to,enjoy.,B,Error: 'enviroment' should be 'environment' (ronment).,,,6,60,21
+Spelling_1105,We need proper,equiptment to play,hockey safely on,grass.,B,Error: 'equiptment' should be 'equipment' (quip).,,,6,54,18
+Spelling_1106,The car is,fully equipped with,safety features and,bags.,N,No error.,,,5,53,19
+Spelling_1107,I like fruit,especialy apples and,pears from the,garden.,B,Error: 'especialy' should be 'especially' (lly).,,,7,53,20
+Spelling_1108,Do not exagerate,the story to,make it sound,better.,B,Error: 'exagerate' should be 'exaggerate' (agg).,,,7,48,16
+Spelling_1109,It was an,excelent performance by,the school drama,group.,B,Error: 'excelent' should be 'excellent' (ll).,,,6,54,23
+Spelling_111,Regular excercise is,good for your,health and your,heart.,A,Error: 'excercise' should be 'exercise' (exe).,,,6,54,20
+Spelling_1110,There is no,exception to the,rule for anyone,here.,N,No error.,,,5,47,16
+Spelling_1111,Regular excercise is,good for your,health and your,heart.,A,Error: 'excercise' should be 'exercise' (cise).,,,6,54,20
+Spelling_1112,I felt completely,exhasted after running,the marathon last,week.,B,Error: 'exhasted' should be 'exhausted' (haust).,,,5,61,22
+Spelling_1113,We visited the,art exibition at,the museum on,Saturday.,B,Error: 'exibition' should be 'exhibition' (xhi).,,,9,52,16
+Spelling_1114,The existance of,ghosts has never,been proven by,science.,A,Error: 'existance' should be 'existence' (tence).,,,8,54,16
+Spelling_1115,It was an,expensive watch that,cost a lot,of money.,N,No error.,,,9,48,20
+Spelling_1116,I have no,experiance of working,in a busy,office.,B,Error: 'experiance' should be 'experience' (ience).,,,7,46,21
+Spelling_1117,There was no,explantion for his,strange behaviour that,day.,B,Error: 'explantion' should be 'explanation' (plana).,,,4,56,22
+Spelling_1118,It was an,extraodinary event that,we will never,forget.,B,Error: 'extraodinary' should be 'extraordinary' (raor).,,,7,52,23
+Spelling_1119,The weather was,extream so we,stayed inside all,day.,B,Error: 'extream' should be 'extreme' (treme).,,,4,49,17
+Spelling_1120,His face looks,familar but I,cannot remember his,name.,B,Error: 'familar' should be 'familiar' (miliar).,,,5,51,19
+Spelling_1121,My favorite colour,is blue because,it reminds me,of sea.,A,"Error: 'favorite' is US spelling, 'favourite' is UK.",,,7,53,18
+Spelling_1122,My birthday is,in Febuary which,is a cold,month.,B,Error: 'Febuary' should be 'February' (bru).,,,6,45,16
+Spelling_1123,The lion looked,feirce as it,roared at the,crowd.,B,Error: 'feirce' should be 'fierce' (ierce).,,,6,46,15
+Spelling_1124,We finaly arrived,at our destination,after a long,drive.,A,Error: 'finaly' should be 'finally' (lly).,,,6,53,18
+Spelling_1125,The florescent light,flickered and then,went out completely,dark.,A,Error: 'florescent' should be 'fluorescent' (luo).,,,5,62,20
+Spelling_1126,He speaks a,foriegn language that,I do not,understand.,B,Error: 'foriegn' should be 'foreign' (reign).,,,8,51,21
+Spelling_1127,Do not forget,to lock the,door when you,leave.,N,No error.,,,6,43,13
+Spelling_1128,He is fourty,years old today,and having a,party.,A,Error: 'fourty' should be 'forty' (forty).,,,6,45,15
+Spelling_1129,Please move foward,down the bus,to make some,room.,A,Error: 'foward' should be 'forward' (rw).,,,5,47,18
+Spelling_113,We visited the,art exibition at,the museum on,Saturday.,B,Error: 'exibition' should be 'exhibition' (xhi).,,,9,52,16
+Spelling_1130,My best freind,is coming to,stay with me,tonight.,A,Error: 'freind' should be 'friend' (ie).,,,8,46,14
+Spelling_1131,It was a,frightning experience for,everyone who was,there.,B,Error: 'frightning' should be 'frightening' (tening).,,,6,55,25
+Spelling_1132,For futher information,please ask at,the reception desk,now.,A,Error: 'futher' should be 'further' (rther).,,,4,57,22
+Spelling_1133,I garantee that,you will enjoy,the show very,much.,A,Error: 'garantee' should be 'guarantee' (guar).,,,5,47,15
+Spelling_1134,Use the pressure,guage to check,the tyres on,bike.,B,Error: 'guage' should be 'gauge' (gauge).,,,5,47,16
+Spelling_1135,I got the,jist of the,story even though,it was long.,B,Error: 'jist' should be 'gist' (gist).,,,9,49,17
+Spelling_1136,She looked glamourous,in her new,dress at the,party.,A,Error: 'glamourous' should be 'glamorous' (morous).,,,6,49,21
+Spelling_1137,The goverment has,decided to lower,taxes for everyone,soon.,A,Error: 'goverment' should be 'government' (ernment).,,,5,56,18
+Spelling_1138,My english grammer,is improving every,day at school,now.,A,Error: 'grammer' should be 'grammar' (mmar).,,,4,53,18
+Spelling_1139,I am greatful,for all the,gifts I received,today.,A,Error: 'greatful' should be 'grateful' (grate).,,,6,46,16
+Spelling_114,The existance of,ghosts has never,been proven by,science.,A,Error: 'existance' should be 'existence' (ence).,,,8,54,16
+Spelling_1140,The security gaurd,checked our bags,at the entrance,gate.,A,Error: 'gaurd' should be 'guard' (guard).,,,5,54,18
+Spelling_1141,What happend to,your car on,the way to,work?,A,Error: 'happend' should be 'happened' (pened).,,,5,41,15
+Spelling_1142,Do not harrass,the animals in,the zoo cages,please.,B,Error: 'harrass' should be 'harass' (harass).,,,7,48,14
+Spelling_1143,It is a,hinderance to our,progress on this,project.,B,Error: 'hinderance' should be 'hindrance' (drance).,,,7,48,17
+Spelling_1144,It was a,humourous story that,made everyone laugh,loudly.,B,Error: 'humourous' should be 'humorous' (morous).,,,7,54,20
+Spelling_1145,His idiosyncracy made,him stand out,from the rest,crowd.,A,Error: 'idiosyncracy' should be 'idiosyncrasy' (crasy).,,,6,53,21
+Spelling_1146,Come here immediatly,because I need,to speak to,you.,A,Error: 'immediatly' should be 'immediately' (ately).,,,4,49,20
+Spelling_1147,The incedint was,reported to the,police straight away,today.,A,Error: 'incedint' should be 'incident' (cident).,,,6,57,20
+Spelling_1148,She is an,independant woman who,runs her own,shop.,B,Error: 'independant' should be 'independent' (pend).,,,5,47,21
+Spelling_1149,Do not interfeer,in matters that,do not concern,you.,B,Error: 'interfeer' should be 'interfere' (fere).,,,4,49,16
+Spelling_115,It was an,expensive watch that,cost a lot,of money.,N,No error.,,,9,48,20
+Spelling_1150,Please don't interupt,me while I,am talking to,you.,B,Error: 'interupt' should be 'interrupt' (rrupt).,,,4,48,21
+Spelling_1151,The chocolate cake,looked irresistable on,the plate at,tea.,B,Error: 'irresistable' should be 'irresistible' (tible).,,,4,56,22
+Spelling_1152,The tropical island,was beautiful and,warm all year,round.,N,No error.,,,6,55,19
+Spelling_1153,He felt jealous,when his friend,won the big,prize.,N,No error.,,,6,47,15
+Spelling_1154,The gold jewellry,sparkled in the,bright sunlight,today.,A,Error: 'jewellry' should be 'jewellery' (ellery).,,,6,53,17
+Spelling_1155,His knowlege of,science is very,good for his,age.,A,Error: 'knowlege' should be 'knowledge' (ledge).,,,4,46,15
+Spelling_1156,The science labratory,is full of,chemicals and test,tubes.,B,Error: 'labratory' should be 'laboratory' (ora).,,,6,55,21
+Spelling_1157,The english language,can be difficult,to learn to,speak.,N,No error.,,,6,53,20
+Spelling_1158,I enjoy my,liesure time by,reading books at,home.,B,Error: 'liesure' should be 'leisure' (leis).,,,5,46,16
+Spelling_1159,The lenth of,the swimming pool,is twenty five,metres.,A,Error: 'lenth' should be 'length' (gth).,,,7,50,17
+Spelling_116,I have no,experiance of working,in a busy,office.,B,Error: 'experiance' should be 'experience' (ence).,,,7,46,21
+Spelling_1160,He acts as,a liason between,the school and,parents.,B,Error: 'liason' should be 'liaison' (iai).,,,8,48,16
+Spelling_1161,The local libary,is a quiet,place to do,homework.,B,Error: 'libary' should be 'library' (brary).,,,9,46,16
+Spelling_1163,She took it,litterally when I,said break a,leg.,B,Error: 'litterally' should be 'literally' (lit).,,,4,44,17
+Spelling_1164,Did you loose,your keys on,the way home,today?,B,Error: 'loose' should be 'lose' (one o).,,,6,43,13
+Spelling_1165,Car maintainance is,important to keep,your vehicle safe,running.,A,Error: 'maintainance' should be 'maintenance' (ten).,,,8,61,19
+Spelling_1166,It was a,marvellous day out,at the seaside,resort.,N,No error.,,,7,47,18
+Spelling_1167,The doctor prescribed,medecine to help,cure the bad,cough.,B,Error: 'medecine' should be 'medicine' (dic).,,,6,55,21
+Spelling_1168,The cows grazed,in the green,medow all day,long.,C,Error: 'medow' should be 'meadow' (ead).,,,5,45,15
+Spelling_1169,The new millenium,was celebrated all,over the world,loudly.,B,Error: 'millenium' should be 'millennium' (nn).,,,7,56,18
+Spelling_117,There was no,explantion for his,strange behaviour that,day.,B,Error: 'explantion' should be 'explanation' (plan).,,,4,56,22
+Spelling_1171,The puppy is,very mischevious and,chews everything in,sight.,B,Error: 'mischevious' should be 'mischievous' (chiev).,,,6,57,20
+Spelling_1172,There is a,box of misellaneous,items in the,garage.,B,Error: 'misellaneous' should be 'miscellaneous' (scell).,,,7,48,19
+Spelling_1173,My leg muscle,aches after running,so far yesterday,morning.,N,No error.,,,8,56,19
+Spelling_1174,It was a,misterious sound that,came from the,attic.,B,Error: 'misterious' should be 'mysterious' (mys).,,,6,48,21
+Spelling_1175,It is neccessary,to drink water,every single day,regularly.,B,Error: 'neccessary' should be 'necessary' (cess).,,,10,56,16
+Spelling_1176,My next door,neigbour is very,friendly and helpful,always.,B,Error: 'neigbour' should be 'neighbour' (ghb).,,,7,55,20
+Spelling_1177,My sister's daughter,is my neice,and she is,five.,B,Error: 'neice' should be 'niece' (ie).,,,5,46,20
+Spelling_1178,There are ninty,pages in this,book to read,tonight.,A,Error: 'ninty' should be 'ninety' (nine).,,,8,48,15
+Spelling_1179,There was a,noticable difference in,the weather this,morning.,B,Error: 'noticable' should be 'noticeable' (tice).,,,8,58,23
+Spelling_1180,The fly was,a nuesance buzzing,around the food,plate.,B,Error: 'nuesance' should be 'nuisance' (nuis).,,,6,50,18
+Spelling_1181,The dog was,obedient and sat,when he was,told.,N,No error.,,,5,43,16
+Spelling_1182,On this occassion,we will allow,you to leave,early.,B,Error: 'occassion' should be 'occasion' (casion).,,,6,48,17
+Spelling_1183,The accident occured,on the motorway,late last night,driving.,B,Error: 'occured' should be 'occurred' (rr).,,,8,58,20
+Spelling_1184,The oppisite of,hot is cold,as everyone knows,well.,A,Error: 'oppisite' should be 'opposite' (oppo).,,,5,48,17
+Spelling_1185,This is an,origional painting by,a famous artist,here.,B,Error: 'origional' should be 'original' (ginal).,,,5,51,21
+Spelling_1186,Draw a paralel,line next to,the first one,carefully.,B,Error: 'paralel' should be 'parallel' (rallel).,,,10,49,14
+Spelling_1187,The members of,parlament voted on,the new law,today.,B,Error: 'parlament' should be 'parliament' (rliam).,,,6,49,18
+Spelling_1188,Not a single,partical of dust,was left on,shelf.,B,Error: 'partical' should be 'particle' (ticle).,,,6,45,16
+Spelling_1189,Is there any,particuler reason why,you are late,today?,B,Error: 'particuler' should be 'particular' (cular).,,,6,51,21
+Spelling_119,The weather was,extream so we,stayed inside all,day.,B,Error: 'extream' should be 'extreme' (eme).,,,4,49,17
+Spelling_1190,The cricket pavillion,needs painting before,the season starts,soon.,B,Error: 'pavillion' should be 'pavilion' (vilion).,,,5,64,21
+Spelling_1191,You must be,persistant if you,want to succeed,here.,B,Error: 'persistant' should be 'persistent' (sist).,,,5,48,17
+Spelling_1192,All personnel must,wear a badge,while in the,building.,N,No error.,,,9,51,18
+Spelling_1193,I tried to,persuade him to,come with us,later.,N,No error.,,,6,43,15
+Spelling_1194,Digging the garden,is hard physicle,work for me,now.,B,Error: 'physicle' should be 'physical' (sical).,,,4,49,18
+Spelling_1195,Would you like,a peice of,cake with your,tea?,B,Error: 'peice' should be 'piece' (piece).,,,4,42,14
+Spelling_1196,The local poltician,gave a speech,in the town,hall.,A,Error: 'poltician' should be 'politician' (politi).,,,5,48,19
+Spelling_1197,The ball is,now in my,posession so I,win.,C,Error: 'posession' should be 'possession' (ssess).,,,4,38,14
+Spelling_1198,Is it posible,to finish the,work by five,o'clock?,B,Error: 'posible' should be 'possible' (ssible).,,,8,46,13
+Spelling_1199,We ate baked,potatos with cheese,for dinner last,night.,B,Error: 'potatos' should be 'potatoes' (oes).,,,6,52,19
+Spelling_120,His face looks,familar but I,cannot remember his,name.,B,Error: 'familar' should be 'familiar' (iar).,,,5,51,19
+Spelling_1200,I prefered the,blue shirt to,the red one,yesterday.,A,Error: 'prefered' should be 'preferred' (rr).,,,10,48,14
+Spelling_1202,For your,convenience,wait,here.,N,No error.,,,4,28,11
+Spelling_1204,The council,met,today,here.,N,No error.,,,3,24,11
+Spelling_121,My favorite colour,is blue because,it reminds me,of sea.,A,Error: 'favorite' (US) vs 'favourite' (UK). 11+ uses UK.,,,7,53,18
+Spelling_1213,I will,decide,soon,now.,N,No error.,,,4,20,6
+Spelling_1215,It is,definate,that,he won.,B,Error: 'definate' should be 'definite' (ini).,,,4,24,8
+Spelling_1216,It is,deliscious,food,here.,B,Error: 'deliscious' should be 'delicious' (lici).,,,4,24,10
+Spelling_122,My birthday is,in Febuary which,is a cold,month.,B,Error: 'Febuary' should be 'February' (bru).,,,6,45,16
+Spelling_1224,Keep a,diary,every,day.,N,No error.,,,4,20,6
+Spelling_1229,He will,disapear,soon,now.,B,Error: 'disapear' should be 'disappear' (pp).,,,4,23,8
+Spelling_123,The lion looked,feirce as it,roared at the,crowd.,B,Error: 'feirce' should be 'fierce' (ie).,,,6,46,15
+Spelling_1237,Buy a,dozen,eggs,now.,N,No error.,,,4,18,5
+Spelling_124,We finaly arrived,at our destination,after a long,drive.,A,Error: 'finaly' should be 'finally' (lly).,,,6,53,18
+Spelling_1242,I have,eight,pens,here.,N,No error.,,,4,20,6
+Spelling_1243,I have,eighty,pounds,now.,N,No error.,,,4,22,6
+Spelling_125,The florescent light,flickered and then,went out completely,dark.,A,Error: 'florescent' should be 'fluorescent' (luo).,,,5,62,20
+Spelling_1250,I like,entertinment,shows,alot.,B,Error: 'entertinment' should be 'entertainment' (tain).,,,5,28,12
+Spelling_1256,It was,excelent,work,done.,B,Error: 'excelent' should be 'excellent' (ll).,,,4,23,8
+Spelling_1258,Do your,excercise,now,please.,B,Error: 'excercise' should be 'exercise' (exe).,,,3,26,9
+Spelling_1259,I am,exhasted,from,running.,B,Error: 'exhasted' should be 'exhausted' (hau).,,,4,24,8
+Spelling_126,He speaks a,foriegn language that,I do not,understand.,B,Error: 'foriegn' should be 'foreign' (ei).,,,8,51,21
+Spelling_1268,It is,extream,cold,today.,B,Error: 'extream' should be 'extreme' (eme).,,,4,22,7
+Spelling_127,Do not forget,to lock the,door when you,leave.,N,No error.,,,6,43,13
+Spelling_1273,The dog,is feirce,and,loud.,B,Error: 'feirce' should be 'fierce' (ie).,,,3,24,9
+Spelling_128,He is fourty,years old today,and having a,party.,A,Error: 'fourty' should be 'forty' (for).,,,6,45,15
+Spelling_1282,I like,fruit,very,much.,N,No error.,,,4,20,6
+Spelling_1283,We need,futher,help,now.,B,Error: 'futher' should be 'further' (fur).,,,4,21,7
+Spelling_129,Please move foward,down the bus,to make some,room.,A,Error: 'foward' should be 'forward' (for).,,,5,47,18
+Spelling_1298,It is,an honorary,job,now.,N,No error.,,,3,23,11
+Spelling_130,My best freind,is coming to,stay with me,tonight.,A,Error: 'freind' should be 'friend' (ie).,,,8,46,14
+Spelling_1300,Check your,identity,now,please.,N,No error.,,,3,28,10
+Spelling_1304,She is,independant,now,too.,B,Error: 'independant' should be 'independent' (ent).,,,3,24,11
+Spelling_1314,I have,liesure,time,now.,B,Error: 'liesure' should be 'leisure' (leis).,,,4,21,7
+Spelling_1320,It is,litterally,TRUE,now.,B,Error: 'litterally' should be 'literally' (lit).,,,4,23,10
+Spelling_1324,Take your,medecine,now,please.,B,Error: 'medecine' should be 'medicine' (dic).,,,3,27,9
+Spelling_1328,He is,mischevious,and,bad.,B,Error: 'mischevious' should be 'mischievous' (vous).,,,3,23,11
+Spelling_1329,It is,misellaneous,stuff,here.,B,Error: 'misellaneous' should be 'miscellaneous' (sc).,,,5,27,12
+Spelling_133,I garantee that,you will enjoy,the show very,much.,A,Error: 'garantee' should be 'guarantee' (gua).,,,5,47,15
+Spelling_1331,My muscle,aches,really,bad.,N,No error.,,,4,24,9
+Spelling_134,Use the pressure,guage to check,the tyres on,bike.,B,Error: 'guage' should be 'gauge' (au).,,,5,47,16
+Spelling_1349,Draw a,paralel,line,now.,B,Error: 'paralel' should be 'parallel' (llel).,,,4,21,7
+Spelling_135,I got the,jist of the,story even though,it was long.,B,Error: 'jist' should be 'gist' (gi).,,,9,49,17
+Spelling_1350,The parlament,sat,down,then.,A,Error: 'parlament' should be 'parliament' (rli).,,,3,25,13
+Spelling_1356,He was,persistant,all,day.,B,Error: 'persistant' should be 'persistent' (ent).,,,3,23,10
+Spelling_1359,It is,physicle,work,now.,B,Error: 'physicle' should be 'physical' (cal).,,,4,21,8
+Spelling_136,She looked glamourous,in her new,dress at the,party.,A,Error: 'glamourous' should be 'glamorous' (mor).,,,6,49,21
+Spelling_1363,It is,my posession,now,too.,B,Error: 'posession' should be 'possession' (ssess).,,,3,24,12
+Spelling_1369,The preperation,took,quite a,while.,A,Error: 'preperation' should be 'preparation' (par).,,,4,32,15
+Spelling_137,The goverment has,decided to lower,taxes for everyone,soon.,A,Error: 'goverment' should be 'government' (nm).,,,5,56,18
+Spelling_1371,You may,proceed,now,please.,N,No error.,,,3,24,7
+Spelling_1372,His proffesion,is an,animal,vet.,A,Error: 'proffesion' should be 'profession' (fess).,,,4,29,14
+Spelling_1376,It is,propoganda,and,lies.,B,Error: 'propoganda' should be 'propaganda' (pag).,,,3,23,10
+Spelling_1379,Ask a,question,now,please.,N,No error.,,,3,23,8
+Spelling_138,My grammer is,improving every day,at school with,help.,A,Error: 'grammer' should be 'grammar' (mar).,,,5,51,19
+Spelling_1381,It is,quite,good,now.,N,No error.,,,4,18,5
+Spelling_1382,I am,realy,happy,now.,B,Error: 'realy' should be 'really' (ll).,,,4,18,5
+Spelling_139,I am greatful,for all the,gifts I received,today.,A,Error: 'greatful' should be 'grateful' (gra).,,,6,46,16
+Spelling_1399,Keep it,seperate,from,that.,B,Error: 'seperate' should be 'separate' (par).,,,4,24,8
+Spelling_140,The security gaurd,checked our bags,at the entrance,gate.,A,Error: 'gaurd' should be 'guard' (ua).,,,5,54,18
+Spelling_141,What happend to,your car on,the way to,work?,A,Error: 'happend' should be 'happened' (ened).,,,5,41,15
+Spelling_142,Do not harrass,the animals in,the zoo cages,please.,B,Error: 'harrass' should be 'harass' (one r).,,,7,48,14
+Spelling_143,It is a,hinderance to our,progress on this,project.,B,Error: 'hinderance' should be 'hindrance' (dra).,,,7,48,17
+Spelling_144,It was a,humourous story that,made everyone laugh,loudly.,B,Error: 'humourous' should be 'humorous' (mor).,,,7,54,20
+Spelling_145,His idiosyncracy made,him stand out,from the rest,crowd.,A,Error: 'idiosyncracy' should be 'idiosyncrasy' (sy).,,,6,53,21
+Spelling_146,Come here immediatly,because I need,to speak to,you.,B,Error: 'immediatly' should be 'immediately' (ely).,,,4,49,20
+Spelling_147,The incedint was,reported to the,police straight away,today.,A,Error: 'incedint' should be 'incident' (ci).,,,6,57,20
+Spelling_149,Do not interfeer,in other people's,business or their,lives.,B,Error: 'interfeer' should be 'interfere' (fere).,,,6,56,17
+Spelling_1501,The absence,of light,was very,scary.,N,No error.,,,6,33,11
+Spelling_1504,I accidentaly,broke,the,cup.,A,Error: 'accidentaly' should be 'accidentally' (ally).,,,3,25,13
+Spelling_1505,We can,accommodate,you,here.,N,No error.,,,3,25,11
+Spelling_1506,I will,accompany,him,home.,N,No error.,,,3,23,9
+Spelling_151,The chocolate cake,looked irresistable on,the plate at,tea.,B,Error: 'irresistable' should be 'irresistible' (ible).,,,4,56,22
+Spelling_152,The tropical island,was beautiful and,warm all year,round.,N,No error.,,,6,55,19
+Spelling_1520,It is,a bargin,price,now.,B,Error: 'bargin' should be 'bargain' (gain).,,,4,22,8
+Spelling_1527,I won,a competition,last,week.,N,No error.,,,4,27,13
+Spelling_153,He felt jealous,when his friend,won the big,prize.,N,No error.,,,6,47,15
+Spelling_1531,For your,convenience,sit,here.,N,No error.,,,3,27,11
+Spelling_1534,Curiousity,is often,seen as a,gift.,A,Error: 'Curiousity' should be 'Curiosity' (osity).,,,5,32,10
+Spelling_154,The gold jewellry,sparkled in the,bright sunlight,today.,A,Error: 'jewellry' should be 'jewellery' (lle).,,,6,53,17
+Spelling_1540,It was,disasterous,for,him.,B,Error: 'disasterous' should be 'disastrous' (trous).,,,3,24,11
+Spelling_1546,It is,excelent,work,done.,B,Error: 'excelent' should be 'excellent' (double l).,,,4,22,8
+Spelling_155,His knowlege of,science is very,good for his,age.,A,Error: 'knowlege' should be 'knowledge' (led).,,,4,46,15
+Spelling_1551,He is,fourty,today,too.,B,Error: 'fourty' should be 'forty' (no u).,,,4,20,6
+Spelling_1553,The goverment,sat,down,now.,A,Error: 'goverment' should be 'government' (nm).,,,3,24,13
+Spelling_156,The science labratory,is full of,chemicals and test,tubes.,B,Error: 'labratory' should be 'laboratory' (ora).,,,6,55,21
+Spelling_1563,I have,liesure,time,too.,B,Error: 'liesure' should be 'leisure' (ei).,,,4,21,7
+Spelling_157,The english language,can be difficult,to learn to,speak.,N,No error.,,,6,53,20
+Spelling_1572,It will,occur,again,now.,N,No error.,,,4,21,7
+Spelling_1579,His proffesion,used to,be a,vet.,A,Error: 'proffesion' should be 'profession' (fess).,,,4,29,14
+Spelling_158,I enjoy my,liesure time by,reading books at,home.,B,Error: 'liesure' should be 'leisure' (ei).,,,5,46,16
+Spelling_159,The lenth of,the swimming pool,is twenty five,metres.,A,Error: 'lenth' should be 'length' (gth).,,,7,50,17
+Spelling_1592,Sign your,signiture,here,now.,B,Error: 'signiture' should be 'signature' (nat).,,,4,26,9
+Spelling_1593,I am,sincerly,glad,now.,B,Error: 'sincerly' should be 'sincerely' (ely).,,,4,20,8
+Spelling_160,He acts as,a liason between,the school and,parents.,B,Error: 'liason' should be 'liaison' (iai).,,,8,48,16
+Spelling_161,The local libary,is a quiet,place to do,homework.,B,Error: 'libary' should be 'library' (bra).,,,9,46,16
+Spelling_162,The lightening flashed,across the dark,sky during the,storm.,A,Error: 'lightening' should be 'lightning' (ning).,,,6,57,22
+Spelling_163,She took it,litterally when I,said break a,leg.,B,Error: 'litterally' should be 'literally' (lit).,,,4,44,17
+Spelling_1638,It is,autum,time,now.,B,Error: 'autum' should be 'autumn' (mn).,,,4,18,5
+Spelling_164,Did you loose,your keys on,the way home,today?,B,Error: 'loose' should be 'lose' (one o).,,,6,43,13
+Spelling_1644,It is,a bargin,price,now.,B,Error: 'bargin' should be 'bargain' (gain).,,,4,22,8
+Spelling_1645,Basicly,I am,done,now.,A,Error: 'Basicly' should be 'Basically' (ally).,,,4,19,7
+Spelling_1647,In the,begining,it was,bad.,B,Error: 'begining' should be 'beginning' (nn).,,,4,24,8
+Spelling_165,Car maintainance is,important to keep,your vehicle safe,running.,A,Error: 'maintainance' should be 'maintenance' (ten).,,,8,61,19
+Spelling_1650,Have a,biscut,with,tea.,A,Error: 'biscut' should be 'biscuit' (cuit).,,,4,20,6
+Spelling_1654,I can,breathe,well,now.,N,No error.,,,4,20,7
+Spelling_166,It was a,marvellous day out,at the seaside,resort.,N,No error.,,,7,47,18
+Spelling_1661,The captians,are,here,now.,A,Error: 'captians' should be 'captains' (tain).,,,3,23,12
+Spelling_167,The doctor prescribed,medecine to help,cure the bad,cough.,B,Error: 'medecine' should be 'medicine' (dic).,,,6,55,21
+Spelling_1678,He is,a citezen,here,too.,B,Error: 'citezen' should be 'citizen' (tiz).,,,4,22,9
+Spelling_1679,Wash the,clothes,now,please.,N,No error.,,,3,25,8
+Spelling_168,The cows grazed,in the green,medow all day,long.,C,Error: 'medow' should be 'meadow' (ead).,,,5,45,15
+Spelling_1683,He is,comming,soon,now.,B,Error: 'comming' should be 'coming' (ming).,,,4,20,7
+Spelling_1685,The comittee,sat,down,now.,A,Error: 'comittee' should be 'committee' (mm).,,,3,23,12
+Spelling_169,The new millenium,was celebrated all,over the world,loudly.,B,Error: 'millenium' should be 'millennium' (nn).,,,7,56,18
+Spelling_1690,I am,completely,done,now.,N,No error.,,,4,22,10
+Spelling_170,She collects minature,dolls for her,dolls house at,home.,A,Error: 'minature' should be 'miniature' (nia).,,,5,53,21
+Spelling_1700,It is,continious,rain,now.,B,Error: 'continious' should be 'continuous' (nuo).,,,4,23,10
+Spelling_1703,I will,corespond,with,you.,B,Error: 'corespond' should be 'correspond' (rr).,,,4,23,9
+Spelling_171,The puppy is,very mischevious and,chews everything in,sight.,B,Error: 'mischevious' should be 'mischievous' (vous).,,,6,57,20
+Spelling_1713,I will,decide,soon,now.,N,No error.,,,4,20,6
+Spelling_172,There is a,box of misellaneous,items in the,garage.,B,Error: 'misellaneous' should be 'miscellaneous' (sc).,,,7,48,19
+Spelling_173,My leg muscle,aches after running,so far yesterday,morning.,N,No error.,,,8,56,19
+Spelling_174,It was a,misterious sound that,came from the,attic.,B,Error: 'misterious' should be 'mysterious' (mys).,,,6,48,21
+Spelling_1742,I have,eight,pens,now.,N,No error.,,,4,19,6
+Spelling_1743,I have,eighty,coins,now.,N,No error.,,,4,21,6
+Spelling_175,It is neccessary,to drink water,every single day,regularly.,B,Error: 'neccessary' should be 'necessary' (cess).,,,10,56,16
+Spelling_1750,I like,entertinment,shows,now.,B,Error: 'entertinment' should be 'entertainment' (tain).,,,4,27,12
+Spelling_1758,Do your,excercise,now,too.,B,Error: 'excercise' should be 'exercise' (exe).,,,3,23,9
+Spelling_176,My next door,neigbour is very,friendly and helpful,always.,B,Error: 'neigbour' should be 'neighbour' (ghb).,,,7,55,20
+Spelling_1768,It is,extream,cold,now.,B,Error: 'extream' should be 'extreme' (eme).,,,4,20,7
+Spelling_177,My sister's daughter,is my neice,and she is,five.,B,Error: 'neice' should be 'niece' (ie).,,,5,46,20
+Spelling_178,There are ninty,pages in this,book to read,tonight.,A,Error: 'ninty' should be 'ninety' (nety).,,,8,48,15
+Spelling_180,The fly was,a nuesance buzzing,around the food,plate.,B,Error: 'nuesance' should be 'nuisance' (uis).,,,6,50,18
+Spelling_1800,Check your,identity,now,too.,N,No error.,,,3,25,10
+Spelling_181,The dog was,obedient and sat,when he was,told.,N,No error.,,,5,43,16
+Spelling_1814,I have,liesure,time,too.,B,Error: 'liesure' should be 'leisure' (ei).,,,4,21,7
+Spelling_182,On this occassion,we will allow,you to leave,early.,B,Error: 'occassion' should be 'occasion' (cas).,,,6,48,17
+Spelling_1829,It is,misellaneous,now,too.,B,Error: 'misellaneous' should be 'miscellaneous' (sc).,,,3,24,12
+Spelling_183,The accident occured,on the motorway,late last night,driving.,B,Error: 'occured' should be 'occurred' (rr).,,,8,58,20
+Spelling_184,The oppisite of,hot is cold,as everyone knows,well.,A,Error: 'oppisite' should be 'opposite' (osi).,,,5,48,17
+Spelling_185,This is an,origional painting by,a famous artist,here.,B,Error: 'origional' should be 'original' (gin).,,,5,51,21
+Spelling_186,Draw a paralel,line next to,the first one,carefully.,B,Error: 'paralel' should be 'parallel' (lle).,,,10,49,14
+Spelling_1863,It is,my posession,now,so.,B,Error: 'posession' should be 'possession' (ssess).,,,3,23,12
+Spelling_187,The members of,parlament voted on,the new law,today.,B,Error: 'parlament' should be 'parliament' (rli).,,,6,49,18
+Spelling_1877,He spoke,publically,now,too.,B,Error: 'publically' should be 'publicly' (lic).,,,3,25,10
+Spelling_188,Not a single,partical of dust,was left on,shelf.,B,Error: 'partical' should be 'particle' (cle).,,,6,45,16
+Spelling_189,Is there any,particuler reason why,you are late,today?,B,Error: 'particuler' should be 'particular' (lar).,,,6,51,21
+Spelling_190,The cricket pavillion,needs painting before,the season starts,soon.,B,Error: 'pavillion' should be 'pavilion' (vil).,,,5,64,21
+Spelling_1901,The comittee,decided to,postpone the,meeting.,A,"Error: 'comittee' should be 'committee' (double m, double t, double e).",,,8,42,12
+Spelling_1902,It is,neccessary to,complete the,form now.,B,"Error: 'neccessary' should be 'necessary' (one c, double s).",,,5,39,13
+Spelling_1903,We must,seperate the,recyclable items,carefully.,B,Error: 'seperate' should be 'separate' (par).,,,7,45,16
+Spelling_1904,There was,a definate,improvement in,his work.,B,Error: 'definate' should be 'definite' (nite).,,,9,42,14
+Spelling_1905,Please do,not embarass,your sister,in public.,B,"Error: 'embarass' should be 'embarrass' (double r, double s).",,,9,42,12
+Spelling_1906,The rhythm,of the,drumming was,very fast.,N,No error.,,,6,38,12
+Spelling_1907,He hoped,to aquire,new skills,at college.,B,Error: 'aquire' should be 'acquire' (cq).,,,8,38,11
+Spelling_1908,His concience,would not,let him,lie.,A,Error: 'concience' should be 'conscience' (sci).,,,4,33,13
+Spelling_1909,The car,required some,urgent,maintainance.,D,Error: 'maintainance' should be 'maintenance' (ten).,,,6,39,13
+Spelling_191,You must be,persistant if you,want to succeed,here.,B,Error: 'persistant' should be 'persistent' (ent).,,,5,48,17
+Spelling_1910,It was,a great,priviledge to,meet him.,C,Error: 'priviledge' should be 'privilege' (no d).,,,6,35,13
+Spelling_1911,They had,a feirce,argument about,the rules.,B,Error: 'feirce' should be 'fierce' (ie).,,,8,40,14
+Spelling_1912,The dog,was desparate,for a,drink.,B,Error: 'desparate' should be 'desperate' (per).,,,5,31,13
+Spelling_1913,The library,is a,quiet place,to study.,N,No error.,,,4,35,11
+Spelling_1914,The goverment,introduced a,new tax,law.,A,Error: 'goverment' should be 'government' (nm).,,,4,36,13
+Spelling_1915,We walked,accross the,bridge to,the park.,B,Error: 'accross' should be 'across' (one c).,,,9,38,11
+Spelling_1916,The lightening,struck the,tall oak,tree.,A,Error: 'lightening' should be 'lightning' (ning).,,,5,37,14
+Spelling_1917,I am,truely sorry,for my,mistake.,B,Error: 'truely' should be 'truly' (no e).,,,4,30,12
+Spelling_1918,The view,was beatiful,from the,mountain.,B,Error: 'beatiful' should be 'beautiful' (eau).,,,8,37,12
+Spelling_1919,He received,a parcel,from his,uncle.,N,No error.,,,6,33,11
+Spelling_192,All personnel must,wear a badge,while in the,building.,N,No error (Personnel = staff).,,,9,51,18
+Spelling_1920,The calander,on the,wall is,old.,A,Error: 'calander' should be 'calendar' (dar).,,,4,29,12
+Spelling_1921,Wait untill,the rain,stops,falling.,B,Error: 'untill' should be 'until' (one l).,,,5,32,11
+Spelling_1922,The doctor,prescribed,some,medecine.,D,Error: 'medecine' should be 'medicine' (dic).,,,4,33,10
+Spelling_1923,I belieive,that he,is telling,the truth.,A,Error: 'belieive' should be 'believe' (ie).,,,7,37,10
+Spelling_1924,The ballon,floated high,into the,sky.,A,Error: 'ballon' should be 'balloon' (double l).,,,4,34,12
+Spelling_1925,It is,imporant to,listen to,instructions.,B,Error: 'imporant' should be 'important' (tan).,,,5,38,13
+Spelling_1926,The enviroment,needs to,be,protected.,A,Error: 'enviroment' should be 'environment' (nm).,,,2,34,14
+Spelling_1927,She was,suprised by,the sudden,noise.,B,Error: 'suprised' should be 'surprised' (sur).,,,6,34,11
+Spelling_1928,The flowers,bloom in,the,spring.,N,No error.,,,3,29,11
+Spelling_1929,Tommorow,we will,go to,the beach.,A,Error: 'Tommorow' should be 'Tomorrow' (double r).,,,5,30,10
+Spelling_193,I tried to,persuade him to,come with us,later.,N,No error.,,,6,43,15
+Spelling_1930,Science is,my favourite,subject,at school.,N,No error.,,,7,39,12
+Spelling_1931,The soldier,wore a,uniform of,green.,N,No error.,,,6,33,11
+Spelling_1932,Please,discibe,what you,saw there.,B,Error: 'discibe' should be 'describe' (des).,,,6,31,10
+Spelling_1933,The sun,disapeared,behind the,clouds.,B,Error: 'disapeared' should be 'disappeared' (double p).,,,7,34,10
+Spelling_1934,It is,intresting,to learn,history.,B,Error: 'intresting' should be 'interesting' (eres).,,,5,31,10
+Spelling_1935,The vegtable,soup was,very,tasty.,A,Error: 'vegtable' should be 'vegetable' (get).,,,4,30,12
+Spelling_1936,I hurt,my sholder,playing,rugby.,B,Error: 'sholder' should be 'shoulder' (oul).,,,6,29,10
+Spelling_1937,The tempreture,dropped,below,freezing.,A,Error: 'tempreture' should be 'temperature' (era).,,,5,35,14
+Spelling_1938,We watched,a foriegn,film last,night.,B,Error: 'foriegn' should be 'foreign' (ei).,,,6,34,10
+Spelling_1939,The cat,chased a,pidgeon in,the garden.,C,Error: 'pidgeon' should be 'pigeon' (no d).,,,7,36,11
+Spelling_194,Digging the garden,is hard physicle,work for me,now.,B,Error: 'physicle' should be 'physical' (cal).,,,4,49,18
+Spelling_1940,The scissors,were very,sharp,indeed.,N,No error.,,,5,33,12
+Spelling_1941,The jewellry,was kept,in a,safe.,A,Error: 'jewellry' should be 'jewellery' (ller).,,,4,29,12
+Spelling_1942,I accidentally,broke the,blue,vase.,N,No error.,,,4,32,14
+Spelling_1943,The busines,was doing,very,well.,A,Error: 'busines' should be 'business' (double s).,,,4,29,11
+Spelling_1944,We saw,a misterious,figure in,the fog.,B,Error: 'misterious' should be 'mysterious' (mys).,,,6,35,12
+Spelling_1945,The height,of the,tower is,huge.,N,No error.,,,5,29,10
+Spelling_1946,He tryed,to lift,the heavy,box.,A,Error: 'tryed' should be 'tried' (ied).,,,4,28,9
+Spelling_1947,The village,comittee,met on,Monday.,B,Error: 'comittee' should be 'committee' (double m).,,,6,32,11
+Spelling_1948,She was,disapointed,with her,score.,B,Error: 'disapointed' should be 'disappointed' (double p).,,,6,32,11
+Spelling_1949,The professor,gave a,long,lecture.,N,No error.,,,4,31,13
+Spelling_195,Would you like,a peice of,cake with your,tea?,B,Error: 'peice' should be 'piece' (ie).,,,4,42,14
+Spelling_1950,Occasionly,we go,to the,cinema.,A,Error: 'Occasionly' should be 'Occasionally' (ally).,,,5,28,10
+Spelling_1951,The restarant,served,italian,food.,A,Error: 'restarant' should be 'restaurant' (tau).,,,5,31,13
+Spelling_1952,I need,a reciept,for this,item.,B,Error: 'reciept' should be 'receipt' (ei).,,,5,28,9
+Spelling_1953,The bicycle,tyre had,a slow,puncture.,N,No error.,,,6,34,11
+Spelling_1954,He was,succesful,in his,exam.,B,Error: 'succesful' should be 'successful' (double s).,,,5,26,9
+Spelling_1955,The gaurd,stood by,the main,gate.,A,Error: 'gaurd' should be 'guard' (ua).,,,5,30,9
+Spelling_1956,We have,a liesure,centre,nearby.,B,Error: 'liesure' should be 'leisure' (ei).,,,6,29,9
+Spelling_1957,The queue,was very,long,today.,N,No error.,,,4,27,9
+Spelling_1958,It was,begining,to rain,heavily.,B,Error: 'begining' should be 'beginning' (double n).,,,6,29,8
+Spelling_1959,The parlament,debated,the new,law.,A,Error: 'parlament' should be 'parliament' (ia).,,,4,31,13
+Spelling_196,The local poltician,gave a speech,in the town,hall.,A,Error: 'poltician' should be 'politician' (oli).,,,5,48,19
+Spelling_1960,I am,sincerly,grateful,to you.,B,Error: 'sincerly' should be 'sincerely' (ely).,,,4,27,8
+Spelling_1961,The referee,blew his,whistle,loudly.,N,No error.,,,7,33,11
+Spelling_1962,It was,a bizzare,event,to see.,B,"Error: 'bizzare' should be 'bizarre' (one z, double r).",,,5,27,9
+Spelling_1963,The cemetery,was old,and,spooky.,N,No error.,,,3,29,12
+Spelling_1964,He did,not posess,the right,skills.,B,Error: 'posess' should be 'possess' (double s).,,,6,32,10
+Spelling_1965,The vacume,cleaner,was very,noisy.,A,Error: 'vacume' should be 'vacuum' (uu).,,,6,31,10
+Spelling_1966,I prefer,vanilla,yogurt,to strawberry.,N,No error.,,,6,35,14
+Spelling_1967,The twelth,man was,ready to,play.,A,Error: 'twelth' should be 'twelfth' (fth).,,,5,30,10
+Spelling_1968,We saw,a beatle,crawling,on a leaf.,B,Error: 'beatle' should be 'beetle' (ee).,,,6,32,10
+Spelling_1969,The witch,cast a,spell on,him.,N,No error.,,,4,27,9
+Spelling_197,The ball is,now in my,posession so I,win.,C,Error: 'posession' should be 'possession' (ssess).,,,4,38,14
+Spelling_1970,The medow,was full,of wild,flowers.,A,Error: 'medow' should be 'meadow' (ea).,,,7,32,9
+Spelling_1971,He wrote,a humerous,story,for us.,B,Error: 'humerous' should be 'humorous' (or).,,,5,30,10
+Spelling_1972,The plurals,of some,nouns are,tricky.,N,No error.,,,7,34,11
+Spelling_1973,The driver,drove the,veichle,well.,C,Error: 'veichle' should be 'vehicle' (hi).,,,5,31,10
+Spelling_1974,I am,confidant,that I,passed.,B,Error: 'confidant' (noun) should be 'confident' (adj).,,,4,26,9
+Spelling_1975,The autum,leaves,were,falling.,A,Error: 'autum' should be 'autumn' (mn).,,,4,27,9
+Spelling_1976,It was,a wierd,sound to,hear.,B,Error: 'wierd' should be 'weird' (ei).,,,5,26,8
+Spelling_1977,The cieling,needed to,be painted,white.,A,Error: 'cieling' should be 'ceiling' (ei).,,,6,36,11
+Spelling_1978,I accept,your kind,offer of,help.,N,No error.,,,5,30,9
+Spelling_1979,The artic,is a,very cold,place.,A,Error: 'artic' should be 'arctic' (rct).,,,4,28,9
+Spelling_198,Is it posible,to finish the,work by five,o'clock?,B,Error: 'posible' should be 'possible' (ss).,,,8,46,13
+Spelling_1980,We need,some new,equiptment,soon.,C,Error: 'equiptment' should be 'equipment' (ment).,,,5,30,10
+Spelling_1981,The monkey,is a,mischevious,animal.,C,Error: 'mischevious' should be 'mischievous' (iev).,,,4,32,11
+Spelling_1982,The minature,poodle,was very,cute.,A,Error: 'minature' should be 'miniature' (nia).,,,5,31,12
+Spelling_1983,She has,a lot of,patience,with kids.,N,No error.,,,7,33,10
+Spelling_1984,The public,libary is,closed,today.,B,Error: 'libary' should be 'library' (bra).,,,6,31,10
+Spelling_1985,We had,a deliscious,meal last,night.,B,Error: 'deliscious' should be 'delicious' (lici).,,,6,33,12
+Spelling_1986,The army,sergent,shouted,orders.,B,Error: 'sergent' should be 'sergeant' (gea).,,,7,29,8
+Spelling_1987,It was,a tragedy,that he,lost.,N,No error.,,,5,27,9
+Spelling_1988,The yatch,sailed,across the,bay.,A,Error: 'yatch' should be 'yacht' (cht).,,,4,29,10
+Spelling_1989,I am,grateful,for your,help.,N,No error.,,,4,25,8
+Spelling_199,We ate baked,potatos with cheese,for dinner last,night.,B,Error: 'potatos' should be 'potatoes' (oes).,,,6,52,19
+Spelling_1990,The ninty,students,went on,a trip.,A,Error: 'ninty' should be 'ninety' (ne).,,,7,31,9
+Spelling_1991,The secretary,typed,the letter,fast.,N,No error.,,,5,33,13
+Spelling_1992,The ryhme,was easy,to,remember.,A,Error: 'ryhme' should be 'rhyme' (rhy).,,,2,28,9
+Spelling_1993,I promise,to be,obedient,always.,N,No error.,,,5,29,9
+Spelling_1994,The unneccessary,noise was,annoying,us.,A,Error: 'unneccessary' should be 'unnecessary' (one c).,,,3,36,16
+Spelling_1995,The broccoli,was cooked,perfectly,today.,N,No error.,,,6,37,12
+Spelling_1996,We saw,a phisical,change in,him.,B,Error: 'phisical' should be 'physical' (phy).,,,4,29,10
+Spelling_1997,The tomatos,were red,and,ripe.,A,Error: 'tomatos' should be 'tomatoes' (oes).,,,3,27,11
+Spelling_1998,It is,not posible,to go,there.,B,Error: 'posible' should be 'possible' (double s).,,,5,27,11
+Spelling_1999,The amateur,actor was,very,good.,N,No error.,,,4,29,11
+Spelling_200,I prefered the,blue shirt to,the red one,yesterday.,A,Error: 'prefered' should be 'preferred' (rr).,,,10,48,14
+Spelling_2000,The garantee,lasts for,one,year.,A,Error: 'garantee' should be 'guarantee' (gua).,,,3,29,12
+Spelling_2001,It is,essential,to be,polite.,N,No error.,,,5,26,9
+Spelling_2002,The absence,of rain,is a,worry.,N,No error.,,,4,28,11
+Spelling_2004,Is the,room,accesible,to all?,C,Error: 'accesible' should be 'accessible' (ssib).,,,4,26,9
+Spelling_2005,I accidently,dropped,the,plate.,A,Error: 'accidently' should be 'accidentally' (ally).,,,3,28,12
+Spelling_2006,We can,accommodate,your,friends.,N,No error.,,,4,29,11
+Spelling_2007,I will,accompany,you,there.,N,No error.,,,3,24,9
+Spelling_2009,I hope,to acheive,good,grades.,B,Error: 'acheive' should be 'achieve' (ie).,,,4,27,10
+Spelling_201,The preperation for,the party took,all day long,yesterday.,A,Error: 'preperation' should be 'preparation' (par).,,,10,55,19
+Spelling_2010,We walked,accross,the,field.,B,Error: 'accross' should be 'across' (one c).,,,3,25,9
+Spelling_2011,What is,your,adress,please?,C,Error: 'adress' should be 'address' (double d).,,,4,24,7
+Spelling_2012,He was,agressive,towards,us.,B,Error: 'agressive' should be 'aggressive' (double g).,,,3,25,9
+Spelling_2013,He is,an amature,player,now.,B,Error: 'amature' should be 'amateur' (eur).,,,4,25,10
+Spelling_2014,The ancient,ruins,are,safe.,N,No error.,,,3,24,11
+Spelling_2015,It is,apparant,he is,sad.,B,Error: 'apparant' should be 'apparent' (ent).,,,4,22,8
+Spelling_2016,His apperance,was,very,neat.,A,Error: 'apperance' should be 'appearance' (ear).,,,3,25,13
+Spelling_2017,I will,apply,for the,job.,N,No error.,,,4,22,7
+Spelling_2018,The arguement,was,very,loud.,A,Error: 'arguement' should be 'argument' (no e).,,,3,25,13
+Spelling_2019,The athalete,ran,very,fast.,A,Error: 'athalete' should be 'athlete' (thl).,,,3,24,12
+Spelling_202,It is a,priviledge to meet,such a famous,person.,B,Error: 'priviledge' should be 'privilege' (lege).,,,7,45,18
+Spelling_2020,Basicly,I am,ready,to go.,A,Error: 'Basicly' should be 'Basically' (ally).,,,4,22,7
+Spelling_2021,At the,begining,it was,fun.,B,Error: 'begining' should be 'beginning' (double n).,,,4,24,8
+Spelling_2023,Eat a,biscut,with,tea.,A,Error: 'biscut' should be 'biscuit' (cuit).,,,4,19,6
+Spelling_203,Teaching is a,rewarding proffesion for,those who like,children.,B,Error: 'proffesion' should be 'profession' (fess).,,,9,60,24
+Spelling_2036,He is,coming,home,soon.,N,No error.,,,4,20,6
+Spelling_2038,He is,completly,tired,out.,B,Error: 'completly' should be 'completely' (ely).,,,4,23,9
+Spelling_204,The university professer,taught us about,history and art,today.,B,Error: 'professer' should be 'professor' (sor).,,,6,60,24
+Spelling_2041,The council,met,today,here.,N,No error.,,,3,24,11
+Spelling_2044,It is,definate,that,he won.,B,Error: 'definate' should be 'definite' (ini).,,,4,24,8
+Spelling_2046,We must,develope,another,plan.,B,Error: 'develope' should be 'develop' (op).,,,5,27,8
+Spelling_2048,He will,disapear,soon,now.,B,Error: 'disapear' should be 'disappear' (pp).,,,4,23,8
+Spelling_205,His pronounciation of,the word was,very clear and,loud.,A,Error: 'pronounciation' should be 'pronunciation' (nun).,,,5,52,21
+Spelling_2050,It was,disasterous,news,today.,B,Error: 'disasterous' should be 'disastrous' (trous).,,,4,27,11
+Spelling_2053,Don't,embarass,your,family.,B,Error: 'embarass' should be 'embarrass' (rr).,,,4,24,8
+Spelling_2056,Do not,exagerate,the,facts.,B,Error: 'exagerate' should be 'exaggerate' (gg).,,,3,24,9
+Spelling_2058,It is,excelent,work,done.,B,Error: 'excelent' should be 'excellent' (ll).,,,4,22,8
+Spelling_2059,His existance,is sometimes,argued as,fact.,A,Error: 'existance' should be 'existence' (ence).,,,5,39,13
+Spelling_206,The news was,full of propoganda,during the long,war.,B,Error: 'propoganda' should be 'propaganda' (pag).,,,4,49,18
+Spelling_207,He apologised publically,for his mistake,in the news,paper.,B,Error: 'publically' should be 'publicly' (lic).,,,6,56,24
+Spelling_2073,We need,futher,help,now.,B,Error: 'futher' should be 'further' (fur).,,,4,21,7
+Spelling_2077,The goverment,met,today,here.,A,Error: 'goverment' should be 'government' (nm).,,,3,26,13
+Spelling_208,There was a,long queue at,the bus stop,today.,N,No error.,,,6,42,13
+Spelling_2086,The incedint,was,very,bad.,A,Error: 'incedint' should be 'incident' (ci).,,,3,23,12
+Spelling_2087,She is,independant,now,too.,B,Error: 'independant' should be 'independent' (ent).,,,3,24,11
+Spelling_209,It was quite,late when we,finally got home,yesterday.,N,No error.,,,10,50,16
+Spelling_2095,I have,liesure,time,now.,B,Error: 'liesure' should be 'leisure' (ei).,,,4,21,7
+Spelling_210,I am realy,sorry for breaking,your favourite toy,car.,B,Error: 'realy' should be 'really' (ll).,,,4,50,18
+Spelling_2100,I made,a lovely,cake,today.,N,No error.,,,4,24,8
+Spelling_2103,Take your,medicine,now,please.,N,No error.,,,3,27,9
+Spelling_2105,He is,mischevious,and,bad.,B,Error: 'mischevious' should be 'mischievous' (vous).,,,3,23,11
+Spelling_2106,It is,misellaneous,stuff,here.,B,Error: 'misellaneous' should be 'miscellaneous' (sc).,,,5,27,12
+Spelling_2108,My muscle,aches,an awful,lot.,N,No error.,,,4,26,9
+Spelling_211,Did you recieve,the letter I,sent you last,week?,B,Error: 'recieve' should be 'receive' (ei).,,,5,45,15
+Spelling_212,I recomend that,you read this,book because it,is good.,A,Error: 'recomend' should be 'recommend' (mm).,,,8,51,15
+Spelling_2127,The parlament,sat,down,then.,A,Error: 'parlament' should be 'parliament' (rli).,,,3,25,13
+Spelling_213,He refered to,his notes while,giving the long,speech.,A,Error: 'refered' should be 'referred' (rr).,,,7,50,15
+Spelling_214,Is this book,relevent to the,subject we are,studying?,B,Error: 'relevent' should be 'relevant' (vant).,,,9,50,15
+Spelling_2140,It is,my posession,now,so.,B,Error: 'posession' should be 'possession' (ssess).,,,3,23,12
+Spelling_215,He is a,very religous man,who goes to,church.,B,Error: 'religous' should be 'religious' (gious).,,,7,42,17
+Spelling_2154,He spoke,publically,now,too.,B,Error: 'publically' should be 'publicly' (lic).,,,3,25,10
+Spelling_216,Please rember to,lock the door,when you go,out.,B,Error: 'rember' should be 'remember' (mem).,,,4,44,16
+Spelling_217,The wire has,high resistence to,electricity flowing ,through it.,B,Error: 'resistence' should be 'resistance' (tan).,,,11,61,20
+Spelling_218,We ate at,a nice resturant,in the city,centre.,B,Error: 'resturant' should be 'restaurant' (tau).,,,7,43,16
+Spelling_219,The poem has,a simple ryhme,at the end,of lines.,B,Error: 'ryhme' should be 'rhyme' (rhy).,,,9,45,14
+Spelling_2194,He bit,his tounge,now,too.,B,Error: 'tounge' should be 'tongue' (gue).,,,3,23,10
+Spelling_2196,I am,truely,happy,now.,B,Error: 'truely' should be 'truly' (uly).,,,4,19,6
+Spelling_220,The dancers moved,to the rythm,of the loud,music.,B,Error: 'rythm' should be 'rhythm' (rhy).,,,6,46,17
+Spelling_2202,Eat your,vegtable,now,please.,B,Error: 'vegtable' should be 'vegetable' (get).,,,3,26,8
+Spelling_221,He made a,great sacrifise to,help his friend,win.,B,Error: 'sacrifise' should be 'sacrifice' (fice).,,,4,46,18
+Spelling_222,The school secratery,answered the phone,in the main,office.,A,Error: 'secratery' should be 'secretary' (ret).,,,7,56,20
+Spelling_2227,It is,an anual,thing,now.,B,Error: 'anual' should be 'annual' (nnu).,,,4,22,8
+Spelling_223,It makes no,sence to me,why he did,that.,B,Error: 'sence' should be 'sense' (se).,,,5,37,11
+Spelling_224,Keep the red,pens seperate from,the blue pens,please.,B,Error: 'seperate' should be 'separate' (par).,,,7,50,18
+Spelling_2249,It is,autum,leaves,now.,B,Error: 'autum' should be 'autumn' (tumn).,,,4,20,6
+Spelling_225,The castle was,under seige for,many months last,year.,B,Error: 'seige' should be 'siege' (ie).,,,5,50,16
+Spelling_2255,Keep your,ballance,now,too.,B,Error: 'ballance' should be 'balance' (lance).,,,3,24,9
+Spelling_226,I am sincerly,grateful for your,help with my,work.,B,Error: 'sincerly' should be 'sincerely' (ely).,,,5,47,17
+Spelling_227,My stomache aches,because I ate,too much food,today.,A,Error: 'stomache' should be 'stomach' (mach).,,,6,49,17
+Spelling_228,We have suficient,food for everyone,at the party,tonight.,B,Error: 'suficient' should be 'sufficient' (ffi).,,,8,54,17
+Spelling_2288,The chior,sang,well,now.,A,Error: 'chior' should be 'choir' (hoir).,,,4,21,9
+Spelling_229,This new rule,will supercede the,old one from,tomorrow.,B,Error: 'supercede' should be 'supersede' (sede).,,,9,52,18
+Spelling_2293,Clean the,clothes,now,please.,N,No error.,,,3,26,9
+Spelling_2297,He is,comming,soon,now.,B,Error: 'comming' should be 'coming' (oming).,,,4,20,7
+Spelling_2299,The comittee,sat,down,now.,A,Error: 'comittee' should be 'committee' (mittee).,,,3,23,12
+Spelling_230,It was a,nice suprise to,see you here,today.,B,Error: 'suprise' should be 'surprise' (sur).,,,6,41,15
+Spelling_2300,We can,communicate,now,well.,N,No error.,,,3,25,11
+Spelling_231,He has a,tatoo of a,lion on his,arm.,B,Error: 'tatoo' should be 'tattoo' (tt).,,,4,33,11
+Spelling_232,The water temperture,is very cold,in the swimming,pool.,B,Error: 'temperture' should be 'temperature' (era).,,,5,52,20
+Spelling_233,He has a,tendancy to be,late for school,often.,B,Error: 'tendancy' should be 'tendency' (ency).,,,6,43,15
+Spelling_234,I think therefor,I am said,the famous old,philosopher.,B,Error: 'therefor' should be 'therefore' (fore).,,,9,51,16
+Spelling_235,He stood on,the threshhold of,the door waiting,quietly.,B,Error: 'threshhold' should be 'threshold' (sh).,,,8,52,17
+Spelling_236,We will meet,tommorow morning at,ten o'clock sharp,here.,B,Error: 'tommorow' should be 'tomorrow' (rr).,,,5,53,19
+Spelling_237,I bit my,tounge while eating,my dinner last,night.,B,Error: 'tounge' should be 'tongue' (gue).,,,6,47,19
+Spelling_238,It was a,tragedy that the,ship sank in,sea.,N,No error.,,,4,40,16
+Spelling_239,I am truely,sorry for what,I said to,you.,B,Error: 'truely' should be 'truly' (uly).,,,4,38,14
+Spelling_240,It is the,twelth day of,the month of,June.,B,Error: 'twelth' should be 'twelfth' (fth).,,,5,39,13
+Spelling_241,The delay was,unforseen by the,staff at the,station.,B,Error: 'unforseen' should be 'unforeseen' (fore).,,,8,49,16
+Spelling_242,Unfortunatly we cannot,come to your,party on Saturday,night.,A,Error: 'Unfortunatly' should be 'Unfortunately' (ately).,,,6,57,22
+Spelling_243,Please wait untill,the bus stops,before you stand,up.,B,Error: 'untill' should be 'until' (til).,,,3,50,18
+Spelling_244,There is a,variaty of cakes,to choose from,here.,B,Error: 'variaty' should be 'variety' (iet).,,,5,45,16
+Spelling_245,Eat your vegtable,soup before it,gets too cold,now.,B,Error: 'vegtable' should be 'vegetable' (get).,,,4,48,17
+Spelling_246,The police veichle,drove fast down,the main road,today.,A,Error: 'veichle' should be 'vehicle' (hic).,,,6,52,18
+Spelling_247,That is a,wierd thing to,say to someone,nice.,B,Error: 'wierd' should be 'weird' (ei).,,,5,42,14
+Spelling_248,You can go,whereever you want,to go on,holiday.,B,Error: 'whereever' should be 'wherever' (ver).,,,8,44,18
+Spelling_249,Wich one of,these books do,you want to,read?,A,Error: 'Wich' should be 'Which' (Whi).,,,5,41,14
+Spelling_250,The bank withdrawl,machine is out,of order at,moment.,B,Error: 'withdrawl' should be 'withdrawal' (drawal).,,,7,50,18
+Spelling_251,Do not withold,information from the,police officers asking,you.,B,Error: 'withold' should be 'withhold' (hh).,,,4,60,22
+Spelling_252,He is writting,a letter to,his friend in,Spain.,A,Error: 'writting' should be 'writing' (writ).,,,6,44,14
+Spelling_253,The expensive yatch,sailed across the,ocean in the,summer.,A,Error: 'yatch' should be 'yacht' (cht).,,,7,55,19
+Spelling_254,The absence of,noise in the,library was very,nice.,N,No error.,,,5,47,16
+Spelling_255,We found an,abundence of blackberries,in the woods,today.,B,Error: 'abundence' should be 'abundance' (ance).,,,6,54,25
+Spelling_256,The toilet is,accesible for people,in wheelchairs to,use.,B,Error: 'accesible' should be 'accessible' (ssib).,,,4,54,20
+Spelling_257,I accidently broke,the window with,my football last,week.,A,Error: 'accidently' should be 'accidentally' (ally).,,,5,54,18
+Spelling_258,We can accommodate,five people in,our car for,trip.,N,No error.,,,5,48,18
+Spelling_259,I will accompany,you to the,shops if you,want.,N,No error.,,,5,43,16
+Spelling_260,He acted according,to the rules,of the school,game.,N,No error.,,,5,48,18
+Spelling_261,I want to,acheive high marks,in my exams,soon.,B,Error: 'acheive' should be 'achieve' (ie).,,,5,43,18
+Spelling_262,We swam accross,the river to,the other side,fast.,A,Error: 'accross' should be 'across' (ross).,,,5,46,15
+Spelling_263,My new adress,is on the,card I gave,you.,A,Error: 'adress' should be 'address' (ddress).,,,4,37,13
+Spelling_264,He was agressive,towards the other,players in the,match.,A,Error: 'agressive' should be 'aggressive' (ggr).,,,6,53,17
+Spelling_265,He is an,amature boxer who,trains at the,gym.,B,Error: 'amature' should be 'amateur' (ateur).,,,4,42,17
+Spelling_266,We visited the,ancient castle on,the hill last,year.,N,No error.,,,5,49,17
+Spelling_267,It became apparant,that he was,lying to us,all.,B,Error: 'apparant' should be 'apparent' (rent).,,,4,44,18
+Spelling_268,His apperance was,scruffy and he,needed a hair,cut.,A,Error: 'apperance' should be 'appearance' (pear).,,,4,48,17
+Spelling_269,I appreciate your,help with my,homework very much,thanks.,N,No error.,,,7,54,18
+Spelling_270,The arguement,started over a ,misunderstanding ,between friends.,A,Error: 'arguement' should be 'argument' (gument).,,,13,61,17
+Spelling_271,The young athlete,won the race,easily yesterday ,afternoon.,N,No error.,,,10,56,17
+Spelling_272,Basicly I think,we should go,home now it's,late.,A,Error: 'Basicly' should be 'Basically' (sically).,,,5,45,15
+Spelling_273,In the begining,the world was,created from nothing,empty.,B,Error: 'begining' should be 'beginning' (ginning).,,,6,54,20
+Spelling_274,I beleive that,it will rain,later this afternoon,today.,A,Error: 'beleive' should be 'believe' (lieve).,,,6,52,20
+Spelling_275,Would you like,a chocolate biscut,with your coffee,now?,B,Error: 'biscut' should be 'biscuit' (scuit).,,,4,52,18
+Spelling_276,It was a,bizzare ending to,a very strange,film.,B,Error: 'bizzare' should be 'bizarre' (zarre).,,,5,44,17
+Spelling_277,The fence marks,the boundry of,our garden property,line.,B,Error: 'boundry' should be 'boundary' (dary).,,,5,53,19
+Spelling_278,The business is,doing very well,this year making,money.,N,No error.,,,6,52,16
+Spelling_279,Check the calender,for the date,of your dental,appointment.,B,Error: 'calender' should be 'calendar' (endar).,,,12,56,18
+Spelling_280,The Carribean islands,are famous for,their beaches and,sun.,A,Error: 'Carribean' should be 'Caribbean' (ribbean).,,,4,56,21
+Spelling_281,Which catagory of,books do you,like reading the,best?,A,Error: 'catagory' should be 'category' (tegory).,,,5,50,17
+Spelling_282,The old cemetary,has many graves,dating back centuries,ago.,B,Error: 'cemetary' should be 'cemetery' (etery).,,,4,56,21
+Spelling_283,The weather is,very changeable at,this time of,year.,N,No error.,,,5,49,18
+Spelling_284,The school chior,sings hymns in,assembly every morning,early.,B,Error: 'chior' should be 'choir' (hoir).,,,6,58,22
+Spelling_285,The electrical circut,was broken so,the light failed,working.,B,Error: 'circut' should be 'circuit' (rcuit).,,,8,58,21
+Spelling_286,My work collegue,is off sick,today with the,flu.,B,Error: 'collegue' should be 'colleague' (league).,,,4,45,16
+Spelling_287,Add up the,numbers in the,left hand colum,correctly.,C,Error: 'colum' should be 'column' (olumn).,,,10,49,15
+Spelling_288,Are you comming,to the party,on Saturday night,please?,A,Error: 'comming' should be 'coming' (oming).,,,7,51,17
+Spelling_289,The planning comittee,rejected the new,building plans last,week.,B,Error: 'comittee' should be 'committee' (mittee).,,,5,61,21
+Spelling_290,He was completely,exhausted after the,long football match,played.,N,No error.,,,7,62,19
+Spelling_291,My concience is,clear because I,did nothing wrong,really.,A,Error: 'concience' should be 'conscience' (science).,,,7,54,17
+Spelling_292,He was concious,during the operation,on his leg,sadly.,B,Error: 'concious' should be 'conscious' (scious).,,,6,51,20
+Spelling_293,The controvesy over,the new road,continues to grow,daily.,A,Error: 'controvesy' should be 'controversy' (versy).,,,6,54,19
+Spelling_294,Please corespond with,the office by,letter or email,soon.,A,Error: 'corespond' should be 'correspond' (rrespond).,,,5,54,21
+Spelling_295,Do not critisise,others until you,look at yourself,first.,B,Error: 'critisise' should be 'criticise' (ticise).,,,6,54,16
+Spelling_296,My curiosity got,the better of,me and I,looked.,N,No error.,,,7,44,16
+Spelling_297,Do not decieve,people for your,own personal gain,ever.,B,Error: 'decieve' should be 'deceive' (ceive).,,,5,51,17
+Spelling_298,It is definate,that the school,will close tomorrow,early.,A,Error: 'definate' should be 'definite' (finite).,,,6,54,19
+Spelling_299,The food was,deliscious and we,ate every single,bite.,B,Error: 'deliscious' should be 'delicious' (licious).,,,5,50,17
+Spelling_300,Please discribe what,happened at the,scene of the,crime.,A,Error: 'discribe' should be 'describe' (describe).,,,6,53,20
+Spelling_301,He was in,a desparate state,after losing his,job.,B,Error: 'desparate' should be 'desperate' (sper).,,,4,46,17
+Spelling_302,We hope to,develope a cure,for the disease,soon.,B,Error: 'develope' should be 'develop' (lop).,,,5,45,15
+Spelling_303,It was a,disasterous start to,the holiday for,us.,B,Error: 'disasterous' should be 'disastrous' (strous).,,,3,46,20
+Spelling_304,Keep your disipline,and work hard,at your studies,daily.,B,Error: 'disipline' should be 'discipline' (scip).,,,6,53,19
+Spelling_305,Please do not,embarass your sister,in front of,friends.,B,Error: 'embarass' should be 'embarrass' (rrass).,,,8,52,20
+Spelling_306,We must protect,the enviroment from,pollution and waste,now.,B,Error: 'enviroment' should be 'environment' (ronm).,,,4,57,19
+Spelling_307,The gym equiptment,is brand new,and very expensive,too.,B,Error: 'equiptment' should be 'equipment' (quip).,,,4,52,18
+Spelling_308,Do not exagerate,your achievements on,your CV form,please.,B,Error: 'exagerate' should be 'exaggerate' (gg).,,,7,55,20
+Spelling_309,He is an,excelent student who,always gets top,marks.,B,Error: 'excelent' should be 'excellent' (ll).,,,6,49,20
+Spelling_310,The existance of,life on Mars,is not yet,proven.,A,Error: 'existance' should be 'existence' (t,,,7,45,16
+Spelling_315,The audience,clapped,loud,now.,N,No error.,,,4,27,12
+Spelling_316,The author,wrote,a crime,book.,N,No error.,,,5,27,10
+Spelling_317,It is,autumn,time,now.,N,No error.,,,4,19,6
+Spelling_322,It is,awful,news,today.,N,No error.,,,4,20,6
+Spelling_324,The baby,cries a,lot when,hungry,N,No error.,,,6,29,8
+Spelling_331,The ball,rolled,away,fast.,N,No error.,,,4,23,8
+Spelling_334,The band,played,loud,music.,N,No error.,,,4,24,8
+Spelling_336,It was,a bargain,price,now.,N,No error.,,,4,24,9
+Spelling_356,Better,late,than,never.,N,No error.,,,4,20,6
+Spelling_360,The bird,sang,a beautiful ,song.,N,No error.,,,4,29,12
+Spelling_373,The boat,sailed,away,fast.,N,No error.,,,4,23,8
+Spelling_387,My brain,works,well,now.,N,No error.,,,4,21,8
+Spelling_388,The branch,broke,off,tree.,N,No error.,,,3,23,10
+Spelling_394,I can,breathe,well,now.,N,No error.,,,4,20,7
+Spelling_401,The hotel offered,excellent accomadation ,for the wedding ,guests last night.,B,"Error: 'accomadation' should be 'accommodation' (double c, double m).",,,16,74,23
+Spelling_402,Winning the trophy,was a great,acheivement for the,whole team.,C,Error: 'acheivement' should be 'achievement' (ie).,,,11,59,19
+Spelling_403,He walked accross,the busy street,without looking left,or right.,A,Error: 'accross' should be 'across' (one c).,,,9,61,20
+Spelling_404,Please write your,current address on,the form provided,below.,N,No error.,,,6,58,18
+Spelling_405,The dog became,agressive when the,stranger approached the,garden gate.,B,Error: 'agressive' should be 'aggressive' (double g).,,,12,67,23
+Spelling_406,Although he is,an amature he,plays like a,professional.,B,Error: 'amature' should be 'amateur' (eur).,,,12,52,14
+Spelling_407,We explored the,ancient castle ruins,on the top,of the hill.,N,No error.,,,10,57,20
+Spelling_408,It became apparant,that we had,missed the last,train home.,A,Error: 'apparant' should be 'apparent' (ent).,,,11,55,18
+Spelling_409,His sudden apperance,at the party,surprised all of,us greatly.,A,Error: 'apperance' should be 'appearance' (pear).,,,11,59,20
+Spelling_410,I appreciate the,effort you have,put into this,project.,N,No error.,,,8,52,16
+Spelling_411,The heated arguement,between the neighbours,lasted for over,an hour.,A,Error: 'arguement' should be 'argument' (no e).,,,8,65,22
+Spelling_412,The olympic athalete,broke the world,record in the,final race.,A,Error: 'athalete' should be 'athlete' (thl).,,,11,59,20
+Spelling_413,Basicly we need,to start the,whole project again,from scratch.,A,Error: 'Basicly' should be 'Basically' (ally).,,,12,59,19
+Spelling_414,At the begining,of the story,the hero lives,in poverty.,A,Error: 'begining' should be 'beginning' (double n).,,,11,52,15
+Spelling_415,I truly beleive,that honesty is,the best policy,in life.,A,Error: 'beleive' should be 'believe' (ie).,,,8,53,15
+Spelling_416,She ate a,chocolate biscut with,her cup of,tea.,B,Error: 'biscut' should be 'biscuit' (cuit).,,,4,44,21
+Spelling_417,It was a,bizzare coincidence that,we both wore,red hats.,B,"Error: 'bizzare' should be 'bizarre' (one z, double r).",,,8,53,24
+Spelling_418,The river marks,the boundry between,the two large,counties.,B,Error: 'boundry' should be 'boundary' (ary).,,,9,56,19
+Spelling_419,Take a deep,breath and try,to relax your,muscles.,N,No error.,,,8,46,14
+Spelling_420,I cannot breathe,properly in this,dusty and smoky,room.,N,No error.,,,5,52,16
+Spelling_421,The scientist had,a briliant idea,that solved the,problem.,B,Error: 'briliant' should be 'brilliant' (double l).,,,8,55,17
+Spelling_422,Eat your brocoli,because it is,full of healthy,vitamins.,A,Error: 'brocoli' should be 'broccoli' (double c).,,,9,53,16
+Spelling_423,He runs a,succesful buisness ,selling cars to ,local people.,B,Error: 'buisness' should be 'business' (usi). Also 'succesful' is wrong but B covers the segment.,,,9,57,19
+Spelling_424,Check the calender,to see when,the next bank,holiday is.,A,Error: 'calender' should be 'calendar' (dar).,,,11,53,18
+Spelling_425,We went to,the Carribean for,our summer holiday,this year.,B,Error: 'Carribean' should be 'Caribbean' (ribb).,,,10,55,18
+Spelling_426,Which catagory does,this particular item,belong to in,the list?,A,Error: 'catagory' should be 'category' (teg).,,,9,60,20
+Spelling_427,The old cemetary,looked spooky in,the pale moonlight,tonight.,A,Error: 'cemetary' should be 'cemetery' (ery).,,,8,58,18
+Spelling_428,The weather is,very changeable at,this time of,year.,N,No error.,,,5,49,18
+Spelling_429,He showed great,charactor by admitting,his mistake to,everyone.,A,Error: 'charactor' should be 'character' (rac).,,,9,60,22
+Spelling_430,The police cheif,gave a statement,to the press,yesterday.,A,Error: 'cheif' should be 'chief' (ie).,,,10,54,16
+Spelling_431,The school chior,sang beautifully at,the christmas concert,service.,A,Error: 'chior' should be 'choir' (oir).,,,8,64,21
+Spelling_432,Smoking a cigerette,is bad for,your lungs and,health.,A,Error: 'cigerette' should be 'cigarette' (gar).,,,7,50,19
+Spelling_433,We went to,the cinama to,see the new,film.,B,Error: 'cinama' should be 'cinema' (nema).,,,5,39,13
+Spelling_434,The electrical circut,failed during the,storm last night,suddenly.,A,Error: 'circut' should be 'circuit' (cuit).,,,9,63,21
+Spelling_435,He is a,law abiding citezen,who always pays,his taxes.,B,Error: 'citezen' should be 'citizen' (tiz).,,,7,51,19
+Spelling_436,My work collegue,is off sick,with the flu,today.,A,Error: 'collegue' should be 'colleague' (eag).,,,6,45,16
+Spelling_437,Add the numbers,in the right,hand colum up,carefully.,C,Error: 'colum' should be 'column' (umn).,,,10,50,15
+Spelling_438,Are you comming,to the party,on Saturday night,please?,A,Error: 'comming' should be 'coming' (one m).,,,7,51,17
+Spelling_439,He did not,commit the crime,he was accused,of.,N,No error.,,,3,43,16
+Spelling_441,We must communicate,our ideas clearly,to the whole,team.,N,No error.,,,5,53,19
+Spelling_442,The local comunity,raised money for,the new park,playground.,A,Error: 'comunity' should be 'community' (double m).,,,11,57,18
+Spelling_443,The swimming compitition,was held at,the local leisure,centre.,A,Error: 'compitition' should be 'competition' (pet).,,,7,59,24
+Spelling_444,I am completely,exhausted after that,long run this,morning.,N,No error.,,,8,56,20
+Spelling_445,My concience is,clear regarding the,incident at school,today.,A,Error: 'concience' should be 'conscience' (sci).,,,6,58,19
+Spelling_446,He was concious,throughout the whole,medical procedure ,yesterday.,A,Error: 'concious' should be 'conscious' (sci).,,,10,63,20
+Spelling_447,The plan was,concieved by the,manager many years,ago.,B,Error: 'concieved' should be 'conceived' (cei).,,,4,50,18
+Spelling_448,The weather condition,was too bad,for the plane,to fly.,N,No error.,,,7,52,21
+Spelling_449,I am confidant,that I will,pass the exam,easily.,A,Error: 'confidant' (noun) should be 'confident' (adj).,,,7,45,14
+Spelling_450,He has a,clear conscience about,his actions in,the past.,N,No error.,,,8,53,22
+Spelling_451,The patient was,conscious when the,doctor arrived at,the ward.,N,No error.,,,9,59,18
+Spelling_452,The continious noise,from the road,kept me awake,all night.,A,Error: 'continious' should be 'continuous' (nuo).,,,10,56,20
+Spelling_453,There was much,controvesy regarding the,referee's decision today,sadly.,B,Error: 'controvesy' should be 'controversy' (ver).,,,6,68,24
+Spelling_454,For your convenience,the shop is,open seven days,a week.,N,No error.,,,7,53,20
+Spelling_455,Please corespond with,us via email,if you have,questions.,A,Error: 'corespond' should be 'correspond' (rr).,,,10,54,21
+Spelling_456,The city council,meets every month,to discuss local,issues.,N,No error.,,,7,56,17
+Spelling_457,He acted as,defence counsel during,the long trial,case.,N,No error.,,,5,52,22
+Spelling_458,The soldier was,very corageous in,the heat of,battle.,B,Error: 'corageous' should be 'courageous' (our).,,,7,50,17
+Spelling_459,Always be courtious,to your elders,and speak very,politely.,A,Error: 'courtious' should be 'courteous' (teous).,,,9,56,19
+Spelling_460,Do not critisise,others until you,are perfect yourself,please.,A,Error: 'critisise' should be 'criticise' (tic).,,,7,59,20
+Spelling_461,His curiosity led,him to open,the mysterious locked,box.,N,No error.,,,4,53,21
+Spelling_462,Use a measuring,cylannder to pour,the liquid exactly,out.,A,Error: 'cylannder' should be 'cylinder' (cyl).,,,4,54,18
+Spelling_463,Do not try,to decieve me,with your silly,lies.,B,Error: 'decieve' should be 'deceive' (cei).,,,5,43,15
+Spelling_464,I must decide,which subject to,study at university,soon.,N,No error.,,,5,53,19
+Spelling_465,It is a,definate fact that,the earth is,round.,A,Error: 'definate' should be 'definite' (ini).,,,6,43,18
+Spelling_466,The food was,deliscious and we,ate every single,bit.,B,Error: 'deliscious' should be 'delicious' (licious).,,,4,49,17
+Spelling_467,We began to,descend the mountain,as the sun,set.,N,No error.,,,4,45,20
+Spelling_468,Please discribe the,man you saw,leaving the shop,quickly.,A,Error: 'discribe' should be 'describe' (des).,,,8,54,19
+Spelling_469,He gave a,full description of,the stolen car,details.,N,No error.,,,8,50,19
+Spelling_470,The sahara desert,is a dry,and sandy place,indeed.,N,No error.,,,7,47,17
+Spelling_471,He was desparate,to find a,job before the,winter.,A,Error: 'desparate' should be 'desperate' (pe).,,,7,46,16
+Spelling_472,We plan to,develope a new,park for the,children.,A,Error: 'develope' should be 'develop' (lop).,,,9,45,14
+Spelling_473,I keep a,daily diary of,all my thoughts,and feeling.,N,No error.,,,8,49,15
+Spelling_474,Look up the,word in the,dictionary if you,are stuck.,N,No error.,,,10,49,17
+Spelling_475,It was a,dificult test but,I think I,passed.,A,Error: 'dificult' should be 'difficult' (iff).,,,7,41,17
+Spelling_476,The magician made,the rabbit disapear,into his top,hat.,B,Error: 'disapear' should be 'disappear' (pp).,,,4,52,19
+Spelling_477,I do not,want to dissapoint,my parents with,bad news.,B,"Error: 'dissapoint' should be 'disappoint' (one s, double p).",,,8,50,18
+Spelling_478,The storm was,a disaster for,the farmers in,the area.,N,No error.,,,9,50,14
+Spelling_479,It was a,disasterous start to,the new football,season.,B,Error: 'disasterous' should be 'disastrous' (trous).,,,7,51,20
+Spelling_480,You need good,disipline to join,the army and,succeed.,A,Error: 'disipline' should be 'discipline' (sc).,,,8,50,17
+Spelling_481,Please do not,disturb the class,while they are,working.,N,No error.,,,8,52,17
+Spelling_482,Please do not,embarass me in,front of my,friends.,B,Error: 'embarass' should be 'embarrass' (rr).,,,8,46,14
+Spelling_483,The roman emporer,commanded a vast,army of loyal,soldiers.,A,Error: 'emporer' should be 'emperor' (or).,,,9,55,17
+Spelling_484,She needs encouragment,to perform on,stage in front,of people.,A,Error: 'encouragment' should be 'encouragement' (gem).,,,10,59,22
+Spelling_485,The enemy soldiers,retreated back to,their camp at,dawn.,N,No error.,,,5,53,18
+Spelling_486,Please ensure that,the door is,locked before you,leave.,N,No error.,,,6,52,18
+Spelling_487,There was live,entertinment at the,party all night,long.,B,Error: 'entertinment' should be 'entertainment' (tain).,,,5,53,19
+Spelling_488,We must save,the enviroment from,pollution and plastic,waste.,B,Error: 'enviroment' should be 'environment' (nm).,,,6,58,21
+Spelling_489,The sports equiptment,is kept in,the shed behind,school.,B,Error: 'equiptment' should be 'equipment' (uip).,,,7,53,21
+Spelling_490,The gym is,fully equipped with,new weights and,mats.,N,No error.,,,5,49,19
+Spelling_491,I like fruit,especialy apples and,bananas for my,breakfast.,B,Error: 'especialy' should be 'especially' (lly).,,,10,56,20
+Spelling_492,Do not exagerate,the story to,make it sound,better.,B,Error: 'exagerate' should be 'exaggerate' (gg).,,,7,48,16
+Spelling_493,He is an,excelent student who,works very hard,always.,B,Error: 'excelent' should be 'excellent' (ll).,,,7,50,20
+Spelling_494,There is no,exception to the,school rules for,anyone.,N,No error.,,,7,50,16
+Spelling_495,Regular excercise keeps,your body fit,and your mind,healthy.,A,Error: 'excercise' should be 'exercise' (exe).,,,8,57,23
+Spelling_496,I felt exhasted,after the long,hike up the,mountain.,B,Error: 'exhasted' should be 'exhausted' (hau).,,,9,49,15
+Spelling_497,The art exibition,opened at the,gallery on Monday,morning.,A,Error: 'exibition' should be 'exhibition' (xhi).,,,8,55,17
+Spelling_498,The existance of,life on other,planets is not,proven.,A,Error: 'existance' should be 'existence' (ence).,,,7,50,16
+Spelling_499,I have no,experiance of driving,a large lorry,like that.,B,Error: 'experiance' should be 'experience' (ien).,,,9,53,21
+Spelling_500,There is no,explantion for his,rude behavior to,us.,B,Error: 'explantion' should be 'explanation' (ana).,,,3,48,18
+Spelling_501,The view was,extraodinary from the,top of the,tower.,B,Error: 'extraodinary' should be 'extraordinary' (aor).,,,6,49,21
+Spelling_502,The heat was,extream in the,desert during the,day.,B,Error: 'extream' should be 'extreme' (eme).,,,4,47,17
+Spelling_503,He looks very,familar to me,but I cannot,place him.,B,Error: 'familar' should be 'familiar' (iar).,,,10,48,13
+Spelling_504,London is famous,for its red,buses and black,taxis.,N,No error.,,,6,48,16
+Spelling_505,My favorite food,is pizza with,extra cheese and,tomato.,A,"Error: 'favorite' is US spelling, 'favourite' is UK.",,,7,52,16
+Spelling_506,My birthday is,in Febuary not,March as you,thought.,B,Error: 'Febuary' should be 'February' (bru).,,,8,48,14
+Spelling_507,The lion is,a feirce hunter,in the wild,jungle.,B,Error: 'feirce' should be 'fierce' (ie).,,,7,44,15
+Spelling_508,We finaly finished,the project after,many weeks of,work.,A,Error: 'finaly' should be 'finally' (lly).,,,5,53,18
+Spelling_509,The florescent light,buzzed loudly in,the classroom all,day.,A,Error: 'florescent' should be 'fluorescent' (luo).,,,4,57,20
+Spelling_510,He speaks a,foriegn language very,fluently and very,fast.,B,Error: 'foriegn' should be 'foreign' (ei).,,,5,54,21
+Spelling_511,Do not forget,to bring your,kit to school,tomorrow.,N,No error.,,,9,48,13
+Spelling_512,He is fourty,years old on,his next birth,day.,A,Error: 'fourty' should be 'forty' (or).,,,4,42,14
+Spelling_513,Please move foward,down the train,carriage to make,room.,A,Error: 'foward' should be 'forward' (rw).,,,5,53,18
+Spelling_514,My best freind,lives next door,to me in,Rugby.,A,Error: 'freind' should be 'friend' (ie).,,,6,43,15
+Spelling_515,It was a,frightning storm with,thunder and loud,lightning.,B,Error: 'frightning' should be 'frightening' (ten).,,,8,55,21
+Spelling_516,For futher details,please contact the,school office by,phone.,A,Error: 'futher' should be 'further' (ur).,,,6,58,18
+Spelling_517,I garantee that,you will like,this new book,alot.,A,Error: 'garantee' should be 'guarantee' (gua).,,,5,46,15
+Spelling_518,Use the rain,guage to measure,the rainfall in,May.,B,Error: 'guage' should be 'gauge' (au).,,,4,47,16
+Spelling_519,I generally wake,up early in,the morning for,school.,N,No error.,,,7,49,16
+Spelling_520,I got the,jist of what,he was trying,to say.,B,Error: 'jist' should be 'gist' (gi).,,,7,41,13
+Spelling_521,She looked glamourous,in her sparkly,evening dress,tonight.,B,Error: 'glamourous' should be 'glamorous' (mor).,,,8,56,21
+Spelling_522,The goverment announced,new laws regarding,speed limits on,roads.,A,Error: 'goverment' should be 'government' (nm).,,,6,62,23
+Spelling_523,My english grammer,is improving every,single day at,school.,B,Error: 'grammer' should be 'grammar' (mar).,,,7,56,18
+Spelling_524,I am greatful,for the help,you gave me,yesterday.,A,Error: 'greatful' should be 'grateful' (gra).,,,10,46,13
+Spelling_525,The security gaurd,stopped us at,the entrance to,check.,A,Error: 'gaurd' should be 'guard' (ua).,,,6,52,18
+Spelling_526,What happend to,your bike on,the way to,school?,A,Error: 'happend' should be 'happened' (ened).,,,7,44,15
+Spelling_527,Do not harrass,the birds in,the garden or,park.,B,Error: 'harrass' should be 'harass' (one r).,,,5,44,14
+Spelling_528,It is a,hinderance to our,progress on this,task.,B,Error: 'hinderance' should be 'hindrance' (dra).,,,5,45,17
+Spelling_529,He is an,honorary member of,the golf club,now.,N,No error.,,,4,43,18
+Spelling_530,It was a,humourous play that,made us all,laugh.,B,Error: 'humourous' should be 'humorous' (mor).,,,6,44,19
+Spelling_531,His strange idiosyncracy,was wearing hats,indoors all the,time.,B,Error: 'idiosyncracy' should be 'idiosyncrasy' (sy).,,,5,60,24
+Spelling_532,Come here immediatly,and clean up,this mess right,now.,B,Error: 'immediatly' should be 'immediately' (ely).,,,4,51,20
+Spelling_533,The traffic incedint,caused a long,delay on the,road.,A,Error: 'incedint' should be 'incident' (ci).,,,5,50,20
+Spelling_534,She is an,independant girl who,likes to do,things.,B,Error: 'independant' should be 'independent' (ent).,,,7,47,20
+Spelling_535,Do not interfeer,with the equipment,in the science,lab.,B,Error: 'interfeer' should be 'interfere' (fere).,,,4,52,18
+Spelling_536,Do not interupt,the teacher while,she is speaking,loudly.,B,Error: 'interupt' should be 'interrupt' (rr).,,,7,54,17
+Spelling_537,The cake looked,irresistable sitting on,the plate on,table.,B,Error: 'irresistable' should be 'irresistible' (ible).,,,6,56,23
+Spelling_538,The desert island,was surrounded by,blue ocean water,completely.,N,No error.,,,11,61,17
+Spelling_539,He was jealous,of his friend's,new bike and,scooter.,N,No error.,,,8,49,15
+Spelling_540,She wore gold,jewellry to the,party on Saturday,night.,B,Error: 'jewellry' should be 'jewellery' (lle).,,,6,51,17
+Spelling_541,His knowlege of,history dates is,very impressive,indeed.,A,Error: 'knowlege' should be 'knowledge' (led).,,,7,53,16
+Spelling_542,The chemistry labratory,is used for,science lessons,daily.,A,Error: 'labratory' should be 'laboratory' (orator).,,,6,55,23
+Spelling_543,The french language,is spoken in,France and other,places.,N,No error.,,,7,54,19
+Spelling_544,I have liesure,time at the,weekend to play,games.,B,Error: 'liesure' should be 'leisure' (ei).,,,6,46,15
+Spelling_545,Measure the lenth,of the table,with a tape,measure.,B,Error: 'lenth' should be 'length' (gth).,,,8,48,17
+Spelling_546,He acts as,a liason between,the two big,groups.,B,Error: 'liason' should be 'liaison' (iai).,,,7,44,16
+Spelling_547,I went to,the libary to,borrow a new,book.,B,Error: 'libary' should be 'library' (brary).,,,5,39,13
+Spelling_548,The lightening struck,the roof during,the heavy storm,tonight.,A,Error: 'lightening' should be 'lightning' (ning).,,,8,59,21
+Spelling_549,He literally jumped,for joy when,he heard the,news.,N,No error.,,,5,48,19
+Spelling_550,Did you loose,your pen in,the classroom,today?,B,Error: 'loose' should be 'lose' (one o).,,,6,43,13
+Spelling_551,Regular car maintainance,is needed to,keep it safe,running.,A,Error: 'maintainance' should be 'maintenance' (ten).,,,8,56,24
+Spelling_552,The view was,marvellous from the,top of the,tower.,N,No error.,,,6,47,19
+Spelling_553,The doctor's medecine,tasted horrible but,it worked very,well.,A,Error: 'medecine' should be 'medicine' (dic).,,,5,59,21
+Spelling_554,The sheep grazed,in the green,medow near the,river.,C,Error: 'medow' should be 'meadow' (ead).,,,6,48,16
+Spelling_555,The year 2000,marked a new,millenium for the,world.,C,Error: 'millenium' should be 'millennium' (nn).,,,6,48,17
+Spelling_556,He collects minature,cars and keeps,them on a,shelf.,A,Error: 'minature' should be 'miniature' (nia).,,,6,49,20
+Spelling_557,The kitten is,mischevious and likes,to climb the,curtains.,B,Error: 'mischevious' should be 'mischievous' (vous).,,,9,55,21
+Spelling_558,A box of,misellaneous items was,left in the,hall.,B,Error: 'misellaneous' should be 'miscellaneous' (sc).,,,5,46,22
+Spelling_559,Do not miss,the bus or,you will be,late.,N,No error.,,,5,37,11
+Spelling_560,My arm muscle,hurts after playing,tennis all day,long.,N,No error.,,,5,51,19
+Spelling_561,It was a,misterious sound in,the middle of,night.,B,Error: 'misterious' should be 'mysterious' (mys).,,,6,46,19
+Spelling_562,It is necessary,to wear a,helmet when you,cycle.,N,No error.,,,6,45,15
+Spelling_563,It is neccessary,to arrive on,time for the,exam.,B,Error: 'neccessary' should be 'necessary' (cess).,,,5,45,16
+Spelling_564,My next door,neigbour has a,loud barking dog,often.,B,Error: 'neigbour' should be 'neighbour' (ghb).,,,6,48,16
+Spelling_565,My sister's daughter,is my favorite,neice in the,family.,C,"Error: 'neice' should be 'niece' (ie). Also 'favorite' in B is US spelling, but C is the target error.",,,7,53,20
+Spelling_566,Neither of the,boys knew the,answer to the,question.,N,No error.,,,9,49,14
+Spelling_567,There are ninty,people in the,hall waiting for,us.,A,Error: 'ninty' should be 'ninety' (nety).,,,3,47,16
+Spelling_568,There was a,noticable chill in,the air this,evening.,B,Error: 'noticable' should be 'noticeable' (cea).,,,8,49,18
+Spelling_569,The noise is,a real nuesance,when I am,sleeping.,B,Error: 'nuesance' should be 'nuisance' (ui).,,,9,45,15
+Spelling_570,The dog is,very obedient and,always sits when,told.,N,No error.,,,5,48,17
+Spelling_571,On this occassion,we will go,to the beach,instead.,B,Error: 'occassion' should be 'occasion' (casion).,,,8,47,17
+Spelling_572,The accident occured,late at night,on the icy,road.,B,Error: 'occured' should be 'occurred' (rr).,,,5,48,20
+Spelling_573,It will not,occur again if,you are more,careful.,N,No error.,,,8,45,14
+Spelling_574,I often go,swimming at the,pool on the,weekend.,N,No error.,,,8,44,15
+Spelling_575,Do not omit,any details from,your story please,now.,N,No error.,,,4,48,17
+Spelling_576,Black is the,oppisite of white,on the colour,chart.,B,Error: 'oppisite' should be 'opposite' (osi).,,,6,48,17
+Spelling_577,This is the,origional painting not,a copy of,it.,B,Error: 'origional' should be 'original' (gi).,,,3,45,22
+Spelling_578,The lines are,paralel and will,never cross each,other.,B,Error: 'paralel' should be 'parallel' (lle).,,,6,51,16
+Spelling_579,The houses of,parlament are in,London near the,river.,B,Error: 'parlament' should be 'parliament' (rli).,,,6,50,16
+Spelling_580,Not a single,partical of dust,remained on the,shelf.,B,Error: 'partical' should be 'particle' (cle).,,,6,49,16
+Spelling_581,Is there a,particuler reason for,your lateness today,please?,B,Error: 'particuler' should be 'particular' (lar).,,,7,57,21
+Spelling_582,You need patience,to finish a,hard jigsaw puzzle,fast.,N,No error.,,,5,51,18
+Spelling_583,The cricket pavillion,is painted white,and green every,year.,B,Error: 'pavillion' should be 'pavilion' (vil).,,,5,57,21
+Spelling_584,Many people like,to watch football,on the TV,screen.,N,No error.,,,7,49,17
+Spelling_585,You must be,persistant to reach,your goals in,life.,B,Error: 'persistant' should be 'persistent' (ent).,,,5,48,19
+Spelling_586,The office personnel,are very helpful,and friendly to,visitors.,N,No error.,,,9,60,20
+Spelling_587,I tried to,persuade him to,change his mind,today.,N,No error.,,,6,46,15
+Spelling_588,Manual labour is,physicle work that,makes you very,strong.,B,Error: 'physicle' should be 'physical' (cal).,,,7,55,18
+Spelling_589,Have a peice,of fruit with,your lunch every,day.,B,Error: 'peice' should be 'piece' (ie).,,,4,45,16
+Spelling_590,The famous poltician,visited our town,yesterday for a,speech.,B,Error: 'poltician' should be 'politician' (lit).,,,7,58,20
+Spelling_591,He is a,very popular boy,in his class,at school.,N,No error.,,,7,45,16
+Spelling_592,The ring is,my most prized,posession in the,world.,C,Error: 'posession' should be 'possession' (ssess).,,,6,47,16
+Spelling_593,Is it posible,to walk to,the station from,here?,B,Error: 'posible' should be 'possible' (ss).,,,5,44,16
+Spelling_594,We grow potatos,and carrots in,our vegetable garden,patch.,B,Error: 'potatos' should be 'potatoes' (oes).,,,6,55,20
+Spelling_595,I must practise,my piano scales,every single day,now.,N,No error.,,,4,50,16
+Spelling_596,He prefered the,red car to,the blue one,really.,A,Error: 'prefered' should be 'preferred' (rr).,,,7,44,15
+Spelling_597,Prejudice is judging,someone before you,know them at,all.,N,No error.,,,4,54,20
+Spelling_598,The preperation for,the wedding took,many months of,work.,A,Error: 'preperation' should be 'preparation' (par).,,,5,54,19
+Spelling_599,It is a,priviledge to be,captain of the,team.,B,Error: 'priviledge' should be 'privilege' (leg).,,,5,42,16
+Spelling_600,Please proceed to,the exit in,an orderly fashion,now.,N,No error.,,,4,50,18
+Spelling_601,Teaching is a,proffesion that needs,a lot of,patience.,B,Error: 'proffesion' should be 'profession' (fess).,,,8,51,21
+Spelling_602,The science professer,taught at the,university for years,long.,B,Error: 'professer' should be 'professor' (sor).,,,5,59,21
+Spelling_603,I watched a,program about lions,on the TV,tonight.,N,"No error (Program is acceptable, though Programme is traditional UK for TV, 11+ often accepts both or focuses on clear errors).",,,8,47,19
+Spelling_604,His pronounciation was,very clear and,easy to understand,well.,A,Error: 'pronounciation' should be 'pronunciation' (nun).,,,5,59,22
+Spelling_605,The leaflet was,political propoganda for,the election next,week.,B,Error: 'propoganda' should be 'propaganda' (pag).,,,5,61,24
+Spelling_606,He announced publically,that he would,retire next year,soon.,B,Error: 'publically' should be 'publicly' (lic).,,,5,57,23
+Spelling_607,There was a,queue for tickets,outside the cinema,today.,N,No error.,,,6,52,18
+Spelling_608,Please answer the,question clearly and,in full sentences,now.,N,No error.,,,4,58,20
+Spelling_609,Keep quiet in,the library while,people are reading,books.,N,No error.,,,6,54,18
+Spelling_610,I am quite,sure that I,left it here,yesterday.,N,No error.,,,10,43,12
+Spelling_611,I am realy,sorry for being,late to class,today.,B,Error: 'realy' should be 'really' (ll).,,,6,44,15
+Spelling_612,Did you recieve,my birthday card,in the post,yet?,B,Error: 'recieve' should be 'receive' (ei).,,,4,46,16
+Spelling_613,I recomend that,you try the,pasta dish for,dinner.,A,Error: 'recomend' should be 'recommend' (mm).,,,7,47,15
+Spelling_614,He refered the,patient to a,specialist at the,hospital.,A,Error: 'refered' should be 'referred' (rr).,,,9,52,17
+Spelling_615,Is this information,relevent to our,current topic of,study?,B,Error: 'relevent' should be 'relevant' (vant).,,,6,56,19
+Spelling_616,He is a,very religous person,who prays every,day.,B,Error: 'religous' should be 'religious' (ious).,,,4,46,20
+Spelling_617,Please rember to,bring your homework,to school tomorrow,morning.,B,Error: 'rember' should be 'remember' (mem).,,,8,61,19
+Spelling_618,The wire's resistence,caused it to,heat up very,quickly.,B,Error: 'resistence' should be 'resistance' (tan).,,,8,53,21
+Spelling_619,We went to,a resturant for,my birthday meal,tonight.,B,Error: 'resturant' should be 'restaurant' (aur).,,,8,49,16
+Spelling_620,The nursery ryhme,was easy to,learn for the,children.,B,Error: 'ryhme' should be 'rhyme' (rhy).,,,9,50,17
+Spelling_621,The drum rythm,was fast and,made us dance,wildly.,B,Error: 'rythm' should be 'rhythm' (rhy).,,,7,46,14
+Spelling_622,He made a,sacrifise to save,his friend from,danger.,B,Error: 'sacrifise' should be 'sacrifice' (fice).,,,7,48,17
+Spelling_623,The scary movie,frightened the children,late at night,time.,N,No error.,,,5,56,23
+Spelling_624,The mountain sceanery,was beautiful in,the winter snow,light.,B,Error: 'sceanery' should be 'scenery' (scen).,,,6,58,21
+Spelling_625,Check the bus,schedule to see,when it arrives,here.,N,No error.,,,5,48,15
+Spelling_626,The school secratery,works in the,office near the,entrance.,B,Error: 'secratery' should be 'secretary' (ret).,,,9,56,20
+Spelling_627,It makes no,sence to argue,about such small,things.,B,Error: 'sence' should be 'sense' (se).,,,7,48,16
+Spelling_628,Keep the raw,meat seperate from,the cooked meat,always.,B,Error: 'seperate' should be 'separate' (par).,,,7,52,18
+Spelling_629,The army laid,seige to the,castle for six,months.,B,Error: 'seige' should be 'siege' (ie).,,,7,46,14
+Spelling_630,He gave a,sincere apology for,his rude words,yesterday.,N,No error.,,,9,52,19
+Spelling_631,I am sincerly,grateful for your,kind gift to,me.,B,Error: 'sincerly' should be 'sincerely' (ely).,,,3,45,17
+Spelling_632,The brave soldier,fought in the,war for his,country.,N,No error.,,,8,49,17
+Spelling_633,My stomache hurts,after eating all,those green apples,today.,A,Error: 'stomache' should be 'stomach' (mach).,,,6,57,18
+Spelling_634,We have suficient,time to finish,the exam paper,now.,B,Error: 'suficient' should be 'sufficient' (ffi).,,,4,49,17
+Spelling_635,I suggest that,we go home,before it gets,dark.,N,No error.,,,5,43,14
+Spelling_636,This rule will,supercede all the,previous rules from,now.,B,Error: 'supercede' should be 'supersede' (sede).,,,4,54,19
+Spelling_637,It was a,lovely suprise to,see you at,party.,B,Error: 'suprise' should be 'surprise' (sur).,,,6,41,17
+Spelling_638,The solar system,contains eight planets,orbiting the sun,bright.,N,No error.,,,7,61,22
+Spelling_639,He got a,tatoo of a,dragon on his,back.,B,Error: 'tatoo' should be 'tattoo' (tt).,,,5,36,13
+Spelling_640,The room temperture,was too hot,for us to,work.,B,Error: 'temperture' should be 'temperature' (era).,,,5,44,19
+Spelling_641,He has a,tendancy to speak,too loudly in,class.,B,Error: 'tendancy' should be 'tendency' (ency).,,,6,44,17
+Spelling_642,I think therefor,I am said,Descartes a long,time.,B,Error: 'therefor' should be 'therefore' (fore).,,,5,46,16
+Spelling_643,He stood on,the threshhold of,a new career,path.,B,Error: 'threshhold' should be 'threshold' (sh).,,,5,45,17
+Spelling_644,Be very through,when you check,your work for,errors.,B,Error: 'through' should be 'thorough' (thor).,,,7,49,15
+Spelling_645,I will see,you tommorow at,the school gate,early.,B,Error: 'tommorow' should be 'tomorrow' (rr).,,,6,46,15
+Spelling_646,The hot soup,burnt my tounge,when I tasted,it.,B,Error: 'tounge' should be 'tongue' (gue).,,,3,43,15
+Spelling_647,It was a,tragedy when the,ship sank at,sea.,N,No error.,,,4,40,16
+Spelling_648,I am truely,sorry for breaking,your favourite vase,mum.,B,Error: 'truely' should be 'truly' (uly).,,,4,52,19
+Spelling_649,The twelth of,December is my,sister's birthday,date.,A,Error: 'twelth' should be 'twelfth' (fth).,,,5,49,17
+Spelling_650,The delay was,unforseen by the,train company,staff.,B,Error: 'unforseen' should be 'unforeseen' (fore).,,,6,48,16
+Spelling_651,Unfortunatly I cannot,come to your,party on Saturday,night.,A,Error: 'Unfortunatly' should be 'Unfortunately' (ately).,,,6,56,21
+Spelling_652,Wait untill the,traffic light turns,green before you,cross.,A,Error: 'untill' should be 'until' (til).,,,6,56,19
+Spelling_653,There is a,wide variaty of,food at the,buffet.,B,Error: 'variaty' should be 'variety' (iet).,,,7,43,15
+Spelling_654,Vegetarians do not,eat meat but,eat vegtable dishes,instead.,C,Error: 'vegtable' should be 'vegetable' (get).,,,8,57,19
+Spelling_655,The police veichle,chased the stolen,car down the,road.,A,Error: 'veichle' should be 'vehicle' (hic).,,,5,52,18
+Spelling_656,The small village,has a shop,and a post,office.,N,No error.,,,7,44,17
+Spelling_657,That is a,wierd thing to,say to your,teacher.,B,Error: 'wierd' should be 'weird' (ei).,,,8,42,14
+Spelling_658,You can sit,whereever you like,in the classroom,today.,B,Error: 'whereever' should be 'wherever' (ver).,,,6,51,18
+Spelling_659,Wich one of,these cakes would,you like to,eat?,A,Error: 'Wich' should be 'Which' (Whi).,,,4,43,17
+Spelling_660,The withdrawal of,troops signaled the,end of the,war.,N,No error.,,,4,50,19
+Spelling_661,Do not withold,the truth from,your parents or,teachers.,B,Error: 'withold' should be 'withhold' (hh).,,,9,52,15
+Spelling_662,He is writting,a long letter,to his pen,friend.,A,Error: 'writting' should be 'writing' (rit).,,,7,44,14
+Spelling_663,The luxury yatch,sailed into the,harbour at sunset,time.,A,Error: 'yatch' should be 'yacht' (cht).,,,5,53,17
+Spelling_664,Her absence from,school was due,to a bad,cold.,N,No error.,,,5,43,16
+Spelling_665,An abundence of,wild flowers grew,in the meadow,field.,B,Error: 'abundence' should be 'abundance' (ance).,,,6,51,17
+Spelling_666,The ramp makes,the shop accesable,to wheelchair,users.,B,Error: 'accesable' should be 'accessible' (ible).,,,6,51,18
+Spelling_667,I accidently deleted,my homework from,the computer last,night.,A,Error: 'accidently' should be 'accidentally' (ally).,,,6,59,20
+Spelling_668,The hotel can,accommodate up to,fifty guests at,once.,N,No error.,,,5,50,17
+Spelling_669,Will you accompany,me to the,shops to buy,shoes?,N,No error.,,,6,45,18
+Spelling_670,Everything went according,to plan for,the school play,performance.,N,No error.,,,11,63,25
+Spelling_671,You can acheive,anything if you,work hard enough,for it.,B,Error: 'acheive' should be 'achieve' (ie).,,,7,53,16
+Spelling_672,The bridge accross,the river is,closed for repairs,today.,A,Error: 'accross' should be 'across' (ross).,,,6,54,18
+Spelling_673,I lost the,paper with your,adress written on,it.,C,Error: 'adress' should be 'address' (ddress).,,,3,45,17
+Spelling_674,Some dogs can,be agressive if,they are scared,badly.,B,Error: 'agressive' should be 'aggressive' (ggr).,,,6,49,15
+Spelling_675,The amature dramatic,society put on,a play last,week.,A,Error: 'amature' should be 'amateur' (ateur).,,,5,50,20
+Spelling_676,Do not analyse,the poem too,much just enjoy,it.,N,No error.,,,3,44,15
+Spelling_677,My ancestory can,be traced back,hundreds of years,ago.,A,Error: 'ancestory' should be 'ancestry' (cestry).,,,4,51,17
+Spelling_678,The ancient Romans,built straight roads,across the whole,country.,N,No error.,,,8,62,20
+Spelling_679,The anual fair,takes place in,the village every,summer.,B,Error: 'anual' should be 'annual' (nnu).,,,7,52,17
+Spelling_680,I felt anxous,before the big,exam started this,morning.,B,Error: 'anxous' should be 'anxious' (ious).,,,8,52,17
+Spelling_681,He owed me,an apology for,being so rude,yesterday.,N,No error.,,,10,47,14
+Spelling_682,Use an apostrphe,to show possession,in your writing,please.,B,Error: 'apostrphe' should be 'apostrophe' (phe).,,,7,56,18
+Spelling_683,The gym aparatas,must be used,safely at all,times.,B,Error: 'aparatas' should be 'apparatus' (paratus).,,,6,47,16
+Spelling_684,It became apparant,that we were,lost in the,woods.,B,Error: 'apparant' should be 'apparent' (rent).,,,6,47,18
+Spelling_685,His smart apperance,impressed the interview,panel very much,indeed.,A,Error: 'apperance' should be 'appearance' (pear).,,,7,64,23
+Spelling_686,I appreciate your,kindness in helping,me with my,work.,N,No error.,,,5,51,19
+Spelling_687,Does your mother,aprove of you,staying out so,late?,B,Error: 'aprove' should be 'approve' (ppro).,,,5,48,16
+Spelling_688,The artic fox,is white to,hide in the,snow.,A,Error: 'artic' should be 'arctic' (rctic).,,,5,40,13
+Spelling_689,It is silly,to argue about,such small things,now.,N,No error.,,,4,46,17
+Spelling_690,The arguement was,loud and could,be heard by,all.,A,Error: 'arguement' should be 'argument' (gument).,,,4,46,17
+Spelling_691,Can you arrange,a meeting for,next week some,time?,N,No error.,,,5,47,15
+Spelling_692,Read the articale,in the newspaper,about the local,school.,A,Error: 'articale' should be 'article' (ticle).,,,7,55,17
+Spelling_693,The famous artest,painted a portrait,of the Queen,recently.,A,Error: 'artest' should be 'artist' (tist).,,,9,56,18
+Spelling_694,I asume that,you are coming,to the party,tonight.,A,Error: 'asume' should be 'assume' (ssume).,,,8,46,14
+Spelling_695,The athlete trained,hard for the,Olympic Games this,year.,N,No error.,,,5,54,19
+Spelling_696,Find the country,in the atlas,on page fifty,four.,N,No error.,,,5,46,16
+Spelling_697,Please attach this,label to your,suitcase before you,fly.,N,No error.,,,4,54,19
+Spelling_698,I will attempt,to climb the,mountain if it,is dry.,N,No error.,,,7,47,14
+Spelling_699,You must attend,school every day,unless you are,ill.,N,No error.,,,4,49,16
+Spelling_700,The audiance clapped,loudly at the,end of the,play.,A,Error: 'audiance' should be 'audience' (dience).,,,5,48,20
+Spelling_701,The leaves fall,from trees in,autum time every,year.,C,Error: 'autum' should be 'autumn' (tumn).,,,5,49,16
+Spelling_702,Is this seat,avalible or is,someone sitting here,now?,B,Error: 'avalible' should be 'available' (vailable).,,,4,50,20
+Spelling_703,The average temperature,in July is,usually quite high,here.,N,No error.,,,5,56,23
+Spelling_704,The smell was,awfull and made,me feel quite,sick.,B,Error: 'awfull' should be 'awful' (wful).,,,5,46,15
+Spelling_705,It was an,akward moment when,I forgot his,name.,B,Error: 'akward' should be 'awkward' (awkward).,,,5,44,18
+Spelling_706,The baby slept,peacefully in her,cot all night,long.,N,No error.,,,5,49,17
+Spelling_707,Try to keep,your ballance on,the narrow wooden,beam.,B,Error: 'ballance' should be 'balance' (lance).,,,5,49,17
+Spelling_708,The red ballon,floated up into,the blue sky,high.,B,Error: 'ballon' should be 'balloon' (lloon).,,,5,46,15
+Spelling_709,I bought this,shirt at a,bargin price in,sales.,C,Error: 'bargin' should be 'bargain' (rgain).,,,6,44,15
+Spelling_710,Basicly you need,to add flour,and water to,mix.,A,Error: 'Basicly' should be 'Basically' (sically).,,,4,44,16
+Spelling_711,The bride looked,beatiful in her,white wedding dress,today.,B,Error: 'beatiful' should be 'beautiful' (eauti).,,,6,56,19
+Spelling_712,In the begining,God created the,heavens and the,earth.,B,Error: 'begining' should be 'beginning' (ginning).,,,6,51,15
+Spelling_713,I beleive in,ghosts because I,saw one last,night.,A,Error: 'beleive' should be 'believe' (lieve).,,,6,46,16
+Spelling_714,Fresh fruit is,benefitial to your,health and well,being.,B,Error: 'benefitial' should be 'beneficial' (ficial).,,,6,53,18
+Spelling_715,Have a biscut,with your cup,of tea in,afternoon.,B,Error: 'biscut' should be 'biscuit' (scuit).,,,9,45,13
+Spelling_716,It was a,bizzare story that,nobody believed was,true.,B,Error: 'bizzare' should be 'bizarre' (zarre).,,,5,50,19
+Spelling_717,The river forms,a natural boundry,between the two,countries.,B,Error: 'boundry' should be 'boundary' (dary).,,,10,57,17
+Spelling_718,Take a deep,breath before you,start to speak,loudly.,N,No error.,,,7,49,17
+Spelling_719,It is hard,to breathe at,high altitudes up,mountains.,N,No error.,,,10,50,17
+Spelling_720,The diamond shone,with a briliant,light in the,sun.,B,Error: 'briliant' should be 'brilliant' (lliant).,,,4,48,17
+Spelling_721,I do not,like eating brocoli,or cabbage very,much.,B,Error: 'brocoli' should be 'broccoli' (occoli).,,,5,47,19
+Spelling_722,He has a,large bruise on,his leg from,falling.,N,No error.,,,8,43,15
+Spelling_723,The buisness is,closed on Sundays,and Bank Holidays,now.,A,Error: 'buisness' should be 'business' (siness).,,,4,53,17
+Spelling_724,Look at the,calender to find,the date of,Easter.,B,Error: 'calender' should be 'calendar' (endar).,,,7,45,16
+Spelling_725,I cannot come,to your party,because I am,ill.,N,No error.,,,4,42,13
+Spelling_726,He is a,very capable student,who works hard,always.,N,No error.,,,7,48,20
+Spelling_727,The captians of,the teams met,in the centre,circle.,A,Error: 'captians' should be 'captains' (ptains).,,,7,48,15
+Spelling_728,He wants a,carrer as a,pilot flying big,jets.,B,Error: 'carrer' should be 'career' (areer).,,,5,42,16
+Spelling_729,The pirates sailed,the Carribean sea,looking for gold,treasure.,B,Error: 'Carribean' should be 'Caribbean' (ribbean).,,,9,60,18
+Spelling_730,This book fits,into the horror,catagory of fiction,stories.,C,Error: 'catagory' should be 'category' (tegory).,,,8,56,19
+Spelling_731,The fire was,the cause of,the damage to,house.,N,No error.,,,6,43,13
+Spelling_732,The high cieling,made the room,feel very cold,indeed.,B,Error: 'cieling' should be 'ceiling' (eiling).,,,7,50,16
+Spelling_733,We will celabrate,your birthday with,a big party,tomorrow.,B,Error: 'celabrate' should be 'celebrate' (lebrate).,,,9,55,18
+Spelling_734,The ghosts haunt,the old cemetary,at midnight every,night.,B,Error: 'cemetary' should be 'cemetery' (etery).,,,6,55,17
+Spelling_735,I am certain,that I left,my keys on,table.,N,No error.,,,6,39,12
+Spelling_736,The weather is,changeable so bring,an umbrella just,incase.,N,No error.,,,7,56,19
+Spelling_737,He is a,character in the,book I am,reading.,N,No error.,,,7,40,16
+Spelling_738,The army cheif,gave orders to,his troops at,dawn.,B,Error: 'cheif' should be 'chief' (hief).,,,5,46,14
+Spelling_739,The child played,happily with her,toys in the,garden.,N,No error.,,,7,50,16
+Spelling_740,The chior sang,hymns in the,church on Sunday,morning.,B,Error: 'chior' should be 'choir' (hoir).,,,8,50,16
+Spelling_741,He lit a,cigerette and smoked,it outside the,shop.,B,Error: 'cigerette' should be 'cigarette' (garette).,,,5,47,20
+Spelling_742,Let's go to,the cinama to,see a film,tonight.,B,Error: 'cinama' should be 'cinema' (inema).,,,8,42,13
+Spelling_743,The electric circut,was broken so,the bell did,ring.,B,Error: 'circut' should be 'circuit' (rcuit).,,,5,49,19
+Spelling_744,He is a,senior citezen and,gets a free,bus pass.,B,Error: 'citezen' should be 'citizen' (tizen).,,,7,45,18
+Spelling_745,Put your clean,clothes away in,the drawer right,now.,N,No error.,,,4,49,16
+Spelling_746,The football coach,trained the team,hard for the,match.,N,No error.,,,6,52,18
+Spelling_747,My collegue at,work is very,helpful and kind,always.,B,Error: 'collegue' should be 'colleague' (league).,,,7,49,16
+Spelling_748,Write the answer,in the correct,colum on the,page.,C,Error: 'colum' should be 'column' (olumn).,,,5,47,16
+Spelling_749,Is he comming,to the match,with us on,Saturday?,B,Error: 'comming' should be 'coming' (oming).,,,9,44,13
+Spelling_750,He did not,commit the crime,he was charged,with.,N,No error.,,,5,45,16
+Spelling_751,The comittee decided,to cancel the,event due to,rain.,B,Error: 'comittee' should be 'committee' (mittee).,,,5,50,20
+Spelling_752,We communicate with,each other by,email and text,message.,N,No error.,,,8,54,19
+Spelling_753,The local comunity,centre is open,to everyone all,day.,B,Error: 'comunity' should be 'community' (mm).,,,4,51,18
+Spelling_754,I entered a,competition to win,a holiday to,Spain.,N,No error.,,,6,47,18
+Spelling_755,The compitition was,very fierce between,the two top,teams.,A,Error: 'compitition' should be 'competition' (pet).,,,6,55,19
+Spelling_756,I am completely,finished with my,homework for the,weekend.,N,No error.,,,8,55,16
+Spelling_757,You must concentrate,on your work,to get good,grades.,N,No error.,,,7,50,20
+Spelling_758,My concience told,me to own,up to my,mistake.,B,Error: 'concience' should be 'conscience' (science).,,,8,42,17
+Spelling_759,He was concious,when the ambulance,arrived at the,scene.,B,Error: 'concious' should be 'conscious' (scious).,,,6,53,18
+Spelling_760,The plan was,concieved in secret,by the rebel,leaders.,B,Error: 'concieved' should be 'conceived' (cei).,,,8,51,19
+Spelling_761,I condemn violence,of any kind,in our peaceful,society.,N,No error.,,,8,52,18
+Spelling_762,The car is,in good condition,for its age,really.,N,No error.,,,7,45,17
+Spelling_763,I am confidant,that I can,pass the driving,test.,B,Error: 'confidant' should be 'confident' (ent).,,,5,45,16
+Spelling_764,He has a,guilty conscience about,lying to his,mother.,N,No error.,,,7,50,23
+Spelling_765,He became conscious,after being knocked,out by the,ball.,N,No error.,,,5,53,19
+Spelling_766,The continious rain,ruined our picnic,in the park,today.,B,Error: 'continious' should be 'continuous' (nuo).,,,6,53,19
+Spelling_767,There was much,contreversy about the,referee's decision today,sadly.,B,Error: 'contreversy' should be 'controversy' (tro).,,,6,65,24
+Spelling_768,At your convenience,please reply to,my letter or,email.,N,No error.,,,6,52,19
+Spelling_769,I corespond with,my pen pal,in France every,month.,B,Error: 'corespond' should be 'correspond' (rrespond).,,,6,47,16
+Spelling_770,The town council,looks after the,parks and roads,well.,N,No error.,,,5,51,16
+Spelling_771,The legal counsel,advised him to,remain silent in,court.,N,No error.,,,6,53,17
+Spelling_772,The fireman was,corageous and saved,the cat from,fire.,B,Error: 'corageous' should be 'courageous' (oura).,,,5,51,19
+Spelling_773,Always be courtious,to customers in,the shop at,work.,A,Error: 'courtious' should be 'courteous' (teous).,,,5,50,19
+Spelling_774,Do not critisise,the food that,is cooked for,you.,B,Error: 'critisise' should be 'criticise' (tic).,,,4,46,16
+Spelling_775,Curiosity killed the,cat is an,old saying we,use.,N,No error.,,,4,46,20
+Spelling_776,He was curious,to see what,was inside the,parcel.,N,No error.,,,7,46,14
+Spelling_777,The engine cylannder,was cracked and,leaking oil on,floor.,B,Error: 'cylannder' should be 'cylinder' (linder).,,,6,55,20
+Spelling_778,Do not decieve,yourself into thinking,it will be,easy.,B,Error: 'decieve' should be 'deceive' (cei).,,,5,51,22
+Spelling_779,You must decide,which path to,take at the,junction.,N,No error.,,,9,48,15
+Spelling_780,It was a,hard decision to,make but I,made.,N,No error.,,,5,39,16
+Spelling_781,I will give,you a definate,answer by tomorrow,morning.,B,Error: 'definate' should be 'definite' (nite).,,,8,51,18
+Spelling_782,The cake looks,deliscious with all,that cream and,jam.,B,Error: 'deliscious' should be 'delicious' (licious).,,,4,51,19
+Spelling_783,I am delighted,to meet you,at last my,friend.,N,No error.,,,7,42,14
+Spelling_784,We watched the,plane descend from,the sky to,land.,N,No error.,,,5,47,18
+Spelling_785,Can you discribe,the man who,stole your bag,please?,B,Error: 'discribe' should be 'describe' (des).,,,7,48,16
+Spelling_786,Write a description,of your best,friend for your,homework.,N,No error.,,,9,55,19
+Spelling_787,The sahara desert,is full of,sand and very,hot.,N,No error.,,,4,44,17
+Spelling_788,He was desparate,for a glass,of water in,heat.,B,Error: 'desparate' should be 'desperate' (sper).,,,5,43,16
+Spelling_789,We want to,develope a new,app for the,phone.,B,Error: 'develope' should be 'develop' (lop).,,,6,41,14
+Spelling_790,Keep a diary,of your holiday,to remember it,by.,N,No error.,,,3,44,15
+Spelling_791,Use a dictionary,to check your,spelling of hard,words.,N,No error.,,,6,51,16
+Spelling_792,Flowers will die,if you do,not water them,often.,N,No error.,,,6,45,16
+Spelling_793,My car is,different to yours,because it is,red.,N,No error.,,,4,44,18
+Spelling_794,It is dificult,to learn a,new language as,adult.,B,Error: 'dificult' should be 'difficult' (ff).,,,6,45,15
+Spelling_795,The fog will,disapear when the,sun comes out,later.,B,Error: 'disapear' should be 'disappear' (pp).,,,6,48,17
+Spelling_796,Do not dissapoint,me by being,late for the,meeting.,B,Error: 'dissapoint' should be 'disappoint' (pp).,,,8,48,17
+Spelling_797,The earthquake was,a terrible disaster,for the whole,region.,N,No error.,,,7,57,19
+Spelling_798,A disasterous,performance by,the band on,stage.,A,Error: 'disasterous' should be 'disastrous' (strous).,,,6,44,14
+Spelling_799,Strict disipline is,needed in the,army to keep,order.,B,Error: 'disipline' should be 'discipline' (scip).,,,6,50,19
+Spelling_800,Please do not,disturb the driver,while the bus,moves.,N,No error.,,,6,50,18
+Spelling_801,Does he know,the way to,the village hall,from here?,N,No error.,,,10,48,16
+Spelling_802,I doubt that,he will be,able to come,tonight.,N,No error.,,,8,42,12
+Spelling_803,There are a,dozen eggs in,the fridge for,breakfast.,N,No error.,,,10,48,14
+Spelling_804,It is too,early to go,to bed on,a Friday.,N,No error.,,,9,38,11
+Spelling_805,The earth spins,on its axis,once every twenty,four hours.,N,No error.,,,11,54,17
+Spelling_806,He was in,ecstacy when his,team won the,cup final.,B,Error: 'ecstacy' should be 'ecstasy' (sy).,,,9,47,16
+Spelling_807,The medicine had,a strange effect,on him after,an hour.,N,No error.,,,8,52,16
+Spelling_808,There were eight,people waiting for,the bus in the,rain.,N,No error.,,,5,53,18
+Spelling_809,Eighty people came,to the concert,in the park,yesterday.,N,No error.,,,10,53,18
+Spelling_810,You can have,either the cake,or the fruit,salad.,N,No error.,,,6,45,15
+Spelling_811,Please do not,embarass me by,singing loudly in,public.,B,Error: 'embarass' should be 'embarrass' (rr).,,,7,51,17
+Spelling_812,The roman emporer,wore a purple,toga and a,gold crown.,A,Error: 'emporer' should be 'emperor' (ror).,,,10,51,17
+Spelling_813,He needs encouragment,to keep trying,when things get,difficult.,A,Error: 'encouragment' should be 'encouragement' (gem).,,,10,60,21
+Spelling_814,The enemy troops,surrendered after a,long and hard,battle.,N,No error.,,,7,55,19
+Spelling_815,Please ensure that,all the windows,are closed before,leaving.,N,No error.,,,8,58,18
+Spelling_816,The entertinment at,the party included,a magician and,clown.,A,Error: 'entertinment' should be 'entertainment' (tain).,,,6,57,19
+Spelling_817,The enviroment is,damaged by too,much plastic waste,pollution.,A,Error: 'enviroment' should be 'environment' (nm).,,,10,59,18
+Spelling_818,The sports equiptment,is stored in,the cupboard by,the gym.,A,Error: 'equiptment' should be 'equipment' (quip).,,,8,56,21
+Spelling_819,The kitchen is,fully equipped with,a cooker and,fridge.,N,No error.,,,7,52,19
+Spelling_820,I like vegetables,especialy carrots and,peas with my,dinner.,B,Error: 'especialy' should be 'especially' (lly).,,,7,57,21
+Spelling_821,Do not exagerate,how big the,fish was that,you caught.,B,Error: 'exagerate' should be 'exaggerate' (gg).,,,11,51,16
+Spelling_822,He achieved an,excelent score in,his maths test,today.,B,Error: 'excelent' should be 'excellent' (ll).,,,6,51,17
+Spelling_823,There is no,exception to the,rule about wearing,uniform.,N,No error.,,,8,53,18
+Spelling_824,You should excercise,every day to,keep your heart,healthy.,A,Error: 'excercise' should be 'exercise' (exe).,,,8,55,20
+Spelling_825,I was exhasted,after walking up,the steep hill,yesterday.,A,Error: 'exhasted' should be 'exhausted' (hau).,,,10,54,16
+Spelling_826,The museum exibition,displayed old coins,and ancient roman,pottery.,A,Error: 'exibition' should be 'exhibition' (xhi).,,,8,64,20
+Spelling_827,The existance of,dinosaurs is proven,by fossils found,underground.,A,Error: 'existance' should be 'existence' (ence).,,,12,63,19
+Spelling_828,I expect that,he will arrive,late as he,usually does.,N,No error.,,,10,50,14
+Spelling_829,That is an,expensive watch that,must have cost,a lot.,N,No error.,,,6,50,20
+Spelling_830,He has experiance,working with computers,and fixing software,problems.,B,Error: 'experiance' should be 'experience' (ience).,,,9,67,22
+Spelling_831,Can you explain,why you were,late for school,today?,N,No error.,,,6,48,15
+Spelling_832,He gave an,explantion for his,absence from the,meeting.,B,Error: 'explantion' should be 'explanation' (plana).,,,8,52,18
+Spelling_833,It was an,extraodinary performance by,the young ,actor on stage.,B,Error: 'extraodinary' should be 'extraordinary' (aor).,,,9,61,27
+Spelling_834,The extream heat,made it difficult,to work outside,today.,A,Error: 'extream' should be 'extreme' (eme).,,,6,54,17
+Spelling_835,His face was,familar but I,could not remember,his name.,B,Error: 'familar' should be 'familiar' (iar).,,,9,52,18
+Spelling_836,He is famous,for writing books,about history and,war.,N,No error.,,,4,50,17
+Spelling_837,My favorite subject,is art because,I love to,paint.,A,"Error: 'favorite' is US spelling, 'favourite' is UK.",,,6,48,19
+Spelling_838,We go skiing,in Febuary when,there is lots,of snow.,B,Error: 'Febuary' should be 'February' (bru).,,,8,48,15
+Spelling_839,The feirce dog,barked loudly at,the postman this,morning.,A,Error: 'feirce' should be 'fierce' (ie).,,,8,54,16
+Spelling_840,We finaly reached,the summit of,the mountain at,noon.,A,Error: 'finaly' should be 'finally' (lly).,,,5,50,17
+Spelling_841,The florescent light,hummed quietly in,the corner of,the room.,A,Error: 'florescent' should be 'fluorescent' (luo).,,,9,59,20
+Spelling_842,Learning a foriegn,language takes a,lot of time,and effort.,B,Error: 'foriegn' should be 'foreign' (ei).,,,11,56,18
+Spelling_843,Do not forget,to bring your,swimming kit on,Tuesday.,N,No error.,,,8,49,15
+Spelling_844,There were fourty,people at the,party last Saturday,night.,A,Error: 'fourty' should be 'forty' (forty).,,,6,55,19
+Spelling_845,Please step foward,when your name,is called out,loudly.,A,Error: 'foward' should be 'forward' (rw).,,,7,52,18
+Spelling_846,My best freind,helps me with,my homework after,school.,A,Error: 'freind' should be 'friend' (ie).,,,7,51,17
+Spelling_847,It was a,frightning experience to,be lost in,the woods.,B,Error: 'frightning' should be 'frightening' (ten).,,,8,52,24
+Spelling_848,Fresh fruit is,a healthy snack,to eat at,break time.,N,No error.,,,9,49,15
+Spelling_849,For futher details,please see the,notice board in,the hall.,A,Error: 'futher' should be 'further' (fur).,,,9,56,18
+Spelling_850,I garantee that,you will enjoy,this exciting new,film.,A,Error: 'garantee' should be 'guarantee' (gua).,,,5,51,17
+Spelling_851,Use the temperature,guage to check,how hot the,water is.,B,Error: 'guage' should be 'gauge' (au).,,,9,53,19
+Spelling_852,I generally walk,to school unless,it is raining,hard.,N,No error.,,,5,50,16
+Spelling_853,I got the,jist of the,conversation even though,it was quiet.,B,Error: 'jist' should be 'gist' (gi).,,,9,57,24
+Spelling_854,She looked glamourous,in her long,evening gown and,jewels.,B,Error: 'glamourous' should be 'glamorous' (mor).,,,7,55,21
+Spelling_855,The goverment decides,how much tax,we have to,pay.,A,Error: 'goverment' should be 'government' (nm).,,,4,47,21
+Spelling_856,Check your grammer,and spelling before,you hand in,work.,A,Error: 'grammer' should be 'grammar' (mar).,,,5,53,19
+Spelling_857,I am greatful,for the lovely,present you gave,me.,A,Error: 'greatful' should be 'grateful' (gra).,,,3,46,16
+Spelling_858,The security gaurd,watched the screens,all through the,night.,A,Error: 'gaurd' should be 'guard' (gua).,,,6,58,19
+Spelling_859,Whatever happend to,the old car,you used to,drive?,A,Error: 'happend' should be 'happened' (pened).,,,6,47,19
+Spelling_860,Do not harrass,the wildlife when,you visit the,park.,B,Error: 'harrass' should be 'harass' (one r).,,,5,49,17
+Spelling_861,I can hear,the birds singing,in the trees,outside.,N,No error.,,,8,47,17
+Spelling_862,The height of,the wall is,about two metres,tall.,N,No error.,,,5,45,16
+Spelling_863,The snow is,a hinderance to,drivers on the,roads.,B,Error: 'hinderance' should be 'hindrance' (dra).,,,6,46,15
+Spelling_864,He is an,honorary member of,the local history,society.,N,No error.,,,8,51,18
+Spelling_865,It was a,humourous book that,made me laugh,aloud.,B,Error: 'humourous' should be 'humorous' (morous).,,,6,46,19
+Spelling_866,Please show your,identity card to,enter the building,today.,N,No error.,,,6,56,18
+Spelling_867,His idiosyncracy is,whistling while he,works at his,desk.,A,Error: 'idiosyncracy' should be 'idiosyncrasy' (sy).,,,5,54,19
+Spelling_868,Come home immediatly,after school has,finished for the,day.,B,Error: 'immediatly' should be 'immediately' (ately).,,,4,56,20
+Spelling_869,The traffic incedint,caused long delays,on the motorway,today.,A,Error: 'incedint' should be 'incident' (ci).,,,6,59,20
+Spelling_870,She is an,independant girl who,likes to do,things alone.,B,Error: 'independant' should be 'independent' (pend).,,,9,53,20
+Spelling_871,Do not interfeer,with the experiment,or it might,fail.,B,Error: 'interfeer' should be 'interfere' (fere).,,,5,51,19
+Spelling_872,Do not interupt,people when they,are speaking to,you.,B,Error: 'interupt' should be 'interrupt' (rr).,,,4,50,16
+Spelling_873,The chocolate cake,was irresistable and,I ate two,slices.,B,Error: 'irresistable' should be 'irresistible' (ible).,,,7,54,20
+Spelling_874,We swam to,the island in,the middle of,the lake.,N,No error.,,,9,45,13
+Spelling_875,He felt jealous,of his brother's,new bike and,toys.,N,No error.,,,5,48,16
+Spelling_876,The silver jewellry,shone brightly in,the shop window,display.,A,Error: 'jewellry' should be 'jewellery' (lle).,,,8,59,19
+Spelling_877,His knowlege of,geography helped him,win the quiz,today.,A,Error: 'knowlege' should be 'knowledge' (ledge).,,,6,53,20
+Spelling_878,The science labratory,has many benches,and gas taps,inside.,A,Error: 'labratory' should be 'laboratory' (bora).,,,7,56,21
+Spelling_879,Learning a language,takes a lot,of practice and,time.,N,No error.,,,5,50,19
+Spelling_880,I use my,liesure time to,play football and,read.,B,Error: 'liesure' should be 'leisure' (leis).,,,5,45,17
+Spelling_881,Measure the lenth,of the room,before buying the,carpet.,B,Error: 'lenth' should be 'length' (ngth).,,,7,52,17
+Spelling_882,He works as,a liason officer,between the two,schools.,B,Error: 'liason' should be 'liaison' (iai).,,,8,50,16
+Spelling_883,The public libary,has thousands of,books you can,borrow.,B,Error: 'libary' should be 'library' (brary).,,,7,53,17
+Spelling_884,A flash of,lightening lit up,the dark night,sky.,B,Error: 'lightening' should be 'lightning' (ning).,,,4,45,17
+Spelling_885,Listen carefully to,the instructions before,you start the,test.,N,No error.,,,5,60,23
+Spelling_886,He was litterally,shaking with fear,when he saw,the ghost.,B,Error: 'litterally' should be 'literally' (lit).,,,10,55,17
+Spelling_887,Do not loose,your ticket or,you cannot get,in.,B,Error: 'loose' should be 'lose' (one o).,,,3,43,14
+Spelling_888,Regular maintainance keeps,the machine working,smoothly and very,safely.,A,Error: 'maintainance' should be 'maintenance' (ten).,,,7,69,26
+Spelling_889,The view was,marvellous from the,top of the,cliff.,N,No error.,,,6,47,19
+Spelling_890,The doctor's medecine,tasted bitter but,it made me,better.,A,Error: 'medecine' should be 'medicine' (dic).,,,7,55,21
+Spelling_891,The wildflowers in,the medow looked,beautiful in the,spring.,B,Error: 'medow' should be 'meadow' (ead).,,,7,57,18
+Spelling_892,A new millenium,began in the,year two thousand,exactly.,B,Error: 'millenium' should be 'millennium' (nn).,,,8,52,17
+Spelling_893,He collects minature,soldiers and paints,them very carefully,indeed.,A,Error: 'minature' should be 'miniature' (nia).,,,7,65,20
+Spelling_894,The mischevious puppy,chewed my slipper,while I was,asleep.,B,Error: 'mischevious' should be 'mischievous' (chiev).,,,7,56,21
+Spelling_895,A box of,misellaneous toys was,left in the,attic.,B,Error: 'misellaneous' should be 'miscellaneous' (sc).,,,6,46,21
+Spelling_896,I miss my,friends when I,go away on,holiday.,N,No error.,,,8,41,14
+Spelling_897,He pulled a,muscle in his,leg while playing,rugby.,N,No error.,,,6,47,17
+Spelling_898,A misterious stranger,knocked on the,door late at,night.,A,Error: 'misterious' should be 'mysterious' (mys).,,,6,53,21
+Spelling_899,It is necessary,to wear a,seatbelt in the,car.,N,No error.,,,4,43,15
+Spelling_900,It is neccessary,to arrive early,to get a,seat.,B,Error: 'neccessary' should be 'necessary' (cess).,,,5,44,16
+Spelling_901,My next door,neigbour is friendly,and helps us,often.,B,Error: 'neigbour' should be 'neighbour' (ghb).,,,6,50,20
+Spelling_902,My brother's daughter,is my neice,and she visits,weekly.,B,Error: 'neice' should be 'niece' (ie).,,,7,53,21
+Spelling_903,Neither of the,answers on the,page was actually,correct.,N,No error.,,,8,53,17
+Spelling_904,There are ninty,minutes in a,standard football match,game.,A,Error: 'ninty' should be 'ninety' (nety).,,,5,55,23
+Spelling_905,There was a,noticable difference in,the temperature this,morning.,B,Error: 'noticable' should be 'noticeable' (tice).,,,8,62,23
+Spelling_906,The noise is,a nuesance when,I am trying,to sleep.,B,Error: 'nuesance' should be 'nuisance' (nuis).,,,9,47,15
+Spelling_907,The obedient dog,sat down when,his owner told,him.,N,No error.,,,4,47,16
+Spelling_908,On this occassion,I will forgive,you for being,late.,B,Error: 'occassion' should be 'occasion' (casion).,,,5,49,17
+Spelling_909,The accident occured,on the corner,of the busy,street.,B,Error: 'occured' should be 'occurred' (rr).,,,7,51,20
+Spelling_910,It will not,occur again I,promise you that,now.,N,No error.,,,4,44,16
+Spelling_911,I often walk,to the park,to feed the,ducks.,N,No error.,,,6,40,12
+Spelling_912,Do not omit,any important details,from your report,please.,N,No error.,,,7,55,21
+Spelling_913,Black is the,oppisite of white,on the colour,wheel.,B,Error: 'oppisite' should be 'opposite' (oppo).,,,6,48,17
+Spelling_914,This is the,origional version of,the document I,wrote.,B,Error: 'origional' should be 'original' (gin).,,,6,51,20
+Spelling_915,The road runs,paralel to the,railway line for,miles.,B,Error: 'paralel' should be 'parallel' (llel).,,,6,49,16
+Spelling_916,The members of,parlament debate new,laws in the,chamber.,B,Error: 'parlament' should be 'parliament' (rliam).,,,8,53,20
+Spelling_917,Every single partical,of dust was,cleaned from the,room.,B,Error: 'partical' should be 'particle' (cle).,,,5,53,21
+Spelling_918,Is there a,particuler reason why,you are crying,today?,B,Error: 'particuler' should be 'particular' (cular).,,,6,51,21
+Spelling_919,You need patience,to solve this,difficult puzzle on,your own.,N,No error.,,,9,58,19
+Spelling_920,The cricket pavillion,has a green,roof and white,walls.,B,Error: 'pavillion' should be 'pavilion' (vil).,,,6,52,21
+Spelling_921,Many people came,to watch the,parade in the,street.,N,No error.,,,7,48,16
+Spelling_922,You must be,persistant if you,want to achieve,success.,B,Error: 'persistant' should be 'persistent' (tent).,,,8,51,17
+Spelling_923,Only authorised personnel,are allowed in,this area of,building.,N,No error.,,,9,60,25
+Spelling_924,I tried to,persuade him to,join our football,team.,N,No error.,,,5,47,17
+Spelling_925,Building walls is,hard physicle work,that makes you,strong.,B,Error: 'physicle' should be 'physical' (sical).,,,7,56,18
+Spelling_926,Would you like,a peice of,fruit or a,biscuit?,B,Error: 'peice' should be 'piece' (ie).,,,8,42,14
+Spelling_927,The local poltician,visited the school,to give a,speech.,B,Error: 'poltician' should be 'politician' (liti).,,,7,53,19
+Spelling_928,Football is popular,all over the,world with many,fans.,N,No error.,,,5,51,19
+Spelling_929,The ring is,her most prized,posession in the,world.,C,Error: 'posession' should be 'possession' (ssess).,,,6,48,16
+Spelling_930,Is it posible,to finish the,work before we,leave?,B,Error: 'posible' should be 'possible' (ss).,,,6,46,14
+Spelling_931,We grew potatos,in the garden,vegetable patch last,year.,B,Error: 'potatos' should be 'potatoes' (oes).,,,5,53,20
+Spelling_932,I must practise,the piano every,day to get,better.,N,No error (Practise is verb in UK).,,,7,47,15
+Spelling_933,He prefered the,red car to,the blue one,really.,A,Error: 'prefered' should be 'preferred' (rr).,,,7,44,15
+Spelling_934,Prejudice is judging,people before you,know them at,all.,N,No error.,,,4,53,20
+Spelling_935,The preperation for,the exam took,a long time,indeed.,A,Error: 'preperation' should be 'preparation' (par).,,,7,50,19
+Spelling_936,It is a,priviledge to be,captain of the,school.,B,Error: 'priviledge' should be 'privilege' (lege).,,,7,44,16
+Spelling_937,Please proceed to,the exit in,an orderly way,now.,N,No error.,,,4,46,17
+Spelling_938,Teaching is a,proffesion that requires,a lot of,patience.,B,Error: 'proffesion' should be 'profession' (fess).,,,8,54,24
+Spelling_939,The clever professer,invented a new,machine in his,lab.,B,Error: 'professer' should be 'professor' (sor).,,,4,52,20
+Spelling_940,I watched a,program on TV,about wild animals,today.,N,No error.,,,6,48,18
+Spelling_941,His pronounciation of,French words is,very accurate and,clear.,A,Error: 'pronounciation' should be 'pronunciation' (nunci).,,,6,59,21
+Spelling_942,The leaflet contained,political propoganda for,the upcoming election,vote.,B,Error: 'propoganda' should be 'propaganda' (paga).,,,5,71,24
+Spelling_943,He spoke publically,about his plans,to retire next,year.,B,Error: 'publically' should be 'publicly' (licly).,,,5,53,19
+Spelling_944,There was a,long queue for,tickets at the,cinema.,N,No error.,,,7,46,14
+Spelling_945,Please answer the,question clearly in,your exam paper,book.,N,No error.,,,5,56,19
+Spelling_946,Please be quiet,in the library,so people can,read.,N,No error.,,,5,47,15
+Spelling_947,I am quite,sure that I,locked the door,tight.,N,No error.,,,6,42,15
+Spelling_948,I am realy,sorry that I,broke your favourite,mug.,B,Error: 'realy' should be 'really' (ll).,,,4,46,20
+Spelling_949,Did you recieve,my message about,the party on,Friday?,B,Error: 'recieve' should be 'receive' (ceive).,,,7,50,16
+Spelling_950,I recomend the,chicken curry it,is very tasty,indeed.,A,Error: 'recomend' should be 'recommend' (mm).,,,7,50,16
+Spelling_951,He refered to,his notes during,the speech he,gave.,A,Error: 'refered' should be 'referred' (ferr).,,,5,47,16
+Spelling_952,Is this information,relevent to the,topic we are,studying?,B,Error: 'relevent' should be 'relevant' (vant).,,,9,55,19
+Spelling_953,He is a,religous man who,goes to church,weekly.,B,Error: 'religous' should be 'religious' (gious).,,,7,44,16
+Spelling_954,Please rember to,bring your kit,to school on,Monday.,B,Error: 'rember' should be 'remember' (memb).,,,7,49,16
+Spelling_955,The wire's resistence,caused it to,get very hot,quickly.,B,Error: 'resistence' should be 'resistance' (tance).,,,8,53,21
+Spelling_956,We ate at,a pizza resturant,for my birthday,treat.,B,Error: 'resturant' should be 'restaurant' (taur).,,,6,47,17
+Spelling_957,The nursery ryhme,was fun to,sing with the,children.,B,Error: 'ryhme' should be 'rhyme' (rhyme).,,,9,49,17
+Spelling_958,The drum rythm,made everyone want,to dance to,music.,B,Error: 'rythm' should be 'rhythm' (rhythm).,,,6,49,18
+Spelling_959,He made a,sacrifise to help,his team win,gold.,B,Error: 'sacrifise' should be 'sacrifice' (fice).,,,5,43,17
+Spelling_960,The horror movie,was very scary,to watch at,night.,N,No error.,,,6,47,16
+Spelling_961,The mountain sceanery,was breathtaking in,the early morning,sun.,B,Error: 'sceanery' should be 'scenery' (cene).,,,4,61,21
+Spelling_962,Check the schedule,for the time,of the next,train.,N,No error.,,,6,47,18
+Spelling_963,The office secratery,answered the phone,and took a,message.,B,Error: 'secratery' should be 'secretary' (ret).,,,8,56,20
+Spelling_964,It makes no,sence to go,out in the,rain.,B,Error: 'sence' should be 'sense' (se).,,,5,37,11
+Spelling_965,Keep the raw,meat seperate from,the cooked food,please.,B,Error: 'seperate' should be 'separate' (par).,,,7,52,18
+Spelling_966,The castle seige,lasted for six,months before it,ended.,B,Error: 'seige' should be 'siege' (ie).,,,6,52,16
+Spelling_967,He gave a,sincere apology for,being so late,today.,N,No error.,,,6,47,19
+Spelling_968,I am sincerly,grateful for the,help you gave,me.,B,Error: 'sincerly' should be 'sincerely' (cere).,,,3,45,16
+Spelling_969,The brave soldier,marched in the,parade with his,unit.,N,No error.,,,5,51,17
+Spelling_970,My stomache hurts,because I ate,too much cake,today.,A,Error: 'stomache' should be 'stomach' (mach).,,,6,49,17
+Spelling_971,We have suficient,food to feed,everyone at the,party.,B,Error: 'suficient' should be 'sufficient' (ffi).,,,6,50,17
+Spelling_972,I suggest we,go to the,park if it,shines.,N,No error.,,,7,38,12
+Spelling_973,This rule will,supercede the old,one from next,week.,B,Error: 'supercede' should be 'supersede' (sede).,,,5,49,17
+Spelling_974,It was a,suprise to see,him at the,concert.,B,Error: 'suprise' should be 'surprise' (sur).,,,8,40,14
+Spelling_975,The solar system,has eight planets,orbiting around the,sun.,N,No error.,,,4,56,19
+Spelling_976,He got a,tatoo of a,rose on his,arm.,B,Error: 'tatoo' should be 'tattoo' (tt).,,,4,33,11
+Spelling_977,The room temperture,was too hot,for us to,sleep.,B,Error: 'temperture' should be 'temperature' (era).,,,6,45,19
+Spelling_978,He has a,tendancy to forget,his homework at,home.,B,Error: 'tendancy' should be 'tendency' (ency).,,,5,46,18
+Spelling_979,I think therefor,I am is,a famous quote,indeed.,B,Error: 'therefor' should be 'therefore' (fore).,,,7,44,16
+Spelling_980,He stood on,the threshhold of,the old haunted,house.,B,Error: 'threshhold' should be 'threshold' (sh).,,,6,49,17
+Spelling_981,Be very through,when checking your,work for any,mistakes.,B,Error: 'through' should be 'thorough' (thor).,,,9,54,18
+Spelling_982,I will call,you tommorow morning,before I go,out.,B,Error: 'tommorow' should be 'tomorrow' (rr).,,,4,46,20
+Spelling_983,I burnt my,tounge on the,hot soup at,lunch.,B,Error: 'tounge' should be 'tongue' (ngue).,,,6,40,13
+Spelling_984,It was a,tragedy that the,ship sank so,fast.,N,No error.,,,5,41,16
+Spelling_985,I am truely,sorry for the,trouble I have,caused.,B,Error: 'truely' should be 'truly' (uly).,,,7,45,14
+Spelling_986,My birthday is,on the twelth,of May this,year.,B,Error: 'twelth' should be 'twelfth' (fth).,,,5,43,14
+Spelling_987,The delay was,unforseen and we,apologise for the,wait.,B,Error: 'unforseen' should be 'unforeseen' (fore).,,,5,51,17
+Spelling_988,Unfortunatly I missed,the bus and,was late for,school.,A,Error: 'Unfortunatly' should be 'Unfortunately' (ately).,,,7,51,21
+Spelling_989,Wait untill the,light turns green,before crossing the,road.,A,Error: 'untill' should be 'until' (til).,,,5,56,19
+Spelling_990,There is a,variaty of cakes,in the shop,window.,B,Error: 'variaty' should be 'variety' (iet).,,,7,44,16
+Spelling_991,I made vegtable,soup for dinner,with bread and,butter.,B,Error: 'vegtable' should be 'vegetable' (get).,,,7,51,15
+Spelling_992,The army veichle,drove past the,school gates very,fast.,A,Error: 'veichle' should be 'vehicle' (hicle).,,,5,52,17
+Spelling_993,I live in,a small village,near the sea,coast.,N,No error.,,,6,42,15
+Spelling_994,That is a,wierd thing to,say to your,friend.,B,Error: 'wierd' should be 'weird' (ei).,,,7,41,14
+Spelling_995,You can sit,whereever you want,in the empty,hall.,B,Error: 'whereever' should be 'wherever' (rever).,,,5,46,18
+Spelling_996,Wich book did,you like the,best of them,all?,A,Error: 'Wich' should be 'Which' (Which).,,,4,41,13
+Spelling_997,The withdrawal of,money from the,bank took a,while.,N,No error.,,,6,48,17
+Spelling_998,Do not withold,evidence from the,police investigation team,please.,B,Error: 'withold' should be 'withhold' (hhold).,,,7,63,25
+Spelling_999,He is writting,a letter to,his grandmother in,Spain.,A,Error: 'writting' should be 'writing' (riting).,,,6,49,18
+spelling_2401,The architect presented,his plans for,the new library,extention today.,D,"'extention' should be spelt 'extension'."
+spelling_2402,We walked through,the dense forest,untill we reached,the river bank.,C,"'untill' should be spelt 'until'."
+spelling_2403,The harsh winter,conditions made it,very difficult for,wildlife to survive.,N,"No error."
+spelling_2404,My grandmother has,a valuable collection,of porcelian dolls,in her cabinet.,C,"'porcelian' should be spelt 'porcelain'."
+spelling_2405,Please ensure that,you sign the,declaration on the,bottum of the page.,D,"'bottum' should be spelt 'bottom'."
+spelling_2406,The eager students,gathered in the,hall for their,morning assembely.,D,"'assembely' should be spelt 'assembly'."
+spelling_2407,It is dangerous,to exceed the,speed limit on,motorways and roads.,N,"No error."
+spelling_2408,The politician gave,a passionate speech,about the importence,of education.,C,"'importence' should be spelt 'importance'."
+spelling_2409,She checked her,receipt to see,if she had,been overcharged.,N,"No error."
+spelling_2410,The scientist looked,through the microscope,at the tiny,orginisms on the slide.,D,"'orginisms' should be spelt 'organisms'."
+spelling_2411,He was chosen,to represent his,school in the,athletics competetion.,D,"'competetion' should be spelt 'competition'."
+spelling_2412,The heavy rain,caused the river,to overflow its,banks yesterdy.,D,"'yesterdy' should be spelt 'yesterday'."
+spelling_2413,We must try,to reach a,mutual agreement,regarding the contract.,N,"No error."
+spelling_2414,The noisy construction,work outside was,a constant source,of disturbence.,D,"'disturbence' should be spelt 'disturbance'."
+spelling_2415,She wore a,beautiful necklace,with a shinning,diamond pendant.,C,"'shinning' should be spelt 'shining'."
+spelling_2416,The explorer set,out on a,dangrous journey,across the desert.,C,"'dangrous' should be spelt 'dangerous'."
+spelling_2417,It is polite,to knock before,entering a room,that is ocupied.,D,"'ocupied' should be spelt 'occupied'."
+spelling_2418,The lawyer prepared,his closing statement,for the final,judgement in court.,D,"'judgement' is traditionally 'judgment' in legal contexts, but 'judgement' is accepted in UK English. Let's swap for a clear error: 'arguement'."
+spelling_2418b,The lawyer prepared,his closing statement,for the final,arguement in court.,D,"'arguement' should be spelt 'argument' (no e after u)."
+spelling_2419,The terrified child,clung tightly to,his mother's hand,during the storm.,N,"No error."
+spelling_2420,Can you please,pass me the,sisors from the,kitchen drawer?,C,"'sisors' should be spelt 'scissors'."
+spelling_2421,The aroma of,freshly baked bread,wafted from the,kitchen window.,N,"No error."
+spelling_2422,He practiced his,violin every day,to improve his,performence.,D,"'performence' should be spelt 'performance'."
+spelling_2423,The ancient castle,was surrounded by,a deep moat,and high walls.,N,"No error."
+spelling_2424,She felt a,sudden surge of,excitment when she,saw the gift.,C,"'excitment' should be spelt 'excitement'."
+spelling_2425,The ferocious lion,let out a,loud roar that,echoed loudley.,D,"'loudley' should be spelt 'loudly'."
+spelling_2426,We watched the,colourful fireworks,explode in the,night skye.,D,"'skye' should be spelt 'sky'."
+spelling_2427,The brave firefighter,climbed the ladder,to rescue the,frightend cat.,D,"'frightend' should be spelt 'frightened'."
+spelling_2428,My parents are,celebrating their,twentieth wedding,aniversary today.,D,"'aniversary' should be spelt 'anniversary' (double n)."
+spelling_2429,The doctor prescribed,some medicine to,relieve the pain,in his sholder.,D,"'sholder' should be spelt 'shoulder'."
+spelling_2430,The gentle breeze,rustled the leaves,on the tall,oak trees.,N,"No error."
+spelling_2431,He was unable,to conceal his,dissapointment at,losing the match.,C,"'dissapointment' should be spelt 'disappointment' (one s, two p's)."
+spelling_2432,The young girl,dreamt of becoming,a famous ballet,dancor one day.,D,"'dancor' should be spelt 'dancer'."
+spelling_2433,Please be careful,not to break,the fragile glass,oranaments.,D,"'oranaments' should be spelt 'ornaments'."
+spelling_2434,The strict teacher,demanded silence,from the class,immediatley.,D,"'immediatley' should be spelt 'immediately'."
+spelling_2435,The detective found,a crucial clue,hidden in the,libary books.,D,"'libary' should be spelt 'library'."
+spelling_2436,She used a,compass to find,the correct,direction to go.,N,"No error."
+spelling_2437,The huge elephant,sprayed water from,its trunk to,cool itsself.,D,"'itsself' should be spelt 'itself'."
+spelling_2438,I need to,buy some more,stationery for my,pencil case.,N,"No error (stationery with an 'e' is correct for pens/paper)."
+spelling_2439,The fierce dog,barked aggressively,at the postman,every mourning.,D,"'mourning' should be spelt 'morning' (morning time vs mourning dead)."
+spelling_2440,The expensive car,had leather seats,and a powerful,enginet.,D,"'enginet' should be spelt 'engine'."
+spelling_2441,The clever boy,solved the complex,maths problem,very easilly.,D,"'easilly' should be spelt 'easily'."
+spelling_2442,We are planning,a surprise party,for my sister's,eigth birthday.,D,"'eigth' should be spelt 'eighth'."
+spelling_2443,The kind nurse,bandaged his knee,and gave him,a lollypop.,D,"'lollypop' should be spelt 'lollipop'."
+spelling_2444,The heavy traffic,caused a long,delay on the,motorway today.,N,"No error."
+spelling_2445,He was accused,of committing a,serious crime,aginst the state.,D,"'aginst' should be spelt 'against'."
+spelling_2446,The bright sun,shone down on,the sandy beach,and blue see.,D,"'see' should be spelt 'sea'."
+spelling_2447,The hungry wolf,howled at the,full moon in,the midle of the night.,D,"'midle' should be spelt 'middle'."
+spelling_2448,She has a,very good memory,and can remember,facts perfectally.,D,"'perfectally' should be spelt 'perfectly'."
+spelling_2449,The rusty gate,creaked loudly when,we tried to,open it.,N,"No error."
+spelling_2450,The nervous actor,forgot his lines,during the first,scence of the play.,D,"'scence' should be spelt 'scene'."
+spelling_2451,The curious toddler,tried to touch,the hot oven,dispite the warning.,D,"'dispite' should be spelt 'despite'."
+spelling_2452,She received a,medal for her,bravery during,the emergancy.,D,"'emergancy' should be spelt 'emergency'."
+spelling_2453,The jagged rocks,were hidden beneath,the surface of,the water.,N,"No error."
+spelling_2454,He decided to,wear his warm,woollen coat,becuase it was cold.,D,"'becuase' should be spelt 'because'."
+spelling_2455,The friendly waiter,served us our,delicious meal,with a smile.,N,"No error."
+spelling_2456,It is important,to brush your,teeth twice a,day regulary.,D,"'regulary' should be spelt 'regularly'."
+spelling_2457,The massive ship,sailed across the,atlantic ocean,last feburary.,D,"'feburary' should be spelt 'February'."
+spelling_2458,She has a,distinctive scar,on her left,cheak.,D,"'cheak' should be spelt 'cheek'."
+spelling_2459,The tall skyscraper,dominated the city,skyline and looked,impressive.,N,"No error."
+spelling_2460,He applied for,the job but,did not have,enough experiance.,D,"'experiance' should be spelt 'experience'."
+spelling_2461,The naughty child,refused to eat,his vegetables,at dinnertime.,N,"No error."
+spelling_2462,She was feeling,quite miserable,because she had,a headach.,D,"'headach' should be spelt 'headache'."
+spelling_2463,The crowded market,was filled with,the smell of,exotick spices.,D,"'exotick' should be spelt 'exotic'."
+spelling_2464,The patient waited,patiently in the,waiting room for,the docter.,D,"'docter' should be spelt 'doctor'."
+spelling_2465,He used a,sharp knife to,slice the apple,into quartars.,D,"'quartars' should be spelt 'quarters'."
+spelling_2466,The heavy snow,covered the fields,in a thick,white blanket.,N,"No error."
+spelling_2467,She wrote a,long letter to,her friend who,lives abrod.,D,"'abrod' should be spelt 'abroad'."
+spelling_2468,The clever detective,solved the mystery,using his sharp,intelect.,D,"'intelect' should be spelt 'intellect'."
+spelling_2469,The strict rules,must be obeyed,by every student,in the colledge.,D,"'colledge' should be spelt 'college'."
+spelling_2470,He felt a,sharp pain in,his stomach after,eating the pie.,N,"No error."
+spelling_2471,The beautiful painting,was displayed in,the art gallery,exibition.,D,"'exibition' should be spelt 'exhibition'."
+spelling_2472,She wore a,pretty dress with,a matching pair,of shose.,D,"'shose' should be spelt 'shoes'."
+spelling_2473,The loud thunder,frightened the dog,and it hid,under the table.,N,"No error."
+spelling_2474,He was known,for his honesty,and never told,a lye.,D,"'lye' should be spelt 'lie'."
+spelling_2475,The busy street,was filled with,people rushing,to work.,N,"No error."
+spelling_2476,She bought a,loaf of bread,from the bakery,on the corner.,N,"No error."
+spelling_2477,The wild animal,was kept in,a large cage,for saftey.,D,"'saftey' should be spelt 'safety'."
+spelling_2478,He tried to,catch the bus,but it drove,away to fast.,D,"'to' should be spelt 'too'."
+spelling_2479,The bright star,shone brightly in,the dark night,skye.,D,"'skye' should be spelt 'sky'."
+spelling_2480,She likes to,read adventure stories,about pirates and,treasure hunts.,N,"No error."
+spelling_2481,The police officer,directed the traffic,away from the,accident sceen.,D,"'sceen' should be spelt 'scene'."
+spelling_2482,He was very,thirsty so he,drank a glass,of water.,N,"No error."
+spelling_2483,The young bird,fell out of,its nest and,injured its wing.,N,"No error."
+spelling_2484,She felt very,tired after the,long walk in,the countrside.,D,"'countrside' should be spelt 'countryside'."
+spelling_2485,The loud music,kept the neighbours,awake until late,at nite.,D,"'nite' should be spelt 'night'."
+spelling_2486,He was happy,to see his,friends after such,a long time.,N,"No error."
+spelling_2487,The little girl,played with her,doll in the,garden shedd.,D,"'shedd' should be spelt 'shed'."
+spelling_2488,She wore a,warm scarf to,protect her neck,from the cold.,N,"No error."
+spelling_2489,The tasty cake,was covered in,chocolate icing,and sprinkles.,N,"No error."
+spelling_2490,He rode his,bicycle to school,every day unless,it rainned.,D,"'rainned' should be spelt 'rained'."
+spelling_2491,The funny clown,made the children,laugh with his,silly tricks.,N,"No error."
+spelling_2492,She found a,shiny coin on,the pavement and,picked it up.,N,"No error."
+spelling_2493,The old man,walked slowly with,the help of,a walking stick.,N,"No error."
+spelling_2494,He lost his,keys and could,not unlock the,front door.,N,"No error."
+spelling_2495,The brave soldier,fought for his,country in the,great war.,N,"No error."
+spelling_2496,She likes to,swim in the,pool during the,summer holidays.,N,"No error."
+spelling_2497,The ripe apple,fell from the,tree and rolled,on the grass.,N,"No error."
+spelling_2498,He used a,hammer to hit,the nail into,the wood.,N,"No error."
+spelling_2499,The fast car,zoomed past us,on the motorway,at high speed.,N,"No error."
+spelling_2500,She sang a,beautiful song,at the school,concert last night.,N,"No error."
+spelling_2501,The scientist conducted,an experiment in,the labratory to,test his theory.,C,"'labratory' should be spelt 'laboratory'."
+spelling_2502,We need to,buy some milk,from the groccery,store later.,C,"'groccery' should be spelt 'grocery'."
+spelling_2503,The athlete broke,the world record,in the hundred,metre sprint.,N,"No error."
+spelling_2504,My neighbour is,a very pleasent,woman who always,smiles at us.,C,"'pleasent' should be spelt 'pleasant'."
+spelling_2505,The mountain peak,was covered in,perminant snow throughout,the entire year.,C,"'perminant' should be spelt 'permanent'."
+spelling_2506,The jury reached,a verdict after,carefull deliberation,in the room.,C,"'carefull' should be spelt 'careful'."
+spelling_2507,She looked at,her reflection in,the miror before,going out.,C,"'miror' should be spelt 'mirror'."
+spelling_2508,The traffic warden,issued a ticket,for illegal parking,on the street.,N,"No error."
+spelling_2509,It is rude,to interrupt when,someone else is,speeking to you.,D,"'speeking' should be spelt 'speaking'."
+spelling_2510,The volcanic eruption,caused massive destruction,to the serounding,villages nearby.,C,"'serounding' should be spelt 'surrounding'."
+spelling_2511,He showed great,perserverance in finishing,the marathon despite,his injury.,B,"'perserverance' is B. Wait, user asked for C or D. Let's swap words."
+spelling_2511b,He showed great,determination in finishing,the marothon despite,his injury.,C,"'marothon' should be spelt 'marathon'."
+spelling_2512,The mysterious stranger,vanished into the,darkness of the,allayway.,D,"'allayway' should be spelt 'alleyway'."
+spelling_2513,Please remember to,fasten your seatbelt,before the car,starts moveing.,D,"'moveing' should be spelt 'moving'."
+spelling_2514,The orchestra played,a symphony by,Beethoven at the,concerte hall.,D,"'concerte' should be spelt 'concert'."
+spelling_2515,The terrifying movie,gave me nightmares,for several nights,afterwords.,D,"'afterwords' should be spelt 'afterwards'."
+spelling_2516,The ingredients for,the cake include,flour sugar and,margerine.,D,"'margerine' should be spelt 'margarine'."
+spelling_2517,She has a,tendancy to talk,too much when,she is nervous.,B,"'tendancy' is B. Let's fix. C or D required."
+spelling_2517b,She often talks,too much when,she feels any,anxiaty.,D,"'anxiaty' should be spelt 'anxiety'."
+spelling_2518,The mechanic repaired,the broken engine,in the garage,yesterday.,N,"No error."
+spelling_2519,We witnessed a,spectacular solar,eclipse from our,garden.,N,"No error."
+spelling_2520,The heavy rain,caused the river,level to rise,rapidley.,D,"'rapidley' should be spelt 'rapidly'."
+spelling_2521,The famous actor,signed autographs for,his fans outside,the theatre.,N,"No error."
+spelling_2522,He was caught,trying to steal,sweets from the,confecsionery shop.,D,"'confecsionery' should be spelt 'confectionery'."
+spelling_2523,The poisonous snake,slithered silently through,the long grass,in the feild.,D,"'feild' should be spelt 'field'."
+spelling_2524,She felt a,sense of acheivement,after passing her,driving test.,C,"'acheivement' should be spelt 'achievement'."
+spelling_2525,The ancient ruins,were discovered by,a team of,archaeologists.,N,"No error."
+spelling_2526,The noisy neighbours,had a loud,arguement in the,middle of the night.,C,"'arguement' should be spelt 'argument'."
+spelling_2527,He wants to,persue a career,in medicine when,he leaves school.,B,"'persue' is B. Let's move error to C."
+spelling_2527b,He wants to,follow a career,in medecine when,he leaves school.,C,"'medecine' should be spelt 'medicine'."
+spelling_2528,The fierce storm,caused extensive damage,to the costal,towns.,C,"'costal' should be spelt 'coastal'."
+spelling_2529,She received a,scholarship to attend,the prestigious,univercity.,D,"'univercity' should be spelt 'university'."
+spelling_2530,The vegetables were,grown without using,any artificial,fertilizer.,N,"No error."
+spelling_2531,The huge dinosaur,skeleton was displayed,in the national,museam.,D,"'museam' should be spelt 'museum'."
+spelling_2532,He checked the,temprature of the,water before diving,into the pool.,B,"'temprature' is B. Let's move error."
+spelling_2532b,He checked the,heat of the,water with a,thermometer.,D,"'thermomiter' wait, let's spell it wrong in D: 'thermomiter'."
+spelling_2532c,He checked the,heat of the,water with a,thermomiter.,D,"'thermomiter' should be spelt 'thermometer'."
+spelling_2533,The government announced,a reduction in,income tax for,low earners.,N,"No error."
+spelling_2534,She was wearing,a gorgeous silk,dress with a,matching scarf.,N,"No error."
+spelling_2535,The amateur artist,painted a portrait,of his wife,on canves.,D,"'canves' should be spelt 'canvas'."
+spelling_2536,The brave knight,fought the dragon,to save the,princess.,N,"No error."
+spelling_2537,It is definitly,going to rain,later so take,an umbrella.,B,"'definitly' is B. Let's move error."
+spelling_2537b,Take an umbrella,because it is,definitly going to,rain later.,C,"'definitly' should be spelt 'definitely'."
+spelling_2538,The curious cat,climbed up the,curtians and got,stuck.,C,"'curtians' should be spelt 'curtains'."
+spelling_2539,He ordered a,steak with chips,and a side,salad.,N,"No error."
+spelling_2540,The loud explosion,shook the ground,and shattered the,window paynes.,D,"'paynes' should be spelt 'panes'."
+spelling_2541,She has a,collection of rare,stamps from all,over the world.,N,"No error."
+spelling_2542,The football match,was postponed due,to the waterlogged,pitch.,N,"No error."
+spelling_2543,The villain hatched,a cunning plan,to steal the,crown jewells.,D,"'jewells' should be spelt 'jewels'."
+spelling_2544,He suffered a,minor injury during,the rugby match,on Saterday.,D,"'Saterday' should be spelt 'Saturday'."
+spelling_2545,The chocolate cake,was moist and,delicious with a,rich flavour.,N,"No error."
+spelling_2546,She practiced the,piano until her,fingers were sore,and stiff.,N,"No error."
+spelling_2547,The aggressive swan,hissed at the,tourists walking,by the lake.,N,"No error."
+spelling_2548,He was guilty,of stealing the,money from the,cash regester.,D,"'regester' should be spelt 'register'."
+spelling_2549,The bright lights,of the city,dazzled his eyes,at night.,N,"No error."
+spelling_2550,She bought a,new pair of,trousers for the,interveiw.,D,"'interveiw' should be spelt 'interview'."
+spelling_2551,The ferocious tiger,stalked its prey,through the dense,jungle.,N,"No error."
+spelling_2552,He felt a,sense of relief,when the exam,was finnished.,D,"'finnished' should be spelt 'finished'."
+spelling_2553,The magnificent view,from the top,of the tower,was breathtakeing.,D,"'breathtakeing' should be spelt 'breathtaking'."
+spelling_2554,She used a,calculator to check,her maths homework,answers.,N,"No error."
+spelling_2555,The heavy anchor,kept the ship,stationary in the,harbor.,D,"'harbor' is US spelling. UK is 'harbour'. In 11+ UK context, 'harbor' is an error. Explanation: 'harbor' should be 'harbour'."
+spelling_2556,He wants to,become a pilot,and fly aeroplanes,around the world.,N,"No error."
+spelling_2557,The secret agent,went on a,mission to save,the world.,N,"No error."
+spelling_2558,She has a,wonderful sence of,humour and makes,everyone laugh.,C,"'sence' should be spelt 'sense'."
+spelling_2559,The huge whale,swam gracefully in,the deep blue,ocean.,N,"No error."
+spelling_2560,He wrote a,sincere letter of,apology to his,teacher.,N,"No error."
+spelling_2561,The spooky house,was abandoned and,said to be,haunted.,N,"No error."
+spelling_2562,She likes to,wear colourful clothes,with bright,paterns.,D,"'paterns' should be spelt 'patterns'."
+spelling_2563,The heavy box,was too heavy,for him to,lift alone.,N,"No error."
+spelling_2564,He decided to,join the local,gym to get,fitter.,N,"No error."
+spelling_2565,The delicious smell,of cooking made,his mouth water,hungrily.,N,"No error."
+spelling_2566,She tied a,ribbon around the,gift to make,it look nice.,N,"No error."
+spelling_2567,The clever student,passed the exam,with flying colours,and grade A.,N,"No error."
+spelling_2568,He was afraid,of the dark,so he slept,with a lite.,D,"'lite' should be spelt 'light'."
+QuestionID,PartA,PartB,PartC,PartD,CorrectAnswer,Explanation
+spelling_2601,The eager student,waited for the,teacher's permision,to leave class.,C,"'permision' should be spelt 'permission'."
+spelling_2602,She wrapped the,gift in bright,paper and tied,it with a ribon.,D,"'ribon' should be spelt 'ribbon'."
+spelling_2603,The harsh weather,made it difficult,for the plants,to survibe.,D,"'survibe' should be spelt 'survive'."
+spelling_2604,He made a,solemn promise,to behave well,in futur.,D,"'futur' should be spelt 'future'."
+spelling_2605,The local council,discussed plans for,a new lesure,centre nearby.,C,"'lesure' should be spelt 'leisure'."
+spelling_2606,We watched the,aeroplane soar,high above the,clowds.,D,"'clowds' should be spelt 'clouds'."
+spelling_2607,She felt a,deep sense of,greef after hearing,the sad news.,C,"'greef' should be spelt 'grief'."
+spelling_2608,The clever magician,performed a trick,that amazed the,audiance.,D,"'audiance' should be spelt 'audience'."
+spelling_2609,He used a,magnifying glass,to examine the,inscect closely.,D,"'inscect' should be spelt 'insect'."
+spelling_2610,The busy chef,prepared the food,in the restaurant,kitchin.,D,"'kitchin' should be spelt 'kitchen'."
+spelling_2611,She likes to,wear her hair,in a long,brade.,D,"'brade' should be spelt 'braid'."
+spelling_2612,The loud noise,from the factory,was a constant,nusance.,D,"'nusance' should be spelt 'nuisance'."
+spelling_2613,He was chosen,to be the,captian of the,football team.,C,"'captian' should be spelt 'captain'."
+spelling_2614,The heavy rain,caused the roof,to leak in,severel places.,D,"'severel' should be spelt 'several'."
+spelling_2615,She wrote a,shopping list,on a peace,of paper.,C,"'peace' should be spelt 'piece' (piece of paper)."
+spelling_2616,The brave soldier,received a medal,for his courage,in battle.,C,"'courage' is correct here. Error needed in C or D. Let's fix: 'corage'."
+spelling_2616b,The brave soldier,received a medal,for his corage,in battle.,C,"'corage' should be spelt 'courage'."
+spelling_2617,He went to,the dentist to,fix his tooth,ake.,D,"'ake' should be spelt 'ache'."
+spelling_2618,The strict teacher,gave the class,a severe,punishement.,D,"'punishement' should be spelt 'punishment'."
+spelling_2619,She sat on,the comfortable,sofa and read,a magizine.,D,"'magizine' should be spelt 'magazine'."
+spelling_2620,The bright light,attracted many,moths to the,lanturn.,D,"'lanturn' should be spelt 'lantern'."
+spelling_2621,He was very,grateful for the,oppertunity to,visit the zoo.,C,"'oppertunity' should be spelt 'opportunity'."
+spelling_2622,The wild flowers,grew in the,meadow near,the streem.,D,"'streem' should be spelt 'stream'."
+spelling_2623,She used a,spade to dig,a whole in,the garden.,C,"'whole' should be spelt 'hole' (hole in ground)."
+spelling_2624,The fast train,travelled quickly,through the dark,tunel.,D,"'tunel' should be spelt 'tunnel'."
+spelling_2625,He felt very,nervous before,his big piano,examn.,D,"'examn' should be spelt 'exam' or 'examination'."
+spelling_2626,The cold ice,melted slowly,in the warm,sunshin.,D,"'sunshin' should be spelt 'sunshine'."
+spelling_2627,She bought a,new pair of,glases for,reading.,C,"'glases' should be spelt 'glasses'."
+spelling_2628,The noisy crowd,cheered loudly,at the football,stadiun.,D,"'stadiun' should be spelt 'stadium'."
+spelling_2629,He likes to,collect sea shells,on the sandy,beech.,D,"'beech' should be spelt 'beach' (beech is a tree)."
+spelling_2630,The tall giraffe,ate leaves from,the top of,the trea.,D,"'trea' should be spelt 'tree'."
+spelling_2631,She wore a,pretty ring,on her little,fingure.,D,"'fingure' should be spelt 'finger'."
+spelling_2632,The fierce lion,hunted for food,on the african,planes.,D,"'planes' should be spelt 'plains' (grassland)."
+spelling_2633,He drank a,cup of hot,choclate before,bedtime.,C,"'choclate' should be spelt 'chocolate'."
+spelling_2634,The small mouse,ran quickly across,the kichen,floor.,C,"'kichen' should be spelt 'kitchen'."
+spelling_2635,She sent a,birthday card,to her best,freind.,D,"'freind' should be spelt 'friend'."
+spelling_2636,The old clock,chimed loudly,every hour on,the houre.,D,"'houre' should be spelt 'hour'."
+spelling_2637,He rode his,horse along the,narrow country,layne.,D,"'layne' should be spelt 'lane'."
+spelling_2638,The ripe banana,was yellow and,covered in brown,spottes.,D,"'spottes' should be spelt 'spots'."
+spelling_2639,She likes to,paint pictures,of flowers and,animalls.,D,"'animalls' should be spelt 'animals'."
+spelling_2640,The big ship,sailed across the,deep blue,osean.,D,"'osean' should be spelt 'ocean'."
+spelling_2641,He played the,drums in the,school band,consert.,D,"'consert' should be spelt 'concert'."
+spelling_2642,The green frog,jumped into the,pond with a,splosh.,D,"'splosh' is onomatopoeic but 'splash' is standard. Let's use 'spalsh'."
+spelling_2642b,The green frog,jumped into the,pond with a,spalsh.,D,"'spalsh' should be spelt 'splash'."
+spelling_2643,She read a,story about a,wicked witch,and a wizzard.,D,"'wizzard' should be spelt 'wizard'."
+spelling_2644,The hot soup,burned his tongue,so he blew,on it.,C,"'tongue' is correct. Error needed. Let's try 'tung'."
+spelling_2644b,The hot soup,burned his tung,so he blew,on it.,C,"'tung' should be spelt 'tongue'."
+spelling_2645,He was late,for school because,he missed the,buss.,D,"'buss' should be spelt 'bus'."
+spelling_2646,The bright star,twinkled in the,clear night,skye.,D,"'skye' should be spelt 'sky'."
+spelling_2647,She wore a,red coat with,shiny silver,butons.,D,"'butons' should be spelt 'buttons'."
+spelling_2648,The heavy bag,was too heavy,for her to,carrie.,D,"'carrie' should be spelt 'carry'."
+spelling_2649,He likes to,play football,in the park,on Sundy.,D,"'Sundy' should be spelt 'Sunday'."
+spelling_2650,The sweet honey,tasted delicious,on warm toast,and butter.,C,"'delicious' is correct. Error needed. Let's try 'delisious'."
+spelling_2650b,The sweet honey,tasted delisious,on warm toast,and butter.,C,"'delisious' should be spelt 'delicious'."
+spelling_2651,She found a,shiny penny,on the side,walk.,D,"'side walk' is US. UK is pavement. Let's allow 'pavement' but error 'pavment'."
+spelling_2651b,She found a,shiny penny,on the dirty,pavment.,D,"'pavment' should be spelt 'pavement'."
+spelling_2652,The little bird,built a nest,in the tall,oke tree.,D,"'oke' should be spelt 'oak'."
+spelling_2653,He went to,the shop to,buy some,sweets.,D,"'sweets' is correct. Error needed. Let's try 'swetes'."
+spelling_2653b,He went to,the shop to,buy some,swetes.,D,"'swetes' should be spelt 'sweets'."
+spelling_2654,The fast runner,won the race,and got a,trophie.,D,"'trophie' should be spelt 'trophy'."
+spelling_2655,She likes to,swim in the,sea when it,is warme.,D,"'warme' should be spelt 'warm'."
+spelling_2656,The happy baby,smiled and waved,at his mother,and farther.,D,"'farther' is distance. 'father' is dad. Context implies dad."
+spelling_2656b,The happy baby,smiled and waved,at his mother,and farther.,D,"'farther' should be spelt 'father' (parent)."
+spelling_2657,He used a,pen to write,a letter to,his uncal.,D,"'uncal' should be spelt 'uncle'."
+spelling_2658,The noisy dog,barked loudly at,the postman,every day.,C,"'loudly' is correct. Error needed. Let's try 'lowdly'."
+spelling_2658b,The noisy dog,barked lowdly at,the postman,every day.,C,"'lowdly' should be spelt 'loudly'."
+spelling_2659,She wore a,warm hat to,keep her head,worm.,D,"'worm' should be spelt 'warm' (worm is an animal)."
+spelling_2660,The red apple,fell from the,tree and hit,the grownd.,D,"'grownd' should be spelt 'ground'."
+spelling_2661,The scientist worked,in the laboratory,conducting importent,experiments.,C,"'importent' should be spelt 'important'."
+spelling_2662,He tried to,conceal his,embarassment when,he fell over.,C,"'embarassment' should be spelt 'embarrassment' (double r)."
+spelling_2663,The government announced,plans to improve,the enviroment,next year.,C,"'enviroment' should be spelt 'environment'."
+spelling_2664,She made a,conscious decision,to eat more,healthily.,C,"'conscious' is correct. Error needed. 'concious'."
+spelling_2664b,She made a,concious decision,to eat more,healthily.,C,"'concious' should be spelt 'conscious'."
+spelling_2665,The library has,an extensive collection,of referance,books.,C,"'referance' should be spelt 'reference'."
+spelling_2666,It is generally,accepted that,smoking is,harmfull.,D,"'harmfull' should be spelt 'harmful'."
+spelling_2667,The police launched,an investigation into,the suspisious,activity.,C,"'suspisious' should be spelt 'suspicious'."
+spelling_2668,He was disappointed,with the poor,service at the,resturant.,D,"'resturant' should be spelt 'restaurant'."
+spelling_2669,The committee reached,a unanimous,agrement on,the issue.,C,"'agrement' should be spelt 'agreement'."
+spelling_2670,She is a,conscientious student,who always does,her homwork.,D,"'homwork' should be spelt 'homework'."
+spelling_2671,The athlete showed,great endurance,during the,compitition.,D,"'compitition' should be spelt 'competition'."
+spelling_2672,He wants to,pursue a career,in the medical,proffession.,D,"'proffession' should be spelt 'profession'."
+spelling_2673,The beautiful scenery,was spoiled by,the ugly,grafiti.,D,"'grafiti' should be spelt 'graffiti'."
+spelling_2674,She felt a,sense of acheivement,when she won,the prize.,C,"'acheivement' should be spelt 'achievement'."
+spelling_2675,The mischievous puppy,chewed the slipper,until it was,ruinnd.,D,"'ruinnd' should be spelt 'ruined'."
+spelling_2676,It is necessary,to have a,valid passport,to travell.,D,"'travell' should be spelt 'travel'."
+spelling_2677,The politician gave,a speech about,the economick,situation.,C,"'economick' should be spelt 'economic'."
+spelling_2678,She has a,definite plan,for her future,carear.,D,"'carear' should be spelt 'career'."
+spelling_2679,The weather forecast,predicts heavy rain,and thunder,stroms.,D,"'stroms' should be spelt 'storms'."
+spelling_2680,He was accused,of causing a,public,disturbence.,D,"'disturbence' should be spelt 'disturbance'."
+spelling_2681,The ancient ruins,are a popular,tourist,atraction.,D,"'atraction' should be spelt 'attraction'."
+spelling_2682,She received a,bouquet of flowers,for her,birthday.,C,"'flowers' is correct. Error needed. 'flowres'."
+spelling_2682b,She received a,bouquet of flowres,for her,birthday.,C,"'flowres' should be spelt 'flowers'."
+spelling_2683,The heavy traffic,caused a delay,on the,motoway.,D,"'motoway' should be spelt 'motorway'."
+spelling_2684,He applied for,the position of,assistant,mananger.,D,"'mananger' should be spelt 'manager'."
+spelling_2685,The delicious meal,was cooked by,a famous,cheff.,D,"'cheff' should be spelt 'chef'."
+spelling_2686,She wants to,be independent,and live on,her owne.,D,"'owne' should be spelt 'own'."
+spelling_2687,The curious child,asked many questions,about the,universe.,D,"'universe' is correct. Error needed. 'univverse'."
+spelling_2687b,The curious child,asked many questions,about the,univverse.,D,"'univverse' should be spelt 'universe'."
+spelling_2688,He showed great,resillience in recovering,from his,illness.,C,"'resillience' should be spelt 'resilience'."
+spelling_2689,The loud music,was a constant,source of,iritation.,D,"'iritation' should be spelt 'irritation'."
+spelling_2690,She wore a,beautiful necklace,made of silver,and gold.,D,"'gold' is correct. Error needed. 'golde'."
+spelling_2690b,She wore a,beautiful necklace,made of silver,and golde.,D,"'golde' should be spelt 'gold'."
+spelling_2691,The fierce storm,destroyed the old,wooden,bridge.,D,"'bridge' is correct. Error needed. 'brige'."
+spelling_2691b,The fierce storm,destroyed the old,wooden,brige.,D,"'brige' should be spelt 'bridge'."
+spelling_2692,He was very,successful in his,business,ventuer.,D,"'ventuer' should be spelt 'venture'."
+spelling_2693,The aggressive dog,growled menacingly,at the,stranger.,D,"'stranger' is correct. Error needed. 'strangar'."
+spelling_2693b,The aggressive dog,growled menacingly,at the,strangar.,D,"'strangar' should be spelt 'stranger'."
+spelling_2694,She has a,pleasant personality,and is very,freindly.,D,"'freindly' should be spelt 'friendly'."
+spelling_2695,The heavy snow,made the roads,very,slipery.,D,"'slipery' should be spelt 'slippery'."
+spelling_2696,He wrote a,humorous story,about a funny,clown.,D,"'clown' is correct. Error needed. 'clowne'."
+spelling_2696b,He wrote a,humorous story,about a funny,clowne.,D,"'clowne' should be spelt 'clown'."
+spelling_2697,The bright sun,shone down on,the sandy,dessert.,D,"'dessert' is sweet food. 'desert' is sand. Context: sandy."
+spelling_2697b,The bright sun,shone down on,the sandy,dessert.,D,"'dessert' should be spelt 'desert'."
+spelling_2698,She likes to,read mystery novels,full of,suspence.,D,"'suspence' should be spelt 'suspense'."
+spelling_2699,The loud explosion,shook the ground,and broke,windows.,D,"'windows' is correct. Error needed. 'windoes'."
+spelling_2699b,The loud explosion,shook the ground,and broke,windoes.,D,"'windoes' should be spelt 'windows'."
+spelling_2700,He wants to,travel around the,world in a,yaght.,D,"'yaght' should be spelt 'yacht'."
+spelling_2701,The courageous firefighter,saved the family,from the burning,bilding.,D,"'bilding' should be spelt 'building'."
+spelling_2702,She showed her,appreciation by,sending a thank,you notte.,D,"'notte' should be spelt 'note'."
+spelling_2703,The mysterious box,was hidden in,the secret,pasage.,D,"'pasage' should be spelt 'passage'."
+spelling_2704,He was known,for his generous,nature and kind,hart.,D,"'hart' should be spelt 'heart' (organ vs deer)."
+spelling_2705,The enormous elephant,lifted the heavy,log with its,trunck.,D,"'trunck' should be spelt 'trunk'."
+spelling_2706,She felt a,sudden pain in,her left,sholder.,D,"'sholder' should be spelt 'shoulder'."
+spelling_2707,The busy airport,was crowded with,people going on,holaday.,D,"'holaday' should be spelt 'holiday'."
+spelling_2708,He used a,telescope to look,at the distant,plannets.,D,"'plannets' should be spelt 'planets'."
+spelling_2709,The ferocious tiger,roared loudly in,the wild,jungel.,D,"'jungel' should be spelt 'jungle'."
+spelling_2710,She bought a,new pair of,scissors to cut,the papper.,D,"'papper' should be spelt 'paper'."
+spelling_2711,The heavy rain,caused the river,to flood the,valey.,D,"'valey' should be spelt 'valley'."
+spelling_2712,He wants to,be a scientist,and discover new,thinges.,D,"'thinges' should be spelt 'things'."
+spelling_2713,The beautiful garden,was filled with,colourful flowers,and plantes.,D,"'plantes' should be spelt 'plants'."
+spelling_2714,She wore a,warm coat to,protect her from,the colde.,D,"'colde' should be spelt 'cold'."
+spelling_2715,The loud music,woke the baby,from his afternoon,napp.,D,"'napp' should be spelt 'nap'."
+spelling_2716,He played the,guitar in the,school rock,bande.,D,"'bande' should be spelt 'band'."
+spelling_2717,The green grass,was covered in,morning,deww.,D,"'deww' should be spelt 'dew'."
+spelling_2718,She likes to,drink hot chocolate,with whipped,creem.,D,"'creem' should be spelt 'cream'."
+spelling_2719,The fast car,raced around the,track at top,spead.,D,"'spead' should be spelt 'speed'."
+spelling_2720,He ate a,slice of pizza,with pepperoni,and cheese.,D,"'cheese' is correct. Error needed. 'cheese' -> 'chease'."
+spelling_2720b,He ate a,slice of pizza,with pepperoni,and chease.,D,"'chease' should be spelt 'cheese'."
+spelling_2721,The little girl,played with her,dolls in the,playrome.,D,"'playrome' should be spelt 'playroom'."
+spelling_2722,She wrote a,story about a,dragon and a,nighter.,D,"'nighter' should be spelt 'knight'."
+spelling_2723,The old man,sat on the,bench and fed,the burds.,D,"'burds' should be spelt 'birds'."
+spelling_2724,He rode his,scooter down the,path to the,parke.,D,"'parke' should be spelt 'park'."
+spelling_2725,The bright sun,shone through the,window and woke,him upp.,D,"'upp' should be spelt 'up'."
+spelling_2726,She picked a,red rose from,the bush in,the gardin.,D,"'gardin' should be spelt 'garden'."
+spelling_2727,The big dog,chased the cat,up the tall,trea.,D,"'trea' should be spelt 'tree'."
+spelling_2728,He drank a,glass of juice,with his breakfast,toaste.,D,"'toaste' should be spelt 'toast'."
+spelling_2729,The sweet cake,was covered in,pink icing and,suggar.,D,"'suggar' should be spelt 'sugar'."
+spelling_2730,She ran fast,to catch the,ball before it,bownced.,D,"'bownced' should be spelt 'bounced'."
+spelling_2731,The fish swam,in the clear,water of the,lakke.,D,"'lakke' should be spelt 'lake'."
+spelling_2732,He sat on,the chair and,watched the,telivision.,D,"'telivision' should be spelt 'television'."
+spelling_2733,The rain fell,hard on the,roof of the,howse.,D,"'howse' should be spelt 'house'."
+spelling_2734,She smiled at,her brother when,he told a,jocke.,D,"'jocke' should be spelt 'joke'."
+spelling_2735,The boy played,with his friends,in the school,playgrownd.,D,"'playgrownd' should be spelt 'playground'."
+spelling_2736,He went to,bed early because,he felt very,sleave.,D,"'sleave' (sleeve) vs 'sleepy'. Context: tired. Let's use 'sleapy'."
+spelling_2736b,He went to,bed early because,he felt very,sleapy.,D,"'sleapy' should be spelt 'sleepy'."
+spelling_2737,The red car,stopped at the,traffic lights on,the rode.,D,"'rode' should be spelt 'road'."
+spelling_2738,She read a,book about a,magic fairy and,an elfe.,D,"'elfe' should be spelt 'elf'."
+spelling_2739,The cold wind,blew the hat,off his head,yesturday.,D,"'yesturday' should be spelt 'yesterday'."
+spelling_2740,He likes to,eat apples and,bananas for a,snacke.,D,"'snacke' should be spelt 'snack'."
+spelling_2741,The amateur actor,forgot his lines,during the first,rehersal.,D,"'rehersal' should be spelt 'rehearsal'."
+spelling_2742,We watched the,solar eclipse through,special safety,glasess.,D,"'glasess' should be spelt 'glasses'."
+spelling_2743,The stubborn mule,refused to move,despite the farmer's,coaxing.,C,"'despite' is correct. Error needed. 'dispite'."
+spelling_2743b,The stubborn mule,refused to move,dispite the farmer's,coaxing.,C,"'dispite' should be spelt 'despite'."
+spelling_2744,She has a,definite talent,for playing the,acordion.,D,"'acordion' should be spelt 'accordion'."
+spelling_2745,The police officer,arrested the thief,for stealing the,jewlry.,D,"'jewlry' should be spelt 'jewellery' (UK) or 'jewelry' (US). 'jewlry' is definitely wrong."
+spelling_2746,He showed great,enthusiasm for the,project from the,begining.,D,"'begining' should be spelt 'beginning'."
+spelling_2747,The heavy box,contained a collection,of antique,curency.,D,"'curency' should be spelt 'currency'."
+spelling_2748,She wore a,fashionable dress,to the elegant,recepsion.,D,"'recepsion' should be spelt 'reception'."
+spelling_2749,The volcanic eruption,spewed hot lava,and ash into,the aire.,D,"'aire' should be spelt 'air'."
+spelling_2750,He was disqualified,from the race,for breaking the,ruels.,D,"'ruels' should be spelt 'rules'."
+spelling_2751,The mysterious sound,echoed through the,empty,coridors.,D,"'coridors' should be spelt 'corridors'."
+spelling_2752,She felt a,sense of despair,when she lost,her walet.,D,"'walet' should be spelt 'wallet'."
+spelling_2753,The government minister,resigned after the,political,scandel.,D,"'scandel' should be spelt 'scandal'."
+spelling_2754,He used a,microscope to view,the tiny,specimins.,D,"'specimins' should be spelt 'specimens'."
+spelling_2755,The loud thunder,was followed by,a flash of,lightening.,D,"'lightening' (making light) vs 'lightning' (weather). Context: weather."
+spelling_2755b,The loud thunder,was followed by,a flash of,lightening.,D,"'lightening' should be spelt 'lightning'."
+spelling_2756,She has a,tendency to exaggerate,when telling a,storey.,D,"'storey' (building level) vs 'story' (tale). Context: tale."
+spelling_2756b,She has a,tendency to exaggerate,when telling a,storey.,D,"'storey' should be spelt 'story'."
+spelling_2757,The busy factory,produces thousands of,cars every,mnoth.,D,"'mnoth' should be spelt 'month'."
+spelling_2758,He wants to,be a professional,footballer when,he growes up.,D,"'growes' should be spelt 'grows'."
+spelling_2759,The fierce battle,lasted for many,days and,nites.,D,"'nites' should be spelt 'nights'."
+spelling_2760,She bought a,loaf of bread,from the local,bakerye.,D,"'bakerye' should be spelt 'bakery'."
+spelling_2761,The wild animal,escaped from the,zoo and ran,awaye.,D,"'awaye' should be spelt 'away'."
+spelling_2762,He rode his,bike up the,steep hill very,slowley.,D,"'slowley' should be spelt 'slowly'."
+spelling_2763,The bright moon,shone on the,calm water of,the laike.,D,"'laike' should be spelt 'lake'."
+spelling_2764,She picked a,bunch of flowers,from the garden,pach.,D,"'pach' should be spelt 'patch'."
+spelling_2765,The big ship,docked in the,harbour to unload,cargoe.,D,"'cargoe' should be spelt 'cargo'."
+spelling_2766,He ate a,bowl of soup,with a slice,of bred.,D,"'bred' should be spelt 'bread'."
+spelling_2767,The little bird,sang a sweet,song in the,morninge.,D,"'morninge' should be spelt 'morning'."
+spelling_2768,She ran fast,to the shop,to buy some,milke.,D,"'milke' should be spelt 'milk'."
+spelling_2769,The fish swam,in the river,near the old,brige.,D,"'brige' should be spelt 'bridge'."
+spelling_2770,He sat on,the sofa and,read a comic,booke.,D,"'booke' should be spelt 'book'."
+spelling_2771,The rain fell,heavily on the,roof of the,shede.,D,"'shede' should be spelt 'shed'."
+spelling_2772,She smiled at,her teacher when,she got a,gold starr.,D,"'starr' should be spelt 'star'."
+spelling_2773,The boy played,football with his,friends in the,streat.,D,"'streat' should be spelt 'street'."
+spelling_2774,He went to,sleep late because,he watched a,movei.,D,"'movei' should be spelt 'movie'."
+spelling_2775,The red car,drove past the,school very,quikly.,D,"'quikly' should be spelt 'quickly'."
+spelling_2776,She read a,poem about a,cat and a,mowse.,D,"'mowse' should be spelt 'mouse'."
+spelling_2777,The cold wind,blew the snow,across the frozen,feilds.,D,"'feilds' should be spelt 'fields'."
+spelling_2778,He likes to,draw pictures of,cars and,truks.,D,"'truks' should be spelt 'trucks'."
+spelling_2779,The sweet apple,was crisp and,juicy to,eate.,D,"'eate' should be spelt 'eat'."
+spelling_2780,She wore a,blue hat to,match her new,cote.,D,"'cote' should be spelt 'coat'."
+spelling_2781,The small dog,wagged its tail,when it saw,a bone.,D,"'bone' is correct. Error needed. 'boan'."
+spelling_2781b,The small dog,wagged its tail,when it saw,a boan.,D,"'boan' should be spelt 'bone'."
+spelling_2782,He watched the,birds flying in,the blue,skye.,D,"'skye' should be spelt 'sky'."
+spelling_2783,The hot sun,melted the ice,cream on the,cone.,D,"'cone' is correct. Error needed. 'coan'."
+spelling_2783b,The hot sun,melted the ice,cream on the,coan.,D,"'coan' should be spelt 'cone'."
+spelling_2784,She wrote a,letter to her,grandmother in,London.,D,"'London' is correct. Error needed. 'Lundon'."
+spelling_2784b,She wrote a,letter to her,grandmother in,Lundon.,D,"'Lundon' should be spelt 'London'."
+spelling_2785,The green frog,sat on a,lily pad in,the ponde.,D,"'ponde' should be spelt 'pond'."
+spelling_2786,He drank a,glass of water,because he was,thirstie.,D,"'thirstie' should be spelt 'thirsty'."
+spelling_2787,The white sheep,grazed in the,green field all,daie.,D,"'daie' should be spelt 'day'."
+spelling_2788,She picked a,yellow flower from,the bush in,the parke.,D,"'parke' should be spelt 'park'."
+spelling_2789,The big bus,took the children,to school every,mornin.,D,"'mornin' should be spelt 'morning'."
+spelling_2790,He ate a,sandwich with ham,and cheese for,lunche.,D,"'lunche' should be spelt 'lunch'."
+spelling_2791,The bird flew,to its nest,in the high,bransh.,D,"'bransh' should be spelt 'branch'."
+spelling_2792,She ran to,the park to,play on the,swinges.,D,"'swinges' should be spelt 'swings'."
+spelling_2793,The fish swam,quickly away from,the hungry,sharke.,D,"'sharke' should be spelt 'shark'."
+spelling_2794,He sat on,the floor and,played with his,toyes.,D,"'toyes' should be spelt 'toys'."
+spelling_2795,The rain made,puddles on the,ground in the,yeard.,D,"'yeard' should be spelt 'yard'."
+spelling_2796,She smiled at,the baby in,the pram and,waived.,D,"'waived' should be spelt 'waved'."
+spelling_2796b,She smiled at,the baby in,the pram and,waived.,D,"'waived' should be spelt 'waved'."
+spelling_2797,The boy kicked,the football into,the goal and,scored.,D,"'scored' is correct. Error needed. 'scord'."
+spelling_2797b,The boy kicked,the football into,the goal and,scord.,D,"'scord' should be spelt 'scored'."
+spelling_2798,He went to,sleep in his,comfortable bed,at night.,D,"'night' is correct. Error needed. 'nite'."
+spelling_2798b,He went to,sleep in his,comfortable bed,at nite.,D,"'nite' should be spelt 'night'."
+spelling_2799,The red bus,stopped at the,bus stop on,time.,D,"'time' is correct. Error needed. 'tyme'."
+spelling_2799b,The red bus,stopped at the,bus stop on,tyme.,D,"'tyme' should be spelt 'time'."
+spelling_2800,She read a,story to her,little sister,at bedtyme.,D,"'bedtyme' should be spelt 'bedtime'."
+

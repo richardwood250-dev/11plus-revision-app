@@ -1,0 +1,401 @@
+id,question,OptionA,OptionB,OptionC,OptionD,OptionE,Correct answer,difficulty level
+1,"If the code for WING is DRMT, what does SLOW mean?",HOLE,HELD,HOLD,COLD,GOLD,C,Hard
+2,"If the code for KNEE is ILCC, what is the code for HAIR?",FYGP,JCKT,HAIR,EXFO,GZHQ,A,Medium
+3,"If the code for HANG is SZMT, what is the code for ROAD?",TQCF,EBNQ,QNZC,ILZW,SPBE,D,Hard
+4,"If the code for DROP is GURS, what does NHHQ mean?",SEEN,MEAN,FEED,KEEP,KEEN,E,Medium
+5,"If the code for DRUG is ESVH, what is the code for WAIT?",VZHS,YCKV,WAIT,XBJU,ZDLW,D,Easy
+6,"If the code for GAME is FZLD, what is the code for PAIN?",PAIN,RCKP,QBJO,NYGL,OZHM,E,Easy
+7,"If the code for FINE is GHOD, what is the code for HELP?",JGNR,GDKO,SNWY,IFMQ,IDMO,E,Hard
+8,"If the code for WHAT is XIBU, what is the code for NEXT?",MDWS,NEXT,QHAW,OFYU,PGZV,D,Easy
+9,"If the code for SAME is UCOG, what is the code for FIRE?",JMVI,DGPC,ILUH,HKTG,GJSF,D,Medium
+10,"If the code for GOAL is HNBK, what does IZMK mean?",BALL,WALL,HALL,HILL,HALF,C,Hard
+11,"If the code for VERY is UDQX, what does ITLO mean?",LOAD,JUST,JUMP,CAMP,LAMP,C,Easy
+12,"If the code for LINE is PMRI, what is the code for DATA?",JGZG,IFYF,ZWPW,GDWD,HEXE,E,Hard
+13,"If the code for COOL is BNNK, what is the code for EVIL?",DUHK,FWJM,IZMP,EVIL,CTGJ,A,Easy
+14,"If the code for PALM is MXIJ, what does MLLO mean?",POEM,DOOR,ROOM,POOR,POOL,D,Medium
+15,"If the code for WELL is DVOO, what is the code for SOLD?",FBYQ,HLOW,UQNF,TPME,RNKC,B,Hard
+16,"If the code for FOUR is GPVS, what does DBTU mean?",CAST,CASH,PAST,EAST,LAST,A,Easy
+17,"If the code for FROM is DPMK, what is the code for BATH?",YXQE,ZYRF,DCVJ,BATH,AZSG,B,Medium
+18,"If the code for PALM is UFQR, what is the code for INCH?",NSHM,MRGL,OTIN,DIXC,PUJO,A,Hard
+19,"If the code for ORAL is NQZK, what is the code for TINY?",CRWH,TINY,SHMX,UJOZ,RGLW,C,Easy
+20,"If the code for HAVE is IZWD, what is the code for BACK?",DCEM,CZDJ,AZBJ,KHLR,CBDL,B,Hard
+21,"If the code for BURN is WPMI, what does AGJR mean?",SLOW,BLOW,KNOW,FLOW,SHOW,D,Hard
+22,"If the code for ROAD is OLXA, what does MIXV mean?",PLAN,PEAK,PLOT,PLAY,STAY,D,Medium
+23,"If the code for TEND is XIRH, what does LERK mean?",HATE,HANG,WING,LONG,HAND,B,Hard
+24,"If the code for RISE is SJTF, what does GVMM mean?",FUEL,FILL,PULL,FELL,FULL,E,Easy
+25,"If the code for FUEL is IXHO, what does SRRU mean?",POOL,MOOD,TOUR,POOR,DOOR,D,Medium
+26,"If the code for CHAT is ZEXQ, what is the code for SUCH?",OQYD,RTBG,PRZE,QSAF,VXFK,C,Medium
+27,"If the code for MOOD is NNPC, what does SDBQ mean?",BEAR,REAR,HEAR,READ,DEAR,B,Hard
+28,"If the code for RAIL is SZJK, what is the code for DUST?",ETTS,EVTU,CTRS,FWUV,FUUT,A,Hard
+29,"If the code for DUTY is HYXC, what is the code for HAND?",LERH,DWJZ,MFSI,KDQG,NGTJ,A,Hard
+30,"If the code for POST is MLPQ, what does BADB mean?",EDGE,ELSE,HUGE,PAGE,HANG,A,Medium
+31,"If the code for HARD is IZSC, what is the code for CITY?",EKVA,BHSX,GKXA,DJUZ,DHUX,E,Hard
+32,"If the code for TASK is WDVN, what is the code for FIVE?",ILYH,CFSB,HKXG,JMZI,KNAJ,A,Medium
+33,"If the code for SLIP is UNKR, what does ECUJ mean?",CAST,WASH,CASH,CASE,TASK,C,Medium
+34,"If the code for SEAT is RDZS, what is the code for SHUT?",TIVU,QFSR,RGTS,SHUT,WLYX,C,Easy
+35,"If the code for BUSH is CVTI, what is the code for EVER?",HYHU,FWFS,GXGT,DUDQ,EVER,B,Easy
+36,"If the code for EVER is BSBO, what does GXKB mean?",BANK,LANE,FINE,HATE,JANE,E,Medium
+37,"If the code for ROSE is WTXJ, what does MTUJ mean?",HOPE,HOME,ROLE,HOST,HOLE,A,Hard
+38,"If the code for RARE is OXOB, what does CLLA mean?",GOOD,FORD,MOOD,FOOD,WOOD,D,Medium
+39,"If the code for GATE is JDWH, what does QHHG mean?",FEET,NEED,MEET,FEED,SEED,B,Medium
+40,"If the code for WOOD is YQQF, what does UQNF mean?",SOLD,GOLD,SOLE,HOLD,COLD,A,Medium
+41,"If the code for PART is MXOQ, what is the code for GOAT?",CKWP,EMYR,FNZS,JRDW,DLXQ,E,Medium
+42,"If the code for BATH is EDWK, what is the code for WIRE?",YKTG,ZLUH,TFOB,BNWJ,AMVI,B,Medium
+43,"If the code for PURE is OTQD, what is the code for BELT?",CFMU,ADKS,BELT,ZCJR,HKRZ,B,Easy
+44,"If the code for LINE is MJOF, what is the code for FINE?",ILQH,HKPG,GJOF,EHMD,FINE,C,Easy
+45,"If the code for LOSS is MPTT, what does APPN mean?",WOOL,ZONE,ZOOM,ROOM,ROOT,C,Easy
+46,"If the code for LINE is IFKB, what does JLSB mean?",LIVE,MOVE,MODE,LOVE,MORE,B,Medium
+47,"If the code for CATS is ECVU, what is the code for CITY?",FLWB,EKVA,GMXC,AGRW,DJUZ,B,Medium
+48,"If the code for SHOT is TGPS, what does GTMK mean?",FUEL,FULL,FELL,FILL,FALL,B,Hard
+49,"If the code for SEEK is TFFL, what is the code for EVER?",EVER,HYHU,GXGT,DUDQ,FWFS,E,Easy
+50,"If the code for FORD is BKNZ, what does FAWJ mean?",WEAR,READ,BEAR,MEAN,JEAN,E,Hard
+51,"If the code for VIEW is SFBT, what is the code for DOOR?",CNNQ,ZKKN,ALLO,GRRU,BMMP,C,Medium
+52,"If the code for TUNE is QRKB, what is the code for POEM?",ONDL,NMCK,LKAI,MLBJ,SRHP,D,Medium
+53,"If the code for WHOM is YJQO, what is the code for EARN?",CYPL,HDUQ,GCTP,FBSO,IEVR,C,Medium
+54,"If the code for COOL is BNNK, what does KNMF mean?",SING,LOAD,SONG,LOST,LONG,E,Easy
+55,"If the code for PARK is QBSL, what is the code for MILK?",NJML,OKNM,LHKJ,PLON,MILK,A,Easy
+56,"If the code for ONLY is RQOB, what does RUDO mean?",GOAL,COAL,REAL,DRAW,ORAL,E,Medium
+57,"If the code for LAMP is MZNO, what is the code for POET?",QPFU,RQGV,YVNA,ONDS,QNFS,E,Hard
+58,"If the code for GAIN is ICKP, what does DGCT mean?",BEAR,BEAT,FEAR,HEAR,WEAR,A,Medium
+59,"If the code for GAIN is EYGL, what does NGLI mean?",PICK,PIPE,LINK,PINK,WINE,D,Medium
+60,"If the code for FREE is GQFD, what does DNPJ mean?",COOK,COOL,BOOK,CROP,LOOK,A,Hard
+61,"If the code for LION is ORLM, what does HSLK mean?",SHOE,SHOT,SHOP,SHIP,STOP,C,Hard
+62,"If the code for PARK is KZIP, what does NRMV mean?",MILE,WINE,MIND,NINE,MINE,E,Hard
+63,"If the code for DOOR is GRRU, what does OHVV mean?",LOSS,NEWS,WEST,LOST,LESS,E,Medium
+64,"If the code for HOPE is ELMB, what is the code for BEAR?",XAWN,EHDU,ADZQ,YBXO,ZCYP,D,Medium
+65,"If the code for NOSE is MNRD, what does KHJD mean?",BIKE,LAKE,LIVE,LIKE,LINE,D,Easy
+66,"If the code for MEET is NDFS, what is the code for FOOD?",ENNC,GNPC,HQQF,KRTG,GPPE,B,Hard
+67,"If the code for FILL is DGJJ, what is the code for ROOM?",TQQO,PMMK,OLLJ,ROOM,QNNL,B,Medium
+68,"If the code for TWIN is WZLQ, what is the code for SAND?",VDQG,UCPF,XFSI,WERH,PXKA,A,Medium
+69,"If the code for REST is PCQR, what is the code for LINE?",NKPG,IFKB,LINE,JGLC,KHMD,D,Medium
+70,"If the code for NOTE is MNSD, what is the code for JOKE?",JOKE,OTPJ,INJD,HMIC,KPLF,C,Easy
+71,"If the code for BOOK is YLLP, what does GSVM mean?",THEN,THIN,THEM,TURN,WHEN,A,Hard
+72,"If the code for VIEW is WJFX, what does NJML mean?",MILE,FILM,SILK,MILL,MILK,E,Easy
+73,"If the code for SEND is RDMC, what is the code for JEAN?",IDZM,HCYL,QLHU,KFBO,JEAN,A,Easy
+74,"If the code for BOTH is ERWK, what is the code for LIVE?",NKXG,OLYH,PMZI,QNAJ,IFSB,B,Medium
+75,"If the code for PAGE is QZHD, what is the code for THEN?",UGFM,SGDM,DPOV,UIFO,VJGP,A,Hard
+76,"If the code for CALL is ZXII, what does JXKV mean?",HAND,MANY,LANE,MAIN,VARY,B,Medium
+77,"If the code for SENT is TFOU, what does QFBL mean?",FEAR,REAR,WEAK,PEAK,DEAL,D,Easy
+78,"If the code for BEST is EHVW, what is the code for GOLF?",KSPJ,LTQK,DLIC,JROI,IQNH,D,Medium
+79,"If the code for FORM is ENQL, what does ANNS mean?",BOOT,FOOT,BOOK,BOAT,ROOT,A,Easy
+80,"If the code for BEND is ADMC, what is the code for SNOW?",TOPX,RMNV,SNOW,AVWE,QLMU,B,Easy
+81,"If the code for MOON is JLLK, what is the code for TUNE?",QRKB,STMD,RSLC,WXQH,PQJA,A,Medium
+82,"If the code for FINE is DGLC, what is the code for STOP?",PQLM,STOP,UVQR,QRMN,RSNO,D,Medium
+83,"If the code for PACK is QZDJ, what is the code for LOSE?",KNRD,NQUG,MNTD,MPTF,TUAK,C,Hard
+84,"If the code for EDGE is VWTV, what is the code for JOKE?",INJD,WBXR,LQMG,QLPV,KPLF,D,Hard
+85,"If the code for MISS is JFPP, what does ILOA mean?",FORD,LEAD,WORD,LOAD,LORD,E,Medium
+86,"If the code for COLD is XLOW, what is the code for FROM?",SEBZ,HTQO,GSPN,UILN,EQNL,D,Hard
+87,"If the code for COLD is AMJB, what does AYPC mean?",CARE,CARD,RARE,CASE,CORE,A,Medium
+88,"If the code for BOTH is YLQE, what does TXOA mean?",WARD,HARD,WORD,WARM,CARD,A,Medium
+89,"If the code for PILE is RKNG, what is the code for RIDE?",PGBC,ULGH,SJEF,VMHI,TKFG,E,Medium
+90,"If the code for ITEM is FQBJ, what is the code for LIST?",IFPQ,HEOP,JGQR,OLVW,KHRS,A,Medium
+91,"If the code for FEAR is DCYP, what is the code for CROP?",ETQR,APMN,BQNO,ZOLM,CROP,B,Medium
+92,"If the code for WINE is SEJA, what does BERA mean?",GIVE,LIVE,FIRE,FINE,FIVE,E,Hard
+93,"If the code for COAT is FRDW, what does SRUW mean?",POST,PART,SORT,PORT,FORT,D,Medium
+94,"If the code for ROLL is SNMK, what is the code for LAST?",VICB,NCUV,MZTS,KZRS,MBTU,C,Hard
+95,"If the code for COAL is FRDO, what is the code for WISH?",ZLVK,AMWL,BNXM,TFPE,YKUJ,A,Medium
+96,"If the code for MILK is IEHG, what is the code for FOUR?",BKQN,AJPM,CLRO,JSYV,DMSP,A,Hard
+97,"If the code for FIND is ADIY, what is the code for SEAT?",MYUN,OAWP,PBXQ,NZVO,XJFY,D,Hard
+98,"If the code for POOR is ONNQ, what does VDZQ mean?",WEAR,DEAR,FEAR,YEAR,REAR,A,Easy
+99,"If the code for BELL is YVOO, what does MVXP mean?",NECK,LOCK,SEEK,LACK,WEEK,A,Hard
+100,"If the code for SWIM is RVHL, what does ENTQ mean?",TOUR,FAIR,FOUR,FEAR,HOUR,C,Easy
+101,"If the code for FEED is GFFE, what does CBTF mean?",CASE,NAME,WAKE,RISE,BASE,E,Easy
+102,"If the code for DARK is WZIP, what is the code for MOST?",LNRS,OQUV,NPTU,NLHG,ZBFG,D,Hard
+103,"If the code for LUCK is OFXP, what is the code for THEM?",VJGO,SGDL,GSVN,GURZ,UIFN,C,Hard
+104,"If the code for WANT is TXKQ, what is the code for HAIR?",DWEN,EXFO,FYGP,GZHQ,KDLU,B,Medium
+105,"If the code for LIKE is ORPV, what does OZGV mean?",RATE,LAKE,GATE,LATE,LANE,D,Hard
+106,"If the code for KICK is LHDJ, what is the code for GLAD?",ILCD,INCF,HKBC,HMBE,FKZC,C,Hard
+107,"If the code for STOP is NOJK, what does WVNZ mean?",FACE,BASE,MAKE,CASE,BUSH,B,Hard
+108,"If the code for TELL is UFMM, what is the code for REAL?",QDZK,SFBM,REAL,TGCN,UHDO,B,Easy
+109,"If the code for TEAR is SDZQ, what is the code for TURN?",RSPL,TURN,UVSO,XYVR,STQM,E,Easy
+110,"If the code for GATE is EYRC, what does PYLI mean?",BANK,RARE,TANK,MANY,RANK,E,Medium
+111,"If the code for MILK is PLON, what does CRRP mean?",ROOM,GOOD,ZOOM,ROOT,POOL,C,Medium
+112,"If the code for BOTH is DQVJ, what does LCEM mean?",LACK,PACK,JACK,BACK,DUCK,C,Medium
+113,"If the code for KEEN is FZZI, what does MJXF mean?",LOCK,KICK,ROOT,ROCK,BOOK,D,Hard
+114,"If the code for PLAN is NJYL, what does JYKN mean?",LAKE,CAMP,LAND,LAMP,LANE,D,Medium
+115,"If the code for BORN is ZMPL, what is the code for GIVE?",IKXG,FHUD,DFSB,GIVE,EGTC,E,Medium
+116,"If the code for TINY is UHOX, what does TTJS mean?",SOFT,SUIT,SHIP,EXIT,SLIP,B,Hard
+117,"If the code for DUAL is CTZK, what does UNSD mean?",ROSE,CODE,VOTE,HOME,NOTE,C,Easy
+118,"If the code for RICE is IRXV, what is the code for TOWN?",GBJA,SNVM,GLDM,VQYP,UPXO,C,Hard
+119,"If the code for PLAN is NJYL, what does UYGR mean?",UNIT,FAIL,WANT,EXIT,WAIT,E,Medium
+120,"If the code for SHUT is QFSR, what does DGPC mean?",FIRE,FINE,FIVE,HIRE,WIRE,A,Medium
+121,"If the code for FAIL is HCKN, what does ETQR mean?",COOK,DROP,FROM,STOP,CROP,E,Medium
+122,"If the code for JACK is KZDJ, what does OZWX mean?",LADY,NAME,NAVY,VARY,WAVE,C,Hard
+123,"If the code for UNIT is VOJU, what is the code for FINE?",FINE,EHMD,ILQH,HKPG,GJOF,E,Easy
+124,"If the code for SOLD is TNMC, what is the code for HAIR?",IZJQ,OFPW,JCKT,IBJS,GZHQ,A,Hard
+125,"If the code for ZERO is YDQN, what does EHKL mean?",FIRM,FILL,FILM,CALM,FELL,C,Easy
+126,"If the code for FAST is EZRS, what is the code for FEET?",FEET,GFFU,DCCR,EDDS,FEET,D,Easy
+127,"If the code for HELP is IDMO, what does SNTD mean?",ROLE,LOSE,RISE,ROSE,NOSE,D,Hard
+128,"If the code for LUNCH is MTOBI, what does MZTS mean?",FAST,LOST,LIST,LAST,CAST,D,Hard
+129,"If the code for MEAN is NDBM, what is the code for FEAR?",GFBS,HGCT,GDBQ,KHFU,EDZQ,C,Hard
+130,"If the code for CROP is DQPO, what is the code for POLL?",QNMK,SPOM,ONKK,RQNN,QPMM,A,Hard
+131,"If the code for PACK is KZXP, what does NZRM mean?",MAIL,GAIN,MAIN,PAIN,RAIN,C,Hard
+132,"If the code for EVEN is VEVM, what is the code for TIDY?",UJEZ,VKFA,GVQL,GRWB,SHCX,D,Hard
+133,"If the code for PINK is NGLI, what does DSCJ mean?",FULL,FUND,FEET,FEEL,FUEL,E,Medium
+134,"If the code for LUNCH is OXQFK, what does OLRQ mean?",LINE,LION,LINK,LOAN,LIST,B,Medium
+135,"If the code for YARD is BDUG, what is the code for RENT?",TGPV,UHQW,VIRX,OBKQ,WJSY,B,Medium
+136,"If the code for NIGHT is MRTSG, what does DRMT mean?",KING,WIND,WING,RING,WINE,C,Hard
+137,"If the code for SIDE is RHCD, what is the code for FEAR?",FEAR,GFBS,EDZQ,FEAR,DCYP,C,Easy
+138,"If the code for WITH is VHSG, what is the code for MANY?",LZMX,VJWH,KYLW,MANY,NBOZ,A,Easy
+139,"If the code for PILE is NGJC, what is the code for SITE?",QGRC,PFQB,UKVG,SITE,RHSD,A,Medium
+140,"If the code for PLOT is QKPS, what does MNTR mean?",LOSS,LORD,LOST,LOSE,LESS,A,Hard
+141,"If the code for LAND is HWJZ, what is the code for PLAY?",LHWU,KGVT,NJYW,MIXV,TPEC,A,Hard
+142,"If the code for PURE is UZWJ, what is the code for POEM?",VUKS,TSIQ,WVLT,KJZH,UTJR,E,Hard
+143,"If the code for WARM is UYPK, what is the code for GAIN?",ICKP,DXFK,FZHM,EYGL,GAIN,D,Medium
+144,"If the code for ROAD is QNZC, what is the code for LAND?",NCPF,MBOE,KZMC,LAND,JYLB,C,Easy
+145,"If the code for RICE is OFZB, what does PELQ mean?",SHOT,SHOP,SHOE,SHUT,SHOW,A,Medium
+146,"If the code for GRAY is FQZX, what is the code for MEET?",KCCR,NFFU,MEET,LDDS,RJJY,D,Easy
+147,"If the code for POOR is QNPQ, what is the code for DRAW?",FRCW,EQBV,FTCY,ESBX,CQZV,B,Hard
+148,"If the code for FUEL is GVFM, what does EVBM mean?",DUAL,DEAR,DUTY,DEAL,DUCK,A,Easy
+149,"If the code for EXIT is FYJU, what does TPJM mean?",SOUL,SOFT,SAIL,SOIL,SAID,D,Easy
+150,"If the code for PACK is KZXP, what does URON mean?",FILM,FIRM,FORM,CALM,FILL,A,Hard
+151,"If the code for TAPE is UBQF, what does UPVS mean?",FOUR,TOYS,TEAR,TOUR,HOUR,D,Easy
+152,"If the code for MOVE is NPWF, what is the code for EXIT?",FYJU,HALW,DWHS,GZKV,EXIT,A,Easy
+153,"If the code for BEAR is CDBQ, what does UDOC mean?",TEXT,TEND,SEED,SEND,BEND,B,Hard
+154,"If the code for USER is FHVI, what is the code for FOOD?",SBBQ,HQQF,ULLW,ENNC,GPPE,C,Hard
+155,"If the code for MORE is KMPC, what is the code for TUBE?",QRYB,STAD,VWDG,RSZC,TUBE,D,Medium
+156,"If the code for LIST is MHTS, what is the code for BEAT?",DGCV,ADZS,CFBU,CDBS,MNLC,D,Hard
+157,"If the code for PILE is RKNG, what does NQCF mean?",LOAD,ROAD,LOAN,LORD,LEAD,A,Medium
+158,"If the code for FAST is GZTS, what does CHLD mean?",BLUE,WAKE,RIDE,LIKE,BIKE,E,Hard
+159,"If the code for DROP is IWTU, what is the code for NECK?",TKIQ,RIGO,ULJR,IZXF,SJHP,E,Hard
+160,"If the code for COOL is AMMJ, what is the code for COPY?",EQRA,AMNW,ZLMV,BNOX,COPY,B,Medium
+161,"If the code for ARMY is VMHT, what is the code for CODE?",ZLAB,YKZA,XJYZ,HTIJ,WIXY,C,Hard
+162,"If the code for HAVE is GZUD, what does ANCX mean?",TIDY,COPY,BODY,BORN,BOOK,C,Easy
+163,"If the code for CAKE is DBLF, what is the code for OKAY?",QMCA,OKAY,RNDB,NJZX,PLBZ,E,Easy
+164,"If the code for PIPE is QHQD, what is the code for ARMY?",KZWG,CTOA,BSNZ,BQNX,ZQLX,D,Hard
+165,"If the code for KILL is LHMK, what is the code for EDGE?",FEHF,DCFD,PMRN,FCHD,GFIG,D,Hard
+166,"If the code for BIRD is YFOA, what is the code for CORE?",BNQD,FRUH,AMPC,ZLOB,YKNA,D,Medium
+167,"If the code for CAST is FDVW, what does ZDBV mean?",WAIT,DAYS,WAYS,CATS,TOYS,C,Medium
+168,"If the code for PINK is NGLI, what does ZGPB mean?",FORD,WORD,BIRD,WARD,KIND,C,Medium
+169,"If the code for LUCK is JSAI, what is the code for SLOW?",RKNV,QJMU,PILT,UNQY,SLOW,B,Medium
+170,"If the code for BODY is CNEX, what does UDBL mean?",TEAR,TEXT,TEAM,TERM,FEAR,C,Hard
+171,"If the code for FULL is GVMM, what is the code for HURT?",HURT,JWTV,KXUW,IVSU,GTQS,D,Easy
+172,"If the code for KEEN is ICCL, what is the code for NECK?",LCAI,NECK,KBZH,PGEM,MDBJ,A,Medium
+173,"If the code for SALT is TBMU, what does GFBS mean?",FEAR,DEAR,WEAR,NEAR,HEAR,A,Easy
+174,"If the code for MADE is JXAB, what does CLRO mean?",FOUR,HOUR,FOOD,SOUP,TOUR,A,Medium
+175,"If the code for EVER is ARAN, what does YAHH mean?",SELL,CELL,BELL,TELL,CALL,B,Hard
+176,"If the code for RANK is OXKH, what is the code for LION?",IFLK,OLRQ,HEKJ,KHNM,JGML,A,Medium
+177,"If the code for FUND is CRKA, what is the code for THIS?",PDEO,RFGQ,SGHR,QEFP,WKLV,D,Medium
+178,"If the code for WALK is TXIH, what is the code for SOUP?",OKQL,QMSN,VRXS,RNTO,PLRM,E,Medium
+179,"If the code for ROOM is SPPN, what is the code for JOKE?",KPLF,JOKE,MRNH,LQMG,INJD,A,Easy
+180,"If the code for CHEF is BGDE, what does CZXR mean?",PASS,DARK,WAYS,TOYS,DAYS,E,Easy
+181,"If the code for BOAT is ANZS, what is the code for SWIM?",TXJN,TXJN,SWIM,RVHL,QUGK,D,Easy
+182,"If the code for RICH is QHBG, what is the code for CORE?",JVYL,BNQD,CORE,AMPC,DPSF,B,Easy
+183,"If the code for KEPT is ICNR, what is the code for GOLD?",DLIA,FNKC,EMJB,IQNF,GOLD,C,Medium
+184,"If the code for RAIL is TCKN, what is the code for PARK?",NYPI,RCTM,TEVO,SDUN,QBSL,B,Medium
+185,"If the code for STAY is PQXV, what is the code for COOL?",AMMJ,ZLLI,FRRO,YKKH,BNNK,B,Medium
+186,"If the code for LIST is PMWX, what does JEWX mean?",CAST,FAST,PAST,EAST,FACT,B,Hard
+187,"If the code for MAKE is LZJD, what does SZKK mean?",TALL,FALL,TELL,TALK,BALL,A,Easy
+188,"If the code for GIFT is HJGU, what does OFYU mean?",BEST,TEXT,WENT,NECK,NEXT,E,Easy
+189,"If the code for HIRE is GHQD, what does CZVM mean?",PAIN,DOWN,TOWN,RAIN,DAWN,E,Easy
+190,"If the code for MOOD is OQQF, what is the code for NICE?",QLFH,PKEG,OJDF,RMGI,LGAC,B,Medium
+191,"If the code for TEAM is OZVH, what does KPMZ mean?",PULL,SURE,PURE,WERE,PAGE,C,Hard
+192,"If the code for FINE is CFKB, what is the code for ZOOM?",CRRP,XMMK,YNNL,WLLJ,VKKI,D,Medium
+193,"If the code for KNOW is LOPX, what does NBEF mean?",PACE,MAKE,MALE,MODE,MADE,E,Easy
+194,"If the code for LEFT is KDES, what is the code for FEEL?",FEEL,IHHO,EDDK,DCCJ,GFFM,C,Easy
+195,"If the code for HAND is MFSI, what does INWY mean?",LIFT,DIET,LIST,BIRD,DIRT,E,Hard
+196,"If the code for BATH is YXQE, what is the code for THAT?",QEXQ,PDWP,WKDW,SGZS,RFYR,A,Medium
+197,"If the code for CALL is DBMM, what does MPWF mean?",LIVE,LOVE,LIKE,LOSE,MOVE,B,Easy
+198,"If the code for HEAT is KHDW, what does ODGB mean?",BODY,LADY,LATE,EASY,LACK,B,Medium
+199,"If the code for TAKE is VCMG, what does TCKN mean?",RAIL,SAIL,FAIL,MAIL,RAIN,A,Medium
+200,"If the code for FINE is GHOD, what does DNQX mean?",COPY,COAL,COAT,COOK,CORE,A,Hard
+201,"If the code for MODE is OQFG, what is the code for SUCH?",VXFK,QSAF,UWEJ,TVDI,WYGL,C,Medium
+202,"If the code for SHOE is TIPF, what is the code for TUNE?",TUNE,UVOF,VWPG,STMD,WXQH,B,Easy
+203,"If the code for MEAN is NFBO, what is the code for ONCE?",ONCE,PODF,QPEG,NMBD,RQFH,B,Easy
+204,"If the code for RICH is NEYD, what does ZENP mean?",DIRT,LIFT,DARK,SORT,DIET,A,Hard
+205,"If the code for LIVE is MHWD, what is the code for UPON?",TONM,VQPO,DWXU,WRQP,VOPM,E,Hard
+206,"If the code for DAWN is WZDM, what is the code for WEST?",DVHG,YGUV,XFTU,JRFG,VDRS,A,Hard
+207,"If the code for POEM is MLBJ, what does TXIH mean?",WALK,TALL,TALK,WAYS,WALL,A,Medium
+208,"If the code for MEAL is JBXI, what is the code for LADY?",JYBW,IXAV,ODGB,KZCX,HWZU,B,Medium
+209,"If the code for CORE is ZLOB, what is the code for CHAT?",BGZS,ZEXQ,YDWP,AFYR,FKDW,B,Medium
+210,"If the code for FEEL is EDDK, what does RNKC mean?",COLD,SOLD,SOLE,GOLD,HOLD,B,Easy
+211,"If the code for FACE is EZBD, what is the code for MANY?",KYLW,NBOZ,MANY,LZMX,NBOZ,D,Easy
+212,"If the code for PULL is OTKK, what does VNNK mean?",WOOD,WOOL,COOL,WORK,POOL,B,Easy
+213,"If the code for TOUR is UNVQ, what does TKPV mean?",FLOW,BLOW,SLOW,SHOW,SNOW,C,Hard
+214,"If the code for HELD is GDKC, what does IZBJ mean?",LACK,BACK,BANK,PACK,JACK,E,Easy
+215,"If the code for YARD is VXOA, what is the code for DEAL?",CDZK,GHDO,ABXI,ZAWH,BCYJ,C,Medium
+216,"If the code for SOUP is TPVQ, what does GPPU mean?",FORT,FOOT,ROOT,FOOD,BOOT,B,Easy
+217,"If the code for BELL is CFMM, what is the code for TEAR?",WHDU,SDZQ,TEAR,VGCT,UFBS,E,Easy
+218,"If the code for CITY is EKVA, what does IGCT mean?",WEAR,REAR,GEAR,FEAR,DEAR,C,Medium
+219,"If the code for POOR is QPPS, what does KPLF mean?",CODE,BIKE,NOSE,JOKE,HOLE,D,Easy
+220,"If the code for DIRT is CHQS, what does LDZK mean?",MEAN,REAL,DEAL,MEAT,MEAL,E,Easy
+221,"If the code for SAIL is OWEH, what does DWHB mean?",WALK,HATE,HALL,CALL,HALF,E,Hard
+222,"If the code for GOLF is HNME, what does XDFJ mean?",SEEK,WEEK,WEAK,PEAK,FEED,B,Hard
+223,"If the code for BELT is DGNV, what is the code for TOYS?",UPZT,VQAU,XSCW,WRBV,RMWQ,B,Medium
+224,"If the code for SOLD is TPME, what is the code for POST?",QPTU,POST,SRVW,ONRS,RQUV,A,Easy
+225,"If the code for DEER is EFFS, what is the code for SAVE?",TBWF,VDYH,SAVE,UCXG,RZUD,A,Easy
+226,"If the code for EDGE is HGJH, what is the code for KING?",HFKD,NLQJ,MKPI,OMRK,PNSL,B,Medium
+227,"If the code for SENT is TDOS, what is the code for BIRD?",DKTF,CJSE,INYI,AHQC,CHSC,E,Hard
+228,"If the code for KNEE is NQHH, what is the code for HOLD?",ELIA,KROG,MTQI,LSPH,JQNF,B,Medium
+229,"If the code for FROG is UILT, what is the code for FACT?",HCEV,EZBS,SNPG,GBDU,UZXG,E,Hard
+230,"If the code for NECK is LCAI, what is the code for INCH?",HMBG,KPEJ,FKZE,GLAF,INCH,D,Medium
+231,"If the code for RELY is WJQD, what does WNXJ mean?",RISE,RISK,ROSE,RICE,RIDE,A,Hard
+232,"If the code for TRUE is VTWG, what is the code for MOON?",KMML,OQQP,NPPO,QSSR,PRRQ,B,Medium
+233,"If the code for SICK is UKEM, what is the code for DATE?",BYRC,GDWH,FCVG,EBUF,HEXI,C,Medium
+234,"If the code for SOFT is UQHV, what is the code for KIND?",LJOE,NLQG,IGLB,OMRH,MKPF,E,Medium
+235,"If the code for ONCE is NMBD, what does EHKL mean?",SILK,FILL,BILL,FIRM,FILM,E,Easy
+236,"If the code for SKIN is TJJM, what is the code for TINY?",ANUD,SHMX,VKPA,UHOX,UJOZ,D,Hard
+237,"If the code for ONCE is NMBD, what does LNNC mean?",MOON,MOOD,FOOD,GOOD,WOOD,B,Easy
+238,"If the code for OVER is PUFQ, what is the code for SHUT?",TGVS,RGTS,YLAX,UJWV,TIVU,A,Hard
+239,"If the code for PILE is OHKD, what is the code for COAT?",COAT,AMYR,DPBU,COAT,BNZS,E,Easy
+240,"If the code for REST is IVHG, what is the code for WIFE?",XJGF,YKHG,DRUV,VHED,JVSR,C,Hard
+241,"If the code for DESK is WVHP, what is the code for KING?",PRMT,XVAT,LJOH,JHMF,MKPI,A,Hard
+242,"If the code for EDGE is FCHD, what is the code for BEST?",ADRS,CFTU,CDTS,HIYX,DGUV,C,Hard
+243,"If the code for USER is TRDQ, what does BNRS mean?",COST,POST,HOST,LOST,CAST,A,Easy
+244,"If the code for BONE is DQPG, what is the code for MEAL?",OGCN,PHDO,QIEP,NFBM,KCYJ,A,Medium
+245,"If the code for FILM is URON, what does DVZI mean?",WEAR,WEAK,GEAR,TEAR,FEAR,A,Hard
+246,"If the code for LAST is KZRS, what is the code for WANT?",AERX,VZMS,XBOU,UYLR,WANT,B,Easy
+247,"If the code for RICH is SJDI, what is the code for DUAL?",GXDO,FWCN,CTZK,DUAL,EVBM,E,Easy
+248,"If the code for HAVE is IZWD, what does XHUG mean?",WISH,CITY,HIGH,WITH,PATH,D,Hard
+249,"If the code for LORD is MPSE, what is the code for GOAL?",JRDO,GOAL,HPBM,FNZK,IQCN,C,Easy
+250,"If the code for MADE is LZCD, what is the code for POOL?",POOL,NMMJ,QPPM,ONNK,YXXU,D,Easy
+251,"If the code for WISH is XHTG, what is the code for SENT?",AKVZ,TDOS,RDMS,TFOU,UGPV,B,Hard
+252,"If the code for KICK is JHBJ, what is the code for TALL?",UBMM,ZGRR,SZKK,TALL,RYJJ,C,Easy
+253,"If the code for LATE is IXQB, what is the code for BALL?",EDOO,AZKK,XWHH,ZYJJ,YXII,E,Medium
+254,"If the code for TEST is YJXY, what does INWY mean?",SORT,LIFT,DIRT,DIET,WIRE,C,Hard
+255,"If the code for NEWS is PGYU, what does TCTG mean?",PURE,RARE,CARE,RACE,RATE,B,Medium
+256,"If the code for DUST is ARPQ, what is the code for RICE?",NEYA,QHBD,OFZB,ULFH,PGAC,C,Medium
+257,"If the code for MILL is NJMM, what is the code for SEAT?",RDZS,VHDW,SEAT,TFBU,UGCV,D,Easy
+258,"If the code for HALL is CVGG, what does RVGF mean?",WALL,TALK,WAVE,WALK,CALM,D,Hard
+259,"If the code for UNIT is QJEP, what is the code for JOKE?",GLHB,EJFZ,NSOI,FKGA,HMIC,D,Hard
+260,"If the code for FORT is CLOQ, what does COBB mean?",FEEL,FROM,FIRE,FREE,FEET,D,Medium
+261,"If the code for HAVE is IBWF, what is the code for DESK?",EFTL,DESK,CDRJ,GHVN,FGUM,A,Easy
+262,"If the code for PUSH is QVTI, what is the code for SIDE?",UKFG,RHCD,SIDE,TJEF,VLGH,D,Easy
+263,"If the code for WIRE is YKTG, what is the code for COME?",AMKC,GSQI,EQOG,FRPH,DPNF,C,Medium
+264,"If the code for SOLE is TPMF, what is the code for OVER?",NUDQ,PWFS,OVER,RYHU,QXGT,B,Easy
+265,"If the code for SHOT is QFMR, what is the code for SING?",UKPI,PFKD,QGLE,SING,RHMF,C,Medium
+266,"If the code for PAST is SDVW, what is the code for PUSH?",UZXM,RWUJ,MRPE,SXVK,TYWL,D,Medium
+267,"If the code for JACK is IZBJ, what does AZRD mean?",SAVE,CAST,BASE,CASE,CASH,C,Easy
+268,"If the code for LOVE is ORYH, what is the code for HOUR?",LSYV,ELRO,KRXU,JQWT,MTZW,C,Medium
+269,"If the code for FATE is EZSD, what is the code for HEAT?",HEAT,IFBU,FCYR,GDZS,HEAT,D,Easy
+270,"If the code for SUIT is TVJU, what does DMVC mean?",SUCH,PLUS,CLUB,GEAR,BLUE,C,Easy
+271,"If the code for HOPE is IPQF, what does EJFU mean?",DIET,DEER,DEEP,MEET,DIRT,A,Easy
+272,"If the code for BOOT is ANNS, what does MZLD mean?",GAME,COME,RACE,NAME,SAME,D,Easy
+273,"If the code for WELL is UCJJ, what is the code for RARE?",QZQD,PYPC,TCTG,OXOB,RARE,B,Medium
+274,"If the code for ELSE is DKRD, what does VZKK mean?",HALL,BALL,FALL,TALL,WALL,E,Easy
+275,"If the code for LAND is JYLB, what is the code for MOON?",KMML,JLLK,OQQP,LNNM,MOON,A,Medium
+276,"If the code for SHIP is HSRK, what does WVVK mean?",DEER,DIET,DEEP,KEEN,KEEP,C,Hard
+277,"If the code for EXIT is DWHS, what does FNZK mean?",GOAL,GOAT,BOAT,ROLL,COAL,A,Easy
+278,"If the code for HANG is KDQJ, what does ZDBV mean?",WAYS,WALL,WASH,WARD,DAYS,A,Medium
+279,"If the code for LIFE is MJGF, what does GJMN mean?",FILL,FINE,FILM,FIRM,PALM,C,Easy
+280,"If the code for SICK is THDJ, what does SDBC mean?",ROAD,HEAD,READ,LEAD,REAL,C,Hard
+281,"If the code for MUCH is KSAF, what does AYQC mean?",CASE,CARE,CASH,BASE,CAST,A,Medium
+282,"If the code for SNOW is TMPV, what does THDJ mean?",PICK,SILK,SICK,KICK,NECK,C,Hard
+283,"If the code for FACT is GZDS, what is the code for SPOT?",TOPS,RONS,URQV,VQRU,TQPU,A,Hard
+284,"If the code for FREE is EQDD, what is the code for MARK?",KYPI,MARK,OCTM,NBSL,LZQJ,E,Easy
+285,"If the code for MIND is RNSI, what is the code for WHOM?",CNUS,RCJH,BMTR,DOVT,ALSQ,C,Hard
+286,"If the code for MOON is OQQP, what does UQNG mean?",HOLE,SOME,SOLD,ROLE,SOLE,E,Medium
+287,"If the code for FIND is CFKA, what is the code for NIGHT?",MHFGS,QLJKW,LGEFR,JECDP,KFDEQ,E,Medium
+288,"If the code for WASH is XBTI, what does GVMM mean?",FALL,PULL,FILL,FULL,FELL,D,Easy
+289,"If the code for PLUS is QKVR, what does FWJS mean?",UNIT,EAST,EXIT,EXAM,SUIT,C,Hard
+290,"If the code for SPOT is HKLG, what is the code for WAIT?",JNVG,DZRG,XBJU,VZHS,YCKV,B,Hard
+291,"If the code for FATE is EZSD, what does QNKK mean?",POLL,ROLE,ROLL,SOUL,BILL,C,Easy
+292,"If the code for GIVE is TREV, what does HRTM mean?",SKIN,SITE,SING,SIGN,SILK,D,Hard
+293,"If the code for SAFE is VDIH, what does UXOH mean?",RELY,TUNE,ROLE,RULE,SURE,D,Medium
+294,"If the code for HURT is SFIG, what does XZHS mean?",CASE,CAST,MASS,CASH,WASH,D,Hard
+295,"If the code for BOAT is GTFY, what is the code for THIN?",AOPU,XLMR,YMNS,ZNOT,OCDI,C,Hard
+296,"If the code for THIN is SGHM, what does SGDM mean?",THEN,THEM,EVEN,THIN,WHEN,A,Easy
+297,"If the code for DATA is EBUB, what is the code for FEAR?",FEAR,GFBS,EDZQ,IHDU,HGCT,B,Easy
+298,"If the code for LACK is KZBJ, what does LDZS mean?",MEAT,BEAT,HEAT,SEAT,MEAL,A,Easy
+299,"If the code for PIPE is KRKV, what is the code for SUIT?",UWKV,RTHS,FHVG,HFRG,TVJU,D,Hard
+300,"If the code for NECK is ODDJ, what is the code for TANK?",VCPM,UBOL,UZOJ,CHWR,SZMJ,C,Hard
+301,"If the code for RISK is TKUM, what is the code for REAR?",PCYP,UHDU,VIEV,SFBS,TGCT,E,Medium
+302,"If the code for CASE is ZXPB, what does QLVP mean?",TOYS,TOUR,TOWN,DAYS,WAYS,A,Medium
+303,"If the code for GIRL is CENH, what does SENA mean?",WIDE,WINE,WERE,WIRE,WIFE,D,Hard
+304,"If the code for HOME is FMKC, what is the code for WILD?",VHKC,TFIA,YKNF,UGJB,WILD,D,Medium
+305,"If the code for PAIR is OZHQ, what does FQDX mean?",GREY,ARMY,GRAY,FREE,AREA,A,Easy
+306,"If the code for WORK is XPSL, what is the code for PORT?",PORT,SRUW,RQTV,ONQS,QPSU,E,Easy
+307,"If the code for PLAY is KOZB, what does YZMP mean?",RANK,BAND,BACK,TANK,BANK,E,Hard
+308,"If the code for WEAR is DVZI, what does OZNK mean?",JUMP,LAND,LAKE,LAMP,CAMP,D,Hard
+309,"If the code for TELL is QBII, what is the code for SURE?",VXUH,QSPC,OQNA,PROB,RTQD,D,Medium
+310,"If the code for BUSH is CVTI, what is the code for NEAR?",NEAR,OFBS,MDZQ,QHDU,PGCT,B,Easy
+311,"If the code for EXAM is CVYK, what does FYJD mean?",CALM,HALF,FALL,HELL,HALL,B,Medium
+312,"If the code for EAST is IEWX, what is the code for FLAT?",KQFY,LRGZ,BHWP,JPEX,IODW,D,Hard
+313,"If the code for AREA is YPCY, what is the code for HOUR?",ELRO,HOUR,FMSP,GNTQ,JQWT,C,Medium
+314,"If the code for FILL is EHKK, what does FHES mean?",LIFE,LIFT,LEFT,GIFT,GIVE,D,Easy
+315,"If the code for VOTE is WNUD, what does NDBK mean?",MEAT,REAL,MEAL,MEAN,DEAL,C,Hard
+316,"If the code for MILE is LHKD, what is the code for WISH?",VHRG,WISH,XJTI,UGQF,AMWL,A,Easy
+317,"If the code for RAIN is WFNS, what is the code for RAIL?",YHPS,XGOR,WFNQ,VEMP,MVDG,C,Hard
+318,"If the code for LIST is KHRS, what is the code for MILE?",NJMF,MILE,LHKD,KGJC,PLOH,C,Easy
+319,"If the code for WISH is YKUJ, what is the code for GOOD?",KSSH,JRRG,HPPE,IQQF,EMMB,D,Medium
+320,"If the code for LION is MJPO, what is the code for RICE?",ULFH,RICE,SJDF,TKEG,QHBD,C,Easy
+321,"If the code for FLOW is KQTB, what is the code for POET?",KJZO,TSIX,VUKZ,UTJY,WVLA,D,Hard
+322,"If the code for COME is GSQI, what is the code for WARM?",AEVQ,CGXS,ZDUP,BFWR,SWNI,A,Hard
+323,"If the code for WASH is UYQF, what does AFYR mean?",WHAT,CHAT,HEAT,COAT,THAT,B,Medium
+324,"If the code for SNOW is TOPX, what does CPBU mean?",COAT,BOOT,BEAT,GOAT,BOAT,E,Easy
+325,"If the code for POOL is QPPM, what is the code for CELL?",FHOO,CELL,EGNN,DFMM,BDKK,D,Easy
+326,"If the code for PUSH is OTRG, what is the code for HAVE?",FYTC,HAVE,IBWF,KDYH,GZUD,E,Easy
+327,"If the code for PART is QBSU, what is the code for PLAY?",PLAY,RNCA,SODB,QMBZ,OKZX,D,Easy
+328,"If the code for MODE is KMBC, what does BCQI mean?",REST,WEAK,DISK,DARK,DESK,E,Medium
+329,"If the code for FORD is ENQC, what does LNNC mean?",WOOD,FOOD,MOOD,MOON,GOOD,C,Easy
+330,"If the code for FALL is GZMK, what is the code for EXIT?",IZMV,DWHS,GZKV,FYJU,FWJS,E,Hard
+331,"If the code for WIRE is XJSF, what is the code for RANK?",RANK,UDQN,SBOL,TCPM,QZMJ,C,Easy
+332,"If the code for THAT is QEXQ, what is the code for DAYS?",ZWUO,BYWQ,CZXR,AXVP,GDBV,D,Medium
+333,"If the code for SING is RHMF, what does ANZS mean?",BEAT,GOAT,COAT,BOAT,BOOT,D,Easy
+334,"If the code for DAWN is EBXO, what is the code for GOLF?",HPMG,FNKE,IQNH,GOLF,JROI,A,Easy
+335,"If the code for SOLD is TPME, what is the code for NOTE?",NOTE,QRWH,OPUF,MNSD,PQVG,C,Easy
+336,"If the code for GOAL is BJVG, what does WZVM mean?",FEAR,GEAR,NEAR,WEAR,BEAR,E,Hard
+337,"If the code for LIKE is JGIC, what does UMMJ mean?",WOOL,WORK,COOL,WOOD,POOL,A,Medium
+338,"If the code for WHEN is TEBK, what is the code for LIVE?",KHUD,HERA,IFSB,JGTC,OLYH,C,Medium
+339,"If the code for MANY is OCPA, what does UCPF mean?",SEND,BAND,HAND,SAND,LAND,D,Medium
+340,"If the code for DATA is CZSZ, what is the code for DUAL?",EVBM,BSYJ,CTZK,DUAL,HYEP,C,Easy
+341,"If the code for USER is TRDQ, what is the code for HOUR?",FMSP,HOUR,IPVS,GNTQ,OVBY,D,Easy
+342,"If the code for RARE is IZIV, what does DLIW mean?",WOOD,WARD,WORD,FORD,LORD,C,Hard
+343,"If the code for RELY is IVOB, what is the code for HILL?",JKNN,IJMM,UVYY,SROO,GHKK,D,Hard
+344,"If the code for FATE is KFYJ, what does HFQR mean?",PALM,CALM,CASE,WALL,CALL,B,Hard
+345,"If the code for HEAD is IDBC, what does DQPO mean?",DROP,COOK,CAMP,CROP,IRON,D,Hard
+346,"If the code for MODE is NNED, what is the code for WIRE?",YKTG,CMXI,VHQD,XJSF,XHSD,E,Hard
+347,"If the code for TRUE is USVF, what is the code for MISS?",PLVV,OKUU,LHRR,NJTT,MISS,D,Easy
+348,"If the code for HATE is EXQB, what is the code for PILE?",MFIB,LEHA,OHKD,NGJC,SLOH,A,Medium
+349,"If the code for WHOM is ALSQ, what does WSQI mean?",COME,SOLE,SOME,SAME,HOME,C,Hard
+350,"If the code for WASH is BFXM, what is the code for MADE?",SGJK,THKL,QEHI,RFIJ,HVYZ,D,Hard
+351,"If the code for BILL is YROO, what does HSLD mean?",SHOT,SLOW,SHOE,SHOW,SNOW,D,Hard
+352,"If the code for WOOL is XPPM, what does CMVF mean?",TRUE,ELSE,BLUE,BASE,BONE,C,Easy
+353,"If the code for DRAW is WIZD, what does HRXP mean?",PICK,SICK,KICK,SILK,NECK,B,Hard
+354,"If the code for VOTE is YRWH, what does WKLQ mean?",THEN,THIN,THIS,THEM,TWIN,B,Medium
+355,"If the code for DARK is EBSL, what does UIBU mean?",CHAT,THEM,TEXT,WHAT,THAT,E,Easy
+356,"If the code for BLOW is AKNV, what is the code for CROP?",BQNO,APMN,CROP,DSPQ,KZWX,A,Easy
+357,"If the code for SKIN is HPRM, what does SLOV mean?",HOLD,HOPE,HOME,ROLE,HOLE,E,Hard
+358,"If the code for FOUR is ENTQ, what is the code for POOL?",NMMJ,TSSP,POOL,ONNK,QPPM,D,Easy
+359,"If the code for BANK is YXKH, what does PXKA mean?",BAND,SAND,SAID,LAND,HAND,B,Medium
+360,"If the code for STAY is TSBX, what is the code for MEAT?",PFDU,NDBS,NFBU,OGCV,LDZS,B,Hard
+361,"If the code for GREY is DOBV, what is the code for BODY?",ANCX,YLAV,ERGB,XKZU,ZMBW,B,Medium
+362,"If the code for TALL is UZMK, what is the code for BOAT?",DQCV,CPBU,CNBS,JUIZ,ANZS,C,Hard
+363,"If the code for MOST is NPTU, what is the code for PULL?",QVMM,SXOO,RWNN,PULL,OTKK,A,Easy
+364,"If the code for HEAT is LIEX, what is the code for JANE?",MDQH,PGTK,OFSJ,NERI,FWJA,D,Hard
+365,"If the code for PARK is QZSJ, what does MNBC mean?",ROAD,LORD,LEAD,LOAN,LOAD,E,Hard
+366,"If the code for ELSE is DKRD, what does GTFD mean?",HURT,TUNE,HAVE,HUGE,HOLE,D,Easy
+367,"If the code for CELL is FHOO, what is the code for HIGH?",KLJK,LMKL,JKIJ,EFDE,MNLM,A,Medium
+368,"If the code for SOIL is TNJK, what does DNSD mean?",CARE,CORE,CORN,CODE,MORE,B,Hard
+369,"If the code for LION is ORLM, what does DRMT mean?",WING,WINE,RING,WIND,SING,A,Hard
+370,"If the code for REST is QDRS, what is the code for JACK?",JACK,IZBJ,JACK,HYAI,KBDL,B,Easy
+371,"If the code for USER is VTFS, what does GJMN mean?",FILL,PILE,PALM,FILM,FIRM,D,Easy
+372,"If the code for WANT is XBOU, what is the code for LINE?",MJOF,KHMD,OLQH,NKPG,LINE,A,Easy
+373,"If the code for JANE is QZMV, what is the code for SHOW?",TIPX,RGNV,HSLD,FUBJ,UJQY,C,Hard
+374,"If the code for LEAF is NGCH, what does JQUV mean?",COST,MOST,POST,HOST,LOST,D,Medium
+375,"If the code for LATE is MBUF, what is the code for WAIT?",XBJU,ZDLW,YCKV,WAIT,VZHS,A,Easy
+376,"If the code for TERM is UFSN, what does OJOF mean?",LINE,MINE,NINE,WINE,NICE,C,Easy
+377,"If the code for SOON is RNNM, what does DWHS mean?",EXIT,EVIL,UNIT,EXAM,EAST,A,Easy
+378,"If the code for DUAL is ZQWH, what is the code for PACK?",TEGO,MXZH,LWYG,NYAI,KVXF,C,Hard
+379,"If the code for LOAD is MNBC, what is the code for PART?",QZSS,RCTV,SBUU,QBSU,OZQS,A,Hard
+380,"If the code for HAVE is KDYH, what does VWDB mean?",GRAY,SEAT,STOP,STAY,STAR,D,Medium
+381,"If the code for WHAT is XIBU, what is the code for SOFT?",SOFT,VRIW,UQHV,TPGU,RNES,D,Easy
+382,"If the code for OKAY is PLBZ, what does DBMM mean?",WALL,CALL,HALL,CELL,TALL,B,Easy
+383,"If the code for SICK is RHBJ, what is the code for READ?",READ,SFBE,SFBE,PCYB,QDZC,E,Easy
+384,"If the code for SIDE is PFAB, what is the code for SURE?",PROB,OQNA,VXUH,RTQD,QSPC,A,Medium
+385,"If the code for THEM is WKHP, what does GHDU mean?",DEER,GEAR,DEAL,FEAR,DEAR,E,Medium
+386,"If the code for CAKE is DZLD, what does HQFX mean?",GREY,GROW,GRAY,ARMY,AREA,A,Hard
+387,"If the code for FROM is UILN, what does HVMG mean?",WENT,KENT,RENT,SEND,SENT,E,Hard
+388,"If the code for ELSE is DKRD, what does XDZQ mean?",YEAR,REAR,TEAR,WEAR,NEAR,A,Easy
+389,"If the code for MEAT is NDBS, what is the code for BEAT?",ADZS,CFBU,JKIZ,DGCV,CDBS,E,Hard
+390,"If the code for LEAD is QJFI, what is the code for BIRD?",HOXJ,FMVH,GNWI,IPYK,WDMY,C,Hard
+391,"If the code for KILL is JHKK, what is the code for FELL?",GFMM,FELL,EDKK,DCJJ,IHOO,C,Easy
+392,"If the code for DOOR is GRRU, what does SOXV mean?",PLAY,CLUB,PASS,BLUE,PLUS,E,Medium
+393,"If the code for SEEK is OAAG, what is the code for IRON?",DMJI,ENKJ,GPML,MVSR,FOLK,B,Hard
+394,"If the code for LOSE is MNTD, what does FZTS mean?",CAST,EAST,PAST,LAST,FAST,B,Hard
+395,"If the code for KEPT is PVKG, what does DVIV mean?",MORE,WERE,WIRE,WORK,ZERO,B,Hard
+396,"If the code for MOOD is JLLA, what is the code for SAND?",PXKA,QYLB,OWJZ,RZMC,VDQG,A,Medium
+397,"If the code for USER is WUGT, what is the code for ZONE?",XMLC,BQPG,DSRI,APOF,CRQH,B,Medium
+398,"If the code for GAME is EYKC, what is the code for MOVE?",MOVE,LNUD,OQXG,KMTC,JLSB,D,Medium
+399,"If the code for EARN is DZQM, what is the code for SEEK?",TFFL,SEEK,QCCI,BNNT,RDDJ,E,Easy
+400,"If the code for REAR is SFBS, what is the code for WISH?",VHRG,XJTI,ZLVK,WISH,YKUJ,B,Easy
