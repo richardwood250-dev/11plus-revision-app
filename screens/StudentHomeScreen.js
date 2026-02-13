@@ -54,7 +54,7 @@ const FlatIcon = ({ type }) => {
   return null;
 };
 
-export const StudentDojoTestScreen = () => {
+export const StudentHomeScreen = () => {
   const navigation = useNavigation();
   const insets = useSafeAreaInsets();
   const [isLoadingEnglish, setIsLoadingEnglish] = React.useState(false);
@@ -107,12 +107,12 @@ export const StudentDojoTestScreen = () => {
         <View style={styles.header}>
           <View style={styles.headerTopRow}>
             {/* Header Logo Placeholder */}
-            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>11PlusNinja (TEST)</Text>
+            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>11PlusNinja</Text>
             <TouchableOpacity style={{ padding: 10 }}>
               <Text style={{ fontSize: 24 }}>⚙️</Text>
             </TouchableOpacity>
           </View>
-          <Text style={styles.subtitle}>Welcome to the Test Dojo!</Text>
+          <Text style={styles.subtitle}>Welcome to the Student Dojo!</Text>
         </View>
 
         {/* --- ACTIONS ROW --- */}
