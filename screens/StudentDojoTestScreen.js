@@ -2,8 +2,11 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image, Platform, Dimensions } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { getRandomQuiz } from '../utils/quickQuizGenerator';
+import { getRandomQuiz, getQuiz } from '../utils/quickQuizGenerator';
 import { fetchEnglishQuiz } from '../utils/englishLoader';
+import { getRecommendation } from '../utils/recommendations';
+import { getStats } from '../utils/storage';
+import { useFocusEffect } from '@react-navigation/native';
 
 const Colors = {
   primary: '#4DA6FF', // Soft Blue
@@ -55,6 +58,18 @@ export const StudentDojoTestScreen = () => {
   const navigation = useNavigation();
   const insets = useSafeAreaInsets();
   const [isLoadingEnglish, setIsLoadingEnglish] = React.useState(false);
+  const [recommendation, setRecommendation] = React.useState(null);
+
+  useFocusEffect(
+    React.useCallback(() => {
+      const load = async () => {
+        const s = await getStats();
+        const rec = getRecommendation(s);
+        setRecommendation(rec);
+      };
+      load();
+    }, [])
+  );
 
   const handleSubjectPress = (title) => {
     if (title === 'Maths') {
@@ -126,10 +141,45 @@ export const StudentDojoTestScreen = () => {
             <Text style={styles.actionBtnTitle}>{isLoadingEnglish ? 'Loading...' : 'Quick Start'}</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={[styles.actionBtnHalf, { borderColor: Colors.primary }]}>
-            <Text style={{ fontSize: 24, marginBottom: 5 }}>🎯</Text>
-            <Text style={styles.actionBtnTitle}>Suggestion</Text>
-          </TouchableOpacity>
+          {recommendation ? (
+            <TouchableOpacity
+              style={[styles.actionBtnHalf, { borderColor: Colors.primary }]}
+              onPress={async () => {
+                if (recommendation.action) {
+                  recommendation.action();
+                } else if (recommendation.config) {
+                  // Direct Launch Logic
+                  const { subject, topic } = recommendation.config;
+
+                  if (subject === 'English' && topic === 'Comprehension') {
+                    // Special handling for English Comprehension
+                    try {
+                      setIsLoadingEnglish(true);
+                      const data = await fetchEnglishQuiz();
+                      setIsLoadingEnglish(false);
+                      navigation.navigate('Comprehension', data);
+                    } catch (err) {
+                      setIsLoadingEnglish(false);
+                      alert("Error: Could not load quiz: " + err.message);
+                    }
+                  } else {
+                    // Standard Quiz Generation
+                    const quizData = getQuiz(subject, topic);
+                    navigation.navigate('Quiz', quizData);
+                  }
+                }
+              }}
+            >
+              <Text style={{ fontSize: 24, marginBottom: 5 }}>🎯</Text>
+              <Text style={styles.actionBtnTitle}>Suggestion</Text>
+              <Text style={styles.actionBtnSub} numberOfLines={1}>{recommendation.title}</Text>
+            </TouchableOpacity>
+          ) : (
+            <View style={[styles.actionBtnHalf, { opacity: 0.5 }]}>
+              <Text style={{ fontSize: 24 }}>👍</Text>
+              <Text style={styles.actionBtnTitle}>Good Luck!</Text>
+            </View>
+          )}
         </View>
 
         {/* Dashboard Button */}
@@ -260,6 +310,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#2C3E50',
     textAlign: 'center'
+  },
+  actionBtnSub: {
+    fontSize: 12,
+    color: '#888',
+    textAlign: 'center',
+    marginTop: 2
   },
   dashboardBtnMain: {
     width: '100%',
