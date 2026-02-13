@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>11PlusNinja - Legacy Mode</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #F0F2F5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        .header {
+            background: #fff;
+            padding: 15px;
+            border-bottom: 4px solid #2563EB;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #1F2937;
+            font-size: 20px;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 80vh;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Views */
+        .view {
+            display: none;
+        }
+
+        /* Buttons */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.1s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-maths {
+            background-color: #4DA6FF;
+        }
+
+        .btn-english {
+            background-color: #FF9800;
+        }
+
+        .btn-verbal {
+            background-color: #9C27B0;
+        }
+
+        .btn-nvr {
+            background-color: #4CAF50;
+        }
+
+        .btn-back {
+            background-color: #666;
+            width: auto;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+        /* Quiz UI */
+        .progress-text {
+            color: #888;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .question-text {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .question-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .option-btn {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .option-btn:active {
+            background: #f0f0f0;
+            border-color: #ccc;
+        }
+
+        .option-label {
+            font-weight: bold;
+            font-size: 18px;
+            color: #888;
+            margin-right: 15px;
+            min-width: 25px;
+        }
+
+        /* Review UI */
+        .score-box {
+            background: #e6f7ff;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .score-val {
+            font-size: 48px;
+            font-weight: 800;
+            color: #4DA6FF;
+            display: block;
+        }
+
+        .feedback {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Loading */
+        #loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 999;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+        <p style="margin-top:20px;">Loading...</p>
+    </div>
+
+    <div class="header">
+        <h1 onclick="LegacyApp.init()">11PlusNinja Lite</h1>
+    </div>
+
+    <div class="container">
+
+        <!-- MENU VIEW -->
+        <div id="menu-view" class="view">
+            <h2>Select Subject</h2>
+            <div id="stats-display" style="font-size:12px; color:#666; margin-bottom:20px;"></div>
+
+            <button class="btn btn-maths" onclick="LegacyApp.startQuiz('Maths')">🧮 Maths</button>
+            <button class="btn btn-english" onclick="alert('English Coming Soon!')">📚 English (Soon)</button>
+            <button class="btn btn-verbal" onclick="alert('VR Coming Soon!')">🧠 Verbal (Soon)</button>
+            <button class="btn btn-nvr" onclick="alert('NVR Coming Soon!')">🧊 Non-Verbal (Soon)</button>
+
+            <hr style="border:0; border-top:1px solid #eee; margin:20px 0;">
+            <p style="font-size:12px; color:#aaa;">Legacy Mode v1.0 • No React • Pure Speed</p>
+        </div>
+
+        <!-- QUIZ VIEW -->
+        <div id="quiz-view" class="view">
+            <div id="progress-text" class="progress-text">Question 1 of 10</div>
+            <div id="question-text" class="question-text">Loading...</div>
+            <div id="question-image-container"></div>
+            <div id="options-container"></div>
+
+            <div style="margin-top:30px;">
+                <button class="btn btn-back" onclick="LegacyApp.showView('menu')">Exit Quiz</button>
+            </div>
+        </div>
+
+        <!-- REVIEW VIEW -->
+        <div id="review-view" class="view">
+            <h2>Quiz Complete!</h2>
+            <div class="score-box">
+                <span id="score-text" class="score-val">0 / 0</span>
+                <p id="feedback-text" class="feedback">Good effort!</p>
+            </div>
+            <button class="btn btn-maths" onclick="LegacyApp.startQuiz(LegacyApp.state.subject)">Try Again</button>
+            <button class="btn btn-back" onclick="LegacyApp.showView('menu')">Back to Menu</button>
+        </div>
+
+    </div>
+
+    <script src="/js/legacy-app.js"></script>
+    <script>
+        // Auto Init
+        window.addEventListener('load', function () {
+            if (window.LegacyApp) window.LegacyApp.init();
+        });
+    </script>
+</body>
+
+</html>

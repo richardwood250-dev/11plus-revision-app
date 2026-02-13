@@ -1,0 +1,2472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Dojo | 11PlusNinja</title>
+    <meta name="description"
+        content="Master the 11+ Maze with Parent Dojo. Free guidance, resources, and strategy for Grammar School entry.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Word Widget Styles */
+        .word-widget {
+            background: white;
+            border: 3px solid #F59E0B;
+            /* Gold border */
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .word-widget-badge {
+            position: absolute;
+            top: -12px;
+            right: 24px;
+            background: #F59E0B;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .word-header {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .word-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin: 0;
+        }
+
+        .word-type {
+            color: #6B7280;
+            font-style: italic;
+        }
+
+        .word-definition {
+            font-size: 1.125rem;
+            color: #1F2937;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .word-meta {
+            background: #F3F4F6;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        .word-meta p {
+            margin-bottom: 8px;
+        }
+
+        .word-meta p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-word {
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        /* ... rest of css ... */
+        :root {
+            --primary-blue: #2563EB;
+            /* Ninja Blue */
+            --dark-gray: #1F2937;
+            /* Black Belt */
+            --light-gray: #F3F4F6;
+            --white: #FFFFFF;
+            --text-color: #374151;
+            --accent-green: #10B981;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Global Header Styles */
+        .global-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 4px solid #F59E0B;
+            /* Gold for Parent Dojo */
+        }
+
+        .global-header .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .global-header-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #1F2937;
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        /* Removed Padding-Top as Header is now Sticky */
+        /*
+        body {
+            padding-top: 80px;
+        }
+        */
+
+        /* Panic Button Styles */
+        .panic-btn-container {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .panic-btn {
+            background: #DC2626;
+            color: white;
+            border: none;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            font-weight: 800;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 10px 0 #991B1B, 0 20px 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.1s;
+            position: relative;
+            line-height: 1.2;
+            padding: 20px;
+        }
+
+        .panic-btn:active {
+            transform: translateY(10px);
+            box-shadow: 0 0 0 #991B1B, 0 10px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: .95;
+                transform: scale(1.05);
+            }
+        }
+
+        /* Modal Styles */
+        .panic-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .panic-modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .panic-content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            text-align: center;
+            border: 4px solid #F59E0B;
+        }
+
+        .panic-quote {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #1F2937;
+        }
+
+
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            background-color: #F0F2F5;
+            /* Pillarbox Background */
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Mobile Wrapper / Pillarbox */
+        .mobile-wrapper {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
+            position: relative;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Global Header Styles - Updated for Pillarbox */
+        .global-header {
+            position: -webkit-sticky;
+            position: sticky;
+            /* Changed from fixed */
+            top: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 4px solid #F59E0B;
+        }
+
+        /* Utility Classes */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            border-color: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--light-gray);
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 2px solid #e5e7eb;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Ninja Pattern Overlay (Subtle) */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                radial-gradient(#2563EB 0.5px, transparent 0.5px),
+                radial-gradient(#2563EB 0.5px, #f3f4f6 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--dark-gray);
+            margin-bottom: 16px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #4B5563;
+            margin-bottom: 32px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Navigation Cards (The 3 Pillars) */
+        .pillars {
+            padding: 60px 0;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            border-color: var(--primary-blue);
+        }
+
+        .card-icon {
+            font-size: 32px;
+            background-color: #EFF6FF;
+            color: var(--primary-blue);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--dark-gray);
+        }
+
+        .card p {
+            color: #6B7280;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-link {
+            color: var(--primary-blue);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        .card-link::after {
+            content: '→';
+            margin-left: 5px;
+            transition: margin-left 0.2s;
+        }
+
+        .card-link:hover::after {
+            margin-left: 10px;
+        }
+
+        /* FAQ / Accordion Section */
+        .faq-section {
+            background-color: #FAFAFA;
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.25rem;
+            color: var(--dark-gray);
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .accordion {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .accordion-item {
+            background-color: var(--white);
+            border-radius: 8px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            width: 100%;
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: none;
+            background: none;
+            cursor: pointer;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark-gray);
+            transition: background-color 0.2s;
+        }
+
+        .accordion-header:hover {
+            background-color: #f9fafb;
+        }
+
+        .accordion-content {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background-color: var(--white);
+        }
+
+        .accordion-content p {
+            padding-bottom: 24px;
+            color: #6B7280;
+        }
+
+        .accordion-icon {
+            transition: transform 0.3s ease;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+            /* Arbitrary large height */
+        }
+
+        /* School Finder */
+        .finder-section {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #1e293b 0%, #111827 100%);
+            color: var(--white);
+        }
+
+        .finder-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            -webkit-backdrop-filter: blur(10px);
+                    backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .finder-input-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .finder-select {
+            flex-grow: 1;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+            font-family: inherit;
+            color: var(--dark-gray);
+        }
+
+        /* Freebie Teaser */
+        .freebie-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .freebie-card {
+            background-color: #EFF6FF;
+            border: 2px dashed var(--primary-blue);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .freebie-card {
+                flex-direction: row;
+                text-align: left;
+                justify-content: space-between;
+                gap: 40px;
+            }
+
+            .freebie-content {
+                flex: 1;
+            }
+
+            .freebie-action {
+                flex-shrink: 0;
+            }
+        }
+
+        .badge {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-gray);
+            color: #9CA3AF;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        /* Mobile tweaks */
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+
+            .finder-input-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* Jargon Buster Grid */
+        .jargon-section {
+            padding: 60px 0;
+            background-color: var(--white);
+        }
+
+        .jargon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .jargon-category h3 {
+            color: var(--primary-blue);
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .jargon-term {
+            margin-bottom: 20px;
+        }
+
+        .jargon-term h4 {
+            color: var(--dark-gray);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .jargon-term p {
+            font-size: 0.95rem;
+            color: #4B5563;
+        }
+
+        /* School Finder V2 */
+        .finder-box {
+            /* Wider container for the new layout */
+            max-width: 1000px;
+        }
+
+        .finder-controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .finder-control-input {
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            min-width: 200px;
+            -webkit-backdrop-filter: blur(5px);
+                    backdrop-filter: blur(5px);
+        }
+
+        .finder-control-input::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .finder-control-input::-moz-placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .finder-control-input:-ms-input-placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .finder-control-input::-ms-input-placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .finder-control-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .finder-control-input option {
+            background: var(--dark-gray);
+            color: white;
+        }
+
+        .school-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            text-align: left;
+        }
+
+        .school-card {
+            background: var(--white);
+            color: var(--text-color);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .school-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+        }
+
+        .school-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .tag-region {
+            background-color: #DBEAFE;
+            color: #1E40AF;
+        }
+
+        .tag-board {
+            background-color: #F3F4F6;
+            color: #374151;
+            border: 1px solid #E5E7EB;
+        }
+
+        .btn-sm {
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            background-color: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            text-align: center;
+            margin-top: auto;
+            display: inline-block;
+        }
+
+        .btn-sm:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Disclaimer Box */
+        .finder-disclaimer {
+            margin-top: 30px;
+            background-color: #FEFCE8;
+            /* Light yellow */
+            border: 1px solid #FEF08A;
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: #4B5563;
+            /* Gray 600 */
+            font-size: 0.875rem;
+            /* text-sm */
+            line-height: 1.5;
+        }
+
+        .disclaimer-icon {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            color: #EAB308;
+            /* Yellow 500 */
+        }
+
+        /* Timeline of Stress */
+        .timeline-section {
+            padding: 80px 0;
+            background-color: var(--light-gray);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* The vertical line */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #E5E7EB;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            /* Mobile: Line on left */
+            margin-left: -2px;
+        }
+
+        .timeline-node {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 60px;
+            /* Space for line/node */
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 4px;
+            /* Center of the 40px left area? No, circle center */
+            top: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: var(--primary-blue);
+            border: 4px solid white;
+            z-index: 10;
+            box-shadow: 0 0 0 2px var(--primary-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+        }
+
+        .timeline-content {
+            background-color: var(--white);
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .timeline-date {
+            font-weight: 800;
+            color: var(--primary-blue);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        /* Parent Tip Box */
+        .parent-tip {
+            margin-top: 16px;
+            background-color: #F0FDF4;
+            /* Light green */
+            border-left: 4px solid #10B981;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #1F2937;
+            display: flex;
+            gap: 10px;
+            align-items: start;
+        }
+
+        .tip-icon {
+            font-size: 1.2rem;
+        }
+
+        @media (min-width: 768px) {
+            .timeline::after {
+                left: 50%;
+            }
+
+            .timeline-node {
+                width: 50%;
+                padding-left: 0;
+                padding-right: 40px;
+                left: 0;
+            }
+
+            /* Right sided nodes */
+            .timeline-node:nth-child(even) {
+                left: 50%;
+                padding-right: 0;
+                padding-left: 40px;
+            }
+
+            .timeline-marker {
+                left: calc(100% + 20px - 16px);
+                /* 40px padding, center is +20, -16 for half width */
+                right: auto;
+            }
+
+            .timeline-node:nth-child(even) .timeline-marker {
+                left: -20px;
+                /* -20px from left edge of this container */
+                margin-left: -16px;
+            }
+
+            /* Actually easier strictly positioning markers relative to center line */
+            .timeline-marker {
+                left: auto;
+                right: -56px;
+                /* Adjust based on padding */
+            }
+
+            .timeline-node:nth-child(even) .timeline-marker {
+                right: auto;
+                left: -56px;
+            }
+
+            .timeline-date {
+                position: absolute;
+                top: 24px;
+                right: -180px;
+                width: 120px;
+                text-align: left;
+            }
+
+            .timeline-node:nth-child(even) .timeline-date {
+                left: -180px;
+                right: auto;
+                text-align: right;
+            }
+
+            /* Refined Layout for standard vertical timeline media object style */
+            /* Let's keep it simple: Content Card on one side, Date usually on other, but let's put Date INSIDE card for simplicity on responsive transition, or keep as requested? */
+            /* Request: Left side: Date/Name. Center: Line. Right: Card. */
+
+            /* Let's reset for the requested specifics: */
+            .timeline::after {
+                left: 30%;
+                /* Split 30% / 70% */
+            }
+
+            .timeline-node {
+                width: 100%;
+                padding-left: 30%;
+                /* Content starts after line */
+                margin-bottom: 0;
+                padding-bottom: 40px;
+            }
+
+            .timeline-date-label {
+                position: absolute;
+                left: 0;
+                width: 25%;
+                /* Fits in the 30% space */
+                text-align: right;
+                padding-right: 20px;
+                top: 0;
+                padding-top: 24px;
+                display: block;
+                /* Visible on desktop */
+            }
+
+            .timeline-marker {
+                left: 30%;
+                margin-left: -16px;
+                /* Centered on line */
+            }
+
+            .timeline-content {
+                margin-left: 40px;
+            }
+
+            .timeline-date-inline {
+                display: none;
+                /* Hide inline date on desktop */
+            }
+        }
+
+        .timeline-date-label {
+            display: none;
+            /* Hidden on mobile */
+            font-weight: 800;
+            color: var(--primary-blue);
+            text-transform: uppercase;
+        }
+
+        /* ... existing styles ... */
+        .hidden {
+            display: none !important;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .comparison-table th {
+            background-color: var(--primary-blue);
+            color: white;
+            font-weight: 600;
+        }
+
+        .comparison-table tr:hover {
+            background-color: #f9fafb;
+        }
+
+        /* Resource Grid */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 30px;
+        }
+
+        .resource-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 24px;
+            transition: transform 0.2s;
+            position: relative;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary-blue);
+        }
+
+        .resource-tag {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: #EFF6FF;
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+
+        .locked-card {
+            opacity: 0.7;
+            background: #f3f4f6;
+        }
+
+        /* Zen Zone */
+        .zen-theme {
+            background-color: #F0F9FF;
+            /* Pastel Blue */
+        }
+
+        .zen-header {
+            background: linear-gradient(135deg, #A7F3D0 0%, #6EE7B7 100%);
+            padding: 60px 0;
+            text-align: center;
+            color: #064E3B;
+        }
+
+        .checklist {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: 40px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+        }
+
+        .checklist-item input {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+            accent-color: #10B981;
+        }
+
+        /* Back Button */
+        .back-nav {
+            padding: 20px 0;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        /* Vocab Modal Styles */
+        .vocab-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .vocab-modal.active {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .vocab-modal-content {
+            background-color: white;
+            width: 100%;
+            max-width: 900px;
+            border-radius: 12px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            margin-top: 40px;
+            margin-bottom: 40px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            max-height: 90vh;
+        }
+
+        .vocab-modal-header {
+            padding: 20px 30px;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9fafb;
+        }
+
+        .vocab-modal-header h2 {
+            margin: 0;
+            color: var(--dark-gray);
+            font-size: 1.5rem;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #6b7280;
+            line-height: 1;
+        }
+
+        .close-btn:hover {
+            color: #ef4444;
+        }
+
+        .vocab-controls {
+            padding: 20px 30px;
+            background-color: #f3f4f6;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .vocab-input,
+        .vocab-select {
+            padding: 10px 15px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .vocab-input {
+            flex-grow: 1;
+        }
+
+        .vocab-print-btn {
+            padding: 10px 20px;
+            background-color: var(--dark-gray);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .vocab-print-btn:hover {
+            background-color: black;
+        }
+
+        .vocab-table-container {
+            overflow-y: auto;
+            flex-grow: 1;
+            padding: 0;
+        }
+
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .vocab-table th {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: #f9fafb;
+            padding: 15px 30px;
+            border-bottom: 2px solid #e5e7eb;
+            font-weight: 600;
+            color: #374151;
+            z-index: 10;
+        }
+
+        .vocab-table td {
+            padding: 12px 30px;
+            border-bottom: 1px solid #f3f4f6;
+            color: #4b5563;
+        }
+
+        /* Belt Rows */
+        .row-white {
+            background-color: #ffffff;
+        }
+
+        .row-white:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .row-blue {
+            background-color: #eff6ff;
+        }
+
+        .row-blue:nth-child(even) {
+            background-color: #dbeafe;
+        }
+
+        .row-black {
+            background-color: #1f293b;
+            color: #f3f4f6 !important;
+        }
+
+        .row-black td {
+            color: #f3f4f6 !important;
+            border-bottom: 1px solid #374151;
+        }
+
+        /* Print Styles */
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+
+            .vocab-modal,
+            .vocab-modal * {
+                visibility: visible;
+            }
+
+            .vocab-modal {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: auto;
+                background: white;
+                padding: 0;
+                display: block !important;
+                z-index: 9999;
+            }
+
+            .vocab-modal-content {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+                max-height: none;
+                border: none;
+            }
+
+            .vocab-modal-header button,
+            .vocab-controls {
+                display: none !important;
+            }
+
+            .vocab-table-container {
+                overflow: visible;
+            }
+
+            .vocab-table th {
+                background-color: white !important;
+                color: black !important;
+                border-bottom: 2px solid black;
+            }
+
+            .vocab-table td {
+                color: black !important;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .row-white,
+            .row-blue,
+            .row-black {
+                background-color: white !important;
+                color: black !important;
+            }
+
+            /* Force print background colors if user enabled? No, usually safer to force simple black/white for resource lists */
+
+            .print-only {
+                display: block !important;
+            }
+
+            /* Increase font size */
+            .vocab-table td,
+            .vocab-table th {
+                font-size: 12pt;
+                padding: 8px 10px;
+            }
+        }
+    </style>
+  <script async type="module" crossorigin src="/assets/parent-6F3hq9O7.js"></script>
+  <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
+  <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+</head>
+
+<body>
+    <!-- Mobile Wrapper -->
+    <div class="mobile-wrapper">
+        <!-- Main Hub Container -->
+        <!-- Global Header -->
+        <header class="global-header">
+            <div class="container" style="display: flex; flex-direction: column; align-items: flex-start;">
+                <a href="/" class="global-header-logo"><img src="/assets/ninja_header.png" alt="11PlusNinja"
+                        style="height: 40px; margin-bottom: 5px;"></a><a href="/"
+                    style="font-size: 0.85rem; color: #666; text-decoration: none; font-weight: 600;">&larr;
+                    Back to Main Menu</a>
+            </div>
+        </header>
+        <div id="main-hub">
+            <!-- Hero Section -->
+            <header class="hero">
+                <div class="container hero-content"><span class="badge"
+                        style="background-color: #DBEAFE; color: #1e40af; margin-bottom: 16px;">New for
+                        2026</span>
+                    <h1>Parent Dojo: Master the 11+Maze.</h1>
+                    <p>Free guidance,
+                        resources,
+                        and strategy to help your child navigate Grammar School entry without the
+                        stress.</p><a href="#roadmap" class="btn btn-primary">Start Your Journey</a>
+                    <div style="margin-top: 15px;"><a href="/"
+                            style="font-size: 0.9rem; color: #6B7280; text-decoration: none;">&larr;
+                            Back to Kids App</a></div>
+                </div>
+            </header>
+            <!-- Ninja Word Widget -->
+            <section class="container" style="margin-top: -30px; position: relative; z-index: 10;">
+                <div class="word-widget">
+                    <div class="word-widget-badge">Vocab Booster</div>
+                    <div class="word-widget-content">
+                        <div class="word-header">
+                            <h3 class="word-title" id="word-title">Cacophony</h3><span class="word-type"
+                                id="word-type">(noun)</span>
+                        </div>
+                        <p class="word-definition" id="word-definition">A harsh,
+                            discordant mixture of sounds.</p>
+                        <div class="word-meta">
+                            <p id="word-synonyms"><strong>Synonyms:</strong>Noise,
+                                Din,
+                                Racket</p>
+                            <p id="word-sentence"><strong>Ninja Sentence:</strong>"The <span
+                                    class="highlight-word">cacophony</span>in the playground gave
+                                the teacher a headache."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- The 3 Pillars -->
+            <section id="roadmap" class="pillars">
+                <div class="container">
+                    <div class="pillars-grid">
+                        <article class="card">
+                            <div class="card-icon">🧠</div>
+                            <h3>The Knowledge</h3>
+                            <p>Understanding the basics is half the battle. Exam boards,
+                                Age Standardisation,
+                                and scoring myths.</p><a href="#knowledge" class="card-link">Read the Guides</a>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">📚</div>
+                            <h3>Resource Vault</h3>
+                            <p>Access our curated list of free past papers,
+                                recommended book lists,
+                                and vocabulary builders. </p><a href="#resources" class="card-link">Open Vault</a>
+                        </article>
+                        <article class="card">
+                            <div class="card-icon">🧘</div>
+                            <h3>The Zen Zone</h3>
+                            <p>Strategies for managing exam stress,
+                                keeping motivation high,
+                                and maintaining balance. </p><a href="#zen-zone" class="card-link">Find Balance</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- School Finder -->
+            <section class="finder-section">
+                <div class="container">
+                    <div class="finder-box">
+                        <h2 style="font-size: 1.75rem; margin-bottom: 10px; color:white;">
+                            Regional School Finder</h2>
+                        <p style="color: #cbd5e1; margin-bottom: 30px;">Find specific
+                            admissions criteria for Grammar Schools.</p>
+                        <div class="finder-controls"><select id="region-filter" class="finder-control-input">
+                                <option value="All">All Regions</option>
+                                <option value="Warwickshire">Warwickshire</option>
+                                <option value="Birmingham">Birmingham</option>
+                                <option value="Kent">Kent</option>
+                                <option value="London">London & Herts</option>
+                                <option value="Gloucestershire">Gloucestershire</option>
+                                <option value="Lincolnshire">Lincolnshire</option>
+                                <option value="Essex">Essex</option>
+                                <option value="Surrey">Surrey/Sutton</option>
+                            </select><input type="text" id="school-search" class="finder-control-input"
+                                placeholder="Search school name..."><button id="finder-toggle" class="btn btn-primary"
+                                style="padding: 10px 20px; white-space: nowrap;">Show
+                                Schools ▼</button></div>
+                        <div id="school-grid" class="school-grid"></div>
+                        <div class="finder-disclaimer"><svg class="disclaimer-icon" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                            <div><strong>Important Notice:</strong>Verification required.
+                                11PlusNinja is not affiliated with any exam board. </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- End Main Hub -->
+        <!-- PAGE 1: THE KNOWLEDGE -->
+        <section id="knowledge" class="hidden fade-in">
+            <div class="back-nav">
+                <div class="container"><a href="#" class="btn-outline"
+                        style="padding: 8px 16px; border-radius: 6px;">&larr;
+                        Back to Hub</a></div>
+            </div>
+            <header class="hero" style="padding: 40px 0;">
+                <div class="container"><span class="badge">Essential Reading</span>
+                    <h1>The Knowledge: 11+Declassified</h1>
+                    <p>Know your enemy. Understanding the system is the first step to beating it.
+                    </p>
+                </div>
+            </header>
+            <section class="container" style="padding: 40px 0;">
+                <h2 class="section-title">The Battle of the Boards</h2>
+                <div style="overflow-x: auto;">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Provider</th>
+                                <th>Key Traits</th>
+                                <th>Subjects</th>
+                                <th>Region</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>GL Assessment</strong></td>
+                                <td>Standardised,
+                                    Predictable,
+                                    Question Bank</td>
+                                <td>Maths,
+                                    English,
+                                    VR,
+                                    NVR (Split Papers)</td>
+                                <td>Kent,
+                                    Bucks,
+                                    Warwickshire,
+                                    Lincs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>CEM</strong></td>
+                                <td>Speed-based,
+                                    "Tutor-proof",
+                                    Vocabulary focus</td>
+                                <td>Mixed Papers (Sections timed individually)</td>
+                                <td>Bexley,
+                                    Gloucestershire,
+                                    Birmingham</td>
+                            </tr>
+                            <tr>
+                                <td><strong>CSSE</strong></td>
+                                <td>Traditional,
+                                    Written English heavy</td>
+                                <td>Maths & English (Creative Writing)</td>
+                                <td>Essex (Consortium)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- Re-used Jargon Buster -->
+            <section class="jargon-section">
+                <div class="container">
+                    <h2 class="section-title">The Jargon Buster</h2>
+                    <div class="accordion">
+                        <div class="accordion-item"><button class="accordion-header">SAS
+                                (Standardised Age Score) <span class="accordion-icon">▼</span></button>
+                            <div class="accordion-content">
+                                <p>A score adjusted for age. Average is 100. Grammar school
+                                    entry is usually 110-121+. Essential for summer-born equity.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item"><button class="accordion-header">Raw Score
+                                <span class="accordion-icon">▼</span></button>
+                            <div class="accordion-content">
+                                <p>The actual number of marks (e.g., 45/60). Rarely used for
+                                    final ranking,
+                                    but useful for practice monitoring.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item"><button class="accordion-header">PAN
+                                (Admission Number) <span class="accordion-icon">▼</span></button>
+                            <div class="accordion-content">
+                                <p>Published Admission Number. The absolute limit of places a
+                                    school offers (e.g., 150 boys).</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item"><button class="accordion-header">Catchment
+                                Area <span class="accordion-icon">▼</span></button>
+                            <div class="accordion-content">
+                                <p>The geographic priority zone. Distance is usually measured in
+                                    a straight line from the school gate to your home.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- PAGE 2: RESOURCE VAULT -->
+        <section id="resources" class="hidden fade-in">
+            <div class="back-nav">
+                <div class="container"><a href="#" class="btn-outline"
+                        style="padding: 8px 16px; border-radius: 6px;">&larr;
+                        Back to Hub</a></div>
+            </div>
+            <header class="hero" style="padding: 40px 0;">
+                <div class="container"><span class="badge">Downloads</span>
+                    <h1>The Ninja Armoury</h1>
+                    <p>High-quality resources. Zero cost.</p>
+                </div>
+            </header>
+            <section class="container" style="padding: 60px 20px;">
+                <div class="resource-grid">
+                    <!-- Card 1 -->
+                    <div class="resource-card"><span class="resource-tag">Essential</span>
+                        <h3 style="margin-bottom: 10px;">GL Assessment Samples</h3>
+                        <p style="color: #666; margin-bottom: 20px;">Official
+                            familiarisation materials directly from the exam provider.</p><a
+                            href="https://11plus.gl-assessment.co.uk/pages/free-materials" target="_blank"
+                            class="btn-sm">Visit Site</a>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="resource-card"><span class="resource-tag">Online
+                            Test</span>
+                        <h3 style="margin-bottom: 10px;">ISEB Common Pre-Test</h3>
+                        <p style="color: #666; margin-bottom: 20px;">Interactive
+                            walkthrough for independent school entry. </p><a
+                            href="https://www.iseb.co.uk/assessments/common-pre-tests/cpt-for-families/" target="_blank"
+                            class="btn-sm">Visit Site</a>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="resource-card"><span class="resource-tag">Advanced</span>
+                        <h3 style="margin-bottom: 10px;">St. Olave’s Maths</h3>
+                        <p style="color: #666; margin-bottom: 20px;">Challenging
+                            past papers for high-ability students. </p><a href="https://www.saintolaves.net/admissions"
+                            target="_blank" class="btn-sm">Visit Site</a>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="resource-card"><span class="resource-tag">Hard
+                            English</span>
+                        <h3 style="margin-bottom: 10px;">CSSE Essex Papers</h3>
+                        <p style="color: #666; margin-bottom: 20px;">Excellent
+                            for creative writing and difficult comprehension.
+                        </p><a href="https://csse.org.uk/" target="_blank" class="btn-sm">Visit Site</a>
+                    </div>
+                    <!-- Card 5: Ninja Vocab List -->
+                    <div class="resource-card"><span class="resource-tag"
+                            style="background: #e5e7eb; color: #374151;">Exclusive</span>
+                        <h3 style="margin-bottom: 10px;">The 11+Ninja
+                            Vocabulary List</h3>
+                        <p style="color: #666; margin-bottom: 20px;">Top 100
+                            essential words for Verbal Reasoning.
+                            Categorized by difficulty.</p><button onclick="openVocabModal()" class="btn-sm"
+                            style="border: none; cursor: pointer;">Open Word
+                            Vault</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Vocab Modal -->
+            <div id="vocab-modal" class="vocab-modal">
+                <div class="vocab-modal-content">
+                    <div class="vocab-modal-header">
+                        <h2>The Ninja Word Vault</h2><button onclick="closeVocabModal()" class="close-btn">&times;
+                        </button>
+                    </div>
+                    <div class="vocab-controls"><input type="text" id="vocab-search" placeholder="Find a word..."
+                            class="vocab-input"><select id="vocab-filter" class="vocab-select">
+                            <option value="All">All Belts</option>
+                            <option value="White">White Belt</option>
+                            <option value="Blue">Blue Belt</option>
+                            <option value="Black">Black Belt</option>
+                        </select><button onclick="printVocabList()" class="vocab-print-btn" title="Print List">🖨️ Print
+                            List </button></div>
+                    <div class="vocab-table-container">
+                        <table class="vocab-table">
+                            <thead>
+                                <tr>
+                                    <th>Word</th>
+                                    <th>Definition</th>
+                                    <th>Synonym</th>
+                                    <th>Antonym</th>
+                                </tr>
+                            </thead>
+                            <tbody id="vocab-table-body">
+                                <!-- Rows generated by JS -->
+                            </tbody>
+                        </table>
+                        <div id="vocab-footer-print" class="print-only"
+                            style="display:none; text-align: center; margin-top: 20px; font-size: 0.8rem; color: #666;">
+                            Downloaded from 11PlusNinja.com - Free Resources </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+        <!-- PAGE 3: THE ZEN ZONE -->
+        <section id="zen-zone" class="hidden fade-in zen-theme">
+            <div class="back-nav" style="background: #E0F2FE; border-color: #BAE6FD;">
+                <div class="container"><a href="#" class="btn-outline"
+                        style="padding: 8px 16px; border-radius: 6px; border-color: #0369A1; color: #0369A1;">&larr;
+                        Back to Hub</a></div>
+            </div>
+            <div class="zen-header">
+                <div class="container">
+                    <h1 style="margin-bottom: 10px;">The Zen Zone</h1>
+                    <p style="font-size: 1.2rem; opacity: 0.9;">Sanity for Parents. Focus
+                        for Kids.</p>
+                </div>
+            </div>
+            <section class="container">
+                <h2 class="section-title" style="margin-top: 40px; color: #064E3B;">The
+                    Roadmap</h2>
+                <div class="timeline">
+                    <div class="timeline-node">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-content"><span class="timeline-date">Year 5 -
+                                Jan</span>
+                            <h3>Start Gently</h3>
+                            <p>Focus on reading habits and vocabulary games. No pressure
+                                testing yet.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-marker">2</div>
+                        <div class="timeline-content"><span class="timeline-date">Year 5 -
+                                May</span>
+                            <h3>Mock Exams Begin</h3>
+                            <p>First exposure to exam conditions. Expect low scores (40-50%)
+                                - this is normal !</p>
+                        </div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-content"><span class="timeline-date">Year 6 -
+                                Sept</span>
+                            <h3>The Exam Days</h3>
+                            <p>The big moment. Keep routines normal. Light revision only.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="timeline-marker">4</div>
+                        <div class="timeline-content"><span class="timeline-date">Year 6 -
+                                Oct</span>
+                            <h3>Results & CAF</h3>
+                            <p>Results are released. Complete your Common Application Form
+                                by Oct 31st.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="panic-btn-container"><button id="panic-button"
+                        class="panic-btn animate-pulse">Emergency:<br>Press If Panicking
+                    </button></div>
+                <div id="panic-modal" class="panic-modal">
+                    <div class="panic-content">
+                        <p id="panic-quote-text" class="panic-quote">Loading wisdom...</p>
+                        <button id="panic-close" class="btn btn-primary"
+                            style="font-size: 1.2rem; padding: 15px 30px;">I feel better now
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="checklist">
+                    <h3 style="margin-bottom: 20px; color: #064E3B; text-align: center;">🎒
+                        The Morning Checklist</h3><label class="checklist-item"><input type="checkbox">2x HB
+                        Pencils+Eraser </label><label class="checklist-item"><input type="checkbox">Water Bottle (Label
+                        Removed) </label><label class="checklist-item"><input type="checkbox">Digital Watch (Silenced)
+                    </label><label class="checklist-item"><input type="checkbox">Confirmation Letter /
+                        ID </label><label class="checklist-item"><input type="checkbox">Snack for break </label>
+                </div>
+            </section>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy;
+                    2026 11PlusNinja. All rights reserved.</p>
+                <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">
+                    Disclaimer: 11PlusNinja is an independent resource and is not
+                    affiliated with GL Assessment,
+                    CEM,
+                    or any specific Grammar School. </p>
+            </div>
+        </footer>
+    </div>
+    <!-- End Mobile Wrapper -->
+    <!-- Interactive Script -->
+    <script> // --- ROUTER LOGIC ---
+
+        function handleRouting() {
+            const hash = window.location.hash;
+            const hub = document.getElementById('main-hub');
+            const knowledge = document.getElementById('knowledge');
+            const resources = document.getElementById('resources');
+            const zen = document.getElementById('zen-zone');
+
+            // Hide all first
+            hub.classList.add('hidden');
+            knowledge.classList.add('hidden');
+            resources.classList.add('hidden');
+            zen.classList.add('hidden');
+
+            if (hash === '#knowledge') {
+                knowledge.classList.remove('hidden');
+                window.scrollTo(0, 0);
+            }
+
+            else if (hash === '#resources') {
+                resources.classList.remove('hidden');
+                window.scrollTo(0, 0);
+            }
+
+            else if (hash === '#zen-zone') {
+                zen.classList.remove('hidden');
+                window.scrollTo(0, 0);
+            }
+
+            else {
+                // Default to Hub
+                hub.classList.remove('hidden');
+                // Don't scroll to top on back-nav if possible, but simplest is top
+            }
+        }
+
+        // Listen for hash changes
+        window.addEventListener('hashchange', handleRouting);
+        // Initial check
+        handleRouting();
+
+
+        // Accordion Logic
+        document.querySelectorAll('.accordion-header').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all others
+                // document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+
+                else {
+                    item.classList.remove('active');
+                }
+            });
+        });
+
+        // Ninja greeting console log
+        console.log("Welcome to Parent Dojo. The path to mastery begins here.");
+
+        // --- School Finder Logic (Data & Rendering) ---
+        const schoolData = [{
+            name: "King Edward VI School (Stratford)", region: "Warwickshire", type: "Boys", url: "https://www.kes.net/admissions"
+        }
+
+            ,
+        {
+            name: "Stratford Girls' Grammar", region: "Warwickshire", type: "Girls", url: "https://www.sggs.org.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Alcester Grammar School", region: "Warwickshire", type: "Mixed", url: "https://www.alcestergs.co.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Lawrence Sheriff School", region: "Warwickshire", type: "Boys", url: "https://www.lawrencesheriffschool.net/admissions"
+        }
+
+            ,
+        {
+            name: "Rugby High School", region: "Warwickshire", type: "Girls", url: "https://www.rugbyhighschool.co.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Ashlawn School", region: "Warwickshire", type: "Mixed", url: "https://www.ashlawn.org.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Bishop Vesey’s Grammar", region: "Birmingham", type: "Boys", url: "https://bvgs.co.uk/admissions"
+        }
+
+            ,
+        {
+            name: "King Edward VI Camp Hill Boys", region: "Birmingham", type: "Boys", url: "https://www.kechb.org.uk/admissions"
+        }
+
+            ,
+        {
+            name: "King Edward VI Camp Hill Girls", region: "Birmingham", type: "Girls", url: "https://www.kechg.org.uk/admissions"
+        }
+
+            ,
+        {
+            name: "King Edward VI Five Ways", region: "Birmingham", type: "Mixed", url: "https://www.kefw.org/admissions"
+        }
+
+            ,
+        {
+            name: "Sutton Coldfield Grammar", region: "Birmingham", type: "Girls", url: "https://www.sutcolgirls.bham.sch.uk"
+        }
+
+            ,
+        {
+            name: "Dartford Grammar School", region: "Kent", type: "Boys", url: "https://www.dartfordgrammarschool.org.uk/admissions"
+        }
+
+            ,
+        {
+            name: "The Judd School", region: "Kent", type: "Boys", url: "https://www.judd.online/admissions"
+        }
+
+            ,
+        {
+            name: "Tunbridge Wells Girls' Grammar", region: "Kent", type: "Girls", url: "http://www.twggs.kent.sch.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Weald of Kent Grammar", region: "Kent", type: "Girls", url: "https://www.wealdofkent.kent.sch.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Wilmington Grammar for Boys", region: "Kent", type: "Boys", url: "https://www.wgsb.org.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Queen Elizabeth’s School (Barnet)", region: "London", type: "Boys", url: "https://www.qebarnet.co.uk/admissions"
+        }
+
+            ,
+        {
+            name: "The Henrietta Barnett School", region: "London", type: "Girls", url: "https://www.hbschool.org.uk/admissions"
+        }
+
+            ,
+        {
+            name: "The Latymer School", region: "London", type: "Mixed", url: "https://www.latymer.co.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Dame Alice Owen's", region: "London", type: "Mixed", url: "https://damealiceowens.herts.sch.uk/admissions"
+        }
+
+            ,
+        {
+            name: "St. Olave’s Grammar", region: "London", type: "Boys", url: "https://www.saintolaves.net/admissions"
+        }
+
+            ,
+        {
+            name: "Pate's Grammar School", region: "Gloucestershire", type: "Mixed", url: "https://www.patesgs.org/admissions"
+        }
+
+            ,
+        {
+            name: "Sir Thomas Rich's", region: "Gloucestershire", type: "Boys", url: "https://strschool.co.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Denmark Road High School", region: "Gloucestershire", type: "Girls", url: "https://www.denmarkroad.org/admissions"
+        }
+
+            ,
+        {
+            name: "Marling School", region: "Gloucestershire", type: "Boys", url: "https://www.marling.school/admissions"
+        }
+
+            ,
+        {
+            name: "Stroud High School", region: "Gloucestershire", type: "Girls", url: "https://stroudhigh.gloucs.sch.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Caistor Grammar School", region: "Lincolnshire", type: "Mixed", url: "https://www.caistorgrammar.com/admissions"
+        }
+
+            ,
+        {
+            name: "The King's School Grantham", region: "Lincolnshire", type: "Boys", url: "https://www.kings.lincs.sch.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Kesteven and Grantham Girls'", region: "Lincolnshire", type: "Girls", url: "https://www.kestevengrantham.lincs.sch.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Queen Elizabeth's High (Gainsborough)", region: "Lincolnshire", type: "Mixed", url: "https://www.qehs.lincs.sch.uk/admissions"
+        }
+
+            ,
+        {
+            name: "King Edward VI Grammar (KEGS)", region: "Essex", type: "Boys", url: "https://www.kegs.org.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Colchester Royal Grammar", region: "Essex", type: "Boys", url: "https://www.crgs.co.uk/admissions"
+        }
+
+            ,
+        {
+            name: "Chelmsford County High", region: "Essex", type: "Girls", url: "https://www.cchs.co.uk"
+        }
+
+            ,
+        {
+            name: "Tiffin School", region: "Surrey", type: "Boys", url: "https://www.tiffinschool.co.uk"
+        }
+
+            ,
+        {
+            name: "The Tiffin Girls' School", region: "Surrey", type: "Girls", url: "https://www.tiffingirls.org"
+        }
+
+            ,
+        {
+            name: "Wilson's School", region: "Surrey", type: "Boys", url: "https://www.wilsons.school"
+        }
+
+            ,
+        {
+            name: "Nonsuch High School", region: "Surrey", type: "Girls", url: "http://www.nonsuchschool.org"
+        }
+
+        ];
+
+        const grid = document.getElementById('school-grid');
+        const regionFilter = document.getElementById('region-filter');
+        const searchInput = document.getElementById('school-search');
+        const finderToggle = document.getElementById('finder-toggle');
+        let isFinderOpen = false;
+
+        // Toggle Logic
+        if (finderToggle) {
+            finderToggle.addEventListener('click', () => {
+                isFinderOpen = !isFinderOpen;
+
+                if (isFinderOpen) {
+                    grid.classList.remove('hidden');
+                    finderToggle.textContent = 'Hide Schools ▲';
+                }
+
+                else {
+                    grid.classList.add('hidden');
+                    finderToggle.textContent = 'Show Schools ▼';
+                }
+            });
+        }
+
+        // Hide by default
+        if (grid) grid.classList.add('hidden');
+
+        function renderSchools() {
+            grid.innerHTML = '';
+            const region = regionFilter.value;
+            const search = searchInput.value.toLowerCase();
+
+            const filtered = schoolData.filter(school => {
+                const matchRegion = region === 'All' || school.region === region;
+                const matchSearch = school.name.toLowerCase().includes(search);
+                return matchRegion && matchSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<p style="color:white; grid-column: 1/-1; text-align:center; padding: 20px;">No schools found matching your criteria.</p>';
+                return;
+            }
+
+            filtered.forEach(school => {
+                const card = document.createElement('div');
+                card.className = 'school-card';
+
+                card.innerHTML = ` <div class="school-name" >$ {
+                        school.name
+                    }
+
+                    </div> <div class="school-tags" > <span class="tag tag-region" >$ {
+                        school.region
+                    }
+
+                    </span> <span class="tag tag-board" >$ {
+                        school.type
+                    }
+
+                    </span> </div> <a href="${school.url}" target="_blank" class="btn-sm" >Visit Admissions</a> `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Event Listeners
+        if (regionFilter) regionFilter.addEventListener('change', renderSchools);
+        if (searchInput) searchInput.addEventListener('input', renderSchools);
+
+        // Initial Render
+        renderSchools();
+
+        // --- Panic Button Logic ---
+        const panicBtn = document.getElementById('panic-button');
+        const panicModal = document.getElementById('panic-modal');
+        const panicClose = document.getElementById('panic-close');
+        const panicQuoteText = document.getElementById('panic-quote-text');
+
+        const panicQuotes = ["Remember: Your child is not a SAS score. They are a complex human being.",
+            "Fact: Richard Branson and Jeremy Clarkson failed the 11+. Success comes in many forms.",
+            "Wine is a valid revision strategy. (For you. Not the child).",
+            "If you are reading this, you care. That is the only qualification that matters.",
+            "Non-Verbal Reasoning was invented by aliens. It is normal to find it confusing.",
+            "This is a marathon, not a sprint. Take the night off. Order pizza.",
+            "The exam is 2 hours of their life. It does not define the other 700,000 hours.",
+            "Breathe. You are doing a great job."
+        ];
+
+        if (panicBtn) {
+            panicBtn.addEventListener('click', () => {
+                const randomQuote = panicQuotes[Math.floor(Math.random() * panicQuotes.length)];
+                panicQuoteText.textContent = randomQuote;
+                panicModal.classList.add('active');
+            });
+        }
+
+        if (panicClose) {
+            panicClose.addEventListener('click', () => {
+                panicModal.classList.remove('active');
+            });
+        }
+
+        // --- Daily Vocab Booster Logic ---
+        const vocabList = [{
+            word: "Cacophony",
+            type: "(noun)",
+            definition: "A harsh, discordant mixture of sounds.",
+            synonyms: "Noise, Din, Racket",
+            sentence: "The <span class=\"highlight-word\">cacophony</span> in the playground gave the teacher a headache."
+        }
+
+            ,
+        {
+            word: "Abate",
+            type: "(verb)",
+            definition: "To become less intense or widespread.",
+            synonyms: "Subside, Die down, Lessen",
+            sentence: "The storm suddenly began to <span class=\"highlight-word\">abate</span>."
+        }
+
+            ,
+        {
+            word: "Benevolent",
+            type: "(adjective)",
+            definition: "Well meaning and kindly.",
+            synonyms: "Kind, Generous, Charitable",
+            sentence: "Ordering pizza was a <span class=\"highlight-word\">benevolent</span> gesture from the teacher."
+        }
+
+            ,
+        {
+            word: "Candid",
+            type: "(adjective)",
+            definition: "Truthful and straightforward; frank.",
+            synonyms: "Frank, Outspoken, Honest",
+            sentence: "His <span class=\"highlight-word\">candid</span> interview about the exam shocked everyone."
+        }
+
+            ,
+        {
+            word: "Deduce",
+            type: "(verb)",
+            definition: "Arrive at a fact or a conclusion by reasoning.",
+            synonyms: "Conclude, Reason, Infer",
+            sentence: "Sherlock Holmes can <span class=\"highlight-word\">deduce</span> the truth from tiny clues."
+        }
+
+            ,
+        {
+            word: "Egregious",
+            type: "(adjective)",
+            definition: "Outstandingly bad; shocking.",
+            synonyms: "Shocking, Appalling, Horrific",
+            sentence: "The student made an <span class=\"highlight-word\">egregious</span> error on the easy question."
+        }
+
+            ,
+        {
+            word: "Facetious",
+            type: "(adjective)",
+            definition: "Treating serious issues with inappropriate humor.",
+            synonyms: "Flippant, Glib, Waggish",
+            sentence: "Stop being <span class=\"highlight-word\">facetious</span>, this is a serious exam!"
+        }
+
+            ,
+        {
+            word: "Gallant",
+            type: "(adjective)",
+            definition: "Brave; heroic.",
+            synonyms: "Brave, Courageous, Valiant",
+            sentence: "The <span class=\"highlight-word\">gallant</span> knight defended the castle."
+        }
+
+            ,
+        {
+            word: "Hinder",
+            type: "(verb)",
+            definition: "Create difficulties for (someone or something), resulting in delay or obstruction.",
+            synonyms: "Hamper, Obstruct, Impede",
+            sentence: "Heavy rain will <span class=\"highlight-word\">hinder</span> our travel plans."
+        }
+
+            ,
+        {
+            word: "Ignominious",
+            type: "(adjective)",
+            definition: "Deserving or causing public disgrace or shame.",
+            synonyms: "Humiliating, Undignified, Embarrassing",
+            sentence: "It was an <span class=\"highlight-word\">ignominious</span> defeat for the champion."
+        }
+
+            ,
+        {
+            word: "Jovial",
+            type: "(adjective)",
+            definition: "Cheerful and friendly.",
+            synonyms: "Cheerful, Jolly, Happy",
+            sentence: "Santa Claus is known for his <span class=\"highlight-word\">jovial</span> nature."
+        }
+
+            ,
+        {
+            word: "Keen",
+            type: "(adjective)",
+            definition: "Having or showing eagerness or enthusiasm.",
+            synonyms: "Eager, Anxious, Intent",
+            sentence: "The student was very <span class=\"highlight-word\">keen</span> to learn new words."
+        }
+
+            ,
+        {
+            word: "Lethargic",
+            type: "(adjective)",
+            definition: "Affected by lethargy; sluggish and apathetic.",
+            synonyms: "Sluggish, Inert, Inactive",
+            sentence: "I felt <span class=\"highlight-word\">lethargic</span> after eating a huge Sunday roast."
+        }
+
+            ,
+        {
+            word: "Meticulous",
+            type: "(adjective)",
+            definition: "Showing great attention to detail; very careful and precise.",
+            synonyms: "Careful, Conscientious, Diligent",
+            sentence: "He was <span class=\"highlight-word\">meticulous</span> about keeping his notes tidy."
+        }
+
+            ,
+        {
+            word: "Nostalgia",
+            type: "(noun)",
+            definition: "A sentimental longing for the past.",
+            synonyms: "Reminiscence, Remembrance",
+            sentence: "Looking at old photos filled her with <span class=\"highlight-word\">nostalgia</span>."
+        }
+
+            ,
+        {
+            word: "Obsolete",
+            type: "(adjective)",
+            definition: "No longer produced or used; out of date.",
+            synonyms: "Outdated, Outmoded, Old-fashioned",
+            sentence: "DVD players are becoming <span class=\"highlight-word\">obsolete</span>."
+        }
+
+            ,
+        {
+            word: "Plausible",
+            type: "(adjective)",
+            definition: "Seeming reasonable or probable.",
+            synonyms: "Credible, Reasonable, Believable",
+            sentence: "His excuse for being late was barely <span class=\"highlight-word\">plausible</span>."
+        }
+
+            ,
+        {
+            word: "Quaint",
+            type: "(adjective)",
+            definition: "Attractively unusual or old-fashioned.",
+            synonyms: "Picturesque, Charming, Old-world",
+            sentence: "They lived in a <span class=\"highlight-word\">quaint</span> cottage in the village."
+        }
+
+            ,
+        {
+            word: "Resilient",
+            type: "(adjective)",
+            definition: "Able to withstand or recover quickly from difficult conditions.",
+            synonyms: "Strong, Tough, Hardy",
+            sentence: "Children are often remarkably <span class=\"highlight-word\">resilient</span>."
+        }
+
+            ,
+        {
+            word: "Scrutinize",
+            type: "(verb)",
+            definition: "Examine or inspect closely and thoroughly.",
+            synonyms: "Inspect, Survey, Scan",
+            sentence: "The teacher will <span class=\"highlight-word\">scrutinize</span> your work for errors."
+        }
+
+        ];
+
+        function updateDailyWord() {
+            const today = new Date();
+            // Use date to create a unique index for the day
+            // Start of epoch / milliseconds per day
+            const dayIndex = Math.floor(today.getTime() / (1000 * 60 * 60 * 24));
+            const wordIndex = dayIndex % vocabList.length;
+            const dailyWord = vocabList[wordIndex];
+
+            // Update DOM
+            const titleEl = document.getElementById('word-title');
+            const typeEl = document.getElementById('word-type');
+            const defEl = document.getElementById('word-definition');
+            const synEl = document.getElementById('word-synonyms');
+            const sentEl = document.getElementById('word-sentence');
+
+            if (titleEl) titleEl.textContent = dailyWord.word;
+            if (typeEl) typeEl.textContent = dailyWord.type;
+            if (defEl) defEl.textContent = dailyWord.definition;
+
+            if (synEl) synEl.innerHTML = `<strong>Synonyms:</strong>$ {
+                dailyWord.synonyms
+            }
+
+            `;
+
+            if (sentEl) sentEl.innerHTML = `<strong>Ninja Sentence:</strong>$ {
+                dailyWord.sentence
+            }
+
+            `;
+        }
+
+        // --- Ninja Vocab List Logic ---
+        const vocabData = [
+            // --- White Belt ---
+            { word: "Abandon", type: "Verb", definition: "To leave or give up completely.", synonyms: "Desert, Forsake, Quit", antonyms: "Keep, Retain, Stay", belt: "White" },
+            { word: "Anxious", type: "Adjective", definition: "Feeling worried or nervous.", synonyms: "Uneasy, Apprehensive, Worried", antonyms: "Confident, Calm, Serene", belt: "White" },
+            { word: "Boast", type: "Verb", definition: "Talk with excessive pride.", synonyms: "Brag, Crow, Gloat", antonyms: "Modest, Humble, Belittle", belt: "White" },
+            { word: "Consent", type: "Noun", definition: "Permission for something to happen.", synonyms: "Agreement, Assent, Approval", antonyms: "Refusal, Dissent, Denial", belt: "White" },
+            { word: "Dread", type: "Verb", definition: "Anticipate with great apprehension.", synonyms: "Fear, Foreboding, Terror", antonyms: "Confidence, Courage, Bravery", belt: "White" },
+            { word: "Envy", type: "Noun", definition: "A feeling of discontented longing.", synonyms: "Jealousy, Resentment, Covetousness", antonyms: "Goodwill, Contentment, Satisfaction", belt: "White" },
+            { word: "Fierce", type: "Adjective", definition: "Having an aggressive or powerful intensity.", synonyms: "Ferocious, Savage, Wild", antonyms: "Gentle, Mild, Tame", belt: "White" },
+            { word: "Grief", type: "Noun", definition: "Deep sorrow, especially caused by death.", synonyms: "Sorrow, Anguish, Misery", antonyms: "Joy, Happiness, Delight", belt: "White" },
+            { word: "Haste", type: "Noun", definition: "Excessive speed or urgency.", synonyms: "Speed, Hurry, Rush", antonyms: "Slowness, Delay, Caution", belt: "White" },
+            { word: "Idle", type: "Adjective", definition: "Avoiding work; lazy.", synonyms: "Lazy, Inactive, Sluggish", antonyms: "Busy, Active, Industrious", belt: "White" },
+            { word: "Jeer", type: "Verb", definition: "Make rude and mocking remarks.", synonyms: "Mock, Taunt, Ridicule", antonyms: "Cheer, Praise, Applaud", belt: "White" },
+            { word: "Keen", type: "Adjective", definition: "Having or showing eagerness or enthusiasm.", synonyms: "Eager, Sharp, Intense", antonyms: "Dull, Indifferent, Apathetic", belt: "White" },
+            { word: "Limb", type: "Noun", definition: "An arm or leg of a person or four-legged animal.", synonyms: "Appendage, Member, Extremity", antonyms: "Body, Trunk, Torso", belt: "White" },
+            { word: "Marvel", type: "Verb", definition: "Be filled with wonder or astonishment.", synonyms: "Wonder, Awe, Amaze", antonyms: "Ignore, Disregard, Overlook", belt: "White" },
+            { word: "Neglect", type: "Verb", definition: "Fail to care for properly.", synonyms: "Ignore, Disregard, Slight", antonyms: "Cherish, Nurture, Attend", belt: "White" },
+            { word: "Oath", type: "Noun", definition: "A solemn promise.", synonyms: "Vow, Pledge, Promise", antonyms: "Lie, Falsehood, Denial", belt: "White" },
+            { word: "Pave", type: "Verb", definition: "Cover (a piece of ground) with concrete, asphalt, etc.", synonyms: "Surface, Cover, Tile", antonyms: "Strip, Uncover, Excavate", belt: "White" },
+            { word: "Quench", type: "Verb", definition: "Satisfy (one's thirst) by drinking.", synonyms: "Satisfy, Slake, Extinguish", antonyms: "Ignite, Kindle, Parched", belt: "White" },
+            { word: "Realm", type: "Noun", definition: "A kingdom.", synonyms: "Kingdom, Domain, Empire", antonyms: "None", belt: "White" },
+            { word: "Seize", type: "Verb", definition: "Take hold of suddenly and forcibly.", synonyms: "Grab, Grasp, Snatch", antonyms: "Release, Let go, Drop", belt: "White" },
+
+            // --- Blue Belt ---
+            { word: "Abundant", type: "Adjective", definition: "Existing in large quantities.", synonyms: "Plentiful, Copious, Ample", antonyms: "Scarce, Sparse, Rare", belt: "Blue" },
+            { word: "Barren", type: "Adjective", definition: "Too poor to produce much or any vegetation.", synonyms: "Infertile, Arid, Desolate", antonyms: "Fertile, Fruitful, Lush", belt: "Blue" },
+            { word: "Candid", type: "Adjective", definition: "Truthful and straightforward.", synonyms: "Frank, Honest, Open", antonyms: "Secretive, Deceitful, Guarded", belt: "Blue" },
+            { word: "Diligent", type: "Adjective", definition: "Having or showing care in one's work.", synonyms: "Hard-working, Assiduous, Conscientious", antonyms: "Lazy, Negligent, Careless", belt: "Blue" },
+            { word: "Emerge", type: "Verb", definition: "Move out of or away from something and come into view.", synonyms: "Appear, Surface, Arise", antonyms: "Disappear, Vanish, Fade", belt: "Blue" },
+            { word: "Famine", type: "Noun", definition: "Extreme scarcity of food.", synonyms: "Starvation, Scarcity, Drought", antonyms: "Feast, Plenty, Abundance", belt: "Blue" },
+            { word: "Gaunt", type: "Adjective", definition: "Lean and haggard, especially because of suffering.", synonyms: "Haggard, Thin, Emaciated", antonyms: "Plump, Chubby, Healthy", belt: "Blue" },
+            { word: "Hinder", type: "Verb", definition: "Create difficulties for, resulting in delay.", synonyms: "Hamper, Obstruct, Impede", antonyms: "Help, Assist, Facilitate", belt: "Blue" },
+            { word: "Ignite", type: "Verb", definition: "Catch fire or cause to catch fire.", synonyms: "Kindle, Spark, Light", antonyms: "Extinguish, Quench, Douse", belt: "Blue" },
+            { word: "Jolly", type: "Adjective", definition: "Happy and cheerful.", synonyms: "Cheerful, Jovial, Merry", antonyms: "Miserable, Gloomy, Sad", belt: "Blue" },
+            { word: "Knack", type: "Noun", definition: "An acquired or natural skill at performing a task.", synonyms: "Talent, Skill, Aptitude", antonyms: "Inability, Ineptitude, Clumsiness", belt: "Blue" },
+            { word: "Linger", type: "Verb", definition: "Stay in a place longer than necessary.", synonyms: "Stay, Remain, Loiter", antonyms: "Leave, Depart, Rush", belt: "Blue" },
+            { word: "Mingle", type: "Verb", definition: "Mix or cause to mix together.", synonyms: "Mix, Blend, Socialize", antonyms: "Separate, Divide, Isolate", belt: "Blue" },
+            { word: "Nuisance", type: "Noun", definition: "A person, thing, or circumstance causing inconvenience or annoyance.", synonyms: "Annoyance, Pest, Bother", antonyms: "Blessing, Help, Comfort", belt: "Blue" },
+            { word: "Obstinate", type: "Adjective", definition: "Stubbornly refusing to change one's opinion.", synonyms: "Stubborn, Pig-headed, Headstrong", antonyms: "Flexible, Compliant, Yielding", belt: "Blue" },
+            { word: "Parched", type: "Adjective", definition: "Dried out with heat.", synonyms: "Dry, Arid, Thirsty", antonyms: "Wet, Moist, Drenched", belt: "Blue" },
+            { word: "Quest", type: "Noun", definition: "A long or arduous search for something.", synonyms: "Search, Hunt, Pursuit", antonyms: "Retreat, Withdrawal, Surrender", belt: "Blue" },
+            { word: "Rural", type: "Adjective", definition: "In, relating to, or characteristic of the countryside.", synonyms: "Country, Rustic, Pastoral", antonyms: "Urban, City, Metropolitan", belt: "Blue" },
+            { word: "Savage", type: "Adjective", definition: "Fierce, violent, and uncontrolled.", synonyms: "Fierce, Wild, Ferocious", antonyms: "Tame, Gentle, Civilized", belt: "Blue" },
+            { word: "Thrive", type: "Verb", definition: "Grow or develop well or vigorously.", synonyms: "Flourish, Prosper, Bloom", antonyms: "Fail, Wither, Decline", belt: "Blue" },
+
+            // --- Black Belt ---
+            { word: "Acquiesce", type: "Verb", definition: "Accept something reluctantly but without protest.", synonyms: "Permit, Allow, Yield", antonyms: "Forbid, Protest, Refuse", belt: "Black" },
+            { word: "Benevolent", type: "Adjective", definition: "Well meaning and kindly.", synonyms: "Kind, Charitable, Benign", antonyms: "Malevolent, Cruel, Unkind", belt: "Black" },
+            { word: "Cacophony", type: "Noun", definition: "A harsh, discordant mixture of sounds.", synonyms: "Din, Racket, Discord", antonyms: "Harmony, Melody, Silence", belt: "Black" },
+            { word: "Deceit", type: "Noun", definition: "The action or practice of deceiving someone.", synonyms: "Deception, Fraud, Trickery", antonyms: "Honesty, Truth, Sincerity", belt: "Black" },
+            { word: "Eccentric", type: "Adjective", definition: "Unconventional and slightly strange.", synonyms: "Unconventional, Odd, Quirky", antonyms: "Conventional, Normal, Regular", belt: "Black" },
+            { word: "Facetious", type: "Adjective", definition: "Treating serious issues with inappropriate humor.", synonyms: "Flippant, Glib, Waggish", antonyms: "Serious, Grave, Solemn", belt: "Black" },
+            { word: "Garrulous", type: "Adjective", definition: "Excessively talkative.", synonyms: "Talkative, Loquacious, Chatty", antonyms: "Taciturn, Silent, Quiet", belt: "Black" },
+            { word: "Haughty", type: "Adjective", definition: "Arrogantly superior and disdainful.", synonyms: "Arrogant, Conceited, Proud", antonyms: "Humble, Modest, Meek", belt: "Black" },
+            { word: "Impeccable", type: "Adjective", definition: "In accordance with the highest standards; faultless.", synonyms: "Flawless, Perfect, Pristine", antonyms: "Imperfect, Flawed, Defective", belt: "Black" },
+            { word: "Judicious", type: "Adjective", definition: "Having, showing, or done with good judgment.", synonyms: "Wise, Sensible, Prudent", antonyms: "Foolish, Rash, Imprudent", belt: "Black" },
+            { word: "Kindle", type: "Verb", definition: "Light or set on fire; arouse or inspire.", synonyms: "Ignite, Spark, Inspire", antonyms: "Extinguish, Quench, Dampen", belt: "Black" },
+            { word: "Lethargic", type: "Adjective", definition: "Affected by lethargy; sluggish and apathetic.", synonyms: "Sluggish, Inert, Listless", antonyms: "Energetic, Active, Lively", belt: "Black" },
+            { word: "Malicious", type: "Adjective", definition: "Characterized by malice; intending or intended to do harm.", synonyms: "Spiteful, Vengeful, Mean", antonyms: "Benevolent, Kind, Friendly", belt: "Black" },
+            { word: "Nostalgia", type: "Noun", definition: "A sentimental longing for the past.", synonyms: "Reminiscence, Remembrance, Longing", antonyms: "Future-focused (concept)", belt: "Black" },
+            { word: "Obscure", type: "Adjective", definition: "Not discovered or known about; uncertain.", synonyms: "Unclear, Vague, Unknown", antonyms: "Clear, Obvious, Famous", belt: "Black" },
+            { word: "Placate", type: "Verb", definition: "Make (someone) less angry or hostile.", synonyms: "Pacify, Calm, Soothe", antonyms: "Provoke, Anger, Enrage", belt: "Black" },
+            { word: "Quandary", type: "Noun", definition: "A state of perplexity or uncertainty.", synonyms: "Dilemma, Predicament, Puzzle", antonyms: "Solution, Certainty, Resolution", belt: "Black" },
+            { word: "Replicant", type: "Noun", definition: "A copy or exact reproduction.", synonyms: "Replica, Copy, Duplicate", antonyms: "Original, Prototype, Master", belt: "Black" },
+            { word: "Superfluous", type: "Adjective", definition: "Unnecessary, especially through being more than enough.", synonyms: "Excess, Surplus, Redundant", antonyms: "Necessary, Essential, Scant", belt: "Black" },
+            { word: "Treacherous", type: "Adjective", definition: "Guilty of or involving betrayal or deception.", synonyms: "Traitorous, Disloyal, Dangerous", antonyms: "Loyal, Faithful, Safe", belt: "Black" }
+        ];
+
+        function openVocabModal() {
+            document.getElementById('vocab-modal').classList.add('active');
+            renderVocabTable();
+        }
+
+        function closeVocabModal() {
+            document.getElementById('vocab-modal').classList.remove('active');
+        }
+
+        function printVocabList() {
+            window.print();
+        }
+
+        function renderVocabTable() {
+            const searchText = document.getElementById('vocab-search').value.toLowerCase();
+            const filterBelt = document.getElementById('vocab-filter').value;
+            const tbody = document.getElementById('vocab-table-body');
+
+            tbody.innerHTML = '';
+
+            const filtered = vocabData.filter(item => {
+                const matchesSearch = item.word.toLowerCase().includes(searchText) || item.synonyms.toLowerCase().includes(searchText);
+                const matchesBelt = filterBelt === 'All' || item.belt === filterBelt;
+                return matchesSearch && matchesBelt;
+            });
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding: 20px;">No words found.</td></tr>';
+                return;
+            }
+
+            filtered.forEach(item => {
+                const tr = document.createElement('tr');
+                tr.className = `row-${item.belt.toLowerCase()}`;
+
+                tr.innerHTML = `
+                                <td style="font-weight: 700;">${item.word}</td>
+                                <td>${item.definition}</td>
+                                <td>${item.synonyms}</td>
+                                <td>${item.antonyms}</td>
+                            `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Vocab Event Listeners
+        document.getElementById('vocab-search').addEventListener('input', renderVocabTable);
+        document.getElementById('vocab-filter').addEventListener('change', renderVocabTable);
+
+        // Close modal when clicking outside
+        const vocabModal = document.getElementById('vocab-modal');
+        if (vocabModal) {
+            vocabModal.addEventListener('click', (e) => {
+                if (e.target === vocabModal) {
+                    closeVocabModal();
+                }
+            });
+        }
+
+        // Run on load
+        updateDailyWord();
+    </script>
+
+<script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+<script nomodule crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy-CDItKiDa.js"></script>
+<script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/parent-legacy-CnvmjJHj.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+
+</html>

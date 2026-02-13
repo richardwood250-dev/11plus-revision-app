@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
     <title>11PlusNinja - Master the 11+ Exam</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,27 +13,34 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        ninja: {
-                            blue: '#2563EB',
-                            dark: '#1F2937',
-                            gold: '#F59E0B',
-                            red: '#DC2626',
+        if (window.tailwind) {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ['Inter', 'sans-serif'],
+                        },
+                        colors: {
+                            ninja: {
+                                blue: '#2563EB',
+                                dark: '#1F2937',
+                                gold: '#F59E0B',
+                                red: '#DC2626',
+                            }
                         }
                     }
                 }
             }
+        } else {
+            console.warn('Tailwind CSS not loaded!');
         }
     </script>
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            /* VISUAL VERIFICATION OF UPDATE */
+            box-sizing: border-box;
         }
 
         /* Gateway Overlay Styles */
@@ -68,6 +76,8 @@
         .marquee-track {
             display: flex;
             gap: 40px;
+            width: -webkit-max-content;
+            width: -moz-max-content;
             width: max-content;
             animation: scroll 30s linear infinite;
         }
@@ -125,6 +135,7 @@
         /* Global Header Styles */
         /* Global Header Styles - Updated for Pillarbox */
         .global-header {
+            position: -webkit-sticky;
             position: sticky;
             /* Sticky within wrapper */
             top: 0;
@@ -172,6 +183,9 @@
         }
         */
     </style>
+  <script async type="module" crossorigin src="/assets/main-6F3hq9O7.js"></script>
+  <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
+  <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
 </head>
 
 <body>
@@ -195,8 +209,7 @@
                         <img src="/assets/ninja_header.png" alt="11PlusNinja" class="h-10 w-auto">
                     </a>
                     <div class="flex items-center gap-4">
-                        <a href="#"
-                            class="text-gray-600 font-medium hover:text-ninja-blue transition hidden sm:block">Login</a>
+                        <!-- Login Button Removed -->
                     </div>
                 </div>
             </header>
@@ -236,12 +249,6 @@
                                 class="w-full bg-ninja-blue text-white py-3 rounded-xl font-bold text-lg hover:bg-blue-700 transition flex items-center justify-center gap-2">
                                 Enter the Dojo
                                 <span>→</span>
-                            </button>
-                            <!-- Test Mode Button -->
-                             <button
-                                onclick="event.stopPropagation(); window.location.href='/test-dojo'"
-                                class="w-full mt-2 bg-gray-200 text-gray-700 py-2 rounded-xl font-medium text-sm hover:bg-gray-300 transition">
-                                Student Test Dojo (Debug)
                             </button>
                         </div>
 
@@ -361,27 +368,17 @@
     <!-- Scripts -->
     <script>
         function enterStudentDojo() {
-            console.log('Enter Student Dojo clicked');
-            const gateway = document.getElementById('gateway-overlay');
-            if (gateway) {
-                gateway.classList.add('gateway-hidden');
-                // Optional: Save preference to localStorage so returning students skip the gateway
-                // localStorage.setItem('userType', 'student');
-            } else {
-                console.error('Gateway overlay not found!');
-            }
+            window.location.href = "/student.html";
         }
 
         // Optional: Check if user already chose student
         // if (localStorage.getItem('userType') === 'student') {
-        // Check if user is accessing test dojo directly
-        if (window.location.pathname === '/test-dojo' || window.location.href.includes('test-dojo')) {
-            const gateway = document.getElementById('gateway-overlay');
-            if (gateway) {
-                gateway.classList.add('gateway-hidden');
-            }
-        }
+        //     document.getElementById('gateway-overlay').style.display = 'none';
+        // }
     </script>
+  <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+  <script nomodule crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy-CDItKiDa.js"></script>
+  <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/main-legacy-CnvmjJHj.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
 </body>
 
 </html>

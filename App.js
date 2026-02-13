@@ -12,6 +12,7 @@ import { ComprehensionScreen } from './screens/ComprehensionScreen';
 import { getRandomQuiz } from './utils/quickQuizGenerator';
 import { SetupScreen } from './screens/SetupScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
+import { StudentDojoTestScreen } from './screens/StudentDojoTestScreen';
 import { getProfile } from './utils/storage';
 import { getGreeting } from './utils/motivation';
 
@@ -909,6 +910,7 @@ export default function App() {
               screens: {
                 Settings: 'settings',
                 Home: '', // Default route
+                StudentDojoTest: 'test-dojo',
               }
             }
           }}>
@@ -925,6 +927,7 @@ export default function App() {
               <Stack.Screen name="Comprehension" component={ComprehensionScreen} options={{ title: "English Comprehension" }} />
               <Stack.Screen name="Dashboard" component={DashboardScreen} />
               <Stack.Screen name="Settings" component={SettingsScreen} />
+              <Stack.Screen name="StudentDojoTest" component={StudentDojoTestScreen} options={{ headerShown: false }} />
             </Stack.Navigator>
           </NavigationContainer>
 
