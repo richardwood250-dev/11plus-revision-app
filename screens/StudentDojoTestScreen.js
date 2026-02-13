@@ -54,7 +54,11 @@ export const StudentDojoTestScreen = () => {
   const insets = useSafeAreaInsets();
 
   const handleSubjectPress = (title) => {
-    alert(`Pressed ${title} (Test Mode)`);
+    if (title === 'Maths') {
+      navigation.navigate('QuizConfig', { subject: 'Maths' });
+    } else {
+      alert(`Pressed ${title} (Test Mode)`);
+    }
   };
 
   const SubjectBtn = ({ title, color, type }) => {
@@ -90,13 +94,13 @@ export const StudentDojoTestScreen = () => {
         {/* --- ACTIONS ROW --- */}
         <View style={styles.actionRow}>
           <TouchableOpacity style={[styles.actionBtnHalf, { borderColor: Colors.secondary }]}>
-             <Text style={{ fontSize: 24, marginBottom: 5 }}>⚡</Text>
-             <Text style={styles.actionBtnTitle}>Quick Start</Text>
+            <Text style={{ fontSize: 24, marginBottom: 5 }}>⚡</Text>
+            <Text style={styles.actionBtnTitle}>Quick Start</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={[styles.actionBtnHalf, { borderColor: Colors.primary }]}>
-             <Text style={{ fontSize: 24, marginBottom: 5 }}>🎯</Text>
-             <Text style={styles.actionBtnTitle}>Suggestion</Text>
+            <Text style={{ fontSize: 24, marginBottom: 5 }}>🎯</Text>
+            <Text style={styles.actionBtnTitle}>Suggestion</Text>
           </TouchableOpacity>
         </View>
 
