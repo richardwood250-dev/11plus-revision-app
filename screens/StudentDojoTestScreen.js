@@ -111,12 +111,15 @@ export const StudentDojoTestScreen = () => {
         </View>
 
         {/* Dashboard Button */}
-        <TouchableOpacity style={styles.dashboardBtnMain}>
+        <TouchableOpacity
+          style={styles.dashboardBtnMain}
+          onPress={() => navigation.navigate('Dashboard')}
+        >
           <View style={{ flexDirection: 'row', alignItems: 'center' }}>
             <Text style={{ fontSize: 24, marginRight: 10 }}>📊</Text>
             <View>
               <Text style={styles.dashboardBtnTitle}>My Dashboard</Text>
-              <Text style={styles.dashboardBtnSub}>Test Mode - No Data</Text>
+              <Text style={styles.dashboardBtnSub}>View Progress & Stats</Text>
             </View>
           </View>
           <Text style={{ fontSize: 20, color: '#666' }}>→</Text>
