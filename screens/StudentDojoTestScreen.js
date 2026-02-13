@@ -2,6 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image, Platform, Dimensions } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { getRandomQuiz } from '../utils/quickQuizGenerator';
+import { fetchEnglishQuiz } from '../utils/englishLoader';
 
 const Colors = {
   primary: '#4DA6FF', // Soft Blue
@@ -52,6 +54,7 @@ const FlatIcon = ({ type }) => {
 export const StudentDojoTestScreen = () => {
   const navigation = useNavigation();
   const insets = useSafeAreaInsets();
+  const [isLoadingEnglish, setIsLoadingEnglish] = React.useState(false);
 
   const handleSubjectPress = (title) => {
     if (title === 'Maths') {
@@ -99,9 +102,28 @@ export const StudentDojoTestScreen = () => {
 
         {/* --- ACTIONS ROW --- */}
         <View style={styles.actionRow}>
-          <TouchableOpacity style={[styles.actionBtnHalf, { borderColor: Colors.secondary }]}>
-            <Text style={{ fontSize: 24, marginBottom: 5 }}>⚡</Text>
-            <Text style={styles.actionBtnTitle}>Quick Start</Text>
+          <TouchableOpacity
+            style={[styles.actionBtnHalf, { borderColor: Colors.secondary, opacity: isLoadingEnglish ? 0.6 : 1 }]}
+            disabled={isLoadingEnglish}
+            onPress={async () => {
+              const quizConfig = getRandomQuiz();
+              if (quizConfig.config.subject === 'English') {
+                try {
+                  setIsLoadingEnglish(true);
+                  const data = await fetchEnglishQuiz();
+                  setIsLoadingEnglish(false);
+                  navigation.navigate('Comprehension', data);
+                } catch (err) {
+                  setIsLoadingEnglish(false);
+                  alert("Error: Could not load quiz: " + err.message);
+                }
+              } else {
+                navigation.navigate('Quiz', quizConfig);
+              }
+            }}
+          >
+            <Text style={{ fontSize: 24, marginBottom: 5 }}>{isLoadingEnglish ? '⏳' : '⚡'}</Text>
+            <Text style={styles.actionBtnTitle}>{isLoadingEnglish ? 'Loading...' : 'Quick Start'}</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={[styles.actionBtnHalf, { borderColor: Colors.primary }]}>
