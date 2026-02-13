@@ -1,6 +1,7 @@
 import 'react-native-gesture-handler';
 import React, { useState, useEffect, useCallback } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Modal, TextInput, Alert, Dimensions, Platform, Linking, Image, StatusBar, Animated } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Modal, TextInput, Alert, Dimensions, Platform, Image, StatusBar, Animated } from 'react-native';
+import * as Linking from 'expo-linking';
 import { NavigationContainer, useNavigation, useFocusEffect } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
