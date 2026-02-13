@@ -58,6 +58,8 @@ export const StudentDojoTestScreen = () => {
       navigation.navigate('QuizConfig', { subject: 'Maths' });
     } else if (title === 'English') {
       navigation.navigate('QuizConfig', { subject: 'English' });
+    } else if (title === 'Verbal') {
+      navigation.navigate('QuizConfig', { subject: 'Verbal' });
     } else {
       alert(`Pressed ${title} (Test Mode)`);
     }
