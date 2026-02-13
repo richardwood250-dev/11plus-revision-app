@@ -12,6 +12,26 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
+        // GLOBAL ERROR HANDLER FOR DEBUGGING
+        window.onerror = function (message, source, lineno, colno, error) {
+            console.error('Captured Error:', message);
+            const errorDiv = document.createElement('div');
+            errorDiv.style.position = 'fixed';
+            errorDiv.style.top = '0';
+            errorDiv.style.left = '0';
+            errorDiv.style.width = '100%';
+            errorDiv.style.height = 'auto';
+            errorDiv.style.backgroundColor = '#cc0000';
+            errorDiv.style.color = '#ffffff';
+            errorDiv.style.padding = '20px';
+            errorDiv.style.fontSize = '16px';
+            errorDiv.style.zIndex = '9999999';
+            errorDiv.style.whiteSpace = 'pre-wrap';
+            errorDiv.style.fontFamily = 'monospace';
+            errorDiv.innerText = 'CRITICAL ERROR:\n' + message + '\n\nLocation: ' + source + ':' + lineno;
+            document.body.appendChild(errorDiv);
+        };
+
         tailwind.config = {
             theme: {
                 extend: {
@@ -238,8 +258,7 @@
                                 <span>→</span>
                             </button>
                             <!-- Test Mode Button -->
-                             <button
-                                onclick="event.stopPropagation(); window.location.href='/test-dojo'"
+                            <button onclick="event.stopPropagation(); window.location.href='/test-dojo'"
                                 class="w-full mt-2 bg-gray-200 text-gray-700 py-2 rounded-xl font-medium text-sm hover:bg-gray-300 transition">
                                 Student Test Dojo (Debug)
                             </button>
