@@ -42520,5 +42520,2951 @@ export const nonverbal = {
         "correctAnswer": "B"
       }
     ]
+  },
+  "Odd_One_Out": {
+    "title": "Odd One Out",
+    "questions": [
+  {
+    "id": "NV_7_21_1",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_1.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option D (Pentagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_2",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_2.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option B (Pentagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_3",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_3.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option E (Octagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_4",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_4.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option B (Triangle) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_5",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_5.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option E (Octagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_6",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_6.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option B (Hexagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_7",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_7.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option B (Pentagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_8",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_8.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option D (Octagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_9",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_9.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option D (Hexagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_10",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_10.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option D (Square) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_11",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_11.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option C (Pentagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_12",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_12.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option C (Square) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_13",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_13.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option D (Pentagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_14",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_14.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option C (Square) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_15",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_15.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option A (Triangle) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_16",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_16.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option C (Triangle) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_17",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_17.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option D (Hexagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_18",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_18.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option C (Square) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_19",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_19.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option C (Triangle) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_20",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_20.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option B (Triangle) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_21",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_21.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option B (Triangle) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_22",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_22.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option E (Octagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_23",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_23.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option B (Square) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_24",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_24.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option E (Triangle) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_25",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_25.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option A (Square) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_26",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_26.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option A (Pentagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_27",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_27.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option C (Pentagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_28",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_28.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option B (Hexagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_29",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_29.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option B (Square) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_30",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_30.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option E (Octagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_31",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_31.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option B (Octagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_32",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_32.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option C (Pentagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_33",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_33.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option B (Pentagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_34",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_34.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option D (Octagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_35",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_35.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option D (Octagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_36",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_36.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option A (Octagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_37",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_37.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option B (Octagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_38",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_38.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option A (Triangle) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_39",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_39.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option E (Pentagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_40",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_40.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option C (Triangle) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_41",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_41.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option C (Square) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_42",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_42.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option C (Square) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_43",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_43.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option C (Pentagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_44",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_44.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option D (Octagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_45",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_45.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option D (Triangle) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_46",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_46.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option D (Triangle) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_47",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_47.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option C (Pentagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_48",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_48.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option E (Square) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_49",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_49.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option A (Hexagon) breaks this rule."
+  },
+  {
+    "id": "NV_7_21_50",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/P7_Q21_50.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Thick Outer lines must connect to Corners; Thick Inner lines must connect to Sides. Option B (Triangle) breaks this rule."
+  },
+  {
+    "id": "NV_7_22_1",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q1.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option B is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_2",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q2.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Cross (x). Option C is the odd one out because it has Plus (+)."
+  },
+  {
+    "id": "NV_7_22_3",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q3.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option C is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_4",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q4.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Circle Position. In four figures, they are Opposite sides. Option C is the odd one out because it has 90\u00b0 apart."
+  },
+  {
+    "id": "NV_7_22_5",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q5.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option D is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_6",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q6.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Circle Shading. In four figures, they are Black circles. Option A is the odd one out because it has White circles."
+  },
+  {
+    "id": "NV_7_22_7",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q7.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Cross (x). Option E is the odd one out because it has Plus (+)."
+  },
+  {
+    "id": "NV_7_22_8",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q8.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Cross (x). Option E is the odd one out because it has Plus (+)."
+  },
+  {
+    "id": "NV_7_22_9",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q9.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Circle Position. In four figures, they are Opposite sides. Option D is the odd one out because it has 90\u00b0 apart."
+  },
+  {
+    "id": "NV_7_22_10",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q10.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Cross (x). Option B is the odd one out because it has Plus (+)."
+  },
+  {
+    "id": "NV_7_22_11",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q11.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Circle Shading. In four figures, they are White circles. Option D is the odd one out because it has Black circles."
+  },
+  {
+    "id": "NV_7_22_12",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q12.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option B is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_13",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q13.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Circle Shading. In four figures, they are Black circles. Option B is the odd one out because it has White circles."
+  },
+  {
+    "id": "NV_7_22_14",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q14.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Circle Position. In four figures, they are Opposite sides. Option E is the odd one out because it has 90\u00b0 apart."
+  },
+  {
+    "id": "NV_7_22_15",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q15.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Circle Shading. In four figures, they are Black circles. Option C is the odd one out because it has White circles."
+  },
+  {
+    "id": "NV_7_22_16",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q16.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Circle Position. In four figures, they are Opposite sides. Option D is the odd one out because it has 90\u00b0 apart."
+  },
+  {
+    "id": "NV_7_22_17",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q17.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Circle Position. In four figures, they are 90\u00b0 apart. Option A is the odd one out because it has Opposite sides."
+  },
+  {
+    "id": "NV_7_22_18",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q18.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option E is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_19",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q19.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Circle Shading. In four figures, they are Black circles. Option B is the odd one out because it has White circles."
+  },
+  {
+    "id": "NV_7_22_20",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q20.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Circle Position. In four figures, they are Opposite sides. Option A is the odd one out because it has 90\u00b0 apart."
+  },
+  {
+    "id": "NV_7_22_21",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q21.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Cross (x). Option C is the odd one out because it has Plus (+)."
+  },
+  {
+    "id": "NV_7_22_22",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q22.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option D is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_23",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q23.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Circle Position. In four figures, they are Opposite sides. Option C is the odd one out because it has 90\u00b0 apart."
+  },
+  {
+    "id": "NV_7_22_24",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q24.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option E is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_25",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q25.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Circle Shading. In four figures, they are White circles. Option A is the odd one out because it has Black circles."
+  },
+  {
+    "id": "NV_7_22_26",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q26.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option E is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_27",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q27.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option E is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_28",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q28.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Circle Position. In four figures, they are 90\u00b0 apart. Option A is the odd one out because it has Opposite sides."
+  },
+  {
+    "id": "NV_7_22_29",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q29.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Circle Position. In four figures, they are 90\u00b0 apart. Option B is the odd one out because it has Opposite sides."
+  },
+  {
+    "id": "NV_7_22_30",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q30.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Circle Position. In four figures, they are Opposite sides. Option B is the odd one out because it has 90\u00b0 apart."
+  },
+  {
+    "id": "NV_7_22_31",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q31.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Circle Position. In four figures, they are 90\u00b0 apart. Option A is the odd one out because it has Opposite sides."
+  },
+  {
+    "id": "NV_7_22_32",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q32.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Circle Shading. In four figures, they are Black circles. Option E is the odd one out because it has White circles."
+  },
+  {
+    "id": "NV_7_22_33",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q33.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Cross (x). Option D is the odd one out because it has Plus (+)."
+  },
+  {
+    "id": "NV_7_22_34",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q34.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Cross (x). Option C is the odd one out because it has Plus (+)."
+  },
+  {
+    "id": "NV_7_22_35",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q35.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option C is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_36",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q36.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Circle Shading. In four figures, they are White circles. Option C is the odd one out because it has Black circles."
+  },
+  {
+    "id": "NV_7_22_37",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q37.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Cross (x). Option C is the odd one out because it has Plus (+)."
+  },
+  {
+    "id": "NV_7_22_38",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q38.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Circle Position. In four figures, they are 90\u00b0 apart. Option A is the odd one out because it has Opposite sides."
+  },
+  {
+    "id": "NV_7_22_39",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q39.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Circle Shading. In four figures, they are White circles. Option D is the odd one out because it has Black circles."
+  },
+  {
+    "id": "NV_7_22_40",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q40.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option E is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_41",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q41.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Circle Shading. In four figures, they are White circles. Option A is the odd one out because it has Black circles."
+  },
+  {
+    "id": "NV_7_22_42",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q42.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Circle Position. In four figures, they are 90\u00b0 apart. Option A is the odd one out because it has Opposite sides."
+  },
+  {
+    "id": "NV_7_22_43",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q43.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option C is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_44",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q44.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Circle Position. In four figures, they are Opposite sides. Option A is the odd one out because it has 90\u00b0 apart."
+  },
+  {
+    "id": "NV_7_22_45",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q45.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option C is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_46",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q46.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Cross (x). Option D is the odd one out because it has Plus (+)."
+  },
+  {
+    "id": "NV_7_22_47",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q47.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option D is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_48",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q48.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Center Lines. In four figures, they are Plus (+). Option E is the odd one out because it has Cross (x)."
+  },
+  {
+    "id": "NV_7_22_49",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q49.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Circle Shading. In four figures, they are Black circles. Option B is the odd one out because it has White circles."
+  },
+  {
+    "id": "NV_7_22_50",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Logic_Q50.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Circle Position. In four figures, they are 90\u00b0 apart. Option C is the odd one out because it has Opposite sides."
+  },
+  {
+    "id": "NV_7_24_1",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Overlap_Q1.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule involves the number of overlapping corners. Four options overlap at a 'Vertex' (1 corner inside). Option D overlaps along an 'Edge' (2 corners inside)."
+  },
+  {
+    "id": "NV_7_24_2",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Overlap_Q2.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule involves the number of overlapping corners. Four options overlap at a 'Vertex' (1 corner inside). Option A overlaps along an 'Edge' (2 corners inside)."
+  },
+  {
+    "id": "NV_7_24_3",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Overlap_Q3.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule involves the number of overlapping corners. Four options overlap at a 'Vertex' (1 corner inside). Option C overlaps along an 'Edge' (2 corners inside)."
+  },
+  {
+    "id": "NV_7_24_4",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Overlap_Q4.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule involves the number of overlapping corners. Four options overlap at a 'Vertex' (1 corner inside). Option B overlaps along an 'Edge' (2 corners inside)."
+  },
+  {
+    "id": "NV_7_24_5",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Overlap_Q5.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule involves the number of overlapping corners. Four options overlap at a 'Vertex' (1 corner inside). Option D overlaps along an 'Edge' (2 corners inside)."
+  },
+  {
+    "id": "NV_7_24_6",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Overlap_Q6.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule involves the number of overlapping corners. Four options overlap at a 'Vertex' (1 corner inside). Option C overlaps along an 'Edge' (2 corners inside)."
+  },
+  {
+    "id": "NV_7_24_7",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Overlap_Q7.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule involves the number of overlapping corners. Four options overlap at a 'Vertex' (1 corner inside). Option E overlaps along an 'Edge' (2 corners inside)."
+  },
+  {
+    "id": "NV_7_24_8",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Overlap_Q8.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule involves the number of overlapping corners. Four options overlap at a 'Vertex' (1 corner inside). Option D overlaps along an 'Edge' (2 corners inside)."
+  },
+  {
+    "id": "NV_7_24_9",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Overlap_Q9.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule involves the number of overlapping corners. Four options overlap at a 'Vertex' (1 corner inside). Option E overlaps along an 'Edge' (2 corners inside)."
+  },
+  {
+    "id": "NV_7_24_10",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Overlap_Q10.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule involves the number of overlapping corners. Four options overlap at a 'Vertex' (1 corner inside). Option D overlaps along an 'Edge' (2 corners inside)."
+  },
+  {
+    "id": "NV_7_25_1",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q1.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Inner Colour. In four figures, the property is Grey. Option C is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_2",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q2.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Black. Option C is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_3",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q3.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Orientation. In four figures, the property is Aligned. Option C is the odd one out because it is Rotated (90\u00b0)."
+  },
+  {
+    "id": "NV_7_25_4",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q4.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Inner Colour. In four figures, the property is Black. Option C is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_5",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q5.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is White. Option D is the odd one out because it is Black."
+  },
+  {
+    "id": "NV_7_25_6",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q6.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Orientation. In four figures, the property is Aligned. Option A is the odd one out because it is Rotated (90\u00b0)."
+  },
+  {
+    "id": "NV_7_25_7",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q7.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Orientation. In four figures, the property is Aligned. Option B is the odd one out because it is Rotated (90\u00b0)."
+  },
+  {
+    "id": "NV_7_25_8",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q8.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is White. Option A is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_9",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q9.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is White. Option D is the odd one out because it is Black."
+  },
+  {
+    "id": "NV_7_25_10",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q10.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Black. Option B is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_11",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q11.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Inner Colour. In four figures, the property is White. Option B is the odd one out because it is Black."
+  },
+  {
+    "id": "NV_7_25_12",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q12.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Inner Colour. In four figures, the property is Grey. Option A is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_13",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q13.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is White. Option A is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_14",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q14.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Orientation. In four figures, the property is Rotated (90\u00b0). Option E is the odd one out because it is Aligned."
+  },
+  {
+    "id": "NV_7_25_15",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q15.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is White. Option D is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_16",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q16.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Grey. Option C is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_17",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q17.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Grey. Option D is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_18",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q18.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is White. Option E is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_19",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q19.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Grey. Option D is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_20",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q20.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Orientation. In four figures, the property is Aligned. Option A is the odd one out because it is Rotated (90\u00b0)."
+  },
+  {
+    "id": "NV_7_25_21",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q21.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Grey. Option D is the odd one out because it is Black."
+  },
+  {
+    "id": "NV_7_25_22",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q22.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Black. Option D is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_23",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q23.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Grey. Option C is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_24",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q24.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Orientation. In four figures, the property is Rotated (90\u00b0). Option B is the odd one out because it is Aligned."
+  },
+  {
+    "id": "NV_7_25_25",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q25.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Black. Option A is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_26",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q26.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Black. Option C is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_27",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q27.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Grey. Option B is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_28",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q28.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Black. Option A is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_29",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q29.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Black. Option D is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_30",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q30.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is White. Option D is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_31",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q31.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Inner Colour. In four figures, the property is Black. Option B is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_32",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q32.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Orientation. In four figures, the property is Rotated (90\u00b0). Option D is the odd one out because it is Aligned."
+  },
+  {
+    "id": "NV_7_25_33",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q33.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Orientation. In four figures, the property is Rotated (90\u00b0). Option B is the odd one out because it is Aligned."
+  },
+  {
+    "id": "NV_7_25_34",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q34.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Grey. Option D is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_35",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q35.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Orientation. In four figures, the property is Aligned. Option E is the odd one out because it is Rotated (90\u00b0)."
+  },
+  {
+    "id": "NV_7_25_36",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q36.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Inner Colour. In four figures, the property is Grey. Option E is the odd one out because it is Black."
+  },
+  {
+    "id": "NV_7_25_37",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q37.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is White. Option A is the odd one out because it is Black."
+  },
+  {
+    "id": "NV_7_25_38",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q38.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Inner Colour. In four figures, the property is White. Option B is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_39",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q39.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Grey. Option B is the odd one out because it is Black."
+  },
+  {
+    "id": "NV_7_25_40",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q40.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Inner Colour. In four figures, the property is Grey. Option A is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_41",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q41.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Inner Colour. In four figures, the property is White. Option C is the odd one out because it is Black."
+  },
+  {
+    "id": "NV_7_25_42",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q42.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Inner Colour. In four figures, the property is Grey. Option B is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_43",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q43.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Orientation. In four figures, the property is Rotated (90\u00b0). Option E is the odd one out because it is Aligned."
+  },
+  {
+    "id": "NV_7_25_44",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q44.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is White. Option B is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_45",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q45.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "The rule is based on Inner Colour. In four figures, the property is Grey. Option A is the odd one out because it is Black."
+  },
+  {
+    "id": "NV_7_25_46",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q46.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "The rule is based on Orientation. In four figures, the property is Aligned. Option E is the odd one out because it is Rotated (90\u00b0)."
+  },
+  {
+    "id": "NV_7_25_47",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q47.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Inner Colour. In four figures, the property is Black. Option C is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_25_48",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q48.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is White. Option B is the odd one out because it is Grey."
+  },
+  {
+    "id": "NV_7_25_49",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q49.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The rule is based on Orientation. In four figures, the property is Rotated (90\u00b0). Option C is the odd one out because it is Aligned."
+  },
+  {
+    "id": "NV_7_25_50",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Ovals_Q50.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The rule is based on Outer Colour. In four figures, the property is Grey. Option B is the odd one out because it is White."
+  },
+  {
+    "id": "NV_7_26_1",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q1.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option C (Identical)."
+  },
+  {
+    "id": "NV_7_26_2",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q2.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rule: Inner shape is Rotated 270\u00b0 relative to outer. Odd One Out: Option A (Identical)."
+  },
+  {
+    "id": "NV_7_26_3",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q3.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option B (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_4",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q4.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option A (Identical)."
+  },
+  {
+    "id": "NV_7_26_5",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q5.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option B (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_6",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q6.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rule: Inner shape is Rotated 270\u00b0 relative to outer. Odd One Out: Option A (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_7",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q7.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Rotated 270\u00b0 relative to outer. Odd One Out: Option B (Identical)."
+  },
+  {
+    "id": "NV_7_26_8",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q8.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option B (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_9",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q9.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option E (Rotated 90\u00b0)."
+  },
+  {
+    "id": "NV_7_26_10",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q10.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Rotated 270\u00b0 relative to outer. Odd One Out: Option B (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_11",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q11.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option C (Identical)."
+  },
+  {
+    "id": "NV_7_26_12",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q12.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option D (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_13",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q13.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option A (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_14",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q14.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option B (Identical)."
+  },
+  {
+    "id": "NV_7_26_15",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q15.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option E (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_16",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q16.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option B (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_17",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q17.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option E (Rotated 90\u00b0)."
+  },
+  {
+    "id": "NV_7_26_18",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q18.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option B (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_19",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q19.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option D (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_20",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q20.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option E (Rotated 90\u00b0)."
+  },
+  {
+    "id": "NV_7_26_21",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q21.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option C (Rotated 90\u00b0)."
+  },
+  {
+    "id": "NV_7_26_22",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q22.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option A (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_23",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q23.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option B (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_24",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q24.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Rotated 270\u00b0 relative to outer. Odd One Out: Option B (Identical)."
+  },
+  {
+    "id": "NV_7_26_25",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q25.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option E (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_26",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q26.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option A (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_27",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q27.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option A (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_28",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q28.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option E (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_29",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q29.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rule: Inner shape is Rotated 270\u00b0 relative to outer. Odd One Out: Option A (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_30",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q30.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option B (Identical)."
+  },
+  {
+    "id": "NV_7_26_31",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q31.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option C (Rotated 90\u00b0)."
+  },
+  {
+    "id": "NV_7_26_32",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q32.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option A (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_33",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q33.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option D (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_34",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q34.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option E (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_35",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q35.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option D (Rotated 90\u00b0)."
+  },
+  {
+    "id": "NV_7_26_36",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q36.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option B (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_37",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q37.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Rotated 270\u00b0 relative to outer. Odd One Out: Option D (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_38",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q38.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rule: Inner shape is Rotated 270\u00b0 relative to outer. Odd One Out: Option A (Identical)."
+  },
+  {
+    "id": "NV_7_26_39",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q39.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option D (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_40",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q40.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option A (Rotated 90\u00b0)."
+  },
+  {
+    "id": "NV_7_26_41",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q41.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option D (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_42",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q42.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option D (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_43",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q43.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option B (Identical)."
+  },
+  {
+    "id": "NV_7_26_44",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q44.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Rotated 90\u00b0 relative to outer. Odd One Out: Option D (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_45",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q45.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Identical relative to outer. Odd One Out: Option D (Rotated 180\u00b0)."
+  },
+  {
+    "id": "NV_7_26_46",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q46.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Rotated 270\u00b0 relative to outer. Odd One Out: Option D (Identical)."
+  },
+  {
+    "id": "NV_7_26_47",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q47.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option D (Rotated 90\u00b0)."
+  },
+  {
+    "id": "NV_7_26_48",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q48.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rule: Inner shape is Rotated 270\u00b0 relative to outer. Odd One Out: Option A (Identical)."
+  },
+  {
+    "id": "NV_7_26_49",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q49.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "D",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option D (Rotated 270\u00b0)."
+  },
+  {
+    "id": "NV_7_26_50",
+    "question": "Which figure is the odd one out?",
+    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Symmetry_Q50.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "correctAnswer": "E",
+    "explanation": "Rule: Inner shape is Rotated 180\u00b0 relative to outer. Odd One Out: Option E (Rotated 90\u00b0)."
   }
+]
+  }
+
 };

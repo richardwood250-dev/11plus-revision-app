@@ -106,8 +106,17 @@ export const StudentHomeScreen = () => {
       >
         <View style={styles.header}>
           <View style={styles.headerTopRow}>
-            {/* Header Logo Placeholder */}
-            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>11PlusNinja</Text>
+            {/* Header Logo - Standardised */}
+            <TouchableOpacity
+              style={styles.logoContainer}
+              onPress={() => window.location.href = '/'}
+            >
+              <Image
+                source={{ uri: '/assets/ninja_header.png' }}
+                style={styles.headerLogo}
+                resizeMode="contain"
+              />
+            </TouchableOpacity>
             <TouchableOpacity style={{ padding: 10 }}>
               <Text style={{ fontSize: 24 }}>⚙️</Text>
             </TouchableOpacity>
@@ -338,5 +347,12 @@ const styles = StyleSheet.create({
   dashboardBtnSub: {
     fontSize: 14,
     color: '#666'
+  },
+  logoContainer: {
+    padding: 5,
+  },
+  headerLogo: {
+    width: 200,
+    height: 40,
   },
 });

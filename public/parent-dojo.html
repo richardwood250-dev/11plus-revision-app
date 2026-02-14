@@ -1704,4 +1704,108 @@
         }
     </script>
 
+    <script>
+        // Vocab Booster Logic
+        const vocabDatabase = [
+            {
+                word: "Cacophony",
+                type: "(noun)",
+                definition: "A harsh, discordant mixture of sounds.",
+                synonyms: "Noise, Din, Racket",
+                sentence: "The <span class=\"highlight-word\">cacophony</span> in the playground gave the teacher a headache."
+            },
+            {
+                word: "Benevolent",
+                type: "(adjective)",
+                definition: "Well meaning and kindly.",
+                synonyms: "Kind, Generous, Charitable",
+                sentence: "The <span class=\"highlight-word\">benevolent</span> stranger paid for our meal."
+            },
+            {
+                word: "Diligent",
+                type: "(adjective)",
+                definition: "Having or showing care and conscientiousness in one's work.",
+                synonyms: "Hard-working, Assiduous, Conscientious",
+                sentence: "The <span class=\"highlight-word\">diligent</span> student finished all her homework early."
+            },
+            {
+                word: "Ephemeral",
+                type: "(adjective)",
+                definition: "Lasting for a very short time.",
+                synonyms: "Transitory, Transient, Fleeting",
+                sentence: "Fashions are often <span class=\"highlight-word\">ephemeral</span>, changing with every season."
+            },
+            {
+                word: "Inevitably",
+                type: "(adverb)",
+                definition: "As is certain to happen; unavoidably.",
+                synonyms: "Naturally, Automatically, Necessarily",
+                sentence: "War <span class=\"highlight-word\">inevitably</span> leads to suffering."
+            },
+            {
+                word: "Longevity",
+                type: "(noun)",
+                definition: "Long life.",
+                synonyms: "Durability, Endurance, Resilience",
+                sentence: "The <span class=\"highlight-word\">longevity</span> of the tortoise is legendary."
+            },
+            {
+                word: "Mundane",
+                type: "(adjective)",
+                definition: "Lacking interest or excitement; dull.",
+                synonyms: "Boring, Dull, Routine",
+                sentence: "She wanted to escape her <span class=\"highlight-word\">mundane</span> daily routine."
+            },
+            {
+                word: "Nonchalant",
+                type: "(adjective)",
+                definition: "Feeling or appearing casually calm and relaxed.",
+                synonyms: "Calm, Cool, Unconcerned",
+                sentence: "He gave a <span class=\"highlight-word\">nonchalant</span> shrug when asked if he was worried."
+            },
+            {
+                word: "Procrastinate",
+                type: "(verb)",
+                definition: "Delay or postpone action; put off doing something.",
+                synonyms: "Stall, Delay, Dither",
+                sentence: "Don't <span class=\"highlight-word\">procrastinate</span>; start your revision today!"
+            },
+            {
+                word: "Resilient",
+                type: "(adjective)",
+                definition: "Able to withstand or recover quickly from difficult conditions.",
+                synonyms: "Strong, Tough, Hardy",
+                sentence: "The team was <span class=\"highlight-word\">resilient</span> and came back to win the match."
+            }
+        ];
+
+        function updateVocabBooster() {
+            const startDate = new Date('2024-01-01'); // Fixed epoch
+            const today = new Date();
+            const timeDiff = today.setHours(0, 0, 0, 0) - startDate.setHours(0, 0, 0, 0); // Ignore time
+            const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+            const wordIndex = daysDiff % vocabDatabase.length;
+            const wordData = vocabDatabase[wordIndex];
+
+            // Safely access elements locally within the widget context if possible, or global
+            const widget = document.querySelector('.word-widget');
+            if (widget) {
+                widget.querySelector('.word-title').textContent = wordData.word;
+                widget.querySelector('.word-type').textContent = wordData.type;
+                widget.querySelector('.word-definition').textContent = wordData.definition;
+                // For meta, we need to reconstruct the HTML or query specifically
+                const metaDiv = widget.querySelector('.word-meta');
+                metaDiv.innerHTML = `
+                    <p><strong>Synonyms:</strong> ${wordData.synonyms}</p>
+                    <p><strong>Ninja Sentence:</strong> "${wordData.sentence}"</p>
+                `;
+            }
+        }
+
+        // Run on load
+        updateVocabBooster();
+    </script>
+</body>
+
 </html>
