@@ -172,8 +172,44 @@ export const QuizConfigScreen = ({ route }) => {
         } else if (subject === 'Non-Verbal') {
             if (nonverbal[topic]) {
                 const dataset = nonverbal[topic].questions;
-                const shuffled = [...dataset].sort(() => 0.5 - Math.random());
-                const selectedQuestions = shuffled.slice(0, 8); // 8 questions per session
+
+                // Helper to select diverse questions
+                const selectDiverseQuestions = (questions, count) => {
+                    // Group by ID prefix (e.g. NV_7_21)
+                    const groups = {};
+                    questions.forEach(q => {
+                        const parts = q.id.split('_');
+                        // Use first 3 parts as group key (e.g. NV_7_21)
+                        const key = parts.length >= 3 ? parts.slice(0, 3).join('_') : 'Misc';
+                        if (!groups[key]) groups[key] = [];
+                        groups[key].push(q);
+                    });
+
+                    const groupKeys = Object.keys(groups);
+                    // Shuffle group order
+                    groupKeys.sort(() => 0.5 - Math.random());
+
+                    // Shuffle questions within each group
+                    groupKeys.forEach(k => {
+                        groups[k].sort(() => 0.5 - Math.random());
+                    });
+
+                    const selected = [];
+                    let i = 0;
+
+                    // Round-robin selection
+                    while (selected.length < count && selected.length < questions.length) {
+                        const key = groupKeys[i % groupKeys.length];
+                        if (groups[key].length > 0) {
+                            selected.push(groups[key].pop());
+                        }
+                        i++;
+                    }
+
+                    return selected;
+                };
+
+                const selectedQuestions = selectDiverseQuestions(dataset, 8); // 8 questions per session
 
                 navigation.navigate('Quiz', {
                     title: nonverbal[topic].title,
