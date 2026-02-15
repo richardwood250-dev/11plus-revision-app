@@ -132,7 +132,27 @@ export const QuizScreen = ({ route }) => {
                     };
                 });
 
-                await saveSession(subject || 'Unknown', results, timeInSeconds, topic || 'General');
+                const updatedStats = await saveSession(subject || 'Unknown', results, timeInSeconds, topic || 'General');
+
+                // Check for new records (Motivation)
+                if (updatedStats) {
+                    const { checkRecords } = require('../utils/motivation');
+                    const currentSession = {
+                        correct: calculateScore(), // Re-calc score to be safe or use local var if available. 
+                        // Actually calculateScore() uses 'answers' state which is current.
+                        total: questions.length,
+                        time: timeInSeconds,
+                        topic: topic || 'General',
+                        subject: subject || 'Unknown'
+                    };
+
+                    const record = checkRecords(currentSession, updatedStats);
+                    if (record) {
+                        setTimeout(() => {
+                            Alert.alert("🎉 NEW RECORD! 🎉", record.message);
+                        }, 500); // Delay slightly to let UI settle
+                    }
+                }
             } catch (error) {
                 console.error("Error submitting quiz:", error);
                 Alert.alert("Error", "There was a problem saving your results. Please screenshot your score.");

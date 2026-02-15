@@ -59,11 +59,15 @@ export const StudentHomeScreen = () => {
   const insets = useSafeAreaInsets();
   const [isLoadingEnglish, setIsLoadingEnglish] = React.useState(false);
   const [recommendation, setRecommendation] = React.useState(null);
+  const [streak, setStreak] = React.useState(0);
+  const [stats, setStats] = React.useState(null);
 
   useFocusEffect(
     React.useCallback(() => {
       const load = async () => {
         const s = await getStats();
+        setStats(s);
+        if (s) setStreak(s.streak || 0);
         const rec = getRecommendation(s);
         setRecommendation(rec);
       };
@@ -117,7 +121,16 @@ export const StudentHomeScreen = () => {
                 resizeMode="contain"
               />
             </TouchableOpacity>
-            <TouchableOpacity style={{ padding: 10 }}>
+            <TouchableOpacity
+              style={{ padding: 10, flexDirection: 'row', alignItems: 'center' }}
+              onPress={() => navigation.navigate('Settings')}
+            >
+              {streak > 0 && (
+                <View style={{ flexDirection: 'row', alignItems: 'center', marginRight: 15, backgroundColor: '#FFF3E0', paddingHorizontal: 10, paddingVertical: 5, borderRadius: 15 }}>
+                  <Text style={{ fontSize: 16 }}>🔥</Text>
+                  <Text style={{ fontWeight: 'bold', color: '#FF9800', marginLeft: 5 }}>{streak}</Text>
+                </View>
+              )}
               <Text style={{ fontSize: 24 }}>⚙️</Text>
             </TouchableOpacity>
           </View>
