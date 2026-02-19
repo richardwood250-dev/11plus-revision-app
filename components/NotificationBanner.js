@@ -51,7 +51,7 @@ export const NotificationBanner = () => {
             <View style={styles.contentContainer}>
                 <View style={styles.textContainer}>
                     <Text style={styles.primaryText}>
-                        Help us keep 11 Plus Ninja 100% free! We are adding new practice papers and 'Ninja Challenges' every week.
+                        Help us keep 11 Plus Ninja 100% free! We are adding new practice resources, questions and blogs every week.
                     </Text>
                     <View style={styles.ctaContainer}>
                         <Text style={styles.activityText}>Have a suggestion or found a bug? We'd love your feedback: </Text>
