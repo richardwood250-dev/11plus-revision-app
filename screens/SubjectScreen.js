@@ -10,7 +10,7 @@ export const SubjectScreen = ({ route }) => {
         <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}>
             <BackgroundWatermark />
             <Text style={styles.title}>{title}</Text>
-            <Text style={styles.subtitle}>Quiz Placeholder</Text>
+            <Text style={styles.subtitle}>Coming Soon</Text>
             <Text style={{ fontSize: 80, marginTop: 20 }}>✅</Text>
         </View>
     );
