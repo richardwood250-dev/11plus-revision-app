@@ -8,17 +8,7 @@ import { saveSession, getStats } from '../utils/storage';
 import { checkRecords } from '../utils/motivation';
 import MotivationModal from '../components/MotivationModal';
 
-const Colors = {
-    primary: '#4DA6FF',
-    secondary: '#FFD700',
-    success: '#32CD32',
-    error: '#FF4500',
-    white: '#FFFFFF',
-    text: '#333',
-    background: '#F0F8FF',
-    selected: '#E0F0FF',
-    overlay: 'rgba(0,0,0,0.9)',
-};
+import { Colors } from '../constants/Colors';
 
 export const TestScreen = ({ route }) => {
     const navigation = useNavigation();
@@ -60,31 +50,22 @@ export const TestScreen = ({ route }) => {
             filtered = questions.filter(q => q.difficultyIndex >= 26);
         }
 
-        // 2. Select Unique Topics (Prefix Rule)
-        // We want to pick 'config.length' questions, but no duplicates of 'prefix'.
-        // If not enough unique prefixes, we'll just fill with available ones.
+        // 2. Select Unique Topics (Prefix Rule: First 6 chars of ID)
+        // We want to pick 'config.length' questions, but no duplicates of 'key'.
         const shuffled = [...filtered].sort(() => 0.5 - Math.random());
         const selected = [];
-        const usedPrefixes = new Set();
+        const usedKeys = new Set(); // Stores first 6 chars of ID
 
         for (const q of shuffled) {
             if (selected.length >= config.length) break;
 
-            if (!usedPrefixes.has(q.prefix)) {
+            const key = q.id.substring(0, 6);
+            if (!usedKeys.has(key)) {
                 selected.push(q);
-                usedPrefixes.add(q.prefix);
+                usedKeys.add(key);
             }
         }
 
-        // Fallback: If strict rule resulted in too few questions, fill with others
-        if (selected.length < config.length) {
-            for (const q of shuffled) {
-                if (selected.length >= config.length) break;
-                if (!selected.includes(q)) {
-                    selected.push(q);
-                }
-            }
-        }
 
         // 3. Sort by Difficulty
         selected.sort((a, b) => a.difficultyIndex - b.difficultyIndex);

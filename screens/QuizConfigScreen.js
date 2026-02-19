@@ -3,13 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Alert } from 'rea
 import { useNavigation } from '@react-navigation/native';
 import { MATHS_QUIZ } from '../data/maths';
 
-const Colors = {
-    primary: '#4DA6FF',
-    white: '#FFFFFF',
-    background: '#F0F8FF',
-    text: '#333',
-    selected: '#2089DC',
-};
+import { Colors } from '../constants/Colors';
 
 import { ENGLISH_QUIZ } from '../data/english';
 import { CLOZE_QUIZ } from '../data/cloze';

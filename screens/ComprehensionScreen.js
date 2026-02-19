@@ -4,13 +4,11 @@ import { useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { getInstruction } from '../data/instructions';
 
+import { Colors as BaseColors } from '../constants/Colors';
+
 const Colors = {
+    ...BaseColors,
     primary: '#FF8C00', // Orange for English
-    secondary: '#FFD700',
-    success: '#32CD32',
-    error: '#FF4500',
-    white: '#FFFFFF',
-    text: '#333',
     background: '#FFF5E6', // Light Orange
     selected: '#FFE0B2',
 };
@@ -311,7 +309,7 @@ const styles = StyleSheet.create({
     cardWrong: { borderWidth: 2, borderColor: Colors.error },
     qText: { fontSize: 16, fontWeight: 'bold', marginBottom: 10 },
 
-    qText: { fontSize: 16, fontWeight: 'bold', marginBottom: 10 },
+
 
     optionsGrid: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start', gap: 10 },
     optBtn: { width: '47%', borderWidth: 1, borderColor: '#ddd', padding: 8, borderRadius: 8, backgroundColor: 'white' },

@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5766HBXD');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parent Dojo | 11PlusNinja</title>
@@ -10,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS (if needed or standard styles) -->
+    <link rel="stylesheet" href="/assets/css/social-share.css">
+    <script defer src="/assets/js/social-share.js"></script>
     <style>
         /* Word Widget Styles */
         .word-widget {
@@ -112,6 +125,89 @@
             padding: 1rem 0;
             border-bottom: 4px solid #F59E0B;
             /* Gold for Parent Dojo */
+        }
+
+        /* Vocab Modal Styles */
+        .vocab-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 3000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .vocab-modal.active {
+            display: flex;
+        }
+
+        .vocab-content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .vocab-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .vocab-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .vocab-table th,
+        .vocab-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .vocab-table th {
+            background-color: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .row-white {
+            border-left: 4px solid #e5e7eb;
+        }
+
+        .row-blue {
+            border-left: 4px solid #3b82f6;
+        }
+
+        .row-black {
+            border-left: 4px solid #1f2937;
+        }
+
+        .btn-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #6b7280;
         }
 
         .global-header .container {
@@ -1109,6 +1205,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5766HBXD" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Mobile Wrapper -->
     <div class="mobile-wrapper">
@@ -1116,10 +1216,16 @@
         <!-- Main Hub Container -->
         <!-- Global Header -->
         <header class="global-header">
-            <div class="container">
+            <div class="container" style="justify-content: space-between;">
                 <a href="/" class="global-header-logo">
-                    <img src="/assets/ninja_header.png" alt="11PlusNinja" style="height: 40px; margin-right: 10px;">
+                    <img src="/assets/ninja_header.png" alt="11PlusNinja" style="height: 40px; width: auto;">
                 </a>
+                <nav style="display: flex; gap: 20px; font-weight: 600; color: #4B5563;">
+                    <a href="/?mode=student" style="text-decoration: none; color: inherit;"
+                        onmouseover="this.style.color='#2563EB'" onmouseout="this.style.color='inherit'">Student</a>
+                    <a href="/blog" style="text-decoration: none; color: inherit;"
+                        onmouseover="this.style.color='#2563EB'" onmouseout="this.style.color='inherit'">Blog</a>
+                </nav>
             </div>
         </header>
 
@@ -1134,9 +1240,15 @@
                         the
                         stress.</p>
                     <a href="#roadmap" class="btn btn-primary">Start Your Journey</a>
+                    <div style="margin-top: 20px;">
+                        <a href="/dashboard" class="btn"
+                            style="background-color: #F59E0B; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
+                            View Student Dashboard <span>📊</span>
+                        </a>
+                    </div>
                     <div style="margin-top: 15px;">
-                        <a href="/" style="font-size: 0.9rem; color: #6B7280; text-decoration: none;">&larr; Back to
-                            Kids
+                        <a href="/?mode=student"
+                            style="font-size: 0.9rem; color: #6B7280; text-decoration: none;">&larr; Back to Kids
                             App</a>
                     </div>
                 </div>
@@ -1360,8 +1472,8 @@
                         <p style="color: #666; margin-bottom: 20px;">Official familiarisation materials directly from
                             the
                             exam provider.</p>
-                        <a href="https://www.gl-assessment.co.uk/assessments/11-plus/free-familiarisation-materials/"
-                            target="_blank" class="btn-sm">Visit Site</a>
+                        <a href="https://11plus.gl-assessment.co.uk/pages/free-materials" target="_blank"
+                            class="btn-sm">Visit Site</a>
                     </div>
 
                     <!-- Card 2 -->
@@ -1394,12 +1506,12 @@
                     </div>
 
                     <!-- Locked Card -->
-                    <div class="resource-card locked-card">
-                        <span class="resource-tag" style="background: #e5e7eb; color: #666;">Coming Soon</span>
-                        <h3 style="margin-bottom: 10px; color: #9ca3af;">Ninja Vocabulary List</h3>
-                        <p style="color: #9ca3af; margin-bottom: 20px;">Our exclusive top 500 words PDF.</p>
-                        <button class="btn-sm" style="background: center; color: #666; cursor: not-allowed;"
-                            disabled>Locked</button>
+                    <div class="resource-card">
+                        <span class="resource-tag" style="background: #10B981; color: white;">Active</span>
+                        <h3 style="margin-bottom: 10px;">Ninja Vocabulary List</h3>
+                        <p style="color: #666; margin-bottom: 20px;">Our exclusive top 500 words categorized by belt.
+                        </p>
+                        <button class="btn-sm" onclick="openVocabModal()" style="cursor: pointer;">Open List</button>
                     </div>
                 </div>
             </section>
@@ -1424,6 +1536,55 @@
 
             <section class="container">
                 <h2 class="section-title" style="margin-top: 40px; color: #064E3B;">The Roadmap</h2>
+
+                <!-- Featured Widget: Timeline Roadmap -->
+                <div class="word-widget"
+                    style="margin-bottom: 40px; border-color: #2563EB; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    <div class="word-widget-badge" style="background: #2563EB;">New Guide</div>
+                    <div class="word-header">
+                        <h3 class="word-title">🗺️ Confused about the 11+ Timeline?</h3>
+                    </div>
+                    <p class="word-definition" style="font-size: 1rem;">
+                        From Year 4 foundations to Year 6 precision, know exactly what to do (and when). Read our "Big
+                        Picture" roadmap to stop the guesswork.
+                    </p>
+                    <a href="/blog/11-plus-roadmap-for-parents" class="btn btn-primary"
+                        style="display: inline-block; width: auto; margin-top: 15px;">Show Me the Roadmap →</a>
+                    <span style="font-size: 0.8rem; color: #6B7280; margin-left: 10px;">⏱️ 3 min read</span>
+                </div>
+
+                <!-- Featured Widget: Strategy (Mistakes) -->
+                <div class="word-widget"
+                    style="margin-bottom: 40px; border-color: #F59E0B; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    <div class="word-widget-badge" style="background: #F59E0B;">Expert Strategy</div>
+                    <div class="word-header">
+                        <h3 class="word-title">🥷 Stop the 11+ Burnout!</h3>
+                    </div>
+                    <p class="word-definition" style="font-size: 1rem;">
+                        Are you making the "Marathon Mistake"? Learn the 5 common pitfalls parents face and the "Ninja
+                        Move" to fix them today.
+                    </p>
+                    <a href="/blog/5-common-11-plus-mistakes" class="btn btn-primary"
+                        style="display: inline-block; width: auto; margin-top: 15px; background-color: #F59E0B; border-color: #F59E0B;">Read
+                        the Strategy →</a>
+                    <span style="font-size: 0.8rem; color: #6B7280; margin-left: 10px;">⏱️ 4 min read</span>
+                </div>
+                <!-- Featured Widget: NVR Guide (New) -->
+                <div class="word-widget"
+                    style="margin-bottom: 40px; border-color: #7C3AED; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    <div class="word-widget-badge" style="background: #7C3AED;">Skill Unlock</div>
+                    <div class="word-header">
+                        <h3 class="word-title">🧩 Confused by the Shapes?</h3>
+                    </div>
+                    <p class="word-definition" style="font-size: 1rem;">
+                        Non-Verbal Reasoning doesn't have to be a mystery. Learn the "NINJA" method for cracking NVR
+                        codes with your child.
+                    </p>
+                    <a href="/blog/demystifying-non-verbal-reasoning" class="btn btn-primary"
+                        style="display: inline-block; width: auto; margin-top: 15px; background-color: #7C3AED; border-color: #7C3AED;">Unlock
+                        the Shapes →</a>
+                    <span style="font-size: 0.8rem; color: #6B7280; margin-left: 10px;">⏱️ 5 min read</span>
+                </div>
                 <div class="timeline">
                     <div class="timeline-node">
                         <div class="timeline-marker">1</div>
@@ -1511,6 +1672,9 @@
             </div>
         </footer>
     </div> <!-- End Mobile Wrapper -->
+
+    <!-- Social Share Container -->
+    <div id="social-share-container"></div>
 
     <!-- Interactive Script -->
     <script>
@@ -1805,6 +1969,189 @@
 
         // Run on load
         updateVocabBooster();
+    </script>
+
+    <!-- Vocab Modal -->
+    <div id="vocab-modal" class="vocab-modal">
+        <div class="vocab-content">
+            <div class="vocab-header-row">
+                <h2 style="margin:0;">Ninja Vocabulary List</h2>
+                <button class="btn-close" onclick="closeVocabModal()">&times;</button>
+            </div>
+
+            <div class="vocab-controls">
+                <input type="text" id="vocab-search" placeholder="Search words..."
+                    style="padding: 10px; border: 1px solid #d1d5db; border-radius: 6px; flex-grow: 1;">
+
+                <select id="vocab-filter" style="padding: 10px; border: 1px solid #d1d5db; border-radius: 6px;">
+                    <option value="All">All Belts</option>
+                    <option value="White">White Belt</option>
+                    <option value="Blue">Blue Belt</option>
+                    <option value="Black">Black Belt</option>
+                </select>
+
+                <button onclick="printVocabList()" class="btn-sm" style="background-color: #4b5563;">Print</button>
+            </div>
+
+            <div style="overflow-x: auto;">
+                <table class="vocab-table">
+                    <thead>
+                        <tr>
+                            <th>Word</th>
+                            <th>Definition</th>
+                            <th>Synonyms</th>
+                            <th>Antonyms</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vocab-table-body">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Ninja Vocab List Logic ---
+        const vocabData = [
+            // --- White Belt ---
+            { word: "Abandon", type: "Verb", definition: "To leave or give up completely.", synonyms: "Desert, Forsake, Quit", antonyms: "Keep, Retain, Stay", belt: "White" },
+            { word: "Anxious", type: "Adjective", definition: "Feeling worried or nervous.", synonyms: "Uneasy, Apprehensive, Worried", antonyms: "Confident, Calm, Serene", belt: "White" },
+            { word: "Boast", type: "Verb", definition: "Talk with excessive pride.", synonyms: "Brag, Crow, Gloat", antonyms: "Modest, Humble, Belittle", belt: "White" },
+            { word: "Consent", type: "Noun", definition: "Permission for something to happen.", synonyms: "Agreement, Assent, Approval", antonyms: "Refusal, Dissent, Denial", belt: "White" },
+            { word: "Dread", type: "Verb", definition: "Anticipate with great apprehension.", synonyms: "Fear, Foreboding, Terror", antonyms: "Confidence, Courage, Bravery", belt: "White" },
+            { word: "Envy", type: "Noun", definition: "A feeling of discontented longing.", synonyms: "Jealousy, Resentment, Covetousness", antonyms: "Goodwill, Contentment, Satisfaction", belt: "White" },
+            { word: "Fierce", type: "Adjective", definition: "Having an aggressive or powerful intensity.", synonyms: "Ferocious, Savage, Wild", antonyms: "Gentle, Mild, Tame", belt: "White" },
+            { word: "Grief", type: "Noun", definition: "Deep sorrow, especially caused by death.", synonyms: "Sorrow, Anguish, Misery", antonyms: "Joy, Happiness, Delight", belt: "White" },
+            { word: "Haste", type: "Noun", definition: "Excessive speed or urgency.", synonyms: "Speed, Hurry, Rush", antonyms: "Slowness, Delay, Caution", belt: "White" },
+            { word: "Idle", type: "Adjective", definition: "Avoiding work; lazy.", synonyms: "Lazy, Inactive, Sluggish", antonyms: "Busy, Active, Industrious", belt: "White" },
+            { word: "Jeer", type: "Verb", definition: "Make rude and mocking remarks.", synonyms: "Mock, Taunt, Ridicule", antonyms: "Cheer, Praise, Applaud", belt: "White" },
+            { word: "Keen", type: "Adjective", definition: "Having or showing eagerness or enthusiasm.", synonyms: "Eager, Sharp, Intense", antonyms: "Dull, Indifferent, Apathetic", belt: "White" },
+            { word: "Limb", type: "Noun", definition: "An arm or leg of a person or four-legged animal.", synonyms: "Appendage, Member, Extremity", antonyms: "Body, Trunk, Torso", belt: "White" },
+            { word: "Marvel", type: "Verb", definition: "Be filled with wonder or astonishment.", synonyms: "Wonder, Awe, Amaze", antonyms: "Ignore, Disregard, Overlook", belt: "White" },
+            { word: "Neglect", type: "Verb", definition: "Fail to care for properly.", synonyms: "Ignore, Disregard, Slight", antonyms: "Cherish, Nurture, Attend", belt: "White" },
+            { word: "Oath", type: "Noun", definition: "A solemn promise.", synonyms: "Vow, Pledge, Promise", antonyms: "Lie, Falsehood, Denial", belt: "White" },
+            { word: "Pave", type: "Verb", definition: "Cover (a piece of ground) with concrete, asphalt, etc.", synonyms: "Surface, Cover, Tile", antonyms: "Strip, Uncover, Excavate", belt: "White" },
+            { word: "Quench", type: "Verb", definition: "Satisfy (one's thirst) by drinking.", synonyms: "Satisfy, Slake, Extinguish", antonyms: "Ignite, Kindle, Parched", belt: "White" },
+            { word: "Realm", type: "Noun", definition: "A kingdom.", synonyms: "Kingdom, Domain, Empire", antonyms: "None", belt: "White" },
+            { word: "Seize", type: "Verb", definition: "Take hold of suddenly and forcibly.", synonyms: "Grab, Grasp, Snatch", antonyms: "Release, Let go, Drop", belt: "White" },
+
+            // --- Blue Belt ---
+            { word: "Abundant", type: "Adjective", definition: "Existing in large quantities.", synonyms: "Plentiful, Copious, Ample", antonyms: "Scarce, Sparse, Rare", belt: "Blue" },
+            { word: "Barren", type: "Adjective", definition: "Too poor to produce much or any vegetation.", synonyms: "Infertile, Arid, Desolate", antonyms: "Fertile, Fruitful, Lush", belt: "Blue" },
+            { word: "Candid", type: "Adjective", definition: "Truthful and straightforward.", synonyms: "Frank, Honest, Open", antonyms: "Secretive, Deceitful, Guarded", belt: "Blue" },
+            { word: "Diligent", type: "Adjective", definition: "Having or showing care in one's work.", synonyms: "Hard-working, Assiduous, Conscientious", antonyms: "Lazy, Negligent, Careless", belt: "Blue" },
+            { word: "Emerge", type: "Verb", definition: "Move out of or away from something and come into view.", synonyms: "Appear, Surface, Arise", antonyms: "Disappear, Vanish, Fade", belt: "Blue" },
+            { word: "Famine", type: "Noun", definition: "Extreme scarcity of food.", synonyms: "Starvation, Scarcity, Drought", antonyms: "Feast, Plenty, Abundance", belt: "Blue" },
+            { word: "Gaunt", type: "Adjective", definition: "Lean and haggard, especially because of suffering.", synonyms: "Haggard, Thin, Emaciated", antonyms: "Plump, Chubby, Healthy", belt: "Blue" },
+            { word: "Hinder", type: "Verb", definition: "Create difficulties for, resulting in delay.", synonyms: "Hamper, Obstruct, Impede", antonyms: "Help, Assist, Facilitate", belt: "Blue" },
+            { word: "Ignite", type: "Verb", definition: "Catch fire or cause to catch fire.", synonyms: "Kindle, Spark, Light", antonyms: "Extinguish, Quench, Douse", belt: "Blue" },
+            { word: "Jolly", type: "Adjective", definition: "Happy and cheerful.", synonyms: "Cheerful, Jovial, Merry", antonyms: "Miserable, Gloomy, Sad", belt: "Blue" },
+            { word: "Knack", type: "Noun", definition: "An acquired or natural skill at performing a task.", synonyms: "Talent, Skill, Aptitude", antonyms: "Inability, Ineptitude, Clumsiness", belt: "Blue" },
+            { word: "Linger", type: "Verb", definition: "Stay in a place longer than necessary.", synonyms: "Stay, Remain, Loiter", antonyms: "Leave, Depart, Rush", belt: "Blue" },
+            { word: "Mingle", type: "Verb", definition: "Mix or cause to mix together.", synonyms: "Mix, Blend, Socialize", antonyms: "Separate, Divide, Isolate", belt: "Blue" },
+            { word: "Nuisance", type: "Noun", definition: "A person, thing, or circumstance causing inconvenience or annoyance.", synonyms: "Annoyance, Pest, Bother", antonyms: "Blessing, Help, Comfort", belt: "Blue" },
+            { word: "Obstinate", type: "Adjective", definition: "Stubbornly refusing to change one's opinion.", synonyms: "Stubborn, Pig-headed, Headstrong", antonyms: "Flexible, Compliant, Yielding", belt: "Blue" },
+            { word: "Parched", type: "Adjective", definition: "Dried out with heat.", synonyms: "Dry, Arid, Thirsty", antonyms: "Wet, Moist, Drenched", belt: "Blue" },
+            { word: "Quest", type: "Noun", definition: "A long or arduous search for something.", synonyms: "Search, Hunt, Pursuit", antonyms: "Retreat, Withdrawal, Surrender", belt: "Blue" },
+            { word: "Rural", type: "Adjective", definition: "In, relating to, or characteristic of the countryside.", synonyms: "Country, Rustic, Pastoral", antonyms: "Urban, City, Metropolitan", belt: "Blue" },
+            { word: "Savage", type: "Adjective", definition: "Fierce, violent, and uncontrolled.", synonyms: "Fierce, Wild, Ferocious", antonyms: "Tame, Gentle, Civilized", belt: "Blue" },
+            { word: "Thrive", type: "Verb", definition: "Grow or develop well or vigorously.", synonyms: "Flourish, Prosper, Bloom", antonyms: "Fail, Wither, Decline", belt: "Blue" },
+
+            // --- Black Belt ---
+            { word: "Acquiesce", type: "Verb", definition: "Accept something reluctantly but without protest.", synonyms: "Permit, Allow, Yield", antonyms: "Forbid, Protest, Refuse", belt: "Black" },
+            { word: "Benevolent", type: "Adjective", definition: "Well meaning and kindly.", synonyms: "Kind, Charitable, Benign", antonyms: "Malevolent, Cruel, Unkind", belt: "Black" },
+            { word: "Cacophony", type: "Noun", definition: "A harsh, discordant mixture of sounds.", synonyms: "Din, Racket, Discord", antonyms: "Harmony, Melody, Silence", belt: "Black" },
+            { word: "Deceit", type: "Noun", definition: "The action or practice of deceiving someone.", synonyms: "Deception, Fraud, Trickery", antonyms: "Honesty, Truth, Sincerity", belt: "Black" },
+            { word: "Eccentric", type: "Adjective", definition: "Unconventional and slightly strange.", synonyms: "Unconventional, Odd, Quirky", antonyms: "Conventional, Normal, Regular", belt: "Black" },
+            { word: "Facetious", type: "Adjective", definition: "Treating serious issues with inappropriate humor.", synonyms: "Flippant, Glib, Waggish", antonyms: "Serious, Grave, Solemn", belt: "Black" },
+            { word: "Garrulous", type: "Adjective", definition: "Excessively talkative.", synonyms: "Talkative, Loquacious, Chatty", antonyms: "Taciturn, Silent, Quiet", belt: "Black" },
+            { word: "Haughty", type: "Adjective", definition: "Arrogantly superior and disdainful.", synonyms: "Arrogant, Conceited, Proud", antonyms: "Humble, Modest, Meek", belt: "Black" },
+            { word: "Impeccable", type: "Adjective", definition: "In accordance with the highest standards; faultless.", synonyms: "Flawless, Perfect, Pristine", antonyms: "Imperfect, Flawed, Defective", belt: "Black" },
+            { word: "Judicious", type: "Adjective", definition: "Having, showing, or done with good judgment.", synonyms: "Wise, Sensible, Prudent", antonyms: "Foolish, Rash, Imprudent", belt: "Black" },
+            { word: "Kindle", type: "Verb", definition: "Light or set on fire; arouse or inspire.", synonyms: "Ignite, Spark, Inspire", antonyms: "Extinguish, Quench, Dampen", belt: "Black" },
+            { word: "Lethargic", type: "Adjective", definition: "Affected by lethargy; sluggish and apathetic.", synonyms: "Sluggish, Inert, Listless", antonyms: "Energetic, Active, Lively", belt: "Black" },
+            { word: "Malicious", type: "Adjective", definition: "Characterized by malice; intending or intended to do harm.", synonyms: "Spiteful, Vengeful, Mean", antonyms: "Benevolent, Kind, Friendly", belt: "Black" },
+            { word: "Nostalgia", type: "Noun", definition: "A sentimental longing for the past.", synonyms: "Reminiscence, Remembrance, Longing", antonyms: "Future-focused (concept)", belt: "Black" },
+            { word: "Obscure", type: "Adjective", definition: "Not discovered or known about; uncertain.", synonyms: "Unclear, Vague, Unknown", antonyms: "Clear, Obvious, Famous", belt: "Black" },
+            { word: "Placate", type: "Verb", definition: "Make (someone) less angry or hostile.", synonyms: "Pacify, Calm, Soothe", antonyms: "Provoke, Anger, Enrage", belt: "Black" },
+            { word: "Quandary", type: "Noun", definition: "A state of perplexity or uncertainty.", synonyms: "Dilemma, Predicament, Puzzle", antonyms: "Solution, Certainty, Resolution", belt: "Black" },
+            { word: "Replicant", type: "Noun", definition: "A copy or exact reproduction.", synonyms: "Replica, Copy, Duplicate", antonyms: "Original, Prototype, Master", belt: "Black" },
+            { word: "Superfluous", type: "Adjective", definition: "Unnecessary, especially through being more than enough.", synonyms: "Excess, Surplus, Redundant", antonyms: "Necessary, Essential, Scant", belt: "Black" },
+            { word: "Treacherous", type: "Adjective", definition: "Guilty of or involving betrayal or deception.", synonyms: "Traitorous, Disloyal, Dangerous", antonyms: "Loyal, Faithful, Safe", belt: "Black" }
+        ];
+
+        function openVocabModal() {
+            document.getElementById('vocab-modal').classList.add('active');
+            renderVocabTable();
+        }
+
+        function closeVocabModal() {
+            document.getElementById('vocab-modal').classList.remove('active');
+        }
+
+        function printVocabList() {
+            const printContent = document.querySelector('.vocab-content').innerHTML;
+            const originalContents = document.body.innerHTML;
+
+            document.body.innerHTML = printContent;
+
+            window.print();
+
+            document.body.innerHTML = originalContents;
+            // Re-attach event listeners because standard body restore wipes them
+            window.location.reload();
+        }
+
+        function renderVocabTable() {
+            const searchText = document.getElementById('vocab-search').value.toLowerCase();
+            const filterBelt = document.getElementById('vocab-filter').value;
+            const tbody = document.getElementById('vocab-table-body');
+
+            tbody.innerHTML = '';
+
+            const filtered = vocabData.filter(item => {
+                const matchesSearch = item.word.toLowerCase().includes(searchText) || item.synonyms.toLowerCase().includes(searchText);
+                const matchesBelt = filterBelt === 'All' || item.belt === filterBelt;
+                return matchesSearch && matchesBelt;
+            });
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding: 20px;">No words found.</td></tr>';
+                return;
+            }
+
+            filtered.forEach(item => {
+                const tr = document.createElement('tr');
+                tr.className = `row-${item.belt.toLowerCase()}`;
+
+                tr.innerHTML = `
+                    <td style="font-weight: 700;">${item.word}</td>
+                    <td>${item.definition}</td>
+                    <td>${item.synonyms}</td>
+                    <td>${item.antonyms}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Vocab Event Listeners
+        // Check if elements exist to avoid errors (in case modal isn't injected yet)
+        const vSearch = document.getElementById('vocab-search');
+        if (vSearch) vSearch.addEventListener('input', renderVocabTable);
+
+        const vFilter = document.getElementById('vocab-filter');
+        if (vFilter) vFilter.addEventListener('change', renderVocabTable);
+
+        // Close modal when clicking outside
+        const vocabModal = document.getElementById('vocab-modal');
+        if (vocabModal) {
+            vocabModal.addEventListener('click', (e) => {
+                if (e.target === vocabModal) {
+                    closeVocabModal();
+                }
+            });
+        }
     </script>
 </body>
 

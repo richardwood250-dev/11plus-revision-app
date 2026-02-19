@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5766HBXD');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -11,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/social-share.css">
+    <script defer src="/assets/js/social-share.js"></script>
     <script>
         // GLOBAL ERROR HANDLER FOR DEBUGGING
         window.onerror = function (message, source, lineno, colno, error) {
@@ -81,7 +93,7 @@
             width: 100%;
             overflow: hidden;
             position: relative;
-            padding: 40px 0;
+            padding: 20px 0;
             background: #F9FAFB;
         }
 
@@ -152,7 +164,7 @@
             background: white;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             z-index: 10000;
-            padding: 1rem 0;
+            padding: 0.5rem 0;
             border-bottom: 4px solid #2563EB;
         }
 
@@ -195,6 +207,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5766HBXD" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <!-- Global Header Removed from here (Moved inside gateway-overlay) -->
@@ -210,17 +226,22 @@
 
             <!-- Global Header -->
             <header class="global-header">
-                <div class="container mx-auto px-6 flex justify-between items-center">
+                <div class="flex items-center justify-between px-6">
                     <a href="/" class="global-header-logo">
                         <img src="/assets/ninja_header.png" alt="11PlusNinja" class="h-10 w-auto">
                     </a>
+                    <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600">
+                        <a href="/?mode=student" class="hover:text-ninja-blue transition">Student</a>
+                        <a href="/parent-dojo.html" class="hover:text-ninja-blue transition">Parents</a>
+                        <a href="/blog" class="hover:text-ninja-blue transition">Blog</a>
+                    </nav>
                 </div>
             </header>
 
             <!-- Navigation Bar Removed (Replaced by Global Header) -->
 
             <!-- Hero Section -->
-            <header class="bg-gray-50 pt-16 pb-24 relative overflow-hidden">
+            <header class="bg-gray-50 pt-10 pb-12 relative overflow-hidden">
                 <!-- Background Decoration -->
                 <div class="absolute inset-0 opacity-10 pointer-events-none"
                     style="background-image: radial-gradient(#2563EB 0.5px, transparent 0.5px); background-size: 20px 20px;">
@@ -231,9 +252,9 @@
                         Master the 11+ Exam.<br class="hidden md:block" />
                         <span class="text-ninja-blue">Train Like a Ninja.</span>
                     </h1>
-                    <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-                        Free, gamified preparation for UK Grammar School Entrance Exams.<br />
-                        Fun for students, reassuring for parents.
+                    <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                        Free, bite-sized preparation for UK Grammar School Entrance Exams.<br />
+                        Short, fast-paced quizzes for students. Reassurance for parents.
                     </p>
 
                     <!-- The Split Paths -->
@@ -247,7 +268,7 @@
                                 <span class="text-3xl">🥷</span>
                             </div>
                             <h3 class="text-2xl font-bold text-gray-900 mb-2">I am a Student</h3>
-                            <p class="text-gray-500 mb-8">Play quizzes, earn belts, and level up your skills.</p>
+                            <p class="text-gray-500 mb-8">Master the 11+ one quick quiz at a time.</p>
                             <button
                                 class="w-full bg-ninja-blue text-white py-3 rounded-xl font-bold text-lg hover:bg-blue-700 transition flex items-center justify-center gap-2">
                                 Enter the Dojo
@@ -276,22 +297,22 @@
             </header>
 
             <!-- Mission Section -->
-            <section class="py-20 bg-white border-t border-gray-100">
+            <section class="py-10 bg-white border-t border-gray-100">
                 <div class="container mx-auto px-6 text-center max-w-3xl">
                     <span class="text-ninja-blue font-bold tracking-widest uppercase text-sm mb-4 block">Our
                         Mission</span>
                     <h2 class="text-3xl font-bold text-gray-900 mb-6">To democratise 11+ success.</h2>
                     <p class="text-xl text-gray-600 leading-relaxed">
-                        We replace expensive tuition with smart, gamified learning that builds confidence and reduces
+                        We replace expensive tuition with smart, short quizzes that build confidence and reduce
                         exam
-                        anxiety. expert education should be accessible to everyone.
+                        anxiety. Expert education should be accessible to everyone.
                     </p>
                 </div>
             </section>
 
             <!-- Product Showcase (Carousel) -->
-            <section class="py-20 bg-gray-50 overflow-hidden">
-                <div class="container mx-auto px-6 mb-12">
+            <section class="py-8 bg-gray-50 overflow-hidden">
+                <div class="container mx-auto px-6 mb-8">
                     <div class="text-center">
                         <h2 class="text-3xl font-bold text-gray-900 mb-4">Peek Inside the Dojo</h2>
                         <p class="text-gray-500 text-lg">Swipe through the training grounds.</p>
@@ -354,6 +375,94 @@
                 </div>
             </section>
 
+            <!-- Latest from the Dojo -->
+            <section class="py-12 bg-white border-t border-gray-100">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Latest from the Dojo</h2>
+                        <p class="text-gray-500 text-lg">Strategies, tips, and ninja wisdom.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                        <!-- Post 0: NVR Guide (Newnest) -->
+                        <a href="/blog/demystifying-non-verbal-reasoning"
+                            class="group block bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col h-full">
+                            <div
+                                class="h-48 w-full bg-purple-50 flex items-center justify-center text-4xl border-b border-gray-100">
+                                🧩
+                            </div>
+                            <div class="p-8 flex-1 flex flex-col">
+                                <div class="uppercase tracking-wide text-sm text-purple-600 font-bold mb-2">Guide</div>
+                                <h3
+                                    class="text-xl leading-tight font-bold text-gray-900 group-hover:text-ninja-blue transition mb-3">
+                                    Cracking the Code: A Parent’s Guide to NVR
+                                </h3>
+                                <p class="text-gray-500 mb-4 flex-1">
+                                    "Weird shapes"? It's a skill, not a secret. Master the NINJA method.
+                                </p>
+                                <div class="flex items-center text-gray-400 text-sm mt-auto">
+                                    <span>⏱️ 5 min read</span>
+                                    <span class="mx-2">•</span>
+                                    <span class="text-ninja-blue font-semibold">Read Guide →</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Post 1: Common Mistakes (New) -->
+                        <a href="/blog/5-common-11-plus-mistakes"
+                            class="group block bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col h-full">
+                            <div
+                                class="h-48 w-full bg-amber-50 flex items-center justify-center text-4xl border-b border-gray-100">
+                                🛑
+                            </div>
+                            <div class="p-8 flex-1 flex flex-col">
+                                <div class="uppercase tracking-wide text-sm text-ninja-gold font-bold mb-2">Strategy
+                                </div>
+                                <h3
+                                    class="text-xl leading-tight font-bold text-gray-900 group-hover:text-ninja-blue transition mb-3">
+                                    5 Common 11+ Mistakes (And How to Fix Them)
+                                </h3>
+                                <p class="text-gray-500 mb-4 flex-1">
+                                    Is your child falling for "Red Herrings" or hitting a wall with timing? Fix these 5
+                                    traps today.
+                                </p>
+                                <div class="flex items-center text-gray-400 text-sm mt-auto">
+                                    <span>⏱️ 4 min read</span>
+                                    <span class="mx-2">•</span>
+                                    <span class="text-ninja-blue font-semibold">Read Strategy →</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Post 2: Roadmap -->
+                        <a href="/blog/11-plus-roadmap-for-parents"
+                            class="group block bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col h-full">
+                            <div
+                                class="h-48 w-full bg-blue-50 flex items-center justify-center text-4xl border-b border-gray-100">
+                                🗺️
+                            </div>
+                            <div class="p-8 flex-1 flex flex-col">
+                                <div class="uppercase tracking-wide text-sm text-ninja-blue font-bold mb-2">Guide</div>
+                                <h3
+                                    class="text-xl leading-tight font-bold text-gray-900 group-hover:text-ninja-blue transition mb-3">
+                                    11+ Mastery: A Roadmap for the Modern Parent
+                                </h3>
+                                <p class="text-gray-500 mb-4 flex-1">
+                                    From Year 4 to Year 6, know exactly what to do. Stop the guesswork.
+                                </p>
+                                <div class="flex items-center text-gray-400 text-sm mt-auto">
+                                    <span>⏱️ 3 min read</span>
+                                    <span class="mx-2">•</span>
+                                    <span class="text-ninja-blue font-semibold">Read Guide →</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+
             <!-- Footer -->
             <footer class="bg-gray-900 text-gray-400 py-12">
                 <div class="container mx-auto px-6 text-center">
@@ -367,6 +476,9 @@
             </footer>
         </div> <!-- End Mobile Wrapper -->
     </div>
+
+    <!-- Social Share Container -->
+    <div id="social-share-container"></div>
 
     <!-- Scripts -->
     <script>
@@ -384,8 +496,12 @@
 
         // Optional: Check if user already chose student
         // if (localStorage.getItem('userType') === 'student') {
-        // Check if user is accessing test dojo directly
-        if (window.location.pathname === '/test-dojo' || window.location.href.includes('test-dojo')) {
+        // Check if user is accessing test dojo or blog directly
+        const path = window.location.pathname;
+        const search = window.location.search;
+        const urlParams = new URLSearchParams(search);
+
+        if (path === '/test-dojo' || path.includes('test-dojo') || path.startsWith('/blog') || path.startsWith('/dashboard') || urlParams.get('mode') === 'student') {
             const gateway = document.getElementById('gateway-overlay');
             if (gateway) {
                 gateway.classList.add('gateway-hidden');

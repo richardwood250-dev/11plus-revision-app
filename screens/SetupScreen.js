@@ -2,25 +2,47 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, KeyboardAvoidingView, Platform } from 'react-native';
 import { saveProfile } from '../utils/storage';
 
-const Colors = {
-    primary: '#4DA6FF',
-    secondary: '#FFD700',
-    background: '#F0F8FF',
-    white: '#FFFFFF',
-    text: '#333',
-};
+import { Colors } from '../constants/Colors';
 
 export const SetupScreen = ({ onFinish }) => {
     const [name, setName] = useState('');
-    const [year, setYear] = useState('');
+    const [testDate, setTestDate] = useState(null);
+
+    // Calculate next 3 Septembers
+    // Rules: If current month >= Oct (9), start next year. Else start this year.
+    const getTestDateOptions = () => {
+        const now = new Date();
+        const currentYear = now.getFullYear();
+        const currentMonth = now.getMonth(); // 0 = Jan, 9 = Oct
+
+        let startYear = currentYear;
+        if (currentMonth >= 9) { // Sept this year has passed for 11+ purposes mostly? 
+            // Actually requirement says: "by October this year it will change to Sept 27..."
+            // So if today is Oct 2025 -> options start Sept 2026.
+            // If today is Feb 2026 -> options start Sept 2026.
+            startYear = currentYear + 1;
+        }
+
+        return [
+            `Sept ${startYear}`,
+            `Sept ${startYear + 1}`,
+            `Sept ${startYear + 2}`
+        ];
+    };
+
+    const dateOptions = getTestDateOptions();
 
     const handleSubmit = async () => {
         if (!name.trim()) {
             Alert.alert("Whoops!", "Please tell us your name.");
             return;
         }
+        if (!testDate) {
+            Alert.alert("Almost there!", "Please select your 11+ test date.");
+            return;
+        }
 
-        await saveProfile(name, year);
+        await saveProfile(name, testDate);
         onFinish();
     };
 
@@ -42,16 +64,25 @@ export const SetupScreen = ({ onFinish }) => {
                     />
                 </View>
 
-                <View style={styles.inputContainer}>
-                    <Text style={styles.label}>What school year are you in?</Text>
-                    <TextInput
-                        style={styles.input}
-                        placeholder="e.g. 5"
-                        value={year}
-                        onChangeText={setYear}
-                        keyboardType="numeric"
-                        maxLength={2}
-                    />
+                <View style={[styles.inputContainer, { zIndex: 10 }]}>
+                    <Text style={styles.label}>When is your 11+ Test?</Text>
+                    <View style={styles.dateOptionsContainer}>
+                        {dateOptions.map((date) => (
+                            <TouchableOpacity
+                                key={date}
+                                style={[
+                                    styles.dateOption,
+                                    testDate === date && styles.dateOptionSelected
+                                ]}
+                                onPress={() => setTestDate(date)}
+                            >
+                                <Text style={[
+                                    styles.dateText,
+                                    testDate === date && styles.dateTextSelected
+                                ]}>{date}</Text>
+                            </TouchableOpacity>
+                        ))}
+                    </View>
                 </View>
 
                 <TouchableOpacity style={styles.button} onPress={handleSubmit}>
@@ -112,6 +143,33 @@ const styles = StyleSheet.create({
         fontSize: 18,
         borderWidth: 1,
         borderColor: '#E0E0E0',
+    },
+    dateOptionsContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop: 5,
+    },
+    dateOption: {
+        flex: 1,
+        backgroundColor: '#F5F5F5',
+        borderRadius: 10,
+        padding: 10,
+        marginHorizontal: 4,
+        alignItems: 'center',
+        borderWidth: 2,
+        borderColor: 'transparent',
+    },
+    dateOptionSelected: {
+        backgroundColor: '#E3F2FD',
+        borderColor: Colors.primary,
+    },
+    dateText: {
+        fontSize: 14,
+        fontWeight: 'bold',
+        color: '#666',
+    },
+    dateTextSelected: {
+        color: Colors.primary,
     },
     button: {
         backgroundColor: Colors.secondary,

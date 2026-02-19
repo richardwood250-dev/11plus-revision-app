@@ -332,9 +332,9 @@ export const clearStats = async () => {
 // --- Profile Storage ---
 const PROFILE_KEY = 'USER_PROFILE_V1';
 
-export const saveProfile = async (name, year) => {
+export const saveProfile = async (name, testDate) => {
     try {
-        const profile = { name, year, joined: new Date().toISOString() };
+        const profile = { name, testDate, joined: new Date().toISOString() };
         await AsyncStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
 
         // PRIVACY NOTE: We do NOT sync this profile to Firebase. 

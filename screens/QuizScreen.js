@@ -9,18 +9,7 @@ import { getInstruction } from '../data/instructions';
 import { getQuizFeedback } from '../utils/motivation';
 import { ResilientImage } from '../components/ResilientImage';
 
-const Colors = {
-    primary: '#4DA6FF',
-    secondary: '#FFD700',
-    success: '#32CD32',
-    error: '#FF4500',
-    white: '#FFFFFF',
-    text: '#333',
-    background: '#F0F8FF',
-    selected: '#E0F0FF',
-    overlay: 'rgba(0,0,0,0.9)',
-    neutral: '#888'
-};
+import { Colors } from '../constants/Colors';
 
 export const QuizScreen = ({ route }) => {
     const navigation = useNavigation();

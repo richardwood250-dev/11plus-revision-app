@@ -3,14 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet, Alert, ScrollView, Linking } 
 import { useNavigation, CommonActions } from '@react-navigation/native';
 import { clearStats } from '../utils/storage';
 
-const Colors = {
-    background: '#F0F8FF',
-    text: '#333',
-    danger: '#FF4500',
-    white: '#FFFFFF',
-    primary: '#4DA6FF',
-    neutral: '#888'
-};
+import { Colors } from '../constants/Colors';
 
 export const SettingsScreen = () => {
     const navigation = useNavigation();

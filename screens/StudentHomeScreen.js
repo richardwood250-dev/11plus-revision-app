@@ -6,53 +6,14 @@ import { getRandomQuiz, getQuiz } from '../utils/quickQuizGenerator';
 import { fetchEnglishQuiz } from '../utils/englishLoader';
 import { getRecommendation } from '../utils/recommendations';
 import { getStats } from '../utils/storage';
+import { getDailyWord } from '../data/vocab';
 import { useFocusEffect } from '@react-navigation/native';
 
-const Colors = {
-  primary: '#4DA6FF', // Soft Blue
-  secondary: '#FFD700', // Gold
-  green: '#4CAF50',
-  orange: '#FF9800',
-  purple: '#9C27B0',
-  background: '#F0F2F5',
-  white: '#FFFFFF',
-  text: '#2C3E50',
-  cardBg: '#FFFFFF',
-};
+import { Colors } from '../constants/Colors';
+import { FlatIcon } from '../components/Icons';
+import { Header } from '../components/Header';
 
-const FlatIcon = ({ type }) => {
-  if (type === 'maths') {
-    return (
-      <View style={[styles.iconBase, { backgroundColor: Colors.primary, borderRadius: 50 }]}>
-        <Text style={styles.iconText}>÷</Text>
-      </View>
-    );
-  }
-  if (type === 'english') {
-    return (
-      <View style={[styles.iconBase, { backgroundColor: Colors.orange, borderRadius: 12 }]}>
-        <Text style={styles.iconText}>Aa</Text>
-      </View>
-    );
-  }
-  if (type === 'verbal') {
-    return (
-      <View style={[styles.iconBase, { backgroundColor: Colors.purple, borderRadius: 20, borderTopRightRadius: 0 }]}>
-        <Text style={styles.iconText}>...</Text>
-      </View>
-    );
-  }
-  if (type === 'non-verbal') {
-    return (
-      <View style={[styles.iconBase, { backgroundColor: Colors.green, transform: [{ rotate: '45deg' }], borderRadius: 10 }]}>
-        <View style={{ transform: [{ rotate: '-45deg' }] }}>
-          <Text style={styles.iconText}>🔷</Text>
-        </View>
-      </View>
-    );
-  }
-  return null;
-};
+
 
 export const StudentHomeScreen = () => {
   const navigation = useNavigation();
@@ -101,6 +62,25 @@ export const StudentHomeScreen = () => {
     );
   };
 
+  const DailyVocabCard = () => {
+    const wordOfDay = React.useMemo(() => getDailyWord(), []);
+
+    return (
+      <View style={styles.vocabContainer}>
+        <View style={styles.vocabHeader}>
+          <Text style={styles.vocabTitle}>Word of the Day</Text>
+          <Text style={styles.vocabBadge}>{wordOfDay.belt} Belt</Text>
+        </View>
+        <Text style={styles.wordText}>{wordOfDay.word}</Text>
+        <Text style={styles.wordType}>({wordOfDay.type})</Text>
+        <Text style={styles.wordDefinition}>{wordOfDay.definition}</Text>
+        <View style={styles.synonymContainer}>
+          <Text style={styles.synonyms}>Synonyms: {wordOfDay.synonyms}</Text>
+        </View>
+      </View>
+    );
+  };
+
   return (
     <View style={[styles.container, { paddingTop: insets.top, paddingBottom: insets.bottom }]}>
       <ScrollView
@@ -108,34 +88,12 @@ export const StudentHomeScreen = () => {
         contentContainerStyle={styles.scroll}
         showsVerticalScrollIndicator={false}
       >
-        <View style={styles.header}>
-          <View style={styles.headerTopRow}>
-            {/* Header Logo - Standardised */}
-            <TouchableOpacity
-              style={styles.logoContainer}
-              onPress={() => window.location.href = '/'}
-            >
-              <Image
-                source={{ uri: '/assets/ninja_header.png' }}
-                style={styles.headerLogo}
-                resizeMode="contain"
-              />
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={{ padding: 10, flexDirection: 'row', alignItems: 'center' }}
-              onPress={() => navigation.navigate('Settings')}
-            >
-              {streak > 0 && (
-                <View style={{ flexDirection: 'row', alignItems: 'center', marginRight: 15, backgroundColor: '#FFF3E0', paddingHorizontal: 10, paddingVertical: 5, borderRadius: 15 }}>
-                  <Text style={{ fontSize: 16 }}>🔥</Text>
-                  <Text style={{ fontWeight: 'bold', color: '#FF9800', marginLeft: 5 }}>{streak}</Text>
-                </View>
-              )}
-              <Text style={{ fontSize: 24 }}>⚙️</Text>
-            </TouchableOpacity>
-          </View>
+        <Header activeTab="student" />
+        <View style={styles.contentContainer}>
           <Text style={styles.subtitle}>Welcome to the Student Dojo!</Text>
         </View>
+
+        <DailyVocabCard />
 
         {/* --- ACTIONS ROW --- */}
         <View style={styles.actionRow}>
@@ -219,7 +177,7 @@ export const StudentHomeScreen = () => {
           <Text style={{ fontSize: 20, color: '#666' }}>→</Text>
         </TouchableOpacity>
 
-        <Text style={styles.sectionHeader}>Subjects (Placeholders):</Text>
+        <Text style={styles.sectionHeader}>Subjects:</Text>
 
         <View style={styles.grid}>
           <SubjectBtn title="Maths" color={Colors.primary} type="maths" />
@@ -367,5 +325,71 @@ const styles = StyleSheet.create({
   headerLogo: {
     width: 200,
     height: 40,
+  },
+  vocabContainer: {
+    backgroundColor: '#fff',
+    borderRadius: 15,
+    padding: 20,
+    marginTop: 15,
+    marginBottom: 25,
+    width: '100%',
+    borderLeftWidth: 5,
+    borderLeftColor: '#F59E0B',
+    elevation: 3,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+  },
+  vocabHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  vocabTitle: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#F59E0B',
+    textTransform: 'uppercase',
+    letterSpacing: 1,
+  },
+  vocabBadge: {
+    paddingVertical: 4,
+    paddingHorizontal: 10,
+    backgroundColor: '#FFFBEB',
+    color: '#D97706',
+    borderRadius: 12,
+    fontSize: 12,
+    fontWeight: 'bold',
+    overflow: 'hidden',
+  },
+  wordText: {
+    fontSize: 28,
+    fontWeight: '800',
+    color: '#1F2937',
+    marginBottom: 2,
+  },
+  wordType: {
+    fontSize: 14,
+    fontStyle: 'italic',
+    color: '#6B7280',
+    marginBottom: 10,
+  },
+  wordDefinition: {
+    fontSize: 16,
+    color: '#374151',
+    lineHeight: 24,
+    marginBottom: 12,
+  },
+  synonymContainer: {
+    borderTopWidth: 1,
+    borderTopColor: '#F3F4F6',
+    paddingTop: 10,
+  },
+  synonyms: {
+    fontSize: 14,
+    color: '#6B7280',
+    fontStyle: 'italic',
   },
 });
