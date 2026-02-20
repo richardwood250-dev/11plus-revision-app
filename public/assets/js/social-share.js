@@ -15,6 +15,9 @@
 
     // HTML Structure
     const html = `
+        <div id="social-share-tooltip">
+            Support 11+ Ninja and your friends by sharing! 🥷
+        </div>
         <div id="social-share-bar">
             <!-- WhatsApp -->
             <a href="https://wa.me/?text=${shareText}%20${shareUrl}" target="_blank" class="share-btn share-whatsapp" aria-label="Share on WhatsApp">
@@ -46,14 +49,30 @@
         const currentUrl = encodeURIComponent(window.location.href);
         const currentTitle = encodeURIComponent(document.title);
 
+        // Upgraded plea message
+        const plea = encodeURIComponent("Check out 11+ Ninja! I've been using this fantastic free resource for 11+ preparation. You should share it with your friends too: ");
+
         const wa = container.querySelector('.share-whatsapp');
         const fb = container.querySelector('.share-facebook');
         const x = container.querySelector('.share-x');
 
-        if (wa) wa.href = `https://wa.me/?text=${currentTitle}%20${currentUrl}`;
+        if (wa) wa.href = `https://wa.me/?text=${plea}%20${currentUrl}`;
         if (fb) fb.href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
-        if (x) x.href = `https://twitter.com/intent/tweet?text=${currentTitle}&url=${currentUrl}`;
+        if (x) x.href = `https://twitter.com/intent/tweet?text=${plea}&url=${currentUrl}`;
     }
+
+    // Tooltip Visibility Logic
+    const tooltip = document.getElementById('social-share-tooltip');
+
+    // Show on load briefly, then fade out
+    setTimeout(() => {
+        if (tooltip) {
+            tooltip.classList.add('show');
+            setTimeout(() => {
+                tooltip.classList.remove('show');
+            }, 6000); // stay for 6 seconds
+        }
+    }, 2000); // 2 seconds after page load
 
     // Copy Functionality
     const copyBtn = document.getElementById('copy-link-btn');

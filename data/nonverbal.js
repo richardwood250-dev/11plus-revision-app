@@ -26000,6 +26000,4206 @@ export const nonverbal = {
         ],
         "correctAnswer": "E",
         "explanation": "Rule: Inner shape is Rotated 180° relative to outer. Odd One Out: Option E (Rotated 90°)."
+      },
+      {
+        "id": "NV_7_27_1",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q1.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 45°, Odd: 0°). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_2",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q2.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: grey, Odd: black). The other attributes vary but do not create a unique odd one out. Therefore, Option E is the answer."
+      },
+      {
+        "id": "NV_7_27_3",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q3.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 45°, Odd: 0°). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_27_4",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q4.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 45°, Odd: 0°). The other attributes vary but do not create a unique odd one out. Therefore, Option C is the answer."
+      },
+      {
+        "id": "NV_7_27_5",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q5.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: black, Odd: grey). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_6",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q6.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: white, Odd: black). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_27_7",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q7.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 2, Odd: 3). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_8",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q8.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 3, Odd: 2). The other attributes vary but do not create a unique odd one out. Therefore, Option E is the answer."
+      },
+      {
+        "id": "NV_7_27_9",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q9.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 3, Odd: 2). The other attributes vary but do not create a unique odd one out. Therefore, Option A is the answer."
+      },
+      {
+        "id": "NV_7_27_10",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q10.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 3, Odd: 2). The other attributes vary but do not create a unique odd one out. Therefore, Option C is the answer."
+      },
+      {
+        "id": "NV_7_27_11",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q11.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: black, Odd: white). The other attributes vary but do not create a unique odd one out. Therefore, Option E is the answer."
+      },
+      {
+        "id": "NV_7_27_12",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q12.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 45°, Odd: 0°). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_27_13",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q13.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: black, Odd: white). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_14",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q14.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: black, Odd: white). The other attributes vary but do not create a unique odd one out. Therefore, Option C is the answer."
+      },
+      {
+        "id": "NV_7_27_15",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q15.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 0°, Odd: 45°). The other attributes vary but do not create a unique odd one out. Therefore, Option E is the answer."
+      },
+      {
+        "id": "NV_7_27_16",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q16.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: black, Odd: grey). The other attributes vary but do not create a unique odd one out. Therefore, Option E is the answer."
+      },
+      {
+        "id": "NV_7_27_17",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q17.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: black, Odd: grey). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_18",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q18.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 2, Odd: 3). The other attributes vary but do not create a unique odd one out. Therefore, Option C is the answer."
+      },
+      {
+        "id": "NV_7_27_19",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q19.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: black, Odd: grey). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_27_20",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q20.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 3, Odd: 2). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_27_21",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q21.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 2, Odd: 3). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_27_22",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q22.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: black, Odd: white). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_23",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q23.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 3, Odd: 2). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_27_24",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q24.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: white, Odd: black). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_25",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q25.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: grey, Odd: white). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_26",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q26.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: grey, Odd: white). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_27_27",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q27.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 3, Odd: 2). The other attributes vary but do not create a unique odd one out. Therefore, Option E is the answer."
+      },
+      {
+        "id": "NV_7_27_28",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q28.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 0°, Odd: 45°). The other attributes vary but do not create a unique odd one out. Therefore, Option A is the answer."
+      },
+      {
+        "id": "NV_7_27_29",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q29.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 0°, Odd: 45°). The other attributes vary but do not create a unique odd one out. Therefore, Option E is the answer."
+      },
+      {
+        "id": "NV_7_27_30",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q30.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: grey, Odd: white). The other attributes vary but do not create a unique odd one out. Therefore, Option A is the answer."
+      },
+      {
+        "id": "NV_7_27_31",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q31.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 45°, Odd: 0°). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_32",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q32.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 45°, Odd: 0°). The other attributes vary but do not create a unique odd one out. Therefore, Option C is the answer."
+      },
+      {
+        "id": "NV_7_27_33",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q33.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 0°, Odd: 45°). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_34",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q34.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: grey, Odd: white). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_27_35",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q35.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 45°, Odd: 0°). The other attributes vary but do not create a unique odd one out. Therefore, Option A is the answer."
+      },
+      {
+        "id": "NV_7_27_36",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q36.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 0°, Odd: 45°). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_27_37",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q37.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 3, Odd: 2). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_27_38",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q38.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 0°, Odd: 45°). The other attributes vary but do not create a unique odd one out. Therefore, Option E is the answer."
+      },
+      {
+        "id": "NV_7_27_39",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q39.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: black, Odd: white). The other attributes vary but do not create a unique odd one out. Therefore, Option E is the answer."
+      },
+      {
+        "id": "NV_7_27_40",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q40.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 2, Odd: 3). The other attributes vary but do not create a unique odd one out. Therefore, Option C is the answer."
+      },
+      {
+        "id": "NV_7_27_41",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q41.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: black, Odd: white). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_42",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q42.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 45°, Odd: 0°). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_27_43",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q43.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 0°, Odd: 45°). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_44",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q44.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Rotation of the square in the middle strip (Common: 0°, Odd: 45°). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_45",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q45.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 3, Odd: 2). The other attributes vary but do not create a unique odd one out. Therefore, Option E is the answer."
+      },
+      {
+        "id": "NV_7_27_46",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q46.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 2, Odd: 3). The other attributes vary but do not create a unique odd one out. Therefore, Option C is the answer."
+      },
+      {
+        "id": "NV_7_27_47",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q47.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on the Shading of the shape in the top strip (Common: white, Odd: black). The other attributes vary but do not create a unique odd one out. Therefore, Option B is the answer."
+      },
+      {
+        "id": "NV_7_27_48",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q48.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 3, Odd: 2). The other attributes vary but do not create a unique odd one out. Therefore, Option C is the answer."
+      },
+      {
+        "id": "NV_7_27_49",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q49.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 3, Odd: 2). The other attributes vary but do not create a unique odd one out. Therefore, Option A is the answer."
+      },
+      {
+        "id": "NV_7_27_50",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Strips_Mixed_Q50.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on the Quantity of shapes in the bottom strip (Common: 3, Odd: 2). The other attributes vary but do not create a unique odd one out. Therefore, Option D is the answer."
+      },
+      {
+        "id": "NV_7_28_1",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q1.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option B is the odd one out because it is made of 6 lines."
+      },
+      {
+        "id": "NV_7_28_2",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q2.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option A is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_3",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q3.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option E is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_4",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q4.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option C is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_5",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q5.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option D is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_6",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q6.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option C is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_7",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q7.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option C is the odd one out because it is made of 6 lines."
+      },
+      {
+        "id": "NV_7_28_8",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q8.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option E is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_9",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q9.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option E is the odd one out because it is made of 6 lines."
+      },
+      {
+        "id": "NV_7_28_10",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q10.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option D is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_11",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q11.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option E is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_12",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q12.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option E is the odd one out because it is made of 4 lines."
+      },
+      {
+        "id": "NV_7_28_13",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q13.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option B is the odd one out because it is made of 6 lines."
+      },
+      {
+        "id": "NV_7_28_14",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q14.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option C is the odd one out because it is made of 4 lines."
+      },
+      {
+        "id": "NV_7_28_15",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q15.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option A is the odd one out because it is made of 4 lines."
+      },
+      {
+        "id": "NV_7_28_16",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q16.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option E is the odd one out because it is made of 6 lines."
+      },
+      {
+        "id": "NV_7_28_17",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q17.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option E is the odd one out because it is made of 4 lines."
+      },
+      {
+        "id": "NV_7_28_18",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q18.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option E is the odd one out because it is made of 6 lines."
+      },
+      {
+        "id": "NV_7_28_19",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q19.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option D is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_20",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q20.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option E is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_21",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q21.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option B is the odd one out because it is made of 4 lines."
+      },
+      {
+        "id": "NV_7_28_22",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q22.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option A is the odd one out because it is made of 4 lines."
+      },
+      {
+        "id": "NV_7_28_23",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q23.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option E is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_24",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q24.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option E is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_25",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q25.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option E is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_26",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q26.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option E is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_27",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q27.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option D is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_28",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q28.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option D is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_29",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q29.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option E is the odd one out because it is made of 6 lines."
+      },
+      {
+        "id": "NV_7_28_30",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q30.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option D is the odd one out because it is made of 6 lines."
+      },
+      {
+        "id": "NV_7_28_31",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q31.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option E is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_32",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q32.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option C is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_33",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q33.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option B is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_34",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q34.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option A is the odd one out because it is made of 6 lines."
+      },
+      {
+        "id": "NV_7_28_35",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q35.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option B is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_36",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q36.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option A is the odd one out because it is made of 6 lines."
+      },
+      {
+        "id": "NV_7_28_37",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q37.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option E is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_38",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q38.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option B is the odd one out because it is made of 6 lines."
+      },
+      {
+        "id": "NV_7_28_39",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q39.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option E is the odd one out because it is made of 4 lines."
+      },
+      {
+        "id": "NV_7_28_40",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q40.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option D is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_41",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q41.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option C is the odd one out because it is made of 4 lines."
+      },
+      {
+        "id": "NV_7_28_42",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q42.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option C is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_43",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q43.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option A is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_44",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q44.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option B is the odd one out because it is made of 6 lines."
+      },
+      {
+        "id": "NV_7_28_45",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q45.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option B is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_46",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q46.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option B is the odd one out because it is made of 7 lines."
+      },
+      {
+        "id": "NV_7_28_47",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q47.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option E is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_28_48",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q48.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option D is the odd one out because it is made of 4 lines."
+      },
+      {
+        "id": "NV_7_28_49",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q49.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 5 connected lines. Option B is the odd one out because it is made of 4 lines."
+      },
+      {
+        "id": "NV_7_28_50",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Lines_Q50.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "The rule is based on counting the straight line segments. Four of the figures are made of 6 connected lines. Option E is the odd one out because it is made of 5 lines."
+      },
+      {
+        "id": "NV_7_29_1",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q1.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The shading points in an clockwise direction along the edge. Option D points anticlockwise."
+      },
+      {
+        "id": "NV_7_29_2",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Radial_Q2.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The inner shape is half-shaded towards the inside of the large shape. Option E is shaded towards the outside."
+      },
+      {
+        "id": "NV_7_29_3",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q3.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The inner shape is always shaded on the left side, regardless of where it is placed. Option D is shaded on the bottom."
+      },
+      {
+        "id": "NV_7_29_4",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q4.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The shading points in an anticlockwise direction along the edge. Option C points clockwise."
+      },
+      {
+        "id": "NV_7_29_5",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q5.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The inner shape is always shaded on the right side, regardless of where it is placed. Option B is shaded on the top."
+      },
+      {
+        "id": "NV_7_29_6",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q6.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The shading points in an clockwise direction along the edge. Option A points anticlockwise."
+      },
+      {
+        "id": "NV_7_29_7",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q7.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The inner shape is always shaded on the right side, regardless of where it is placed. Option C is shaded on the left."
+      },
+      {
+        "id": "NV_7_29_8",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q8.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The inner shape is always shaded on the left side, regardless of where it is placed. Option A is shaded on the top."
+      },
+      {
+        "id": "NV_7_29_9",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q9.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The inner shape is always shaded on the right side, regardless of where it is placed. Option E is shaded on the left."
+      },
+      {
+        "id": "NV_7_29_10",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Radial_Q10.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The inner shape is half-shaded towards the outside of the large shape. Option B is shaded towards the inside."
+      },
+      {
+        "id": "NV_7_29_11",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Radial_Q11.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The inner shape is half-shaded towards the inside of the large shape. Option B is shaded towards the outside."
+      },
+      {
+        "id": "NV_7_29_12",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q12.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The shading points in an anticlockwise direction along the edge. Option B points clockwise."
+      },
+      {
+        "id": "NV_7_29_13",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q13.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The shading points in an clockwise direction along the edge. Option B points anticlockwise."
+      },
+      {
+        "id": "NV_7_29_14",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Radial_Q14.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The inner shape is half-shaded towards the outside of the large shape. Option A is shaded towards the inside."
+      },
+      {
+        "id": "NV_7_29_15",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q15.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The inner shape is always shaded on the bottom side, regardless of where it is placed. Option E is shaded on the top."
+      },
+      {
+        "id": "NV_7_29_16",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q16.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The shading points in an clockwise direction along the edge. Option B points anticlockwise."
+      },
+      {
+        "id": "NV_7_29_17",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q17.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The shading points in an anticlockwise direction along the edge. Option B points clockwise."
+      },
+      {
+        "id": "NV_7_29_18",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Radial_Q18.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The inner shape is half-shaded towards the inside of the large shape. Option C is shaded towards the outside."
+      },
+      {
+        "id": "NV_7_29_19",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q19.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The inner shape is always shaded on the left side, regardless of where it is placed. Option A is shaded on the top."
+      },
+      {
+        "id": "NV_7_29_20",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Radial_Q20.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The inner shape is half-shaded towards the outside of the large shape. Option D is shaded towards the inside."
+      },
+      {
+        "id": "NV_7_29_21",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q21.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The inner shape is always shaded on the right side, regardless of where it is placed. Option D is shaded on the left."
+      },
+      {
+        "id": "NV_7_29_22",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q22.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The shading points in an anticlockwise direction along the edge. Option C points clockwise."
+      },
+      {
+        "id": "NV_7_29_23",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q23.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The shading points in an clockwise direction along the edge. Option E points anticlockwise."
+      },
+      {
+        "id": "NV_7_29_24",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q24.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The shading points in an anticlockwise direction along the edge. Option C points clockwise."
+      },
+      {
+        "id": "NV_7_29_25",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q25.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The inner shape is always shaded on the top side, regardless of where it is placed. Option E is shaded on the bottom."
+      },
+      {
+        "id": "NV_7_29_26",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q26.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The shading points in an clockwise direction along the edge. Option D points anticlockwise."
+      },
+      {
+        "id": "NV_7_29_27",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q27.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The inner shape is always shaded on the bottom side, regardless of where it is placed. Option D is shaded on the right."
+      },
+      {
+        "id": "NV_7_29_28",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Radial_Q28.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The inner shape is half-shaded towards the inside of the large shape. Option B is shaded towards the outside."
+      },
+      {
+        "id": "NV_7_29_29",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q29.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The inner shape is always shaded on the left side, regardless of where it is placed. Option C is shaded on the right."
+      },
+      {
+        "id": "NV_7_29_30",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q30.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The inner shape is always shaded on the bottom side, regardless of where it is placed. Option D is shaded on the right."
+      },
+      {
+        "id": "NV_7_29_31",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Radial_Q31.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The inner shape is half-shaded towards the outside of the large shape. Option B is shaded towards the inside."
+      },
+      {
+        "id": "NV_7_29_32",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q32.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The shading points in an anticlockwise direction along the edge. Option B points clockwise."
+      },
+      {
+        "id": "NV_7_29_33",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q33.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The shading points in an clockwise direction along the edge. Option C points anticlockwise."
+      },
+      {
+        "id": "NV_7_29_34",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q34.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The inner shape is always shaded on the top side, regardless of where it is placed. Option D is shaded on the bottom."
+      },
+      {
+        "id": "NV_7_29_35",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q35.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The inner shape is always shaded on the right side, regardless of where it is placed. Option D is shaded on the bottom."
+      },
+      {
+        "id": "NV_7_29_36",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q36.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The shading points in an clockwise direction along the edge. Option C points anticlockwise."
+      },
+      {
+        "id": "NV_7_29_37",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q37.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The inner shape is always shaded on the bottom side, regardless of where it is placed. Option E is shaded on the left."
+      },
+      {
+        "id": "NV_7_29_38",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q38.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The shading points in an clockwise direction along the edge. Option E points anticlockwise."
+      },
+      {
+        "id": "NV_7_29_39",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q39.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The inner shape is always shaded on the bottom side, regardless of where it is placed. Option B is shaded on the top."
+      },
+      {
+        "id": "NV_7_29_40",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q40.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The inner shape is always shaded on the top side, regardless of where it is placed. Option C is shaded on the right."
+      },
+      {
+        "id": "NV_7_29_41",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q41.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The shading points in an clockwise direction along the edge. Option C points anticlockwise."
+      },
+      {
+        "id": "NV_7_29_42",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q42.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The shading points in an clockwise direction along the edge. Option B points anticlockwise."
+      },
+      {
+        "id": "NV_7_29_43",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q43.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The shading points in an anticlockwise direction along the edge. Option C points clockwise."
+      },
+      {
+        "id": "NV_7_29_44",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q44.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The shading points in an clockwise direction along the edge. Option A points anticlockwise."
+      },
+      {
+        "id": "NV_7_29_45",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q45.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The inner shape is always shaded on the bottom side, regardless of where it is placed. Option D is shaded on the right."
+      },
+      {
+        "id": "NV_7_29_46",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q46.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The inner shape is always shaded on the right side, regardless of where it is placed. Option C is shaded on the left."
+      },
+      {
+        "id": "NV_7_29_47",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q47.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The inner shape is always shaded on the bottom side, regardless of where it is placed. Option E is shaded on the left."
+      },
+      {
+        "id": "NV_7_29_48",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Radial_Q48.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The inner shape is half-shaded towards the outside of the large shape. Option C is shaded towards the inside."
+      },
+      {
+        "id": "NV_7_29_49",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Absolute_Q49.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The inner shape is always shaded on the right side, regardless of where it is placed. Option E is shaded on the bottom."
+      },
+      {
+        "id": "NV_7_29_50",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Shaded_Tangential_Q50.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The shading points in an anticlockwise direction along the edge. Option A points clockwise."
+      },
+      {
+        "id": "NV_7_30_1",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q1.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The main shape is a convex polygon. Option A is the odd one out because it is a concave shape."
+      },
+      {
+        "id": "NV_7_30_2",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q2.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The main shape is a convex polygon. Option B is the odd one out because it is a concave shape."
+      },
+      {
+        "id": "NV_7_30_3",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q3.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The main shape is a convex polygon. Option A is the odd one out because it is a concave shape."
+      },
+      {
+        "id": "NV_7_30_4",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q4.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The main shape has an odd number of sides. Option A is the odd one out because it has an even number of sides."
+      },
+      {
+        "id": "NV_7_30_5",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q5.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The main shape has an even number of sides. Option B is the odd one out because it has an odd number of sides."
+      },
+      {
+        "id": "NV_7_30_6",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q6.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The arrow passes through the center of the shape. Option D is the odd one out because it passes through the center."
+      },
+      {
+        "id": "NV_7_30_7",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q7.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The main shape has an even number of sides. Option E is the odd one out because it has an odd number of sides."
+      },
+      {
+        "id": "NV_7_30_8",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q8.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The arrow passes off-center of the shape. Option C is the odd one out because it passes off-center."
+      },
+      {
+        "id": "NV_7_30_9",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q9.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The arrow passes through the center of the shape. Option B is the odd one out because it passes through the center."
+      },
+      {
+        "id": "NV_7_30_10",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q10.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The main shape is a concave polygon. Option C is the odd one out because it is a convex shape."
+      },
+      {
+        "id": "NV_7_30_11",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q11.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The arrow passes through the center of the shape. Option C is the odd one out because it passes through the center."
+      },
+      {
+        "id": "NV_7_30_12",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q12.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The main shape has an even number of sides. Option C is the odd one out because it has an odd number of sides."
+      },
+      {
+        "id": "NV_7_30_13",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q13.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The main shape has an odd number of sides. Option D is the odd one out because it has an even number of sides."
+      },
+      {
+        "id": "NV_7_30_14",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q14.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The main shape is a concave polygon. Option D is the odd one out because it is a convex shape."
+      },
+      {
+        "id": "NV_7_30_15",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q15.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The main shape is a concave polygon. Option D is the odd one out because it is a convex shape."
+      },
+      {
+        "id": "NV_7_30_16",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q16.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The main shape is a concave polygon. Option C is the odd one out because it is a convex shape."
+      },
+      {
+        "id": "NV_7_30_17",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q17.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The arrow passes off-center of the shape. Option C is the odd one out because it passes off-center."
+      },
+      {
+        "id": "NV_7_30_18",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q18.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The main shape is a concave polygon. Option D is the odd one out because it is a convex shape."
+      },
+      {
+        "id": "NV_7_30_19",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q19.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The arrow passes off-center of the shape. Option E is the odd one out because it passes off-center."
+      },
+      {
+        "id": "NV_7_30_20",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q20.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The arrow passes off-center of the shape. Option B is the odd one out because it passes off-center."
+      },
+      {
+        "id": "NV_7_30_21",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q21.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The main shape has an odd number of sides. Option A is the odd one out because it has an even number of sides."
+      },
+      {
+        "id": "NV_7_30_22",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q22.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The main shape has an even number of sides. Option E is the odd one out because it has an odd number of sides."
+      },
+      {
+        "id": "NV_7_30_23",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q23.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The main shape has an even number of sides. Option D is the odd one out because it has an odd number of sides."
+      },
+      {
+        "id": "NV_7_30_24",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q24.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The arrow passes through the center of the shape. Option B is the odd one out because it passes through the center."
+      },
+      {
+        "id": "NV_7_30_25",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q25.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The main shape has an even number of sides. Option B is the odd one out because it has an odd number of sides."
+      },
+      {
+        "id": "NV_7_30_26",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q26.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The main shape is a concave polygon. Option E is the odd one out because it is a convex shape."
+      },
+      {
+        "id": "NV_7_30_27",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q27.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The main shape is a convex polygon. Option D is the odd one out because it is a concave shape."
+      },
+      {
+        "id": "NV_7_30_28",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q28.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The main shape has an odd number of sides. Option E is the odd one out because it has an even number of sides."
+      },
+      {
+        "id": "NV_7_30_29",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q29.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The main shape has an odd number of sides. Option A is the odd one out because it has an even number of sides."
+      },
+      {
+        "id": "NV_7_30_30",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q30.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The main shape has an odd number of sides. Option D is the odd one out because it has an even number of sides."
+      },
+      {
+        "id": "NV_7_30_31",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q31.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The main shape is a convex polygon. Option E is the odd one out because it is a concave shape."
+      },
+      {
+        "id": "NV_7_30_32",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q32.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The arrow passes through the center of the shape. Option D is the odd one out because it passes through the center."
+      },
+      {
+        "id": "NV_7_30_33",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q33.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The arrow passes off-center of the shape. Option B is the odd one out because it passes off-center."
+      },
+      {
+        "id": "NV_7_30_34",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q34.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The main shape has an even number of sides. Option D is the odd one out because it has an odd number of sides."
+      },
+      {
+        "id": "NV_7_30_35",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q35.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The main shape has an odd number of sides. Option D is the odd one out because it has an even number of sides."
+      },
+      {
+        "id": "NV_7_30_36",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q36.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The main shape has an even number of sides. Option A is the odd one out because it has an odd number of sides."
+      },
+      {
+        "id": "NV_7_30_37",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q37.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The arrow passes through the center of the shape. Option E is the odd one out because it passes through the center."
+      },
+      {
+        "id": "NV_7_30_38",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q38.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The main shape has an odd number of sides. Option D is the odd one out because it has an even number of sides."
+      },
+      {
+        "id": "NV_7_30_39",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q39.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The main shape is a concave polygon. Option A is the odd one out because it is a convex shape."
+      },
+      {
+        "id": "NV_7_30_40",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q40.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The main shape has an odd number of sides. Option A is the odd one out because it has an even number of sides."
+      },
+      {
+        "id": "NV_7_30_41",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q41.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The main shape has an odd number of sides. Option E is the odd one out because it has an even number of sides."
+      },
+      {
+        "id": "NV_7_30_42",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q42.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The main shape is a convex polygon. Option C is the odd one out because it is a concave shape."
+      },
+      {
+        "id": "NV_7_30_43",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q43.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The main shape has an even number of sides. Option E is the odd one out because it has an odd number of sides."
+      },
+      {
+        "id": "NV_7_30_44",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q44.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The main shape is a convex polygon. Option E is the odd one out because it is a concave shape."
+      },
+      {
+        "id": "NV_7_30_45",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q45.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The main shape has an even number of sides. Option C is the odd one out because it has an odd number of sides."
+      },
+      {
+        "id": "NV_7_30_46",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q46.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The main shape has an odd number of sides. Option C is the odd one out because it has an even number of sides."
+      },
+      {
+        "id": "NV_7_30_47",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q47.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The main shape has an even number of sides. Option B is the odd one out because it has an odd number of sides."
+      },
+      {
+        "id": "NV_7_30_48",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q48.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The arrow passes off-center of the shape. Option D is the odd one out because it passes off-center."
+      },
+      {
+        "id": "NV_7_30_49",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q49.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The arrow passes through the center of the shape. Option D is the odd one out because it passes through the center."
+      },
+      {
+        "id": "NV_7_30_50",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Arrows_Q50.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The main shape has an even number of sides. Option B is the odd one out because it has an odd number of sides."
+      },
+      {
+        "id": "NV_7_32_1",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q1.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: Sides = Dashes. Option C is the odd one out because it has 4 sides and 4 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_2",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q2.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: Sides = Dashes. Option C is the odd one out because it has 4 sides and 4 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_3",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q3.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: Sides = Dashes. Option E is the odd one out because it has 7 sides and 3 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_4",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q4.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: Sides = Dots. Option B is the odd one out because it has 7 sides and 7 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_5",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q5.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: Sides = Dashes. Option E is the odd one out because it has 6 sides and 7 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_6",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q6.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: Sides = Dots. Option E is the odd one out because it has 7 sides and 3 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_7",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q7.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: Sides = Dashes. Option E is the odd one out because it has 3 sides and 6 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_8",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q8.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: Sides = Dots. Option D is the odd one out because it has 7 sides and 7 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_9",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q9.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: Sides = Dots. Option E is the odd one out because it has 4 sides and 7 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_10",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q10.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: Dots = Dashes. Option D is the odd one out because it has 7 dots and 7 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_11",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q11.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: Sides = Dots. Option C is the odd one out because it has 3 sides and 3 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_12",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q12.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: Sides = Dots. Option C is the odd one out because it has 3 sides and 3 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_13",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q13.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: Sides = Dashes. Option B is the odd one out because it has 3 sides and 3 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_14",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q14.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: Sides = Dots. Option C is the odd one out because it has 4 sides and 4 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_15",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q15.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: Dots = Dashes. Option D is the odd one out because it has 4 dots and 4 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_16",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q16.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: Sides = Dashes. Option D is the odd one out because it has 4 sides and 4 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_17",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q17.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: Sides = Dashes. Option D is the odd one out because it has 7 sides and 7 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_18",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q18.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: Dots = Dashes. Option B is the odd one out because it has 4 dots and 4 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_19",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q19.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: Sides = Dashes. Option D is the odd one out because it has 4 sides and 4 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_20",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q20.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: Sides = Dashes. Option B is the odd one out because it has 5 sides and 5 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_21",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q21.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: Dots = Dashes. Option A is the odd one out because it has 7 dots and 7 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_22",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q22.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: Sides = Dashes. Option B is the odd one out because it has 3 sides and 3 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_23",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q23.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: Sides = Dashes. Option E is the odd one out because it has 4 sides and 6 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_24",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q24.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: Sides = Dots. Option B is the odd one out because it has 7 sides and 7 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_25",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q25.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: Sides = Dashes. Option C is the odd one out because it has 4 sides and 4 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_26",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q26.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: Sides = Dots. Option E is the odd one out because it has 3 sides and 4 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_27",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q27.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: Sides = Dots. Option E is the odd one out because it has 4 sides and 3 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_28",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q28.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: Dots = Dashes. Option B is the odd one out because it has 3 dots and 3 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_29",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q29.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: Sides = Dashes. Option E is the odd one out because it has 4 sides and 3 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_30",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q30.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: Sides = Dots. Option C is the odd one out because it has 5 sides and 5 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_31",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q31.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: Sides = Dots. Option B is the odd one out because it has 4 sides and 4 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_32",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q32.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: Sides = Dots. Option D is the odd one out because it has 6 sides and 6 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_33",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q33.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: Dots = Dashes. Option A is the odd one out because it has 4 dots and 4 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_34",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q34.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: Sides = Dashes. Option C is the odd one out because it has 5 sides and 5 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_35",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q35.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: Sides = Dashes. Option D is the odd one out because it has 5 sides and 5 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_36",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q36.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: Dots = Dashes. Option A is the odd one out because it has 4 dots and 4 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_37",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q37.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: Sides = Dashes. Option D is the odd one out because it has 4 sides and 4 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_38",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q38.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: Sides = Dots. Option A is the odd one out because it has 6 sides and 6 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_39",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q39.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: Dots = Dashes. Option A is the odd one out because it has 3 dots and 3 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_40",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q40.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: Sides = Dashes. Option C is the odd one out because it has 5 sides and 5 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_41",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q41.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: Sides = Dots. Option D is the odd one out because it has 5 sides and 5 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_42",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q42.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: Dots = Dashes. Option E is the odd one out because it has 3 dots and 6 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_43",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q43.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: Dots = Dashes. Option A is the odd one out because it has 6 dots and 6 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_44",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q44.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: Sides = Dots. Option C is the odd one out because it has 6 sides and 6 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_45",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q45.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: Sides = Dashes. Option A is the odd one out because it has 3 sides and 3 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_32_46",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q46.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: Dots = Dashes. Option D is the odd one out because it has 5 dots and 5 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_47",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q47.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: Dots = Dashes. Option A is the odd one out because it has 6 dots and 6 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_48",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q48.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: Dots = Dashes. Option B is the odd one out because it has 7 dots and 7 dashes. (Polygon shape acts as a distractor)."
+      },
+      {
+        "id": "NV_7_32_49",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q49.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: Sides = Dots. Option B is the odd one out because it has 7 sides and 7 dots. (Dashes act as distractors)."
+      },
+      {
+        "id": "NV_7_32_50",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Count_Logic_Q50.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: Sides = Dashes. Option D is the odd one out because it has 5 sides and 5 dashes. (Dots act as distractors)."
+      },
+      {
+        "id": "NV_7_34_1",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q1.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option C is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_2",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q2.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option E is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_3",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q3.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option B is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_4",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q4.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option E is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_5",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q5.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option B is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_6",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q6.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option C is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_7",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q7.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option E is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_8",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q8.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option D is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_9",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q9.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option D is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_10",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q10.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option A is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_11",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q11.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option E is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_12",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q12.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option C is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_13",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q13.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option A is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_14",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q14.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option D is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_15",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q15.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option A is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_16",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q16.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option E is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_17",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q17.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option B is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_18",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q18.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option B is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_19",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q19.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option C is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_20",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q20.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option D is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_21",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q21.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option D is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_22",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q22.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option C is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_23",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q23.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option E is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_24",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q24.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option A is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_25",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q25.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option D is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_26",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q26.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option A is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_27",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q27.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option B is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_28",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q28.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option B is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_29",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q29.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option B is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_30",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q30.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option D is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_31",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q31.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option C is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_32",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q32.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option E is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_33",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q33.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option C is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_34",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q34.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option B is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_35",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q35.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option E is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_36",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q36.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option B is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_37",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q37.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "D",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option D is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_38",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q38.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option C is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_39",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q39.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option B is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_40",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q40.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option C is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_41",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q41.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option E is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_42",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q42.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "E",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option E is the odd one out because the front and back shapes are identical."
+      },
+      {
+        "id": "NV_7_34_43",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q43.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option B is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_44",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q44.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option A is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_45",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q45.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option B is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_46",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q46.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option B is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_47",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q47.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option C is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_48",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q48.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "C",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option C is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_49",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q49.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "A",
+        "explanation": "Rule: The white front shape and the black back shape are identical. Option A is the odd one out because the front and back shapes are different."
+      },
+      {
+        "id": "NV_7_34_50",
+        "question": "Which figure is the odd one out?",
+        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/WhiteFront_Q50.png",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Rule: The white front shape and the black back shape are different from each other. Option B is the odd one out because the front and back shapes are identical."
       }
     ]
   },
