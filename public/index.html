@@ -26,7 +26,18 @@
     <script>
         // GLOBAL ERROR HANDLER FOR DEBUGGING
         window.onerror = function (message, source, lineno, colno, error) {
-            console.error('Captured Error:', message);
+            console.error('Captured Error:', message, source);
+            
+            // Auto-reload once on chunk loading error (stale JS cache fetching HTML)
+            if (message.includes("Unexpected token '<'") || (message.includes('SyntaxError') && source && source.includes('.js'))) {
+                const reloadCount = sessionStorage.getItem('chunk_reload') || 0;
+                if (Number(reloadCount) < 1) {
+                    sessionStorage.setItem('chunk_reload', '1');
+                    window.location.reload(true);
+                    return true; // Stop execution
+                }
+            }
+
             const errorDiv = document.createElement('div');
             errorDiv.style.position = 'fixed';
             errorDiv.style.top = '0';
@@ -40,7 +51,7 @@
             errorDiv.style.zIndex = '9999999';
             errorDiv.style.whiteSpace = 'pre-wrap';
             errorDiv.style.fontFamily = 'monospace';
-            errorDiv.innerText = 'CRITICAL ERROR:\n' + message + '\n\nLocation: ' + source + ':' + lineno;
+            errorDiv.innerText = 'CRITICAL ERROR:\n' + message + '\n\nLocation: ' + source + ':' + lineno + '\n\nPlease clear your browser cache and refresh.';
             document.body.appendChild(errorDiv);
         };
 
