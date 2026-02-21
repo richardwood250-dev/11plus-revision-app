@@ -20,6 +20,7 @@ import { BlogPostScreen } from './screens/BlogPostScreen';
 import { DashboardScreen } from './screens/DashboardScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { SetupScreen } from './screens/SetupScreen';
+import { initializeAuth, getProfile } from './utils/storage';
 
 // --- Components ---
 // import { AdRail } from './components/AdRail'; // Hiding Ads per request
@@ -36,6 +37,20 @@ export default function App() {
   // const showAds = screenW > 900; // Hiding Ads
   const showAds = false;
   const [showInterstitial, setShowInterstitial] = useState(false);
+  const [isSetupComplete, setIsSetupComplete] = useState(false);
+  const [isCheckingSetup, setIsCheckingSetup] = useState(true);
+
+  useEffect(() => {
+    const initApp = async () => {
+      await initializeAuth();
+      const profile = await getProfile();
+      if (profile) {
+        setIsSetupComplete(true);
+      }
+      setIsCheckingSetup(false);
+    };
+    initApp();
+  }, []);
 
   // ... (effects remain)
 
@@ -56,47 +71,61 @@ export default function App() {
         {/* ... rest of app ... */}
         <InterstitialAd visible={showInterstitial} onClose={() => setShowInterstitial(false)} />
 
-        <View style={styles.webContainer}>
-          {/* ... navigation container ... */}
-          <NavigationContainer linking={{
-            prefixes: [Linking.createURL('/'), 'https://11plusninja.com'],
-            config: {
-              screens: {
-                Settings: 'settings',
-                Home: '', // Default route
-                StudentDojoTest: 'test-dojo',
-                Blog: 'blog',
-                BlogPost: 'blog/:slug',
-                Dashboard: 'dashboard',
+        {isCheckingSetup ? (
+          <View style={styles.container}>
+            <Text style={{ marginTop: 100, fontSize: 18, color: '#666' }}>Loading...</Text>
+          </View>
+        ) : (
+          <View style={styles.webContainer}>
+            {/* ... navigation container ... */}
+            <NavigationContainer linking={{
+              prefixes: [Linking.createURL('/'), 'https://11plusninja.com'],
+              config: {
+                screens: {
+                  Settings: 'settings',
+                  Home: '', // Default route
+                  StudentDojoTest: 'test-dojo',
+                  Blog: 'blog',
+                  BlogPost: 'blog/:slug',
+                  Dashboard: 'dashboard',
+                }
               }
-            }
-          }}>
-            <Stack.Navigator screenOptions={{
-              headerStyle: { backgroundColor: Colors.primary },
-              headerTintColor: '#fff',
-              headerStatusBarHeight: Platform.OS === 'android' ? StatusBar.currentHeight : undefined
             }}>
-              <Stack.Screen name="Home" component={StudentHomeScreen} options={{ headerShown: false }} />
-              <Stack.Screen name="Subject" component={SubjectScreen} options={({ route }) => ({ title: route.params.title })} />
-              <Stack.Screen name="Quiz" component={QuizScreen} />
-              <Stack.Screen name="QuizConfig" component={QuizConfigScreen} options={{ title: "Setup Quiz" }} />
-              <Stack.Screen name="Test" component={TestScreen} options={{ title: "Maths Test" }} />
-              <Stack.Screen name="Comprehension" component={ComprehensionScreen} options={{ title: "English Comprehension" }} />
-              <Stack.Screen name="Blog" component={BlogScreen} options={{ title: "Ninja Blog", headerShown: false }} />
-              <Stack.Screen name="BlogPost" component={BlogPostScreen} options={{ title: "Article", headerBackTitle: "Blog", headerShown: false }} />
-              <Stack.Screen name="Dashboard" component={DashboardScreen} />
-              <Stack.Screen name="Settings" component={SettingsScreen} />
-            </Stack.Navigator>
-          </NavigationContainer>
+              <Stack.Navigator screenOptions={{
+                headerStyle: { backgroundColor: Colors.primary },
+                headerTintColor: '#fff',
+                headerStatusBarHeight: Platform.OS === 'android' ? StatusBar.currentHeight : undefined
+              }}>
+                {!isSetupComplete ? (
+                  <Stack.Screen name="Setup" options={{ headerShown: false }}>
+                    {props => <SetupScreen {...props} onFinish={() => setIsSetupComplete(true)} />}
+                  </Stack.Screen>
+                ) : (
+                  <>
+                    <Stack.Screen name="Home" component={StudentHomeScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="Subject" component={SubjectScreen} options={({ route }) => ({ title: route.params.title })} />
+                    <Stack.Screen name="Quiz" component={QuizScreen} />
+                    <Stack.Screen name="QuizConfig" component={QuizConfigScreen} options={{ title: "Setup Quiz" }} />
+                    <Stack.Screen name="Test" component={TestScreen} options={{ title: "Maths Test" }} />
+                    <Stack.Screen name="Comprehension" component={ComprehensionScreen} options={{ title: "English Comprehension" }} />
+                    <Stack.Screen name="Blog" component={BlogScreen} options={{ title: "Ninja Blog", headerShown: false }} />
+                    <Stack.Screen name="BlogPost" component={BlogPostScreen} options={{ title: "Article", headerBackTitle: "Blog", headerShown: false }} />
+                    <Stack.Screen name="Dashboard" component={DashboardScreen} />
+                    <Stack.Screen name="Settings" component={SettingsScreen} />
+                  </>
+                )}
+              </Stack.Navigator>
+            </NavigationContainer>
 
-          {/* Dev Trigger for Interstitial */}
-          {!showAds && <TouchableOpacity
-            style={{ position: 'absolute', bottom: 10, right: 10, backgroundColor: 'rgba(0,0,0,0.5)', padding: 5, borderRadius: 5 }}
-            onPress={() => setShowInterstitial(true)}
-          >
-            <Text style={{ color: '#fff', fontSize: 10 }}>Ad Test</Text>
-          </TouchableOpacity>}
-        </View>
+            {/* Dev Trigger for Interstitial */}
+            {!showAds && <TouchableOpacity
+              style={{ position: 'absolute', bottom: 10, right: 10, backgroundColor: 'rgba(0,0,0,0.5)', padding: 5, borderRadius: 5 }}
+              onPress={() => setShowInterstitial(true)}
+            >
+              <Text style={{ color: '#fff', fontSize: 10 }}>Ad Test</Text>
+            </TouchableOpacity>}
+          </View>
+        )}
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );

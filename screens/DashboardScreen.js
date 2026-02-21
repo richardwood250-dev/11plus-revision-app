@@ -10,6 +10,7 @@ import { FlatIcon } from '../components/Icons';
 
 export const DashboardScreen = () => {
     const [stats, setStats] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
     const isFocused = useIsFocused();
     const [profile, setProfile] = useState(null);
     const [selectedSubject, setSelectedSubject] = useState(null);
@@ -18,16 +19,30 @@ export const DashboardScreen = () => {
     useEffect(() => {
         if (isFocused) {
             const loadStats = async () => {
+                setIsLoading(true);
                 const data = await getStats();
                 const p = await getProfile();
                 setStats(data);
                 setProfile(p);
+                setIsLoading(false);
             };
             loadStats();
         }
     }, [isFocused]);
 
-    if (!stats) return <View style={styles.container}><Text>Loading...</Text></View>;
+    if (isLoading) return <View style={styles.container}><Text style={{ marginTop: 20 }}>Loading...</Text></View>;
+
+    if (!stats || !stats.bySubject || Object.keys(stats.bySubject).length === 0) {
+        return (
+            <View style={styles.container}>
+                <BackgroundWatermark />
+                <ScrollView contentContainerStyle={styles.scroll}>
+                    <Text style={styles.title}>{profile ? `${profile.name}'s Progress 📊` : 'Your Progress 🏆'}</Text>
+                    <Text style={styles.placeholderText}>No quizzes played yet! Jump into the Dojo to get started.</Text>
+                </ScrollView>
+            </View>
+        );
+    }
 
     const subjects = ['Maths', 'English', 'Verbal', 'Non-Verbal'];
 
