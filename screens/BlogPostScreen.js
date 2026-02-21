@@ -133,7 +133,7 @@ export const BlogPostScreen = () => {
                                 // Fallback just in case
                                 navigation.navigate('Test');
                             } else if (block.action === 'QuickStart') {
-                                const quizConfig = getRandomQuiz();
+                                let quizConfig = getRandomQuiz();
                                 if (quizConfig.config.subject === 'English') {
                                     try {
                                         setIsLoadingEnglish(true);
@@ -148,10 +148,10 @@ export const BlogPostScreen = () => {
                                     navigation.navigate('Quiz', quizConfig);
                                 }
                             } else if (block.action === 'NvrSprint') {
-                                const quizConfig = getQuiz('Non-Verbal', 'Matrices');
+                                let quizConfig = getQuiz('Non-Verbal', 'Matrices');
                                 navigation.navigate('Quiz', quizConfig);
                             } else if (block.action === 'MathsSpeed') {
-                                const quizConfig = getQuiz('Maths', 'General');
+                                let quizConfig = getQuiz('Maths', 'General');
                                 navigation.navigate('Quiz', quizConfig);
                             } else {
                                 console.log('Action:', block.action);
