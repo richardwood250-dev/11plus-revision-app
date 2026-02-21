@@ -3,7 +3,7 @@ import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Dimensions, Anima
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { BLOG_POSTS } from '../data/blogPosts';
 import { Header } from '../components/Header';
-import { getRandomQuiz } from '../utils/quickQuizGenerator';
+import { getRandomQuiz, getQuiz } from '../utils/quickQuizGenerator';
 import { fetchEnglishQuiz } from '../utils/englishLoader';
 
 import { Colors as BaseColors } from '../constants/Colors';
@@ -130,8 +130,7 @@ export const BlogPostScreen = () => {
                         disabled={block.action === 'QuickStart' && isLoadingEnglish}
                         onPress={async () => {
                             if (block.action === 'StudentDojoTest') {
-                                // Navigate only if we are in the App context
-                                // If integrated into main stack, this works.
+                                // Fallback just in case
                                 navigation.navigate('Test');
                             } else if (block.action === 'QuickStart') {
                                 const quizConfig = getRandomQuiz();
@@ -148,6 +147,12 @@ export const BlogPostScreen = () => {
                                 } else {
                                     navigation.navigate('Quiz', quizConfig);
                                 }
+                            } else if (block.action === 'NvrSprint') {
+                                const quizConfig = getQuiz('Non-Verbal', 'Matrices');
+                                navigation.navigate('Quiz', quizConfig);
+                            } else if (block.action === 'MathsSpeed') {
+                                const quizConfig = getQuiz('Maths', 'General');
+                                navigation.navigate('Quiz', quizConfig);
                             } else {
                                 console.log('Action:', block.action);
                             }

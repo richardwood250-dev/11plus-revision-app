@@ -40,7 +40,7 @@ export const BLOG_POSTS = [
             {
                 type: 'cta',
                 text: "Ready to spot some patterns? Try a quick NVR Sprint.",
-                action: 'StudentDojoTest',
+                action: 'NvrSprint',
                 buttonLabel: "Try an NVR Sprint"
             },
             {
@@ -98,7 +98,7 @@ export const BLOG_POSTS = [
             {
                 type: 'cta',
                 text: "Test Your Speed: Take a 2-Minute Timed Quiz",
-                action: 'StudentDojoTest',
+                action: 'MathsSpeed',
                 buttonLabel: "Start Speed Quiz"
             },
             {
