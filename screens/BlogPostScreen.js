@@ -3,6 +3,8 @@ import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Dimensions, Anima
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { BLOG_POSTS } from '../data/blogPosts';
 import { Header } from '../components/Header';
+import { getRandomQuiz } from '../utils/quickQuizGenerator';
+import { fetchEnglishQuiz } from '../utils/englishLoader';
 
 import { Colors as BaseColors } from '../constants/Colors';
 
@@ -24,6 +26,7 @@ export const BlogPostScreen = () => {
     const scrollViewRef = useRef(null);
     const [contentHeight, setContentHeight] = useState(1);
     const [containerHeight, setContainerHeight] = useState(1);
+    const [isLoadingEnglish, setIsLoadingEnglish] = useState(false);
 
     // Dynamic SEO Metadata
     React.useEffect(() => {
@@ -123,12 +126,28 @@ export const BlogPostScreen = () => {
                 return (
                     <TouchableOpacity
                         key={index}
-                        style={styles.ctaBox}
-                        onPress={() => {
+                        style={[styles.ctaBox, block.action === 'QuickStart' && isLoadingEnglish && { opacity: 0.6 }]}
+                        disabled={block.action === 'QuickStart' && isLoadingEnglish}
+                        onPress={async () => {
                             if (block.action === 'StudentDojoTest') {
                                 // Navigate only if we are in the App context
                                 // If integrated into main stack, this works.
                                 navigation.navigate('Test');
+                            } else if (block.action === 'QuickStart') {
+                                const quizConfig = getRandomQuiz();
+                                if (quizConfig.config.subject === 'English') {
+                                    try {
+                                        setIsLoadingEnglish(true);
+                                        const data = await fetchEnglishQuiz();
+                                        setIsLoadingEnglish(false);
+                                        navigation.navigate('Comprehension', data);
+                                    } catch (err) {
+                                        setIsLoadingEnglish(false);
+                                        alert("Error: Could not load quiz: " + err.message);
+                                    }
+                                } else {
+                                    navigation.navigate('Quiz', quizConfig);
+                                }
                             } else {
                                 console.log('Action:', block.action);
                             }
@@ -136,7 +155,9 @@ export const BlogPostScreen = () => {
                     >
                         <Text style={styles.ctaText}>{block.text}</Text>
                         <View style={styles.ctaButton}>
-                            <Text style={styles.ctaButtonText}>{block.buttonLabel}</Text>
+                            <Text style={styles.ctaButtonText}>
+                                {(block.action === 'QuickStart' && isLoadingEnglish) ? 'Loading...' : block.buttonLabel}
+                            </Text>
                         </View>
                     </TouchableOpacity>
                 );

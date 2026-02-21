@@ -203,7 +203,7 @@ export const BLOG_POSTS = [
             {
                 type: 'cta',
                 text: "🥷 Ready to test the waters? Try a 2-minute Sharp Quiz with your child right now.",
-                action: 'StudentDojoTest', // Internal navigation route
+                action: 'QuickStart', // Internal navigation route
                 buttonLabel: "Start Sharp Quiz"
             },
             {
