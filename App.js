@@ -112,6 +112,7 @@ export default function App() {
                     <Stack.Screen name="BlogPost" component={BlogPostScreen} options={{ title: "Article", headerBackTitle: "Blog", headerShown: false }} />
                     <Stack.Screen name="Dashboard" component={DashboardScreen} />
                     <Stack.Screen name="Settings" component={SettingsScreen} />
+                    <Stack.Screen name="Setup" component={SetupScreen} options={{ headerShown: false }} />
                   </>
                 )}
               </Stack.Navigator>

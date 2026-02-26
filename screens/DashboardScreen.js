@@ -1,15 +1,18 @@
 
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, ScrollView, Modal, Alert, StyleSheet, Linking } from 'react-native';
-import { useIsFocused } from '@react-navigation/native';
+import { useIsFocused, useRoute } from '@react-navigation/native';
 import { Colors } from '../constants/Colors';
 import { BackgroundWatermark } from '../components/BackgroundWatermark';
 import { PieChart } from '../components/PieChart';
-import { getStats, getProfile, clearStats } from '../utils/storage';
+import { getStats, getProfiles, getProfile, clearStats, switchProfile } from '../utils/storage';
 import { FlatIcon } from '../components/Icons';
 
-export const DashboardScreen = () => {
+export const DashboardScreen = ({ navigation }) => {
+    const route = useRoute();
     const [stats, setStats] = useState(null);
+    const [profiles, setProfiles] = useState([]);
+    const [showProfileSwitcher, setShowProfileSwitcher] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const isFocused = useIsFocused();
     const [profile, setProfile] = useState(null);
@@ -22,13 +25,37 @@ export const DashboardScreen = () => {
                 setIsLoading(true);
                 const data = await getStats();
                 const p = await getProfile();
+                const allProfiles = await getProfiles();
+
                 setStats(data);
                 setProfile(p);
+                setProfiles(allProfiles);
+
+                // If coming from Parent Dojo and we have multiple profiles, 
+                // prompt the parent to choose which student's progress to view.
+                if (route.params?.select_user && allProfiles.length > 1) {
+                    setShowProfileSwitcher(true);
+                    // Clear the param so it doesn't keep triggering if they navigate away and back
+                    navigation.setParams({ select_user: undefined });
+                }
+
                 setIsLoading(false);
             };
             loadStats();
         }
-    }, [isFocused]);
+    }, [isFocused, route.params]);
+
+    const handleSwitchProfile = async (id) => {
+        await switchProfile(id);
+        setShowProfileSwitcher(false);
+        // Reload data for the newly selected user
+        setIsLoading(true);
+        const data = await getStats();
+        const p = await getProfile();
+        setStats(data);
+        setProfile(p);
+        setIsLoading(false);
+    };
 
     if (isLoading) return <View style={styles.container}><Text style={{ marginTop: 20 }}>Loading...</Text></View>;
 
@@ -131,10 +158,50 @@ export const DashboardScreen = () => {
         </Modal>
     );
 
+    // Profile Switcher Modal
+    const renderProfileSwitcher = () => (
+        <Modal visible={showProfileSwitcher} transparent={true} animationType="fade" onRequestClose={() => setShowProfileSwitcher(false)}>
+            <View style={styles.modalOverlay}>
+                <View style={styles.modalContent}>
+                    <Text style={styles.modalTitle}>Which Student's Progress?</Text>
+
+                    {profiles.map(p => (
+                        <TouchableOpacity
+                            key={p.id}
+                            style={[styles.profileBtn, profile?.id === p.id && styles.activeProfileBtn]}
+                            onPress={() => handleSwitchProfile(p.id)}
+                        >
+                            <Text style={[styles.profileBtnText, profile?.id === p.id && { color: 'white' }]}>{p.name}</Text>
+                            {profile?.id === p.id && <Text style={{ color: 'white' }}>✓</Text>}
+                        </TouchableOpacity>
+                    ))}
+
+                    <TouchableOpacity
+                        style={[styles.profileBtn, { backgroundColor: '#E5E7EB', borderColor: 'transparent' }]}
+                        onPress={() => {
+                            setShowProfileSwitcher(false);
+                            navigation.navigate('Setup');
+                        }}
+                    >
+                        <Text style={styles.profileBtnText}>+ Add New Student</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        style={styles.closeModalBtn}
+                        onPress={() => setShowProfileSwitcher(false)}
+                    >
+                        <Text style={styles.closeModalText}>Cancel</Text>
+                    </TouchableOpacity>
+                </View>
+            </View>
+        </Modal>
+    );
+
     return (
         <View style={styles.container}>
             <BackgroundWatermark />
             {renderExpandedChart()}
+            {renderProfileSwitcher()}
             <ScrollView contentContainerStyle={styles.scroll}>
                 <Text style={styles.title}>{profile ? `${profile.name}'s Progress 📊` : 'Your Progress 🏆'}</Text>
 
@@ -496,6 +563,39 @@ const styles = StyleSheet.create({
         color: 'white',
         fontWeight: 'bold',
         fontSize: 16,
+    },
+    // Switcher Modal Styles
+    profileBtn: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingVertical: 15,
+        paddingHorizontal: 20,
+        borderWidth: 2,
+        borderColor: '#E5E7EB',
+        borderRadius: 12,
+        marginBottom: 10,
+        width: '100%',
+    },
+    activeProfileBtn: {
+        backgroundColor: Colors.primary,
+        borderColor: Colors.primary,
+    },
+    profileBtnText: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: Colors.text,
+    },
+    closeModalBtn: {
+        marginTop: 15,
+        paddingVertical: 12,
+        alignItems: 'center',
+        width: '100%'
+    },
+    closeModalText: {
+        fontSize: 16,
+        color: '#6B7280',
+        fontWeight: '600',
     },
     // Modal Overrides
     modalOverlay: {

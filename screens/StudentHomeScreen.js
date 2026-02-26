@@ -5,7 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { getRandomQuiz, getQuiz } from '../utils/quickQuizGenerator';
 import { fetchEnglishQuiz } from '../utils/englishLoader';
 import { getRecommendation } from '../utils/recommendations';
-import { getStats } from '../utils/storage';
+import { getStats, getProfiles, switchProfile } from '../utils/storage';
 import { getDailyWord } from '../data/vocab';
 import { useFocusEffect } from '@react-navigation/native';
 
@@ -22,19 +22,38 @@ export const StudentHomeScreen = () => {
   const [recommendation, setRecommendation] = React.useState(null);
   const [streak, setStreak] = React.useState(0);
   const [stats, setStats] = React.useState(null);
+  const [profiles, setProfiles] = React.useState([]);
+  const [activeProfile, setActiveProfile] = React.useState(null);
+  const [showProfileSwitcher, setShowProfileSwitcher] = React.useState(false);
+
+  const loadData = async () => {
+    const s = await getStats();
+    setStats(s);
+    if (s) setStreak(s.streak || 0);
+    const rec = getRecommendation(s);
+    setRecommendation(rec);
+
+    // Load profiles
+    const allProfiles = await getProfiles();
+    setProfiles(allProfiles);
+
+    // Determine active profile from import (optional, but good for UI)
+    const { getProfile } = require('../utils/storage');
+    const active = await getProfile();
+    setActiveProfile(active);
+  };
 
   useFocusEffect(
     React.useCallback(() => {
-      const load = async () => {
-        const s = await getStats();
-        setStats(s);
-        if (s) setStreak(s.streak || 0);
-        const rec = getRecommendation(s);
-        setRecommendation(rec);
-      };
-      load();
+      loadData();
     }, [])
   );
+
+  const handleSwitchProfile = async (id) => {
+    await switchProfile(id);
+    setShowProfileSwitcher(false);
+    loadData(); // Reload stats and recommendation for the new user
+  };
 
   const handleSubjectPress = (title) => {
     if (title === 'Maths') {
@@ -89,8 +108,58 @@ export const StudentHomeScreen = () => {
         showsVerticalScrollIndicator={false}
       >
         <Header activeTab="student" />
+
+        {/* Profile Switcher Modal */}
+        {showProfileSwitcher && (
+          <View style={styles.modalOverlay}>
+            <View style={styles.modalContent}>
+              <Text style={styles.modalTitle}>Who's Playing?</Text>
+
+              {profiles.map(p => (
+                <TouchableOpacity
+                  key={p.id}
+                  style={[styles.profileBtn, activeProfile?.id === p.id && styles.activeProfileBtn]}
+                  onPress={() => handleSwitchProfile(p.id)}
+                >
+                  <Text style={[styles.profileBtnText, activeProfile?.id === p.id && { color: 'white' }]}>{p.name}</Text>
+                  {activeProfile?.id === p.id && <Text style={{ color: 'white' }}>✓</Text>}
+                </TouchableOpacity>
+              ))}
+
+              <TouchableOpacity
+                style={[styles.profileBtn, { backgroundColor: '#E5E7EB', borderColor: 'transparent' }]}
+                onPress={() => {
+                  setShowProfileSwitcher(false);
+                  navigation.navigate('Setup');
+                }}
+              >
+                <Text style={styles.profileBtnText}>+ Add New Student</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                style={styles.closeModalBtn}
+                onPress={() => setShowProfileSwitcher(false)}
+              >
+                <Text style={styles.closeModalText}>Cancel</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        )}
+
         <View style={styles.contentContainer}>
-          <Text style={styles.subtitle}>Welcome to the Student Dojo!</Text>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: 15 }}>
+            <Text style={styles.subtitle}>Welcome, {activeProfile?.name || 'Student'}! 🥋</Text>
+            {profiles.length > 1 && (
+              <TouchableOpacity onPress={() => setShowProfileSwitcher(true)} style={styles.switchUserBtn}>
+                <Text style={styles.switchUserBtnText}>Switch User</Text>
+              </TouchableOpacity>
+            )}
+            {profiles.length <= 1 && (
+              <TouchableOpacity onPress={() => setShowProfileSwitcher(true)} style={styles.switchUserBtn}>
+                <Text style={styles.switchUserBtnText}>+ Add User</Text>
+              </TouchableOpacity>
+            )}
+          </View>
         </View>
 
         <DailyVocabCard />
@@ -219,9 +288,14 @@ const styles = StyleSheet.create({
     width: '100%',
     marginBottom: 10
   },
+  contentContainer: {
+    width: '100%',
+    alignItems: 'flex-start',
+  },
   subtitle: {
-    fontSize: 18,
-    color: '#666',
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: Colors.text,
   },
   grid: {
     flexDirection: 'row',
@@ -391,5 +465,76 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#6B7280',
     fontStyle: 'italic',
+  },
+  switchUserBtn: {
+    backgroundColor: '#E5E7EB',
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+    borderRadius: 15,
+  },
+  switchUserBtnText: {
+    fontSize: 12,
+    fontWeight: 'bold',
+    color: '#4B5563',
+  },
+  modalOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    zIndex: 1000,
+    justifyContent: 'center',
+    alignItems: 'center',
+    elevation: 10,
+  },
+  modalContent: {
+    backgroundColor: 'white',
+    width: '85%',
+    borderRadius: 20,
+    padding: 24,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.25,
+    shadowRadius: 10,
+    elevation: 5,
+  },
+  modalTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: Colors.text,
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  profileBtn: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 15,
+    paddingHorizontal: 20,
+    borderWidth: 2,
+    borderColor: '#E5E7EB',
+    borderRadius: 12,
+    marginBottom: 10,
+  },
+  activeProfileBtn: {
+    backgroundColor: Colors.primary,
+    borderColor: Colors.primary,
+  },
+  profileBtnText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: Colors.text,
+  },
+  closeModalBtn: {
+    marginTop: 15,
+    paddingVertical: 12,
+    alignItems: 'center',
+  },
+  closeModalText: {
+    fontSize: 16,
+    color: '#6B7280',
+    fontWeight: '600',
   },
 });

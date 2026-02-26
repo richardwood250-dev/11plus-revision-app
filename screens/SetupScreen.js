@@ -4,7 +4,7 @@ import { saveProfile } from '../utils/storage';
 
 import { Colors } from '../constants/Colors';
 
-export const SetupScreen = ({ onFinish }) => {
+export const SetupScreen = ({ navigation, onFinish }) => {
     const [name, setName] = useState('');
     const [testDate, setTestDate] = useState(null);
 
@@ -43,7 +43,13 @@ export const SetupScreen = ({ onFinish }) => {
         }
 
         await saveProfile(name, testDate);
-        onFinish();
+
+        if (onFinish) {
+            onFinish();
+        } else {
+            // We were navigated here from inside the app to add a new user
+            navigation.goBack();
+        }
     };
 
     return (

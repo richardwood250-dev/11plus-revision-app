@@ -6,16 +6,17 @@ import { signInAnonymously } from 'firebase/auth';
 const STATS_KEY = 'QUIZ_STATS_V1';
 
 // --- CLOUD SYNC HELPERS ---
-const _getDocRef = () => {
+const _getDocRef = (profileId = null) => {
     const user = auth.currentUser;
     if (!user) return null;
-    return doc(db, "users", user.uid);
+    const docId = profileId ? `${user.uid}_${profileId}` : user.uid;
+    return doc(db, "users", docId);
 };
 
 // Sync ONLY stats to cloud (Privacy: No Name/Profile)
-const _syncToCloud = async (stats) => {
+const _syncToCloud = async (stats, profileId = null) => {
     try {
-        const ref = _getDocRef();
+        const ref = _getDocRef(profileId);
         if (ref && stats) {
             // We strip any potential future PII here just to be safe, though stats object currently has none.
             // Stats object structure is purely numerical/categorical.
@@ -28,7 +29,10 @@ const _syncToCloud = async (stats) => {
 
 export const saveSession = async (subject, results, timeInSeconds, topic = 'General') => {
     try {
-        const existing = await AsyncStorage.getItem(STATS_KEY);
+        const activeProfileId = await getActiveProfileId();
+        const CURRENT_STATS_KEY = activeProfileId ? `${STATS_KEY}_${activeProfileId}` : STATS_KEY;
+
+        const existing = await AsyncStorage.getItem(CURRENT_STATS_KEY);
         const stats = existing ? JSON.parse(existing) : {
             totalQuestions: 0,
             totalCorrect: 0,
@@ -202,10 +206,10 @@ export const saveSession = async (subject, results, timeInSeconds, topic = 'Gene
         if (stats.history.length > 50) stats.history = stats.history.slice(0, 50);
 
         // 1. Save Local
-        await AsyncStorage.setItem(STATS_KEY, JSON.stringify(stats));
+        await AsyncStorage.setItem(CURRENT_STATS_KEY, JSON.stringify(stats));
 
         // 2. Sync to Cloud (Fire & Forget mostly, but we await to ensure it kicks off)
-        await _syncToCloud(stats);
+        await _syncToCloud(stats, activeProfileId);
 
         return stats;
     } catch (e) {
@@ -273,17 +277,19 @@ const _ensureRecentScores = (stats) => {
 export const getStats = async () => {
     try {
         let stats = null;
+        const activeProfileId = await getActiveProfileId();
+        const CURRENT_STATS_KEY = activeProfileId ? `${STATS_KEY}_${activeProfileId}` : STATS_KEY;
 
         // 1. Attempt Cloud Fetch (if online & auth)
         // We prefer cloud as it might have data from other devices
-        const ref = _getDocRef();
+        const ref = _getDocRef(activeProfileId);
         if (ref) {
             try {
                 const docSnap = await getDoc(ref);
                 if (docSnap.exists()) {
                     stats = docSnap.data();
                     // Update Local Cache immediately so next offline load is fresh
-                    await AsyncStorage.setItem(STATS_KEY, JSON.stringify(stats));
+                    await AsyncStorage.setItem(CURRENT_STATS_KEY, JSON.stringify(stats));
                 }
             } catch (cloudErr) {
                 // Cloud failed (offline), continue to local
@@ -293,7 +299,7 @@ export const getStats = async () => {
 
         // 2. Fallback to Local if Cloud didn't yield
         if (!stats) {
-            const json = await AsyncStorage.getItem(STATS_KEY);
+            const json = await AsyncStorage.getItem(CURRENT_STATS_KEY);
             stats = json ? JSON.parse(json) : null;
         }
 
@@ -309,12 +315,15 @@ export const getStreak = async () => {
 };
 
 export const clearStats = async () => {
-    await AsyncStorage.removeItem(STATS_KEY);
+    const activeProfileId = await getActiveProfileId();
+    const CURRENT_STATS_KEY = activeProfileId ? `${STATS_KEY}_${activeProfileId}` : STATS_KEY;
+
+    await AsyncStorage.removeItem(CURRENT_STATS_KEY);
     // Optional: Clear cloud too?
     // For now, let's leave cloud as a "backup" unless user specifically asked for full deletion logic.
     // The requirement was to RESET progress.
     // To comply with 'Delete Everything', we should probably wipe cloud too.
-    const ref = _getDocRef();
+    const ref = _getDocRef(activeProfileId);
     if (ref) {
         // We can't easily delete the doc without more cleanup, but we can set it to empty/null or overwrite.
         // Let's just overwrite with empty stats structure if we wanted to be thorough, but
@@ -330,17 +339,99 @@ export const clearStats = async () => {
 };
 
 // --- Profile Storage ---
-const PROFILE_KEY = 'USER_PROFILE_V1';
+const PROFILE_KEY = 'USER_PROFILE_V1'; // Legacy single user key
+const PROFILES_ALL_KEY = 'USER_PROFILES_ALL_V1';
+const ACTIVE_PROFILE_KEY = 'ACTIVE_PROFILE_ID_V1';
 
 export const saveProfile = async (name, testDate) => {
     try {
-        const profile = { name, testDate, joined: new Date().toISOString() };
-        await AsyncStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
+        const id = Date.now().toString();
+        const newProfile = { id, name, testDate, joined: new Date().toISOString() };
+
+        let profiles = [];
+
+        // Check for legacy profile and migrate
+        const legacyJson = await AsyncStorage.getItem(PROFILE_KEY);
+        if (legacyJson) {
+            const legacyProfile = JSON.parse(legacyJson);
+            // Only migrate if we don't already have an ALL array
+            const allJson = await AsyncStorage.getItem(PROFILES_ALL_KEY);
+            if (!allJson) {
+                // Assign an ID to legacy profile (usually 1st user)
+                legacyProfile.id = 'legacy_user_1';
+                profiles.push(legacyProfile);
+
+                // If this is the first ever create after migration, ensure current stats 
+                // belong to legacy_user_1 by leaving them on the root key.
+            }
+        }
+
+        const allJson = await AsyncStorage.getItem(PROFILES_ALL_KEY);
+        if (allJson) {
+            profiles = JSON.parse(allJson);
+        }
+
+        profiles.push(newProfile);
+
+        await AsyncStorage.setItem(PROFILES_ALL_KEY, JSON.stringify(profiles));
+        await AsyncStorage.setItem(ACTIVE_PROFILE_KEY, id);
 
         // PRIVACY NOTE: We do NOT sync this profile to Firebase. 
         // 'name' stays local on the device.
 
-        return profile;
+        return newProfile;
+    } catch (e) {
+        return null;
+    }
+};
+
+export const getProfiles = async () => {
+    try {
+        // Migration check
+        const allJson = await AsyncStorage.getItem(PROFILES_ALL_KEY);
+        if (allJson) {
+            return JSON.parse(allJson);
+        }
+
+        // Fallback to legacy
+        const legacyJson = await AsyncStorage.getItem(PROFILE_KEY);
+        if (legacyJson) {
+            const legacyProfile = JSON.parse(legacyJson);
+            legacyProfile.id = 'legacy_user_1';
+
+            // Auto-migrate
+            await AsyncStorage.setItem(PROFILES_ALL_KEY, JSON.stringify([legacyProfile]));
+            await AsyncStorage.setItem(ACTIVE_PROFILE_KEY, 'legacy_user_1');
+            return [legacyProfile];
+        }
+
+        return [];
+    } catch (e) {
+        return [];
+    }
+};
+
+export const switchProfile = async (id) => {
+    try {
+        await AsyncStorage.setItem(ACTIVE_PROFILE_KEY, id);
+        return true;
+    } catch (e) {
+        return false;
+    }
+};
+
+export const getActiveProfileId = async () => {
+    try {
+        const id = await AsyncStorage.getItem(ACTIVE_PROFILE_KEY);
+        if (id) return id;
+
+        // If no active ID, check if we have legacy user
+        const legacyJson = await AsyncStorage.getItem(PROFILE_KEY);
+        if (legacyJson) {
+            return 'legacy_user_1'; // Our assumed ID for migrated user
+        }
+
+        return null;
     } catch (e) {
         return null;
     }
@@ -348,8 +439,21 @@ export const saveProfile = async (name, testDate) => {
 
 export const getProfile = async () => {
     try {
-        const json = await AsyncStorage.getItem(PROFILE_KEY);
-        return json ? JSON.parse(json) : null;
+        const activeId = await getActiveProfileId();
+        if (!activeId) return null;
+
+        const profiles = await getProfiles();
+        const active = profiles.find(p => p.id === activeId);
+
+        if (active) return active;
+
+        // Fallback robust check
+        if (profiles.length > 0) {
+            await switchProfile(profiles[0].id);
+            return profiles[0];
+        }
+
+        return null;
     } catch (e) {
         return null;
     }
