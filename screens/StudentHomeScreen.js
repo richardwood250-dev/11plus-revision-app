@@ -121,7 +121,10 @@ export const StudentHomeScreen = () => {
                   style={[styles.profileBtn, activeProfile?.id === p.id && styles.activeProfileBtn]}
                   onPress={() => handleSwitchProfile(p.id)}
                 >
-                  <Text style={[styles.profileBtnText, activeProfile?.id === p.id && { color: 'white' }]}>{p.name}</Text>
+                  <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                    <Text style={styles.iconTextModal}>{p.icon || '🤖'}</Text>
+                    <Text style={[styles.profileBtnText, activeProfile?.id === p.id && { color: 'white' }]}>{p.name}</Text>
+                  </View>
                   {activeProfile?.id === p.id && <Text style={{ color: 'white' }}>✓</Text>}
                 </TouchableOpacity>
               ))}
@@ -148,7 +151,7 @@ export const StudentHomeScreen = () => {
 
         <View style={styles.contentContainer}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: 15 }}>
-            <Text style={styles.subtitle}>Welcome, {activeProfile?.name || 'Student'}! 🥋</Text>
+            <Text style={styles.subtitle}>Welcome, {activeProfile?.icon || '🥋'} {activeProfile?.name || 'Student'}!</Text>
             {profiles.length > 1 && (
               <TouchableOpacity onPress={() => setShowProfileSwitcher(true)} style={styles.switchUserBtn}>
                 <Text style={styles.switchUserBtnText}>Switch User</Text>
@@ -526,6 +529,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     color: Colors.text,
+  },
+  iconTextModal: {
+    fontSize: 20,
+    marginRight: 10,
   },
   closeModalBtn: {
     marginTop: 15,

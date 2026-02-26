@@ -343,10 +343,10 @@ const PROFILE_KEY = 'USER_PROFILE_V1'; // Legacy single user key
 const PROFILES_ALL_KEY = 'USER_PROFILES_ALL_V1';
 const ACTIVE_PROFILE_KEY = 'ACTIVE_PROFILE_ID_V1';
 
-export const saveProfile = async (name, testDate) => {
+export const saveProfile = async (name, testDate, icon = '🤖') => {
     try {
         const id = Date.now().toString();
-        const newProfile = { id, name, testDate, joined: new Date().toISOString() };
+        const newProfile = { id, name, testDate, icon, joined: new Date().toISOString() };
 
         let profiles = [];
 
@@ -359,6 +359,7 @@ export const saveProfile = async (name, testDate) => {
             if (!allJson) {
                 // Assign an ID to legacy profile (usually 1st user)
                 legacyProfile.id = 'legacy_user_1';
+                if (!legacyProfile.icon) legacyProfile.icon = '🤖'; // Legacy fallback
                 profiles.push(legacyProfile);
 
                 // If this is the first ever create after migration, ensure current stats 
@@ -390,7 +391,10 @@ export const getProfiles = async () => {
         // Migration check
         const allJson = await AsyncStorage.getItem(PROFILES_ALL_KEY);
         if (allJson) {
-            return JSON.parse(allJson);
+            let loadedProfiles = JSON.parse(allJson);
+            // Ensure backwards compatibility with missing icons
+            loadedProfiles = loadedProfiles.map(p => ({ ...p, icon: p.icon || '🤖' }));
+            return loadedProfiles;
         }
 
         // Fallback to legacy
@@ -398,6 +402,7 @@ export const getProfiles = async () => {
         if (legacyJson) {
             const legacyProfile = JSON.parse(legacyJson);
             legacyProfile.id = 'legacy_user_1';
+            if (!legacyProfile.icon) legacyProfile.icon = '🤖';
 
             // Auto-migrate
             await AsyncStorage.setItem(PROFILES_ALL_KEY, JSON.stringify([legacyProfile]));

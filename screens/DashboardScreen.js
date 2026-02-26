@@ -171,7 +171,10 @@ export const DashboardScreen = ({ navigation }) => {
                             style={[styles.profileBtn, profile?.id === p.id && styles.activeProfileBtn]}
                             onPress={() => handleSwitchProfile(p.id)}
                         >
-                            <Text style={[styles.profileBtnText, profile?.id === p.id && { color: 'white' }]}>{p.name}</Text>
+                            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                <Text style={styles.iconTextModal}>{p.icon || '🤖'}</Text>
+                                <Text style={[styles.profileBtnText, profile?.id === p.id && { color: 'white' }]}>{p.name}</Text>
+                            </View>
                             {profile?.id === p.id && <Text style={{ color: 'white' }}>✓</Text>}
                         </TouchableOpacity>
                     ))}
@@ -585,6 +588,10 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: 'bold',
         color: Colors.text,
+    },
+    iconTextModal: {
+        fontSize: 20,
+        marginRight: 10,
     },
     closeModalBtn: {
         marginTop: 15,

@@ -7,6 +7,9 @@ import { Colors } from '../constants/Colors';
 export const SetupScreen = ({ navigation, onFinish }) => {
     const [name, setName] = useState('');
     const [testDate, setTestDate] = useState(null);
+    const [selectedIcon, setSelectedIcon] = useState('🐯');
+
+    const CHARACTER_ICONS = ['🐯', '🐼', '🦊', '🐙', '🦖', '🦄', '🚀', '⭐', '🐴', '🐶', '🐠', '🐹', '🐧', '🐢', '🦋', '🤖'];
 
     // Calculate next 3 Septembers
     // Rules: If current month >= Oct (9), start next year. Else start this year.
@@ -86,6 +89,24 @@ export const SetupScreen = ({ navigation, onFinish }) => {
                                     styles.dateText,
                                     testDate === date && styles.dateTextSelected
                                 ]}>{date}</Text>
+                            </TouchableOpacity>
+                        ))}
+                    </View>
+                </View>
+
+                <View style={[styles.inputContainer, { zIndex: 5 }]}>
+                    <Text style={styles.label}>Choose your Avatar</Text>
+                    <View style={styles.iconGrid}>
+                        {CHARACTER_ICONS.map((icon, index) => (
+                            <TouchableOpacity
+                                key={index}
+                                style={[
+                                    styles.iconButton,
+                                    selectedIcon === icon && styles.iconButtonSelected
+                                ]}
+                                onPress={() => setSelectedIcon(icon)}
+                            >
+                                <Text style={styles.iconText}>{icon}</Text>
                             </TouchableOpacity>
                         ))}
                     </View>
@@ -176,6 +197,30 @@ const styles = StyleSheet.create({
     },
     dateTextSelected: {
         color: Colors.primary,
+    },
+    iconGrid: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        gap: 10,
+        marginTop: 5,
+    },
+    iconButton: {
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+        backgroundColor: '#F5F5F5',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderWidth: 2,
+        borderColor: 'transparent',
+    },
+    iconButtonSelected: {
+        backgroundColor: '#E3F2FD',
+        borderColor: Colors.primary,
+    },
+    iconText: {
+        fontSize: 24,
     },
     button: {
         backgroundColor: Colors.secondary,
