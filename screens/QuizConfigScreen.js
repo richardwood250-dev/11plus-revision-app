@@ -169,12 +169,23 @@ export const QuizConfigScreen = ({ route }) => {
 
                 // Helper to select diverse questions
                 const selectDiverseQuestions = (questions, count) => {
-                    // Group by ID prefix (e.g. NV_7_21)
+                    // Group by image stem (e.g. Matrix_Asym_1 -> Matrix_Asym)
                     const groups = {};
                     questions.forEach(q => {
-                        const parts = q.id.split('_');
-                        // Use first 3 parts as group key (e.g. NV_7_21)
-                        const key = parts.length >= 3 ? parts.slice(0, 3).join('_') : 'Misc';
+                        let key = 'Misc';
+                        if (q.image) {
+                            try {
+                                let filename = decodeURIComponent(q.image.split('/').pop());
+                                filename = filename.replace(/\\.\\w+$/, '');
+                                filename = filename.replace(/\\s*\\(\\d+\\)$/, '');
+                                filename = filename.replace(/_?\\d+$/, '');
+                                key = filename;
+                            } catch (e) {
+                                key = q.id;
+                            }
+                        } else {
+                            key = q.id;
+                        }
                         if (!groups[key]) groups[key] = [];
                         groups[key].push(q);
                     });

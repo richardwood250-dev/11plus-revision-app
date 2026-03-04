@@ -271,7 +271,20 @@ export const QuizScreen = ({ route }) => {
                                     <Text style={styles.keyText}>{q.key}</Text>
                                 </View>
                             )}
-                            <Text style={styles.questionText}>{q.question}</Text>
+
+                            {/* Special rendering for "Move a letter" which uses "WORD1 & WORD2" format */}
+                            {q.question.includes(' & ') && (title === 'Move a letter' || title === 'Move A Letter' || topic === 'Move a letter') ? (
+                                <View style={styles.twoWordContainer}>
+                                    <Text style={styles.wordBox}>{q.question.split(' & ')[0]}</Text>
+                                    <View style={styles.wordConnector}>
+                                        <Text style={styles.connectorText}>&</Text>
+                                    </View>
+                                    <Text style={styles.wordBox}>{q.question.split(' & ')[1]}</Text>
+                                </View>
+                            ) : (
+                                <Text style={styles.questionText}>{q.question}</Text>
+                            )}
+
                             {q.image && (
                                 <TouchableOpacity onPress={() => openImage(q.image)}>
                                     <ResilientImage
@@ -468,6 +481,34 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: Colors.primary,
         fontFamily: Platform.OS === 'ios' ? 'Courier New' : 'monospace',
+    },
+    twoWordContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginVertical: 15,
+        width: '100%',
+    },
+    wordBox: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: Colors.text,
+        letterSpacing: 2,
+        backgroundColor: '#f5f5f5',
+        paddingHorizontal: 15,
+        paddingVertical: 10,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#ddd',
+        overflow: 'hidden',
+    },
+    wordConnector: {
+        paddingHorizontal: 10,
+    },
+    connectorText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: Colors.primary,
     },
     instructionText: {
         fontSize: 16,

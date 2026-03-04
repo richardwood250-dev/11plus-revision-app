@@ -50,23 +50,24 @@ export const TestScreen = ({ route }) => {
             filtered = questions.filter(q => q.difficultyIndex >= 26);
         }
 
-        // 2. Select Unique Topics (Prefix Rule: First 6 chars of ID)
+        // 2. Select Unique Topics (Prefix Rule)
         // We want to pick 'config.length' questions, but no duplicates of 'key'.
         const shuffled = [...filtered].sort(() => 0.5 - Math.random());
         const selected = [];
-        const usedKeys = new Set(); // Stores first 6 chars of ID
+        const usedKeys = new Set();
 
         for (const q of shuffled) {
             if (selected.length >= config.length) break;
 
-            const key = q.id.substring(0, 6);
+            const key = q.prefix || (q.id ? q.id.split('_')[0] : Math.random().toString());
             if (!usedKeys.has(key)) {
                 selected.push(q);
                 usedKeys.add(key);
             }
         }
 
-
+        // Fallback loop removed to prevent duplicate variations.
+        // If there are fewer unique questions than requested, the quiz will just be shorter.
         // 3. Sort by Difficulty
         selected.sort((a, b) => a.difficultyIndex - b.difficultyIndex);
 
@@ -195,7 +196,17 @@ export const TestScreen = ({ route }) => {
                                 <Text style={styles.qNum}>Question {index + 1} (Diff: {q.difficultyIndex})</Text>
                                 <ReportButton questionId={q.id} />
                             </View>
-                            <MathText text={q.question} fontSize={18} color="#333" style={{ marginBottom: 15 }} />
+                            {q.question.includes(' & ') && (title === 'Move a letter' || title === 'Move A Letter') ? (
+                                <View style={styles.twoWordContainer}>
+                                    <Text style={styles.wordBox}>{q.question.split(' & ')[0]}</Text>
+                                    <View style={styles.wordConnector}>
+                                        <Text style={styles.connectorText}>&</Text>
+                                    </View>
+                                    <Text style={styles.wordBox}>{q.question.split(' & ')[1]}</Text>
+                                </View>
+                            ) : (
+                                <MathText text={q.question} fontSize={18} color="#333" style={{ marginBottom: 15 }} />
+                            )}
 
                             {q.image && (
                                 <TouchableOpacity onPress={() => openZoom(q.image)}>
@@ -283,6 +294,34 @@ const styles = StyleSheet.create({
     cardWrong: { borderWidth: 2, borderColor: Colors.error },
     qNum: { color: '#888', marginBottom: 5, fontSize: 12 },
     qText: { fontSize: 16, fontWeight: 'bold', marginBottom: 10 },
+    twoWordContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginVertical: 15,
+        width: '100%',
+    },
+    wordBox: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: Colors.text,
+        letterSpacing: 2,
+        backgroundColor: '#f5f5f5',
+        paddingHorizontal: 15,
+        paddingVertical: 10,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#ddd',
+        overflow: 'hidden',
+    },
+    wordConnector: {
+        paddingHorizontal: 10,
+    },
+    connectorText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: Colors.primary,
+    },
     qImage: { width: '100%', height: 150, marginBottom: 10, backgroundColor: '#eee' },
     optionsGrid: { flexDirection: 'column', gap: 10, width: '100%' },
     optBtn: {

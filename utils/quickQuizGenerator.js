@@ -77,8 +77,11 @@ export const getQuiz = (subject, topic) => {
     const selectedQuestions = [];
     const selectedKeys = new Set();
     const isNVR = source.type === 'Non-Verbal';
+    const isMaths = source.type === 'Maths';
 
     const getSimilarityKey = (question) => {
+        if (isMaths && question.prefix) return question.prefix;
+        if (isMaths && question.id) return question.id.split('_')[0];
         if (!question.image) return question.id;
         try {
             let filename = decodeURIComponent(question.image.split('/').pop());
@@ -93,7 +96,7 @@ export const getQuiz = (subject, topic) => {
 
     for (const q of shuffled) {
         if (selectedQuestions.length >= limit) break;
-        if (isNVR) {
+        if (isNVR || isMaths) {
             const key = getSimilarityKey(q);
             if (!selectedKeys.has(key)) {
                 selectedQuestions.push(q);
@@ -104,12 +107,8 @@ export const getQuiz = (subject, topic) => {
         }
     }
 
-    if (selectedQuestions.length < limit) {
-        for (const q of shuffled) {
-            if (selectedQuestions.length >= limit) break;
-            if (!selectedQuestions.includes(q)) selectedQuestions.push(q);
-        }
-    }
+    // Fallback loop removed to prevent duplicate variations.
+    // If there are fewer unique questions than requested, the quiz will just be shorter.
 
     return {
         title: source.titleOverride || source.topic,
@@ -136,9 +135,12 @@ export const getRandomQuiz = () => {
     const selectedQuestions = [];
     const selectedKeys = new Set();
     const isNVR = randomSource.type === 'Non-Verbal';
+    const isMaths = randomSource.type === 'Maths';
 
     // Helper to extract "Similarity Key" from image URL
     const getSimilarityKey = (question) => {
+        if (isMaths && question.prefix) return question.prefix;
+        if (isMaths && question.id) return question.id.split('_')[0];
         if (!question.image) return question.id; // Fallback to ID
         try {
             // Extract filename from URL
@@ -161,7 +163,7 @@ export const getRandomQuiz = () => {
     for (const q of shuffled) {
         if (selectedQuestions.length >= limit) break;
 
-        if (isNVR) {
+        if (isNVR || isMaths) {
             const key = getSimilarityKey(q);
             if (!selectedKeys.has(key)) {
                 selectedQuestions.push(q);
@@ -173,16 +175,8 @@ export const getRandomQuiz = () => {
         }
     }
 
-    // Pass 2: Fill if needed (Soft Deduping)
-    if (selectedQuestions.length < limit) {
-        for (const q of shuffled) {
-            if (selectedQuestions.length >= limit) break;
-            // Add if not already included (referential check)
-            if (!selectedQuestions.includes(q)) {
-                selectedQuestions.push(q);
-            }
-        }
-    }
+    // Fallback loop removed to prevent duplicate variations.
+    // If there are fewer unique questions than requested, the quiz will just be shorter.
 
     return {
         title: randomSource.titleOverride || randomSource.topic, // Use specific title if available
