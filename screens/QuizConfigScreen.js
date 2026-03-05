@@ -167,48 +167,38 @@ export const QuizConfigScreen = ({ route }) => {
             if (nonverbal[topic]) {
                 const dataset = nonverbal[topic].questions;
 
-                // Helper to select diverse questions
+                // Helper to select diverse questions guaranteed strictly unique by image stem
                 const selectDiverseQuestions = (questions, count) => {
-                    // Group by image stem (e.g. Matrix_Asym_1 -> Matrix_Asym)
-                    const groups = {};
-                    questions.forEach(q => {
-                        let key = 'Misc';
+                    const shuffled = [...questions].sort(() => 0.5 - Math.random());
+                    const selected = [];
+                    const seenStems = new Set();
+
+                    for (const q of shuffled) {
+                        if (selected.length >= count) break;
+
+                        let stem = q.id;
                         if (q.image) {
                             try {
                                 let filename = decodeURIComponent(q.image.split('/').pop());
-                                filename = filename.replace(/\\.\\w+$/, '');
-                                filename = filename.replace(/\\s*\\(\\d+\\)$/, '');
-                                filename = filename.replace(/_?\\d+$/, '');
-                                key = filename;
+                                // Extract the stem (part before the last underscore, ignoring extensions or parens)
+                                filename = filename.replace(/\.\w+$/, ''); // remove .png
+                                filename = filename.replace(/\s*\(\d+\)$/, ''); // remove any (1)
+                                const lastUnderscore = filename.lastIndexOf('_');
+                                if (lastUnderscore > -1) {
+                                    stem = filename.substring(0, lastUnderscore);
+                                } else {
+                                    stem = filename.replace(/\d+$/, ''); // fallback for no underscore
+                                }
                             } catch (e) {
-                                key = q.id;
+                                stem = q.id;
                             }
-                        } else {
-                            key = q.id;
                         }
-                        if (!groups[key]) groups[key] = [];
-                        groups[key].push(q);
-                    });
 
-                    const groupKeys = Object.keys(groups);
-                    // Shuffle group order
-                    groupKeys.sort(() => 0.5 - Math.random());
-
-                    // Shuffle questions within each group
-                    groupKeys.forEach(k => {
-                        groups[k].sort(() => 0.5 - Math.random());
-                    });
-
-                    const selected = [];
-                    let i = 0;
-
-                    // Round-robin selection
-                    while (selected.length < count && selected.length < questions.length) {
-                        const key = groupKeys[i % groupKeys.length];
-                        if (groups[key].length > 0) {
-                            selected.push(groups[key].pop());
+                        // Enforce strictly one question per stem
+                        if (!seenStems.has(stem)) {
+                            selected.push(q);
+                            seenStems.add(stem);
                         }
-                        i++;
                     }
 
                     return selected;

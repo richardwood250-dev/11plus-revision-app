@@ -48179,32 +48179,6 @@ export const VERBAL_QUIZ = {
     "title": "Move a letter",
     "questions": [
       {
-        "id": "Move_a_letter_1",
-        "question": "BEARD & RAM",
-        "key": null,
-        "options": [
-          "B",
-          "E",
-          "A",
-          "R",
-          "D"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_2",
-        "question": "BEARD & RIVE",
-        "key": null,
-        "options": [
-          "B",
-          "E",
-          "A",
-          "R",
-          "D"
-        ],
-        "correctAnswer": "E"
-      },
-      {
         "id": "Move_a_letter_3",
         "question": "BEAST & ARL",
         "key": null,
@@ -48216,71 +48190,6 @@ export const VERBAL_QUIZ = {
           "T"
         ],
         "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_4",
-        "question": "BEAST & RISE",
-        "key": null,
-        "options": [
-          "B",
-          "E",
-          "A",
-          "S",
-          "T"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_5",
-        "question": "BLACK & AME",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "A",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_6",
-        "question": "BLACK & OUD",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "A",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_7",
-        "question": "BLAME & RAKE",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "A",
-          "M",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_8",
-        "question": "BLAND & RAIN",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "A",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "A"
       },
       {
         "id": "Move_a_letter_9",
@@ -48307,58 +48216,6 @@ export const VERBAL_QUIZ = {
           "D"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_11",
-        "question": "BLEAK & AME",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "E",
-          "A",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_12",
-        "question": "BLEAT & OUD",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "E",
-          "A",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_13",
-        "question": "BLEND & ONE",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "E",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_14",
-        "question": "BLIND & OAN",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "I",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_15",
@@ -48413,136 +48270,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_19",
-        "question": "BLOCK & EAR",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "O",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_20",
-        "question": "BOARD & AT",
-        "key": null,
-        "options": [
-          "B",
-          "O",
-          "A",
-          "R",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_21",
-        "question": "BOARD & MAN",
-        "key": null,
-        "options": [
-          "B",
-          "O",
-          "A",
-          "R",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_22",
-        "question": "BOARD & SO",
-        "key": null,
-        "options": [
-          "B",
-          "O",
-          "A",
-          "R",
-          "D"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_23",
-        "question": "BOAST & AR",
-        "key": null,
-        "options": [
-          "B",
-          "O",
-          "A",
-          "S",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_24",
-        "question": "BOAST & MEN",
-        "key": null,
-        "options": [
-          "B",
-          "O",
-          "A",
-          "S",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_25",
-        "question": "BOAST & OAR",
-        "key": null,
-        "options": [
-          "B",
-          "O",
-          "A",
-          "S",
-          "T"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_26",
-        "question": "BOUND & SE",
-        "key": null,
-        "options": [
-          "B",
-          "O",
-          "U",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_27",
-        "question": "BRACE & LACK",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "A",
-          "C",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_28",
-        "question": "BRACE & RAIN",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "A",
-          "C",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_29",
         "question": "BRACE & RIGHT",
         "key": null,
@@ -48552,136 +48279,6 @@ export const VERBAL_QUIZ = {
           "A",
           "C",
           "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_30",
-        "question": "BRACE & RUSH",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "A",
-          "C",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_31",
-        "question": "BRAIN & ON",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "A",
-          "I",
-          "N"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_32",
-        "question": "BRAKE & AND",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "A",
-          "K",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_33",
-        "question": "BRAND & ICE",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "A",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_34",
-        "question": "BRAND & OOM",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "A",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_35",
-        "question": "BRASS & AKE",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "A",
-          "S",
-          "S"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_36",
-        "question": "BREAD & ATCH",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "E",
-          "A",
-          "D"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_37",
-        "question": "BREAD & MAT",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "E",
-          "A",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_38",
-        "question": "BREAD & OAR",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "E",
-          "A",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_39",
-        "question": "BREAD & RAKE",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "E",
-          "A",
-          "D"
         ],
         "correctAnswer": "A"
       },
@@ -48699,60 +48296,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_41",
-        "question": "BREAK & ITE",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "E",
-          "A",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_42",
-        "question": "BREAM & AT",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "E",
-          "A",
-          "M"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_43",
-        "question": "BRIDE & ANT",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "I",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_44",
         "question": "BRIDE & LACK",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "I",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_45",
-        "question": "BRIDE & RAIN",
         "key": null,
         "options": [
           "B",
@@ -48777,45 +48322,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_47",
-        "question": "BRINE & ICE",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "I",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_48",
-        "question": "BRING & AN",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "I",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_49",
-        "question": "BRING & OLL",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "I",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_50",
         "question": "BRISK & LACK",
         "key": null,
@@ -48829,73 +48335,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_51",
-        "question": "BROAD & AR",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "O",
-          "A",
-          "D"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_52",
-        "question": "BROAD & AT",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "O",
-          "A",
-          "D"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_53",
         "question": "BROAD & BAT",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "O",
-          "A",
-          "D"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_54",
-        "question": "BROAD & LACK",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "O",
-          "A",
-          "D"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_55",
-        "question": "BROAD & RAIN",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "O",
-          "A",
-          "D"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_56",
-        "question": "BROAD & RIGHT",
         "key": null,
         "options": [
           "B",
@@ -48946,32 +48387,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_60",
-        "question": "BROOM & ASH",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "O",
-          "O",
-          "M"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_61",
-        "question": "BROTH & ATE",
-        "key": null,
-        "options": [
-          "B",
-          "R",
-          "O",
-          "T",
-          "H"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_62",
         "question": "CAMEL & EAR",
         "key": null,
@@ -48983,58 +48398,6 @@ export const VERBAL_QUIZ = {
           "L"
         ],
         "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_63",
-        "question": "CAUSE & PON",
-        "key": null,
-        "options": [
-          "C",
-          "A",
-          "U",
-          "S",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_64",
-        "question": "CAUSE & SING",
-        "key": null,
-        "options": [
-          "C",
-          "A",
-          "U",
-          "S",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_65",
-        "question": "CHAIR & CON",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "I",
-          "R"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_66",
-        "question": "CHAIR & HEATER",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "I",
-          "R"
-        ],
-        "correctAnswer": "A"
       },
       {
         "id": "Move_a_letter_67",
@@ -49063,19 +48426,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_69",
-        "question": "CHAIR & ON",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "I",
-          "R"
-        ],
-        "correctAnswer": "D"
-      },
-      {
         "id": "Move_a_letter_70",
         "question": "CHAIR & RANK",
         "key": null,
@@ -49102,60 +48452,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_72",
-        "question": "CHAIR & RATE",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "I",
-          "R"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_73",
-        "question": "CHAIR & RAVE",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "I",
-          "R"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_74",
-        "question": "CHAIR & REAM",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "I",
-          "R"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_75",
         "question": "CHAIR & REEK",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "I",
-          "R"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_76",
-        "question": "CHAIR & REST",
         "key": null,
         "options": [
           "C",
@@ -49232,34 +48530,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_82",
-        "question": "CHART & EAT",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_83",
         "question": "CHART & LASH",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_84",
-        "question": "CHART & LASS",
         "key": null,
         "options": [
           "C",
@@ -49297,73 +48569,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_87",
-        "question": "CHART & REST",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_88",
-        "question": "CHART & RICK",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_89",
         "question": "CHART & ROOK",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_90",
-        "question": "CHART & RUDE",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_91",
-        "question": "CHART & RUSH",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_92",
-        "question": "CHART & RUST",
         "key": null,
         "options": [
           "C",
@@ -49386,45 +48593,6 @@ export const VERBAL_QUIZ = {
           "T"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_94",
-        "question": "CHEAT & RASH",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "E",
-          "A",
-          "T"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_95",
-        "question": "CHILD & AMP",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "I",
-          "L",
-          "D"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_96",
-        "question": "CHORE & OAT",
-        "key": null,
-        "options": [
-          "C",
-          "H",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_97",
@@ -49466,19 +48634,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "D"
       },
       {
-        "id": "Move_a_letter_100",
-        "question": "CLAMP & LANK",
-        "key": null,
-        "options": [
-          "C",
-          "L",
-          "A",
-          "M",
-          "P"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_101",
         "question": "CLAMP & LICK",
         "key": null,
@@ -49490,19 +48645,6 @@ export const VERBAL_QUIZ = {
           "P"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_102",
-        "question": "CLAMP & OUD",
-        "key": null,
-        "options": [
-          "C",
-          "L",
-          "A",
-          "M",
-          "P"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_103",
@@ -49544,45 +48686,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "D"
       },
       {
-        "id": "Move_a_letter_106",
-        "question": "CLOCK & AMP",
-        "key": null,
-        "options": [
-          "C",
-          "L",
-          "O",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_107",
-        "question": "CLOCK & OAT",
-        "key": null,
-        "options": [
-          "C",
-          "L",
-          "O",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_108",
-        "question": "CLOCK & OUD",
-        "key": null,
-        "options": [
-          "C",
-          "L",
-          "O",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_109",
         "question": "CLOSE & OAT",
         "key": null,
@@ -49594,97 +48697,6 @@ export const VERBAL_QUIZ = {
           "E"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_110",
-        "question": "CLOUD & SE",
-        "key": null,
-        "options": [
-          "C",
-          "L",
-          "O",
-          "U",
-          "D"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_111",
-        "question": "COAST & AR",
-        "key": null,
-        "options": [
-          "C",
-          "O",
-          "A",
-          "S",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_112",
-        "question": "COAST & AT",
-        "key": null,
-        "options": [
-          "C",
-          "O",
-          "A",
-          "S",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_113",
-        "question": "COAST & PEN",
-        "key": null,
-        "options": [
-          "C",
-          "O",
-          "A",
-          "S",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_114",
-        "question": "COAST & TONE",
-        "key": null,
-        "options": [
-          "C",
-          "O",
-          "A",
-          "S",
-          "T"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_115",
-        "question": "COULD & PON",
-        "key": null,
-        "options": [
-          "C",
-          "O",
-          "U",
-          "L",
-          "D"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_116",
-        "question": "COULD & SE",
-        "key": null,
-        "options": [
-          "C",
-          "O",
-          "U",
-          "L",
-          "D"
-        ],
-        "correctAnswer": "C"
       },
       {
         "id": "Move_a_letter_117",
@@ -49700,45 +48712,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_118",
-        "question": "COVER & OVEN",
-        "key": null,
-        "options": [
-          "C",
-          "O",
-          "V",
-          "E",
-          "R"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_119",
-        "question": "CRABS & OPE",
-        "key": null,
-        "options": [
-          "C",
-          "R",
-          "A",
-          "B",
-          "S"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_120",
-        "question": "CRAMP & OSE",
-        "key": null,
-        "options": [
-          "C",
-          "R",
-          "A",
-          "M",
-          "P"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_121",
         "question": "CRANE & ICE",
         "key": null,
@@ -49748,19 +48721,6 @@ export const VERBAL_QUIZ = {
           "A",
           "N",
           "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_122",
-        "question": "CRASH & OLE",
-        "key": null,
-        "options": [
-          "C",
-          "R",
-          "A",
-          "S",
-          "H"
         ],
         "correctAnswer": "B"
       },
@@ -49789,19 +48749,6 @@ export const VERBAL_QUIZ = {
           "E"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_125",
-        "question": "CRAVE & AMP",
-        "key": null,
-        "options": [
-          "C",
-          "R",
-          "A",
-          "V",
-          "E"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_126",
@@ -49869,19 +48816,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_131",
-        "question": "CROCK & AVE",
-        "key": null,
-        "options": [
-          "C",
-          "R",
-          "O",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_132",
         "question": "CROOK & AIL",
         "key": null,
@@ -49891,19 +48825,6 @@ export const VERBAL_QUIZ = {
           "O",
           "O",
           "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_133",
-        "question": "CROON & IVE",
-        "key": null,
-        "options": [
-          "C",
-          "R",
-          "O",
-          "O",
-          "N"
         ],
         "correctAnswer": "B"
       },
@@ -49947,19 +48868,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "E"
       },
       {
-        "id": "Move_a_letter_137",
-        "question": "CROWD & OLE",
-        "key": null,
-        "options": [
-          "C",
-          "R",
-          "O",
-          "W",
-          "D"
-        ],
-        "correctAnswer": "E"
-      },
-      {
         "id": "Move_a_letter_138",
         "question": "CROWD & OLL",
         "key": null,
@@ -49988,19 +48896,6 @@ export const VERBAL_QUIZ = {
       {
         "id": "Move_a_letter_140",
         "question": "CROWD & RAIN",
-        "key": null,
-        "options": [
-          "C",
-          "R",
-          "O",
-          "W",
-          "D"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_141",
-        "question": "CROWD & RAM",
         "key": null,
         "options": [
           "C",
@@ -50090,19 +48985,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_148",
-        "question": "DRIVE & ICE",
-        "key": null,
-        "options": [
-          "D",
-          "R",
-          "I",
-          "V",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_149",
         "question": "DWELL & ALL",
         "key": null,
@@ -50142,32 +49024,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "D"
       },
       {
-        "id": "Move_a_letter_152",
-        "question": "FEAST & VERY",
-        "key": null,
-        "options": [
-          "F",
-          "E",
-          "A",
-          "S",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_153",
-        "question": "FLAKE & EAR",
-        "key": null,
-        "options": [
-          "F",
-          "L",
-          "A",
-          "K",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_154",
         "question": "FLAKE & RIGHT",
         "key": null,
@@ -50179,32 +49035,6 @@ export const VERBAL_QUIZ = {
           "E"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_155",
-        "question": "FLAME & EAR",
-        "key": null,
-        "options": [
-          "F",
-          "L",
-          "A",
-          "M",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_156",
-        "question": "FLEET & OUD",
-        "key": null,
-        "options": [
-          "F",
-          "L",
-          "E",
-          "E",
-          "T"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_157",
@@ -50231,71 +49061,6 @@ export const VERBAL_QUIZ = {
           "H"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_159",
-        "question": "FOUND & NIT",
-        "key": null,
-        "options": [
-          "F",
-          "O",
-          "U",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_160",
-        "question": "FOUND & SE",
-        "key": null,
-        "options": [
-          "F",
-          "O",
-          "U",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_161",
-        "question": "FRAIL & ICE",
-        "key": null,
-        "options": [
-          "F",
-          "R",
-          "A",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_162",
-        "question": "FRAME & ICE",
-        "key": null,
-        "options": [
-          "F",
-          "R",
-          "A",
-          "M",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_163",
-        "question": "FRIEND & AT",
-        "key": null,
-        "options": [
-          "F",
-          "R",
-          "I",
-          "E",
-          "N"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_164",
@@ -50402,32 +49167,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_172",
-        "question": "GLOVE & RATE",
-        "key": null,
-        "options": [
-          "G",
-          "L",
-          "O",
-          "V",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_173",
-        "question": "GLOVE & RAVE",
-        "key": null,
-        "options": [
-          "G",
-          "L",
-          "O",
-          "V",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_174",
         "question": "GRAIN & ICE",
         "key": null,
@@ -50439,32 +49178,6 @@ export const VERBAL_QUIZ = {
           "N"
         ],
         "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_175",
-        "question": "GRAIN & RAVE",
-        "key": null,
-        "options": [
-          "G",
-          "R",
-          "A",
-          "I",
-          "N"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_176",
-        "question": "GRAIN & REAT",
-        "key": null,
-        "options": [
-          "G",
-          "R",
-          "A",
-          "I",
-          "N"
-        ],
-        "correctAnswer": "A"
       },
       {
         "id": "Move_a_letter_177",
@@ -50532,19 +49245,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_182",
-        "question": "GRATE & AIN",
-        "key": null,
-        "options": [
-          "G",
-          "R",
-          "A",
-          "T",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_183",
         "question": "GRATE & OLD",
         "key": null,
@@ -50571,111 +49271,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_185",
-        "question": "GRAVEL & EAR",
-        "key": null,
-        "options": [
-          "G",
-          "R",
-          "A",
-          "V",
-          "E",
-          "L"
-        ],
-        "correctAnswer": "F"
-      },
-      {
-        "id": "Move_a_letter_186",
-        "question": "GRIND & RAIN",
-        "key": null,
-        "options": [
-          "G",
-          "R",
-          "I",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_187",
-        "question": "GROAN & AR",
-        "key": null,
-        "options": [
-          "G",
-          "R",
-          "O",
-          "A",
-          "N"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_188",
-        "question": "GROAN & AT",
-        "key": null,
-        "options": [
-          "G",
-          "R",
-          "O",
-          "A",
-          "N"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_189",
-        "question": "GROAN & ONE",
-        "key": null,
-        "options": [
-          "G",
-          "R",
-          "O",
-          "A",
-          "N"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_190",
-        "question": "GROUT & ING",
-        "key": null,
-        "options": [
-          "G",
-          "R",
-          "O",
-          "U",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_191",
-        "question": "GROWN & AKE",
-        "key": null,
-        "options": [
-          "G",
-          "R",
-          "O",
-          "W",
-          "N"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_192",
-        "question": "GRUFF & AND",
-        "key": null,
-        "options": [
-          "G",
-          "R",
-          "U",
-          "F",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_193",
         "question": "GUEST & NIT",
         "key": null,
@@ -50684,19 +49279,6 @@ export const VERBAL_QUIZ = {
           "U",
           "E",
           "S",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_194",
-        "question": "GUILT & POND",
-        "key": null,
-        "options": [
-          "G",
-          "U",
-          "I",
-          "L",
           "T"
         ],
         "correctAnswer": "B"
@@ -50728,19 +49310,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "E"
       },
       {
-        "id": "Move_a_letter_197",
-        "question": "HEARD & RAM",
-        "key": null,
-        "options": [
-          "H",
-          "E",
-          "A",
-          "R",
-          "D"
-        ],
-        "correctAnswer": "E"
-      },
-      {
         "id": "Move_a_letter_198",
         "question": "HEARD & RONE",
         "key": null,
@@ -50754,73 +49323,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "E"
       },
       {
-        "id": "Move_a_letter_199",
-        "question": "HEART & EAR",
-        "key": null,
-        "options": [
-          "H",
-          "E",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_200",
-        "question": "HEART & ICE",
-        "key": null,
-        "options": [
-          "H",
-          "E",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_201",
-        "question": "HEART & ONE",
-        "key": null,
-        "options": [
-          "H",
-          "E",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "E"
-      },
-      {
         "id": "Move_a_letter_202",
         "question": "HEART & RACK",
-        "key": null,
-        "options": [
-          "H",
-          "E",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_203",
-        "question": "HEART & RASH",
-        "key": null,
-        "options": [
-          "H",
-          "E",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_204",
-        "question": "HEART & RIP",
         "key": null,
         "options": [
           "H",
@@ -50845,84 +49349,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "E"
       },
       {
-        "id": "Move_a_letter_206",
-        "question": "HEART & SEA",
-        "key": null,
-        "options": [
-          "H",
-          "E",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_207",
-        "question": "HEART & VERY",
-        "key": null,
-        "options": [
-          "H",
-          "E",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_208",
-        "question": "HOARD & AR",
-        "key": null,
-        "options": [
-          "H",
-          "O",
-          "A",
-          "R",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_209",
-        "question": "HOARD & PEN",
-        "key": null,
-        "options": [
-          "H",
-          "O",
-          "A",
-          "R",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_210",
-        "question": "HOUSE & NIT",
-        "key": null,
-        "options": [
-          "H",
-          "O",
-          "U",
-          "S",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_211",
-        "question": "HOUSE & SE",
-        "key": null,
-        "options": [
-          "H",
-          "O",
-          "U",
-          "S",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
         "id": "Move_a_letter_212",
         "question": "HOVEL & EAR",
         "key": null,
@@ -50936,58 +49362,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "E"
       },
       {
-        "id": "Move_a_letter_213",
-        "question": "LEARN & ATE",
-        "key": null,
-        "options": [
-          "L",
-          "E",
-          "A",
-          "R",
-          "N"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_214",
-        "question": "LEARN & OPE",
-        "key": null,
-        "options": [
-          "L",
-          "E",
-          "A",
-          "R",
-          "N"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_215",
-        "question": "LEAST & AT",
-        "key": null,
-        "options": [
-          "L",
-          "E",
-          "A",
-          "S",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_216",
-        "question": "LEAST & WAY",
-        "key": null,
-        "options": [
-          "L",
-          "E",
-          "A",
-          "S",
-          "T"
-        ],
-        "correctAnswer": "C"
-      },
-      {
         "id": "Move_a_letter_217",
         "question": "LOUSE & SE",
         "key": null,
@@ -50999,71 +49373,6 @@ export const VERBAL_QUIZ = {
           "E"
         ],
         "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_218",
-        "question": "MANGE & ONE",
-        "key": null,
-        "options": [
-          "M",
-          "A",
-          "N",
-          "G",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_219",
-        "question": "MODEL & EAR",
-        "key": null,
-        "options": [
-          "M",
-          "O",
-          "D",
-          "E",
-          "L"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_220",
-        "question": "MOURN & SE",
-        "key": null,
-        "options": [
-          "M",
-          "O",
-          "U",
-          "R",
-          "N"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_221",
-        "question": "MOUSE & MAN",
-        "key": null,
-        "options": [
-          "M",
-          "O",
-          "U",
-          "S",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_222",
-        "question": "MOUSE & MEN",
-        "key": null,
-        "options": [
-          "M",
-          "O",
-          "U",
-          "S",
-          "E"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_223",
@@ -51105,45 +49414,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "C"
       },
       {
-        "id": "Move_a_letter_226",
-        "question": "PAINT & HIS",
-        "key": null,
-        "options": [
-          "P",
-          "A",
-          "I",
-          "N",
-          "T"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_227",
-        "question": "PAINT & ON",
-        "key": null,
-        "options": [
-          "P",
-          "A",
-          "I",
-          "N",
-          "T"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_228",
-        "question": "PAINT & ONE",
-        "key": null,
-        "options": [
-          "P",
-          "A",
-          "I",
-          "N",
-          "T"
-        ],
-        "correctAnswer": "E"
-      },
-      {
         "id": "Move_a_letter_229",
         "question": "PAINT & RACK",
         "key": null,
@@ -51157,47 +49427,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "E"
       },
       {
-        "id": "Move_a_letter_230",
-        "question": "PAINT & RAIN",
-        "key": null,
-        "options": [
-          "P",
-          "A",
-          "I",
-          "N",
-          "T"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_231",
-        "question": "PASTE & POT",
-        "key": null,
-        "options": [
-          "P",
-          "A",
-          "S",
-          "T",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
         "id": "Move_a_letter_232",
         "question": "PLACE & MAT",
-        "key": null,
-        "options": [
-          "P",
-          "L",
-          "A",
-          "C",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_233",
-        "question": "PLACE & ONE",
         "key": null,
         "options": [
           "P",
@@ -51222,47 +49453,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "D"
       },
       {
-        "id": "Move_a_letter_235",
-        "question": "PLANE & AND",
-        "key": null,
-        "options": [
-          "P",
-          "L",
-          "A",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_236",
-        "question": "PLANE & EAR",
-        "key": null,
-        "options": [
-          "P",
-          "L",
-          "A",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_237",
         "question": "PLANE & LACE",
-        "key": null,
-        "options": [
-          "P",
-          "L",
-          "A",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_238",
-        "question": "PLANE & LATE",
         "key": null,
         "options": [
           "P",
@@ -51285,84 +49477,6 @@ export const VERBAL_QUIZ = {
           "E"
         ],
         "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_240",
-        "question": "PLATE & AST",
-        "key": null,
-        "options": [
-          "P",
-          "L",
-          "A",
-          "T",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_241",
-        "question": "PLATE & EASE",
-        "key": null,
-        "options": [
-          "P",
-          "L",
-          "A",
-          "T",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_242",
-        "question": "PLATE & EAT",
-        "key": null,
-        "options": [
-          "P",
-          "L",
-          "A",
-          "T",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_243",
-        "question": "PLEAT & OAN",
-        "key": null,
-        "options": [
-          "P",
-          "L",
-          "E",
-          "A",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_244",
-        "question": "POISE & ON",
-        "key": null,
-        "options": [
-          "P",
-          "O",
-          "I",
-          "S",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_245",
-        "question": "POISE & RON",
-        "key": null,
-        "options": [
-          "P",
-          "O",
-          "I",
-          "S",
-          "E"
-        ],
-        "correctAnswer": "C"
       },
       {
         "id": "Move_a_letter_246",
@@ -51404,58 +49518,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_249",
-        "question": "PRICE & LACE",
-        "key": null,
-        "options": [
-          "P",
-          "R",
-          "I",
-          "C",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_250",
-        "question": "PRICE & LATE",
-        "key": null,
-        "options": [
-          "P",
-          "R",
-          "I",
-          "C",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_251",
-        "question": "PRICK & AGE",
-        "key": null,
-        "options": [
-          "P",
-          "R",
-          "I",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_252",
-        "question": "PRIDE & LATE",
-        "key": null,
-        "options": [
-          "P",
-          "R",
-          "I",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_253",
         "question": "PRONE & OOM",
         "key": null,
@@ -51464,32 +49526,6 @@ export const VERBAL_QUIZ = {
           "R",
           "O",
           "N",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_254",
-        "question": "PROOF & AIN",
-        "key": null,
-        "options": [
-          "P",
-          "R",
-          "O",
-          "O",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_255",
-        "question": "PROSE & ING",
-        "key": null,
-        "options": [
-          "P",
-          "R",
-          "O",
-          "S",
           "E"
         ],
         "correctAnswer": "B"
@@ -51534,19 +49570,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "E"
       },
       {
-        "id": "Move_a_letter_259",
-        "question": "RAISE & MEN",
-        "key": null,
-        "options": [
-          "R",
-          "A",
-          "I",
-          "S",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_260",
         "question": "RAISE & WAY",
         "key": null,
@@ -51560,19 +49583,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_261",
-        "question": "RANGE & ONE",
-        "key": null,
-        "options": [
-          "R",
-          "A",
-          "N",
-          "G",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
         "id": "Move_a_letter_262",
         "question": "SCALE & OAL",
         "key": null,
@@ -51584,45 +49594,6 @@ export const VERBAL_QUIZ = {
           "E"
         ],
         "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_263",
-        "question": "SCARE & VENT",
-        "key": null,
-        "options": [
-          "S",
-          "C",
-          "A",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_264",
-        "question": "SCARE & WIN",
-        "key": null,
-        "options": [
-          "S",
-          "C",
-          "A",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_265",
-        "question": "SCARF & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "C",
-          "A",
-          "R",
-          "F"
-        ],
-        "correctAnswer": "E"
       },
       {
         "id": "Move_a_letter_266",
@@ -51664,47 +49635,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_269",
-        "question": "SCORE & AP",
-        "key": null,
-        "options": [
-          "S",
-          "C",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_270",
         "question": "SCORE & OAL",
-        "key": null,
-        "options": [
-          "S",
-          "C",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_271",
-        "question": "SCORE & OLD",
-        "key": null,
-        "options": [
-          "S",
-          "C",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_272",
-        "question": "SCORE & ORE",
         "key": null,
         "options": [
           "S",
@@ -51742,112 +49674,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_275",
-        "question": "SHAKE & ARD",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "A",
-          "K",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_276",
-        "question": "SHALE & AS",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "A",
-          "L",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_277",
-        "question": "SHAME & OUR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "A",
-          "M",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_278",
-        "question": "SHARD & AS",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "A",
-          "R",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_279",
-        "question": "SHARD & EAT",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "A",
-          "R",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_280",
-        "question": "SHARP & LATE",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "A",
-          "R",
-          "P"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_281",
-        "question": "SHARP & MASH",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "A",
-          "R",
-          "P"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_282",
         "question": "SHARP & PEAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "A",
-          "R",
-          "P"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_283",
-        "question": "SHARP & PILL",
         "key": null,
         "options": [
           "S",
@@ -51872,45 +49700,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_285",
-        "question": "SHAVE & TILL",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "A",
-          "V",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_286",
-        "question": "SHEAR & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "A",
-          "R"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_287",
-        "question": "SHEAR & EAT",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "A",
-          "R"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_288",
         "question": "SHEAR & ELF",
         "key": null,
@@ -51922,45 +49711,6 @@ export const VERBAL_QUIZ = {
           "R"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_289",
-        "question": "SHEAR & LICE",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "A",
-          "R"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_290",
-        "question": "SHEAR & MILE",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "A",
-          "R"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_291",
-        "question": "SHEAR & ONE",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "A",
-          "R"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_292",
@@ -51976,318 +49726,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_293",
-        "question": "SHELF & ALL",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_294",
-        "question": "SHELF & AND",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_295",
-        "question": "SHELF & ARM",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_296",
-        "question": "SHELF & ART",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_297",
-        "question": "SHELF & AS",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_298",
-        "question": "SHELF & ASH",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_299",
-        "question": "SHELF & AT",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_300",
-        "question": "SHELF & ATE",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_301",
-        "question": "SHELF & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_302",
-        "question": "SHELF & IS",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_303",
-        "question": "SHELF & OUR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "F"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_304",
-        "question": "SHOCK & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_305",
-        "question": "SHONE & OIL",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_306",
-        "question": "SHONE & ONE",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_307",
-        "question": "SHORE & ATE",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_308",
-        "question": "SHORE & EAL",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_309",
-        "question": "SHORE & EAT",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_310",
-        "question": "SHORE & IS",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_311",
-        "question": "SHOUT & PEN",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "U",
-          "T"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_312",
-        "question": "SHOUT & VAL",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "U",
-          "T"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_313",
-        "question": "SLACK & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "A",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_314",
-        "question": "SLACK & END",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "A",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_315",
-        "question": "SLAKE & ATE",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "A",
-          "K",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_316",
-        "question": "SLANG & EASE",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "A",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_317",
         "question": "SLASH & OAD",
         "key": null,
@@ -52301,71 +49739,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_318",
-        "question": "SLATE & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "A",
-          "T",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_319",
-        "question": "SLATE & OAF",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "A",
-          "T",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_320",
-        "question": "SLAVE & END",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "A",
-          "V",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_321",
-        "question": "SLEEK & AND",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "E",
-          "E",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_322",
-        "question": "SLEEP & ANK",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "E",
-          "E",
-          "P"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_323",
         "question": "SLEPT & AKE",
         "key": null,
@@ -52375,123 +49748,6 @@ export const VERBAL_QUIZ = {
           "E",
           "P",
           "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_324",
-        "question": "SLICK & OAN",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "I",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_325",
-        "question": "SLIDE & AMP",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "I",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_326",
-        "question": "SLIDE & OUD",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "I",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_327",
-        "question": "SLING & ANE",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "I",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_328",
-        "question": "SLING & EAN",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "I",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_329",
-        "question": "SLINK & IP",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "I",
-          "N",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_330",
-        "question": "SLUMP & ASH",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "U",
-          "M",
-          "P"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_331",
-        "question": "SLUNK & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "U",
-          "N",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_332",
-        "question": "SMACK & EAT",
-        "key": null,
-        "options": [
-          "S",
-          "M",
-          "A",
-          "C",
-          "K"
         ],
         "correctAnswer": "B"
       },
@@ -52691,58 +49947,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_348",
-        "question": "SMASH & ORE",
-        "key": null,
-        "options": [
-          "S",
-          "M",
-          "A",
-          "S",
-          "H"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_349",
-        "question": "SMEAR & ALE",
-        "key": null,
-        "options": [
-          "S",
-          "M",
-          "E",
-          "A",
-          "R"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_350",
-        "question": "SNAIL & ONE",
-        "key": null,
-        "options": [
-          "S",
-          "N",
-          "A",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_351",
-        "question": "SNAIL & OSE",
-        "key": null,
-        "options": [
-          "S",
-          "N",
-          "A",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_352",
         "question": "SNAIL & PECK",
         "key": null,
@@ -52782,32 +49986,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_355",
-        "question": "SNORE & ONE",
-        "key": null,
-        "options": [
-          "S",
-          "N",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_356",
-        "question": "SNOWY & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "N",
-          "O",
-          "W",
-          "Y"
-        ],
-        "correctAnswer": "E"
-      },
-      {
         "id": "Move_a_letter_357",
         "question": "SPACE & LID",
         "key": null,
@@ -52832,45 +50010,6 @@ export const VERBAL_QUIZ = {
           "E"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_359",
-        "question": "SPARE & ACH",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "A",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_360",
-        "question": "SPARE & OIL",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "A",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_361",
-        "question": "SPARE & WIN",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "A",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "E"
       },
       {
         "id": "Move_a_letter_362",
@@ -52899,19 +50038,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_364",
-        "question": "SPATE & LATE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "A",
-          "T",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_365",
         "question": "SPEAK & MELT",
         "key": null,
@@ -52921,19 +50047,6 @@ export const VERBAL_QUIZ = {
           "E",
           "A",
           "K"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_366",
-        "question": "SPEAR & PORT",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "E",
-          "A",
-          "R"
         ],
         "correctAnswer": "A"
       },
@@ -52962,32 +50075,6 @@ export const VERBAL_QUIZ = {
           "K"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_369",
-        "question": "SPECK & LATE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "E",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_370",
-        "question": "SPEND & ART",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "E",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_371",
@@ -53029,19 +50116,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_374",
-        "question": "SPIKE & WING",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "I",
-          "K",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_375",
         "question": "SPILL & PAN",
         "key": null,
@@ -53068,19 +50142,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_377",
-        "question": "SPILL & SOIL",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "I",
-          "L",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_378",
         "question": "SPILL & TOCK",
         "key": null,
@@ -53094,32 +50155,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_379",
-        "question": "SPINE & LATE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "I",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_380",
-        "question": "SPINE & PORT",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "I",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_381",
         "question": "SPINE & TACK",
         "key": null,
@@ -53129,214 +50164,6 @@ export const VERBAL_QUIZ = {
           "I",
           "N",
           "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_382",
-        "question": "SPINE & WING",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "I",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_383",
-        "question": "SPOIL & ARK",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_384",
-        "question": "SPOIL & LACE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_385",
-        "question": "SPOIL & LANE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_386",
-        "question": "SPOIL & LATE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_387",
-        "question": "SPOIL & LAY",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_388",
-        "question": "SPOIL & LEA",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_389",
-        "question": "SPOIL & LED",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_390",
-        "question": "SPOIL & LOT",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_391",
-        "question": "SPOIL & LUCK",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_392",
-        "question": "SPOIL & LUG",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_393",
-        "question": "SPOIL & LUSH",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_394",
-        "question": "SPOON & ARK",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "O",
-          "N"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_395",
-        "question": "SPORE & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_396",
-        "question": "SPORT & LACK",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_397",
-        "question": "SPORT & TUCK",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "R",
-          "T"
         ],
         "correctAnswer": "A"
       },
@@ -53380,19 +50207,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_401",
-        "question": "SPOUT & SAGE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "U",
-          "T"
-        ],
-        "correctAnswer": "D"
-      },
-      {
         "id": "Move_a_letter_402",
         "question": "SPRAY & PAIN",
         "key": null,
@@ -53406,32 +50220,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_403",
-        "question": "SPRAY & TARE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "R",
-          "A",
-          "Y"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_404",
-        "question": "STACK & AIL",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_405",
         "question": "STACK & PRAY",
         "key": null,
@@ -53443,32 +50231,6 @@ export const VERBAL_QUIZ = {
           "K"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_406",
-        "question": "STACK & RAIN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_407",
-        "question": "STAGE & RAIN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "G",
-          "E"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_408",
@@ -53497,19 +50259,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "D"
       },
       {
-        "id": "Move_a_letter_410",
-        "question": "STAIR & ON",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "I",
-          "R"
-        ],
-        "correctAnswer": "D"
-      },
-      {
         "id": "Move_a_letter_411",
         "question": "STALE & MALL",
         "key": null,
@@ -53521,32 +50270,6 @@ export const VERBAL_QUIZ = {
           "E"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_412",
-        "question": "STALE & RACK",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "L",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_413",
-        "question": "STALE & RAIN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "L",
-          "E"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_414",
@@ -53575,177 +50298,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_416",
-        "question": "STAND & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_417",
-        "question": "STAND & RAIN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_418",
-        "question": "STAND & RIP",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_419",
-        "question": "STARE & VERY",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_420",
-        "question": "STARE & WIN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_421",
-        "question": "START & HEN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_422",
-        "question": "START & KILL",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_423",
         "question": "START & LACK",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_424",
-        "question": "START & LICE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_425",
-        "question": "START & MITE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_426",
-        "question": "START & ONE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_427",
-        "question": "START & RIP",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_428",
-        "question": "START & RUST",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_429",
-        "question": "START & URGE",
         "key": null,
         "options": [
           "S",
@@ -53783,112 +50337,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_432",
-        "question": "STATE & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "T",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_433",
-        "question": "STEAL & RAIN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "E",
-          "A",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_434",
-        "question": "STEAM & MEN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "E",
-          "A",
-          "M"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_435",
-        "question": "STEAM & RACK",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "E",
-          "A",
-          "M"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_436",
-        "question": "STEAM & RAIN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "E",
-          "A",
-          "M"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_437",
         "question": "STEAM & TICK",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "E",
-          "A",
-          "M"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_438",
-        "question": "STEAM & TONE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "E",
-          "A",
-          "M"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_439",
-        "question": "STEAM & TRAP",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "E",
-          "A",
-          "M"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_440",
-        "question": "STEAM & WING",
         "key": null,
         "options": [
           "S",
@@ -53939,32 +50389,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_444",
-        "question": "STICK & PATE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "I",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_445",
-        "question": "STICK & PINE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "I",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_446",
         "question": "STICK & POIL",
         "key": null,
@@ -54002,71 +50426,6 @@ export const VERBAL_QUIZ = {
           "K"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_449",
-        "question": "STICK & RACK",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "I",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_450",
-        "question": "STICK & RAIN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "I",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_451",
-        "question": "STICK & RIP",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "I",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_452",
-        "question": "STING & ONE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "I",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_453",
-        "question": "STING & RAIN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "I",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_454",
@@ -54108,32 +50467,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_457",
-        "question": "STING & TORE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "I",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_458",
-        "question": "STING & TRAP",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "I",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_459",
         "question": "STING & TRAY",
         "key": null,
@@ -54149,19 +50482,6 @@ export const VERBAL_QUIZ = {
       {
         "id": "Move_a_letter_460",
         "question": "STING & TUCK",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "I",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_461",
-        "question": "STING & WINE",
         "key": null,
         "options": [
           "S",
@@ -54197,19 +50517,6 @@ export const VERBAL_QUIZ = {
           "T"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_464",
-        "question": "STOCK & RAIN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "O",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_465",
@@ -54277,19 +50584,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_470",
-        "question": "STORE & OIL",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_471",
         "question": "STORE & PENT",
         "key": null,
@@ -54303,19 +50597,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_472",
-        "question": "STORE & RAIN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_473",
         "question": "STORE & TEAM",
         "key": null,
@@ -54325,84 +50606,6 @@ export const VERBAL_QUIZ = {
           "O",
           "R",
           "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_474",
-        "question": "STRAY & ANT",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "A",
-          "Y"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_475",
-        "question": "STRAY & MASH",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "A",
-          "Y"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_476",
-        "question": "STRAY & OIL",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "A",
-          "Y"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_477",
-        "question": "STRAY & POOL",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "A",
-          "Y"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_478",
-        "question": "STRAY & TOCK",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "A",
-          "Y"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_479",
-        "question": "STRAY & TUCK",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "A",
-          "Y"
         ],
         "correctAnswer": "A"
       },
@@ -54459,58 +50662,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_484",
-        "question": "STUCK & RAIN",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "U",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_485",
-        "question": "SWAMP & AN",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "A",
-          "M",
-          "P"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_486",
-        "question": "SWAMP & EAT",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "A",
-          "M",
-          "P"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_487",
-        "question": "SWARM & LIME",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "A",
-          "R",
-          "M"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_488",
         "question": "SWARM & POUT",
         "key": null,
@@ -54537,19 +50688,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_490",
-        "question": "SWARM & TOCK",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "A",
-          "R",
-          "M"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_491",
         "question": "SWARM & WORD",
         "key": null,
@@ -54561,45 +50699,6 @@ export const VERBAL_QUIZ = {
           "M"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_492",
-        "question": "SWEAR & ALL",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "E",
-          "A",
-          "R"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_493",
-        "question": "SWEAR & HOSE",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "E",
-          "A",
-          "R"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_494",
-        "question": "SWEAT & ALL",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "E",
-          "A",
-          "T"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_495",
@@ -54628,47 +50727,8 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_497",
-        "question": "SWEEP & ALL",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "E",
-          "E",
-          "P"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_498",
-        "question": "SWEEP & HAT",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "E",
-          "E",
-          "P"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_499",
         "question": "SWEEP & LIME",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "E",
-          "E",
-          "P"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_500",
-        "question": "SWEEP & TING",
         "key": null,
         "options": [
           "S",
@@ -54693,32 +50753,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_502",
-        "question": "SWELL & AGE",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "E",
-          "L",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_503",
-        "question": "SWELL & ALL",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "E",
-          "L",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_504",
         "question": "SWIFT & ILL",
         "key": null,
@@ -54728,58 +50762,6 @@ export const VERBAL_QUIZ = {
           "I",
           "F",
           "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_505",
-        "question": "SWILL & ALL",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "I",
-          "L",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_506",
-        "question": "SWINE & ALL",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "I",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_507",
-        "question": "SWING & ALL",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "I",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_508",
-        "question": "SWING & HERE",
-        "key": null,
-        "options": [
-          "S",
-          "W",
-          "I",
-          "N",
-          "G"
         ],
         "correctAnswer": "B"
       },
@@ -54901,58 +50883,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "A"
       },
       {
-        "id": "Move_a_letter_518",
-        "question": "THERE & ICE",
-        "key": null,
-        "options": [
-          "T",
-          "H",
-          "E",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "Move_a_letter_519",
-        "question": "THICK & EAT",
-        "key": null,
-        "options": [
-          "T",
-          "H",
-          "I",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_520",
-        "question": "THORN & EAT",
-        "key": null,
-        "options": [
-          "T",
-          "H",
-          "O",
-          "R",
-          "N"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_521",
-        "question": "TIGER & ONE",
-        "key": null,
-        "options": [
-          "T",
-          "I",
-          "G",
-          "E",
-          "R"
-        ],
-        "correctAnswer": "C"
-      },
-      {
         "id": "Move_a_letter_522",
         "question": "TRACE & RACK",
         "key": null,
@@ -54977,45 +50907,6 @@ export const VERBAL_QUIZ = {
           "E"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_524",
-        "question": "TRACK & AGE",
-        "key": null,
-        "options": [
-          "T",
-          "R",
-          "A",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_525",
-        "question": "TRACK & ICE",
-        "key": null,
-        "options": [
-          "T",
-          "R",
-          "A",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_526",
-        "question": "TRACK & OOM",
-        "key": null,
-        "options": [
-          "T",
-          "R",
-          "A",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_527",
@@ -55057,19 +50948,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_530",
-        "question": "TRAIL & ATE",
-        "key": null,
-        "options": [
-          "T",
-          "R",
-          "A",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_531",
         "question": "TRAIL & OOF",
         "key": null,
@@ -55107,33 +50985,6 @@ export const VERBAL_QUIZ = {
           "N"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_534",
-        "question": "TRAMP & AIL",
-        "key": null,
-        "options": [
-          "T",
-          "R",
-          "A",
-          "M",
-          "P"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_535",
-        "question": "TRAVEL & EAR",
-        "key": null,
-        "options": [
-          "T",
-          "R",
-          "A",
-          "V",
-          "E",
-          "L"
-        ],
-        "correctAnswer": "F"
       },
       {
         "id": "Move_a_letter_536",
@@ -55188,32 +51039,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_540",
-        "question": "TREND & OLL",
-        "key": null,
-        "options": [
-          "T",
-          "R",
-          "E",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_541",
-        "question": "TRICK & ICE",
-        "key": null,
-        "options": [
-          "T",
-          "R",
-          "I",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_542",
         "question": "TRICK & UDE",
         "key": null,
@@ -55223,19 +51048,6 @@ export const VERBAL_QUIZ = {
           "I",
           "C",
           "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_543",
-        "question": "TRIED & AGE",
-        "key": null,
-        "options": [
-          "T",
-          "R",
-          "I",
-          "E",
-          "D"
         ],
         "correctAnswer": "B"
       },
@@ -55253,45 +51065,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_545",
-        "question": "TROPE & AIN",
-        "key": null,
-        "options": [
-          "T",
-          "R",
-          "O",
-          "P",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_546",
-        "question": "TROUT & EEL",
-        "key": null,
-        "options": [
-          "T",
-          "R",
-          "O",
-          "U",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_547",
-        "question": "TRUCK & AKE",
-        "key": null,
-        "options": [
-          "T",
-          "R",
-          "U",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_548",
         "question": "TRUCK & OSE",
         "key": null,
@@ -55303,33 +51076,6 @@ export const VERBAL_QUIZ = {
           "K"
         ],
         "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_549",
-        "question": "TWINE & ALL",
-        "key": null,
-        "options": [
-          "T",
-          "W",
-          "I",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_550",
-        "question": "TWINGE & ALL",
-        "key": null,
-        "options": [
-          "T",
-          "W",
-          "I",
-          "N",
-          "G",
-          "E"
-        ],
-        "correctAnswer": "F"
       },
       {
         "id": "Move_a_letter_551",
@@ -55345,45 +51091,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "E"
       },
       {
-        "id": "Move_a_letter_552",
-        "question": "WHALE & AT",
-        "key": null,
-        "options": [
-          "W",
-          "H",
-          "A",
-          "L",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_553",
-        "question": "WHALE & EAR",
-        "key": null,
-        "options": [
-          "W",
-          "H",
-          "A",
-          "L",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_554",
-        "question": "WHALE & HAT",
-        "key": null,
-        "options": [
-          "W",
-          "H",
-          "A",
-          "L",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "Move_a_letter_555",
         "question": "WHEAT & ARM",
         "key": null,
@@ -55395,45 +51102,6 @@ export const VERBAL_QUIZ = {
           "T"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "Move_a_letter_556",
-        "question": "WHERE & AT",
-        "key": null,
-        "options": [
-          "W",
-          "H",
-          "E",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_557",
-        "question": "WHILE & AT",
-        "key": null,
-        "options": [
-          "W",
-          "H",
-          "I",
-          "L",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_558",
-        "question": "WHINE & EAR",
-        "key": null,
-        "options": [
-          "W",
-          "H",
-          "I",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_559",
@@ -55449,45 +51117,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_560",
-        "question": "WHITE & AT",
-        "key": null,
-        "options": [
-          "W",
-          "H",
-          "I",
-          "T",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_561",
-        "question": "WIELD & DEA",
-        "key": null,
-        "options": [
-          "W",
-          "I",
-          "E",
-          "L",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_562",
-        "question": "WORLD & EAK",
-        "key": null,
-        "options": [
-          "W",
-          "O",
-          "R",
-          "L",
-          "D"
-        ],
-        "correctAnswer": "D"
-      },
-      {
         "id": "Move_a_letter_563",
         "question": "WOULD & SE",
         "key": null,
@@ -55499,45 +51128,6 @@ export const VERBAL_QUIZ = {
           "D"
         ],
         "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_564",
-        "question": "WRING & ATE",
-        "key": null,
-        "options": [
-          "W",
-          "R",
-          "I",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_565",
-        "question": "YEARN & INE",
-        "key": null,
-        "options": [
-          "Y",
-          "E",
-          "A",
-          "R",
-          "N"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_566",
-        "question": "YEARN & VERY",
-        "key": null,
-        "options": [
-          "Y",
-          "E",
-          "A",
-          "R",
-          "N"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_567",
@@ -55566,32 +51156,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "C"
       },
       {
-        "id": "Move_a_letter_569",
-        "question": "FRIGHT & AGE",
-        "key": null,
-        "options": [
-          "F",
-          "R",
-          "I",
-          "G",
-          "H"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_570",
-        "question": "FLIGHT & EAR",
-        "key": null,
-        "options": [
-          "F",
-          "L",
-          "I",
-          "G",
-          "H"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_571",
         "question": "PLEASE & VERY",
         "key": null,
@@ -55601,45 +51165,6 @@ export const VERBAL_QUIZ = {
           "E",
           "A",
           "S"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_572",
-        "question": "SLIGHT & OUD",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "I",
-          "G",
-          "H"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_573",
-        "question": "STRAIN & ICE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "A",
-          "I"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_574",
-        "question": "STRING & AGE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "I",
-          "N"
         ],
         "correctAnswer": "C"
       },
@@ -55657,45 +51182,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "C"
       },
       {
-        "id": "Move_a_letter_576",
-        "question": "STROVE & AGE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "O",
-          "V"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_577",
-        "question": "STROKE & ICE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "O",
-          "K"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_578",
-        "question": "SERVER & ICE",
-        "key": null,
-        "options": [
-          "S",
-          "E",
-          "R",
-          "V",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
         "id": "Move_a_letter_579",
         "question": "SEVERN & ICE",
         "key": null,
@@ -55707,19 +51193,6 @@ export const VERBAL_QUIZ = {
           "R"
         ],
         "correctAnswer": "E"
-      },
-      {
-        "id": "Move_a_letter_580",
-        "question": "SHAGGY & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "A",
-          "G",
-          "Y"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "Move_a_letter_581",
@@ -55735,19 +51208,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_582",
-        "question": "SHALLOW & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "A",
-          "L",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_583",
         "question": "SHAVED & EAR",
         "key": null,
@@ -55756,201 +51216,6 @@ export const VERBAL_QUIZ = {
           "H",
           "A",
           "V",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_584",
-        "question": "SHAVER & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "A",
-          "V",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_585",
-        "question": "SHEARS & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "A",
-          "R"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_586",
-        "question": "SHELVES & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "V"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_587",
-        "question": "SHELLS & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "E",
-          "L",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_588",
-        "question": "SHIFTS & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "I",
-          "F",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_589",
-        "question": "SHINES & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "I",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_590",
-        "question": "SHINGLE & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "I",
-          "N",
-          "G"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_591",
-        "question": "SHIPPED & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "I",
-          "P",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_592",
-        "question": "SHOCKS & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_593",
-        "question": "SHOOTS & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "O",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_594",
-        "question": "SHOPPED & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "P",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_595",
-        "question": "SHOPPER & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "P",
-          "P"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_596",
-        "question": "SHORES & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_597",
-        "question": "SHORTS & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_598",
-        "question": "SHOWER & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "H",
-          "O",
-          "W",
           "E"
         ],
         "correctAnswer": "B"
@@ -55982,97 +51247,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_601",
-        "question": "SLEDGE & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "E",
-          "D",
-          "G"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_602",
-        "question": "SLENDER & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "E",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_603",
-        "question": "SLOPPY & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "L",
-          "O",
-          "P",
-          "P"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_604",
-        "question": "SMACKS & EAT",
-        "key": null,
-        "options": [
-          "S",
-          "M",
-          "A",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_605",
-        "question": "SMASHES & ORE",
-        "key": null,
-        "options": [
-          "S",
-          "M",
-          "A",
-          "S",
-          "H"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_606",
-        "question": "SMELLS & ORE",
-        "key": null,
-        "options": [
-          "S",
-          "M",
-          "E",
-          "L",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_607",
-        "question": "SMOOTH & ORE",
-        "key": null,
-        "options": [
-          "S",
-          "M",
-          "O",
-          "O",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_608",
         "question": "SNACKS & ONE",
         "key": null,
@@ -56086,19 +51260,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_609",
-        "question": "SNAILS & ONE",
-        "key": null,
-        "options": [
-          "S",
-          "N",
-          "A",
-          "I",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_610",
         "question": "SNAKES & ONE",
         "key": null,
@@ -56108,19 +51269,6 @@ export const VERBAL_QUIZ = {
           "A",
           "K",
           "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_611",
-        "question": "SNAPPY & ONE",
-        "key": null,
-        "options": [
-          "S",
-          "N",
-          "A",
-          "P",
-          "P"
         ],
         "correctAnswer": "B"
       },
@@ -56151,32 +51299,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_614",
-        "question": "SNORTS & ONE",
-        "key": null,
-        "options": [
-          "S",
-          "N",
-          "O",
-          "R",
-          "T"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_615",
-        "question": "SNOWED & ONE",
-        "key": null,
-        "options": [
-          "S",
-          "N",
-          "O",
-          "W",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_616",
         "question": "SNUBBED & ONE",
         "key": null,
@@ -56186,32 +51308,6 @@ export const VERBAL_QUIZ = {
           "U",
           "B",
           "B"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_617",
-        "question": "SPARKY & LACE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "A",
-          "R",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_618",
-        "question": "SPEARS & LACE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "E",
-          "A",
-          "R"
         ],
         "correctAnswer": "B"
       },
@@ -56255,58 +51351,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_622",
-        "question": "SPENDS & LACE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "E",
-          "N",
-          "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_623",
-        "question": "SPILLS & LACE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "I",
-          "L",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_624",
-        "question": "SPINES & LACE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "I",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_625",
-        "question": "SPLASH & LACE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "L",
-          "A",
-          "S"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_626",
         "question": "SPOILS & LACE",
         "key": null,
@@ -56329,19 +51373,6 @@ export const VERBAL_QUIZ = {
           "O",
           "O",
           "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_628",
-        "question": "SPORTS & LACE",
-        "key": null,
-        "options": [
-          "S",
-          "P",
-          "O",
-          "R",
-          "T"
         ],
         "correctAnswer": "B"
       },
@@ -56372,32 +51403,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "C"
       },
       {
-        "id": "Move_a_letter_631",
-        "question": "STABLE & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "B",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_632",
-        "question": "STACKS & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_633",
         "question": "STAGES & EAR",
         "key": null,
@@ -56406,45 +51411,6 @@ export const VERBAL_QUIZ = {
           "T",
           "A",
           "G",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_634",
-        "question": "STAGGER & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "G",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_635",
-        "question": "STAINS & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "I",
-          "N"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_636",
-        "question": "STAKES & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "K",
           "E"
         ],
         "correctAnswer": "B"
@@ -56459,71 +51425,6 @@ export const VERBAL_QUIZ = {
           "A",
           "N",
           "D"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_638",
-        "question": "STATED & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "T",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_639",
-        "question": "STATES & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "A",
-          "T",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_640",
-        "question": "STEALS & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "E",
-          "A",
-          "L"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_641",
-        "question": "STEAMS & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "E",
-          "A",
-          "M"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_642",
-        "question": "STEAMER & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "E",
-          "A",
-          "M"
         ],
         "correctAnswer": "B"
       },
@@ -56567,19 +51468,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_646",
-        "question": "STICKS & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "I",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_647",
         "question": "STICKY & EAR",
         "key": null,
@@ -56589,19 +51477,6 @@ export const VERBAL_QUIZ = {
           "I",
           "C",
           "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_648",
-        "question": "STILTS & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "I",
-          "L",
-          "T"
         ],
         "correctAnswer": "B"
       },
@@ -56645,45 +51520,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "B"
       },
       {
-        "id": "Move_a_letter_652",
-        "question": "STONES & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "O",
-          "N",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_653",
-        "question": "STOPPED & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "O",
-          "P",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_654",
-        "question": "STORES & EAR",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "O",
-          "R",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "Move_a_letter_655",
         "question": "STREAK & ICE",
         "key": null,
@@ -56710,32 +51546,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "C"
       },
       {
-        "id": "Move_a_letter_657",
-        "question": "STRING & ICE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "I",
-          "N"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_658",
-        "question": "STRIPE & RICE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "I",
-          "P"
-        ],
-        "correctAnswer": "C"
-      },
-      {
         "id": "Move_a_letter_659",
         "question": "STRIVE & RICE",
         "key": null,
@@ -56745,19 +51555,6 @@ export const VERBAL_QUIZ = {
           "R",
           "I",
           "V"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_660",
-        "question": "STROKE & ICE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "O",
-          "K"
         ],
         "correctAnswer": "C"
       },
@@ -56775,19 +51572,6 @@ export const VERBAL_QUIZ = {
         "correctAnswer": "C"
       },
       {
-        "id": "Move_a_letter_662",
-        "question": "STRUCK & ICE",
-        "key": null,
-        "options": [
-          "S",
-          "T",
-          "R",
-          "U",
-          "C"
-        ],
-        "correctAnswer": "C"
-      },
-      {
         "id": "Move_a_letter_663",
         "question": "STRUNG & ICE",
         "key": null,
@@ -56799,84 +51583,6 @@ export const VERBAL_QUIZ = {
           "N"
         ],
         "correctAnswer": "C"
-      },
-      {
-        "id": "Move_a_letter_664",
-        "question": "BLEACH & EAR",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "E",
-          "A",
-          "C"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_665",
-        "question": "BLIGHT & EAR",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "I",
-          "G",
-          "H"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_666",
-        "question": "BLOCKS & EAR",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "O",
-          "C",
-          "K"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_667",
-        "question": "BLOOMS & EAR",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "O",
-          "O",
-          "M"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_668",
-        "question": "BLOUSE & EAR",
-        "key": null,
-        "options": [
-          "B",
-          "L",
-          "O",
-          "U",
-          "S"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "Move_a_letter_670",
-        "question": "CLAMPS & EAR",
-        "key": null,
-        "options": [
-          "C",
-          "L",
-          "A",
-          "M",
-          "P"
-        ],
-        "correctAnswer": "B"
       }
     ]
   },

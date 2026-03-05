@@ -84,11 +84,20 @@ export const getQuiz = (subject, topic) => {
         if (isMaths && question.id) return question.id.split('_')[0];
         if (!question.image) return question.id;
         try {
+            // Extract filename from URL
             let filename = decodeURIComponent(question.image.split('/').pop());
+            // Remove extension
             filename = filename.replace(/\.\w+$/, '');
+            // Remove trailing " (N)" e.g. "seq_1 (1)" -> "seq_1"
             filename = filename.replace(/\s*\(\d+\)$/, '');
-            filename = filename.replace(/_?\d+$/, '');
-            return filename;
+
+            // Strictly match the user's rule that everything after the LAST underscore is the number
+            const lastUnderscore = filename.lastIndexOf('_');
+            if (lastUnderscore > -1) {
+                return filename.substring(0, lastUnderscore);
+            } else {
+                return filename.replace(/\d+$/, ''); // fallback for no underscore
+            }
         } catch (e) {
             return question.id;
         }
@@ -149,11 +158,14 @@ export const getRandomQuiz = () => {
             filename = filename.replace(/\.\w+$/, '');
             // Remove trailing " (N)" e.g. "seq_1 (1)" -> "seq_1"
             filename = filename.replace(/\s*\(\d+\)$/, '');
-            // Remove trailing "_N" or "N" e.g. "Matrix_Asym_1" -> "Matrix_Asym"
-            // Be careful not to aggressively strip numbers from "seq_1" if "seq" is too generic
-            // But usually seq_1 is the group.
-            filename = filename.replace(/_?\d+$/, '');
-            return filename;
+
+            // Strictly match the user's rule that everything after the LAST underscore is the number
+            const lastUnderscore = filename.lastIndexOf('_');
+            if (lastUnderscore > -1) {
+                return filename.substring(0, lastUnderscore);
+            } else {
+                return filename.replace(/\d+$/, ''); // fallback for no underscore
+            }
         } catch (e) {
             return question.id;
         }
