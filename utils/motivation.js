@@ -1,104 +1,84 @@
 export const checkRecords = (currentSession, stats) => {
     if (!stats) return null;
-    const { history, records, dailyStats, streak } = stats;
+    const { dailyStats, streak, records } = stats;
 
-    // --- 1. NEW RECORDS CHECK (Ninja Themed) ---
-    // Pass current session metrics
-    // currentSession: { correct, total, time, topic, subject }
-
-    const isRecord = (val, record) => val >= record && val > 0;
-
-    // A. Best Streak
-    if (streak > 0 && streak >= (records?.bestStreak || 0) && streak > 1) {
-        // Only celebrate if it's actually rising or a high tie? 
-        // Actually saveSession updates bestStreak automatically. 
-        // So if streak === records.bestStreak, it is the best.
-        // Let's only celebrate continuously if they are ON a best run.
-        return {
-            type: 'streak',
-            value: streak,
-            message: `🔥 SHADOW STREAK! You've matched your all-time best of ${streak} days! Stealthy consistency!`
-        };
+    // --- 1. STREAK CELEBRATIONS (First quiz of the day) ---
+    if (dailyStats && dailyStats.quizzes === 1) {
+        if (streak > 1) {
+            if (streak === (records?.bestStreak || 0)) {
+                return {
+                    type: 'streak_best',
+                    value: streak,
+                    message: `🔥 ALL-TIME BEST! You've matched your best ever ${streak} day streak! Unstoppable consistency!`
+                };
+            } else {
+                return {
+                    type: 'streak_extended',
+                    value: streak,
+                    message: `🔥 STREAK EXTENDED! Fantastic effort. You're on a ${streak} day roll! Keep it up, ninja!`
+                };
+            }
+        } else if (streak === 1) {
+            return {
+                type: 'streak_start',
+                value: streak,
+                message: `🌱 FIRST STEP! You've started a 1 day streak! Come back tomorrow to keep it growing!`
+            };
+        }
     }
 
-    // B. Daily Quizzes Record
-    if (dailyStats && records?.mostQuizzesInDay > 1) {
-        if (dailyStats.quizzes >= records.mostQuizzesInDay) {
+    // --- 2. DAILY MILESTONES ---
+    if (dailyStats) {
+        // Celebrate every 5th quiz in a day
+        if (dailyStats.quizzes > 0 && dailyStats.quizzes % 5 === 0) {
             return {
                 type: 'daily_volume',
                 value: dailyStats.quizzes,
-                message: `🌪️ LIGHTNING PACE! You've completed ${dailyStats.quizzes} quizzes today! A new daily record!`
+                message: `🌪️ LIGHTNING PACE! You've completed ${dailyStats.quizzes} quizzes today! Incredible dedication to your training!`
             };
         }
     }
 
-    // C. Daily Time Record
-    if (dailyStats && records?.mostTimeInDay > 300) { // Min 5 mins to count
-        if (dailyStats.time >= records.mostTimeInDay) {
-            const mins = Math.floor(dailyStats.time / 60);
-            return {
-                type: 'daily_time',
-                value: mins + 'm',
-                message: `🧘 ENDURANCE OF A SENSEI! ${mins} minutes training today! That's your best yet!`
-            };
-        }
-    }
-
-    // D. Topic Accuracy Record
-    if (currentSession.topic && records?.topicAccuracy) {
+    // --- 3. TOPIC MASTERY ---
+    if (currentSession && currentSession.topic && currentSession.total > 0) {
         const acc = Math.round((currentSession.correct / currentSession.total) * 100);
-        const recordAcc = records.topicAccuracy[currentSession.topic] || 0;
 
-        // If we just set it in storage, recordAcc will equal acc.
-        // We want to celebrate if it's a High Score (e.g. 100% or beat previous).
-        // It's hard to know "previous" here without query. 
-        // Simple heuristic: If it's 100%, celebrate. If it's > 80% and equals record, celebrate.
         if (acc === 100) {
-            return {
-                type: 'topic_mastery',
-                value: '100%',
-                message: `⚔️ FLAWLESS VICTORY! You mastered ${currentSession.topic} with 100% accuracy!`
-            };
-        }
-        if (acc >= recordAcc && recordAcc >= 80 && currentSession.total >= 5) {
-            return {
-                type: 'topic_best',
-                value: acc + '%',
-                message: `🥋 SKILL UP! Your best score yet in ${currentSession.topic} (${acc}%)!`
-            };
+            // 50% chance to show a flawless message (so it doesn't get annoying if they get 100% often)
+            if (Math.random() > 0.5 && currentSession.total >= 3) {
+                return {
+                    type: 'topic_mastery',
+                    value: '100%',
+                    message: `⚔️ FLAWLESS VICTORY! You mastered ${currentSession.topic} with 100% accuracy!`
+                };
+            }
+        } else if (acc >= 80 && currentSession.total >= 5) {
+            // 30% chance to show a positive reinforcement for 80%+
+            if (Math.random() > 0.7) {
+                return {
+                    type: 'topic_best',
+                    value: acc + '%',
+                    message: `🥋 SKILL UP! Absolutely fantastic score in ${currentSession.topic} (${acc}%)!`
+                };
+            }
         }
     }
 
-
-    // --- 2. FALLBACK: MONTHLY RANKING (Legacy but Ninja-fied) ---
-    if (!history || history.length < 5) return null;
-
-    // Filter to last 30 days
-    const now = new Date();
-    const thirtyDaysAgo = new Date();
-    thirtyDaysAgo.setDate(now.getDate() - 30);
-
-    const recentHistory = history.filter(h => new Date(h.date) >= thirtyDaysAgo);
-
-    if (recentHistory.length === 0) return null;
-
-    // Check Accuracy Rank
-    const currentAcc = Math.round((currentSession.correct / currentSession.total) * 100);
-    // Note: recentHistory ALREADY includes the current session because we fetched stats AFTER saving.
-    // So we just find the rank of currentSession in recentHistory.
-
-    // Actually, saveSession adds to history unshift. So current IS in history[0].
-
-    const sortedByAccuracy = [...recentHistory].sort((a, b) => b.accuracy - a.accuracy);
-    const rankAcc = sortedByAccuracy.findIndex(h => h === recentHistory[0]) + 1; // Find self
-
-    if (rankAcc <= 3 && currentAcc > 60) {
-        const medal = rankAcc === 1 ? '🥇 Gold' : rankAcc === 2 ? '🥈 Silver' : '🥉 Bronze';
+    // --- 4. RANDOM MOTIVATION ---
+    // Give a 15% chance of a motivational boost if nothing else triggered
+    if (Math.random() > 0.85) {
+        const BOOSTS = [
+            "You are doing incredibly well. Every question helps your ninja brain grow!",
+            "Every question answered is another step closer to mastery!",
+            "Fantastic focus! Your hard work is paying off.",
+            "Stay sharp! You're making continuous, solid progress.",
+            "Great job maintaining your discipline and training."
+        ];
+        const boost = BOOSTS[Math.floor(Math.random() * BOOSTS.length)];
         return {
-            type: 'accuracy_rank',
-            rank: rankAcc,
-            value: currentAcc + '%',
-            message: `${medal} Shuriken! That's your ${rankAcc === 1 ? 'best' : rankAcc === 2 ? '2nd best' : '3rd best'} score this month!`
+            type: 'motivation',
+            value: '',
+            message: `🌟 ${boost}`
         };
     }
 
@@ -118,7 +98,7 @@ export const getQuizFeedback = (score, total) => {
     if (!total) return "Practice complete!";
     const percentage = (score / total) * 100;
     if (percentage === 100) return "Perfect Score! 🌟";
-    if (percentage >= 80) return "Excellent work! keep it up! 🚀";
+    if (percentage >= 80) return "Excellent work! Keep it up! 🚀";
     if (percentage >= 60) return "Good job! You're getting there! 👍";
     if (percentage >= 40) return "Nice try! Keep practicing! 💪";
     return "Don't give up! Practice makes perfect! 📚";
