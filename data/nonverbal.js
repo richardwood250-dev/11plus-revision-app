@@ -1809,19 +1809,7 @@ export const nonverbal = {
         ],
         "correctAnswer": "B"
       },
-      {
-        "id": "nv_mat_140",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/ReflectAsym_40.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
+
       {
         "id": "nv_mat_141",
         "question": "Which option completes the matrix?",
