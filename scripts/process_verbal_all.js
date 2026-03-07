@@ -6,14 +6,51 @@ const outputFile = path.join(__dirname, '../data/verbal.js');
 
 const files = fs.readdirSync(inputDir).filter(f => f.endsWith('.csv') && !f.startsWith('.'));
 
+// Helper for true randomization (Fisher-Yates)
+const shuffleArray = (array) => {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+};
+
 // Helper to clean keys
 const cleanKey = (k) => k.toLowerCase().trim().replace(/_/g, '').replace(/ /g, '');
+
+// Helper to sanitize text and fix Unicode corruption (Mojibake)
+const sanitizeText = (text) => {
+    if (!text) return text;
+    let sanitized = text;
+    // Fix Windows-1252 / UTF-8 Mojibake artifacts
+    sanitized = sanitized.replace(/Ã¢â‚¬â€/g, "-");     // Em-dash
+    sanitized = sanitized.replace(/â€”/g, "-");        // Em-dash standard
+    sanitized = sanitized.replace(/Ã¢â‚¬â€œ/g, "-");   // En-dash
+    sanitized = sanitized.replace(/â€“/g, "-");        // En-dash standard
+    sanitized = sanitized.replace(/Ã¢â‚¬Â¦/g, "...");    // Ellipsis
+    sanitized = sanitized.replace(/â€¦/g, "...");        // Ellipsis standard
+    sanitized = sanitized.replace(/Ã¢â‚¬Ëœ/g, "'");     // Left single quote
+    sanitized = sanitized.replace(/Ã¢â‚¬â„¢/g, "'");    // Right single quote
+    sanitized = sanitized.replace(/â€˜/g, "'");        // Left single quote standard
+    sanitized = sanitized.replace(/â€™/g, "'");        // Right single quote standard
+    sanitized = sanitized.replace(/Ã¢â‚¬Å“/g, '"');     // Left double quote
+    sanitized = sanitized.replace(/Ã¢â‚¬Â /g, '"');     // Right double quote
+    sanitized = sanitized.replace(/â€œ/g, '"');        // Left double quote standard
+    sanitized = sanitized.replace(/â€ /g, '"');        // Right double quote standard
+
+    // Fallback for residual characters
+    sanitized = sanitized.replace(/Ã¢â‚¬/g, "'");
+
+    // Finally trim whitespace just in case
+    return sanitized.trim();
+};
 
 // Helper to normalize options
 const getOption = (row, headers, keys) => {
     for (const key of keys) {
         const index = headers.findIndex(h => cleanKey(h) === cleanKey(key));
-        if (index !== -1 && row[index]) return row[index];
+        if (index !== -1 && row[index]) return sanitizeText(row[index]);
     }
     return null;
 };
@@ -23,14 +60,6 @@ const processedTopics = {};
 files.forEach(file => {
     const filePath = path.join(inputDir, file);
     const content = fs.readFileSync(filePath, 'utf8');
-
-    // Parse Lines
-    // Parse Lines using parser
-
-    // Parse Headers
-    // Handle CSV quoting? Simple split for now, assuming standard format with no internal commas in standard fields (hopefully)
-    // Actually, questions might have commas. Need robust split.
-    // Re-use simple parser from before but robustify.
 
     // Robust CSV Parser (State Machine)
     function parseCSV(text) {
@@ -88,15 +117,6 @@ files.forEach(file => {
         // Inject headers
         headers = ['ID', 'Question', 'OptionA', 'OptionB', 'OptionC', 'OptionD', 'OptionE', 'Correct Answer'];
         startIndex = 0; // consume first row as data
-        // Note: Verbal analogies options seem to be "BZ", "BX", "AX" etc. 
-        // The question text contains the keys?
-        // "Wide is to ... (A... C...)"
-        // The columns 2-6 seem to be random pair combinations?
-        // Actually, looking at the data:
-        // VA_01, Question, BZ, BX, AX, BY, CY, A
-        // A is the correct answer.
-        // BZ, BX etc might be Distractors?
-        // Let's assume Col 2-6 are options.
     } else {
         headers = rows[0]; // Standard headers
     }
@@ -121,27 +141,26 @@ files.forEach(file => {
             'Analogies' // Verbal analogies? Let's assume standard "Question" or check file.
         ]);
 
-        // Special handling for Logical Deduction / Move Letter combo?
-        // If "Statement 2" exists, append it?
-        const s2Idx = headers.findIndex(h => h.trim() === 'Statement 2');
+        // Special handling for Logical Deduction / Move Letter combo
+        const s2Idx = headers.findIndex(h => cleanKey(h) === cleanKey('Statement 2'));
         if (s2Idx !== -1 && row[s2Idx]) {
-            qText += "\n" + row[s2Idx]; // Combine statements
+            qText += "\n" + sanitizeText(row[s2Idx]); // Combine statements
         }
 
-        const conclusionIdx = headers.findIndex(h => h.trim() === 'Conclusion');
+        const conclusionIdx = headers.findIndex(h => cleanKey(h) === cleanKey('Conclusion'));
         if (conclusionIdx !== -1 && row[conclusionIdx]) {
-            qText += "\nConclusion: " + row[conclusionIdx];
+            qText += "\nConclusion: " + sanitizeText(row[conclusionIdx]);
         }
 
-        const word2Idx = headers.findIndex(h => h.trim() === 'Word 2');
+        const word2Idx = headers.findIndex(h => cleanKey(h) === cleanKey('Word 2'));
         if (word2Idx !== -1 && row[word2Idx] && qText) {
-            qText += " -> " + row[word2Idx]; // e.g. Word1 -> Word2
+            qText += " & " + sanitizeText(row[word2Idx]);
         }
 
-        const keyIdx = headers.findIndex(h => h.trim() === 'Key');
+        const keyIdx = headers.findIndex(h => cleanKey(h) === cleanKey('Key'));
         let keyVal = null;
         if (keyIdx !== -1 && row[keyIdx]) {
-            keyVal = row[keyIdx];
+            keyVal = sanitizeText(row[keyIdx]);
         }
 
         // Options
@@ -161,11 +180,11 @@ files.forEach(file => {
         if (optDIdx === -1) optDIdx = headers.findIndex(h => h.trim() === 'D');
         if (optEIdx === -1) optEIdx = headers.findIndex(h => h.trim() === 'E');
 
-        if (optAIdx !== -1) options.push(row[optAIdx]);
-        if (optBIdx !== -1) options.push(row[optBIdx]);
-        if (optCIdx !== -1) options.push(row[optCIdx]);
-        if (optDIdx !== -1) options.push(row[optDIdx]);
-        if (optEIdx !== -1) options.push(row[optEIdx]);
+        if (optAIdx !== -1) options.push(sanitizeText(row[optAIdx]));
+        if (optBIdx !== -1) options.push(sanitizeText(row[optBIdx]));
+        if (optCIdx !== -1) options.push(sanitizeText(row[optCIdx]));
+        if (optDIdx !== -1) options.push(sanitizeText(row[optDIdx]));
+        if (optEIdx !== -1) options.push(sanitizeText(row[optEIdx]));
 
         // Correct Answer
         const correctIdx = headers.findIndex(h => /correct/i.test(h) || /answer/i.test(h));
@@ -173,30 +192,51 @@ files.forEach(file => {
 
         // Normalize Correct Answer
         let finalCorrectLetter = correctVal ? correctVal.trim() : 'A';
+        // Secure sanitization for 'Letters for numbers' where answers are 'OptionE'
+        finalCorrectLetter = finalCorrectLetter.replace(/^option\s*/i, '');
 
-        // If the answer is the full text (e.g. "SKIRT-VARY"), try to map it to A/B/C/D/E
-        if (finalCorrectLetter.length > 1 && !['A', 'B', 'C', 'D', 'E'].includes(finalCorrectLetter)) {
-            const matchIdx = options.findIndex(o => o && o.toLowerCase() === finalCorrectLetter.toLowerCase());
+        // If the answer is the full text (e.g. "SKIRT-VARY") or a literal single character (e.g. "K" in Missing Letter)
+        // Try to map it to A/B/C/D/E by searching the options array
+        if (cleanTopicKey === 'Missing_letter' || cleanTopicKey === 'Move_a_letter' || !['A', 'B', 'C', 'D', 'E'].includes(finalCorrectLetter)) {
+            const matchIdx = options.findIndex(o => o && o.toLowerCase() === sanitizeText(finalCorrectLetter).toLowerCase());
             if (matchIdx !== -1) {
                 finalCorrectLetter = String.fromCharCode(65 + matchIdx);
             }
         }
 
-        // Final check for valid letter
-        if (!['A', 'B', 'C', 'D', 'E'].includes(finalCorrectLetter)) {
-            // If we can't find it, defaulting or logging? 
-            // Logic deduction sometimes has Answer text that doesn't match options perfectly?
-            // Let's assume it's A if strictly unknown to avoid crash, or filter out?
-            // Filter out safest.
-            // continue; 
+        // Manual override for Hidden_word_47 duplicate valid answer "hen"
+        if (qText === "The new estate is huge now.") {
+            qText = "That new estate is huge now.";
+            if (options[0] === "The new") {
+                options[0] = "That new";
+            }
         }
 
-        if (qText && options.length > 0) {
+        // --- SHUFFLE OPTIONS ---
+        let filteredOptions = options.filter(o => o); // Remove empty
+
+        if (filteredOptions.length > 0) {
+            // 1. Identify the exact text of the correct answer BEFORE shuffling
+            // Default to 'A' index on crash, but it should be strongly typed natively
+            const originalCorrectIdx = Math.max(0, finalCorrectLetter.charCodeAt(0) - 65);
+            let correctText = filteredOptions[originalCorrectIdx] || filteredOptions[0];
+
+            // 2. Shuffle the options
+            filteredOptions = shuffleArray(filteredOptions);
+
+            // 3. Find where the correctText moved to
+            const newCorrectIdx = filteredOptions.indexOf(correctText);
+
+            // 4. Update the letter
+            finalCorrectLetter = String.fromCharCode(65 + (newCorrectIdx !== -1 ? newCorrectIdx : 0));
+        }
+
+        if (qText && filteredOptions.length > 0) {
             questions.push({
                 id: `${cleanTopicKey}_${i}`,
                 question: qText,
                 key: keyVal,
-                options: options.filter(o => o), // Remove empty
+                options: filteredOptions,
                 correctAnswer: finalCorrectLetter
             });
         }

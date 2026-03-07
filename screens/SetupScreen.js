@@ -49,6 +49,10 @@ export const SetupScreen = ({ navigation, onFinish }) => {
 
         if (onFinish) {
             onFinish();
+            // Force navigation to clear any cached states on web
+            setTimeout(() => {
+                navigation.navigate('Home');
+            }, 100);
         } else {
             // We were navigated here from inside the app to add a new user
             navigation.goBack();

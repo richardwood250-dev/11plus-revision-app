@@ -1,14 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
-const csvPath = path.join(__dirname, 'grammar_raw.csv');
-const rawData = fs.readFileSync(csvPath, 'utf8');
+const GITHUB_CSV_URL = 'https://raw.githubusercontent.com/richardwood250-dev/11plus-english/main/Questions%20-%20Grammar.csv';
 
 // CSV Parser
 function parseCSV(text) {
-    const lines = text.split('\n').filter(l => l.trim());
-    // Verify headers? Skipping for now, assuming structure
-
+    const lines = text.split('\n').filter(l => l.trim() && l.includes(','));
     const rows = [];
     for (let i = 1; i < lines.length; i++) {
         const line = lines[i];
@@ -38,127 +35,107 @@ function parseCSV(text) {
     return rows;
 }
 
-const rows = parseCSV(rawData);
-const passages = {};
-
-rows.forEach(row => {
-    // PassageID, LineNum, PartA, PartB, PartC, PartD, CorrectAnswer, Explanation
-    // Note: row length might vary if Explanation contains commas, but our parser handles quotes.
-    if (row.length < 7) return;
-
-    let parts = [row[2], row[3], row[4], row[5]]; // Mutable for speech mark fix
-
-    // Heuristic A: Restore missing opening speech marks (Excel strips leading single quotes)
-    // Pattern: One of the parts ends with `'` (and is not just an apostrophe word like "don't")
-    // and is followed by a speech verb or the sentence structure implies speech.
-    const speechVerbs = ['said', 'shouted', 'asked', 'whispered', 'cried', 'replied', 'warned', 'thought', 'yelled', 'screamed', 'agreed', 'promised', 'mumbled', 'groaned'];
-
-    // Check if any part ends with ' which serves as a closing quote
-    let closingQuoteIndex = -1;
-    for (let i = 0; i < parts.length; i++) {
-        const p = parts[i].trim();
-        if (p.endsWith("'") && !p.endsWith("n't")) { // ignore don't, won't etc at end (rare but possible)
-            // Double check it looks like a closing quote
-            closingQuoteIndex = i;
-            break;
-        }
+async function run() {
+    console.log(`Downloading latest Grammar question list from GitHub...`);
+    let rawData;
+    try {
+        const response = await fetch(GITHUB_CSV_URL);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        rawData = await response.text();
+    } catch (e) {
+        console.error("Failed to fetch Grammar CSV:", e);
+        // Fallback to local if fetch fails
+        rawData = fs.readFileSync(path.join(__dirname, 'grammar_raw.csv'), 'utf8');
     }
 
-    if (closingQuoteIndex !== -1) {
-        // Check if we already have an opening quote in part 0
-        if (!parts[0].trim().startsWith("'")) {
-            // Check context: Does the part after the quote look like a speech tag?
-            // or is it just a speech sentence?
-            // e.g. "Come here', he said" -> Part[closingQuoteIndex+1] starts with 'he' or 'said' etc.
+    const rows = parseCSV(rawData);
+    const passages = {};
 
-            let likelySpeech = false;
+    rows.forEach(row => {
+        // PassageID, LineNum, PartA, PartB, PartC, PartD, CorrectAnswer, Explanation
+        if (row.length < 7) return;
 
-            // Case 1: Next part contains a speech verb
-            if (closingQuoteIndex + 1 < parts.length) {
-                const nextPart = parts[closingQuoteIndex + 1].toLowerCase();
-                if (speechVerbs.some(v => nextPart.includes(v)) || ['he', 'she', 'dad', 'mum', 'tom', 'ben'].some(p => nextPart.startsWith(p.toLowerCase()))) {
-                    likelySpeech = true;
-                }
-            }
+        const rawId = row[0];
+        if (!rawId) return;
 
-            // Case 2: The closing quote part ITSELF ends with "' said..." (if merged?) 
-            // unlikely given CSV structure, but possible if split wrong.
+        // Strip suffixes like _Fix, _Rev, _v2, etc., so they overwrite the original question
+        const baseId = rawId.replace(/_(Fix|Rev|v2|Corr).*$/i, '');
+        const lineNum = row[1];
 
-            // Case 3: Just simple heuristic: If we have a closing quote and no opening quote, duplicate it at start.
-            // We must be careful of things like "It's" at end of line? Unlikely.
-            // apostrophes are usually inside words. ' at end is almost always a close quote or gloss.
-            // Let's assume valid grammar data implies close quote.
+        // PartA to PartD
+        let parts = [row[2], row[3], row[4], row[5]];
 
-            if (likelySpeech || true) { // Defaulting to true for now as ' at end of part is strong signal in this dataset
-                // console.log(`Restoring speech mark for ${row[0]} Line ${row[1]}: "${parts[0]}..."`);
+        // Speech Marks Heuristic
+        // If the passage contains a trailing single quote, ensure an opening one exists.
+        // E.g. part ends with ' or '! or ',
+        const containsClosingQuote = parts.some(p => {
+            const trimmed = p.trim();
+            // Don't flag contractions as closing quotes
+            if (trimmed.endsWith("n't") || trimmed.endsWith("s'")) return false;
+            return trimmed.match(/['][.,!?]*$/);
+        });
+
+        if (containsClosingQuote) {
+            // Check if first part actually starts with a single quote or has a quote inside
+            if (!parts[0].trim().match(/^['"]/)) {
                 parts[0] = "'" + parts[0];
             }
         }
-    }
 
-    const pId = row[0];
-    const lineNum = row[1];
+        const correctRaw = row[6].trim().toUpperCase();
+        const correctAnswer = correctRaw === 'N' ? 'E' : correctRaw;
 
-    const correctRaw = row[6].trim().toUpperCase(); // A, B, C, D, N
+        // Add "No Error" to the options
+        const options = [...parts, "No Error"];
 
-    // Map CorrectAnswer: N -> E
-    const correctAnswer = correctRaw === 'N' ? 'E' : correctRaw;
+        if (!passages[baseId]) {
+            passages[baseId] = {
+                id: baseId,
+                lines: {},
+                questions: {}
+            };
+        }
 
-    // Construct Options
-    // A, B, C, D, No Error
-    const options = [...parts, "No Error"];
+        const lineText = parts.join(' ');
+        // Overwrite the line to keep the latest fix
+        passages[baseId].lines[lineNum] = `(${lineNum}) ${lineText}`;
 
-    if (!passages[pId]) {
-        passages[pId] = {
-            id: pId,
-            lines: {}, // Use object to dedupe by LineNum
-            questions: []
+        // Overwrite the question to keep the latest fix
+        passages[baseId].questions[lineNum] = {
+            id: `${baseId}_${lineNum}`,
+            lineNum: parseInt(lineNum),
+            question: `Line ${lineNum}: Find the error`,
+            options: options,
+            correctAnswer: correctAnswer,
+            explanation: row[7] || ""
         };
-    }
-
-    // Reconstruct Line Text
-    const lineText = parts.join(' ');
-    // Store line text by number to deduplicate (last write wins)
-    passages[pId].lines[lineNum] = `(${lineNum}) ${lineText}`;
-
-    passages[pId].questions.push({
-        id: `${pId}_${lineNum}`,
-        lineNum: parseInt(lineNum), // Store for sorting
-        question: `Line ${lineNum}: Find the error`,
-        options: options,
-        correctAnswer: correctAnswer,
-        explanation: row[7] || ""
-    });
-});
-
-const finalQuestions = [];
-
-Object.values(passages).forEach(p => {
-    // Sort lines 1..12
-    const sortedLineNums = Object.keys(p.lines).sort((a, b) => parseInt(a) - parseInt(b));
-    const fullText = sortedLineNums.map(n => p.lines[n]).join('\n\n');
-
-    // Deduplicate questions too? 
-    // The user might have duplicate rows for the SAME Question ID.
-    // Let's use a map for questions by LineNum too.
-    const uniqueQuestions = {};
-    p.questions.forEach(q => {
-        uniqueQuestions[q.lineNum] = q;
     });
 
-    Object.values(uniqueQuestions).sort((a, b) => a.lineNum - b.lineNum).forEach(q => {
-        finalQuestions.push({
-            id: q.id,
-            passage: fullText,
-            question: q.question,
-            options: q.options,
-            correctAnswer: q.correctAnswer,
-            explanation: q.explanation
+    const finalQuestions = [];
+
+    Object.values(passages).forEach(p => {
+        const sortedLineNums = Object.keys(p.lines).sort((a, b) => parseInt(a) - parseInt(b));
+        const fullText = sortedLineNums.map(n => p.lines[n]).join('\n\n');
+
+        const sortedQuestionNums = Object.keys(p.questions).sort((a, b) => parseInt(a) - parseInt(b));
+        sortedQuestionNums.forEach(qn => {
+            const q = p.questions[qn];
+            finalQuestions.push({
+                id: q.id,
+                passage: fullText,
+                question: q.question,
+                options: q.options,
+                correctAnswer: q.correctAnswer,
+                explanation: q.explanation
+            });
         });
     });
-});
 
-const fileContent = `export const GRAMMAR_QUIZ = ${JSON.stringify(finalQuestions, null, 2)};`;
+    const fileContent = `export const GRAMMAR_QUIZ = ${JSON.stringify(finalQuestions, null, 2)};`;
+    const destPath = path.join(__dirname, '../data/grammar.js');
+    fs.writeFileSync(destPath, fileContent);
+    console.log(`Generated ${finalQuestions.length} questions from ${Object.keys(passages).length} passages.`);
+    console.log(`Written to ${destPath}`);
+}
 
-fs.writeFileSync(path.join(__dirname, '../data/grammar.js'), fileContent);
-console.log(`Generated ${finalQuestions.length} questions from ${Object.keys(passages).length} passages.`);
+run();

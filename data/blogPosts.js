@@ -215,5 +215,53 @@ export const BLOG_POSTS = [
                 value: "Remember, the 11+ is just a door to the next stage of education. Whether they walk through it or take another path, the logic, vocabulary, and discipline they build here will serve them for life."
             }
         ]
+    },
+    {
+        id: 'the-11-plus-is-for-everyone',
+        slug: 'the-11-plus-is-for-everyone',
+        title: 'The 11+ is for Everyone: Why Background Doesn\'t Define Potential',
+        subtitle: 'Think the 11+ is only for certain types of families? Think again. Every child deserves a shot at unlocking their potential.',
+        date: '2026-02-24',
+        readTime: '4 min read',
+        category: 'Inspiration',
+        author: 'Ninja Master',
+        image: '/assets/blog/everyone_hero.png',
+        content: [
+            {
+                type: 'paragraph',
+                value: "There’s a common myth surrounding the 11+ exams: that they are only for families who have been preparing since reception, or for those who can afford expensive private tutors. This simply isn\'t true. The 11+ is designed to find potential, wherever it comes from."
+            },
+            {
+                type: 'header',
+                value: "Breaking Down the Myths"
+            },
+            {
+                type: 'paragraph',
+                value: "Grammar schools and independent schools offer life-changing opportunities, and these should be open to children from all walks of life. The tests, particularly reasoning papers, are specifically designed to be \'tutor-proof\'—they measure raw cognitive ability rather than just what a child has been taught in school."
+            },
+            {
+                type: 'callout',
+                title: "Ninja Fact",
+                value: "Many schools are actively changing their admissions processes to be more inclusive, prioritizing children with high potential regardless of their primary school background."
+            },
+            {
+                type: 'header',
+                value: "The Power of Free and Accessible Tools"
+            },
+            {
+                type: 'paragraph',
+                value: "You don\'t need to spend thousands on tutors. Consistent, targeted practice using accessible tools can completely level the playing field. Ten minutes of focused practice a day is often more effective than a two-hour tutoring block."
+            },
+            {
+                type: 'cta',
+                text: "Start your journey today with bite-sized, engaging practice.",
+                action: 'QuickStart',
+                buttonLabel: "Try Your First Quiz"
+            },
+            {
+                type: 'paragraph',
+                value: "Every child deserves the chance to see what they are capable of. By giving the 11+ a go, your child isn\'t just preparing for a test—they are building vocabulary, sharpening logical reasoning, and developing resilience that will help them throughout their education."
+            }
+        ]
     }
 ];

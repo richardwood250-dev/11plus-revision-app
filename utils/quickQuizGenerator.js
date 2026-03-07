@@ -20,7 +20,7 @@ const getSources = () => {
         // Wait, line 6 says import { VR_COMPOUND_QUIZ } from '../data/vr_compound';
         // But line 22 iterates keys of VERBAL_QUIZ. Does VERBAL_QUIZ include Compound Words?
         // Let's assume the original array was correct and keep it.
-        { type: 'Verbal', topic: 'Compound Words', data: VR_COMPOUND_QUIZ },
+        { type: 'Verbal', topic: 'Linking Words', data: VR_COMPOUND_QUIZ },
     ];
 
     // Add Dynamic Verbal

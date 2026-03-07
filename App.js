@@ -97,7 +97,7 @@ export default function App() {
                 headerStatusBarHeight: Platform.OS === 'android' ? StatusBar.currentHeight : undefined
               }}>
                 {!isSetupComplete ? (
-                  <Stack.Screen name="Setup" options={{ headerShown: false }}>
+                  <Stack.Screen name="InitialSetup" options={{ headerShown: false }}>
                     {props => <SetupScreen {...props} onFinish={() => setIsSetupComplete(true)} />}
                   </Stack.Screen>
                 ) : (

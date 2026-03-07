@@ -42,6 +42,11 @@ const parseCSV = (csvText, topic) => {
         if (!id || !imageFile) continue;
         if (id === 'nv_seq_585' || id === 'hc_83' || id === 'nv_seq_311' || id === 'hc_491' || id === 'nv_mat_383') continue; // User requested delete
 
+        // Filter out missing Figure Analogies images (question_1_... to question_200_..., q24_partial_..., q35_neat_...)
+        if (imageFile.startsWith('question_') || imageFile.startsWith('q24_partial_') || imageFile.startsWith('q35_neat_')) {
+            continue;
+        }
+
         let options = ['A', 'B', 'C', 'D', 'E'];
         let answer = '';
 

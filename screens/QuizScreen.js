@@ -23,6 +23,7 @@ export const QuizScreen = ({ route }) => {
     const [status, setStatus] = useState('active'); // 'active' | 'review'
     const [modalVisible, setModalVisible] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
+    const scrollViewRef = useRef(null);
     const startTime = useRef(new Date());
 
     // Config Flags
@@ -94,6 +95,9 @@ export const QuizScreen = ({ route }) => {
         const finishQuiz = async () => {
             try {
                 setStatus('review'); // Updates UI immediately
+                setTimeout(() => {
+                    scrollViewRef.current?.scrollTo({ y: 0, animated: true });
+                }, 100);
 
                 // Calculate Stats
                 const endTime = new Date();
@@ -222,7 +226,7 @@ export const QuizScreen = ({ route }) => {
             {/* Helper Strip */}
             {showAlphabet && <AlphabetStrip />}
 
-            <ScrollView contentContainerStyle={styles.scroll}>
+            <ScrollView ref={scrollViewRef} contentContainerStyle={styles.scroll}>
 
                 {/* Header (General) */}
                 <View style={styles.header}>

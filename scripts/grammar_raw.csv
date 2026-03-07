@@ -1098,26 +1098,19 @@ Story_88_BeachGame,11,The dog,shook,his,fur.,N,No error.
 Story_88_BeachGame,12,We got,wet,and,salty.,B,Capitalization error in Part B: 'Wet' should be 'wet'.
 Story_88_BeachGame_Fix5,12,We got,Wet,and,salty.,B,Capitalization error in Part B: 'Wet' should be 'wet'.
 Story_89_SnowFun,1,It snowed,all night,long,yesterday.,N,No error.
-Story_89_SnowFun,2,The garden,was full,of,snow.,D,Missing full stop in Part D: 'snow' should be 'snow.'.
+Story_89_SnowFun,2,The garden,was full,of,snow,D,Missing full stop in Part D: 'snow' should be 'snow.'.
 Story_89_SnowFun,3,Lets go,outside',said,Mia.,A,Apostrophe error in Part A: 'Lets' should be 'Let's'.
-Story_89_SnowFun,4,We put,on our,boots,and hats.,C,"Extra comma inserted in Part C: 'boots,'."
-Story_89_SnowFun_Fix,4,We put,on our,"boots,",and hats.,C,"Extra comma inserted in Part C: 'boots,'."
-Story_89_SnowFun,5,The snow,felt,very,cold.,B,"Extra comma inserted in Part B: 'felt,'."
-Story_89_SnowFun_Fix2,5,The snow,"felt,",very,cold.,B,"Extra comma inserted in Part B: 'felt,'."
-Story_89_SnowFun,6,Look out',shouted,Mia,loudly.,A,Missing exclamation mark in Part A: 'out'' should be 'out!'.
+Story_89_SnowFun,4,We put,on our,"boots,",and hats.,C,"Extra comma inserted in Part C: 'boots,'."
+Story_89_SnowFun,5,The snow,"felt,",very,cold.,B,"Extra comma inserted in Part B: 'felt,'."
+Story_89_SnowFun,6,"'Look out'",shouted,Mia,loudly.,A,Missing exclamation mark in Part A: 'out'' should be 'out!'.
 Story_89_SnowFun,7,She threw,a big,snowball,at me.,N,No error.
-Story_89_SnowFun,8,It hit,my leg,with a,thud.,C,Capitalization error in Part C: 'With' should be 'with'.
-Story_89_SnowFun_Fix3,8,It hit,my leg,With a,thud.,C,Capitalization error in Part C: 'With' should be 'with'.
-Story_89_SnowFun,9,I laughed,and made,one,too.,B,"Extra comma inserted in Part B: 'made,'."
-Story_89_SnowFun_Fix4,9,I laughed,"and made,",one,too.,B,"Extra comma inserted in Part B: 'made,'."
+Story_89_SnowFun,8,It hit,my leg,With a,thud.,C,Capitalization error in Part C: 'With' should be 'with'.
+Story_89_SnowFun,9,I laughed,"and made,",one,too.,B,"Extra comma inserted in Part B: 'made,'."
 Story_89_SnowFun,10,We played,until,it got,dark.,N,No error.
-Story_89_SnowFun,11,Mum called,us in,for,tea.,B,Capitalization error in Part B: 'Us' should be 'us'.
-Story_89_SnowFun_Fix5,11,Mum called,Us in,for,tea.,B,Capitalization error in Part B: 'Us' should be 'us'.
-Story_89_SnowFun,12,We drank,hot,cocoa,inside.,B,"Extra comma inserted in Part B: 'hot,'."
-Story_89_SnowFun_Fix6,12,We drank,"hot,",cocoa,inside.,B,"Extra comma inserted in Part B: 'hot,'."
+Story_89_SnowFun,11,Mum called,Us in,for,tea.,B,Capitalization error in Part B: 'Us' should be 'us'.
+Story_89_SnowFun,12,We drank,"hot,",cocoa,inside.,B,"Extra comma inserted in Part B: 'hot,'."
 Story_90_LibraryVisit,1,I went,to the,library,today.,N,No error.
-Story_90_LibraryVisit,2,It was,quiet,and,calm.,C,Capitalization error in Part C: 'And' should be 'and'.
-Story_90_LibraryVisit_Fix,2,It was,quiet,And,calm.,C,Capitalization error in Part C: 'And' should be 'and'.
+Story_90_LibraryVisit,2,It was,quiet,And,calm.,C,Capitalization error in Part C: 'And' should be 'and'.
 Story_90_LibraryVisit,3,Where are,the books',I,asked.,B,Missing question mark in Part B: 'books'' should be 'books?'.
 Story_90_LibraryVisit,4,The lady,pointed,to a,shelf.,B,"Extra comma inserted in Part B: 'pointed,'."
 Story_90_LibraryVisit_Fix2,4,The lady,"pointed,",to a,shelf.,B,"Extra comma inserted in Part B: 'pointed,'."
@@ -2308,3 +2301,4 @@ Story_160_NewBoy,10,We are,friends,now,I think,D,Missing full stop in Part D: 't
 Story_160_NewBoy,11,He sits,with us,at,lunch.,N,No error.
 
 Story_160_NewBoy,12,School is,More fun,with,him.,B,Capitalization error in Part B: 'More' should be 'more'.
+

@@ -15,6 +15,16 @@ import { nonverbal } from '../data/nonverbal';
 
 import { fetchEnglishQuiz } from '../utils/englishLoader';
 
+// Helper for true randomization (Fisher-Yates) instead of biased Math.random sort
+const shuffleArray = (array) => {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+};
+
 export const QuizConfigScreen = ({ route }) => {
     const navigation = useNavigation();
     const { subject: initialSubject = 'Maths' } = route.params || {};
@@ -30,7 +40,7 @@ export const QuizConfigScreen = ({ route }) => {
     useEffect(() => {
         if (subject === 'Maths') setTopic('All');
         else if (subject === 'English') setTopic('Comprehension');
-        else if (subject === 'Verbal') setTopic('Compound Words');
+        else if (subject === 'Verbal') setTopic('Linking Words');
         else if (subject === 'Non-Verbal') setTopic('Matrices');
     }, [subject]);
 
@@ -169,7 +179,7 @@ export const QuizConfigScreen = ({ route }) => {
 
                 // Helper to select diverse questions guaranteed strictly unique by image stem
                 const selectDiverseQuestions = (questions, count) => {
-                    const shuffled = [...questions].sort(() => 0.5 - Math.random());
+                    const shuffled = shuffleArray(questions);
                     const selected = [];
                     const seenStems = new Set();
 
@@ -215,9 +225,9 @@ export const QuizConfigScreen = ({ route }) => {
                 Alert.alert("Error", "Topic data not found!");
             }
         } else if (subject === 'Verbal') {
-            if (topic === 'Compound Words') {
+            if (topic === 'Linking Words') {
                 // Shuffle and pick 10
-                const shuffled = [...VR_COMPOUND_QUIZ].sort(() => 0.5 - Math.random());
+                const shuffled = shuffleArray(VR_COMPOUND_QUIZ);
                 const selectedQuestions = shuffled.slice(0, 10);
 
                 navigation.navigate('Quiz', {
@@ -227,8 +237,9 @@ export const QuizConfigScreen = ({ route }) => {
             } else if (VERBAL_QUIZ[topic]) {
                 // Generic handler for dynamic topics
                 const dataset = VERBAL_QUIZ[topic].questions;
-                const shuffled = [...dataset].sort(() => 0.5 - Math.random());
-                const selectedQuestions = shuffled.slice(0, 10); // Standardize on 10 random questions
+                const shuffled = shuffleArray(dataset);
+                const questionCount = topic === 'Logical deduction' ? 5 : 10;
+                const selectedQuestions = shuffled.slice(0, questionCount); // Standardize on 10 random questions (5 for Logical deduction)
 
                 navigation.navigate('Quiz', {
                     title: VERBAL_QUIZ[topic].title, // Pass title
@@ -313,7 +324,7 @@ export const QuizConfigScreen = ({ route }) => {
                     <View style={styles.section}>
                         <Text style={styles.sectionTitle}>Select Topic</Text>
                         <View style={styles.row}>
-                            <OptionBtn label="Compound Words" value="Compound Words" current={topic} onSelect={setTopic} />
+                            <OptionBtn label="Linking Words" value="Linking Words" current={topic} onSelect={setTopic} />
                             {Object.keys(VERBAL_QUIZ).map(key => (
                                 <OptionBtn
                                     key={key}

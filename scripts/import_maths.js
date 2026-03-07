@@ -29,7 +29,9 @@ function transformRecord(record) {
     return {
         id: record['Ref'],
         question: record['Question'],
-        image: record['Image'] && record['Image'].trim() !== '' ? record['Image'] : null,
+        image: record['Image'] && record['Image'].trim() !== ''
+            ? (record['Image'].startsWith('http') ? record['Image'] : `https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/${record['Image']}`)
+            : null,
         options: options,
         correctAnswer: record['Correct'],
         topic: record['Topic'],

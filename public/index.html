@@ -27,7 +27,7 @@
         // GLOBAL ERROR HANDLER FOR DEBUGGING
         window.onerror = function (message, source, lineno, colno, error) {
             console.error('Captured Error:', message, source);
-            
+
             // Auto-reload once on chunk loading error (stale JS cache fetching HTML)
             if (message.includes("Unexpected token '<'") || (message.includes('SyntaxError') && source && source.includes('.js'))) {
                 const reloadCount = sessionStorage.getItem('chunk_reload') || 0;
@@ -478,9 +478,9 @@
             <footer class="bg-gray-900 text-gray-400 py-12">
                 <div class="container mx-auto px-6 text-center">
                     <div class="flex justify-center gap-8 mb-8">
-                        <a href="/settings" class="hover:text-white transition">Privacy Policy</a>
-                        <a href="#" class="hover:text-white transition">Contact Us</a>
-                        <a href="#" class="hover:text-white transition">Disclaimer</a>
+                        <a href="/privacy-policy.html" class="hover:text-white transition">Privacy Policy</a>
+                        <a href="mailto:info@11plusninja.com" class="hover:text-white transition">Contact Us</a>
+                        <a href="/disclaimer.html" class="hover:text-white transition">Disclaimer</a>
                     </div>
                     <p>&copy; 2026 11PlusNinja. All rights reserved.</p>
                 </div>
