@@ -5,12 +5,22 @@ export const ResilientImage = ({ uri, style, resizeMode }) => {
     const [currentUri, setCurrentUri] = useState(uri);
     const [hasError, setHasError] = useState(false);
     const [attemptedFix, setAttemptedFix] = useState(false);
+    const [aspectRatio, setAspectRatio] = useState(null);
 
     useEffect(() => {
         // Reset when prop changes
         setCurrentUri(uri);
         setHasError(false);
         setAttemptedFix(false);
+        setAspectRatio(null);
+        
+        Image.getSize(uri, (width, height) => {
+            if (width && height) {
+                setAspectRatio(width / height);
+            }
+        }, () => {
+            // Silent fail, will fallback to provided style explicitly
+        });
     }, [uri]);
 
     const handleError = () => {
@@ -60,7 +70,10 @@ export const ResilientImage = ({ uri, style, resizeMode }) => {
     return (
         <Image
             source={{ uri: currentUri }}
-            style={style}
+            style={[
+                style, 
+                aspectRatio ? { aspectRatio, height: undefined } : null
+            ]}
             resizeMode={resizeMode}
             onError={handleError}
         />
