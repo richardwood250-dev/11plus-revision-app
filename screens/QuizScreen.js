@@ -35,8 +35,9 @@ export const QuizScreen = ({ route }) => {
     // Move a letter already has Words in the question text thanks to our parser updates? 
     const isMaths = subject === 'Maths';
     const isNVR = subject === 'Non-Verbal' || 
-                  ['Matrices', 'Odd 2 out', 'Odd 2 Out', 'Series', 'Codes', 'Similarity', 'Hidden Pictures'].includes(title) || 
-                  ['Matrices', 'Odd 2 out', 'Odd 2 Out', 'Series', 'Codes', 'Similarity', 'Hidden Pictures'].includes(topic);
+                  ['Matrices', 'Odd 2 out', 'Odd 2 Out', 'Series', 'Codes', 'Similarity', 'Hidden Pictures', 'Horizontal Code'].includes(title) || 
+                  ['Matrices', 'Odd 2 out', 'Odd 2 Out', 'Series', 'Codes', 'Similarity', 'Hidden Pictures', 'Horizontal Code'].includes(topic);
+    const isCodes = title === 'Horizontal Code' || topic === 'Horizontal Code';
 
     const handleOptionPress = (questionIndex, option) => {
         if (status === 'review') return;
@@ -308,14 +309,14 @@ export const QuizScreen = ({ route }) => {
                                 const isSelected = isOptionSelected(qIndex, letter);
 
                                 // Base Styling
-                                let btnStyle = [styles.optionBtn, isNVR && styles.nvrOptionBtn];
-                                let textStyle = styles.optionText;
-                                let labelStyle = [styles.optionLabel, isNVR && styles.nvrOptionLabel];
+                                let btnStyle = [styles.optionBtn, isNVR && styles.nvrOptionBtn, isCodes && styles.nvrCodesOptionBtn];
+                                let textStyle = [styles.optionText, isCodes && styles.nvrCodesOptionText];
+                                let labelStyle = [styles.optionLabel, isNVR && styles.nvrOptionLabel, isCodes && styles.nvrCodesOptionLabel];
 
                                 if (status === 'active') {
                                     if (isSelected) {
                                         btnStyle.push(styles.optionSelected);
-                                        textStyle = [styles.optionText, { fontWeight: 'bold', color: Colors.primary }];
+                                        textStyle.push({ fontWeight: 'bold', color: Colors.primary });
                                         labelStyle.push({ color: Colors.primary });
                                     }
                                 } else {
@@ -325,16 +326,16 @@ export const QuizScreen = ({ route }) => {
 
                                     if (isCorrect) {
                                         btnStyle.push(styles.optionCorrect);
-                                        textStyle = [styles.optionText, { color: 'white' }];
+                                        textStyle.push({ color: 'white' });
                                         labelStyle.push({ color: 'white' });
                                     } else if (isSelected && !isCorrect) {
                                         btnStyle.push(styles.optionWrong);
-                                        textStyle = [styles.optionText, { color: 'white' }];
+                                        textStyle.push({ color: 'white' });
                                         labelStyle.push({ color: 'white' });
                                     } else if (isSelected && isCorrect) {
                                         // Correctly selected
                                         btnStyle.push(styles.optionCorrect);
-                                        textStyle = [styles.optionText, { color: 'white' }];
+                                        textStyle.push({ color: 'white' });
                                         labelStyle.push({ color: 'white' });
                                     }
                                 }
@@ -347,7 +348,7 @@ export const QuizScreen = ({ route }) => {
                                         disabled={status === 'review'}
                                     >
                                         <Text style={labelStyle}>{letter}</Text>
-                                        {!isNVR && <Text style={textStyle}>{option}</Text>}
+                                        {(!isNVR || isCodes) && <Text style={textStyle}>{option}</Text>}
                                     </TouchableOpacity>
                                 );
                             })}
@@ -615,9 +616,29 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         padding: 0,
     },
+    nvrCodesOptionBtn: {
+        width: '30%',
+        minWidth: 80,
+        height: 70,
+        borderRadius: 15,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 5,
+    },
     nvrOptionLabel: {
         marginRight: 0,
         fontSize: 20,
+    },
+    nvrCodesOptionLabel: {
+        fontSize: 16,
+        marginBottom: 4,
+        fontWeight: 'normal',
+    },
+    nvrCodesOptionText: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',
     },
     questionBlock: {
         marginBottom: 30,
