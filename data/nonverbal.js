@@ -4877,7 +4877,6 @@ export const nonverbal = {
           "E"
         ],
         "correctAnswer": "D"
-        "correctAnswer": "C"
       },
       {
         "id": "nv_mat_427",
