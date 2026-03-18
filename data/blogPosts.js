@@ -263,5 +263,102 @@ export const BLOG_POSTS = [
                 value: "Every child deserves the chance to see what they are capable of. By giving the 11+ a go, your child isn\'t just preparing for a test—they are building vocabulary, sharpening logical reasoning, and developing resilience that will help them throughout their education."
             }
         ]
+    },
+    {
+        id: 'the-11-plus-marathon',
+        slug: 'the-11-plus-marathon',
+        title: 'The 11+ Marathon: Why Your Year 4 or 5 Child is Exactly Where They Need to Be',
+        subtitle: 'If you have a child in Year 4 or Year 5, the "11+ chatter" at the school gate has likely started to reach a fever pitch.',
+        date: '2026-03-18',
+        readTime: '4 min read',
+        category: 'Strategy',
+        author: 'Ninja Master',
+        image: '/assets/blog/marathon_hero.png',
+        content: [
+            {
+                type: 'paragraph',
+                value: "For Year 4 parents, the exam feels like a distant mountain—18 months away. For Year 5 parents, the 6-month countdown has begun, and the \"Easter Panic\" is a very real phenomenon."
+            },
+            {
+                type: 'paragraph',
+                value: "At 11plusninja.com, we have a simple message for you: Breathe. You have plenty of time. In fact, the most effective preparation doesn’t happen years in advance; it happens in the focused, intentional window leading up to the assessment. Here is how to navigate the road ahead with confidence."
+            },
+            {
+                type: 'header',
+                value: "Year 4: The 18-Month Foundation (The \"White Belt\" Phase)"
+            },
+            {
+                type: 'paragraph',
+                value: "At this stage, your child is exactly where they should be. The goal isn’t to master exam papers yet; it’s to foster a love for reading and a curiosity for numbers."
+            },
+            {
+                type: 'callout',
+                title: "The Focus",
+                value: "Vocabulary expansion and core arithmetic."
+            },
+            {
+                type: 'callout',
+                title: "The Ninja Tip",
+                value: "Don’t mention the \"E-word\" (Exam) too much. Focus on building \"brain muscle.\" 18 months is a long time; starting high-pressure drills now often leads to burnout by Year 6."
+            },
+            {
+                type: 'header',
+                value: "Year 5: The 6-Month Refinement (The \"Golden Window\")"
+            },
+            {
+                type: 'paragraph',
+                value: "Six months is the \"sweet spot.\" It is enough time to identify gaps in knowledge without the fatigue of a multi-year slog. Research into cognitive science suggests that the most intense period of learning is most effective when it is close to the point of application."
+            },
+            {
+                type: 'callout',
+                title: "The Focus",
+                value: "Familiarization with question types and building \"exam stamina.\""
+            },
+            {
+                type: 'callout',
+                title: "The Ninja Tip",
+                value: "This is the time to transition from \"learning the topic\" to \"applying the logic\" under timed conditions."
+            },
+            {
+                type: 'header',
+                value: "The Power of \"Short and Sharp\": The Science of Success"
+            },
+            {
+                type: 'paragraph',
+                value: "You might feel pressured to sit your child down for two-hour study sessions. Don’t. Modern educational research, specifically the \"Spacing Effect\" (first identified by Hermann Ebbinghaus), proves that we learn far more effectively when information is consumed in small bursts over a longer period, rather than \"cramming.\""
+            },
+            {
+                type: 'paragraph',
+                value: "Furthermore, a study by Roediger & Karpicke on the \"Testing Effect\" showed that frequent, low-stakes testing is significantly more effective for long-term retention than traditional studying."
+            },
+            {
+                type: 'paragraph',
+                value: "Why 10-minute \"Ninja Bursts\" work:"
+            },
+            {
+                type: 'list',
+                items: [
+                    "<strong>Reduces Anxiety:</strong> A 10-minute quiz feels like a game; a 60-minute paper feels like a chore.",
+                    "<strong>Increases Consistency:</strong> It is easier to find 10 minutes every day than 2 hours on a Sunday.",
+                    "<strong>Instant Feedback:</strong> Short tasks allow children to see their mistakes immediately, which is crucial for the \"correction-loop\" in learning."
+                ]
+            },
+            {
+                type: 'header',
+                value: "The Reassurance"
+            },
+            {
+                type: 'paragraph',
+                value: "Whether you have 18 months or 6 months, the journey is not about being \"perfect\" today. It’s about the incremental gains made through consistent, low-stress practice."
+            },
+            {
+                type: 'paragraph',
+                value: "At 11plusninja.com, we’ve built our platform around this philosophy. No daunting paywalls, no high-pressure environments—just short, sharp, free practice to help your child find their inner Ninja."
+            },
+            {
+                type: 'paragraph',
+                value: "You’ve got this, and so do they!"
+            }
+        ]
     }
 ];
