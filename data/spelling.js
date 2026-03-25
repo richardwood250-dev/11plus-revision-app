@@ -21505,7 +21505,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2615",
-    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his courage in battle.\n\n(3) The brave soldier received a medal for his corage in battle.\n\n(4) He went to the dentist to fix his tooth ake.\n\n(5) The strict teacher gave the class a severe punishement.\n\n(6) She sat on the comfortable sofa and read a magizine.\n\n(7) The bright light attracted many moths to the lanturn.\n\n(8) He was very grateful for the oppertunity to visit the zoo.\n\n(9) The wild flowers grew in the meadow near the streem.\n\n(10) She used a spade to dig a whole in the garden.\n\n(11) The fast train travelled quickly through the dark tunel.\n\n(12) He felt very nervous before his big piano examn.",
+    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his corage in battle.\n\n(3) He went to the dentist to fix his tooth ake.\n\n(4) The strict teacher gave the class a severe punishement.\n\n(5) She sat on the comfortable sofa and read a magizine.\n\n(6) The bright light attracted many moths to the lanturn.\n\n(7) He was very grateful for the oppertunity to visit the zoo.\n\n(8) The wild flowers grew in the meadow near the streem.\n\n(9) She used a spade to dig a whole in the garden.\n\n(10) The fast train travelled quickly through the dark tunel.\n\n(11) He felt very nervous before his big piano examn.",
     "question": "Question 1: Find the error",
     "options": [
       "She wrote a",
@@ -21518,23 +21518,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'peace' should be spelt 'piece' (piece of paper).\r"
   },
   {
-    "id": "spelling_2616",
-    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his courage in battle.\n\n(3) The brave soldier received a medal for his corage in battle.\n\n(4) He went to the dentist to fix his tooth ake.\n\n(5) The strict teacher gave the class a severe punishement.\n\n(6) She sat on the comfortable sofa and read a magizine.\n\n(7) The bright light attracted many moths to the lanturn.\n\n(8) He was very grateful for the oppertunity to visit the zoo.\n\n(9) The wild flowers grew in the meadow near the streem.\n\n(10) She used a spade to dig a whole in the garden.\n\n(11) The fast train travelled quickly through the dark tunel.\n\n(12) He felt very nervous before his big piano examn.",
-    "question": "Question 2: Find the error",
-    "options": [
-      "The brave soldier",
-      "received a medal",
-      "for his courage",
-      "in battle.",
-      "No Error"
-    ],
-    "correctAnswer": "C",
-    "explanation": "'courage' is correct here. Error needed in C or D. Let's fix: 'corage'.\r"
-  },
-  {
     "id": "spelling_2616b",
-    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his courage in battle.\n\n(3) The brave soldier received a medal for his corage in battle.\n\n(4) He went to the dentist to fix his tooth ake.\n\n(5) The strict teacher gave the class a severe punishement.\n\n(6) She sat on the comfortable sofa and read a magizine.\n\n(7) The bright light attracted many moths to the lanturn.\n\n(8) He was very grateful for the oppertunity to visit the zoo.\n\n(9) The wild flowers grew in the meadow near the streem.\n\n(10) She used a spade to dig a whole in the garden.\n\n(11) The fast train travelled quickly through the dark tunel.\n\n(12) He felt very nervous before his big piano examn.",
-    "question": "Question 3: Find the error",
+    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his corage in battle.\n\n(3) He went to the dentist to fix his tooth ake.\n\n(4) The strict teacher gave the class a severe punishement.\n\n(5) She sat on the comfortable sofa and read a magizine.\n\n(6) The bright light attracted many moths to the lanturn.\n\n(7) He was very grateful for the oppertunity to visit the zoo.\n\n(8) The wild flowers grew in the meadow near the streem.\n\n(9) She used a spade to dig a whole in the garden.\n\n(10) The fast train travelled quickly through the dark tunel.\n\n(11) He felt very nervous before his big piano examn.",
+    "question": "Question 2: Find the error",
     "options": [
       "The brave soldier",
       "received a medal",
@@ -21547,8 +21533,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2617",
-    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his courage in battle.\n\n(3) The brave soldier received a medal for his corage in battle.\n\n(4) He went to the dentist to fix his tooth ake.\n\n(5) The strict teacher gave the class a severe punishement.\n\n(6) She sat on the comfortable sofa and read a magizine.\n\n(7) The bright light attracted many moths to the lanturn.\n\n(8) He was very grateful for the oppertunity to visit the zoo.\n\n(9) The wild flowers grew in the meadow near the streem.\n\n(10) She used a spade to dig a whole in the garden.\n\n(11) The fast train travelled quickly through the dark tunel.\n\n(12) He felt very nervous before his big piano examn.",
-    "question": "Question 4: Find the error",
+    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his corage in battle.\n\n(3) He went to the dentist to fix his tooth ake.\n\n(4) The strict teacher gave the class a severe punishement.\n\n(5) She sat on the comfortable sofa and read a magizine.\n\n(6) The bright light attracted many moths to the lanturn.\n\n(7) He was very grateful for the oppertunity to visit the zoo.\n\n(8) The wild flowers grew in the meadow near the streem.\n\n(9) She used a spade to dig a whole in the garden.\n\n(10) The fast train travelled quickly through the dark tunel.\n\n(11) He felt very nervous before his big piano examn.",
+    "question": "Question 3: Find the error",
     "options": [
       "He went to",
       "the dentist to",
@@ -21561,8 +21547,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2618",
-    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his courage in battle.\n\n(3) The brave soldier received a medal for his corage in battle.\n\n(4) He went to the dentist to fix his tooth ake.\n\n(5) The strict teacher gave the class a severe punishement.\n\n(6) She sat on the comfortable sofa and read a magizine.\n\n(7) The bright light attracted many moths to the lanturn.\n\n(8) He was very grateful for the oppertunity to visit the zoo.\n\n(9) The wild flowers grew in the meadow near the streem.\n\n(10) She used a spade to dig a whole in the garden.\n\n(11) The fast train travelled quickly through the dark tunel.\n\n(12) He felt very nervous before his big piano examn.",
-    "question": "Question 5: Find the error",
+    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his corage in battle.\n\n(3) He went to the dentist to fix his tooth ake.\n\n(4) The strict teacher gave the class a severe punishement.\n\n(5) She sat on the comfortable sofa and read a magizine.\n\n(6) The bright light attracted many moths to the lanturn.\n\n(7) He was very grateful for the oppertunity to visit the zoo.\n\n(8) The wild flowers grew in the meadow near the streem.\n\n(9) She used a spade to dig a whole in the garden.\n\n(10) The fast train travelled quickly through the dark tunel.\n\n(11) He felt very nervous before his big piano examn.",
+    "question": "Question 4: Find the error",
     "options": [
       "The strict teacher",
       "gave the class",
@@ -21575,8 +21561,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2619",
-    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his courage in battle.\n\n(3) The brave soldier received a medal for his corage in battle.\n\n(4) He went to the dentist to fix his tooth ake.\n\n(5) The strict teacher gave the class a severe punishement.\n\n(6) She sat on the comfortable sofa and read a magizine.\n\n(7) The bright light attracted many moths to the lanturn.\n\n(8) He was very grateful for the oppertunity to visit the zoo.\n\n(9) The wild flowers grew in the meadow near the streem.\n\n(10) She used a spade to dig a whole in the garden.\n\n(11) The fast train travelled quickly through the dark tunel.\n\n(12) He felt very nervous before his big piano examn.",
-    "question": "Question 6: Find the error",
+    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his corage in battle.\n\n(3) He went to the dentist to fix his tooth ake.\n\n(4) The strict teacher gave the class a severe punishement.\n\n(5) She sat on the comfortable sofa and read a magizine.\n\n(6) The bright light attracted many moths to the lanturn.\n\n(7) He was very grateful for the oppertunity to visit the zoo.\n\n(8) The wild flowers grew in the meadow near the streem.\n\n(9) She used a spade to dig a whole in the garden.\n\n(10) The fast train travelled quickly through the dark tunel.\n\n(11) He felt very nervous before his big piano examn.",
+    "question": "Question 5: Find the error",
     "options": [
       "She sat on",
       "the comfortable",
@@ -21589,8 +21575,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2620",
-    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his courage in battle.\n\n(3) The brave soldier received a medal for his corage in battle.\n\n(4) He went to the dentist to fix his tooth ake.\n\n(5) The strict teacher gave the class a severe punishement.\n\n(6) She sat on the comfortable sofa and read a magizine.\n\n(7) The bright light attracted many moths to the lanturn.\n\n(8) He was very grateful for the oppertunity to visit the zoo.\n\n(9) The wild flowers grew in the meadow near the streem.\n\n(10) She used a spade to dig a whole in the garden.\n\n(11) The fast train travelled quickly through the dark tunel.\n\n(12) He felt very nervous before his big piano examn.",
-    "question": "Question 7: Find the error",
+    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his corage in battle.\n\n(3) He went to the dentist to fix his tooth ake.\n\n(4) The strict teacher gave the class a severe punishement.\n\n(5) She sat on the comfortable sofa and read a magizine.\n\n(6) The bright light attracted many moths to the lanturn.\n\n(7) He was very grateful for the oppertunity to visit the zoo.\n\n(8) The wild flowers grew in the meadow near the streem.\n\n(9) She used a spade to dig a whole in the garden.\n\n(10) The fast train travelled quickly through the dark tunel.\n\n(11) He felt very nervous before his big piano examn.",
+    "question": "Question 6: Find the error",
     "options": [
       "The bright light",
       "attracted many",
@@ -21603,8 +21589,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2621",
-    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his courage in battle.\n\n(3) The brave soldier received a medal for his corage in battle.\n\n(4) He went to the dentist to fix his tooth ake.\n\n(5) The strict teacher gave the class a severe punishement.\n\n(6) She sat on the comfortable sofa and read a magizine.\n\n(7) The bright light attracted many moths to the lanturn.\n\n(8) He was very grateful for the oppertunity to visit the zoo.\n\n(9) The wild flowers grew in the meadow near the streem.\n\n(10) She used a spade to dig a whole in the garden.\n\n(11) The fast train travelled quickly through the dark tunel.\n\n(12) He felt very nervous before his big piano examn.",
-    "question": "Question 8: Find the error",
+    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his corage in battle.\n\n(3) He went to the dentist to fix his tooth ake.\n\n(4) The strict teacher gave the class a severe punishement.\n\n(5) She sat on the comfortable sofa and read a magizine.\n\n(6) The bright light attracted many moths to the lanturn.\n\n(7) He was very grateful for the oppertunity to visit the zoo.\n\n(8) The wild flowers grew in the meadow near the streem.\n\n(9) She used a spade to dig a whole in the garden.\n\n(10) The fast train travelled quickly through the dark tunel.\n\n(11) He felt very nervous before his big piano examn.",
+    "question": "Question 7: Find the error",
     "options": [
       "He was very",
       "grateful for the",
@@ -21617,8 +21603,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2622",
-    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his courage in battle.\n\n(3) The brave soldier received a medal for his corage in battle.\n\n(4) He went to the dentist to fix his tooth ake.\n\n(5) The strict teacher gave the class a severe punishement.\n\n(6) She sat on the comfortable sofa and read a magizine.\n\n(7) The bright light attracted many moths to the lanturn.\n\n(8) He was very grateful for the oppertunity to visit the zoo.\n\n(9) The wild flowers grew in the meadow near the streem.\n\n(10) She used a spade to dig a whole in the garden.\n\n(11) The fast train travelled quickly through the dark tunel.\n\n(12) He felt very nervous before his big piano examn.",
-    "question": "Question 9: Find the error",
+    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his corage in battle.\n\n(3) He went to the dentist to fix his tooth ake.\n\n(4) The strict teacher gave the class a severe punishement.\n\n(5) She sat on the comfortable sofa and read a magizine.\n\n(6) The bright light attracted many moths to the lanturn.\n\n(7) He was very grateful for the oppertunity to visit the zoo.\n\n(8) The wild flowers grew in the meadow near the streem.\n\n(9) She used a spade to dig a whole in the garden.\n\n(10) The fast train travelled quickly through the dark tunel.\n\n(11) He felt very nervous before his big piano examn.",
+    "question": "Question 8: Find the error",
     "options": [
       "The wild flowers",
       "grew in the",
@@ -21631,8 +21617,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2623",
-    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his courage in battle.\n\n(3) The brave soldier received a medal for his corage in battle.\n\n(4) He went to the dentist to fix his tooth ake.\n\n(5) The strict teacher gave the class a severe punishement.\n\n(6) She sat on the comfortable sofa and read a magizine.\n\n(7) The bright light attracted many moths to the lanturn.\n\n(8) He was very grateful for the oppertunity to visit the zoo.\n\n(9) The wild flowers grew in the meadow near the streem.\n\n(10) She used a spade to dig a whole in the garden.\n\n(11) The fast train travelled quickly through the dark tunel.\n\n(12) He felt very nervous before his big piano examn.",
-    "question": "Question 10: Find the error",
+    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his corage in battle.\n\n(3) He went to the dentist to fix his tooth ake.\n\n(4) The strict teacher gave the class a severe punishement.\n\n(5) She sat on the comfortable sofa and read a magizine.\n\n(6) The bright light attracted many moths to the lanturn.\n\n(7) He was very grateful for the oppertunity to visit the zoo.\n\n(8) The wild flowers grew in the meadow near the streem.\n\n(9) She used a spade to dig a whole in the garden.\n\n(10) The fast train travelled quickly through the dark tunel.\n\n(11) He felt very nervous before his big piano examn.",
+    "question": "Question 9: Find the error",
     "options": [
       "She used a",
       "spade to dig",
@@ -21645,8 +21631,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2624",
-    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his courage in battle.\n\n(3) The brave soldier received a medal for his corage in battle.\n\n(4) He went to the dentist to fix his tooth ake.\n\n(5) The strict teacher gave the class a severe punishement.\n\n(6) She sat on the comfortable sofa and read a magizine.\n\n(7) The bright light attracted many moths to the lanturn.\n\n(8) He was very grateful for the oppertunity to visit the zoo.\n\n(9) The wild flowers grew in the meadow near the streem.\n\n(10) She used a spade to dig a whole in the garden.\n\n(11) The fast train travelled quickly through the dark tunel.\n\n(12) He felt very nervous before his big piano examn.",
-    "question": "Question 11: Find the error",
+    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his corage in battle.\n\n(3) He went to the dentist to fix his tooth ake.\n\n(4) The strict teacher gave the class a severe punishement.\n\n(5) She sat on the comfortable sofa and read a magizine.\n\n(6) The bright light attracted many moths to the lanturn.\n\n(7) He was very grateful for the oppertunity to visit the zoo.\n\n(8) The wild flowers grew in the meadow near the streem.\n\n(9) She used a spade to dig a whole in the garden.\n\n(10) The fast train travelled quickly through the dark tunel.\n\n(11) He felt very nervous before his big piano examn.",
+    "question": "Question 10: Find the error",
     "options": [
       "The fast train",
       "travelled quickly",
@@ -21659,8 +21645,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2625",
-    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his courage in battle.\n\n(3) The brave soldier received a medal for his corage in battle.\n\n(4) He went to the dentist to fix his tooth ake.\n\n(5) The strict teacher gave the class a severe punishement.\n\n(6) She sat on the comfortable sofa and read a magizine.\n\n(7) The bright light attracted many moths to the lanturn.\n\n(8) He was very grateful for the oppertunity to visit the zoo.\n\n(9) The wild flowers grew in the meadow near the streem.\n\n(10) She used a spade to dig a whole in the garden.\n\n(11) The fast train travelled quickly through the dark tunel.\n\n(12) He felt very nervous before his big piano examn.",
-    "question": "Question 12: Find the error",
+    "passage": "(1) She wrote a shopping list on a peace of paper.\n\n(2) The brave soldier received a medal for his corage in battle.\n\n(3) He went to the dentist to fix his tooth ake.\n\n(4) The strict teacher gave the class a severe punishement.\n\n(5) She sat on the comfortable sofa and read a magizine.\n\n(6) The bright light attracted many moths to the lanturn.\n\n(7) He was very grateful for the oppertunity to visit the zoo.\n\n(8) The wild flowers grew in the meadow near the streem.\n\n(9) She used a spade to dig a whole in the garden.\n\n(10) The fast train travelled quickly through the dark tunel.\n\n(11) He felt very nervous before his big piano examn.",
+    "question": "Question 11: Find the error",
     "options": [
       "He felt very",
       "nervous before",
@@ -21841,7 +21827,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2638",
-    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tongue so he blew on it.\n\n(9) The hot soup burned his tung so he blew on it.\n\n(10) He was late for school because he missed the buss.\n\n(11) The bright star twinkled in the clear night skye.\n\n(12) She wore a red coat with shiny silver butons.",
+    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tung so he blew on it.\n\n(9) He was late for school because he missed the buss.\n\n(10) The bright star twinkled in the clear night skye.\n\n(11) She wore a red coat with shiny silver butons.",
     "question": "Question 1: Find the error",
     "options": [
       "The ripe banana",
@@ -21855,7 +21841,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2639",
-    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tongue so he blew on it.\n\n(9) The hot soup burned his tung so he blew on it.\n\n(10) He was late for school because he missed the buss.\n\n(11) The bright star twinkled in the clear night skye.\n\n(12) She wore a red coat with shiny silver butons.",
+    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tung so he blew on it.\n\n(9) He was late for school because he missed the buss.\n\n(10) The bright star twinkled in the clear night skye.\n\n(11) She wore a red coat with shiny silver butons.",
     "question": "Question 2: Find the error",
     "options": [
       "She likes to",
@@ -21869,7 +21855,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2640",
-    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tongue so he blew on it.\n\n(9) The hot soup burned his tung so he blew on it.\n\n(10) He was late for school because he missed the buss.\n\n(11) The bright star twinkled in the clear night skye.\n\n(12) She wore a red coat with shiny silver butons.",
+    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tung so he blew on it.\n\n(9) He was late for school because he missed the buss.\n\n(10) The bright star twinkled in the clear night skye.\n\n(11) She wore a red coat with shiny silver butons.",
     "question": "Question 3: Find the error",
     "options": [
       "The big ship",
@@ -21883,7 +21869,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2641",
-    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tongue so he blew on it.\n\n(9) The hot soup burned his tung so he blew on it.\n\n(10) He was late for school because he missed the buss.\n\n(11) The bright star twinkled in the clear night skye.\n\n(12) She wore a red coat with shiny silver butons.",
+    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tung so he blew on it.\n\n(9) He was late for school because he missed the buss.\n\n(10) The bright star twinkled in the clear night skye.\n\n(11) She wore a red coat with shiny silver butons.",
     "question": "Question 4: Find the error",
     "options": [
       "He played the",
@@ -21897,7 +21883,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2642",
-    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tongue so he blew on it.\n\n(9) The hot soup burned his tung so he blew on it.\n\n(10) He was late for school because he missed the buss.\n\n(11) The bright star twinkled in the clear night skye.\n\n(12) She wore a red coat with shiny silver butons.",
+    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tung so he blew on it.\n\n(9) He was late for school because he missed the buss.\n\n(10) The bright star twinkled in the clear night skye.\n\n(11) She wore a red coat with shiny silver butons.",
     "question": "Question 5: Find the error",
     "options": [
       "The green frog",
@@ -21911,7 +21897,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2642b",
-    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tongue so he blew on it.\n\n(9) The hot soup burned his tung so he blew on it.\n\n(10) He was late for school because he missed the buss.\n\n(11) The bright star twinkled in the clear night skye.\n\n(12) She wore a red coat with shiny silver butons.",
+    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tung so he blew on it.\n\n(9) He was late for school because he missed the buss.\n\n(10) The bright star twinkled in the clear night skye.\n\n(11) She wore a red coat with shiny silver butons.",
     "question": "Question 6: Find the error",
     "options": [
       "The green frog",
@@ -21925,7 +21911,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2643",
-    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tongue so he blew on it.\n\n(9) The hot soup burned his tung so he blew on it.\n\n(10) He was late for school because he missed the buss.\n\n(11) The bright star twinkled in the clear night skye.\n\n(12) She wore a red coat with shiny silver butons.",
+    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tung so he blew on it.\n\n(9) He was late for school because he missed the buss.\n\n(10) The bright star twinkled in the clear night skye.\n\n(11) She wore a red coat with shiny silver butons.",
     "question": "Question 7: Find the error",
     "options": [
       "She read a",
@@ -21938,23 +21924,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'wizzard' should be spelt 'wizard'.\r"
   },
   {
-    "id": "spelling_2644",
-    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tongue so he blew on it.\n\n(9) The hot soup burned his tung so he blew on it.\n\n(10) He was late for school because he missed the buss.\n\n(11) The bright star twinkled in the clear night skye.\n\n(12) She wore a red coat with shiny silver butons.",
-    "question": "Question 8: Find the error",
-    "options": [
-      "The hot soup",
-      "burned his tongue",
-      "so he blew",
-      "on it.",
-      "No Error"
-    ],
-    "correctAnswer": "C",
-    "explanation": "'tongue' is correct. Error needed. Let's try 'tung'.\r"
-  },
-  {
     "id": "spelling_2644b",
-    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tongue so he blew on it.\n\n(9) The hot soup burned his tung so he blew on it.\n\n(10) He was late for school because he missed the buss.\n\n(11) The bright star twinkled in the clear night skye.\n\n(12) She wore a red coat with shiny silver butons.",
-    "question": "Question 9: Find the error",
+    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tung so he blew on it.\n\n(9) He was late for school because he missed the buss.\n\n(10) The bright star twinkled in the clear night skye.\n\n(11) She wore a red coat with shiny silver butons.",
+    "question": "Question 8: Find the error",
     "options": [
       "The hot soup",
       "burned his tung",
@@ -21967,8 +21939,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2645",
-    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tongue so he blew on it.\n\n(9) The hot soup burned his tung so he blew on it.\n\n(10) He was late for school because he missed the buss.\n\n(11) The bright star twinkled in the clear night skye.\n\n(12) She wore a red coat with shiny silver butons.",
-    "question": "Question 10: Find the error",
+    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tung so he blew on it.\n\n(9) He was late for school because he missed the buss.\n\n(10) The bright star twinkled in the clear night skye.\n\n(11) She wore a red coat with shiny silver butons.",
+    "question": "Question 9: Find the error",
     "options": [
       "He was late",
       "for school because",
@@ -21981,8 +21953,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2646",
-    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tongue so he blew on it.\n\n(9) The hot soup burned his tung so he blew on it.\n\n(10) He was late for school because he missed the buss.\n\n(11) The bright star twinkled in the clear night skye.\n\n(12) She wore a red coat with shiny silver butons.",
-    "question": "Question 11: Find the error",
+    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tung so he blew on it.\n\n(9) He was late for school because he missed the buss.\n\n(10) The bright star twinkled in the clear night skye.\n\n(11) She wore a red coat with shiny silver butons.",
+    "question": "Question 10: Find the error",
     "options": [
       "The bright star",
       "twinkled in the",
@@ -21995,8 +21967,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2647",
-    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tongue so he blew on it.\n\n(9) The hot soup burned his tung so he blew on it.\n\n(10) He was late for school because he missed the buss.\n\n(11) The bright star twinkled in the clear night skye.\n\n(12) She wore a red coat with shiny silver butons.",
-    "question": "Question 12: Find the error",
+    "passage": "(1) The ripe banana was yellow and covered in brown spottes.\n\n(2) She likes to paint pictures of flowers and animalls.\n\n(3) The big ship sailed across the deep blue osean.\n\n(4) He played the drums in the school band consert.\n\n(5) The green frog jumped into the pond with a splosh.\n\n(6) The green frog jumped into the pond with a spalsh.\n\n(7) She read a story about a wicked witch and a wizzard.\n\n(8) The hot soup burned his tung so he blew on it.\n\n(9) He was late for school because he missed the buss.\n\n(10) The bright star twinkled in the clear night skye.\n\n(11) She wore a red coat with shiny silver butons.",
+    "question": "Question 11: Find the error",
     "options": [
       "She wore a",
       "red coat with",
@@ -22009,7 +21981,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2648",
-    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delicious on warm toast and butter.\n\n(4) The sweet honey tasted delisious on warm toast and butter.\n\n(5) She found a shiny penny on the side walk.\n\n(6) She found a shiny penny on the dirty pavment.\n\n(7) The little bird built a nest in the tall oke tree.\n\n(8) He went to the shop to buy some sweets.\n\n(9) He went to the shop to buy some swetes.\n\n(10) The fast runner won the race and got a trophie.\n\n(11) She likes to swim in the sea when it is warme.\n\n(12) The happy baby smiled and waved at his mother and farther.",
+    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delisious on warm toast and butter.\n\n(4) She found a shiny penny on the side walk.\n\n(5) She found a shiny penny on the dirty pavment.\n\n(6) The little bird built a nest in the tall oke tree.\n\n(7) He went to the shop to buy some swetes.\n\n(8) The fast runner won the race and got a trophie.\n\n(9) She likes to swim in the sea when it is warme.\n\n(10) The happy baby smiled and waved at his mother and farther.",
     "question": "Question 1: Find the error",
     "options": [
       "The heavy bag",
@@ -22023,7 +21995,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2649",
-    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delicious on warm toast and butter.\n\n(4) The sweet honey tasted delisious on warm toast and butter.\n\n(5) She found a shiny penny on the side walk.\n\n(6) She found a shiny penny on the dirty pavment.\n\n(7) The little bird built a nest in the tall oke tree.\n\n(8) He went to the shop to buy some sweets.\n\n(9) He went to the shop to buy some swetes.\n\n(10) The fast runner won the race and got a trophie.\n\n(11) She likes to swim in the sea when it is warme.\n\n(12) The happy baby smiled and waved at his mother and farther.",
+    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delisious on warm toast and butter.\n\n(4) She found a shiny penny on the side walk.\n\n(5) She found a shiny penny on the dirty pavment.\n\n(6) The little bird built a nest in the tall oke tree.\n\n(7) He went to the shop to buy some swetes.\n\n(8) The fast runner won the race and got a trophie.\n\n(9) She likes to swim in the sea when it is warme.\n\n(10) The happy baby smiled and waved at his mother and farther.",
     "question": "Question 2: Find the error",
     "options": [
       "He likes to",
@@ -22036,23 +22008,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'Sundy' should be spelt 'Sunday'.\r"
   },
   {
-    "id": "spelling_2650",
-    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delicious on warm toast and butter.\n\n(4) The sweet honey tasted delisious on warm toast and butter.\n\n(5) She found a shiny penny on the side walk.\n\n(6) She found a shiny penny on the dirty pavment.\n\n(7) The little bird built a nest in the tall oke tree.\n\n(8) He went to the shop to buy some sweets.\n\n(9) He went to the shop to buy some swetes.\n\n(10) The fast runner won the race and got a trophie.\n\n(11) She likes to swim in the sea when it is warme.\n\n(12) The happy baby smiled and waved at his mother and farther.",
-    "question": "Question 3: Find the error",
-    "options": [
-      "The sweet honey",
-      "tasted delicious",
-      "on warm toast",
-      "and butter.",
-      "No Error"
-    ],
-    "correctAnswer": "C",
-    "explanation": "'delicious' is correct. Error needed. Let's try 'delisious'.\r"
-  },
-  {
     "id": "spelling_2650b",
-    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delicious on warm toast and butter.\n\n(4) The sweet honey tasted delisious on warm toast and butter.\n\n(5) She found a shiny penny on the side walk.\n\n(6) She found a shiny penny on the dirty pavment.\n\n(7) The little bird built a nest in the tall oke tree.\n\n(8) He went to the shop to buy some sweets.\n\n(9) He went to the shop to buy some swetes.\n\n(10) The fast runner won the race and got a trophie.\n\n(11) She likes to swim in the sea when it is warme.\n\n(12) The happy baby smiled and waved at his mother and farther.",
-    "question": "Question 4: Find the error",
+    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delisious on warm toast and butter.\n\n(4) She found a shiny penny on the side walk.\n\n(5) She found a shiny penny on the dirty pavment.\n\n(6) The little bird built a nest in the tall oke tree.\n\n(7) He went to the shop to buy some swetes.\n\n(8) The fast runner won the race and got a trophie.\n\n(9) She likes to swim in the sea when it is warme.\n\n(10) The happy baby smiled and waved at his mother and farther.",
+    "question": "Question 3: Find the error",
     "options": [
       "The sweet honey",
       "tasted delisious",
@@ -22065,8 +22023,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2651",
-    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delicious on warm toast and butter.\n\n(4) The sweet honey tasted delisious on warm toast and butter.\n\n(5) She found a shiny penny on the side walk.\n\n(6) She found a shiny penny on the dirty pavment.\n\n(7) The little bird built a nest in the tall oke tree.\n\n(8) He went to the shop to buy some sweets.\n\n(9) He went to the shop to buy some swetes.\n\n(10) The fast runner won the race and got a trophie.\n\n(11) She likes to swim in the sea when it is warme.\n\n(12) The happy baby smiled and waved at his mother and farther.",
-    "question": "Question 5: Find the error",
+    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delisious on warm toast and butter.\n\n(4) She found a shiny penny on the side walk.\n\n(5) She found a shiny penny on the dirty pavment.\n\n(6) The little bird built a nest in the tall oke tree.\n\n(7) He went to the shop to buy some swetes.\n\n(8) The fast runner won the race and got a trophie.\n\n(9) She likes to swim in the sea when it is warme.\n\n(10) The happy baby smiled and waved at his mother and farther.",
+    "question": "Question 4: Find the error",
     "options": [
       "She found a",
       "shiny penny",
@@ -22079,8 +22037,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2651b",
-    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delicious on warm toast and butter.\n\n(4) The sweet honey tasted delisious on warm toast and butter.\n\n(5) She found a shiny penny on the side walk.\n\n(6) She found a shiny penny on the dirty pavment.\n\n(7) The little bird built a nest in the tall oke tree.\n\n(8) He went to the shop to buy some sweets.\n\n(9) He went to the shop to buy some swetes.\n\n(10) The fast runner won the race and got a trophie.\n\n(11) She likes to swim in the sea when it is warme.\n\n(12) The happy baby smiled and waved at his mother and farther.",
-    "question": "Question 6: Find the error",
+    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delisious on warm toast and butter.\n\n(4) She found a shiny penny on the side walk.\n\n(5) She found a shiny penny on the dirty pavment.\n\n(6) The little bird built a nest in the tall oke tree.\n\n(7) He went to the shop to buy some swetes.\n\n(8) The fast runner won the race and got a trophie.\n\n(9) She likes to swim in the sea when it is warme.\n\n(10) The happy baby smiled and waved at his mother and farther.",
+    "question": "Question 5: Find the error",
     "options": [
       "She found a",
       "shiny penny",
@@ -22093,8 +22051,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2652",
-    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delicious on warm toast and butter.\n\n(4) The sweet honey tasted delisious on warm toast and butter.\n\n(5) She found a shiny penny on the side walk.\n\n(6) She found a shiny penny on the dirty pavment.\n\n(7) The little bird built a nest in the tall oke tree.\n\n(8) He went to the shop to buy some sweets.\n\n(9) He went to the shop to buy some swetes.\n\n(10) The fast runner won the race and got a trophie.\n\n(11) She likes to swim in the sea when it is warme.\n\n(12) The happy baby smiled and waved at his mother and farther.",
-    "question": "Question 7: Find the error",
+    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delisious on warm toast and butter.\n\n(4) She found a shiny penny on the side walk.\n\n(5) She found a shiny penny on the dirty pavment.\n\n(6) The little bird built a nest in the tall oke tree.\n\n(7) He went to the shop to buy some swetes.\n\n(8) The fast runner won the race and got a trophie.\n\n(9) She likes to swim in the sea when it is warme.\n\n(10) The happy baby smiled and waved at his mother and farther.",
+    "question": "Question 6: Find the error",
     "options": [
       "The little bird",
       "built a nest",
@@ -22106,23 +22064,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'oke' should be spelt 'oak'.\r"
   },
   {
-    "id": "spelling_2653",
-    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delicious on warm toast and butter.\n\n(4) The sweet honey tasted delisious on warm toast and butter.\n\n(5) She found a shiny penny on the side walk.\n\n(6) She found a shiny penny on the dirty pavment.\n\n(7) The little bird built a nest in the tall oke tree.\n\n(8) He went to the shop to buy some sweets.\n\n(9) He went to the shop to buy some swetes.\n\n(10) The fast runner won the race and got a trophie.\n\n(11) She likes to swim in the sea when it is warme.\n\n(12) The happy baby smiled and waved at his mother and farther.",
-    "question": "Question 8: Find the error",
-    "options": [
-      "He went to",
-      "the shop to",
-      "buy some",
-      "sweets.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'sweets' is correct. Error needed. Let's try 'swetes'.\r"
-  },
-  {
     "id": "spelling_2653b",
-    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delicious on warm toast and butter.\n\n(4) The sweet honey tasted delisious on warm toast and butter.\n\n(5) She found a shiny penny on the side walk.\n\n(6) She found a shiny penny on the dirty pavment.\n\n(7) The little bird built a nest in the tall oke tree.\n\n(8) He went to the shop to buy some sweets.\n\n(9) He went to the shop to buy some swetes.\n\n(10) The fast runner won the race and got a trophie.\n\n(11) She likes to swim in the sea when it is warme.\n\n(12) The happy baby smiled and waved at his mother and farther.",
-    "question": "Question 9: Find the error",
+    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delisious on warm toast and butter.\n\n(4) She found a shiny penny on the side walk.\n\n(5) She found a shiny penny on the dirty pavment.\n\n(6) The little bird built a nest in the tall oke tree.\n\n(7) He went to the shop to buy some swetes.\n\n(8) The fast runner won the race and got a trophie.\n\n(9) She likes to swim in the sea when it is warme.\n\n(10) The happy baby smiled and waved at his mother and farther.",
+    "question": "Question 7: Find the error",
     "options": [
       "He went to",
       "the shop to",
@@ -22135,8 +22079,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2654",
-    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delicious on warm toast and butter.\n\n(4) The sweet honey tasted delisious on warm toast and butter.\n\n(5) She found a shiny penny on the side walk.\n\n(6) She found a shiny penny on the dirty pavment.\n\n(7) The little bird built a nest in the tall oke tree.\n\n(8) He went to the shop to buy some sweets.\n\n(9) He went to the shop to buy some swetes.\n\n(10) The fast runner won the race and got a trophie.\n\n(11) She likes to swim in the sea when it is warme.\n\n(12) The happy baby smiled and waved at his mother and farther.",
-    "question": "Question 10: Find the error",
+    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delisious on warm toast and butter.\n\n(4) She found a shiny penny on the side walk.\n\n(5) She found a shiny penny on the dirty pavment.\n\n(6) The little bird built a nest in the tall oke tree.\n\n(7) He went to the shop to buy some swetes.\n\n(8) The fast runner won the race and got a trophie.\n\n(9) She likes to swim in the sea when it is warme.\n\n(10) The happy baby smiled and waved at his mother and farther.",
+    "question": "Question 8: Find the error",
     "options": [
       "The fast runner",
       "won the race",
@@ -22149,8 +22093,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2655",
-    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delicious on warm toast and butter.\n\n(4) The sweet honey tasted delisious on warm toast and butter.\n\n(5) She found a shiny penny on the side walk.\n\n(6) She found a shiny penny on the dirty pavment.\n\n(7) The little bird built a nest in the tall oke tree.\n\n(8) He went to the shop to buy some sweets.\n\n(9) He went to the shop to buy some swetes.\n\n(10) The fast runner won the race and got a trophie.\n\n(11) She likes to swim in the sea when it is warme.\n\n(12) The happy baby smiled and waved at his mother and farther.",
-    "question": "Question 11: Find the error",
+    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delisious on warm toast and butter.\n\n(4) She found a shiny penny on the side walk.\n\n(5) She found a shiny penny on the dirty pavment.\n\n(6) The little bird built a nest in the tall oke tree.\n\n(7) He went to the shop to buy some swetes.\n\n(8) The fast runner won the race and got a trophie.\n\n(9) She likes to swim in the sea when it is warme.\n\n(10) The happy baby smiled and waved at his mother and farther.",
+    "question": "Question 9: Find the error",
     "options": [
       "She likes to",
       "swim in the",
@@ -22163,8 +22107,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2656",
-    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delicious on warm toast and butter.\n\n(4) The sweet honey tasted delisious on warm toast and butter.\n\n(5) She found a shiny penny on the side walk.\n\n(6) She found a shiny penny on the dirty pavment.\n\n(7) The little bird built a nest in the tall oke tree.\n\n(8) He went to the shop to buy some sweets.\n\n(9) He went to the shop to buy some swetes.\n\n(10) The fast runner won the race and got a trophie.\n\n(11) She likes to swim in the sea when it is warme.\n\n(12) The happy baby smiled and waved at his mother and farther.",
-    "question": "Question 12: Find the error",
+    "passage": "(1) The heavy bag was too heavy for her to carrie.\n\n(2) He likes to play football in the park on Sundy.\n\n(3) The sweet honey tasted delisious on warm toast and butter.\n\n(4) She found a shiny penny on the side walk.\n\n(5) She found a shiny penny on the dirty pavment.\n\n(6) The little bird built a nest in the tall oke tree.\n\n(7) He went to the shop to buy some swetes.\n\n(8) The fast runner won the race and got a trophie.\n\n(9) She likes to swim in the sea when it is warme.\n\n(10) The happy baby smiled and waved at his mother and farther.",
+    "question": "Question 10: Find the error",
     "options": [
       "The happy baby",
       "smiled and waved",
@@ -22177,7 +22121,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2656b",
-    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked loudly at the postman every day.\n\n(4) The noisy dog barked lowdly at the postman every day.\n\n(5) She wore a warm hat to keep her head worm.\n\n(6) The red apple fell from the tree and hit the grownd.\n\n(7) The scientist worked in the laboratory conducting importent experiments.\n\n(8) He tried to conceal his embarassment when he fell over.\n\n(9) The government announced plans to improve the enviroment next year.\n\n(10) She made a conscious decision to eat more healthily.\n\n(11) She made a concious decision to eat more healthily.\n\n(12) The library has an extensive collection of referance books.",
+    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked lowdly at the postman every day.\n\n(4) She wore a warm hat to keep her head worm.\n\n(5) The red apple fell from the tree and hit the grownd.\n\n(6) The scientist worked in the laboratory conducting importent experiments.\n\n(7) He tried to conceal his embarassment when he fell over.\n\n(8) The government announced plans to improve the enviroment next year.\n\n(9) She made a concious decision to eat more healthily.\n\n(10) The library has an extensive collection of referance books.",
     "question": "Question 1: Find the error",
     "options": [
       "The happy baby",
@@ -22191,7 +22135,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2657",
-    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked loudly at the postman every day.\n\n(4) The noisy dog barked lowdly at the postman every day.\n\n(5) She wore a warm hat to keep her head worm.\n\n(6) The red apple fell from the tree and hit the grownd.\n\n(7) The scientist worked in the laboratory conducting importent experiments.\n\n(8) He tried to conceal his embarassment when he fell over.\n\n(9) The government announced plans to improve the enviroment next year.\n\n(10) She made a conscious decision to eat more healthily.\n\n(11) She made a concious decision to eat more healthily.\n\n(12) The library has an extensive collection of referance books.",
+    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked lowdly at the postman every day.\n\n(4) She wore a warm hat to keep her head worm.\n\n(5) The red apple fell from the tree and hit the grownd.\n\n(6) The scientist worked in the laboratory conducting importent experiments.\n\n(7) He tried to conceal his embarassment when he fell over.\n\n(8) The government announced plans to improve the enviroment next year.\n\n(9) She made a concious decision to eat more healthily.\n\n(10) The library has an extensive collection of referance books.",
     "question": "Question 2: Find the error",
     "options": [
       "He used a",
@@ -22204,23 +22148,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'uncal' should be spelt 'uncle'.\r"
   },
   {
-    "id": "spelling_2658",
-    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked loudly at the postman every day.\n\n(4) The noisy dog barked lowdly at the postman every day.\n\n(5) She wore a warm hat to keep her head worm.\n\n(6) The red apple fell from the tree and hit the grownd.\n\n(7) The scientist worked in the laboratory conducting importent experiments.\n\n(8) He tried to conceal his embarassment when he fell over.\n\n(9) The government announced plans to improve the enviroment next year.\n\n(10) She made a conscious decision to eat more healthily.\n\n(11) She made a concious decision to eat more healthily.\n\n(12) The library has an extensive collection of referance books.",
-    "question": "Question 3: Find the error",
-    "options": [
-      "The noisy dog",
-      "barked loudly at",
-      "the postman",
-      "every day.",
-      "No Error"
-    ],
-    "correctAnswer": "C",
-    "explanation": "'loudly' is correct. Error needed. Let's try 'lowdly'.\r"
-  },
-  {
     "id": "spelling_2658b",
-    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked loudly at the postman every day.\n\n(4) The noisy dog barked lowdly at the postman every day.\n\n(5) She wore a warm hat to keep her head worm.\n\n(6) The red apple fell from the tree and hit the grownd.\n\n(7) The scientist worked in the laboratory conducting importent experiments.\n\n(8) He tried to conceal his embarassment when he fell over.\n\n(9) The government announced plans to improve the enviroment next year.\n\n(10) She made a conscious decision to eat more healthily.\n\n(11) She made a concious decision to eat more healthily.\n\n(12) The library has an extensive collection of referance books.",
-    "question": "Question 4: Find the error",
+    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked lowdly at the postman every day.\n\n(4) She wore a warm hat to keep her head worm.\n\n(5) The red apple fell from the tree and hit the grownd.\n\n(6) The scientist worked in the laboratory conducting importent experiments.\n\n(7) He tried to conceal his embarassment when he fell over.\n\n(8) The government announced plans to improve the enviroment next year.\n\n(9) She made a concious decision to eat more healthily.\n\n(10) The library has an extensive collection of referance books.",
+    "question": "Question 3: Find the error",
     "options": [
       "The noisy dog",
       "barked lowdly at",
@@ -22233,8 +22163,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2659",
-    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked loudly at the postman every day.\n\n(4) The noisy dog barked lowdly at the postman every day.\n\n(5) She wore a warm hat to keep her head worm.\n\n(6) The red apple fell from the tree and hit the grownd.\n\n(7) The scientist worked in the laboratory conducting importent experiments.\n\n(8) He tried to conceal his embarassment when he fell over.\n\n(9) The government announced plans to improve the enviroment next year.\n\n(10) She made a conscious decision to eat more healthily.\n\n(11) She made a concious decision to eat more healthily.\n\n(12) The library has an extensive collection of referance books.",
-    "question": "Question 5: Find the error",
+    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked lowdly at the postman every day.\n\n(4) She wore a warm hat to keep her head worm.\n\n(5) The red apple fell from the tree and hit the grownd.\n\n(6) The scientist worked in the laboratory conducting importent experiments.\n\n(7) He tried to conceal his embarassment when he fell over.\n\n(8) The government announced plans to improve the enviroment next year.\n\n(9) She made a concious decision to eat more healthily.\n\n(10) The library has an extensive collection of referance books.",
+    "question": "Question 4: Find the error",
     "options": [
       "She wore a",
       "warm hat to",
@@ -22247,8 +22177,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2660",
-    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked loudly at the postman every day.\n\n(4) The noisy dog barked lowdly at the postman every day.\n\n(5) She wore a warm hat to keep her head worm.\n\n(6) The red apple fell from the tree and hit the grownd.\n\n(7) The scientist worked in the laboratory conducting importent experiments.\n\n(8) He tried to conceal his embarassment when he fell over.\n\n(9) The government announced plans to improve the enviroment next year.\n\n(10) She made a conscious decision to eat more healthily.\n\n(11) She made a concious decision to eat more healthily.\n\n(12) The library has an extensive collection of referance books.",
-    "question": "Question 6: Find the error",
+    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked lowdly at the postman every day.\n\n(4) She wore a warm hat to keep her head worm.\n\n(5) The red apple fell from the tree and hit the grownd.\n\n(6) The scientist worked in the laboratory conducting importent experiments.\n\n(7) He tried to conceal his embarassment when he fell over.\n\n(8) The government announced plans to improve the enviroment next year.\n\n(9) She made a concious decision to eat more healthily.\n\n(10) The library has an extensive collection of referance books.",
+    "question": "Question 5: Find the error",
     "options": [
       "The red apple",
       "fell from the",
@@ -22261,8 +22191,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2661",
-    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked loudly at the postman every day.\n\n(4) The noisy dog barked lowdly at the postman every day.\n\n(5) She wore a warm hat to keep her head worm.\n\n(6) The red apple fell from the tree and hit the grownd.\n\n(7) The scientist worked in the laboratory conducting importent experiments.\n\n(8) He tried to conceal his embarassment when he fell over.\n\n(9) The government announced plans to improve the enviroment next year.\n\n(10) She made a conscious decision to eat more healthily.\n\n(11) She made a concious decision to eat more healthily.\n\n(12) The library has an extensive collection of referance books.",
-    "question": "Question 7: Find the error",
+    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked lowdly at the postman every day.\n\n(4) She wore a warm hat to keep her head worm.\n\n(5) The red apple fell from the tree and hit the grownd.\n\n(6) The scientist worked in the laboratory conducting importent experiments.\n\n(7) He tried to conceal his embarassment when he fell over.\n\n(8) The government announced plans to improve the enviroment next year.\n\n(9) She made a concious decision to eat more healthily.\n\n(10) The library has an extensive collection of referance books.",
+    "question": "Question 6: Find the error",
     "options": [
       "The scientist worked",
       "in the laboratory",
@@ -22275,8 +22205,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2662",
-    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked loudly at the postman every day.\n\n(4) The noisy dog barked lowdly at the postman every day.\n\n(5) She wore a warm hat to keep her head worm.\n\n(6) The red apple fell from the tree and hit the grownd.\n\n(7) The scientist worked in the laboratory conducting importent experiments.\n\n(8) He tried to conceal his embarassment when he fell over.\n\n(9) The government announced plans to improve the enviroment next year.\n\n(10) She made a conscious decision to eat more healthily.\n\n(11) She made a concious decision to eat more healthily.\n\n(12) The library has an extensive collection of referance books.",
-    "question": "Question 8: Find the error",
+    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked lowdly at the postman every day.\n\n(4) She wore a warm hat to keep her head worm.\n\n(5) The red apple fell from the tree and hit the grownd.\n\n(6) The scientist worked in the laboratory conducting importent experiments.\n\n(7) He tried to conceal his embarassment when he fell over.\n\n(8) The government announced plans to improve the enviroment next year.\n\n(9) She made a concious decision to eat more healthily.\n\n(10) The library has an extensive collection of referance books.",
+    "question": "Question 7: Find the error",
     "options": [
       "He tried to",
       "conceal his",
@@ -22289,8 +22219,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2663",
-    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked loudly at the postman every day.\n\n(4) The noisy dog barked lowdly at the postman every day.\n\n(5) She wore a warm hat to keep her head worm.\n\n(6) The red apple fell from the tree and hit the grownd.\n\n(7) The scientist worked in the laboratory conducting importent experiments.\n\n(8) He tried to conceal his embarassment when he fell over.\n\n(9) The government announced plans to improve the enviroment next year.\n\n(10) She made a conscious decision to eat more healthily.\n\n(11) She made a concious decision to eat more healthily.\n\n(12) The library has an extensive collection of referance books.",
-    "question": "Question 9: Find the error",
+    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked lowdly at the postman every day.\n\n(4) She wore a warm hat to keep her head worm.\n\n(5) The red apple fell from the tree and hit the grownd.\n\n(6) The scientist worked in the laboratory conducting importent experiments.\n\n(7) He tried to conceal his embarassment when he fell over.\n\n(8) The government announced plans to improve the enviroment next year.\n\n(9) She made a concious decision to eat more healthily.\n\n(10) The library has an extensive collection of referance books.",
+    "question": "Question 8: Find the error",
     "options": [
       "The government announced",
       "plans to improve",
@@ -22302,23 +22232,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'enviroment' should be spelt 'environment'.\r"
   },
   {
-    "id": "spelling_2664",
-    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked loudly at the postman every day.\n\n(4) The noisy dog barked lowdly at the postman every day.\n\n(5) She wore a warm hat to keep her head worm.\n\n(6) The red apple fell from the tree and hit the grownd.\n\n(7) The scientist worked in the laboratory conducting importent experiments.\n\n(8) He tried to conceal his embarassment when he fell over.\n\n(9) The government announced plans to improve the enviroment next year.\n\n(10) She made a conscious decision to eat more healthily.\n\n(11) She made a concious decision to eat more healthily.\n\n(12) The library has an extensive collection of referance books.",
-    "question": "Question 10: Find the error",
-    "options": [
-      "She made a",
-      "conscious decision",
-      "to eat more",
-      "healthily.",
-      "No Error"
-    ],
-    "correctAnswer": "C",
-    "explanation": "'conscious' is correct. Error needed. 'concious'.\r"
-  },
-  {
     "id": "spelling_2664b",
-    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked loudly at the postman every day.\n\n(4) The noisy dog barked lowdly at the postman every day.\n\n(5) She wore a warm hat to keep her head worm.\n\n(6) The red apple fell from the tree and hit the grownd.\n\n(7) The scientist worked in the laboratory conducting importent experiments.\n\n(8) He tried to conceal his embarassment when he fell over.\n\n(9) The government announced plans to improve the enviroment next year.\n\n(10) She made a conscious decision to eat more healthily.\n\n(11) She made a concious decision to eat more healthily.\n\n(12) The library has an extensive collection of referance books.",
-    "question": "Question 11: Find the error",
+    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked lowdly at the postman every day.\n\n(4) She wore a warm hat to keep her head worm.\n\n(5) The red apple fell from the tree and hit the grownd.\n\n(6) The scientist worked in the laboratory conducting importent experiments.\n\n(7) He tried to conceal his embarassment when he fell over.\n\n(8) The government announced plans to improve the enviroment next year.\n\n(9) She made a concious decision to eat more healthily.\n\n(10) The library has an extensive collection of referance books.",
+    "question": "Question 9: Find the error",
     "options": [
       "She made a",
       "concious decision",
@@ -22331,8 +22247,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2665",
-    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked loudly at the postman every day.\n\n(4) The noisy dog barked lowdly at the postman every day.\n\n(5) She wore a warm hat to keep her head worm.\n\n(6) The red apple fell from the tree and hit the grownd.\n\n(7) The scientist worked in the laboratory conducting importent experiments.\n\n(8) He tried to conceal his embarassment when he fell over.\n\n(9) The government announced plans to improve the enviroment next year.\n\n(10) She made a conscious decision to eat more healthily.\n\n(11) She made a concious decision to eat more healthily.\n\n(12) The library has an extensive collection of referance books.",
-    "question": "Question 12: Find the error",
+    "passage": "(1) The happy baby smiled and waved at his mother and farther.\n\n(2) He used a pen to write a letter to his uncal.\n\n(3) The noisy dog barked lowdly at the postman every day.\n\n(4) She wore a warm hat to keep her head worm.\n\n(5) The red apple fell from the tree and hit the grownd.\n\n(6) The scientist worked in the laboratory conducting importent experiments.\n\n(7) He tried to conceal his embarassment when he fell over.\n\n(8) The government announced plans to improve the enviroment next year.\n\n(9) She made a concious decision to eat more healthily.\n\n(10) The library has an extensive collection of referance books.",
+    "question": "Question 10: Find the error",
     "options": [
       "The library has",
       "an extensive collection",
@@ -22513,7 +22429,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2678",
-    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowers for her birthday.\n\n(6) She received a bouquet of flowres for her birthday.\n\n(7) The heavy traffic caused a delay on the motoway.\n\n(8) He applied for the position of assistant mananger.\n\n(9) The delicious meal was cooked by a famous cheff.\n\n(10) She wants to be independent and live on her owne.\n\n(11) The curious child asked many questions about the universe.\n\n(12) The curious child asked many questions about the univverse.",
+    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowres for her birthday.\n\n(6) The heavy traffic caused a delay on the motoway.\n\n(7) He applied for the position of assistant mananger.\n\n(8) The delicious meal was cooked by a famous cheff.\n\n(9) She wants to be independent and live on her owne.\n\n(10) The curious child asked many questions about the univverse.",
     "question": "Question 1: Find the error",
     "options": [
       "She has a",
@@ -22527,7 +22443,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2679",
-    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowers for her birthday.\n\n(6) She received a bouquet of flowres for her birthday.\n\n(7) The heavy traffic caused a delay on the motoway.\n\n(8) He applied for the position of assistant mananger.\n\n(9) The delicious meal was cooked by a famous cheff.\n\n(10) She wants to be independent and live on her owne.\n\n(11) The curious child asked many questions about the universe.\n\n(12) The curious child asked many questions about the univverse.",
+    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowres for her birthday.\n\n(6) The heavy traffic caused a delay on the motoway.\n\n(7) He applied for the position of assistant mananger.\n\n(8) The delicious meal was cooked by a famous cheff.\n\n(9) She wants to be independent and live on her owne.\n\n(10) The curious child asked many questions about the univverse.",
     "question": "Question 2: Find the error",
     "options": [
       "The weather forecast",
@@ -22541,7 +22457,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2680",
-    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowers for her birthday.\n\n(6) She received a bouquet of flowres for her birthday.\n\n(7) The heavy traffic caused a delay on the motoway.\n\n(8) He applied for the position of assistant mananger.\n\n(9) The delicious meal was cooked by a famous cheff.\n\n(10) She wants to be independent and live on her owne.\n\n(11) The curious child asked many questions about the universe.\n\n(12) The curious child asked many questions about the univverse.",
+    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowres for her birthday.\n\n(6) The heavy traffic caused a delay on the motoway.\n\n(7) He applied for the position of assistant mananger.\n\n(8) The delicious meal was cooked by a famous cheff.\n\n(9) She wants to be independent and live on her owne.\n\n(10) The curious child asked many questions about the univverse.",
     "question": "Question 3: Find the error",
     "options": [
       "He was accused",
@@ -22555,7 +22471,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2681",
-    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowers for her birthday.\n\n(6) She received a bouquet of flowres for her birthday.\n\n(7) The heavy traffic caused a delay on the motoway.\n\n(8) He applied for the position of assistant mananger.\n\n(9) The delicious meal was cooked by a famous cheff.\n\n(10) She wants to be independent and live on her owne.\n\n(11) The curious child asked many questions about the universe.\n\n(12) The curious child asked many questions about the univverse.",
+    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowres for her birthday.\n\n(6) The heavy traffic caused a delay on the motoway.\n\n(7) He applied for the position of assistant mananger.\n\n(8) The delicious meal was cooked by a famous cheff.\n\n(9) She wants to be independent and live on her owne.\n\n(10) The curious child asked many questions about the univverse.",
     "question": "Question 4: Find the error",
     "options": [
       "The ancient ruins",
@@ -22568,23 +22484,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'atraction' should be spelt 'attraction'.\r"
   },
   {
-    "id": "spelling_2682",
-    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowers for her birthday.\n\n(6) She received a bouquet of flowres for her birthday.\n\n(7) The heavy traffic caused a delay on the motoway.\n\n(8) He applied for the position of assistant mananger.\n\n(9) The delicious meal was cooked by a famous cheff.\n\n(10) She wants to be independent and live on her owne.\n\n(11) The curious child asked many questions about the universe.\n\n(12) The curious child asked many questions about the univverse.",
-    "question": "Question 5: Find the error",
-    "options": [
-      "She received a",
-      "bouquet of flowers",
-      "for her",
-      "birthday.",
-      "No Error"
-    ],
-    "correctAnswer": "C",
-    "explanation": "'flowers' is correct. Error needed. 'flowres'.\r"
-  },
-  {
     "id": "spelling_2682b",
-    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowers for her birthday.\n\n(6) She received a bouquet of flowres for her birthday.\n\n(7) The heavy traffic caused a delay on the motoway.\n\n(8) He applied for the position of assistant mananger.\n\n(9) The delicious meal was cooked by a famous cheff.\n\n(10) She wants to be independent and live on her owne.\n\n(11) The curious child asked many questions about the universe.\n\n(12) The curious child asked many questions about the univverse.",
-    "question": "Question 6: Find the error",
+    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowres for her birthday.\n\n(6) The heavy traffic caused a delay on the motoway.\n\n(7) He applied for the position of assistant mananger.\n\n(8) The delicious meal was cooked by a famous cheff.\n\n(9) She wants to be independent and live on her owne.\n\n(10) The curious child asked many questions about the univverse.",
+    "question": "Question 5: Find the error",
     "options": [
       "She received a",
       "bouquet of flowres",
@@ -22597,8 +22499,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2683",
-    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowers for her birthday.\n\n(6) She received a bouquet of flowres for her birthday.\n\n(7) The heavy traffic caused a delay on the motoway.\n\n(8) He applied for the position of assistant mananger.\n\n(9) The delicious meal was cooked by a famous cheff.\n\n(10) She wants to be independent and live on her owne.\n\n(11) The curious child asked many questions about the universe.\n\n(12) The curious child asked many questions about the univverse.",
-    "question": "Question 7: Find the error",
+    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowres for her birthday.\n\n(6) The heavy traffic caused a delay on the motoway.\n\n(7) He applied for the position of assistant mananger.\n\n(8) The delicious meal was cooked by a famous cheff.\n\n(9) She wants to be independent and live on her owne.\n\n(10) The curious child asked many questions about the univverse.",
+    "question": "Question 6: Find the error",
     "options": [
       "The heavy traffic",
       "caused a delay",
@@ -22611,8 +22513,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2684",
-    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowers for her birthday.\n\n(6) She received a bouquet of flowres for her birthday.\n\n(7) The heavy traffic caused a delay on the motoway.\n\n(8) He applied for the position of assistant mananger.\n\n(9) The delicious meal was cooked by a famous cheff.\n\n(10) She wants to be independent and live on her owne.\n\n(11) The curious child asked many questions about the universe.\n\n(12) The curious child asked many questions about the univverse.",
-    "question": "Question 8: Find the error",
+    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowres for her birthday.\n\n(6) The heavy traffic caused a delay on the motoway.\n\n(7) He applied for the position of assistant mananger.\n\n(8) The delicious meal was cooked by a famous cheff.\n\n(9) She wants to be independent and live on her owne.\n\n(10) The curious child asked many questions about the univverse.",
+    "question": "Question 7: Find the error",
     "options": [
       "He applied for",
       "the position of",
@@ -22625,8 +22527,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2685",
-    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowers for her birthday.\n\n(6) She received a bouquet of flowres for her birthday.\n\n(7) The heavy traffic caused a delay on the motoway.\n\n(8) He applied for the position of assistant mananger.\n\n(9) The delicious meal was cooked by a famous cheff.\n\n(10) She wants to be independent and live on her owne.\n\n(11) The curious child asked many questions about the universe.\n\n(12) The curious child asked many questions about the univverse.",
-    "question": "Question 9: Find the error",
+    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowres for her birthday.\n\n(6) The heavy traffic caused a delay on the motoway.\n\n(7) He applied for the position of assistant mananger.\n\n(8) The delicious meal was cooked by a famous cheff.\n\n(9) She wants to be independent and live on her owne.\n\n(10) The curious child asked many questions about the univverse.",
+    "question": "Question 8: Find the error",
     "options": [
       "The delicious meal",
       "was cooked by",
@@ -22639,8 +22541,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2686",
-    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowers for her birthday.\n\n(6) She received a bouquet of flowres for her birthday.\n\n(7) The heavy traffic caused a delay on the motoway.\n\n(8) He applied for the position of assistant mananger.\n\n(9) The delicious meal was cooked by a famous cheff.\n\n(10) She wants to be independent and live on her owne.\n\n(11) The curious child asked many questions about the universe.\n\n(12) The curious child asked many questions about the univverse.",
-    "question": "Question 10: Find the error",
+    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowres for her birthday.\n\n(6) The heavy traffic caused a delay on the motoway.\n\n(7) He applied for the position of assistant mananger.\n\n(8) The delicious meal was cooked by a famous cheff.\n\n(9) She wants to be independent and live on her owne.\n\n(10) The curious child asked many questions about the univverse.",
+    "question": "Question 9: Find the error",
     "options": [
       "She wants to",
       "be independent",
@@ -22652,23 +22554,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'owne' should be spelt 'own'.\r"
   },
   {
-    "id": "spelling_2687",
-    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowers for her birthday.\n\n(6) She received a bouquet of flowres for her birthday.\n\n(7) The heavy traffic caused a delay on the motoway.\n\n(8) He applied for the position of assistant mananger.\n\n(9) The delicious meal was cooked by a famous cheff.\n\n(10) She wants to be independent and live on her owne.\n\n(11) The curious child asked many questions about the universe.\n\n(12) The curious child asked many questions about the univverse.",
-    "question": "Question 11: Find the error",
-    "options": [
-      "The curious child",
-      "asked many questions",
-      "about the",
-      "universe.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'universe' is correct. Error needed. 'univverse'.\r"
-  },
-  {
     "id": "spelling_2687b",
-    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowers for her birthday.\n\n(6) She received a bouquet of flowres for her birthday.\n\n(7) The heavy traffic caused a delay on the motoway.\n\n(8) He applied for the position of assistant mananger.\n\n(9) The delicious meal was cooked by a famous cheff.\n\n(10) She wants to be independent and live on her owne.\n\n(11) The curious child asked many questions about the universe.\n\n(12) The curious child asked many questions about the univverse.",
-    "question": "Question 12: Find the error",
+    "passage": "(1) She has a definite plan for her future carear.\n\n(2) The weather forecast predicts heavy rain and thunder stroms.\n\n(3) He was accused of causing a public disturbence.\n\n(4) The ancient ruins are a popular tourist atraction.\n\n(5) She received a bouquet of flowres for her birthday.\n\n(6) The heavy traffic caused a delay on the motoway.\n\n(7) He applied for the position of assistant mananger.\n\n(8) The delicious meal was cooked by a famous cheff.\n\n(9) She wants to be independent and live on her owne.\n\n(10) The curious child asked many questions about the univverse.",
+    "question": "Question 10: Find the error",
     "options": [
       "The curious child",
       "asked many questions",
@@ -22681,7 +22569,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2688",
-    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and gold.\n\n(4) She wore a beautiful necklace made of silver and golde.\n\n(5) The fierce storm destroyed the old wooden bridge.\n\n(6) The fierce storm destroyed the old wooden brige.\n\n(7) He was very successful in his business ventuer.\n\n(8) The aggressive dog growled menacingly at the stranger.\n\n(9) The aggressive dog growled menacingly at the strangar.\n\n(10) She has a pleasant personality and is very freindly.\n\n(11) The heavy snow made the roads very slipery.\n\n(12) He wrote a humorous story about a funny clown.",
+    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and golde.\n\n(4) The fierce storm destroyed the old wooden brige.\n\n(5) He was very successful in his business ventuer.\n\n(6) The aggressive dog growled menacingly at the strangar.\n\n(7) She has a pleasant personality and is very freindly.\n\n(8) The heavy snow made the roads very slipery.",
     "question": "Question 1: Find the error",
     "options": [
       "He showed great",
@@ -22695,7 +22583,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2689",
-    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and gold.\n\n(4) She wore a beautiful necklace made of silver and golde.\n\n(5) The fierce storm destroyed the old wooden bridge.\n\n(6) The fierce storm destroyed the old wooden brige.\n\n(7) He was very successful in his business ventuer.\n\n(8) The aggressive dog growled menacingly at the stranger.\n\n(9) The aggressive dog growled menacingly at the strangar.\n\n(10) She has a pleasant personality and is very freindly.\n\n(11) The heavy snow made the roads very slipery.\n\n(12) He wrote a humorous story about a funny clown.",
+    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and golde.\n\n(4) The fierce storm destroyed the old wooden brige.\n\n(5) He was very successful in his business ventuer.\n\n(6) The aggressive dog growled menacingly at the strangar.\n\n(7) She has a pleasant personality and is very freindly.\n\n(8) The heavy snow made the roads very slipery.",
     "question": "Question 2: Find the error",
     "options": [
       "The loud music",
@@ -22708,23 +22596,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'iritation' should be spelt 'irritation'.\r"
   },
   {
-    "id": "spelling_2690",
-    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and gold.\n\n(4) She wore a beautiful necklace made of silver and golde.\n\n(5) The fierce storm destroyed the old wooden bridge.\n\n(6) The fierce storm destroyed the old wooden brige.\n\n(7) He was very successful in his business ventuer.\n\n(8) The aggressive dog growled menacingly at the stranger.\n\n(9) The aggressive dog growled menacingly at the strangar.\n\n(10) She has a pleasant personality and is very freindly.\n\n(11) The heavy snow made the roads very slipery.\n\n(12) He wrote a humorous story about a funny clown.",
-    "question": "Question 3: Find the error",
-    "options": [
-      "She wore a",
-      "beautiful necklace",
-      "made of silver",
-      "and gold.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'gold' is correct. Error needed. 'golde'.\r"
-  },
-  {
     "id": "spelling_2690b",
-    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and gold.\n\n(4) She wore a beautiful necklace made of silver and golde.\n\n(5) The fierce storm destroyed the old wooden bridge.\n\n(6) The fierce storm destroyed the old wooden brige.\n\n(7) He was very successful in his business ventuer.\n\n(8) The aggressive dog growled menacingly at the stranger.\n\n(9) The aggressive dog growled menacingly at the strangar.\n\n(10) She has a pleasant personality and is very freindly.\n\n(11) The heavy snow made the roads very slipery.\n\n(12) He wrote a humorous story about a funny clown.",
-    "question": "Question 4: Find the error",
+    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and golde.\n\n(4) The fierce storm destroyed the old wooden brige.\n\n(5) He was very successful in his business ventuer.\n\n(6) The aggressive dog growled menacingly at the strangar.\n\n(7) She has a pleasant personality and is very freindly.\n\n(8) The heavy snow made the roads very slipery.",
+    "question": "Question 3: Find the error",
     "options": [
       "She wore a",
       "beautiful necklace",
@@ -22736,23 +22610,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'golde' should be spelt 'gold'.\r"
   },
   {
-    "id": "spelling_2691",
-    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and gold.\n\n(4) She wore a beautiful necklace made of silver and golde.\n\n(5) The fierce storm destroyed the old wooden bridge.\n\n(6) The fierce storm destroyed the old wooden brige.\n\n(7) He was very successful in his business ventuer.\n\n(8) The aggressive dog growled menacingly at the stranger.\n\n(9) The aggressive dog growled menacingly at the strangar.\n\n(10) She has a pleasant personality and is very freindly.\n\n(11) The heavy snow made the roads very slipery.\n\n(12) He wrote a humorous story about a funny clown.",
-    "question": "Question 5: Find the error",
-    "options": [
-      "The fierce storm",
-      "destroyed the old",
-      "wooden",
-      "bridge.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'bridge' is correct. Error needed. 'brige'.\r"
-  },
-  {
     "id": "spelling_2691b",
-    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and gold.\n\n(4) She wore a beautiful necklace made of silver and golde.\n\n(5) The fierce storm destroyed the old wooden bridge.\n\n(6) The fierce storm destroyed the old wooden brige.\n\n(7) He was very successful in his business ventuer.\n\n(8) The aggressive dog growled menacingly at the stranger.\n\n(9) The aggressive dog growled menacingly at the strangar.\n\n(10) She has a pleasant personality and is very freindly.\n\n(11) The heavy snow made the roads very slipery.\n\n(12) He wrote a humorous story about a funny clown.",
-    "question": "Question 6: Find the error",
+    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and golde.\n\n(4) The fierce storm destroyed the old wooden brige.\n\n(5) He was very successful in his business ventuer.\n\n(6) The aggressive dog growled menacingly at the strangar.\n\n(7) She has a pleasant personality and is very freindly.\n\n(8) The heavy snow made the roads very slipery.",
+    "question": "Question 4: Find the error",
     "options": [
       "The fierce storm",
       "destroyed the old",
@@ -22765,8 +22625,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2692",
-    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and gold.\n\n(4) She wore a beautiful necklace made of silver and golde.\n\n(5) The fierce storm destroyed the old wooden bridge.\n\n(6) The fierce storm destroyed the old wooden brige.\n\n(7) He was very successful in his business ventuer.\n\n(8) The aggressive dog growled menacingly at the stranger.\n\n(9) The aggressive dog growled menacingly at the strangar.\n\n(10) She has a pleasant personality and is very freindly.\n\n(11) The heavy snow made the roads very slipery.\n\n(12) He wrote a humorous story about a funny clown.",
-    "question": "Question 7: Find the error",
+    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and golde.\n\n(4) The fierce storm destroyed the old wooden brige.\n\n(5) He was very successful in his business ventuer.\n\n(6) The aggressive dog growled menacingly at the strangar.\n\n(7) She has a pleasant personality and is very freindly.\n\n(8) The heavy snow made the roads very slipery.",
+    "question": "Question 5: Find the error",
     "options": [
       "He was very",
       "successful in his",
@@ -22778,23 +22638,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'ventuer' should be spelt 'venture'.\r"
   },
   {
-    "id": "spelling_2693",
-    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and gold.\n\n(4) She wore a beautiful necklace made of silver and golde.\n\n(5) The fierce storm destroyed the old wooden bridge.\n\n(6) The fierce storm destroyed the old wooden brige.\n\n(7) He was very successful in his business ventuer.\n\n(8) The aggressive dog growled menacingly at the stranger.\n\n(9) The aggressive dog growled menacingly at the strangar.\n\n(10) She has a pleasant personality and is very freindly.\n\n(11) The heavy snow made the roads very slipery.\n\n(12) He wrote a humorous story about a funny clown.",
-    "question": "Question 8: Find the error",
-    "options": [
-      "The aggressive dog",
-      "growled menacingly",
-      "at the",
-      "stranger.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'stranger' is correct. Error needed. 'strangar'.\r"
-  },
-  {
     "id": "spelling_2693b",
-    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and gold.\n\n(4) She wore a beautiful necklace made of silver and golde.\n\n(5) The fierce storm destroyed the old wooden bridge.\n\n(6) The fierce storm destroyed the old wooden brige.\n\n(7) He was very successful in his business ventuer.\n\n(8) The aggressive dog growled menacingly at the stranger.\n\n(9) The aggressive dog growled menacingly at the strangar.\n\n(10) She has a pleasant personality and is very freindly.\n\n(11) The heavy snow made the roads very slipery.\n\n(12) He wrote a humorous story about a funny clown.",
-    "question": "Question 9: Find the error",
+    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and golde.\n\n(4) The fierce storm destroyed the old wooden brige.\n\n(5) He was very successful in his business ventuer.\n\n(6) The aggressive dog growled menacingly at the strangar.\n\n(7) She has a pleasant personality and is very freindly.\n\n(8) The heavy snow made the roads very slipery.",
+    "question": "Question 6: Find the error",
     "options": [
       "The aggressive dog",
       "growled menacingly",
@@ -22807,8 +22653,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2694",
-    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and gold.\n\n(4) She wore a beautiful necklace made of silver and golde.\n\n(5) The fierce storm destroyed the old wooden bridge.\n\n(6) The fierce storm destroyed the old wooden brige.\n\n(7) He was very successful in his business ventuer.\n\n(8) The aggressive dog growled menacingly at the stranger.\n\n(9) The aggressive dog growled menacingly at the strangar.\n\n(10) She has a pleasant personality and is very freindly.\n\n(11) The heavy snow made the roads very slipery.\n\n(12) He wrote a humorous story about a funny clown.",
-    "question": "Question 10: Find the error",
+    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and golde.\n\n(4) The fierce storm destroyed the old wooden brige.\n\n(5) He was very successful in his business ventuer.\n\n(6) The aggressive dog growled menacingly at the strangar.\n\n(7) She has a pleasant personality and is very freindly.\n\n(8) The heavy snow made the roads very slipery.",
+    "question": "Question 7: Find the error",
     "options": [
       "She has a",
       "pleasant personality",
@@ -22821,8 +22667,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2695",
-    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and gold.\n\n(4) She wore a beautiful necklace made of silver and golde.\n\n(5) The fierce storm destroyed the old wooden bridge.\n\n(6) The fierce storm destroyed the old wooden brige.\n\n(7) He was very successful in his business ventuer.\n\n(8) The aggressive dog growled menacingly at the stranger.\n\n(9) The aggressive dog growled menacingly at the strangar.\n\n(10) She has a pleasant personality and is very freindly.\n\n(11) The heavy snow made the roads very slipery.\n\n(12) He wrote a humorous story about a funny clown.",
-    "question": "Question 11: Find the error",
+    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and golde.\n\n(4) The fierce storm destroyed the old wooden brige.\n\n(5) He was very successful in his business ventuer.\n\n(6) The aggressive dog growled menacingly at the strangar.\n\n(7) She has a pleasant personality and is very freindly.\n\n(8) The heavy snow made the roads very slipery.",
+    "question": "Question 8: Find the error",
     "options": [
       "The heavy snow",
       "made the roads",
@@ -22834,22 +22680,8 @@ export const SPELLING_QUIZ = [
     "explanation": "'slipery' should be spelt 'slippery'.\r"
   },
   {
-    "id": "spelling_2696",
-    "passage": "(1) He showed great resillience in recovering from his illness.\n\n(2) The loud music was a constant source of iritation.\n\n(3) She wore a beautiful necklace made of silver and gold.\n\n(4) She wore a beautiful necklace made of silver and golde.\n\n(5) The fierce storm destroyed the old wooden bridge.\n\n(6) The fierce storm destroyed the old wooden brige.\n\n(7) He was very successful in his business ventuer.\n\n(8) The aggressive dog growled menacingly at the stranger.\n\n(9) The aggressive dog growled menacingly at the strangar.\n\n(10) She has a pleasant personality and is very freindly.\n\n(11) The heavy snow made the roads very slipery.\n\n(12) He wrote a humorous story about a funny clown.",
-    "question": "Question 12: Find the error",
-    "options": [
-      "He wrote a",
-      "humorous story",
-      "about a funny",
-      "clown.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'clown' is correct. Error needed. 'clowne'.\r"
-  },
-  {
     "id": "spelling_2696b",
-    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windows.\n\n(6) The loud explosion shook the ground and broke windoes.\n\n(7) He wants to travel around the world in a yaght.\n\n(8) The courageous firefighter saved the family from the burning bilding.\n\n(9) She showed her appreciation by sending a thank you notte.\n\n(10) The mysterious box was hidden in the secret pasage.\n\n(11) He was known for his generous nature and kind hart.\n\n(12) The enormous elephant lifted the heavy log with its trunck.",
+    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windoes.\n\n(6) He wants to travel around the world in a yaght.\n\n(7) The courageous firefighter saved the family from the burning bilding.\n\n(8) She showed her appreciation by sending a thank you notte.\n\n(9) The mysterious box was hidden in the secret pasage.\n\n(10) He was known for his generous nature and kind hart.\n\n(11) The enormous elephant lifted the heavy log with its trunck.",
     "question": "Question 1: Find the error",
     "options": [
       "He wrote a",
@@ -22863,7 +22695,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2697",
-    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windows.\n\n(6) The loud explosion shook the ground and broke windoes.\n\n(7) He wants to travel around the world in a yaght.\n\n(8) The courageous firefighter saved the family from the burning bilding.\n\n(9) She showed her appreciation by sending a thank you notte.\n\n(10) The mysterious box was hidden in the secret pasage.\n\n(11) He was known for his generous nature and kind hart.\n\n(12) The enormous elephant lifted the heavy log with its trunck.",
+    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windoes.\n\n(6) He wants to travel around the world in a yaght.\n\n(7) The courageous firefighter saved the family from the burning bilding.\n\n(8) She showed her appreciation by sending a thank you notte.\n\n(9) The mysterious box was hidden in the secret pasage.\n\n(10) He was known for his generous nature and kind hart.\n\n(11) The enormous elephant lifted the heavy log with its trunck.",
     "question": "Question 2: Find the error",
     "options": [
       "The bright sun",
@@ -22877,7 +22709,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2697b",
-    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windows.\n\n(6) The loud explosion shook the ground and broke windoes.\n\n(7) He wants to travel around the world in a yaght.\n\n(8) The courageous firefighter saved the family from the burning bilding.\n\n(9) She showed her appreciation by sending a thank you notte.\n\n(10) The mysterious box was hidden in the secret pasage.\n\n(11) He was known for his generous nature and kind hart.\n\n(12) The enormous elephant lifted the heavy log with its trunck.",
+    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windoes.\n\n(6) He wants to travel around the world in a yaght.\n\n(7) The courageous firefighter saved the family from the burning bilding.\n\n(8) She showed her appreciation by sending a thank you notte.\n\n(9) The mysterious box was hidden in the secret pasage.\n\n(10) He was known for his generous nature and kind hart.\n\n(11) The enormous elephant lifted the heavy log with its trunck.",
     "question": "Question 3: Find the error",
     "options": [
       "The bright sun",
@@ -22891,7 +22723,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2698",
-    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windows.\n\n(6) The loud explosion shook the ground and broke windoes.\n\n(7) He wants to travel around the world in a yaght.\n\n(8) The courageous firefighter saved the family from the burning bilding.\n\n(9) She showed her appreciation by sending a thank you notte.\n\n(10) The mysterious box was hidden in the secret pasage.\n\n(11) He was known for his generous nature and kind hart.\n\n(12) The enormous elephant lifted the heavy log with its trunck.",
+    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windoes.\n\n(6) He wants to travel around the world in a yaght.\n\n(7) The courageous firefighter saved the family from the burning bilding.\n\n(8) She showed her appreciation by sending a thank you notte.\n\n(9) The mysterious box was hidden in the secret pasage.\n\n(10) He was known for his generous nature and kind hart.\n\n(11) The enormous elephant lifted the heavy log with its trunck.",
     "question": "Question 4: Find the error",
     "options": [
       "She likes to",
@@ -22904,23 +22736,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'suspence' should be spelt 'suspense'.\r"
   },
   {
-    "id": "spelling_2699",
-    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windows.\n\n(6) The loud explosion shook the ground and broke windoes.\n\n(7) He wants to travel around the world in a yaght.\n\n(8) The courageous firefighter saved the family from the burning bilding.\n\n(9) She showed her appreciation by sending a thank you notte.\n\n(10) The mysterious box was hidden in the secret pasage.\n\n(11) He was known for his generous nature and kind hart.\n\n(12) The enormous elephant lifted the heavy log with its trunck.",
-    "question": "Question 5: Find the error",
-    "options": [
-      "The loud explosion",
-      "shook the ground",
-      "and broke",
-      "windows.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'windows' is correct. Error needed. 'windoes'.\r"
-  },
-  {
     "id": "spelling_2699b",
-    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windows.\n\n(6) The loud explosion shook the ground and broke windoes.\n\n(7) He wants to travel around the world in a yaght.\n\n(8) The courageous firefighter saved the family from the burning bilding.\n\n(9) She showed her appreciation by sending a thank you notte.\n\n(10) The mysterious box was hidden in the secret pasage.\n\n(11) He was known for his generous nature and kind hart.\n\n(12) The enormous elephant lifted the heavy log with its trunck.",
-    "question": "Question 6: Find the error",
+    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windoes.\n\n(6) He wants to travel around the world in a yaght.\n\n(7) The courageous firefighter saved the family from the burning bilding.\n\n(8) She showed her appreciation by sending a thank you notte.\n\n(9) The mysterious box was hidden in the secret pasage.\n\n(10) He was known for his generous nature and kind hart.\n\n(11) The enormous elephant lifted the heavy log with its trunck.",
+    "question": "Question 5: Find the error",
     "options": [
       "The loud explosion",
       "shook the ground",
@@ -22933,8 +22751,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2700",
-    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windows.\n\n(6) The loud explosion shook the ground and broke windoes.\n\n(7) He wants to travel around the world in a yaght.\n\n(8) The courageous firefighter saved the family from the burning bilding.\n\n(9) She showed her appreciation by sending a thank you notte.\n\n(10) The mysterious box was hidden in the secret pasage.\n\n(11) He was known for his generous nature and kind hart.\n\n(12) The enormous elephant lifted the heavy log with its trunck.",
-    "question": "Question 7: Find the error",
+    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windoes.\n\n(6) He wants to travel around the world in a yaght.\n\n(7) The courageous firefighter saved the family from the burning bilding.\n\n(8) She showed her appreciation by sending a thank you notte.\n\n(9) The mysterious box was hidden in the secret pasage.\n\n(10) He was known for his generous nature and kind hart.\n\n(11) The enormous elephant lifted the heavy log with its trunck.",
+    "question": "Question 6: Find the error",
     "options": [
       "He wants to",
       "travel around the",
@@ -22947,8 +22765,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2701",
-    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windows.\n\n(6) The loud explosion shook the ground and broke windoes.\n\n(7) He wants to travel around the world in a yaght.\n\n(8) The courageous firefighter saved the family from the burning bilding.\n\n(9) She showed her appreciation by sending a thank you notte.\n\n(10) The mysterious box was hidden in the secret pasage.\n\n(11) He was known for his generous nature and kind hart.\n\n(12) The enormous elephant lifted the heavy log with its trunck.",
-    "question": "Question 8: Find the error",
+    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windoes.\n\n(6) He wants to travel around the world in a yaght.\n\n(7) The courageous firefighter saved the family from the burning bilding.\n\n(8) She showed her appreciation by sending a thank you notte.\n\n(9) The mysterious box was hidden in the secret pasage.\n\n(10) He was known for his generous nature and kind hart.\n\n(11) The enormous elephant lifted the heavy log with its trunck.",
+    "question": "Question 7: Find the error",
     "options": [
       "The courageous firefighter",
       "saved the family",
@@ -22961,8 +22779,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2702",
-    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windows.\n\n(6) The loud explosion shook the ground and broke windoes.\n\n(7) He wants to travel around the world in a yaght.\n\n(8) The courageous firefighter saved the family from the burning bilding.\n\n(9) She showed her appreciation by sending a thank you notte.\n\n(10) The mysterious box was hidden in the secret pasage.\n\n(11) He was known for his generous nature and kind hart.\n\n(12) The enormous elephant lifted the heavy log with its trunck.",
-    "question": "Question 9: Find the error",
+    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windoes.\n\n(6) He wants to travel around the world in a yaght.\n\n(7) The courageous firefighter saved the family from the burning bilding.\n\n(8) She showed her appreciation by sending a thank you notte.\n\n(9) The mysterious box was hidden in the secret pasage.\n\n(10) He was known for his generous nature and kind hart.\n\n(11) The enormous elephant lifted the heavy log with its trunck.",
+    "question": "Question 8: Find the error",
     "options": [
       "She showed her",
       "appreciation by",
@@ -22975,8 +22793,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2703",
-    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windows.\n\n(6) The loud explosion shook the ground and broke windoes.\n\n(7) He wants to travel around the world in a yaght.\n\n(8) The courageous firefighter saved the family from the burning bilding.\n\n(9) She showed her appreciation by sending a thank you notte.\n\n(10) The mysterious box was hidden in the secret pasage.\n\n(11) He was known for his generous nature and kind hart.\n\n(12) The enormous elephant lifted the heavy log with its trunck.",
-    "question": "Question 10: Find the error",
+    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windoes.\n\n(6) He wants to travel around the world in a yaght.\n\n(7) The courageous firefighter saved the family from the burning bilding.\n\n(8) She showed her appreciation by sending a thank you notte.\n\n(9) The mysterious box was hidden in the secret pasage.\n\n(10) He was known for his generous nature and kind hart.\n\n(11) The enormous elephant lifted the heavy log with its trunck.",
+    "question": "Question 9: Find the error",
     "options": [
       "The mysterious box",
       "was hidden in",
@@ -22989,8 +22807,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2704",
-    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windows.\n\n(6) The loud explosion shook the ground and broke windoes.\n\n(7) He wants to travel around the world in a yaght.\n\n(8) The courageous firefighter saved the family from the burning bilding.\n\n(9) She showed her appreciation by sending a thank you notte.\n\n(10) The mysterious box was hidden in the secret pasage.\n\n(11) He was known for his generous nature and kind hart.\n\n(12) The enormous elephant lifted the heavy log with its trunck.",
-    "question": "Question 11: Find the error",
+    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windoes.\n\n(6) He wants to travel around the world in a yaght.\n\n(7) The courageous firefighter saved the family from the burning bilding.\n\n(8) She showed her appreciation by sending a thank you notte.\n\n(9) The mysterious box was hidden in the secret pasage.\n\n(10) He was known for his generous nature and kind hart.\n\n(11) The enormous elephant lifted the heavy log with its trunck.",
+    "question": "Question 10: Find the error",
     "options": [
       "He was known",
       "for his generous",
@@ -23003,8 +22821,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2705",
-    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windows.\n\n(6) The loud explosion shook the ground and broke windoes.\n\n(7) He wants to travel around the world in a yaght.\n\n(8) The courageous firefighter saved the family from the burning bilding.\n\n(9) She showed her appreciation by sending a thank you notte.\n\n(10) The mysterious box was hidden in the secret pasage.\n\n(11) He was known for his generous nature and kind hart.\n\n(12) The enormous elephant lifted the heavy log with its trunck.",
-    "question": "Question 12: Find the error",
+    "passage": "(1) He wrote a humorous story about a funny clowne.\n\n(2) The bright sun shone down on the sandy dessert.\n\n(3) The bright sun shone down on the sandy dessert.\n\n(4) She likes to read mystery novels full of suspence.\n\n(5) The loud explosion shook the ground and broke windoes.\n\n(6) He wants to travel around the world in a yaght.\n\n(7) The courageous firefighter saved the family from the burning bilding.\n\n(8) She showed her appreciation by sending a thank you notte.\n\n(9) The mysterious box was hidden in the secret pasage.\n\n(10) He was known for his generous nature and kind hart.\n\n(11) The enormous elephant lifted the heavy log with its trunck.",
+    "question": "Question 11: Find the error",
     "options": [
       "The enormous elephant",
       "lifted the heavy",
@@ -23185,7 +23003,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2718",
-    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and cheese.\n\n(4) He ate a slice of pizza with pepperoni and chease.\n\n(5) The little girl played with her dolls in the playrome.\n\n(6) She wrote a story about a dragon and a nighter.\n\n(7) The old man sat on the bench and fed the burds.\n\n(8) He rode his scooter down the path to the parke.\n\n(9) The bright sun shone through the window and woke him upp.\n\n(10) She picked a red rose from the bush in the gardin.\n\n(11) The big dog chased the cat up the tall trea.\n\n(12) He drank a glass of juice with his breakfast toaste.",
+    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and chease.\n\n(4) The little girl played with her dolls in the playrome.\n\n(5) She wrote a story about a dragon and a nighter.\n\n(6) The old man sat on the bench and fed the burds.\n\n(7) He rode his scooter down the path to the parke.\n\n(8) The bright sun shone through the window and woke him upp.\n\n(9) She picked a red rose from the bush in the gardin.\n\n(10) The big dog chased the cat up the tall trea.\n\n(11) He drank a glass of juice with his breakfast toaste.",
     "question": "Question 1: Find the error",
     "options": [
       "She likes to",
@@ -23199,7 +23017,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2719",
-    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and cheese.\n\n(4) He ate a slice of pizza with pepperoni and chease.\n\n(5) The little girl played with her dolls in the playrome.\n\n(6) She wrote a story about a dragon and a nighter.\n\n(7) The old man sat on the bench and fed the burds.\n\n(8) He rode his scooter down the path to the parke.\n\n(9) The bright sun shone through the window and woke him upp.\n\n(10) She picked a red rose from the bush in the gardin.\n\n(11) The big dog chased the cat up the tall trea.\n\n(12) He drank a glass of juice with his breakfast toaste.",
+    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and chease.\n\n(4) The little girl played with her dolls in the playrome.\n\n(5) She wrote a story about a dragon and a nighter.\n\n(6) The old man sat on the bench and fed the burds.\n\n(7) He rode his scooter down the path to the parke.\n\n(8) The bright sun shone through the window and woke him upp.\n\n(9) She picked a red rose from the bush in the gardin.\n\n(10) The big dog chased the cat up the tall trea.\n\n(11) He drank a glass of juice with his breakfast toaste.",
     "question": "Question 2: Find the error",
     "options": [
       "The fast car",
@@ -23212,23 +23030,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'spead' should be spelt 'speed'.\r"
   },
   {
-    "id": "spelling_2720",
-    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and cheese.\n\n(4) He ate a slice of pizza with pepperoni and chease.\n\n(5) The little girl played with her dolls in the playrome.\n\n(6) She wrote a story about a dragon and a nighter.\n\n(7) The old man sat on the bench and fed the burds.\n\n(8) He rode his scooter down the path to the parke.\n\n(9) The bright sun shone through the window and woke him upp.\n\n(10) She picked a red rose from the bush in the gardin.\n\n(11) The big dog chased the cat up the tall trea.\n\n(12) He drank a glass of juice with his breakfast toaste.",
-    "question": "Question 3: Find the error",
-    "options": [
-      "He ate a",
-      "slice of pizza",
-      "with pepperoni",
-      "and cheese.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'cheese' is correct. Error needed. 'cheese' -> 'chease'.\r"
-  },
-  {
     "id": "spelling_2720b",
-    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and cheese.\n\n(4) He ate a slice of pizza with pepperoni and chease.\n\n(5) The little girl played with her dolls in the playrome.\n\n(6) She wrote a story about a dragon and a nighter.\n\n(7) The old man sat on the bench and fed the burds.\n\n(8) He rode his scooter down the path to the parke.\n\n(9) The bright sun shone through the window and woke him upp.\n\n(10) She picked a red rose from the bush in the gardin.\n\n(11) The big dog chased the cat up the tall trea.\n\n(12) He drank a glass of juice with his breakfast toaste.",
-    "question": "Question 4: Find the error",
+    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and chease.\n\n(4) The little girl played with her dolls in the playrome.\n\n(5) She wrote a story about a dragon and a nighter.\n\n(6) The old man sat on the bench and fed the burds.\n\n(7) He rode his scooter down the path to the parke.\n\n(8) The bright sun shone through the window and woke him upp.\n\n(9) She picked a red rose from the bush in the gardin.\n\n(10) The big dog chased the cat up the tall trea.\n\n(11) He drank a glass of juice with his breakfast toaste.",
+    "question": "Question 3: Find the error",
     "options": [
       "He ate a",
       "slice of pizza",
@@ -23241,8 +23045,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2721",
-    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and cheese.\n\n(4) He ate a slice of pizza with pepperoni and chease.\n\n(5) The little girl played with her dolls in the playrome.\n\n(6) She wrote a story about a dragon and a nighter.\n\n(7) The old man sat on the bench and fed the burds.\n\n(8) He rode his scooter down the path to the parke.\n\n(9) The bright sun shone through the window and woke him upp.\n\n(10) She picked a red rose from the bush in the gardin.\n\n(11) The big dog chased the cat up the tall trea.\n\n(12) He drank a glass of juice with his breakfast toaste.",
-    "question": "Question 5: Find the error",
+    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and chease.\n\n(4) The little girl played with her dolls in the playrome.\n\n(5) She wrote a story about a dragon and a nighter.\n\n(6) The old man sat on the bench and fed the burds.\n\n(7) He rode his scooter down the path to the parke.\n\n(8) The bright sun shone through the window and woke him upp.\n\n(9) She picked a red rose from the bush in the gardin.\n\n(10) The big dog chased the cat up the tall trea.\n\n(11) He drank a glass of juice with his breakfast toaste.",
+    "question": "Question 4: Find the error",
     "options": [
       "The little girl",
       "played with her",
@@ -23255,8 +23059,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2722",
-    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and cheese.\n\n(4) He ate a slice of pizza with pepperoni and chease.\n\n(5) The little girl played with her dolls in the playrome.\n\n(6) She wrote a story about a dragon and a nighter.\n\n(7) The old man sat on the bench and fed the burds.\n\n(8) He rode his scooter down the path to the parke.\n\n(9) The bright sun shone through the window and woke him upp.\n\n(10) She picked a red rose from the bush in the gardin.\n\n(11) The big dog chased the cat up the tall trea.\n\n(12) He drank a glass of juice with his breakfast toaste.",
-    "question": "Question 6: Find the error",
+    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and chease.\n\n(4) The little girl played with her dolls in the playrome.\n\n(5) She wrote a story about a dragon and a nighter.\n\n(6) The old man sat on the bench and fed the burds.\n\n(7) He rode his scooter down the path to the parke.\n\n(8) The bright sun shone through the window and woke him upp.\n\n(9) She picked a red rose from the bush in the gardin.\n\n(10) The big dog chased the cat up the tall trea.\n\n(11) He drank a glass of juice with his breakfast toaste.",
+    "question": "Question 5: Find the error",
     "options": [
       "She wrote a",
       "story about a",
@@ -23269,8 +23073,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2723",
-    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and cheese.\n\n(4) He ate a slice of pizza with pepperoni and chease.\n\n(5) The little girl played with her dolls in the playrome.\n\n(6) She wrote a story about a dragon and a nighter.\n\n(7) The old man sat on the bench and fed the burds.\n\n(8) He rode his scooter down the path to the parke.\n\n(9) The bright sun shone through the window and woke him upp.\n\n(10) She picked a red rose from the bush in the gardin.\n\n(11) The big dog chased the cat up the tall trea.\n\n(12) He drank a glass of juice with his breakfast toaste.",
-    "question": "Question 7: Find the error",
+    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and chease.\n\n(4) The little girl played with her dolls in the playrome.\n\n(5) She wrote a story about a dragon and a nighter.\n\n(6) The old man sat on the bench and fed the burds.\n\n(7) He rode his scooter down the path to the parke.\n\n(8) The bright sun shone through the window and woke him upp.\n\n(9) She picked a red rose from the bush in the gardin.\n\n(10) The big dog chased the cat up the tall trea.\n\n(11) He drank a glass of juice with his breakfast toaste.",
+    "question": "Question 6: Find the error",
     "options": [
       "The old man",
       "sat on the",
@@ -23283,8 +23087,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2724",
-    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and cheese.\n\n(4) He ate a slice of pizza with pepperoni and chease.\n\n(5) The little girl played with her dolls in the playrome.\n\n(6) She wrote a story about a dragon and a nighter.\n\n(7) The old man sat on the bench and fed the burds.\n\n(8) He rode his scooter down the path to the parke.\n\n(9) The bright sun shone through the window and woke him upp.\n\n(10) She picked a red rose from the bush in the gardin.\n\n(11) The big dog chased the cat up the tall trea.\n\n(12) He drank a glass of juice with his breakfast toaste.",
-    "question": "Question 8: Find the error",
+    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and chease.\n\n(4) The little girl played with her dolls in the playrome.\n\n(5) She wrote a story about a dragon and a nighter.\n\n(6) The old man sat on the bench and fed the burds.\n\n(7) He rode his scooter down the path to the parke.\n\n(8) The bright sun shone through the window and woke him upp.\n\n(9) She picked a red rose from the bush in the gardin.\n\n(10) The big dog chased the cat up the tall trea.\n\n(11) He drank a glass of juice with his breakfast toaste.",
+    "question": "Question 7: Find the error",
     "options": [
       "He rode his",
       "scooter down the",
@@ -23297,8 +23101,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2725",
-    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and cheese.\n\n(4) He ate a slice of pizza with pepperoni and chease.\n\n(5) The little girl played with her dolls in the playrome.\n\n(6) She wrote a story about a dragon and a nighter.\n\n(7) The old man sat on the bench and fed the burds.\n\n(8) He rode his scooter down the path to the parke.\n\n(9) The bright sun shone through the window and woke him upp.\n\n(10) She picked a red rose from the bush in the gardin.\n\n(11) The big dog chased the cat up the tall trea.\n\n(12) He drank a glass of juice with his breakfast toaste.",
-    "question": "Question 9: Find the error",
+    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and chease.\n\n(4) The little girl played with her dolls in the playrome.\n\n(5) She wrote a story about a dragon and a nighter.\n\n(6) The old man sat on the bench and fed the burds.\n\n(7) He rode his scooter down the path to the parke.\n\n(8) The bright sun shone through the window and woke him upp.\n\n(9) She picked a red rose from the bush in the gardin.\n\n(10) The big dog chased the cat up the tall trea.\n\n(11) He drank a glass of juice with his breakfast toaste.",
+    "question": "Question 8: Find the error",
     "options": [
       "The bright sun",
       "shone through the",
@@ -23311,8 +23115,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2726",
-    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and cheese.\n\n(4) He ate a slice of pizza with pepperoni and chease.\n\n(5) The little girl played with her dolls in the playrome.\n\n(6) She wrote a story about a dragon and a nighter.\n\n(7) The old man sat on the bench and fed the burds.\n\n(8) He rode his scooter down the path to the parke.\n\n(9) The bright sun shone through the window and woke him upp.\n\n(10) She picked a red rose from the bush in the gardin.\n\n(11) The big dog chased the cat up the tall trea.\n\n(12) He drank a glass of juice with his breakfast toaste.",
-    "question": "Question 10: Find the error",
+    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and chease.\n\n(4) The little girl played with her dolls in the playrome.\n\n(5) She wrote a story about a dragon and a nighter.\n\n(6) The old man sat on the bench and fed the burds.\n\n(7) He rode his scooter down the path to the parke.\n\n(8) The bright sun shone through the window and woke him upp.\n\n(9) She picked a red rose from the bush in the gardin.\n\n(10) The big dog chased the cat up the tall trea.\n\n(11) He drank a glass of juice with his breakfast toaste.",
+    "question": "Question 9: Find the error",
     "options": [
       "She picked a",
       "red rose from",
@@ -23325,8 +23129,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2727",
-    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and cheese.\n\n(4) He ate a slice of pizza with pepperoni and chease.\n\n(5) The little girl played with her dolls in the playrome.\n\n(6) She wrote a story about a dragon and a nighter.\n\n(7) The old man sat on the bench and fed the burds.\n\n(8) He rode his scooter down the path to the parke.\n\n(9) The bright sun shone through the window and woke him upp.\n\n(10) She picked a red rose from the bush in the gardin.\n\n(11) The big dog chased the cat up the tall trea.\n\n(12) He drank a glass of juice with his breakfast toaste.",
-    "question": "Question 11: Find the error",
+    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and chease.\n\n(4) The little girl played with her dolls in the playrome.\n\n(5) She wrote a story about a dragon and a nighter.\n\n(6) The old man sat on the bench and fed the burds.\n\n(7) He rode his scooter down the path to the parke.\n\n(8) The bright sun shone through the window and woke him upp.\n\n(9) She picked a red rose from the bush in the gardin.\n\n(10) The big dog chased the cat up the tall trea.\n\n(11) He drank a glass of juice with his breakfast toaste.",
+    "question": "Question 10: Find the error",
     "options": [
       "The big dog",
       "chased the cat",
@@ -23339,8 +23143,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2728",
-    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and cheese.\n\n(4) He ate a slice of pizza with pepperoni and chease.\n\n(5) The little girl played with her dolls in the playrome.\n\n(6) She wrote a story about a dragon and a nighter.\n\n(7) The old man sat on the bench and fed the burds.\n\n(8) He rode his scooter down the path to the parke.\n\n(9) The bright sun shone through the window and woke him upp.\n\n(10) She picked a red rose from the bush in the gardin.\n\n(11) The big dog chased the cat up the tall trea.\n\n(12) He drank a glass of juice with his breakfast toaste.",
-    "question": "Question 12: Find the error",
+    "passage": "(1) She likes to drink hot chocolate with whipped creem.\n\n(2) The fast car raced around the track at top spead.\n\n(3) He ate a slice of pizza with pepperoni and chease.\n\n(4) The little girl played with her dolls in the playrome.\n\n(5) She wrote a story about a dragon and a nighter.\n\n(6) The old man sat on the bench and fed the burds.\n\n(7) He rode his scooter down the path to the parke.\n\n(8) The bright sun shone through the window and woke him upp.\n\n(9) She picked a red rose from the bush in the gardin.\n\n(10) The big dog chased the cat up the tall trea.\n\n(11) He drank a glass of juice with his breakfast toaste.",
+    "question": "Question 11: Find the error",
     "options": [
       "He drank a",
       "glass of juice",
@@ -23521,7 +23325,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2740",
-    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move despite the farmer's coaxing.\n\n(5) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(6) She has a definite talent for playing the acordion.\n\n(7) The police officer arrested the thief for stealing the jewlry.\n\n(8) He showed great enthusiasm for the project from the begining.\n\n(9) The heavy box contained a collection of antique curency.\n\n(10) She wore a fashionable dress to the elegant recepsion.\n\n(11) The volcanic eruption spewed hot lava and ash into the aire.\n\n(12) He was disqualified from the race for breaking the ruels.",
+    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(5) She has a definite talent for playing the acordion.\n\n(6) The police officer arrested the thief for stealing the jewlry.\n\n(7) He showed great enthusiasm for the project from the begining.\n\n(8) The heavy box contained a collection of antique curency.\n\n(9) She wore a fashionable dress to the elegant recepsion.\n\n(10) The volcanic eruption spewed hot lava and ash into the aire.\n\n(11) He was disqualified from the race for breaking the ruels.",
     "question": "Question 1: Find the error",
     "options": [
       "He likes to",
@@ -23535,7 +23339,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2741",
-    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move despite the farmer's coaxing.\n\n(5) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(6) She has a definite talent for playing the acordion.\n\n(7) The police officer arrested the thief for stealing the jewlry.\n\n(8) He showed great enthusiasm for the project from the begining.\n\n(9) The heavy box contained a collection of antique curency.\n\n(10) She wore a fashionable dress to the elegant recepsion.\n\n(11) The volcanic eruption spewed hot lava and ash into the aire.\n\n(12) He was disqualified from the race for breaking the ruels.",
+    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(5) She has a definite talent for playing the acordion.\n\n(6) The police officer arrested the thief for stealing the jewlry.\n\n(7) He showed great enthusiasm for the project from the begining.\n\n(8) The heavy box contained a collection of antique curency.\n\n(9) She wore a fashionable dress to the elegant recepsion.\n\n(10) The volcanic eruption spewed hot lava and ash into the aire.\n\n(11) He was disqualified from the race for breaking the ruels.",
     "question": "Question 2: Find the error",
     "options": [
       "The amateur actor",
@@ -23549,7 +23353,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2742",
-    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move despite the farmer's coaxing.\n\n(5) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(6) She has a definite talent for playing the acordion.\n\n(7) The police officer arrested the thief for stealing the jewlry.\n\n(8) He showed great enthusiasm for the project from the begining.\n\n(9) The heavy box contained a collection of antique curency.\n\n(10) She wore a fashionable dress to the elegant recepsion.\n\n(11) The volcanic eruption spewed hot lava and ash into the aire.\n\n(12) He was disqualified from the race for breaking the ruels.",
+    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(5) She has a definite talent for playing the acordion.\n\n(6) The police officer arrested the thief for stealing the jewlry.\n\n(7) He showed great enthusiasm for the project from the begining.\n\n(8) The heavy box contained a collection of antique curency.\n\n(9) She wore a fashionable dress to the elegant recepsion.\n\n(10) The volcanic eruption spewed hot lava and ash into the aire.\n\n(11) He was disqualified from the race for breaking the ruels.",
     "question": "Question 3: Find the error",
     "options": [
       "We watched the",
@@ -23562,23 +23366,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'glasess' should be spelt 'glasses'.\r"
   },
   {
-    "id": "spelling_2743",
-    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move despite the farmer's coaxing.\n\n(5) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(6) She has a definite talent for playing the acordion.\n\n(7) The police officer arrested the thief for stealing the jewlry.\n\n(8) He showed great enthusiasm for the project from the begining.\n\n(9) The heavy box contained a collection of antique curency.\n\n(10) She wore a fashionable dress to the elegant recepsion.\n\n(11) The volcanic eruption spewed hot lava and ash into the aire.\n\n(12) He was disqualified from the race for breaking the ruels.",
-    "question": "Question 4: Find the error",
-    "options": [
-      "The stubborn mule",
-      "refused to move",
-      "despite the farmer's",
-      "coaxing.",
-      "No Error"
-    ],
-    "correctAnswer": "C",
-    "explanation": "'despite' is correct. Error needed. 'dispite'.\r"
-  },
-  {
     "id": "spelling_2743b",
-    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move despite the farmer's coaxing.\n\n(5) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(6) She has a definite talent for playing the acordion.\n\n(7) The police officer arrested the thief for stealing the jewlry.\n\n(8) He showed great enthusiasm for the project from the begining.\n\n(9) The heavy box contained a collection of antique curency.\n\n(10) She wore a fashionable dress to the elegant recepsion.\n\n(11) The volcanic eruption spewed hot lava and ash into the aire.\n\n(12) He was disqualified from the race for breaking the ruels.",
-    "question": "Question 5: Find the error",
+    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(5) She has a definite talent for playing the acordion.\n\n(6) The police officer arrested the thief for stealing the jewlry.\n\n(7) He showed great enthusiasm for the project from the begining.\n\n(8) The heavy box contained a collection of antique curency.\n\n(9) She wore a fashionable dress to the elegant recepsion.\n\n(10) The volcanic eruption spewed hot lava and ash into the aire.\n\n(11) He was disqualified from the race for breaking the ruels.",
+    "question": "Question 4: Find the error",
     "options": [
       "The stubborn mule",
       "refused to move",
@@ -23591,8 +23381,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2744",
-    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move despite the farmer's coaxing.\n\n(5) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(6) She has a definite talent for playing the acordion.\n\n(7) The police officer arrested the thief for stealing the jewlry.\n\n(8) He showed great enthusiasm for the project from the begining.\n\n(9) The heavy box contained a collection of antique curency.\n\n(10) She wore a fashionable dress to the elegant recepsion.\n\n(11) The volcanic eruption spewed hot lava and ash into the aire.\n\n(12) He was disqualified from the race for breaking the ruels.",
-    "question": "Question 6: Find the error",
+    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(5) She has a definite talent for playing the acordion.\n\n(6) The police officer arrested the thief for stealing the jewlry.\n\n(7) He showed great enthusiasm for the project from the begining.\n\n(8) The heavy box contained a collection of antique curency.\n\n(9) She wore a fashionable dress to the elegant recepsion.\n\n(10) The volcanic eruption spewed hot lava and ash into the aire.\n\n(11) He was disqualified from the race for breaking the ruels.",
+    "question": "Question 5: Find the error",
     "options": [
       "She has a",
       "definite talent",
@@ -23605,8 +23395,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2745",
-    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move despite the farmer's coaxing.\n\n(5) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(6) She has a definite talent for playing the acordion.\n\n(7) The police officer arrested the thief for stealing the jewlry.\n\n(8) He showed great enthusiasm for the project from the begining.\n\n(9) The heavy box contained a collection of antique curency.\n\n(10) She wore a fashionable dress to the elegant recepsion.\n\n(11) The volcanic eruption spewed hot lava and ash into the aire.\n\n(12) He was disqualified from the race for breaking the ruels.",
-    "question": "Question 7: Find the error",
+    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(5) She has a definite talent for playing the acordion.\n\n(6) The police officer arrested the thief for stealing the jewlry.\n\n(7) He showed great enthusiasm for the project from the begining.\n\n(8) The heavy box contained a collection of antique curency.\n\n(9) She wore a fashionable dress to the elegant recepsion.\n\n(10) The volcanic eruption spewed hot lava and ash into the aire.\n\n(11) He was disqualified from the race for breaking the ruels.",
+    "question": "Question 6: Find the error",
     "options": [
       "The police officer",
       "arrested the thief",
@@ -23619,8 +23409,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2746",
-    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move despite the farmer's coaxing.\n\n(5) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(6) She has a definite talent for playing the acordion.\n\n(7) The police officer arrested the thief for stealing the jewlry.\n\n(8) He showed great enthusiasm for the project from the begining.\n\n(9) The heavy box contained a collection of antique curency.\n\n(10) She wore a fashionable dress to the elegant recepsion.\n\n(11) The volcanic eruption spewed hot lava and ash into the aire.\n\n(12) He was disqualified from the race for breaking the ruels.",
-    "question": "Question 8: Find the error",
+    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(5) She has a definite talent for playing the acordion.\n\n(6) The police officer arrested the thief for stealing the jewlry.\n\n(7) He showed great enthusiasm for the project from the begining.\n\n(8) The heavy box contained a collection of antique curency.\n\n(9) She wore a fashionable dress to the elegant recepsion.\n\n(10) The volcanic eruption spewed hot lava and ash into the aire.\n\n(11) He was disqualified from the race for breaking the ruels.",
+    "question": "Question 7: Find the error",
     "options": [
       "He showed great",
       "enthusiasm for the",
@@ -23633,8 +23423,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2747",
-    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move despite the farmer's coaxing.\n\n(5) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(6) She has a definite talent for playing the acordion.\n\n(7) The police officer arrested the thief for stealing the jewlry.\n\n(8) He showed great enthusiasm for the project from the begining.\n\n(9) The heavy box contained a collection of antique curency.\n\n(10) She wore a fashionable dress to the elegant recepsion.\n\n(11) The volcanic eruption spewed hot lava and ash into the aire.\n\n(12) He was disqualified from the race for breaking the ruels.",
-    "question": "Question 9: Find the error",
+    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(5) She has a definite talent for playing the acordion.\n\n(6) The police officer arrested the thief for stealing the jewlry.\n\n(7) He showed great enthusiasm for the project from the begining.\n\n(8) The heavy box contained a collection of antique curency.\n\n(9) She wore a fashionable dress to the elegant recepsion.\n\n(10) The volcanic eruption spewed hot lava and ash into the aire.\n\n(11) He was disqualified from the race for breaking the ruels.",
+    "question": "Question 8: Find the error",
     "options": [
       "The heavy box",
       "contained a collection",
@@ -23647,8 +23437,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2748",
-    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move despite the farmer's coaxing.\n\n(5) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(6) She has a definite talent for playing the acordion.\n\n(7) The police officer arrested the thief for stealing the jewlry.\n\n(8) He showed great enthusiasm for the project from the begining.\n\n(9) The heavy box contained a collection of antique curency.\n\n(10) She wore a fashionable dress to the elegant recepsion.\n\n(11) The volcanic eruption spewed hot lava and ash into the aire.\n\n(12) He was disqualified from the race for breaking the ruels.",
-    "question": "Question 10: Find the error",
+    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(5) She has a definite talent for playing the acordion.\n\n(6) The police officer arrested the thief for stealing the jewlry.\n\n(7) He showed great enthusiasm for the project from the begining.\n\n(8) The heavy box contained a collection of antique curency.\n\n(9) She wore a fashionable dress to the elegant recepsion.\n\n(10) The volcanic eruption spewed hot lava and ash into the aire.\n\n(11) He was disqualified from the race for breaking the ruels.",
+    "question": "Question 9: Find the error",
     "options": [
       "She wore a",
       "fashionable dress",
@@ -23661,8 +23451,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2749",
-    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move despite the farmer's coaxing.\n\n(5) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(6) She has a definite talent for playing the acordion.\n\n(7) The police officer arrested the thief for stealing the jewlry.\n\n(8) He showed great enthusiasm for the project from the begining.\n\n(9) The heavy box contained a collection of antique curency.\n\n(10) She wore a fashionable dress to the elegant recepsion.\n\n(11) The volcanic eruption spewed hot lava and ash into the aire.\n\n(12) He was disqualified from the race for breaking the ruels.",
-    "question": "Question 11: Find the error",
+    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(5) She has a definite talent for playing the acordion.\n\n(6) The police officer arrested the thief for stealing the jewlry.\n\n(7) He showed great enthusiasm for the project from the begining.\n\n(8) The heavy box contained a collection of antique curency.\n\n(9) She wore a fashionable dress to the elegant recepsion.\n\n(10) The volcanic eruption spewed hot lava and ash into the aire.\n\n(11) He was disqualified from the race for breaking the ruels.",
+    "question": "Question 10: Find the error",
     "options": [
       "The volcanic eruption",
       "spewed hot lava",
@@ -23675,8 +23465,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2750",
-    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move despite the farmer's coaxing.\n\n(5) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(6) She has a definite talent for playing the acordion.\n\n(7) The police officer arrested the thief for stealing the jewlry.\n\n(8) He showed great enthusiasm for the project from the begining.\n\n(9) The heavy box contained a collection of antique curency.\n\n(10) She wore a fashionable dress to the elegant recepsion.\n\n(11) The volcanic eruption spewed hot lava and ash into the aire.\n\n(12) He was disqualified from the race for breaking the ruels.",
-    "question": "Question 12: Find the error",
+    "passage": "(1) He likes to eat apples and bananas for a snacke.\n\n(2) The amateur actor forgot his lines during the first rehersal.\n\n(3) We watched the solar eclipse through special safety glasess.\n\n(4) The stubborn mule refused to move dispite the farmer's coaxing.\n\n(5) She has a definite talent for playing the acordion.\n\n(6) The police officer arrested the thief for stealing the jewlry.\n\n(7) He showed great enthusiasm for the project from the begining.\n\n(8) The heavy box contained a collection of antique curency.\n\n(9) She wore a fashionable dress to the elegant recepsion.\n\n(10) The volcanic eruption spewed hot lava and ash into the aire.\n\n(11) He was disqualified from the race for breaking the ruels.",
+    "question": "Question 11: Find the error",
     "options": [
       "He was disqualified",
       "from the race",
@@ -24025,7 +23815,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2773",
-    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a bone.\n\n(10) The small dog wagged its tail when it saw a boan.\n\n(11) He watched the birds flying in the blue skye.\n\n(12) The hot sun melted the ice cream on the cone.",
+    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a boan.\n\n(10) He watched the birds flying in the blue skye.",
     "question": "Question 1: Find the error",
     "options": [
       "The boy played",
@@ -24039,7 +23829,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2774",
-    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a bone.\n\n(10) The small dog wagged its tail when it saw a boan.\n\n(11) He watched the birds flying in the blue skye.\n\n(12) The hot sun melted the ice cream on the cone.",
+    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a boan.\n\n(10) He watched the birds flying in the blue skye.",
     "question": "Question 2: Find the error",
     "options": [
       "He went to",
@@ -24053,7 +23843,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2775",
-    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a bone.\n\n(10) The small dog wagged its tail when it saw a boan.\n\n(11) He watched the birds flying in the blue skye.\n\n(12) The hot sun melted the ice cream on the cone.",
+    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a boan.\n\n(10) He watched the birds flying in the blue skye.",
     "question": "Question 3: Find the error",
     "options": [
       "The red car",
@@ -24067,7 +23857,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2776",
-    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a bone.\n\n(10) The small dog wagged its tail when it saw a boan.\n\n(11) He watched the birds flying in the blue skye.\n\n(12) The hot sun melted the ice cream on the cone.",
+    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a boan.\n\n(10) He watched the birds flying in the blue skye.",
     "question": "Question 4: Find the error",
     "options": [
       "She read a",
@@ -24081,7 +23871,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2777",
-    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a bone.\n\n(10) The small dog wagged its tail when it saw a boan.\n\n(11) He watched the birds flying in the blue skye.\n\n(12) The hot sun melted the ice cream on the cone.",
+    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a boan.\n\n(10) He watched the birds flying in the blue skye.",
     "question": "Question 5: Find the error",
     "options": [
       "The cold wind",
@@ -24095,7 +23885,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2778",
-    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a bone.\n\n(10) The small dog wagged its tail when it saw a boan.\n\n(11) He watched the birds flying in the blue skye.\n\n(12) The hot sun melted the ice cream on the cone.",
+    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a boan.\n\n(10) He watched the birds flying in the blue skye.",
     "question": "Question 6: Find the error",
     "options": [
       "He likes to",
@@ -24109,7 +23899,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2779",
-    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a bone.\n\n(10) The small dog wagged its tail when it saw a boan.\n\n(11) He watched the birds flying in the blue skye.\n\n(12) The hot sun melted the ice cream on the cone.",
+    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a boan.\n\n(10) He watched the birds flying in the blue skye.",
     "question": "Question 7: Find the error",
     "options": [
       "The sweet apple",
@@ -24123,7 +23913,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2780",
-    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a bone.\n\n(10) The small dog wagged its tail when it saw a boan.\n\n(11) He watched the birds flying in the blue skye.\n\n(12) The hot sun melted the ice cream on the cone.",
+    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a boan.\n\n(10) He watched the birds flying in the blue skye.",
     "question": "Question 8: Find the error",
     "options": [
       "She wore a",
@@ -24136,23 +23926,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'cote' should be spelt 'coat'.\r"
   },
   {
-    "id": "spelling_2781",
-    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a bone.\n\n(10) The small dog wagged its tail when it saw a boan.\n\n(11) He watched the birds flying in the blue skye.\n\n(12) The hot sun melted the ice cream on the cone.",
-    "question": "Question 9: Find the error",
-    "options": [
-      "The small dog",
-      "wagged its tail",
-      "when it saw",
-      "a bone.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'bone' is correct. Error needed. 'boan'.\r"
-  },
-  {
     "id": "spelling_2781b",
-    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a bone.\n\n(10) The small dog wagged its tail when it saw a boan.\n\n(11) He watched the birds flying in the blue skye.\n\n(12) The hot sun melted the ice cream on the cone.",
-    "question": "Question 10: Find the error",
+    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a boan.\n\n(10) He watched the birds flying in the blue skye.",
+    "question": "Question 9: Find the error",
     "options": [
       "The small dog",
       "wagged its tail",
@@ -24165,8 +23941,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2782",
-    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a bone.\n\n(10) The small dog wagged its tail when it saw a boan.\n\n(11) He watched the birds flying in the blue skye.\n\n(12) The hot sun melted the ice cream on the cone.",
-    "question": "Question 11: Find the error",
+    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a boan.\n\n(10) He watched the birds flying in the blue skye.",
+    "question": "Question 10: Find the error",
     "options": [
       "He watched the",
       "birds flying in",
@@ -24178,22 +23954,8 @@ export const SPELLING_QUIZ = [
     "explanation": "'skye' should be spelt 'sky'.\r"
   },
   {
-    "id": "spelling_2783",
-    "passage": "(1) The boy played football with his friends in the streat.\n\n(2) He went to sleep late because he watched a movei.\n\n(3) The red car drove past the school very quikly.\n\n(4) She read a poem about a cat and a mowse.\n\n(5) The cold wind blew the snow across the frozen feilds.\n\n(6) He likes to draw pictures of cars and truks.\n\n(7) The sweet apple was crisp and juicy to eate.\n\n(8) She wore a blue hat to match her new cote.\n\n(9) The small dog wagged its tail when it saw a bone.\n\n(10) The small dog wagged its tail when it saw a boan.\n\n(11) He watched the birds flying in the blue skye.\n\n(12) The hot sun melted the ice cream on the cone.",
-    "question": "Question 12: Find the error",
-    "options": [
-      "The hot sun",
-      "melted the ice",
-      "cream on the",
-      "cone.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'cone' is correct. Error needed. 'coan'.\r"
-  },
-  {
     "id": "spelling_2783b",
-    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in London.\n\n(3) She wrote a letter to her grandmother in Lundon.\n\n(4) The green frog sat on a lily pad in the ponde.\n\n(5) He drank a glass of water because he was thirstie.\n\n(6) The white sheep grazed in the green field all daie.\n\n(7) She picked a yellow flower from the bush in the parke.\n\n(8) The big bus took the children to school every mornin.\n\n(9) He ate a sandwich with ham and cheese for lunche.\n\n(10) The bird flew to its nest in the high bransh.\n\n(11) She ran to the park to play on the swinges.\n\n(12) The fish swam quickly away from the hungry sharke.",
+    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in Lundon.\n\n(3) The green frog sat on a lily pad in the ponde.\n\n(4) He drank a glass of water because he was thirstie.\n\n(5) The white sheep grazed in the green field all daie.\n\n(6) She picked a yellow flower from the bush in the parke.\n\n(7) The big bus took the children to school every mornin.\n\n(8) He ate a sandwich with ham and cheese for lunche.\n\n(9) The bird flew to its nest in the high bransh.\n\n(10) She ran to the park to play on the swinges.\n\n(11) The fish swam quickly away from the hungry sharke.",
     "question": "Question 1: Find the error",
     "options": [
       "The hot sun",
@@ -24206,23 +23968,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'coan' should be spelt 'cone'.\r"
   },
   {
-    "id": "spelling_2784",
-    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in London.\n\n(3) She wrote a letter to her grandmother in Lundon.\n\n(4) The green frog sat on a lily pad in the ponde.\n\n(5) He drank a glass of water because he was thirstie.\n\n(6) The white sheep grazed in the green field all daie.\n\n(7) She picked a yellow flower from the bush in the parke.\n\n(8) The big bus took the children to school every mornin.\n\n(9) He ate a sandwich with ham and cheese for lunche.\n\n(10) The bird flew to its nest in the high bransh.\n\n(11) She ran to the park to play on the swinges.\n\n(12) The fish swam quickly away from the hungry sharke.",
-    "question": "Question 2: Find the error",
-    "options": [
-      "She wrote a",
-      "letter to her",
-      "grandmother in",
-      "London.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'London' is correct. Error needed. 'Lundon'.\r"
-  },
-  {
     "id": "spelling_2784b",
-    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in London.\n\n(3) She wrote a letter to her grandmother in Lundon.\n\n(4) The green frog sat on a lily pad in the ponde.\n\n(5) He drank a glass of water because he was thirstie.\n\n(6) The white sheep grazed in the green field all daie.\n\n(7) She picked a yellow flower from the bush in the parke.\n\n(8) The big bus took the children to school every mornin.\n\n(9) He ate a sandwich with ham and cheese for lunche.\n\n(10) The bird flew to its nest in the high bransh.\n\n(11) She ran to the park to play on the swinges.\n\n(12) The fish swam quickly away from the hungry sharke.",
-    "question": "Question 3: Find the error",
+    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in Lundon.\n\n(3) The green frog sat on a lily pad in the ponde.\n\n(4) He drank a glass of water because he was thirstie.\n\n(5) The white sheep grazed in the green field all daie.\n\n(6) She picked a yellow flower from the bush in the parke.\n\n(7) The big bus took the children to school every mornin.\n\n(8) He ate a sandwich with ham and cheese for lunche.\n\n(9) The bird flew to its nest in the high bransh.\n\n(10) She ran to the park to play on the swinges.\n\n(11) The fish swam quickly away from the hungry sharke.",
+    "question": "Question 2: Find the error",
     "options": [
       "She wrote a",
       "letter to her",
@@ -24235,8 +23983,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2785",
-    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in London.\n\n(3) She wrote a letter to her grandmother in Lundon.\n\n(4) The green frog sat on a lily pad in the ponde.\n\n(5) He drank a glass of water because he was thirstie.\n\n(6) The white sheep grazed in the green field all daie.\n\n(7) She picked a yellow flower from the bush in the parke.\n\n(8) The big bus took the children to school every mornin.\n\n(9) He ate a sandwich with ham and cheese for lunche.\n\n(10) The bird flew to its nest in the high bransh.\n\n(11) She ran to the park to play on the swinges.\n\n(12) The fish swam quickly away from the hungry sharke.",
-    "question": "Question 4: Find the error",
+    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in Lundon.\n\n(3) The green frog sat on a lily pad in the ponde.\n\n(4) He drank a glass of water because he was thirstie.\n\n(5) The white sheep grazed in the green field all daie.\n\n(6) She picked a yellow flower from the bush in the parke.\n\n(7) The big bus took the children to school every mornin.\n\n(8) He ate a sandwich with ham and cheese for lunche.\n\n(9) The bird flew to its nest in the high bransh.\n\n(10) She ran to the park to play on the swinges.\n\n(11) The fish swam quickly away from the hungry sharke.",
+    "question": "Question 3: Find the error",
     "options": [
       "The green frog",
       "sat on a",
@@ -24249,8 +23997,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2786",
-    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in London.\n\n(3) She wrote a letter to her grandmother in Lundon.\n\n(4) The green frog sat on a lily pad in the ponde.\n\n(5) He drank a glass of water because he was thirstie.\n\n(6) The white sheep grazed in the green field all daie.\n\n(7) She picked a yellow flower from the bush in the parke.\n\n(8) The big bus took the children to school every mornin.\n\n(9) He ate a sandwich with ham and cheese for lunche.\n\n(10) The bird flew to its nest in the high bransh.\n\n(11) She ran to the park to play on the swinges.\n\n(12) The fish swam quickly away from the hungry sharke.",
-    "question": "Question 5: Find the error",
+    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in Lundon.\n\n(3) The green frog sat on a lily pad in the ponde.\n\n(4) He drank a glass of water because he was thirstie.\n\n(5) The white sheep grazed in the green field all daie.\n\n(6) She picked a yellow flower from the bush in the parke.\n\n(7) The big bus took the children to school every mornin.\n\n(8) He ate a sandwich with ham and cheese for lunche.\n\n(9) The bird flew to its nest in the high bransh.\n\n(10) She ran to the park to play on the swinges.\n\n(11) The fish swam quickly away from the hungry sharke.",
+    "question": "Question 4: Find the error",
     "options": [
       "He drank a",
       "glass of water",
@@ -24263,8 +24011,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2787",
-    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in London.\n\n(3) She wrote a letter to her grandmother in Lundon.\n\n(4) The green frog sat on a lily pad in the ponde.\n\n(5) He drank a glass of water because he was thirstie.\n\n(6) The white sheep grazed in the green field all daie.\n\n(7) She picked a yellow flower from the bush in the parke.\n\n(8) The big bus took the children to school every mornin.\n\n(9) He ate a sandwich with ham and cheese for lunche.\n\n(10) The bird flew to its nest in the high bransh.\n\n(11) She ran to the park to play on the swinges.\n\n(12) The fish swam quickly away from the hungry sharke.",
-    "question": "Question 6: Find the error",
+    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in Lundon.\n\n(3) The green frog sat on a lily pad in the ponde.\n\n(4) He drank a glass of water because he was thirstie.\n\n(5) The white sheep grazed in the green field all daie.\n\n(6) She picked a yellow flower from the bush in the parke.\n\n(7) The big bus took the children to school every mornin.\n\n(8) He ate a sandwich with ham and cheese for lunche.\n\n(9) The bird flew to its nest in the high bransh.\n\n(10) She ran to the park to play on the swinges.\n\n(11) The fish swam quickly away from the hungry sharke.",
+    "question": "Question 5: Find the error",
     "options": [
       "The white sheep",
       "grazed in the",
@@ -24277,8 +24025,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2788",
-    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in London.\n\n(3) She wrote a letter to her grandmother in Lundon.\n\n(4) The green frog sat on a lily pad in the ponde.\n\n(5) He drank a glass of water because he was thirstie.\n\n(6) The white sheep grazed in the green field all daie.\n\n(7) She picked a yellow flower from the bush in the parke.\n\n(8) The big bus took the children to school every mornin.\n\n(9) He ate a sandwich with ham and cheese for lunche.\n\n(10) The bird flew to its nest in the high bransh.\n\n(11) She ran to the park to play on the swinges.\n\n(12) The fish swam quickly away from the hungry sharke.",
-    "question": "Question 7: Find the error",
+    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in Lundon.\n\n(3) The green frog sat on a lily pad in the ponde.\n\n(4) He drank a glass of water because he was thirstie.\n\n(5) The white sheep grazed in the green field all daie.\n\n(6) She picked a yellow flower from the bush in the parke.\n\n(7) The big bus took the children to school every mornin.\n\n(8) He ate a sandwich with ham and cheese for lunche.\n\n(9) The bird flew to its nest in the high bransh.\n\n(10) She ran to the park to play on the swinges.\n\n(11) The fish swam quickly away from the hungry sharke.",
+    "question": "Question 6: Find the error",
     "options": [
       "She picked a",
       "yellow flower from",
@@ -24291,8 +24039,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2789",
-    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in London.\n\n(3) She wrote a letter to her grandmother in Lundon.\n\n(4) The green frog sat on a lily pad in the ponde.\n\n(5) He drank a glass of water because he was thirstie.\n\n(6) The white sheep grazed in the green field all daie.\n\n(7) She picked a yellow flower from the bush in the parke.\n\n(8) The big bus took the children to school every mornin.\n\n(9) He ate a sandwich with ham and cheese for lunche.\n\n(10) The bird flew to its nest in the high bransh.\n\n(11) She ran to the park to play on the swinges.\n\n(12) The fish swam quickly away from the hungry sharke.",
-    "question": "Question 8: Find the error",
+    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in Lundon.\n\n(3) The green frog sat on a lily pad in the ponde.\n\n(4) He drank a glass of water because he was thirstie.\n\n(5) The white sheep grazed in the green field all daie.\n\n(6) She picked a yellow flower from the bush in the parke.\n\n(7) The big bus took the children to school every mornin.\n\n(8) He ate a sandwich with ham and cheese for lunche.\n\n(9) The bird flew to its nest in the high bransh.\n\n(10) She ran to the park to play on the swinges.\n\n(11) The fish swam quickly away from the hungry sharke.",
+    "question": "Question 7: Find the error",
     "options": [
       "The big bus",
       "took the children",
@@ -24305,8 +24053,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2790",
-    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in London.\n\n(3) She wrote a letter to her grandmother in Lundon.\n\n(4) The green frog sat on a lily pad in the ponde.\n\n(5) He drank a glass of water because he was thirstie.\n\n(6) The white sheep grazed in the green field all daie.\n\n(7) She picked a yellow flower from the bush in the parke.\n\n(8) The big bus took the children to school every mornin.\n\n(9) He ate a sandwich with ham and cheese for lunche.\n\n(10) The bird flew to its nest in the high bransh.\n\n(11) She ran to the park to play on the swinges.\n\n(12) The fish swam quickly away from the hungry sharke.",
-    "question": "Question 9: Find the error",
+    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in Lundon.\n\n(3) The green frog sat on a lily pad in the ponde.\n\n(4) He drank a glass of water because he was thirstie.\n\n(5) The white sheep grazed in the green field all daie.\n\n(6) She picked a yellow flower from the bush in the parke.\n\n(7) The big bus took the children to school every mornin.\n\n(8) He ate a sandwich with ham and cheese for lunche.\n\n(9) The bird flew to its nest in the high bransh.\n\n(10) She ran to the park to play on the swinges.\n\n(11) The fish swam quickly away from the hungry sharke.",
+    "question": "Question 8: Find the error",
     "options": [
       "He ate a",
       "sandwich with ham",
@@ -24319,8 +24067,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2791",
-    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in London.\n\n(3) She wrote a letter to her grandmother in Lundon.\n\n(4) The green frog sat on a lily pad in the ponde.\n\n(5) He drank a glass of water because he was thirstie.\n\n(6) The white sheep grazed in the green field all daie.\n\n(7) She picked a yellow flower from the bush in the parke.\n\n(8) The big bus took the children to school every mornin.\n\n(9) He ate a sandwich with ham and cheese for lunche.\n\n(10) The bird flew to its nest in the high bransh.\n\n(11) She ran to the park to play on the swinges.\n\n(12) The fish swam quickly away from the hungry sharke.",
-    "question": "Question 10: Find the error",
+    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in Lundon.\n\n(3) The green frog sat on a lily pad in the ponde.\n\n(4) He drank a glass of water because he was thirstie.\n\n(5) The white sheep grazed in the green field all daie.\n\n(6) She picked a yellow flower from the bush in the parke.\n\n(7) The big bus took the children to school every mornin.\n\n(8) He ate a sandwich with ham and cheese for lunche.\n\n(9) The bird flew to its nest in the high bransh.\n\n(10) She ran to the park to play on the swinges.\n\n(11) The fish swam quickly away from the hungry sharke.",
+    "question": "Question 9: Find the error",
     "options": [
       "The bird flew",
       "to its nest",
@@ -24333,8 +24081,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2792",
-    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in London.\n\n(3) She wrote a letter to her grandmother in Lundon.\n\n(4) The green frog sat on a lily pad in the ponde.\n\n(5) He drank a glass of water because he was thirstie.\n\n(6) The white sheep grazed in the green field all daie.\n\n(7) She picked a yellow flower from the bush in the parke.\n\n(8) The big bus took the children to school every mornin.\n\n(9) He ate a sandwich with ham and cheese for lunche.\n\n(10) The bird flew to its nest in the high bransh.\n\n(11) She ran to the park to play on the swinges.\n\n(12) The fish swam quickly away from the hungry sharke.",
-    "question": "Question 11: Find the error",
+    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in Lundon.\n\n(3) The green frog sat on a lily pad in the ponde.\n\n(4) He drank a glass of water because he was thirstie.\n\n(5) The white sheep grazed in the green field all daie.\n\n(6) She picked a yellow flower from the bush in the parke.\n\n(7) The big bus took the children to school every mornin.\n\n(8) He ate a sandwich with ham and cheese for lunche.\n\n(9) The bird flew to its nest in the high bransh.\n\n(10) She ran to the park to play on the swinges.\n\n(11) The fish swam quickly away from the hungry sharke.",
+    "question": "Question 10: Find the error",
     "options": [
       "She ran to",
       "the park to",
@@ -24347,8 +24095,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2793",
-    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in London.\n\n(3) She wrote a letter to her grandmother in Lundon.\n\n(4) The green frog sat on a lily pad in the ponde.\n\n(5) He drank a glass of water because he was thirstie.\n\n(6) The white sheep grazed in the green field all daie.\n\n(7) She picked a yellow flower from the bush in the parke.\n\n(8) The big bus took the children to school every mornin.\n\n(9) He ate a sandwich with ham and cheese for lunche.\n\n(10) The bird flew to its nest in the high bransh.\n\n(11) She ran to the park to play on the swinges.\n\n(12) The fish swam quickly away from the hungry sharke.",
-    "question": "Question 12: Find the error",
+    "passage": "(1) The hot sun melted the ice cream on the coan.\n\n(2) She wrote a letter to her grandmother in Lundon.\n\n(3) The green frog sat on a lily pad in the ponde.\n\n(4) He drank a glass of water because he was thirstie.\n\n(5) The white sheep grazed in the green field all daie.\n\n(6) She picked a yellow flower from the bush in the parke.\n\n(7) The big bus took the children to school every mornin.\n\n(8) He ate a sandwich with ham and cheese for lunche.\n\n(9) The bird flew to its nest in the high bransh.\n\n(10) She ran to the park to play on the swinges.\n\n(11) The fish swam quickly away from the hungry sharke.",
+    "question": "Question 11: Find the error",
     "options": [
       "The fish swam",
       "quickly away from",
@@ -24361,7 +24109,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2794",
-    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scored.\n\n(6) The boy kicked the football into the goal and scord.\n\n(7) He went to sleep in his comfortable bed at night.\n\n(8) He went to sleep in his comfortable bed at nite.\n\n(9) The red bus stopped at the bus stop on time.\n\n(10) The red bus stopped at the bus stop on tyme.\n\n(11) She read a story to her little sister at bedtyme.",
+    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scord.\n\n(6) He went to sleep in his comfortable bed at nite.\n\n(7) The red bus stopped at the bus stop on tyme.\n\n(8) She read a story to her little sister at bedtyme.",
     "question": "Question 1: Find the error",
     "options": [
       "He sat on",
@@ -24375,7 +24123,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2795",
-    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scored.\n\n(6) The boy kicked the football into the goal and scord.\n\n(7) He went to sleep in his comfortable bed at night.\n\n(8) He went to sleep in his comfortable bed at nite.\n\n(9) The red bus stopped at the bus stop on time.\n\n(10) The red bus stopped at the bus stop on tyme.\n\n(11) She read a story to her little sister at bedtyme.",
+    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scord.\n\n(6) He went to sleep in his comfortable bed at nite.\n\n(7) The red bus stopped at the bus stop on tyme.\n\n(8) She read a story to her little sister at bedtyme.",
     "question": "Question 2: Find the error",
     "options": [
       "The rain made",
@@ -24389,7 +24137,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2796",
-    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scored.\n\n(6) The boy kicked the football into the goal and scord.\n\n(7) He went to sleep in his comfortable bed at night.\n\n(8) He went to sleep in his comfortable bed at nite.\n\n(9) The red bus stopped at the bus stop on time.\n\n(10) The red bus stopped at the bus stop on tyme.\n\n(11) She read a story to her little sister at bedtyme.",
+    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scord.\n\n(6) He went to sleep in his comfortable bed at nite.\n\n(7) The red bus stopped at the bus stop on tyme.\n\n(8) She read a story to her little sister at bedtyme.",
     "question": "Question 3: Find the error",
     "options": [
       "She smiled at",
@@ -24403,7 +24151,7 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2796b",
-    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scored.\n\n(6) The boy kicked the football into the goal and scord.\n\n(7) He went to sleep in his comfortable bed at night.\n\n(8) He went to sleep in his comfortable bed at nite.\n\n(9) The red bus stopped at the bus stop on time.\n\n(10) The red bus stopped at the bus stop on tyme.\n\n(11) She read a story to her little sister at bedtyme.",
+    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scord.\n\n(6) He went to sleep in his comfortable bed at nite.\n\n(7) The red bus stopped at the bus stop on tyme.\n\n(8) She read a story to her little sister at bedtyme.",
     "question": "Question 4: Find the error",
     "options": [
       "She smiled at",
@@ -24416,23 +24164,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'waived' should be spelt 'waved'.\r"
   },
   {
-    "id": "spelling_2797",
-    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scored.\n\n(6) The boy kicked the football into the goal and scord.\n\n(7) He went to sleep in his comfortable bed at night.\n\n(8) He went to sleep in his comfortable bed at nite.\n\n(9) The red bus stopped at the bus stop on time.\n\n(10) The red bus stopped at the bus stop on tyme.\n\n(11) She read a story to her little sister at bedtyme.",
-    "question": "Question 5: Find the error",
-    "options": [
-      "The boy kicked",
-      "the football into",
-      "the goal and",
-      "scored.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'scored' is correct. Error needed. 'scord'.\r"
-  },
-  {
     "id": "spelling_2797b",
-    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scored.\n\n(6) The boy kicked the football into the goal and scord.\n\n(7) He went to sleep in his comfortable bed at night.\n\n(8) He went to sleep in his comfortable bed at nite.\n\n(9) The red bus stopped at the bus stop on time.\n\n(10) The red bus stopped at the bus stop on tyme.\n\n(11) She read a story to her little sister at bedtyme.",
-    "question": "Question 6: Find the error",
+    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scord.\n\n(6) He went to sleep in his comfortable bed at nite.\n\n(7) The red bus stopped at the bus stop on tyme.\n\n(8) She read a story to her little sister at bedtyme.",
+    "question": "Question 5: Find the error",
     "options": [
       "The boy kicked",
       "the football into",
@@ -24444,23 +24178,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'scord' should be spelt 'scored'.\r"
   },
   {
-    "id": "spelling_2798",
-    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scored.\n\n(6) The boy kicked the football into the goal and scord.\n\n(7) He went to sleep in his comfortable bed at night.\n\n(8) He went to sleep in his comfortable bed at nite.\n\n(9) The red bus stopped at the bus stop on time.\n\n(10) The red bus stopped at the bus stop on tyme.\n\n(11) She read a story to her little sister at bedtyme.",
-    "question": "Question 7: Find the error",
-    "options": [
-      "He went to",
-      "sleep in his",
-      "comfortable bed",
-      "at night.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'night' is correct. Error needed. 'nite'.\r"
-  },
-  {
     "id": "spelling_2798b",
-    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scored.\n\n(6) The boy kicked the football into the goal and scord.\n\n(7) He went to sleep in his comfortable bed at night.\n\n(8) He went to sleep in his comfortable bed at nite.\n\n(9) The red bus stopped at the bus stop on time.\n\n(10) The red bus stopped at the bus stop on tyme.\n\n(11) She read a story to her little sister at bedtyme.",
-    "question": "Question 8: Find the error",
+    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scord.\n\n(6) He went to sleep in his comfortable bed at nite.\n\n(7) The red bus stopped at the bus stop on tyme.\n\n(8) She read a story to her little sister at bedtyme.",
+    "question": "Question 6: Find the error",
     "options": [
       "He went to",
       "sleep in his",
@@ -24472,23 +24192,9 @@ export const SPELLING_QUIZ = [
     "explanation": "'nite' should be spelt 'night'.\r"
   },
   {
-    "id": "spelling_2799",
-    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scored.\n\n(6) The boy kicked the football into the goal and scord.\n\n(7) He went to sleep in his comfortable bed at night.\n\n(8) He went to sleep in his comfortable bed at nite.\n\n(9) The red bus stopped at the bus stop on time.\n\n(10) The red bus stopped at the bus stop on tyme.\n\n(11) She read a story to her little sister at bedtyme.",
-    "question": "Question 9: Find the error",
-    "options": [
-      "The red bus",
-      "stopped at the",
-      "bus stop on",
-      "time.",
-      "No Error"
-    ],
-    "correctAnswer": "D",
-    "explanation": "'time' is correct. Error needed. 'tyme'.\r"
-  },
-  {
     "id": "spelling_2799b",
-    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scored.\n\n(6) The boy kicked the football into the goal and scord.\n\n(7) He went to sleep in his comfortable bed at night.\n\n(8) He went to sleep in his comfortable bed at nite.\n\n(9) The red bus stopped at the bus stop on time.\n\n(10) The red bus stopped at the bus stop on tyme.\n\n(11) She read a story to her little sister at bedtyme.",
-    "question": "Question 10: Find the error",
+    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scord.\n\n(6) He went to sleep in his comfortable bed at nite.\n\n(7) The red bus stopped at the bus stop on tyme.\n\n(8) She read a story to her little sister at bedtyme.",
+    "question": "Question 7: Find the error",
     "options": [
       "The red bus",
       "stopped at the",
@@ -24501,8 +24207,8 @@ export const SPELLING_QUIZ = [
   },
   {
     "id": "spelling_2800",
-    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scored.\n\n(6) The boy kicked the football into the goal and scord.\n\n(7) He went to sleep in his comfortable bed at night.\n\n(8) He went to sleep in his comfortable bed at nite.\n\n(9) The red bus stopped at the bus stop on time.\n\n(10) The red bus stopped at the bus stop on tyme.\n\n(11) She read a story to her little sister at bedtyme.",
-    "question": "Question 11: Find the error",
+    "passage": "(1) He sat on the floor and played with his toyes.\n\n(2) The rain made puddles on the ground in the yeard.\n\n(3) She smiled at the baby in the pram and waived.\n\n(4) She smiled at the baby in the pram and waived.\n\n(5) The boy kicked the football into the goal and scord.\n\n(6) He went to sleep in his comfortable bed at nite.\n\n(7) The red bus stopped at the bus stop on tyme.\n\n(8) She read a story to her little sister at bedtyme.",
+    "question": "Question 8: Find the error",
     "options": [
       "She read a",
       "story to her",

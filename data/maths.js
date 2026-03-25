@@ -46688,150 +46688,6 @@ export const MATHS_QUIZ = [
     "prefix": "P3Q33"
   },
   {
-    "id": "P3Q33_12",
-    "question": "At the airport, Ground Control must guide a plane from point T to the end of the runway R, avoiding trees. The plane starts facing East (Right). Which instructions are correct?",
-    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/p3q33_12.png",
-    "options": [
-      "FORWARD 2, LEFT 90°, FORWARD 3, RIGHT 90°, FORWARD 5",
-      "FORWARD 2, RIGHT 90°, FORWARD 3, LEFT 90°, FORWARD 5",
-      "FORWARD 3, RIGHT 90°, FORWARD 3, LEFT 90°, FORWARD 5",
-      "FORWARD 2, FORWARD 3, FORWARD 5",
-      "FORWARD 3, LEFT 90°, FORWARD 3, RIGHT 90°, FORWARD 4"
-    ],
-    "correctAnswer": "FORWARD 2, RIGHT 90°, FORWARD 3, LEFT 90°, FORWARD 5",
-    "topic": "Position and Direction",
-    "difficultyIndex": 33,
-    "prefix": "P3Q33"
-  },
-  {
-    "id": "P3Q33_13",
-    "question": "At the airport, Ground Control must guide a plane from point T to the end of the runway R, avoiding trees. The plane starts facing East (Right). Which instructions are correct?",
-    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/p3q33_13.png",
-    "options": [
-      "FORWARD 3, RIGHT 90°, FORWARD 3, LEFT 90°, FORWARD 5",
-      "FORWARD 2, RIGHT 90°, FORWARD 3, LEFT 90°, FORWARD 5",
-      "FORWARD 2, LEFT 90°, FORWARD 3, RIGHT 90°, FORWARD 5",
-      "FORWARD 3, LEFT 90°, FORWARD 3, RIGHT 90°, FORWARD 4",
-      "FORWARD 2, FORWARD 3, FORWARD 5"
-    ],
-    "correctAnswer": "FORWARD 2, RIGHT 90°, FORWARD 3, LEFT 90°, FORWARD 5",
-    "topic": "Position and Direction",
-    "difficultyIndex": 33,
-    "prefix": "P3Q33"
-  },
-  {
-    "id": "P3Q33_14",
-    "question": "At the airport, Ground Control must guide a plane from point T to the end of the runway R, avoiding trees. The plane starts facing East (Right). Which instructions are correct?",
-    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/p3q33_14.png",
-    "options": [
-      "FORWARD 2, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 5",
-      "FORWARD 2, LEFT 90°, FORWARD 2, RIGHT 90°, FORWARD 6",
-      "FORWARD 1, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 6",
-      "FORWARD 1, FORWARD 1, FORWARD 6",
-      "FORWARD 1, RIGHT 90°, FORWARD 1, LEFT 90°, FORWARD 6"
-    ],
-    "correctAnswer": "FORWARD 1, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 6",
-    "topic": "Position and Direction",
-    "difficultyIndex": 33,
-    "prefix": "P3Q33"
-  },
-  {
-    "id": "P3Q33_15",
-    "question": "At the airport, Ground Control must guide a plane from point T to the end of the runway R, avoiding trees. The plane starts facing East (Right). Which instructions are correct?",
-    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/p3q33_15.png",
-    "options": [
-      "FORWARD 2, RIGHT 90°, FORWARD 3, LEFT 90°, FORWARD 5",
-      "FORWARD 3, RIGHT 90°, FORWARD 3, LEFT 90°, FORWARD 5",
-      "FORWARD 3, LEFT 90°, FORWARD 3, RIGHT 90°, FORWARD 4",
-      "FORWARD 2, FORWARD 3, FORWARD 5",
-      "FORWARD 2, LEFT 90°, FORWARD 3, RIGHT 90°, FORWARD 5"
-    ],
-    "correctAnswer": "FORWARD 2, RIGHT 90°, FORWARD 3, LEFT 90°, FORWARD 5",
-    "topic": "Position and Direction",
-    "difficultyIndex": 33,
-    "prefix": "P3Q33"
-  },
-  {
-    "id": "P3Q33_16",
-    "question": "At the airport, Ground Control must guide a plane from point T to the end of the runway R, avoiding trees. The plane starts facing East (Right). Which instructions are correct?",
-    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/p3q33_16.png",
-    "options": [
-      "FORWARD 2, RIGHT 90°, FORWARD 1, LEFT 90°, FORWARD 5",
-      "FORWARD 2, FORWARD 1, FORWARD 5",
-      "FORWARD 3, RIGHT 90°, FORWARD 1, LEFT 90°, FORWARD 5",
-      "FORWARD 3, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 4",
-      "FORWARD 2, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 5"
-    ],
-    "correctAnswer": "FORWARD 2, RIGHT 90°, FORWARD 1, LEFT 90°, FORWARD 5",
-    "topic": "Position and Direction",
-    "difficultyIndex": 33,
-    "prefix": "P3Q33"
-  },
-  {
-    "id": "P3Q33_17",
-    "question": "At the airport, Ground Control must guide a plane from point T to the end of the runway R, avoiding trees. The plane starts facing East (Right). Which instructions are correct?",
-    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/p3q33_17.png",
-    "options": [
-      "FORWARD 4, RIGHT 90°, FORWARD 2, LEFT 90°, FORWARD 3",
-      "FORWARD 4, FORWARD 2, FORWARD 3",
-      "FORWARD 4, LEFT 90°, FORWARD 2, RIGHT 90°, FORWARD 3",
-      "FORWARD 5, LEFT 90°, FORWARD 2, RIGHT 90°, FORWARD 2",
-      "FORWARD 5, RIGHT 90°, FORWARD 2, LEFT 90°, FORWARD 3"
-    ],
-    "correctAnswer": "FORWARD 4, RIGHT 90°, FORWARD 2, LEFT 90°, FORWARD 3",
-    "topic": "Position and Direction",
-    "difficultyIndex": 33,
-    "prefix": "P3Q33"
-  },
-  {
-    "id": "P3Q33_18",
-    "question": "At the airport, Ground Control must guide a plane from point T to the end of the runway R, avoiding trees. The plane starts facing East (Right). Which instructions are correct?",
-    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/p3q33_18.png",
-    "options": [
-      "FORWARD 4, FORWARD 1, FORWARD 3",
-      "FORWARD 5, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 2",
-      "FORWARD 5, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 3",
-      "FORWARD 4, RIGHT 90°, FORWARD 1, LEFT 90°, FORWARD 3",
-      "FORWARD 4, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 3"
-    ],
-    "correctAnswer": "FORWARD 4, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 3",
-    "topic": "Position and Direction",
-    "difficultyIndex": 33,
-    "prefix": "P3Q33"
-  },
-  {
-    "id": "P3Q33_19",
-    "question": "At the airport, Ground Control must guide a plane from point T to the end of the runway R, avoiding trees. The plane starts facing East (Right). Which instructions are correct?",
-    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/p3q33_19.png",
-    "options": [
-      "FORWARD 5, LEFT 90°, FORWARD 2, RIGHT 90°, FORWARD 2",
-      "FORWARD 6, LEFT 90°, FORWARD 2, RIGHT 90°, FORWARD 1",
-      "FORWARD 6, LEFT 90°, FORWARD 2, RIGHT 90°, FORWARD 2",
-      "FORWARD 5, RIGHT 90°, FORWARD 2, LEFT 90°, FORWARD 2",
-      "FORWARD 5, FORWARD 2, FORWARD 2"
-    ],
-    "correctAnswer": "FORWARD 5, LEFT 90°, FORWARD 2, RIGHT 90°, FORWARD 2",
-    "topic": "Position and Direction",
-    "difficultyIndex": 33,
-    "prefix": "P3Q33"
-  },
-  {
-    "id": "P3Q33_20",
-    "question": "At the airport, Ground Control must guide a plane from point T to the end of the runway R, avoiding trees. The plane starts facing East (Right). Which instructions are correct?",
-    "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/p3q33_20.png",
-    "options": [
-      "FORWARD 2, FORWARD 1, FORWARD 5",
-      "FORWARD 2, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 5",
-      "FORWARD 3, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 4",
-      "FORWARD 3, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 5",
-      "FORWARD 2, RIGHT 90°, FORWARD 1, LEFT 90°, FORWARD 5"
-    ],
-    "correctAnswer": "FORWARD 2, LEFT 90°, FORWARD 1, RIGHT 90°, FORWARD 5",
-    "topic": "Position and Direction",
-    "difficultyIndex": 33,
-    "prefix": "P3Q33"
-  },
-  {
     "id": "P4Q33_1",
     "question": "How many of the following shapes have at least one pair of parallel sides?\n\nregular octagon, scalene triangle, regular hexagon, rhombus, isosceles triangle",
     "image": null,
@@ -90004,13 +89860,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_1.png",
     "options": [
-      "170 �",
-      "130 �",
-      "110 �",
-      "150 �",
-      "90 �"
+      "170°",
+      "130°",
+      "110°",
+      "150°",
+      "90°"
     ],
-    "correctAnswer": "130 �",
+    "correctAnswer": "130°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90020,13 +89876,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_2.png",
     "options": [
-      "145 �",
-      "120 �",
-      "95 �",
-      "70 �",
-      "170 �"
+      "145°",
+      "120°",
+      "95°",
+      "70°",
+      "170°"
     ],
-    "correctAnswer": "120 �",
+    "correctAnswer": "120°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90036,13 +89892,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_3.png",
     "options": [
-      "130 �",
-      "150 �",
-      "70 �",
-      "110 �",
-      "90 �"
+      "130°",
+      "150°",
+      "70°",
+      "110°",
+      "90°"
     ],
-    "correctAnswer": "110 �",
+    "correctAnswer": "110°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90052,13 +89908,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_4.png",
     "options": [
-      "80 �",
-      "40 �",
-      "20 �",
-      "60 �",
-      "100 �"
+      "80°",
+      "40°",
+      "20°",
+      "60°",
+      "100°"
     ],
-    "correctAnswer": "20 �",
+    "correctAnswer": "20°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90068,13 +89924,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_5.png",
     "options": [
-      "140 �",
-      "80 �",
-      "95 �",
-      "110 �",
-      "125 �"
+      "140°",
+      "80°",
+      "95°",
+      "110°",
+      "125°"
     ],
-    "correctAnswer": "110 �",
+    "correctAnswer": "110°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90084,13 +89940,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_6.png",
     "options": [
-      "120 �",
-      "80 �",
-      "140 �",
-      "100 �",
-      "160 �"
+      "120°",
+      "80°",
+      "140°",
+      "100°",
+      "160°"
     ],
-    "correctAnswer": "160 �",
+    "correctAnswer": "160°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90100,13 +89956,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_7.png",
     "options": [
-      "80 �",
-      "155 �",
-      "130 �",
-      "55 �",
-      "105 �"
+      "80°",
+      "155°",
+      "130°",
+      "55°",
+      "105°"
     ],
-    "correctAnswer": "130 �",
+    "correctAnswer": "130°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90116,13 +89972,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_8.png",
     "options": [
-      "100 �",
-      "20 �",
-      "60 �",
-      "40 �",
-      "80 �"
+      "100°",
+      "20°",
+      "60°",
+      "40°",
+      "80°"
     ],
-    "correctAnswer": "40 �",
+    "correctAnswer": "40°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90132,13 +89988,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_9.png",
     "options": [
-      "120 �",
-      "80 �",
-      "100 �",
-      "140 �",
-      "160 �"
+      "120°",
+      "80°",
+      "100°",
+      "140°",
+      "160°"
     ],
-    "correctAnswer": "140 �",
+    "correctAnswer": "140°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90148,13 +90004,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_10.png",
     "options": [
-      "15 �",
-      "115 �",
-      "90 �",
-      "40 �",
-      "65 �"
+      "15°",
+      "115°",
+      "90°",
+      "40°",
+      "65°"
     ],
-    "correctAnswer": "40 �",
+    "correctAnswer": "40°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90164,13 +90020,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_11.png",
     "options": [
-      "25 �",
-      "55 �",
-      "40 �",
-      "10 �",
-      "70 �"
+      "25°",
+      "55°",
+      "40°",
+      "10°",
+      "70°"
     ],
-    "correctAnswer": "40 �",
+    "correctAnswer": "40°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90180,13 +90036,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_12.png",
     "options": [
-      "55 �",
-      "5 �",
-      "80 �",
-      "105 �",
-      "30 �"
+      "55°",
+      "5°",
+      "80°",
+      "105°",
+      "30°"
     ],
-    "correctAnswer": "30 �",
+    "correctAnswer": "30°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90196,13 +90052,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_13.png",
     "options": [
-      "70 �",
-      "95 �",
-      "20 �",
-      "45 �",
-      "120 �"
+      "70°",
+      "95°",
+      "20°",
+      "45°",
+      "120°"
     ],
-    "correctAnswer": "70 �",
+    "correctAnswer": "70°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90212,13 +90068,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_14.png",
     "options": [
-      "110 �",
-      "140 �",
-      "125 �",
-      "95 �",
-      "80 �"
+      "110°",
+      "140°",
+      "125°",
+      "95°",
+      "80°"
     ],
-    "correctAnswer": "110 �",
+    "correctAnswer": "110°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90228,13 +90084,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_15.png",
     "options": [
-      "95 �",
-      "120 �",
-      "70 �",
-      "170 �",
-      "145 �"
+      "95°",
+      "120°",
+      "70°",
+      "170°",
+      "145°"
     ],
-    "correctAnswer": "120 �",
+    "correctAnswer": "120°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90244,13 +90100,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_16.png",
     "options": [
-      "60 �",
-      "80 �",
-      "40 �",
-      "20 �",
-      "100 �"
+      "60°",
+      "80°",
+      "40°",
+      "20°",
+      "100°"
     ],
-    "correctAnswer": "60 �",
+    "correctAnswer": "60°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90260,13 +90116,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_17.png",
     "options": [
-      "100 �",
-      "140 �",
-      "160 �",
-      "120 �",
-      "80 �"
+      "100°",
+      "140°",
+      "160°",
+      "120°",
+      "80°"
     ],
-    "correctAnswer": "140 �",
+    "correctAnswer": "140°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90276,13 +90132,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_18.png",
     "options": [
-      "170 �",
-      "90 �",
-      "110 �",
-      "150 �",
-      "130 �"
+      "170°",
+      "90°",
+      "110°",
+      "150°",
+      "130°"
     ],
-    "correctAnswer": "130 �",
+    "correctAnswer": "130°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90292,13 +90148,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_19.png",
     "options": [
-      "30 �",
-      "110 �",
-      "50 �",
-      "90 �",
-      "70 �"
+      "30°",
+      "110°",
+      "50°",
+      "90°",
+      "70°"
     ],
-    "correctAnswer": "70 �",
+    "correctAnswer": "70°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90308,13 +90164,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_20.png",
     "options": [
-      "170 �",
-      "145 �",
-      "95 �",
-      "70 �",
-      "120 �"
+      "170°",
+      "145°",
+      "95°",
+      "70°",
+      "120°"
     ],
-    "correctAnswer": "120 �",
+    "correctAnswer": "120°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90324,13 +90180,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_21.png",
     "options": [
-      "65 �",
-      "90 �",
-      "165 �",
-      "115 �",
-      "140 �"
+      "65°",
+      "90°",
+      "165°",
+      "115°",
+      "140°"
     ],
-    "correctAnswer": "140 �",
+    "correctAnswer": "140°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90340,13 +90196,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_22.png",
     "options": [
-      "80 �",
-      "120 �",
-      "160 �",
-      "140 �",
-      "100 �"
+      "80°",
+      "120°",
+      "160°",
+      "140°",
+      "100°"
     ],
-    "correctAnswer": "160 �",
+    "correctAnswer": "160°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90356,13 +90212,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_23.png",
     "options": [
-      "145 �",
-      "130 �",
-      "175 �",
-      "115 �",
-      "160 �"
+      "145°",
+      "130°",
+      "175°",
+      "115°",
+      "160°"
     ],
-    "correctAnswer": "160 �",
+    "correctAnswer": "160°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90372,13 +90228,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_24.png",
     "options": [
-      "80 �",
-      "65 �",
-      "35 �",
-      "20 �",
-      "50 �"
+      "80°",
+      "65°",
+      "35°",
+      "20°",
+      "50°"
     ],
-    "correctAnswer": "50 �",
+    "correctAnswer": "50°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90388,13 +90244,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_25.png",
     "options": [
-      "75 �",
-      "150 �",
-      "125 �",
-      "100 �",
-      "175 �"
+      "75°",
+      "150°",
+      "125°",
+      "100°",
+      "175°"
     ],
-    "correctAnswer": "150 �",
+    "correctAnswer": "150°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90404,13 +90260,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_26.png",
     "options": [
-      "20 �",
-      "60 �",
-      "40 �",
-      "80 �",
-      "100 �"
+      "20°",
+      "60°",
+      "40°",
+      "80°",
+      "100°"
     ],
-    "correctAnswer": "60 �",
+    "correctAnswer": "60°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90420,13 +90276,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_27.png",
     "options": [
-      "80 �",
-      "50 �",
-      "35 �",
-      "20 �",
-      "65 �"
+      "80°",
+      "50°",
+      "35°",
+      "20°",
+      "65°"
     ],
-    "correctAnswer": "50 �",
+    "correctAnswer": "50°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90436,13 +90292,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_28.png",
     "options": [
-      "60 �",
-      "120 �",
-      "80 �",
-      "40 �",
-      "100 �"
+      "60°",
+      "120°",
+      "80°",
+      "40°",
+      "100°"
     ],
-    "correctAnswer": "80 �",
+    "correctAnswer": "80°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90452,13 +90308,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_29.png",
     "options": [
-      "60 �",
-      "120 �",
-      "140 �",
-      "80 �",
-      "100 �"
+      "60°",
+      "120°",
+      "140°",
+      "80°",
+      "100°"
     ],
-    "correctAnswer": "100 �",
+    "correctAnswer": "100°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90468,13 +90324,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_30.png",
     "options": [
-      "60 �",
-      "140 �",
-      "120 �",
-      "80 �",
-      "100 �"
+      "60°",
+      "140°",
+      "120°",
+      "80°",
+      "100°"
     ],
-    "correctAnswer": "100 �",
+    "correctAnswer": "100°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90484,13 +90340,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_31.png",
     "options": [
-      "140 �",
-      "160 �",
-      "80 �",
-      "100 �",
-      "120 �"
+      "140°",
+      "160°",
+      "80°",
+      "100°",
+      "120°"
     ],
-    "correctAnswer": "120 �",
+    "correctAnswer": "120°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90500,13 +90356,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_32.png",
     "options": [
-      "70 �",
-      "100 �",
-      "85 �",
-      "115 �",
-      "130 �"
+      "70°",
+      "100°",
+      "85°",
+      "115°",
+      "130°"
     ],
-    "correctAnswer": "100 �",
+    "correctAnswer": "100°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90516,13 +90372,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_33.png",
     "options": [
-      "115 �",
-      "90 �",
-      "40 �",
-      "65 �",
-      "15 �"
+      "115°",
+      "90°",
+      "40°",
+      "65°",
+      "15°"
     ],
-    "correctAnswer": "40 �",
+    "correctAnswer": "40°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90532,13 +90388,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_34.png",
     "options": [
-      "140 �",
-      "80 �",
-      "160 �",
-      "120 �",
-      "100 �"
+      "140°",
+      "80°",
+      "160°",
+      "120°",
+      "100°"
     ],
-    "correctAnswer": "140 �",
+    "correctAnswer": "140°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90548,13 +90404,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_35.png",
     "options": [
-      "70 �",
-      "130 �",
-      "85 �",
-      "115 �",
-      "100 �"
+      "70°",
+      "130°",
+      "85°",
+      "115°",
+      "100°"
     ],
-    "correctAnswer": "100 �",
+    "correctAnswer": "100°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90564,13 +90420,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_36.png",
     "options": [
-      "60 �",
-      "160 �",
-      "85 �",
-      "135 �",
-      "110 �"
+      "60°",
+      "160°",
+      "85°",
+      "135°",
+      "110°"
     ],
-    "correctAnswer": "110 �",
+    "correctAnswer": "110°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90580,13 +90436,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_37.png",
     "options": [
-      "90 �",
-      "30 �",
-      "75 �",
-      "45 �",
-      "60 �"
+      "90°",
+      "30°",
+      "75°",
+      "45°",
+      "60°"
     ],
-    "correctAnswer": "60 �",
+    "correctAnswer": "60°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90596,13 +90452,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_38.png",
     "options": [
-      "30 �",
-      "50 �",
-      "110 �",
-      "70 �",
-      "90 �"
+      "30°",
+      "50°",
+      "110°",
+      "70°",
+      "90°"
     ],
-    "correctAnswer": "70 �",
+    "correctAnswer": "70°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90612,13 +90468,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_39.png",
     "options": [
-      "80 �",
-      "160 �",
-      "100 �",
-      "140 �",
-      "120 �"
+      "80°",
+      "160°",
+      "100°",
+      "140°",
+      "120°"
     ],
-    "correctAnswer": "120 �",
+    "correctAnswer": "120°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90628,13 +90484,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_40.png",
     "options": [
-      "85 �",
-      "70 �",
-      "115 �",
-      "130 �",
-      "100 �"
+      "85°",
+      "70°",
+      "115°",
+      "130°",
+      "100°"
     ],
-    "correctAnswer": "100 �",
+    "correctAnswer": "100°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90644,13 +90500,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_41.png",
     "options": [
-      "80 �",
-      "30 �",
-      "105 �",
-      "5 �",
-      "55 �"
+      "80°",
+      "30°",
+      "105°",
+      "5°",
+      "55°"
     ],
-    "correctAnswer": "30 �",
+    "correctAnswer": "30°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90660,13 +90516,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_42.png",
     "options": [
-      "130 �",
-      "55 �",
-      "155 �",
-      "105 �",
-      "80 �"
+      "130°",
+      "55°",
+      "155°",
+      "105°",
+      "80°"
     ],
-    "correctAnswer": "130 �",
+    "correctAnswer": "130°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90676,13 +90532,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_43.png",
     "options": [
-      "125 �",
-      "140 �",
-      "110 �",
-      "80 �",
-      "95 �"
+      "125°",
+      "140°",
+      "110°",
+      "80°",
+      "95°"
     ],
-    "correctAnswer": "110 �",
+    "correctAnswer": "110°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90692,13 +90548,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_44.png",
     "options": [
-      "50 �",
-      "70 �",
-      "30 �",
-      "90 �",
-      "10 �"
+      "50°",
+      "70°",
+      "30°",
+      "90°",
+      "10°"
     ],
-    "correctAnswer": "30 �",
+    "correctAnswer": "30°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90708,13 +90564,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_45.png",
     "options": [
-      "100 �",
-      "80 �",
-      "120 �",
-      "140 �",
-      "160 �"
+      "100°",
+      "80°",
+      "120°",
+      "140°",
+      "160°"
     ],
-    "correctAnswer": "160 �",
+    "correctAnswer": "160°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90724,13 +90580,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_46.png",
     "options": [
-      "65 �",
-      "165 �",
-      "90 �",
-      "115 �",
-      "140 �"
+      "65°",
+      "165°",
+      "90°",
+      "115°",
+      "140°"
     ],
-    "correctAnswer": "140 �",
+    "correctAnswer": "140°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90740,13 +90596,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_47.png",
     "options": [
-      "170 �",
-      "130 �",
-      "110 �",
-      "150 �",
-      "90 �"
+      "170°",
+      "130°",
+      "110°",
+      "150°",
+      "90°"
     ],
-    "correctAnswer": "150 �",
+    "correctAnswer": "150°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90756,13 +90612,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_48.png",
     "options": [
-      "75 �",
-      "15 �",
-      "45 �",
-      "60 �",
-      "30 �"
+      "75°",
+      "15°",
+      "45°",
+      "60°",
+      "30°"
     ],
-    "correctAnswer": "30 �",
+    "correctAnswer": "30°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90772,13 +90628,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_49.png",
     "options": [
-      "80 �",
-      "20 �",
-      "100 �",
-      "40 �",
-      "60 �"
+      "80°",
+      "20°",
+      "100°",
+      "40°",
+      "60°"
     ],
-    "correctAnswer": "60 �",
+    "correctAnswer": "60°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -90788,13 +90644,13 @@ export const MATHS_QUIZ = [
     "question": "Estimate the size of this angle.",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P6Q7_50.png",
     "options": [
-      "45 �",
-      "70 �",
-      "120 �",
-      "20 �",
-      "95 �"
+      "45°",
+      "70°",
+      "120°",
+      "20°",
+      "95°"
     ],
-    "correctAnswer": "20 �",
+    "correctAnswer": "20°",
     "topic": "Geometry (Angles)",
     "difficultyIndex": 7,
     "prefix": "P6Q7_"
@@ -95208,9 +95064,9 @@ export const MATHS_QUIZ = [
       "The square of an even number is always even.",
       "Subtracting an odd number from an odd number always gives an even number.",
       "A multiple of 2 is always a multiple of 4.",
-      "D"
+      "The product of two even numbers is always even."
     ],
-    "correctAnswer": "D",
+    "correctAnswer": "A multiple of 2 is always a multiple of 4.",
     "topic": "Number Properties and Logic",
     "difficultyIndex": 20,
     "prefix": "P6Q20_"

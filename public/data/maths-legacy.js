@@ -60120,7 +60120,7 @@ window.QUIZ_DATA = window.QUIZ_DATA || {}; window.QUIZ_DATA.MATHS = [
       "m = 4 and n = 3",
       "m = 4 and n = 9",
       "m = 4 and n = 2",
-      "m = 5 and n = 2",
+      "m = 5 and n = 1",
       "m = 3 and n = 4"
     ],
     "correctAnswer": "m = 4 and n = 3",
@@ -66184,7 +66184,7 @@ window.QUIZ_DATA = window.QUIZ_DATA || {}; window.QUIZ_DATA.MATHS = [
       "500",
       "494",
       "492",
-      "494",
+      "496",
       "514"
     ],
     "correctAnswer": "494",
@@ -73190,12 +73190,12 @@ window.QUIZ_DATA = window.QUIZ_DATA || {}; window.QUIZ_DATA.MATHS = [
     "image": null,
     "options": [
       "20% of 220",
-      "$\\frac{1}{2}$ of 220",
-      "$\\frac{2}{10}$ of 220",
+      "1/2 of 220",
+      "2/10 of 220",
       "0.2 of 220",
       "94"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 220",
+    "correctAnswer": "1/2 of 220",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"

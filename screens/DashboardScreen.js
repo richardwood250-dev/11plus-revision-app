@@ -368,6 +368,14 @@ export const DashboardScreen = ({ navigation }) => {
                 >
                     <Text style={styles.btnText}>Give Feedback / Review</Text>
                 </TouchableOpacity>
+                <TouchableOpacity
+                    style={[styles.mainButton, { marginTop: 15, backgroundColor: '#1877F2' }]}
+                    onPress={() => {
+                        Linking.openURL('https://www.facebook.com/profile.php?id=61587439748208');
+                    }}
+                >
+                    <Text style={styles.btnText}>Join our free Facebook Community</Text>
+                </TouchableOpacity>
                 <View style={{ height: 40 }} />
             </ScrollView>
         </View>

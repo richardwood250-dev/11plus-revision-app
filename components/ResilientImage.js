@@ -71,6 +71,7 @@ export const ResilientImage = ({ uri, style, resizeMode }) => {
         <Image
             source={{ uri: currentUri }}
             style={[
+                { maxWidth: '100%', alignSelf: 'center' },
                 style, 
                 aspectRatio ? { aspectRatio, height: undefined } : null
             ]}

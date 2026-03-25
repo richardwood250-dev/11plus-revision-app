@@ -60,6 +60,13 @@ export const SettingsScreen = () => {
                     <Text style={styles.feedbackIcon}>💬</Text>
                     <Text style={styles.feedbackBtnText}>Report a Bug / Request Feature</Text>
                 </TouchableOpacity>
+                <TouchableOpacity
+                    style={[styles.feedbackBtn, { marginTop: 15, borderColor: '#1877F2', borderWidth: 2 }]}
+                    onPress={() => Linking.openURL('https://www.facebook.com/profile.php?id=61587439748208')}
+                >
+                    <Text style={styles.feedbackIcon}>👥</Text>
+                    <Text style={[styles.feedbackBtnText, { color: '#1877F2' }]}>Join 11PlusNinja Parents Group</Text>
+                </TouchableOpacity>
             </View>
 
             <View style={styles.section}>
