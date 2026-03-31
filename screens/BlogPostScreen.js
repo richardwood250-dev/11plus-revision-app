@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Dimensions, Animated, Platform } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
+import { Helmet } from 'react-helmet-async';
 import { BLOG_POSTS } from '../data/blogPosts';
 import { Header } from '../components/Header';
 import { getRandomQuiz, getQuiz } from '../utils/quickQuizGenerator';
@@ -27,24 +28,6 @@ export const BlogPostScreen = () => {
     const [contentHeight, setContentHeight] = useState(1);
     const [containerHeight, setContainerHeight] = useState(1);
     const [isLoadingEnglish, setIsLoadingEnglish] = useState(false);
-
-    // Dynamic SEO Metadata
-    React.useEffect(() => {
-        if (post) {
-            if (Platform.OS === 'web') {
-                document.title = `${post.title} | 11+ Ninja`;
-
-                // Update meta description
-                let metaDescription = document.querySelector('meta[name="description"]');
-                if (!metaDescription) {
-                    metaDescription = document.createElement('meta');
-                    metaDescription.name = "description";
-                    document.head.appendChild(metaDescription);
-                }
-                metaDescription.content = post.subtitle || "Expert 11+ advice from 11PlusNinja.";
-            }
-        }
-    }, [post]);
 
     if (!post) {
         return (
@@ -173,6 +156,16 @@ export const BlogPostScreen = () => {
 
     return (
         <View style={styles.container}>
+            <Helmet>
+                <title>{post.title} | 11+ Ninja</title>
+                <meta name="description" content={post.subtitle || "Expert 11+ advice from 11PlusNinja."} />
+                <meta property="og:title" content={`${post.title} | 11+ Ninja`} />
+                <meta property="og:description" content={post.subtitle || "Expert 11+ advice from 11PlusNinja."} />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content={`https://11plusninja.com/blog/${post.slug}`} />
+                <meta name="twitter:title" content={`${post.title} | 11+ Ninja`} />
+                <meta name="twitter:description" content={post.subtitle || "Expert 11+ advice from 11PlusNinja."} />
+            </Helmet>
             <Header activeTab="blog" />
 
 

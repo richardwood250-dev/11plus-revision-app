@@ -26221,19 +26221,6 @@ export const nonverbal = {
         "correctAnswer": "A"
       },
       {
-        "id": "NV_Q_195",
-        "question": "Which figure is the odd one out?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/NV_Quant_195.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "NV_Q_196",
         "question": "Which figure is the odd one out?",
         "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/NV_Quant_196.png",

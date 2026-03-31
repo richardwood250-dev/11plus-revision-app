@@ -7,6 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Analytics } from "@vercel/analytics/react";
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { HelmetProvider } from 'react-helmet-async';
 
 // --- Screens ---
 import { StudentHomeScreen } from './screens/StudentHomeScreen';
@@ -55,6 +56,7 @@ export default function App() {
   // ... (effects remain)
 
   return (
+    <HelmetProvider>
     <GestureHandlerRootView style={{ flex: 1, ...Platform.select({ web: { height: '100vh', backgroundColor: '#F0F2F5' } }) }}>
       <SafeAreaProvider>
         <Analytics />
@@ -129,6 +131,7 @@ export default function App() {
         )}
       </SafeAreaProvider>
     </GestureHandlerRootView>
+    </HelmetProvider>
   );
 }
 

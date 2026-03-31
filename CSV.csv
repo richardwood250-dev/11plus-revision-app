@@ -1,0 +1,548 @@
+﻿id,image_file_name,correct_answer,explanation,difficulty_level
+NVR_FA_001,question_1_style.png,B,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_002,question_2_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_003,question_3_rotation.png,A,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_004,question_4_style.png,A,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_005,question_5_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_006,question_6_rotation.png,E,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_007,question_7_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_008,question_8_composite.png,D,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_009,question_9_rotation.png,C,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_010,question_10_style.png,B,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_011,question_11_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_012,question_12_rotation.png,B,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_013,question_13_style.png,E,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_014,question_14_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_015,question_15_rotation.png,C,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_016,question_16_style.png,D,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_017,question_17_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_018,question_18_rotation.png,C,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_019,question_19_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_020,question_20_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_021,question_21_rotation.png,C,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_022,question_22_style.png,B,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_023,question_23_composite.png,D,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_024,question_24_rotation.png,A,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_025,question_25_style.png,A,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_026,question_26_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_027,question_27_rotation.png,C,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_028,question_28_style.png,B,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_029,question_29_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_030,question_30_rotation.png,D,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_031,question_31_style.png,D,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_032,question_32_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_033,question_33_rotation.png,C,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_034,question_34_style.png,A,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_035,question_35_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_036,question_36_rotation.png,D,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_037,question_37_style.png,C,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_038,question_38_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_039,question_39_rotation.png,C,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_040,question_40_style.png,D,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_041,question_41_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_042,question_42_rotation.png,A,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_043,question_43_style.png,A,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_044,question_44_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_045,question_45_rotation.png,C,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_046,question_46_style.png,B,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_047,question_47_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_048,question_48_rotation.png,B,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_049,question_49_style.png,B,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_050,question_50_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_051,question_51_rotation.png,B,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_052,question_52_style.png,D,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_053,question_53_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_054,question_54_rotation.png,C,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_055,question_55_style.png,D,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_056,question_56_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_057,question_57_rotation.png,B,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_058,question_58_style.png,D,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_059,question_59_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_060,question_60_rotation.png,A,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_061,question_61_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_062,question_62_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_063,question_63_rotation.png,E,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_064,question_64_style.png,C,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_065,question_65_composite.png,D,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_066,question_66_rotation.png,C,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_067,question_67_style.png,B,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_068,question_68_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_069,question_69_rotation.png,C,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_070,question_70_style.png,C,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_071,question_71_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_072,question_72_rotation.png,B,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_073,question_73_style.png,D,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_074,question_74_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_075,question_75_rotation.png,E,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_076,question_76_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_077,question_77_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_078,question_78_rotation.png,B,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_079,question_79_style.png,A,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_080,question_80_composite.png,D,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_081,question_81_rotation.png,D,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_082,question_82_style.png,C,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_083,question_83_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_084,question_84_rotation.png,B,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_085,question_85_style.png,D,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_086,question_86_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_087,question_87_rotation.png,E,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_088,question_88_style.png,A,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_089,question_89_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_090,question_90_rotation.png,A,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_091,question_91_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_092,question_92_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_093,question_93_rotation.png,E,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_094,question_94_style.png,B,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_095,question_95_composite.png,D,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_096,question_96_rotation.png,C,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_097,question_97_style.png,A,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_098,question_98_composite.png,D,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_099,question_99_rotation.png,E,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_100,question_100_style.png,A,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_101,question_101_composite.png,D,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_102,question_102_rotation.png,E,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_103,question_103_style.png,A,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_104,question_104_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_105,question_105_rotation.png,D,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_106,question_106_style.png,B,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_107,question_107_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_108,question_108_rotation.png,E,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_109,question_109_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_110,question_110_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_111,question_111_rotation.png,D,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_112,question_112_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_113,question_113_composite.png,D,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_114,question_114_rotation.png,C,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_115,question_115_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_116,question_116_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_117,question_117_rotation.png,A,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_118,question_118_style.png,D,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_119,question_119_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_120,question_120_rotation.png,A,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_121,question_121_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_122,question_122_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_123,question_123_rotation.png,D,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_124,question_124_style.png,B,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_125,question_125_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_126,question_126_rotation.png,D,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_127,question_127_style.png,B,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_128,question_128_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_129,question_129_rotation.png,B,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_130,question_130_style.png,E,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_131,question_131_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_132,question_132_rotation.png,B,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_133,question_133_style.png,A,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_134,question_134_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_135,question_135_rotation.png,D,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_136,question_136_style.png,A,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_137,question_137_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_138,question_138_rotation.png,A,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_139,question_139_style.png,A,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_140,question_140_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_141,question_141_rotation.png,E,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_142,question_142_style.png,D,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_143,question_143_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_144,question_144_rotation.png,E,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_145,question_145_style.png,A,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_146,question_146_composite.png,D,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_147,question_147_rotation.png,A,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_148,question_148_style.png,A,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_149,question_149_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_150,question_150_rotation.png,D,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_151,question_151_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_152,question_152_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_153,question_153_rotation.png,D,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_154,question_154_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_155,question_155_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_156,question_156_rotation.png,E,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_157,question_157_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_158,question_158_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_159,question_159_rotation.png,E,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_160,question_160_style.png,C,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_161,question_161_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_162,question_162_rotation.png,A,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_163,question_163_style.png,C,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_164,question_164_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_165,question_165_rotation.png,C,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_166,question_166_style.png,D,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_167,question_167_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_168,question_168_rotation.png,D,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_169,question_169_style.png,E,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_170,question_170_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_171,question_171_rotation.png,E,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_172,question_172_style.png,B,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_173,question_173_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_174,question_174_rotation.png,C,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_175,question_175_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_176,question_176_composite.png,A,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_177,question_177_rotation.png,A,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_178,question_178_style.png,D,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_179,question_179_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_180,question_180_rotation.png,E,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_181,question_181_style.png,B,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_182,question_182_composite.png,B,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_183,question_183_rotation.png,B,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_184,question_184_style.png,B,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_185,question_185_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_186,question_186_rotation.png,C,The rule is a rotation. The first shape rotates 180 degrees to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_187,question_187_style.png,E,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_188,question_188_composite.png,D,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_189,question_189_rotation.png,E,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_190,question_190_style.png,D,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_191,question_191_composite.png,E,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_192,question_192_rotation.png,B,The rule is a rotation. The first shape rotates 90 degrees anti-clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_193,question_193_style.png,B,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_194,question_194_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_195,question_195_rotation.png,A,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_196,question_196_style.png,C,The rule is a change in line style. The solid outline changes to a dashed outline.,Medium
+NVR_FA_197,question_197_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_198,question_198_rotation.png,C,The rule is a rotation. The first shape rotates 90 degrees clockwise to become the second shape. Applying this to the third shape gives the answer.,Easy
+NVR_FA_199,question_199_style.png,D,The rule is a change in shading. The white shape becomes solid black.,Medium
+NVR_FA_200,question_200_composite.png,C,"The rule is an inversion of position. The outer shape becomes the inner shape, and the inner shape becomes the outer shape.",Hard
+NVR_FA_201,q21_var_1.png,C,"The large shape is duplicated 2 times and arranged vertically. The shading changes as follows: Top is Gray, Bottom is Black.",Easy
+NVR_FA_202,q21_var_2.png,A,"The large shape is duplicated 3 times and arranged vertically. The shading changes as follows: Top is Black, Middle is White (Dotted), Bottom is White (Dotted).",Easy
+NVR_FA_203,q21_var_3.png,A,"The large shape is duplicated 3 times and arranged horizontally. The shading changes as follows: Left is White, Middle is Black, Right is White (Dotted).",Easy
+NVR_FA_204,q21_var_4.png,D,"The large shape is duplicated 3 times and arranged vertically. The shading changes as follows: Top is Black, Middle is White (Striped), Bottom is Black.",Easy
+NVR_FA_205,q21_var_5.png,D,"The large shape is duplicated 3 times and arranged horizontally. The shading changes as follows: Left is Black, Middle is Black, Right is Gray.",Easy
+NVR_FA_206,q21_var_6.png,D,"The large shape is duplicated 2 times and arranged horizontally. The shading changes as follows: Left is Black, Right is White (Striped).",Easy
+NVR_FA_207,q21_var_7.png,D,"The large shape is duplicated 2 times and arranged horizontally. The shading changes as follows: Left is Gray, Right is White (Dotted).",Easy
+NVR_FA_208,q21_var_8.png,D,"The large shape is duplicated 2 times and arranged vertically. The shading changes as follows: Top is White, Bottom is Gray.",Easy
+NVR_FA_209,q21_var_9.png,A,"The large shape is duplicated 3 times and arranged horizontally. The shading changes as follows: Left is Gray, Middle is White (Dotted), Right is Black.",Easy
+NVR_FA_210,q21_var_10.png,B,"The large shape is duplicated 3 times and arranged horizontally. The shading changes as follows: Left is White, Middle is Gray, Right is White (Dotted).",Easy
+NVR_FA_211,q21_var_11.png,C,"The large shape is duplicated 2 times and arranged vertically. The shading changes as follows: Top is White, Bottom is Black.",Easy
+NVR_FA_212,q21_var_12.png,B,"The large shape is duplicated 3 times and arranged horizontally. The shading changes as follows: Left is Gray, Middle is Gray, Right is Black.",Easy
+NVR_FA_213,q21_var_13.png,D,"The large shape is duplicated 3 times and arranged vertically. The shading changes as follows: Top is Gray, Middle is White (Dotted), Bottom is White (Dotted).",Easy
+NVR_FA_214,q21_var_14.png,D,"The large shape is duplicated 2 times and arranged vertically. The shading changes as follows: Top is Black, Bottom is Gray.",Easy
+NVR_FA_215,q21_var_15.png,B,"The large shape is duplicated 3 times and arranged horizontally. The shading changes as follows: Left is Black, Middle is White, Right is White (Dotted).",Easy
+NVR_FA_216,q21_var_16.png,E,"The large shape is duplicated 2 times and arranged horizontally. The shading changes as follows: Left is Black, Right is Black.",Easy
+NVR_FA_217,q21_var_17.png,C,"The large shape is duplicated 2 times and arranged vertically. The shading changes as follows: Top is Gray, Bottom is White.",Easy
+NVR_FA_218,q21_var_18.png,A,"The large shape is duplicated 3 times and arranged vertically. The shading changes as follows: Top is Gray, Middle is Gray, Bottom is Gray.",Easy
+NVR_FA_220,q21_var_20.png,B,"The large shape is duplicated 3 times and arranged vertically. The shading changes as follows: Top is Gray, Middle is Gray, Bottom is Black.",Easy
+NVR_FA_221,fractal_v2_1.png,C,The logic is: The outer container is ignored. The inner shape (hexagon) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_222,fractal_v2_3.png,B,The logic is: The outer container is ignored. The inner shape (hexagon) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_223,fractal_v2_4.png,C,The logic is: The outer container is ignored. The inner shape (square) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_224,fractal_v2_6.png,D,The logic is: The outer container is ignored. The inner shape (triangle) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_225,fractal_v2_8.png,A,The logic is: The outer container is ignored. The inner shape (square) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_226,fractal_v2_9.png,C,The logic is: The outer container is ignored. The inner shape (circle) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_227,fractal_v2_10.png,A,The logic is: The outer container is ignored. The inner shape (hexagon) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_228,fractal_v2_11.png,B,The logic is: The outer container is ignored. The inner shape (triangle) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_229,fractal_v2_12.png,E,The logic is: The outer container is ignored. The inner shape (square) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_230,fractal_v2_13.png,E,The logic is: The outer container is ignored. The inner shape (circle) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_231,fractal_v2_17.png,B,The logic is: The outer container is ignored. The inner shape (triangle) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_232,fractal_v2_18.png,E,The logic is: The outer container is ignored. The inner shape (circle) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_233,fractal_v2_19.png,A,The logic is: The outer container is ignored. The inner shape (circle) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_234,fractal_v2_20.png,E,The logic is: The outer container is ignored. The inner shape (circle) is enlarged and created using smaller versions of itself.,Easy
+NVR_FA_235,q23_boundary_1.png,A,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_236,q23_boundary_2.png,B,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_237,q23_boundary_3.png,C,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_238,q23_boundary_4.png,E,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_239,q23_boundary_5.png,D,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_240,q23_boundary_6.png,E,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_241,q23_boundary_7.png,C,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_242,q23_boundary_8.png,C,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_243,q23_boundary_9.png,C,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_244,q23_boundary_10.png,C,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_245,q23_boundary_11.png,D,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_246,q23_boundary_12.png,D,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_247,q23_boundary_13.png,E,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_248,q23_boundary_14.png,D,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_249,q23_boundary_15.png,A,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_250,q23_boundary_16.png,E,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_251,q23_boundary_17.png,D,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_252,q23_boundary_18.png,B,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_253,q23_boundary_19.png,C,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_254,q23_boundary_20.png,C,1. Rotate 90 degrees clockwise. 2. Small shape moves BEHIND (overlapping boundary). 3. Large shape becomes double-struck.,Easy
+NVR_FA_255,q24_partial_1.png,E,"1. The outer columns swap places, while the middle remains unchanged. 2. The border changes from thick to double.",Medium
+NVR_FA_256,q24_partial_2.png,B,"1. The outer columns swap places, while the middle remains unchanged. 2. The border changes from thin to thick.",Medium
+NVR_FA_257,q24_partial_3.png,C,"1. The outer columns swap places, while the middle remains unchanged. 2. The border changes from thick to double.",Medium
+NVR_FA_258,q24_partial_4.png,D,"1. The outer columns swap places, while the middle remains unchanged. 2. The border changes from thick to double.",Medium
+NVR_FA_259,q24_partial_5.png,E,"1. The outer rows swap places, while the middle remains unchanged. 2. The border changes from thin to thick.",Medium
+NVR_FA_260,q24_partial_6.png,A,"1. The outer rows swap places, while the middle remains unchanged. 2. The border changes from thick to double.",Medium
+NVR_FA_261,q24_partial_7.png,B,"1. The outer rows swap places, while the middle remains unchanged. 2. The border changes from thin to thick.",Medium
+NVR_FA_262,q24_partial_8.png,C,"1. The outer rows swap places, while the middle remains unchanged. 2. The border changes from thick to double.",Medium
+NVR_FA_263,q24_partial_9.png,B,"1. The outer rows swap places, while the middle remains unchanged. 2. The border changes from thick to double.",Medium
+NVR_FA_264,q24_partial_10.png,C,"1. The outer rows swap places, while the middle remains unchanged. 2. The border changes from thin to thick.",Medium
+NVR_FA_265,q24_partial_11.png,D,"1. The outer rows swap places, while the middle remains unchanged. 2. The border changes from thin to thick.",Medium
+NVR_FA_266,q24_partial_12.png,D,"1. The outer columns swap places, while the middle remains unchanged. 2. The border changes from thin to thick.",Medium
+NVR_FA_267,q24_partial_13.png,B,"1. The outer rows swap places, while the middle remains unchanged. 2. The border changes from thin to thick.",Medium
+NVR_FA_268,q24_partial_14.png,C,"1. The outer columns swap places, while the middle remains unchanged. 2. The border changes from thin to thick.",Medium
+NVR_FA_269,q24_partial_15.png,E,"1. The outer columns swap places, while the middle remains unchanged. 2. The border changes from thick to double.",Medium
+NVR_FA_270,q24_partial_16.png,D,"1. The outer columns swap places, while the middle remains unchanged. 2. The border changes from thick to double.",Medium
+NVR_FA_271,q24_partial_17.png,C,"1. The outer rows swap places, while the middle remains unchanged. 2. The border changes from thick to double.",Medium
+NVR_FA_272,q24_partial_18.png,E,"1. The outer rows swap places, while the middle remains unchanged. 2. The border changes from thin to thick.",Medium
+NVR_FA_273,q24_partial_19.png,D,"1. The outer rows swap places, while the middle remains unchanged. 2. The border changes from thick to double.",Medium
+NVR_FA_274,q24_partial_20.png,E,"1. The outer columns swap places, while the middle remains unchanged. 2. The border changes from thin to thick.",Medium
+NVR_FA_275,q25_sym_1.png,C,1. The pentagon shape rotates 90 degrees clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_276,q25_sym_2.png,E,1. The arrowhead shape rotates 90 degrees anti-clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_277,q25_sym_3.png,A,1. The arrowhead shape rotates 90 degrees anti-clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_278,q25_sym_4.png,D,1. The kite shape rotates 90 degrees clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_279,q25_sym_5.png,C,1. The kite shape rotates 90 degrees anti-clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_280,q25_sym_6.png,A,1. The arrowhead shape rotates 90 degrees clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_281,q25_sym_7.png,B,1. The triangle shape rotates 90 degrees anti-clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_282,q25_sym_8.png,C,1. The pentagon shape rotates 90 degrees clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_283,q25_sym_9.png,A,1. The arrowhead shape rotates 90 degrees anti-clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_284,q25_sym_10.png,C,1. The triangle shape rotates 90 degrees clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_285,q25_sym_11.png,B,1. The shield shape rotates 90 degrees clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_286,q25_sym_12.png,D,1. The triangle shape rotates 90 degrees clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_287,q25_sym_13.png,D,1. The kite shape rotates 90 degrees anti-clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_288,q25_sym_14.png,D,1. The kite shape rotates 90 degrees clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_289,q25_sym_15.png,B,1. The shield shape rotates 90 degrees clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_290,q25_sym_16.png,E,1. The arrowhead shape rotates 90 degrees anti-clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_291,q25_sym_17.png,A,1. The triangle shape rotates 90 degrees clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_292,q25_sym_18.png,C,1. The triangle shape rotates 90 degrees clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_293,q25_sym_19.png,E,1. The kite shape rotates 90 degrees anti-clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_294,q25_sym_20.png,B,1. The triangle shape rotates 90 degrees clockwise. 2. The shading in the quarters swaps.,Medium
+NVR_FA_295,q26_lowpoly_1.png,D,1. The figure rotates 45 degrees clockwise. 2. White becomes Black.,Medium
+NVR_FA_296,q26_lowpoly_2.png,E,1. The figure rotates 90 degrees clockwise. 2. Black becomes White.,Medium
+NVR_FA_297,q26_lowpoly_3.png,B,1. The figure rotates 135 degrees clockwise. 2. Black becomes White.,Medium
+NVR_FA_298,q26_lowpoly_4.png,D,1. The figure rotates 45 degrees anti-clockwise. 2. Black becomes White.,Medium
+NVR_FA_299,q26_lowpoly_5.png,B,1. The figure rotates 135 degrees clockwise. 2. Black becomes White.,Medium
+NVR_FA_300,q26_lowpoly_6.png,B,1. The figure rotates 90 degrees anti-clockwise. 2. Black becomes White.,Medium
+NVR_FA_301,q26_lowpoly_7.png,C,1. The figure rotates 45 degrees anti-clockwise. 2. White becomes Black.,Medium
+NVR_FA_302,q26_lowpoly_8.png,A,1. The figure rotates 90 degrees anti-clockwise. 2. Black becomes White.,Medium
+NVR_FA_303,q26_lowpoly_9.png,E,1. The figure rotates 90 degrees clockwise. 2. Black becomes White.,Medium
+NVR_FA_304,q26_lowpoly_10.png,D,1. The figure rotates 45 degrees anti-clockwise. 2. Black becomes White.,Medium
+NVR_FA_305,q26_lowpoly_11.png,E,1. The figure rotates 135 degrees clockwise. 2. Black becomes White.,Medium
+NVR_FA_306,q26_lowpoly_12.png,C,1. The figure rotates 45 degrees clockwise. 2. Black becomes White.,Medium
+NVR_FA_307,q26_lowpoly_13.png,A,1. The figure rotates 90 degrees anti-clockwise. 2. Black becomes White.,Medium
+NVR_FA_308,q26_lowpoly_14.png,A,1. The figure rotates 90 degrees clockwise. 2. White becomes Black.,Medium
+NVR_FA_309,q26_lowpoly_15.png,A,1. The figure rotates 90 degrees clockwise. 2. Black becomes White.,Medium
+NVR_FA_310,q26_lowpoly_16.png,D,1. The figure rotates 45 degrees anti-clockwise. 2. Black becomes White.,Medium
+NVR_FA_311,q26_lowpoly_17.png,B,1. The figure rotates 90 degrees clockwise. 2. White becomes Black.,Medium
+NVR_FA_312,q26_lowpoly_18.png,B,1. The figure rotates 135 degrees clockwise. 2. White becomes Black.,Medium
+NVR_FA_313,q26_lowpoly_19.png,C,1. The figure rotates 135 degrees anti-clockwise. 2. White becomes Black.,Medium
+NVR_FA_314,q26_lowpoly_20.png,E,1. The figure rotates 45 degrees anti-clockwise. 2. Black becomes White.,Medium
+NVR_FA_315,q27_unique_1.png,B,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a circle. 3. Rotate 180 deg anti-clockwise.,Medium
+NVR_FA_316,q27_unique_2.png,B,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a arrow. 3. Rotate 180 deg anti-clockwise.,Medium
+NVR_FA_317,q27_unique_3.png,C,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a circle. 3. Rotate 180 deg anti-clockwise.,Medium
+NVR_FA_318,q27_unique_4.png,B,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a circle. 3. Rotate 90 deg anti-clockwise.,Medium
+NVR_FA_319,q27_unique_5.png,C,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a bar. 3. Rotate 90 deg clockwise.,Medium
+NVR_FA_320,q27_unique_6.png,A,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a arrow. 3. Rotate 180 deg anti-clockwise.,Medium
+NVR_FA_321,q27_unique_7.png,A,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a circle. 3. Rotate 90 deg clockwise.,Medium
+NVR_FA_322,q27_unique_8.png,D,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a arrow. 3. Rotate 90 deg clockwise.,Medium
+NVR_FA_323,q27_unique_9.png,B,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a circle. 3. Rotate 90 deg anti-clockwise.,Medium
+NVR_FA_324,q27_unique_10.png,E,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a arrow. 3. Rotate 90 deg anti-clockwise.,Medium
+NVR_FA_325,q27_unique_11.png,E,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a arrow. 3. Rotate 90 deg clockwise.,Medium
+NVR_FA_326,q27_unique_12.png,E,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a circle. 3. Rotate 90 deg clockwise.,Medium
+NVR_FA_327,q27_unique_13.png,E,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a bar. 3. Rotate 180 deg anti-clockwise.,Medium
+NVR_FA_328,q27_unique_14.png,E,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a bar. 3. Rotate 90 deg anti-clockwise.,Medium
+NVR_FA_329,q27_unique_15.png,D,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a circle. 3. Rotate 180 deg anti-clockwise.,Medium
+NVR_FA_330,q27_unique_16.png,B,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a bar. 3. Rotate 90 deg anti-clockwise.,Medium
+NVR_FA_331,q27_unique_17.png,C,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a bar. 3. Rotate 90 deg anti-clockwise.,Medium
+NVR_FA_332,q27_unique_18.png,E,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a circle. 3. Rotate 180 deg anti-clockwise.,Medium
+NVR_FA_333,q27_unique_19.png,A,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a bar. 3. Rotate 90 deg clockwise.,Medium
+NVR_FA_334,q27_unique_20.png,A,1. Small shape moves to start of 2nd line. 2. End of 2nd line gets a arrow. 3. Rotate 180 deg anti-clockwise.,Medium
+NVR_FA_335,q29_final_1.png,B,1. The figure rotates 90 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_336,q29_final_2.png,D,1. The figure rotates 180 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_337,q29_final_3.png,A,1. The figure rotates 90 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_338,q29_final_4.png,E,1. The figure rotates 90 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_339,q29_final_8.png,D,1. The figure rotates 90 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_340,q29_final_9.png,D,1. The figure rotates 90 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_341,q29_final_11.png,D,1. The figure rotates 180 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_342,q29_final_12.png,D,1. The figure rotates 90 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_343,q29_final_13.png,A,1. The figure rotates 90 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_344,q29_final_14.png,A,1. The figure rotates 90 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_345,q29_final_15.png,D,1. The figure rotates 90 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_346,q29_final_17.png,D,1. The figure rotates 90 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_347,q29_final_19.png,A,1. The figure rotates 180 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_348,q29_final_20.png,D,1. The figure rotates 180 deg anti-clockwise. 2. The terminal symbols swap (Type A becomes Type B).,Medium
+NVR_FA_349,q30_comp_1.png,B,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_350,q30_comp_2.png,E,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_351,q30_comp_3.png,E,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_352,q30_comp_4.png,D,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_353,q30_comp_5.png,A,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_354,q30_comp_6.png,B,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_355,q30_comp_7.png,E,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_356,q30_comp_8.png,E,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_357,q30_comp_9.png,A,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_358,q30_comp_10.png,D,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_359,q30_comp_11.png,E,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_360,q30_comp_12.png,C,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_361,q30_comp_13.png,D,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_362,q30_comp_14.png,B,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_363,q30_comp_15.png,C,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_364,q30_comp_16.png,C,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_365,q30_comp_17.png,E,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_366,q30_comp_18.png,C,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_367,q30_comp_19.png,A,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_368,q30_comp_20.png,A,1. The shape rotates 90 degrees. 2. A reflection is added to complete the shape. 3. The shading in the reflection is inverted.,Hard
+NVR_FA_369,q31_diagonal_1.png,A,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_370,q31_diagonal_2.png,A,1. The figure rotates 90 degrees anti-clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_371,q31_diagonal_3.png,C,1. The figure rotates 90 degrees anti-clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_372,q31_diagonal_4.png,A,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_373,q31_diagonal_5.png,C,1. The figure rotates 90 degrees anti-clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_374,q31_diagonal_6.png,D,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_375,q31_diagonal_7.png,A,1. The figure rotates 90 degrees anti-clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_376,q31_diagonal_8.png,D,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_377,q31_diagonal_9.png,D,1. The figure rotates 90 degrees anti-clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_378,q31_diagonal_10.png,D,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_379,q31_diagonal_11.png,C,1. The figure rotates 90 degrees anti-clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_380,q31_diagonal_12.png,A,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_381,q31_diagonal_13.png,E,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_382,q31_diagonal_14.png,A,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_383,q31_diagonal_15.png,E,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_384,q31_diagonal_16.png,D,1. The figure rotates 90 degrees anti-clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_385,q31_diagonal_17.png,E,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_386,q31_diagonal_18.png,B,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_387,q31_diagonal_19.png,E,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_388,q31_diagonal_20.png,B,1. The figure rotates 90 degrees clockwise. 2. The shading in opposite corners is inverted.,Medium
+NVR_FA_389,q32_fixed_1.png,B,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 90 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_390,q32_fixed_2.png,A,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 180 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_391,q32_fixed_3.png,E,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 180 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_392,q32_fixed_4.png,C,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 180 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_393,q32_fixed_5.png,C,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 90 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_394,q32_fixed_6.png,D,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 90 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_395,q32_fixed_7.png,C,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 180 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_396,q32_fixed_8.png,B,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 270 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_397,q32_fixed_9.png,E,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 90 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_398,q32_fixed_10.png,A,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 180 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_399,q32_fixed_11.png,B,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 180 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_400,q32_fixed_12.png,A,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 90 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_401,q32_fixed_13.png,C,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 90 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_402,q32_fixed_14.png,B,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 270 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_403,q32_fixed_15.png,C,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 90 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_404,q32_fixed_16.png,E,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 90 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_405,q32_fixed_17.png,B,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 180 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_406,q32_fixed_18.png,C,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 270 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_407,q32_fixed_19.png,A,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 270 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_408,q32_fixed_20.png,A,1. The outer shape disappears. 2. The inner detail disappears. 3. The remaining shape rotates 90 deg anti-clockwise (keeping its small size).,Hard
+NVR_FA_409,q33_unique_1.png,D,1. The shape rotates 90 degrees anti-clockwise.,Hard
+NVR_FA_410,q33_unique_2.png,E,1. The shape rotates 90 degrees clockwise.,Hard
+NVR_FA_411,q33_unique_3.png,A,1. The shape rotates 90 degrees anti-clockwise.,Hard
+NVR_FA_412,q33_unique_4.png,A,1. The shape rotates 180 degrees anti-clockwise.,Hard
+NVR_FA_413,q33_unique_5.png,E,1. The shape rotates 90 degrees clockwise.,Hard
+NVR_FA_414,q33_unique_6.png,E,1. The shape rotates 90 degrees anti-clockwise.,Hard
+NVR_FA_415,q33_unique_7.png,E,1. The shape rotates 90 degrees anti-clockwise.,Hard
+NVR_FA_416,q33_unique_8.png,B,1. The shape rotates 90 degrees clockwise.,Hard
+NVR_FA_417,q33_unique_9.png,C,1. The shape rotates 180 degrees anti-clockwise.,Hard
+NVR_FA_418,q33_unique_10.png,E,1. The shape rotates 180 degrees anti-clockwise.,Hard
+NVR_FA_419,q33_unique_11.png,C,1. The shape rotates 90 degrees clockwise.,Hard
+NVR_FA_420,q33_unique_12.png,B,1. The shape rotates 90 degrees clockwise.,Hard
+NVR_FA_421,q33_unique_13.png,B,1. The shape rotates 180 degrees anti-clockwise.,Hard
+NVR_FA_422,q33_unique_14.png,E,1. The shape rotates 90 degrees clockwise.,Hard
+NVR_FA_423,q33_unique_15.png,E,1. The shape rotates 180 degrees anti-clockwise.,Hard
+NVR_FA_424,q33_unique_16.png,C,1. The shape rotates 180 degrees anti-clockwise.,Hard
+NVR_FA_425,q33_unique_17.png,D,1. The shape rotates 90 degrees clockwise.,Hard
+NVR_FA_426,q33_unique_18.png,E,1. The shape rotates 90 degrees anti-clockwise.,Hard
+NVR_FA_427,q33_unique_19.png,E,1. The shape rotates 180 degrees anti-clockwise.,Hard
+NVR_FA_428,q33_unique_20.png,C,1. The shape rotates 90 degrees anti-clockwise.,Hard
+NVR_FA_429,q34_reassembly_1.png,A,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_430,q34_reassembly_2.png,D,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_431,q34_reassembly_3.png,E,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_432,q34_reassembly_4.png,B,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_433,q34_reassembly_5.png,E,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_434,q34_reassembly_6.png,A,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_435,q34_reassembly_7.png,C,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_436,q34_reassembly_8.png,A,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_437,q34_reassembly_9.png,C,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_438,q34_reassembly_10.png,D,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_439,q34_reassembly_11.png,C,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_440,q34_reassembly_12.png,D,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_441,q34_reassembly_13.png,C,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_442,q34_reassembly_14.png,C,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_443,q34_reassembly_15.png,D,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_444,q34_reassembly_16.png,D,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_445,q34_reassembly_17.png,B,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_446,q34_reassembly_18.png,B,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_447,q34_reassembly_19.png,E,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_448,q34_reassembly_20.png,A,1. The two separated pieces slide together. 2. They form a complete polygon with the join line visible.,Hard
+NVR_FA_449,q35_neat_1.png,B,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Dotted becomes Solid inside).,Hard
+NVR_FA_450,q35_neat_2.png,B,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Solid becomes Dotted inside).,Hard
+NVR_FA_451,q35_neat_3.png,A,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Solid becomes Dotted inside) and rotates 90 deg.,Hard
+NVR_FA_452,q35_neat_4.png,C,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Dotted becomes Solid inside).,Hard
+NVR_FA_453,q35_neat_5.png,B,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Dotted becomes Solid inside) and rotates 90 deg.,Hard
+NVR_FA_454,q35_neat_6.png,C,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Dotted becomes Solid inside).,Hard
+NVR_FA_455,q35_neat_7.png,A,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Dotted becomes Solid inside) and rotates 45 deg.,Hard
+NVR_FA_456,q35_neat_8.png,D,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Solid becomes Dotted inside) and rotates 90 deg.,Hard
+NVR_FA_457,q35_neat_9.png,E,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Dotted becomes Solid inside) and rotates 45 deg.,Hard
+NVR_FA_458,q35_neat_10.png,D,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Dotted becomes Solid inside).,Hard
+NVR_FA_459,q35_neat_11.png,C,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Dotted becomes Solid inside).,Hard
+NVR_FA_460,q35_neat_12.png,E,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Solid becomes Dotted inside) and rotates 90 deg.,Hard
+NVR_FA_461,q35_neat_13.png,C,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Solid becomes Dotted inside).,Hard
+NVR_FA_462,q35_neat_14.png,D,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Solid becomes Dotted inside).,Hard
+NVR_FA_463,q35_neat_15.png,D,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Solid becomes Dotted inside).,Hard
+NVR_FA_464,q35_neat_16.png,D,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Solid becomes Dotted inside).,Hard
+NVR_FA_465,q35_neat_17.png,A,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Dotted becomes Solid inside) and rotates 90 deg.,Hard
+NVR_FA_466,q35_neat_18.png,B,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Dotted becomes Solid inside).,Hard
+NVR_FA_467,q35_neat_19.png,D,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Solid becomes Dotted inside) and rotates 90 deg.,Hard
+NVR_FA_468,q35_neat_20.png,E,1. A larger outline (matching original style) appears. 2. The inner shape's line style inverts (Solid becomes Dotted inside).,Hard
+NVR_FA_469,q36_centered_1.png,D,1. The main shape rotates 90 degrees. 2. The inner shape becomes dashed.,Hard
+NVR_FA_470,q36_centered_2.png,B,1. The main shape rotates 180 degrees. 2. The main shape becomes dashed.,Hard
+NVR_FA_471,q36_centered_3.png,D,1. The main shape reflects vertically. 2. The main shape becomes dashed.,Hard
+NVR_FA_472,q36_centered_4.png,A,1. The main shape rotates 90 degrees. 2. The inner shape becomes solid.,Hard
+NVR_FA_473,q36_centered_5.png,D,1. The main shape rotates 180 degrees. 2. The main shape becomes dashed.,Hard
+NVR_FA_474,q36_centered_6.png,E,1. The main shape rotates 90 degrees. 2. The main shape becomes dashed.,Hard
+NVR_FA_475,q36_centered_7.png,E,1. The main shape rotates 180 degrees. 2. The main shape becomes dashed.,Hard
+NVR_FA_476,q36_centered_8.png,A,1. The main shape reflects horizontally. 2. The main shape becomes dashed.,Hard
+NVR_FA_477,q36_centered_9.png,A,1. The main shape rotates 90 degrees. 2. The main shape becomes dashed.,Hard
+NVR_FA_478,q36_centered_10.png,D,1. The main shape rotates 180 degrees. 2. The main shape becomes dashed.,Hard
+NVR_FA_479,q36_centered_11.png,E,1. The main shape rotates 180 degrees. 2. The inner shape becomes solid.,Hard
+NVR_FA_480,q36_centered_12.png,B,1. The main shape reflects vertically. 2. The main shape becomes dashed.,Hard
+NVR_FA_481,q36_centered_13.png,D,1. The main shape rotates 180 degrees. 2. The main shape becomes dashed.,Hard
+NVR_FA_482,q36_centered_14.png,D,1. The main shape reflects vertically. 2. The inner shape becomes dashed.,Hard
+NVR_FA_483,q36_centered_15.png,C,1. The main shape rotates 180 degrees. 2. The main shape becomes dashed.,Hard
+NVR_FA_484,q36_centered_16.png,C,1. The main shape reflects vertically. 2. The main shape becomes dashed.,Hard
+NVR_FA_485,q36_centered_17.png,B,1. The main shape reflects horizontally. 2. The inner shape becomes solid.,Hard
+NVR_FA_486,q36_centered_18.png,E,1. The main shape rotates 180 degrees. 2. The inner shape becomes dashed.,Hard
+NVR_FA_487,q36_centered_19.png,E,1. The main shape rotates 90 degrees. 2. The main shape becomes dashed.,Hard
+NVR_FA_488,q36_centered_20.png,A,1. The main shape rotates 180 degrees. 2. The inner shape becomes solid.,Hard
+NVR_FA_489,q37_assembly_1.png,A,"1. The parts separate. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_490,q37_assembly_2.png,D,"1. The parts separate. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_491,q37_assembly_3.png,D,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_492,q37_assembly_4.png,E,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_493,q37_assembly_5.png,A,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_494,q37_assembly_6.png,D,"1. The parts separate. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_495,q37_assembly_7.png,D,"1. The parts separate. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_496,q37_assembly_8.png,B,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_497,q37_assembly_9.png,B,"1. The parts separate. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_498,q37_assembly_10.png,C,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_499,q37_assembly_11.png,C,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_500,q37_assembly_12.png,E,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_501,q37_assembly_13.png,C,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_502,q37_assembly_14.png,C,"1. The parts separate. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_503,q37_assembly_15.png,E,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_504,q37_assembly_16.png,D,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_505,q37_assembly_17.png,D,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_506,q37_assembly_18.png,C,"1. The parts separate. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_507,q37_assembly_19.png,A,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_508,q37_assembly_20.png,D,"1. The parts assemble. 2. The shading of each part is inverted (Black becomes White, White becomes Black).",Hard
+NVR_FA_509,q39_nested_1.png,C,1. The inner shape rotates 180 degrees. 2. The outer shape becomes dashed and inner solid. 3. A small hollow circle is added at the bottom.,Hard
+NVR_FA_510,q39_nested_2.png,C,1. The inner shape rotates 180 degrees. 2. The outer shape becomes solid and inner dashed. 3. A small filled circle is added at the bottom.,Hard
+NVR_FA_511,q39_nested_3.png,E,1. The inner shape rotates 180 degrees. 2. The outer shape becomes dashed and inner solid. 3. A small filled circle is added at the bottom.,Hard
+NVR_FA_512,q39_nested_4.png,B,1. The outer shape rotates 180 degrees. 2. The outer shape becomes solid and inner dashed. 3. A small hollow circle is added at the bottom.,Hard
+NVR_FA_513,q39_nested_5.png,C,1. The outer shape rotates 180 degrees. 2. The outer shape becomes solid and inner dashed. 3. A small hollow circle is added at the bottom.,Hard
+NVR_FA_514,q39_nested_6.png,D,1. The outer shape rotates 180 degrees. 2. The outer shape becomes dashed and inner solid. 3. A small hollow circle is added at the bottom.,Hard
+NVR_FA_515,q39_nested_7.png,C,1. The outer shape rotates 180 degrees. 2. The outer shape becomes dashed and inner solid. 3. A small filled circle is added at the bottom.,Hard
+NVR_FA_516,q39_nested_8.png,A,1. The outer shape rotates 180 degrees. 2. The outer shape becomes solid and inner dashed. 3. A small hollow circle is added at the bottom.,Hard
+NVR_FA_517,q39_nested_9.png,D,1. The outer shape rotates 180 degrees. 2. The outer shape becomes dashed and inner solid. 3. A small filled circle is added at the bottom.,Hard
+NVR_FA_518,q39_nested_10.png,E,1. The outer shape rotates 180 degrees. 2. The outer shape becomes dashed and inner solid. 3. A small filled circle is added at the bottom.,Hard
+NVR_FA_519,q39_nested_11.png,A,1. The inner shape rotates 180 degrees. 2. The outer shape becomes solid and inner dashed. 3. A small hollow circle is added at the bottom.,Hard
+NVR_FA_520,q39_nested_12.png,D,1. The outer shape rotates 180 degrees. 2. The outer shape becomes dashed and inner solid. 3. A small filled circle is added at the bottom.,Hard
+NVR_FA_521,q39_nested_13.png,D,1. The inner shape rotates 180 degrees. 2. The outer shape becomes dashed and inner solid. 3. A small hollow circle is added at the bottom.,Hard
+NVR_FA_522,q39_nested_14.png,D,1. The inner shape rotates 180 degrees. 2. The outer shape becomes dashed and inner solid. 3. A small filled circle is added at the bottom.,Hard
+NVR_FA_523,q39_nested_15.png,C,1. The outer shape rotates 180 degrees. 2. The outer shape becomes solid and inner dashed. 3. A small hollow circle is added at the bottom.,Hard
+NVR_FA_524,q39_nested_16.png,B,1. The inner shape rotates 180 degrees. 2. The outer shape becomes solid and inner dashed. 3. A small hollow circle is added at the bottom.,Hard
+NVR_FA_525,q39_nested_17.png,D,1. The inner shape rotates 180 degrees. 2. The outer shape becomes solid and inner dashed. 3. A small filled circle is added at the bottom.,Hard
+NVR_FA_526,q39_nested_18.png,C,1. The outer shape rotates 180 degrees. 2. The outer shape becomes dashed and inner solid. 3. A small hollow circle is added at the bottom.,Hard
+NVR_FA_527,q39_nested_19.png,D,1. The inner shape rotates 180 degrees. 2. The outer shape becomes solid and inner dashed. 3. A small hollow circle is added at the bottom.,Hard
+NVR_FA_528,q39_nested_20.png,E,1. The outer shape rotates 180 degrees. 2. The outer shape becomes dashed and inner solid. 3. A small filled circle is added at the bottom.,Hard
+NVR_FA_529,q40_simple_1.png,C,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard
+NVR_FA_530,q40_simple_2.png,A,1. The shapes swap sides. 2. Both shapes undergo a 180 degree Rotation. (Look at the dot position to distinguish).,Hard
+NVR_FA_531,q40_simple_3.png,E,1. The shapes swap sides. 2. Both shapes undergo a 180 degree Rotation. (Look at the dot position to distinguish).,Hard
+NVR_FA_532,q40_simple_4.png,E,1. The shapes swap sides. 2. Both shapes undergo a 180 degree Rotation. (Look at the dot position to distinguish).,Hard
+NVR_FA_533,q40_simple_5.png,C,1. The shapes swap sides. 2. Both shapes undergo a 180 degree Rotation. (Look at the dot position to distinguish).,Hard
+NVR_FA_534,q40_simple_6.png,E,1. The shapes swap sides. 2. Both shapes undergo a 180 degree Rotation. (Look at the dot position to distinguish).,Hard
+NVR_FA_535,q40_simple_7.png,E,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard
+NVR_FA_536,q40_simple_8.png,D,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard
+NVR_FA_537,q40_simple_9.png,A,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard
+NVR_FA_538,q40_simple_10.png,A,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard
+NVR_FA_539,q40_simple_11.png,E,1. The shapes swap sides. 2. Both shapes undergo a 180 degree Rotation. (Look at the dot position to distinguish).,Hard
+NVR_FA_540,q40_simple_12.png,B,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard
+NVR_FA_541,q40_simple_13.png,D,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard
+NVR_FA_542,q40_simple_14.png,B,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard
+NVR_FA_543,q40_simple_15.png,E,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard
+NVR_FA_544,q40_simple_16.png,A,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard
+NVR_FA_545,q40_simple_17.png,A,1. The shapes swap sides. 2. Both shapes undergo a 180 degree Rotation. (Look at the dot position to distinguish).,Hard
+NVR_FA_546,q40_simple_18.png,A,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard
+NVR_FA_547,q40_simple_19.png,B,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard
+NVR_FA_548,q40_simple_20.png,B,1. The shapes swap sides. 2. Both shapes undergo a Reflection in vertical axis. (Look at the dot position to distinguish).,Hard

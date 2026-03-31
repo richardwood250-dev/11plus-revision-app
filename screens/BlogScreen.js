@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, FlatList, StyleSheet, Image, Platform } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { Helmet } from 'react-helmet-async';
 import { BLOG_POSTS } from '../data/blogPosts';
 import { Header } from '../components/Header';
 
@@ -32,6 +33,13 @@ export const BlogScreen = () => {
 
     return (
         <View style={styles.container}>
+            <Helmet>
+                <title>Parent Blog | 11+ Ninja</title>
+                <meta name="description" content="Expert 11+ guides, resources, and advice for parents preparing their children for Grammar School entrance exams." />
+                <meta property="og:title" content="Parent Blog | 11+ Ninja" />
+                <meta property="og:description" content="Expert 11+ guides, resources, and advice for parents preparing their children for Grammar School entrance exams." />
+                <meta property="og:url" content="https://11plusninja.com/blog" />
+            </Helmet>
             <Header activeTab="blog" />
 
             <FlatList
