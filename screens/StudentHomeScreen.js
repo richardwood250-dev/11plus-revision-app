@@ -165,7 +165,14 @@ export const StudentHomeScreen = () => {
           </View>
         </View>
 
-        <DailyVocabCard />
+        <Text style={[styles.sectionHeader, { marginTop: 0 }]}>Subjects:</Text>
+
+        <View style={styles.grid}>
+          <SubjectBtn title="Maths" color={Colors.primary} type="maths" />
+          <SubjectBtn title="English" color={Colors.orange} type="english" />
+          <SubjectBtn title="Verbal" color={Colors.purple} type="verbal" />
+          <SubjectBtn title="Non-Verbal" color={Colors.green} type="non-verbal" />
+        </View>
 
         {/* --- ACTIONS ROW --- */}
         <View style={styles.actionRow}>
@@ -249,14 +256,7 @@ export const StudentHomeScreen = () => {
           <Text style={{ fontSize: 20, color: '#666' }}>→</Text>
         </TouchableOpacity>
 
-        <Text style={styles.sectionHeader}>Subjects:</Text>
-
-        <View style={styles.grid}>
-          <SubjectBtn title="Maths" color={Colors.primary} type="maths" />
-          <SubjectBtn title="English" color={Colors.orange} type="english" />
-          <SubjectBtn title="Verbal" color={Colors.purple} type="verbal" />
-          <SubjectBtn title="Non-Verbal" color={Colors.green} type="non-verbal" />
-        </View>
+        <DailyVocabCard />
 
         <View style={{ height: 20 }} />
       </ScrollView>
