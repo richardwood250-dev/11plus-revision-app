@@ -72,11 +72,13 @@ export const StudentHomeScreen = () => {
   const SubjectBtn = ({ title, color, type }) => {
     return (
       <TouchableOpacity
-        style={[styles.card, { backgroundColor: 'white', borderColor: color, borderWidth: 3 }]}
+        style={[styles.subjectPill, { backgroundColor: 'white', borderColor: color, borderWidth: 2 }]}
         onPress={() => handleSubjectPress(title)}
       >
-        <FlatIcon type={type} />
-        <Text style={[styles.cardText, { color: Colors.text }]}>{title}</Text>
+        <View style={{ transform: [{ scale: 0.6 }] }}>
+            <FlatIcon type={type} />
+        </View>
+        <Text style={[styles.subjectPillText, { color: Colors.text }]}>{title}</Text>
       </TouchableOpacity>
     );
   };
@@ -96,6 +98,12 @@ export const StudentHomeScreen = () => {
         <View style={styles.synonymContainer}>
           <Text style={styles.synonyms}>Synonyms: {wordOfDay.synonyms}</Text>
         </View>
+        <TouchableOpacity 
+          style={styles.vocabGameBtn} 
+          onPress={() => navigation.navigate('VocabGame')}
+        >
+          <Text style={styles.vocabGameBtnText}>Start Training</Text>
+        </TouchableOpacity>
       </View>
     );
   };
@@ -165,53 +173,45 @@ export const StudentHomeScreen = () => {
           </View>
         </View>
 
-        <Text style={[styles.sectionHeader, { marginTop: 0 }]}>Subjects:</Text>
-
-        <View style={styles.grid}>
+        {/* --- HORIZONTAL SUBJECTS --- */}
+        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.subjectsScroll} style={{ marginBottom: 20 }}>
           <SubjectBtn title="Maths" color={Colors.primary} type="maths" />
           <SubjectBtn title="English" color={Colors.orange} type="english" />
           <SubjectBtn title="Verbal" color={Colors.purple} type="verbal" />
           <SubjectBtn title="Non-Verbal" color={Colors.green} type="non-verbal" />
-        </View>
+        </ScrollView>
 
-        {/* --- ACTIONS ROW --- */}
-        <View style={styles.actionRow}>
-          <TouchableOpacity
-            style={[styles.actionBtnHalf, { borderColor: Colors.secondary, opacity: isLoadingEnglish ? 0.6 : 1 }]}
-            disabled={isLoadingEnglish}
-            onPress={async () => {
-              const quizConfig = getRandomQuiz();
-              if (quizConfig.config.subject === 'English') {
-                try {
-                  setIsLoadingEnglish(true);
-                  const data = await fetchEnglishQuiz();
-                  setIsLoadingEnglish(false);
-                  navigation.navigate('Comprehension', data);
-                } catch (err) {
-                  setIsLoadingEnglish(false);
-                  alert("Error: Could not load quiz: " + err.message);
-                }
-              } else {
-                navigation.navigate('Quiz', quizConfig);
-              }
-            }}
-          >
-            <Text style={{ fontSize: 24, marginBottom: 5 }}>{isLoadingEnglish ? '⏳' : '⚡'}</Text>
-            <Text style={styles.actionBtnTitle}>{isLoadingEnglish ? 'Loading...' : 'Quick Start'}</Text>
-          </TouchableOpacity>
+        {/* --- DASHBOARD SNAPSHOT --- */}
+        <TouchableOpacity style={styles.dashboardSnapshot} onPress={() => navigation.navigate('Dashboard')}>
+           <View style={styles.snapshotTop}>
+              <Text style={styles.snapshotTitle}>Overview</Text>
+              <Text style={styles.snapshotAction}>View full 📊</Text>
+           </View>
+           <View style={styles.snapshotStats}>
+             <View style={styles.statBox}>
+               <Text style={styles.statLabel}>Day Streak</Text>
+               <Text style={styles.statValue}>🔥 {streak}</Text>
+             </View>
+             <View style={styles.statBox}>
+               <Text style={styles.statLabel}>Questions</Text>
+               <Text style={styles.statValue}>{stats?.totalQuestions || 0}</Text>
+             </View>
+           </View>
+        </TouchableOpacity>
 
-          {recommendation ? (
-            <TouchableOpacity
-              style={[styles.actionBtnHalf, { borderColor: Colors.primary }]}
-              onPress={async () => {
+        {/* --- HERO ACTION CARD --- */}
+        <TouchableOpacity
+          style={[styles.heroCard, { opacity: isLoadingEnglish ? 0.6 : 1 }]}
+          disabled={isLoadingEnglish}
+          onPress={async () => {
+            // Prefer recommendation if it exists and has an action/config
+            if (recommendation) {
                 if (recommendation.action) {
                   recommendation.action();
+                  return;
                 } else if (recommendation.config) {
-                  // Direct Launch Logic
                   const { subject, topic } = recommendation.config;
-
                   if (subject === 'English' && topic === 'Comprehension') {
-                    // Special handling for English Comprehension
                     try {
                       setIsLoadingEnglish(true);
                       const data = await fetchEnglishQuiz();
@@ -222,40 +222,40 @@ export const StudentHomeScreen = () => {
                       alert("Error: Could not load quiz: " + err.message);
                     }
                   } else {
-                    // Standard Quiz Generation
                     const quizData = getQuiz(subject, topic);
                     navigation.navigate('Quiz', quizData);
                   }
+                  return;
                 }
-              }}
-            >
-              <Text style={{ fontSize: 24, marginBottom: 5 }}>🎯</Text>
-              <Text style={styles.actionBtnTitle}>Suggestion</Text>
-              <Text style={styles.actionBtnSub} numberOfLines={1}>{recommendation.title}</Text>
-            </TouchableOpacity>
-          ) : (
-            <View style={[styles.actionBtnHalf, { opacity: 0.5 }]}>
-              <Text style={{ fontSize: 24 }}>👍</Text>
-              <Text style={styles.actionBtnTitle}>Good Luck!</Text>
-            </View>
-          )}
-        </View>
-
-        {/* Dashboard Button */}
-        <TouchableOpacity
-          style={styles.dashboardBtnMain}
-          onPress={() => navigation.navigate('Dashboard')}
+            }
+            
+            // Fallback to random Quiz if no recommendation
+            const quizConfig = getRandomQuiz();
+            if (quizConfig.config.subject === 'English') {
+              try {
+                setIsLoadingEnglish(true);
+                const data = await fetchEnglishQuiz();
+                setIsLoadingEnglish(false);
+                navigation.navigate('Comprehension', data);
+              } catch (err) {
+                setIsLoadingEnglish(false);
+                alert("Error: Could not load quiz: " + err.message);
+              }
+            } else {
+              navigation.navigate('Quiz', quizConfig);
+            }
+          }}
         >
-          <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-            <Text style={{ fontSize: 24, marginRight: 10 }}>📊</Text>
-            <View>
-              <Text style={styles.dashboardBtnTitle}>My Dashboard</Text>
-              <Text style={styles.dashboardBtnSub}>View Progress & Stats</Text>
-            </View>
+          <View style={styles.heroContent}>
+              <Text style={styles.heroIcon}>{recommendation ? '🎯' : '⚡'}</Text>
+              <View style={styles.heroTextContainer}>
+                  <Text style={styles.heroTitle}>{isLoadingEnglish ? 'Loading...' : (recommendation ? 'Resume Training' : 'Quick Start')}</Text>
+                  <Text style={styles.heroSub}>{recommendation ? `Suggestion: ${recommendation.title}` : 'Jump into a random mixed quiz'}</Text>
+              </View>
           </View>
-          <Text style={{ fontSize: 20, color: '#666' }}>→</Text>
         </TouchableOpacity>
 
+        {/* Interactive Vocab Widget */}
         <DailyVocabCard />
 
         <View style={{ height: 20 }} />
@@ -300,30 +300,106 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: Colors.text,
   },
-  grid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    width: '100%',
-    marginBottom: 10,
-  },
-  card: {
-    width: '47%',
-    aspectRatio: 1.1,
+  subjectPill: {
+    width: 100,
+    height: 100,
     borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 20,
+    marginRight: 15,
     elevation: 2,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
     shadowRadius: 2,
   },
-  cardText: {
+  subjectPillText: {
     fontWeight: 'bold',
+    fontSize: 14,
+    marginTop: -10, // Offset the icon scale
+  },
+  subjectsScroll: {
+    paddingVertical: 5,
+    paddingHorizontal: 0,
+  },
+  dashboardSnapshot: {
+    width: '100%',
+    backgroundColor: '#fff',
+    borderRadius: 20,
+    padding: 20,
+    marginBottom: 20,
+    elevation: 3,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+  },
+  snapshotTop: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 15,
+  },
+  snapshotTitle: {
     fontSize: 18,
-    marginTop: 10,
+    fontWeight: 'bold',
+    color: '#2C3E50',
+  },
+  snapshotAction: {
+    fontSize: 14,
+    color: Colors.primary,
+    fontWeight: '600',
+  },
+  snapshotStats: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+  statBox: {
+    alignItems: 'center',
+  },
+  statLabel: {
+    fontSize: 12,
+    color: '#888',
+    marginBottom: 5,
+  },
+  statValue: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: '#1F2937',
+  },
+  heroCard: {
+    width: '100%',
+    backgroundColor: Colors.primary,
+    borderRadius: 20,
+    padding: 24,
+    marginBottom: 25,
+    elevation: 4,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.2,
+    shadowRadius: 6,
+  },
+  heroContent: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  heroIcon: {
+    fontSize: 40,
+    marginRight: 15,
+  },
+  heroTextContainer: {
+    flex: 1,
+  },
+  heroTitle: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginBottom: 4,
+  },
+  heroSub: {
+    fontSize: 14,
+    color: '#FFD700',
+    fontWeight: '600',
   },
   iconBase: {
     width: 60,
@@ -344,57 +420,6 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
     marginBottom: 15,
     marginTop: 10,
-  },
-  actionRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '100%',
-    marginBottom: 15,
-  },
-  actionBtnHalf: {
-    width: '48%',
-    backgroundColor: 'white',
-    borderRadius: 20,
-    padding: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
-    elevation: 4,
-    height: 150,
-    borderWidth: 2,
-  },
-  actionBtnTitle: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: '#2C3E50',
-    textAlign: 'center'
-  },
-  actionBtnSub: {
-    fontSize: 12,
-    color: '#888',
-    textAlign: 'center',
-    marginTop: 2
-  },
-  dashboardBtnMain: {
-    width: '100%',
-    backgroundColor: 'white',
-    borderRadius: 20,
-    padding: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    elevation: 2,
-    marginBottom: 30,
-    borderLeftWidth: 5,
-    borderLeftColor: '#FFD700'
-  },
-  dashboardBtnTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#2C3E50'
-  },
-  dashboardBtnSub: {
-    fontSize: 14,
-    color: '#666'
   },
   logoContainer: {
     padding: 5,
@@ -544,4 +569,16 @@ const styles = StyleSheet.create({
     color: '#6B7280',
     fontWeight: '600',
   },
+  vocabGameBtn: {
+    backgroundColor: '#BE1E2D',
+    marginTop: 15,
+    paddingVertical: 12,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  vocabGameBtnText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+  }
 });

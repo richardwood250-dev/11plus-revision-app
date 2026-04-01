@@ -15,7 +15,7 @@ export const Header = ({ activeTab }) => {
                     onPress={() => window.location.href = '/'}
                 >
                     <Image
-                        source={{ uri: '/assets/ninja_header.png' }}
+                        source={require('../assets/ninja_header.png')}
                         style={styles.headerLogo}
                         resizeMode="contain"
                     />
