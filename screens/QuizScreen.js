@@ -35,8 +35,8 @@ export const QuizScreen = ({ route }) => {
     // Move a letter already has Words in the question text thanks to our parser updates? 
     const isMaths = subject === 'Maths';
     const isNVR = subject === 'Non-Verbal' || 
-                  ['Matrices', 'Odd 2 out', 'Odd 2 Out', 'Series', 'Codes', 'Similarity', 'Hidden Pictures', 'Horizontal Code'].includes(title) || 
-                  ['Matrices', 'Odd 2 out', 'Odd 2 Out', 'Series', 'Codes', 'Similarity', 'Hidden Pictures', 'Horizontal Code'].includes(topic);
+                  ['Matrices', 'Series', 'Codes', 'Similarity', 'Hidden Pictures', 'Horizontal Code'].includes(title) || 
+                  ['Matrices', 'Series', 'Codes', 'Similarity', 'Hidden Pictures', 'Horizontal Code'].includes(topic);
     const isCodes = title === 'Horizontal Code' || topic === 'Horizontal Code';
 
     const handleOptionPress = (questionIndex, option) => {
