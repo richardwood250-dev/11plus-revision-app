@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, KeyboardAvoidingView, Platform } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, KeyboardAvoidingView, Platform, ScrollView, Image } from 'react-native';
 import { saveProfile } from '../utils/storage';
 
 import { Colors } from '../constants/Colors';
@@ -36,16 +36,11 @@ export const SetupScreen = ({ navigation, onFinish }) => {
     const dateOptions = getTestDateOptions();
 
     const handleSubmit = async () => {
-        if (!name.trim()) {
-            Alert.alert("Whoops!", "Please tell us your name.");
-            return;
-        }
-        if (!testDate) {
-            Alert.alert("Almost there!", "Please select your 11+ test date.");
-            return;
-        }
+        const finalName = name.trim() || 'Ninja';
+        const finalTestDate = testDate || dateOptions[0];
+        const finalIcon = selectedIcon || '🐯';
 
-        await saveProfile(name, testDate);
+        await saveProfile(finalName, finalTestDate, finalIcon);
 
         if (onFinish) {
             onFinish();
@@ -59,15 +54,39 @@ export const SetupScreen = ({ navigation, onFinish }) => {
         }
     };
 
+    const handleSkip = async () => {
+        await saveProfile('Ninja', dateOptions[0], '🐯');
+        
+        if (onFinish) {
+            onFinish();
+            setTimeout(() => {
+                navigation.navigate('Home');
+            }, 100);
+        } else {
+            navigation.goBack();
+        }
+    };
+
     return (
-        <View style={styles.container}>
+        <ScrollView contentContainerStyle={styles.scrollContainer} style={{ flex: 1, backgroundColor: Colors.primary }}>
             <View style={styles.card}>
+                <Image 
+                    source={require('../assets/ninja_header.png')} 
+                    style={styles.logo} 
+                    resizeMode="contain" 
+                />
                 <Text style={styles.emoji}>👋</Text>
                 <Text style={styles.title}>Welcome!</Text>
                 <Text style={styles.subtitle}>Let's set up your profile.</Text>
 
+                <View style={styles.valuePropsContainer}>
+                    <Text style={styles.valuePropText}>✓ Free 11+ Quizzes</Text>
+                    <Text style={styles.valuePropText}>✓ Track your progress</Text>
+                    <Text style={styles.valuePropText}>✓ Build a daily streak</Text>
+                </View>
+
                 <View style={styles.inputContainer}>
-                    <Text style={styles.label}>What's your name?</Text>
+                    <Text style={styles.label}>What's your name? (Optional)</Text>
                     <TextInput
                         style={styles.input}
                         placeholder="e.g. Alex"
@@ -78,7 +97,7 @@ export const SetupScreen = ({ navigation, onFinish }) => {
                 </View>
 
                 <View style={[styles.inputContainer, { zIndex: 10 }]}>
-                    <Text style={styles.label}>When is your 11+ Test?</Text>
+                    <Text style={styles.label}>When is your 11+ Test? (Optional)</Text>
                     <View style={styles.dateOptionsContainer}>
                         {dateOptions.map((date) => (
                             <TouchableOpacity
@@ -117,16 +136,20 @@ export const SetupScreen = ({ navigation, onFinish }) => {
                 </View>
 
                 <TouchableOpacity style={styles.button} onPress={handleSubmit}>
-                    <Text style={styles.btnText}>Let's Go! 🚀</Text>
+                    <Text style={styles.btnText}>Start Free Training 🚀</Text>
+                </TouchableOpacity>
+                
+                <TouchableOpacity style={styles.skipButton} onPress={handleSkip}>
+                    <Text style={styles.skipBtnText}>Skip for now</Text>
                 </TouchableOpacity>
             </View>
-        </View>
+        </ScrollView>
     );
 };
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
+    scrollContainer: {
+        flexGrow: 1,
         backgroundColor: Colors.primary,
         justifyContent: 'center',
         padding: 20,
@@ -141,6 +164,11 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.3,
         shadowRadius: 5,
         elevation: 10,
+    },
+    logo: {
+        width: 200,
+        height: 60,
+        marginBottom: 10,
     },
     emoji: {
         fontSize: 50,
@@ -238,5 +266,32 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         color: '#333',
+    },
+    valuePropsContainer: {
+        marginBottom: 25,
+        alignItems: 'flex-start',
+        backgroundColor: '#FFFBEB',
+        padding: 15,
+        borderRadius: 12,
+        width: '100%',
+        borderLeftWidth: 4,
+        borderLeftColor: '#F59E0B',
+    },
+    valuePropText: {
+        fontSize: 16,
+        color: '#333',
+        marginBottom: 5,
+        fontWeight: '500',
+    },
+    skipButton: {
+        width: '100%',
+        paddingVertical: 15,
+        alignItems: 'center',
+        marginTop: 5,
+    },
+    skipBtnText: {
+        fontSize: 16,
+        color: '#666',
+        fontWeight: 'bold',
     }
 });
