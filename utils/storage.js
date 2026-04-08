@@ -484,6 +484,55 @@ export const getTutorialSeen = async () => {
     }
 };
 
+// --- Dojo Storage ---
+const DOJO_RECORDS_KEY = 'DOJO_RECORDS_V1';
+
+export const saveDojoRecord = async (strandId, beltId, score, maxScore, timeInSeconds) => {
+    try {
+        const activeProfileId = await getActiveProfileId();
+        const key = activeProfileId ? `${DOJO_RECORDS_KEY}_${activeProfileId}` : DOJO_RECORDS_KEY;
+        const existing = await AsyncStorage.getItem(key);
+        const records = existing ? JSON.parse(existing) : {};
+
+        const recordId = `${strandId}_${beltId}`;
+        const currentBest = records[recordId];
+
+        let isNewRecord = false;
+
+        if (!currentBest) {
+            isNewRecord = true;
+            records[recordId] = { bestScore: score, bestTime: timeInSeconds, maxScore };
+        } else {
+            if (score > currentBest.bestScore) {
+                isNewRecord = true;
+                records[recordId] = { bestScore: score, bestTime: timeInSeconds, maxScore };
+            } else if (score === currentBest.bestScore && timeInSeconds < currentBest.bestTime) {
+                isNewRecord = true;
+                records[recordId] = { bestScore: score, bestTime: timeInSeconds, maxScore };
+            }
+        }
+
+        if (isNewRecord) {
+            await AsyncStorage.setItem(key, JSON.stringify(records));
+        }
+
+        return isNewRecord;
+    } catch (e) {
+        return false;
+    }
+};
+
+export const getDojoRecords = async () => {
+    try {
+        const activeProfileId = await getActiveProfileId();
+        const key = activeProfileId ? `${DOJO_RECORDS_KEY}_${activeProfileId}` : DOJO_RECORDS_KEY;
+        const existing = await AsyncStorage.getItem(key);
+        return existing ? JSON.parse(existing) : {};
+    } catch (e) {
+        return {};
+    }
+};
+
 // --- Auth Helper to be called by App.js ---
 export const initializeAuth = async () => {
     try {

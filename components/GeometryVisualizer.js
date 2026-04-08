@@ -71,7 +71,7 @@ export const GeometryVisualizer = ({ data }) => {
 
     const renderCuboid = () => {
         return (
-            <Svg height="160" width="220" viewBox="0 0 220 160">
+            <Svg height="160" width="260" viewBox="-30 0 250 160">
                 {/* Back face */}
                 <Polygon points="60,40 180,40 180,100 60,100" fill="transparent" stroke="#A7F3D0" strokeWidth="2" strokeDasharray="5,5" />
                 {/* Front face */}
@@ -85,7 +85,7 @@ export const GeometryVisualizer = ({ data }) => {
                 {/* Labels */}
                 <SvgText x="90" y="145" fontSize="14" fill={Colors.text} textAnchor="middle">{data.w}{data.unit}</SvgText>
                 <SvgText x="165" y="125" fontSize="14" fill={Colors.text} textAnchor="start">{data.d}{data.unit}</SvgText>
-                <SvgText x="15" y="100" fontSize="14" fill={Colors.text} textAnchor="end">{data.h}{data.unit}</SvgText>
+                <SvgText x="20" y="100" fontSize="14" fill={Colors.text} textAnchor="end">{data.h}{data.unit}</SvgText>
             </Svg>
         );
     };

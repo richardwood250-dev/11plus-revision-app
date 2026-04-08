@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
-import { useNavigation, useRoute } from '@react-navigation/native';
+import { useNavigation, useRoute, useFocusEffect } from '@react-navigation/native';
 import { Colors } from '../constants/Colors';
 import { getStrandBelts } from '../utils/mathsSkills';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { getDojoRecords } from '../utils/storage';
 
 export const MathsStrandScreen = () => {
     const navigation = useNavigation();
@@ -11,7 +12,21 @@ export const MathsStrandScreen = () => {
     const insets = useSafeAreaInsets();
     const { strandId, strandTitle, strandColor } = route.params;
 
+    const [records, setRecords] = useState({});
+
+    useFocusEffect(
+        useCallback(() => {
+            let isActive = true;
+            getDojoRecords().then(recs => {
+                if (isActive) setRecords(recs);
+            });
+            return () => { isActive = false };
+        }, [])
+    );
+
     const belts = getStrandBelts(strandId);
+
+    const formatTime = (secs) => `${Math.floor(secs / 60)}:${(secs % 60).toString().padStart(2, '0')}`;
 
     const renderBelt = (belt) => {
         return (
@@ -29,6 +44,11 @@ export const MathsStrandScreen = () => {
                 <View style={styles.beltContent}>
                     <Text style={[styles.beltTitle, { color: belt.text }]}>{belt.name}</Text>
                     <Text style={[styles.beltDesc, { color: belt.text }]}>{belt.description}</Text>
+                    {records[`${strandId}_${belt.id}`] && (
+                        <Text style={[styles.beltRecord, { color: belt.text }]}>
+                            🏆 Best: {records[`${strandId}_${belt.id}`].bestScore}/{records[`${strandId}_${belt.id}`].maxScore}   ⏱️ {formatTime(records[`${strandId}_${belt.id}`].bestTime)}
+                        </Text>
+                    )}
                 </View>
                 <View style={styles.beltAction}>
                     <Text style={[styles.startBtn, { color: belt.text }]}>Train ></Text>
@@ -142,6 +162,12 @@ const styles = StyleSheet.create({
     beltDesc: {
         fontSize: 15,
         opacity: 0.9,
+    },
+    beltRecord: {
+        fontSize: 13,
+        fontWeight: 'bold',
+        opacity: 0.9,
+        marginTop: 6,
     },
     beltAction: {
         marginLeft: 15,

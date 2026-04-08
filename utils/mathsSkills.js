@@ -278,6 +278,23 @@ function generateFractions(belt) {
 }
 
 // ------ TIME & MONEY STRAND ------
+function formatMoney(pence) {
+    if (pence >= 100) {
+        if (pence % 100 === 0) {
+            return `£${pence / 100}`;
+        }
+        return `£${(pence / 100).toFixed(2)}`;
+    }
+    return `${pence}p`;
+}
+
+function formatPoundsAnswer(pence) {
+    if (pence % 100 === 0) {
+        return String(pence / 100);
+    }
+    return (pence / 100).toFixed(2);
+}
+
 function generateTimeMoney(belt) {
     switch (belt) {
         case 'white': {
@@ -286,7 +303,8 @@ function generateTimeMoney(belt) {
         }
         case 'yellow': {
             const spent = getRandomInt(1, 4) * 100 + getRandomInt(0, 9) * 10;
-            return { a: 500 - spent, q: `Cost: ${spent}p\nPaid: £5\nChange in p?` };
+            const changePence = 500 - spent;
+            return { a: formatPoundsAnswer(changePence), q: `Cost: ${formatMoney(spent)}\nPaid: £5\nChange = £?` };
         }
         case 'orange': {
             const hrs = getRandomInt(1, 3);
@@ -310,7 +328,11 @@ function generateTimeMoney(belt) {
         case 'blue': {
             const q = getRandomInt(2, 5);
             const p = getRandomInt(12, 30);
-            return { a: q * p, q: `Cost of ${q} items\nat ${p}p each = ?p` };
+            const totalPence = q * p;
+            if (totalPence >= 100) {
+                return { a: formatPoundsAnswer(totalPence), q: `Cost of ${q} items\nat ${p}p each:\nTotal = £?` };
+            }
+            return { a: totalPence, q: `Cost of ${q} items\nat ${p}p each:\nTotal = ?p` };
         }
         case 'brown': {
             const pmHr = getRandomInt(1, 11);

@@ -5,6 +5,7 @@ import { Colors } from '../constants/Colors';
 import { generateMathsSkillQuestion } from '../utils/mathsSkills';
 import { NumPad } from '../components/NumPad';
 import { GeometryVisualizer } from '../components/GeometryVisualizer';
+import { saveDojoRecord } from '../utils/storage';
 
 const { width } = Dimensions.get('window');
 const MAX_QUESTIONS = 10;
@@ -41,6 +42,7 @@ export const MathsSkillsQuizScreen = () => {
     const [feedbackColor, setFeedbackColor] = useState(Colors.text); // For text flashing
     const [quizComplete, setQuizComplete] = useState(false);
     const [elapsedTime, setElapsedTime] = useState(0);
+    const [isNewRecord, setIsNewRecord] = useState(false);
     
     // Timer interval ref
     const timerRef = useRef(null);
@@ -97,12 +99,17 @@ export const MathsSkillsQuizScreen = () => {
         setTimeout(() => {
             if (currentQuestionNumber >= Math.min(MAX_QUESTIONS, 20)) {
                 stopTimer();
+                const finalScore = isCorrect ? score + 1 : score;
+                // Save Dojo record locally
+                saveDojoRecord(strandId, beltId, finalScore, Math.min(MAX_QUESTIONS, 20), elapsedTime)
+                    .then(newRec => setIsNewRecord(newRec));
+                
                 setQuizComplete(true);
             } else {
                 setCurrentQuestionNumber(prev => prev + 1);
                 loadNextQuestion();
             }
-        }, isCorrect ? 500 : 1500); // Shorter wait if correct, longer to review if wrong
+        }, isCorrect ? 500 : 1500);
     };
 
     const formatTime = (seconds) => {
@@ -118,6 +125,12 @@ export const MathsSkillsQuizScreen = () => {
                     <Text style={[styles.resultsTitle, { color: beltText }]}>Training Complete</Text>
                     <Text style={[styles.beltInfoTitle, { color: beltText, marginTop: 10 }]}>{beltName}</Text>
                     
+                    {isNewRecord && (
+                        <View style={styles.newRecordBadge}>
+                            <Text style={styles.newRecordText}>🏆 NEW PERSONAL BEST 🏆</Text>
+                        </View>
+                    )}
+
                     <View style={styles.statsBox}>
                         <View style={styles.statRow}>
                             <Text style={styles.statLabel}>Score:</Text>
@@ -135,7 +148,7 @@ export const MathsSkillsQuizScreen = () => {
 
                     <TouchableOpacity 
                         style={[styles.actionBtn, { backgroundColor: beltText }]}
-                        onPress={() => navigation.navigate('MathsStrand')}
+                        onPress={() => navigation.goBack()}
                     >
                         <Text style={[styles.actionBtnText, { color: beltColor }]}>Return to Rank Select</Text>
                     </TouchableOpacity>
@@ -288,7 +301,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     inputArea: {
-        paddingBottom: 20,
+        paddingBottom: 100,
     },
     resultsContainer: {
         flex: 1,
@@ -304,7 +317,25 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         opacity: 0.8,
-        marginBottom: 40,
+        marginBottom: 20,
+    },
+    newRecordBadge: {
+        backgroundColor: '#FFD700',
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        borderRadius: 20,
+        marginBottom: 20,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 4,
+        elevation: 3,
+    },
+    newRecordText: {
+        color: '#854D0E',
+        fontWeight: 'black',
+        fontSize: 16,
+        letterSpacing: 1,
     },
     statsBox: {
         backgroundColor: '#FFF',
