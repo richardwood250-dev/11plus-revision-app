@@ -22,6 +22,9 @@ import { DashboardScreen } from './screens/DashboardScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { SetupScreen } from './screens/SetupScreen';
 import { VocabGame } from './screens/VocabGame';
+import { MathsSkillsHomeScreen } from './screens/MathsSkillsHomeScreen';
+import { MathsStrandScreen } from './screens/MathsStrandScreen';
+import { MathsSkillsQuizScreen } from './screens/MathsSkillsQuizScreen';
 import { initializeAuth, getProfile } from './utils/storage';
 
 // --- Components ---
@@ -117,6 +120,9 @@ export default function App() {
                     <Stack.Screen name="Settings" component={SettingsScreen} />
                     <Stack.Screen name="Setup" component={SetupScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="VocabGame" component={VocabGame} options={{ title: "Synonym Shinobi", headerStyle: { backgroundColor: '#BE1E2D' }, headerTintColor: '#fff' }} />
+                    <Stack.Screen name="MathsSkillsHome" component={MathsSkillsHomeScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="MathsStrand" component={MathsStrandScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="MathsSkillsQuiz" component={MathsSkillsQuizScreen} options={{ headerShown: false }} />
                   </>
                 )}
               </Stack.Navigator>

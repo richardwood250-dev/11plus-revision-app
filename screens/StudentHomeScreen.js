@@ -258,6 +258,23 @@ export const StudentHomeScreen = () => {
         {/* Interactive Vocab Widget */}
         <DailyVocabCard />
 
+        {/* Interactive Maths Dojo Widget */}
+        <TouchableOpacity 
+          style={[styles.vocabContainer, { borderLeftColor: '#3B82F6' }]} 
+          onPress={() => navigation.navigate('MathsSkillsHome')}
+        >
+          <View style={styles.vocabHeader}>
+            <Text style={[styles.vocabTitle, { color: '#3B82F6' }]}>Maths Dojo</Text>
+            <Text style={[styles.vocabBadge, { backgroundColor: '#EFF6FF', color: '#1D4ED8' }]}>Mental & Written</Text>
+          </View>
+          <Text style={styles.wordText}>Skill Drills</Text>
+          <Text style={styles.wordType}>(timed)</Text>
+          <Text style={styles.wordDefinition}>Master core mathematical concepts to build fluency and speed.</Text>
+          <View style={[styles.vocabGameBtn, { backgroundColor: '#3B82F6' }]}>
+            <Text style={styles.vocabGameBtnText}>Enter the Dojo</Text>
+          </View>
+        </TouchableOpacity>
+
         <View style={{ height: 20 }} />
       </ScrollView>
     </View>
