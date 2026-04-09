@@ -25,7 +25,57 @@ export const StudentHomeScreen = () => {
   const [profiles, setProfiles] = React.useState([]);
   const [activeProfile, setActiveProfile] = React.useState(null);
   const [showProfileSwitcher, setShowProfileSwitcher] = React.useState(false);
+  const [showStatsModal, setShowStatsModal] = React.useState(false);
+  const [showWordModal, setShowWordModal] = React.useState(false);
 
+  const handleQuickStart = async () => {
+    if (recommendation) {
+        if (recommendation.type === 'route') {
+          navigation.navigate(recommendation.route);
+          return;
+        } else if (recommendation.type === 'action' || recommendation.action) {
+          if (recommendation.action) {
+             recommendation.action();
+          } else {
+             getRandomQuiz();
+          }
+          return;
+        } else if (recommendation.type === 'quiz' || recommendation.config) {
+          const { subject, topic } = recommendation.config;
+          if (subject === 'English' && topic === 'Comprehension') {
+            try {
+              setIsLoadingEnglish(true);
+              const data = await fetchEnglishQuiz();
+              setIsLoadingEnglish(false);
+              navigation.navigate('Comprehension', data);
+            } catch (err) {
+              setIsLoadingEnglish(false);
+              alert("Error: Could not load quiz: " + err.message);
+            }
+          } else {
+            const quizData = getQuiz(subject, topic);
+            navigation.navigate('Quiz', quizData);
+          }
+          return;
+        }
+    }
+    
+    // Fallback
+    const quizConfig = getRandomQuiz();
+    if (quizConfig.config.subject === 'English') {
+      try {
+        setIsLoadingEnglish(true);
+        const data = await fetchEnglishQuiz();
+        setIsLoadingEnglish(false);
+        navigation.navigate('Comprehension', data);
+      } catch (err) {
+        setIsLoadingEnglish(false);
+        alert("Error: Could not load quiz: " + err.message);
+      }
+    } else {
+      navigation.navigate('Quiz', quizConfig);
+    }
+  };
   const loadData = async () => {
     const s = await getStats();
     setStats(s);
@@ -72,13 +122,13 @@ export const StudentHomeScreen = () => {
   const SubjectBtn = ({ title, color, type }) => {
     return (
       <TouchableOpacity
-        style={[styles.subjectPill, { backgroundColor: 'white', borderColor: color, borderWidth: 2 }]}
+        style={[{ backgroundColor: 'white', borderColor: color, borderWidth: 2, borderRadius: 15, width: '100%', height: 60, flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingHorizontal: 15, marginBottom: 12, shadowColor: '#000', shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.1, shadowRadius: 2, elevation: 2 }]}
         onPress={() => handleSubjectPress(title)}
       >
-        <View style={{ transform: [{ scale: 0.6 }] }}>
+        <View style={{ transform: [{ scale: 0.5 }], marginRight: 10, marginLeft: -10 }}>
             <FlatIcon type={type} />
         </View>
-        <Text style={[styles.subjectPillText, { color: Colors.text }]}>{title}</Text>
+        <Text style={{ fontWeight: 'bold', fontSize: 16, color: Colors.text }}>{title}</Text>
       </TouchableOpacity>
     );
   };
@@ -157,123 +207,105 @@ export const StudentHomeScreen = () => {
           </View>
         )}
 
+        {/* Dashboard Stats Modal */}
+        {showStatsModal && (
+          <View style={styles.modalOverlay}>
+            <View style={styles.modalContent}>
+              <Text style={styles.modalTitle}>Your Progress 📊</Text>
+              <View style={styles.snapshotStats}>
+                <View style={styles.statBox}>
+                  <Text style={styles.statLabel}>Day Streak</Text>
+                  <Text style={styles.statValue}>🔥 {streak}</Text>
+                </View>
+                <View style={styles.statBox}>
+                  <Text style={styles.statLabel}>Total Questions</Text>
+                  <Text style={styles.statValue}>{stats?.totalQuestions || 0}</Text>
+                </View>
+              </View>
+              <TouchableOpacity style={styles.vocabGameBtn} onPress={() => { setShowStatsModal(false); navigation.navigate('Dashboard'); }}>
+                <Text style={styles.vocabGameBtnText}>View Full Dashboard</Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.closeModalBtn} onPress={() => setShowStatsModal(false)}>
+                <Text style={styles.closeModalText}>Close</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        )}
+
+        {/* Daily Word Modal */}
+        {showWordModal && (
+          <View style={styles.modalOverlay}>
+            <View style={styles.modalContent}>
+              <DailyVocabCard />
+              <TouchableOpacity style={styles.closeModalBtn} onPress={() => setShowWordModal(false)}>
+                <Text style={styles.closeModalText}>Close Modals</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        )}
+
         <View style={styles.contentContainer}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: 15 }}>
-            <Text style={styles.subtitle}>Welcome, {activeProfile?.icon || '🥋'} {activeProfile?.name || 'Student'}!</Text>
-            {profiles.length > 1 && (
-              <TouchableOpacity onPress={() => setShowProfileSwitcher(true)} style={styles.switchUserBtn}>
-                <Text style={styles.switchUserBtnText}>Switch User</Text>
-              </TouchableOpacity>
-            )}
-            {profiles.length <= 1 && (
-              <TouchableOpacity onPress={() => setShowProfileSwitcher(true)} style={styles.switchUserBtn}>
-                <Text style={styles.switchUserBtnText}>+ Add User</Text>
-              </TouchableOpacity>
-            )}
+            <Text style={styles.subtitle}>Hi, {activeProfile?.name || 'Student'}!</Text>
+            <TouchableOpacity onPress={() => setShowProfileSwitcher(true)} style={styles.switchUserBtn}>
+              <Text style={styles.switchUserBtnText}>{profiles.length > 1 ? 'Switch User' : '+ Add User'}</Text>
+            </TouchableOpacity>
           </View>
         </View>
 
-        {/* --- HORIZONTAL SUBJECTS --- */}
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.subjectsScroll} style={{ marginBottom: 20 }}>
-          <SubjectBtn title="Maths" color={Colors.primary} type="maths" />
-          <SubjectBtn title="English" color={Colors.orange} type="english" />
-          <SubjectBtn title="Verbal" color={Colors.purple} type="verbal" />
-          <SubjectBtn title="Non-Verbal" color={Colors.green} type="non-verbal" />
-        </ScrollView>
+        {/* --- TOP ACTION ROW --- */}
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%', marginBottom: 25 }}>
+           <TouchableOpacity style={[styles.topActionBtn, { backgroundColor: Colors.primary }]} onPress={handleQuickStart}>
+              <Text style={styles.topActionIcon}>⚡</Text>
+              <Text style={styles.topActionText}>Quick Play</Text>
+           </TouchableOpacity>
 
-        {/* --- DASHBOARD SNAPSHOT --- */}
-        <TouchableOpacity style={styles.dashboardSnapshot} onPress={() => navigation.navigate('Dashboard')}>
-           <View style={styles.snapshotTop}>
-              <Text style={styles.snapshotTitle}>Overview</Text>
-              <Text style={styles.snapshotAction}>View full 📊</Text>
+           <TouchableOpacity style={[styles.topActionBtn, { backgroundColor: '#3B82F6' }]} onPress={() => setShowStatsModal(true)}>
+              <Text style={styles.topActionIcon}>📊</Text>
+              <Text style={styles.topActionText}>Stats</Text>
+           </TouchableOpacity>
+
+           <TouchableOpacity style={[styles.topActionBtn, { backgroundColor: '#F59E0B' }]} onPress={() => setShowWordModal(true)}>
+              <Text style={styles.topActionIcon}>📖</Text>
+              <Text style={styles.topActionText}>Daily Word</Text>
+           </TouchableOpacity>
+        </View>
+
+        {/* --- DUAL COLUMN CONTENT --- */}
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
+           
+           {/* LEFT COLUMN: Dojos */}
+           <View style={{ width: '48%' }}>
+              <Text style={[styles.sectionHeader, { fontSize: 18 }]}>Training Dojos</Text>
+              <TouchableOpacity 
+                style={[styles.vocabContainer, { borderLeftColor: '#3B82F6', marginTop: 5, marginBottom: 12, padding: 15 }]} 
+                onPress={() => navigation.navigate('MathsSkillsHome')}
+              >
+                <Text style={[styles.vocabTitle, { color: '#3B82F6', fontSize: 16 }]}>Maths</Text>
+                <Text style={{ fontSize: 12, color: '#666', marginTop: 5 }}>Mental Drills</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity 
+                style={[styles.vocabContainer, { borderLeftColor: '#10B981', marginTop: 0, marginBottom: 12, padding: 15 }]} 
+                onPress={() => navigation.navigate('EnglishSkillsHome')}
+              >
+                <Text style={[styles.vocabTitle, { color: '#10B981', fontSize: 16 }]}>Words</Text>
+                <Text style={{ fontSize: 12, color: '#666', marginTop: 5 }}>Grammar & Spelling</Text>
+              </TouchableOpacity>
            </View>
-           <View style={styles.snapshotStats}>
-             <View style={styles.statBox}>
-               <Text style={styles.statLabel}>Day Streak</Text>
-               <Text style={styles.statValue}>🔥 {streak}</Text>
-             </View>
-             <View style={styles.statBox}>
-               <Text style={styles.statLabel}>Questions</Text>
-               <Text style={styles.statValue}>{stats?.totalQuestions || 0}</Text>
-             </View>
+
+           {/* RIGHT COLUMN: Trials */}
+           <View style={{ width: '48%' }}>
+              <Text style={[styles.sectionHeader, { fontSize: 18 }]}>11+ Mock Trials</Text>
+              <SubjectBtn title="Maths" color={Colors.primary} type="maths" />
+              <SubjectBtn title="English" color={Colors.orange} type="english" />
+              <SubjectBtn title="Verbal" color={Colors.purple} type="verbal" />
+              <SubjectBtn title="NonVerbal" color={Colors.green} type="non-verbal" />
            </View>
-        </TouchableOpacity>
 
-        {/* --- HERO ACTION CARD --- */}
-        <TouchableOpacity
-          style={[styles.heroCard, { opacity: isLoadingEnglish ? 0.6 : 1 }]}
-          disabled={isLoadingEnglish}
-          onPress={async () => {
-            // Prefer recommendation if it exists and has an action/config
-            if (recommendation) {
-                if (recommendation.action) {
-                  recommendation.action();
-                  return;
-                } else if (recommendation.config) {
-                  const { subject, topic } = recommendation.config;
-                  if (subject === 'English' && topic === 'Comprehension') {
-                    try {
-                      setIsLoadingEnglish(true);
-                      const data = await fetchEnglishQuiz();
-                      setIsLoadingEnglish(false);
-                      navigation.navigate('Comprehension', data);
-                    } catch (err) {
-                      setIsLoadingEnglish(false);
-                      alert("Error: Could not load quiz: " + err.message);
-                    }
-                  } else {
-                    const quizData = getQuiz(subject, topic);
-                    navigation.navigate('Quiz', quizData);
-                  }
-                  return;
-                }
-            }
-            
-            // Fallback to random Quiz if no recommendation
-            const quizConfig = getRandomQuiz();
-            if (quizConfig.config.subject === 'English') {
-              try {
-                setIsLoadingEnglish(true);
-                const data = await fetchEnglishQuiz();
-                setIsLoadingEnglish(false);
-                navigation.navigate('Comprehension', data);
-              } catch (err) {
-                setIsLoadingEnglish(false);
-                alert("Error: Could not load quiz: " + err.message);
-              }
-            } else {
-              navigation.navigate('Quiz', quizConfig);
-            }
-          }}
-        >
-          <View style={styles.heroContent}>
-              <Text style={styles.heroIcon}>{recommendation ? '🎯' : '⚡'}</Text>
-              <View style={styles.heroTextContainer}>
-                  <Text style={styles.heroTitle}>{isLoadingEnglish ? 'Loading...' : (recommendation ? 'Resume Training' : 'Quick Start')}</Text>
-                  <Text style={styles.heroSub}>{recommendation ? `Suggestion: ${recommendation.title}` : 'Jump into a random mixed quiz'}</Text>
-              </View>
-          </View>
-        </TouchableOpacity>
+        </View>
 
-        {/* Interactive Vocab Widget */}
-        <DailyVocabCard />
 
-        {/* Interactive Maths Dojo Widget */}
-        <TouchableOpacity 
-          style={[styles.vocabContainer, { borderLeftColor: '#3B82F6' }]} 
-          onPress={() => navigation.navigate('MathsSkillsHome')}
-        >
-          <View style={styles.vocabHeader}>
-            <Text style={[styles.vocabTitle, { color: '#3B82F6' }]}>Maths Dojo</Text>
-            <Text style={[styles.vocabBadge, { backgroundColor: '#EFF6FF', color: '#1D4ED8' }]}>Mental & Written</Text>
-          </View>
-          <Text style={styles.wordText}>Skill Drills</Text>
-          <Text style={styles.wordType}>(timed)</Text>
-          <Text style={styles.wordDefinition}>Master core mathematical concepts to build fluency and speed.</Text>
-          <View style={[styles.vocabGameBtn, { backgroundColor: '#3B82F6' }]}>
-            <Text style={styles.vocabGameBtnText}>Enter the Dojo</Text>
-          </View>
-        </TouchableOpacity>
 
         <View style={{ height: 20 }} />
       </ScrollView>
@@ -597,5 +629,27 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  topActionBtn: {
+    flex: 1,
+    marginHorizontal: 5,
+    borderRadius: 15,
+    paddingVertical: 15,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 3,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+  },
+  topActionIcon: {
+    fontSize: 24,
+    marginBottom: 5,
+  },
+  topActionText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 12,
   }
 });

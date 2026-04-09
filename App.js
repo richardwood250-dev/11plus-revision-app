@@ -25,6 +25,9 @@ import { VocabGame } from './screens/VocabGame';
 import { MathsSkillsHomeScreen } from './screens/MathsSkillsHomeScreen';
 import { MathsStrandScreen } from './screens/MathsStrandScreen';
 import { MathsSkillsQuizScreen } from './screens/MathsSkillsQuizScreen';
+import { EnglishSkillsHomeScreen } from './screens/EnglishSkillsHomeScreen';
+import { EnglishStrandScreen } from './screens/EnglishStrandScreen';
+import { EnglishSkillsQuizScreen } from './screens/EnglishSkillsQuizScreen';
 import { initializeAuth, getProfile } from './utils/storage';
 
 // --- Components ---
@@ -123,6 +126,9 @@ export default function App() {
                     <Stack.Screen name="MathsSkillsHome" component={MathsSkillsHomeScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="MathsStrand" component={MathsStrandScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="MathsSkillsQuiz" component={MathsSkillsQuizScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="EnglishSkillsHome" component={EnglishSkillsHomeScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="EnglishStrand" component={EnglishStrandScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="EnglishSkillsQuiz" component={EnglishSkillsQuizScreen} options={{ headerShown: false }} />
                   </>
                 )}
               </Stack.Navigator>

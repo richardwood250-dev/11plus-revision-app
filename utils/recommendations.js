@@ -50,52 +50,86 @@ export const getRecommendation = (stats) => {
         });
     });
 
-    // Strategy 1: Never Played
+    // Calculate total questions across all subjects
+    const totalQuestions = allTopics.reduce((acc, curr) => acc + curr.total, 0);
+
+    // Strategy 0: First Day Onboarding
+    if (totalQuestions === 0) {
+        return {
+            type: 'route',
+            route: 'MathsSkillsHome',
+            title: "Start Training",
+            reason: "Welcome! Let's warm up in the Maths Dojo."
+        };
+    }
+
+    // Strategy 1: Weakness Targeting (Dojos over Trials for < 40%)
+    const veryLowAcc = candidateTopics.filter(c => c.total > 0 && c.accuracy < 40);
+    if (veryLowAcc.length > 0) {
+        veryLowAcc.sort((a, b) => a.accuracy - b.accuracy);
+        const pick = veryLowAcc[0];
+        
+        let dojoRoute = 'MathsSkillsHome';
+        let dojoName = 'Maths Dojo';
+        if (pick.subject === 'English' || pick.subject === 'Verbal') {
+            dojoRoute = 'EnglishSkillsHome';
+            dojoName = 'Word Dojo';
+        }
+
+        return {
+            type: 'route',
+            route: dojoRoute,
+            title: `Train in ${dojoName}`,
+            reason: `Your ${pick.title} score was low (${Math.round(pick.accuracy)}%). Drill the basics!`
+        };
+    }
+
+    // Strategy 2: Never Played
     const neverPlayed = candidateTopics.filter(c => c.total === 0);
     if (neverPlayed.length > 0) {
         const pick = neverPlayed[Math.floor(Math.random() * neverPlayed.length)];
         return {
+            type: 'quiz',
             title: `Try ${pick.title}`,
             reason: "You haven't tried this topic yet!",
             config: { subject: pick.subject, topic: pick.topic }
         };
     }
 
-    // Strategy 2: Low Accuracy (< 50%)
-    const lowAcc = candidateTopics.filter(c => c.accuracy < 50);
+    // Strategy 3: Low Accuracy (< 60%) - Recommend Trial Practice
+    const lowAcc = candidateTopics.filter(c => c.total > 0 && c.accuracy < 60);
     if (lowAcc.length > 0) {
-        // Sort by lowest accuracy
         lowAcc.sort((a, b) => a.accuracy - b.accuracy);
-        // Pick the absolute worst
         const pick = lowAcc[0];
         return {
+            type: 'quiz',
             title: `Practice ${pick.title}`,
             reason: `Score: ${Math.round(pick.accuracy)}%. Let's improve this!`,
             config: { subject: pick.subject, topic: pick.topic }
         };
     }
 
-    // Strategy 3: Stale (Not played in last 3 days)
-    // 3 days = 3 * 24 * 60 * 60 * 1000
+    // Strategy 4: Stale (Not played in last 3 days)
     const now = Date.now();
     const threeDays = 3 * 24 * 60 * 60 * 1000;
-    const stale = candidateTopics.filter(c => (now - c.lastPlayed) > threeDays);
+    const stale = candidateTopics.filter(c => c.total > 0 && (now - c.lastPlayed) > threeDays);
 
-    // Sort by oldest lastPlayed (ascending time)
     stale.sort((a, b) => a.lastPlayed - b.lastPlayed);
 
     if (stale.length > 0) {
-        const pick = stale[0]; // Oldest
+        const pick = stale[0]; 
         return {
+            type: 'quiz',
             title: `Revise ${pick.title}`,
             reason: "It's been a while since you played this.",
             config: { subject: pick.subject, topic: pick.topic }
         };
     }
 
-    // Fallback: Random
+    // Fallback: Random Mixed Trial
     return {
-        title: "Quick Start",
+        type: 'action',
+        title: "Mixed Trial",
         reason: "You're doing great! Keep it up.",
         action: () => getRandomQuiz()
     };

@@ -119,47 +119,53 @@ export function generateMathsSkillQuestion(strandId, beltId) {
 
 // ------ MENTAL MATHS STRAND ------
 function generateMental(belt) {
+    const type = getRandomInt(0, 1);
     switch (belt) {
         case 'white': {
             const sum = getRandomInt(0, 1) === 0 ? 10 : 20;
             const a = getRandomInt(0, sum);
-            return { a: sum - a, q: `${a} + ? = ${sum}` };
+            if (type === 0) return { a: sum - a, q: `${a} + ? = ${sum}` };
+            return { a: a, q: `${sum} - ? = ${sum - a}` };
         }
         case 'yellow': {
             const a = getRandomInt(2, 12);
             const b = getRandomInt(2, 12);
-            return { a: a * b, q: `${a} × ${b} = ?`, isAssisted: true };
+            if (type === 0) return { a: a * b, q: `${a} × ${b} = ?`, isAssisted: true };
+            return { a: a, q: `? × ${b} = ${a*b}`, isAssisted: true };
         }
         case 'orange': {
             const a = getRandomInt(2, 12);
             const b = getRandomInt(2, 12);
-            return { a: a * b, q: `${a} × ${b} = ?` };
+            if (type === 0) return { a: a * b, q: `${a} × ${b} = ?` };
+            const c = a * b;
+            return { a: a, q: `${c} ÷ ${b} = ?` };
         }
         case 'green': {
             // Challenging tables (e.g. 24*3, 30*5)
-            const type = getRandomInt(0, 1);
             if (type === 0) {
-                // Multiples of 10 (e.g. 30 * 5)
+                // Multiples of 10
                 const a = getRandomInt(2, 12) * 10;
                 const b = getRandomInt(2, 9);
                 return { a: a * b, q: `${a} × ${b} = ?` };
             } else {
-                // Double a standard multiple (e.g. 24 * 3) -> a is between 13 and 24
+                // Double a standard multiple
                 const a = getRandomInt(13, 24);
-                const b = getRandomInt(2, 5);
-                return { a: a * b, q: `${a} × ${b} = ?` };
+                return { a: a * 2, q: `Double ${a} = ?` };
             }
         }
         case 'blue': {
             const a = getRandomInt(1, 40) * 10;
             const b = getRandomInt(1, 40) * 10;
-            return { a: a + b, q: `${a} + ${b} = ?` };
+            if (type === 0) return { a: a + b, q: `${a} + ${b} = ?` };
+            const big = Math.max(a, b);
+            const small = Math.min(a, b);
+            return { a: big - small, q: `${big} - ${small} = ?` };
         }
         case 'brown': {
             const a = getRandomInt(5, 50) * 2;
-            const isHalf = getRandomInt(0, 1) === 0;
-            if (isHalf) return { a: a / 2, q: `Half of ${a} = ?` };
-            return { a: a * 2, q: `Double ${a} = ?` };
+            if (type === 0) return { a: a / 2, q: `Half of ${a} = ?` };
+            const b = getRandomInt(5, 20);
+            return { a: b * 4, q: `${b} × 4 = ?` };
         }
         case 'black': {
             const a = getRandomInt(2, 12);
@@ -173,26 +179,45 @@ function generateMental(belt) {
 
 // ------ ARITHMETIC STRAND ------
 function generateArithmetic(belt) {
+    const type = getRandomInt(0, 1);
     switch (belt) {
         case 'white': {
-            const a = getRandomInt(10, 40);
-            const b = getRandomInt(10, 40);
-            return { a: a + b, q: `${a}\n+ ${b}\n---` };
+            if (type === 0) {
+                const a = getRandomInt(10, 40);
+                const b = getRandomInt(10, 40);
+                return { a: a + b, q: `${a}\n+ ${b}\n---` };
+            } else {
+                const a = getRandomInt(50, 90);
+                const b = getRandomInt(10, 40);
+                return { a: a - b, q: `${a}\n- ${b}\n---` };
+            }
         }
         case 'yellow': {
             // Force carry
-            const a1 = getRandomInt(1, 8) * 10;
-            const a2 = getRandomInt(5, 9);
-            const b1 = getRandomInt(1, 8) * 10;
-            const b2 = getRandomInt(15 - a2, 9); // ensures carry
-            const a = a1 + a2;
-            const b = b1 + b2;
-            return { a: a + b, q: `${a}\n+ ${b}\n---` };
+            if (type === 0) {
+                const a1 = getRandomInt(1, 8) * 10;
+                const a2 = getRandomInt(5, 9);
+                const b1 = getRandomInt(1, 8) * 10;
+                const b2 = getRandomInt(15 - a2, 9);
+                const a = a1 + a2;
+                const b = b1 + b2;
+                return { a: a + b, q: `${a}\n+ ${b}\n---` };
+            } else {
+                // Borrow
+                const a1 = getRandomInt(5, 9) * 10;
+                const a2 = getRandomInt(1, 4);
+                const b1 = getRandomInt(1, 4) * 10;
+                const b2 = getRandomInt(a2 + 1, 9);
+                const a = a1 + a2;
+                const b = b1 + b2;
+                return { a: a - b, q: `${a}\n- ${b}\n---` };
+            }
         }
         case 'orange': {
             const a = getRandomInt(200, 999);
             const b = getRandomInt(10, a - 10);
-            return { a: a - b, q: `${a}\n- ${b}\n---` };
+            if (type === 0) return { a: a - b, q: `${a}\n- ${b}\n---` };
+            return { a: a + b, q: `${a}\n+ ${b}\n---` };
         }
         case 'green': {
             const a = getRandomInt(12, 99);
@@ -232,6 +257,7 @@ function generateArithmetic(belt) {
 
 // ------ FRACTIONS & DECIMALS STRAND ------
 function generateFractions(belt) {
+    const type = getRandomInt(0, 1);
     switch (belt) {
         case 'white': {
             const a = getRandomInt(1, 12) * 2;
@@ -243,31 +269,36 @@ function generateFractions(belt) {
             const denoms = [3, 4, 5, 10];
             const d = denoms[getRandomInt(0, 3)];
             const ans = getRandomInt(2, 9);
-            return { a: ans, q: `1/${d} of ${d*ans} = ?` };
+            if (type === 0) return { a: ans, q: `1/${d} of ${d*ans} = ?` };
+            return { a: ans * 2, q: `2/${d} of ${d*ans} = ?` };
         }
         case 'orange': {
             const a = getRandomInt(1, 5);
             const b = getRandomInt(2, 6);
             if (a >= b) return { a: 4, q: `1/2 = ?/8` }; // fallback
             const mult = getRandomInt(2, 5);
-            return { a: a*mult, q: `${a}/${b} = ?/${b*mult}` };
+            if (type === 0) return { a: a*mult, q: `${a}/${b} = ?/${b*mult}` };
+            return { a: b*mult, q: `${a}/${b} = ${a*mult}/?` };
         }
         case 'green': {
             const d = getRandomInt(4, 10);
             const numSum = getRandomInt(2, d - 1);
             const a = getRandomInt(1, numSum - 1);
             const b = numSum - a;
-            return { a: numSum, q: `${a}/${d} + ${b}/${d} = ?/${d}` };
+            if (type === 0) return { a: numSum, q: `${a}/${d} + ${b}/${d} = ?/${d}` };
+            return { a: a, q: `${numSum}/${d} - ${b}/${d} = ?/${d}` };
         }
         case 'blue': {
             const decimals = [{d: "0.1", f: 1}, {d: "0.2", f: 2}, {d: "0.5", f: 5}, {d: "0.9", f: 9}];
             const pick = decimals[getRandomInt(0, 3)];
-            return { a: pick.f, q: `${pick.d} = ?/10` };
+            if (type === 0) return { a: pick.f, q: `${pick.d} = ?/10` };
+            return { a: pick.d, q: `${pick.f}/10 = ?` };
         }
         case 'brown': {
             const amt = getRandomInt(2, 20) * 10;
-            const is50 = getRandomInt(0, 1) === 0;
-            return is50 ? { a: amt/2, q: `50% of ${amt} = ?` } : { a: amt/10, q: `10% of ${amt} = ?` };
+            const perc = [10, 20, 25, 50];
+            const p = perc[getRandomInt(0, 3)];
+            return { a: amt * (p / 100), q: `${p}% of ${amt} = ?` };
         }
         case 'black': {
             const b = ['white', 'yellow', 'orange', 'green', 'blue', 'brown'];
@@ -302,14 +333,24 @@ function generateTimeMoney(belt) {
             return { a: 100 - spent, q: `${spent}p + ? = £1` };
         }
         case 'yellow': {
-            const spent = getRandomInt(1, 4) * 100 + getRandomInt(0, 9) * 10;
-            const changePence = 500 - spent;
-            return { a: formatPoundsAnswer(changePence), q: `Cost: ${formatMoney(spent)}\nPaid: £5\nChange = £?` };
+            const notes = [5, 10, 20];
+            const note = notes[getRandomInt(0, 2)];
+            const paidPence = note * 100;
+            // Spend less than the note value
+            const spent = getRandomInt(1, (note * 10) - 1) * 10; 
+            const changePence = paidPence - spent;
+            return { a: formatPoundsAnswer(changePence), q: `Cost: ${formatMoney(spent)}\nPaid: £${note}\nChange = £?` };
         }
         case 'orange': {
-            const hrs = getRandomInt(1, 3);
-            const mins = getRandomInt(1, 3) * 15;
-            return { a: hrs * 60 + mins, q: `Mins in ${hrs}h ${mins}m = ?` };
+            const isMinsToHrs = getRandomInt(0, 1) === 0;
+            if (isMinsToHrs) {
+                const hrs = getRandomInt(2, 6);
+                return { a: hrs, q: `Hours in ${hrs * 60}m = ?` };
+            } else {
+                const hrs = getRandomInt(1, 3);
+                const mins = getRandomInt(1, 3) * 15;
+                return { a: hrs * 60 + mins, q: `Mins in ${hrs}h ${mins}m = ?` };
+            }
         }
         case 'green': {
             const hr = getRandomInt(1, 10);
