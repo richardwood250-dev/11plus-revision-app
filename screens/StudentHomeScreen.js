@@ -112,8 +112,8 @@ export const StudentHomeScreen = () => {
       navigation.navigate('QuizConfig', { subject: 'English' });
     } else if (title === 'Verbal') {
       navigation.navigate('QuizConfig', { subject: 'Verbal' });
-    } else if (title === 'Non-Verbal') {
-      navigation.navigate('QuizConfig', { subject: 'Non-Verbal' });
+    } else if (title === 'NonVerbal' || title === 'Non-Verbal') {
+      navigation.navigate('NVRSkillsHome');
     } else {
       alert(`Pressed ${title} (Test Mode)`);
     }
