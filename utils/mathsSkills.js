@@ -5,7 +5,8 @@ export const MATHS_STRANDS = [
   { id: 'arithmetic', title: 'Arithmetic', description: 'Addition, subtraction, multiplication', color: '#EF4444', icon: '➕' },
   { id: 'fractions', title: 'Fractions & Decimals', description: 'Equivalents, fractions of amounts', color: '#10B981', icon: '➗' },
   { id: 'time_money', title: 'Time & Money', description: 'Change, elapsed time', color: '#F59E0B', icon: '⏰' },
-  { id: 'geometry', title: 'Geometry', description: 'Area, perimeter, angles', color: '#8B5CF6', icon: '📐' }
+  { id: 'geometry', title: 'Geometry', description: 'Area, perimeter, angles', color: '#8B5CF6', icon: '📐' },
+  { id: 'ratio', title: 'Ratio & Proportion', description: 'Sharing, simplifying, scale factors', color: '#EC4899', icon: '⚖️' }
 ];
 
 export const BELTS = [
@@ -69,6 +70,15 @@ export function getStrandBelts(strandId) {
             'Area of compound shapes',
             'Volume of cubes/cuboids',
             'Mixed Geometry'
+        ],
+        'ratio': [
+            'Simple sharing (1:1 & 1:2)',
+            'Simplifying ratios',
+            'Sharing in 2 parts (e.g. 2:3)',
+            'Finding whole or part',
+            'Scale factors & recipes',
+            'Ratios in 3 parts (e.g. 1:2:3)',
+            'Mixed Ratio & Proportion'
         ]
     };
 
@@ -97,6 +107,8 @@ export function generateMathsSkillQuestion(strandId, beltId) {
         res = generateTimeMoney(beltId);
     } else if (strandId === 'geometry') {
         res = generateGeometry(beltId);
+    } else if (strandId === 'ratio') {
+        res = generateRatio(beltId);
     } else {
         // Fallback for unimplemented strands
         const a = getRandomInt(1, 10);
@@ -450,5 +462,79 @@ function generateGeometry(belt) {
             return generateGeometry(b[getRandomInt(0, 5)]);
         }
         default: return { a: 1, q: `Area = ?` };
+    }
+}
+
+// ------ RATIO & PROPORTION STRAND ------
+function generateRatio(belt) {
+    const type = getRandomInt(0, 1);
+    switch (belt) {
+        case 'white': {
+            if (type === 0) {
+                // Ratio 1:1
+                const part = getRandomInt(2, 10);
+                const total = part * 2;
+                return { a: part, q: `Share ${total} in ratio 1:1.\nHow much is one part?` };
+            } else {
+                // Ratio 1:2
+                const part = getRandomInt(2, 10);
+                const total = part * 3;
+                return { a: part * 2, q: `Share ${total} in ratio 1:2.\nHow much is the larger part?` };
+            }
+        }
+        case 'yellow': {
+            const common = getRandomInt(2, 10);
+            const ratios = [[1, 2], [1, 3], [1, 4], [2, 3], [3, 4], [2, 5]];
+            const r = ratios[getRandomInt(0, ratios.length - 1)];
+            return { a: `${r[0]}:${r[1]}`, q: `Simplify the ratio ${r[0] * common}:${r[1] * common}` };
+        }
+        case 'orange': {
+            const ratios = [[2, 3], [1, 4], [3, 5], [1, 5], [2, 5]];
+            const r = ratios[getRandomInt(0, ratios.length - 1)];
+            const m = getRandomInt(2, 8);
+            const total = m * (r[0] + r[1]);
+            const findLarger = type === 0;
+            const ans = findLarger ? m * Math.max(r[0], r[1]) : m * Math.min(r[0], r[1]);
+            return { a: ans, q: `Share ${total} in ratio ${r[0]}:${r[1]}.\nHow much is the ${findLarger ? 'larger' : 'smaller'} part?` };
+        }
+        case 'green': {
+            const ratios = [[1, 3], [1, 4], [2, 3], [2, 5], [3, 4]];
+            const r = ratios[getRandomInt(0, ratios.length - 1)];
+            const m = getRandomInt(2, 10);
+            if (type === 0) {
+                // Given small, find large
+                return { a: m * r[1], q: `The ratio of A to B is ${r[0]}:${r[1]}.\nIf A is ${m * r[0]}, what is B?` };
+            } else {
+                // Given total, find small
+                const total = m * (r[0] + r[1]);
+                return { a: m * r[0], q: `The ratio of A to B is ${r[0]}:${r[1]}.\nIf the total is ${total}, what is A?` };
+            }
+        }
+        case 'blue': {
+            const recipes = [
+                { item: 'flour', baseQty: 100, basePeople: 2 },
+                { item: 'sugar', baseQty: 50, basePeople: 2 },
+                { item: 'milk', baseQty: 200, basePeople: 4 },
+                { item: 'eggs', baseQty: 3, basePeople: 6 }
+            ];
+            const recipe = recipes[getRandomInt(0, recipes.length - 1)];
+            const targetPeople = [recipe.basePeople * 2, recipe.basePeople * 3, recipe.basePeople / 2].filter(p => p > 0);
+            const target = targetPeople[getRandomInt(0, targetPeople.length - 1)];
+            const factor = target / recipe.basePeople;
+            return { a: recipe.baseQty * factor, q: `A recipe for ${recipe.basePeople} people needs ${recipe.baseQty}g of ${recipe.item}.\nHow much is needed for ${target} people?` };
+        }
+        case 'brown': {
+            const r = [1, 2, 3]; // standard 1:2:3
+            const m = getRandomInt(2, 10);
+            const total = m * (r[0] + r[1] + r[2]);
+            const pick = getRandomInt(0, 2);
+            const parts = ['smallest', 'middle', 'largest'];
+            return { a: m * r[pick], q: `Share ${total} in ratio 1:2:3.\nWhat is the ${parts[pick]} part?` };
+        }
+        case 'black': {
+            const b = ['white', 'yellow', 'orange', 'green', 'blue', 'brown'];
+            return generateRatio(b[getRandomInt(0, 5)]);
+        }
+        default: return { a: '1:1', q: `Simplify 2:2` };
     }
 }

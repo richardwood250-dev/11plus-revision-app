@@ -28,6 +28,9 @@ import { MathsSkillsQuizScreen } from './screens/MathsSkillsQuizScreen';
 import { EnglishSkillsHomeScreen } from './screens/EnglishSkillsHomeScreen';
 import { EnglishStrandScreen } from './screens/EnglishStrandScreen';
 import { EnglishSkillsQuizScreen } from './screens/EnglishSkillsQuizScreen';
+import { NVRSkillsHomeScreen } from './screens/NVRSkillsHomeScreen';
+import { NVRStrandScreen } from './screens/NVRStrandScreen';
+import { NVRSkillsQuizScreen } from './screens/NVRSkillsQuizScreen';
 import { initializeAuth, getProfile } from './utils/storage';
 
 // --- Components ---
@@ -129,6 +132,9 @@ export default function App() {
                     <Stack.Screen name="EnglishSkillsHome" component={EnglishSkillsHomeScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="EnglishStrand" component={EnglishStrandScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="EnglishSkillsQuiz" component={EnglishSkillsQuizScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="NVRSkillsHome" component={NVRSkillsHomeScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="NVRStrand" component={NVRStrandScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="NVRSkillsQuiz" component={NVRSkillsQuizScreen} options={{ headerShown: false }} />
                   </>
                 )}
               </Stack.Navigator>

@@ -3329,7 +3329,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P4Q2_20",
-    "question": "The graph shows the number of trees sold on five days.\nHow many more trees were sold on Fri than on Tues?",
+    "question": "The graph shows the number of trees sold on five days.\nHow many more were sold on Friday than Wednesday?",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P4Q2_20.png",
     "options": [
       "20",
