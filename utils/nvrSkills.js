@@ -152,15 +152,18 @@ function genOddOneOut(level) {
         let shape;
         let attempts = 0;
         do {
-            shape = createShape({}, level);
+            // 1. Start with an EXACT copy of the primary base
+            shape = JSON.parse(JSON.stringify(base));
             
-            // 1. Apply noise first (unless noise is the varFeature)
-            if (noiseFeature === 'color' && level >= 1) shape.color = noiseValues.color[i];
-            else if (noiseFeature === 'type' && level >= 1) shape.type = noiseValues.type[i];
-            else if (noiseFeature === 'rotation' && level >= 1) shape.rotation = noiseValues.rotation[i];
+            // 2. Apply unique noise (to ensure they don't look identical)
+            // We only vary ONE noise feature to keep the logic focused
+            if (noiseFeature === 'color') shape.color = noiseValues.color[i];
+            else if (noiseFeature === 'type') shape.type = noiseValues.type[i];
+            else if (noiseFeature === 'rotation') shape.rotation = noiseValues.rotation[i];
+            else if (noiseFeature === 'fill') shape.fill = noiseValues.fill[i];
 
             if (i !== correctIdx) {
-                // 2. Force the common property (The Logic)
+                // 3. Force the logic (common values)
                 if (varFeature === 'color') shape.color = commonValues.color;
                 else if (varFeature === 'type') shape.type = commonValues.type;
                 else if (varFeature === 'rotation') shape.rotation = commonValues.rotation;
@@ -171,7 +174,7 @@ function genOddOneOut(level) {
                     shape.inner.type = commonValues.innerType || 'circle';
                 }
             } else {
-                // 3. Force the odd property
+                // 4. Force the anomaly (odd value)
                 if (varFeature === 'color') shape.color = pickRandom(COLORS.filter(c => c !== commonValues.color));
                 else if (varFeature === 'type') shape.type = pickRandom(SHAPES.filter(s => s !== commonValues.type));
                 else if (varFeature === 'rotation') shape.rotation = (commonValues.rotation + 45) % 360;
@@ -239,30 +242,34 @@ function genSimilarities(level) {
         let shape;
         let attempts = 0;
         do {
+            shape = JSON.parse(JSON.stringify(base));
+
             if (i === correctIdx) {
-                shape = createShape({ [varFeature]: winValue, type: base.type }, level);
+                // Force the logic (winning value)
                 if (varFeature === 'inner') {
-                    if (!shape.inner) shape.inner = { type: winValue, color: '#000', fill: true };
+                    if (!shape.inner) shape.inner = { type: winValue, color: pickRandom(COLORS.filter(c => c !== shape.color)), fill: true };
                     shape.inner.type = winValue;
+                } else {
+                    shape[varFeature] = winValue;
                 }
             } else {
+                // Force the distractor (bad value)
                 let badValue = varFeature === 'color' ? pickRandom(COLORS.filter(c => c !== winValue)) :
                                varFeature === 'type' ? pickRandom(SHAPES.filter(s => s !== winValue)) :
                                varFeature === 'rotation' ? (winValue + 90) % 360 : 
                                !winValue;
                 
-                shape = createShape({ [varFeature]: badValue }, level);
-                
                 if (varFeature === 'inner') {
-                    if (shape.inner && shape.inner.type === winValue) {
-                        shape.inner.type = pickRandom(SHAPES.filter(s => s !== winValue));
-                    }
+                    if (!shape.inner) shape.inner = { type: 'star', color: pickRandom(COLORS.filter(c => c !== shape.color)), fill: true };
+                    shape.inner.type = pickRandom(SHAPES.filter(s => s !== winValue));
+                } else {
+                    shape[varFeature] = badValue;
                 }
             }
 
-            // Apply noise to make them non-identical
-            if (noiseFeature === 'color' && varFeature !== 'color') shape.color = noiseValues.color[i];
-            else if (noiseFeature === 'rotation' && varFeature !== 'rotation') shape.rotation = noiseValues.rotation[i];
+            // Apply unique noise to prevent identical distractors
+            if (noiseFeature === 'color') shape.color = noiseValues.color[i];
+            else if (noiseFeature === 'rotation') shape.rotation = noiseValues.rotation[i];
 
             if (shape.inner && shape.inner.color === shape.color) {
                 shape.inner.color = pickRandom(COLORS.filter(c => c !== shape.color));
@@ -325,10 +332,15 @@ function genSeries(level) {
         let shape;
         let attempts = 0;
         do {
-            if (i === correctIdx) shape = target;
+            if (i === correctIdx) shape = JSON.parse(JSON.stringify(target));
             else {
-                shape = createShape({}, level);
-                if (varFeature !== 'rotation') shape.rotation = getRandomInt(0, 7) * 45;
+                // Clone target but disrupt the logic property
+                shape = JSON.parse(JSON.stringify(target));
+                if (varFeature === 'rotation') shape.rotation = (shape.rotation + 90) % 360;
+                else if (varFeature === 'color') shape.color = pickRandom(COLORS.filter(c => c !== target.color));
+                else shape.size = target.size === 75 ? 60 : 75;
+                
+                // Add noise color uniquely to avoid 4-vs-1 collision
                 if (varFeature !== 'color') shape.color = noiseColors[i];
             }
             attempts++;
@@ -382,9 +394,16 @@ function genMatrices(level) {
         let shape;
         let attempts = 0;
         do {
-            if (i === correctIdx) shape = baseD;
+            if (i === correctIdx) shape = JSON.parse(JSON.stringify(baseD));
             else {
-                shape = createShape({}, level);
+                // Clone target but disrupt the logic property
+                shape = JSON.parse(JSON.stringify(baseD));
+                if (varFeature === 'type') shape.type = pickRandom(SHAPES.filter(s => s !== baseD.type));
+                else if (varFeature === 'rotation') shape.rotation = (baseD.rotation + 90) % 360;
+                else if (varFeature === 'color') shape.color = pickRandom(COLORS.filter(c => c !== baseD.color));
+                else shape.fill = !baseD.fill;
+
+                // Add unique noise to ensure unique looks
                 if (varFeature !== 'color') shape.color = noiseColors[i];
             }
             attempts++;
@@ -444,9 +463,17 @@ function genAnalogies(level) {
         let shape;
         let attempts = 0;
         do {
-            if (i === correctIdx) shape = baseD;
+            if (i === correctIdx) shape = JSON.parse(JSON.stringify(baseD));
             else {
-                shape = createShape({}, level);
+                shape = JSON.parse(JSON.stringify(baseD));
+                if (varFeature === 'type') shape.type = pickRandom(SHAPES.filter(s => s !== baseD.type));
+                else if (varFeature === 'rotation') shape.rotation = (baseD.rotation + 90) % 360;
+                else if (varFeature === 'color') shape.color = pickRandom(COLORS.filter(c => c !== baseD.color));
+                else if (varFeature === 'inner') {
+                    if (shape.inner) shape.inner.type = pickRandom(SHAPES.filter(s => s !== baseD.inner?.type));
+                }
+                else shape.fill = !baseD.fill;
+
                 if (varFeature !== 'color') shape.color = noiseColors[i];
             }
             attempts++;
