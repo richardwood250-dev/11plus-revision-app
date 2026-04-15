@@ -136,34 +136,30 @@ function genOddOneOut(level) {
         innerType: base.inner?.type
     };
 
-    // Noise feature to make them not look identical
-    const noiseFeature = pickRandom(features.filter(f => f !== varFeature));
-
-    // To ensure noise is actually noise and doesn't create a secondary pattern,
-    // we try to give every shape a UNIQUE noise value.
-    const noiseValues = {
+    // Diversity Shuffles: To ensure no other property forms a 4-vs-1 pattern
+    const shuffles = {
         color: [...COLORS].sort(() => Math.random() - 0.5),
         type: [...SHAPES].sort(() => Math.random() - 0.5),
         rotation: [0, 45, 90, 180, 270].sort(() => Math.random() - 0.5),
-        fill: [true, false, true, false, true].sort(() => Math.random() - 0.5)
+        fill: [true, true, false, false, true].sort(() => Math.random() - 0.5),
+        dashed: [false, false, true, true, false].sort(() => Math.random() - 0.5)
     };
 
     for (let i = 0; i < 5; i++) {
         let shape;
         let attempts = 0;
         do {
-            // 1. Start with an EXACT copy of the primary base
             shape = JSON.parse(JSON.stringify(base));
             
-            // 2. Apply unique noise (to ensure they don't look identical)
-            // We only vary ONE noise feature to keep the logic focused
-            if (noiseFeature === 'color') shape.color = noiseValues.color[i];
-            else if (noiseFeature === 'type') shape.type = noiseValues.type[i];
-            else if (noiseFeature === 'rotation') shape.rotation = noiseValues.rotation[i];
-            else if (noiseFeature === 'fill') shape.fill = noiseValues.fill[i];
+            // 1. DIVERSIFY everything first (to avoid identical shapes)
+            if (varFeature !== 'color') shape.color = shuffles.color[i];
+            if (varFeature !== 'type') shape.type = shuffles.type[i];
+            if (varFeature !== 'rotation') shape.rotation = shuffles.rotation[i];
+            if (varFeature !== 'fill') shape.fill = shuffles.fill[i];
+            if (varFeature !== 'dashed') shape.dashed = shuffles.dashed[i];
 
+            // 2. APPLY PRIMARY LOGIC (Overriding the diversity if necessary)
             if (i !== correctIdx) {
-                // 3. Force the logic (common values)
                 if (varFeature === 'color') shape.color = commonValues.color;
                 else if (varFeature === 'type') shape.type = commonValues.type;
                 else if (varFeature === 'rotation') shape.rotation = commonValues.rotation;
@@ -230,12 +226,14 @@ function genSimilarities(level) {
     let options = [];
     const correctIdx = getRandomInt(0, 4);
 
-    const noiseFeature = pickRandom(level === 0 ? ['color'] : ['color', 'rotation', 'fill', 'inner'].filter(f => f !== varFeature));
-    const noiseValues = {
+    // Diversity Shuffles
+    const shuffles = {
         color: [...COLORS].sort(() => Math.random() - 0.5),
+        type: [...SHAPES].sort(() => Math.random() - 0.5),
         rotation: [0, 45, 90, 180, 270].sort(() => Math.random() - 0.5),
-        fill: [true, false, true, false, true].sort(() => Math.random() - 0.5),
-        inner: SHAPES.sort(() => Math.random() - 0.5)
+        fill: [true, true, false, false, true].sort(() => Math.random() - 0.5),
+        dashed: [false, false, true, true, false].sort(() => Math.random() - 0.5),
+        inner: [...SHAPES].sort(() => Math.random() - 0.5)
     };
 
     for (let i = 0; i < 5; i++) {
@@ -243,6 +241,13 @@ function genSimilarities(level) {
         let attempts = 0;
         do {
             shape = JSON.parse(JSON.stringify(base));
+
+            // DIVERSIFY everything not being tested
+            if (varFeature !== 'color') shape.color = shuffles.color[i];
+            if (varFeature !== 'type') shape.type = shuffles.type[i];
+            if (varFeature !== 'rotation') shape.rotation = shuffles.rotation[i];
+            if (varFeature !== 'fill') shape.fill = shuffles.fill[i];
+            if (varFeature !== 'dashed') shape.dashed = shuffles.dashed[i];
 
             if (i === correctIdx) {
                 // Force the logic (winning value)
@@ -266,10 +271,6 @@ function genSimilarities(level) {
                     shape[varFeature] = badValue;
                 }
             }
-
-            // Apply unique noise to prevent identical distractors
-            if (noiseFeature === 'color') shape.color = noiseValues.color[i];
-            else if (noiseFeature === 'rotation') shape.rotation = noiseValues.rotation[i];
 
             if (shape.inner && shape.inner.color === shape.color) {
                 shape.inner.color = pickRandom(COLORS.filter(c => c !== shape.color));
@@ -328,20 +329,28 @@ function genSeries(level) {
     const correctIdx = getRandomInt(0, 4);
     const noiseColors = [...COLORS].sort(() => Math.random() - 0.5);
 
+    const shuffles = {
+        color: [...COLORS].sort(() => Math.random() - 0.5),
+        rotation: [0, 45, 90, 180, 270, 315].sort(() => Math.random() - 0.5),
+        fill: [true, true, false, false, true].sort(() => Math.random() - 0.5)
+    };
+
     for (let i = 0; i < 5; i++) {
         let shape;
         let attempts = 0;
         do {
             if (i === correctIdx) shape = JSON.parse(JSON.stringify(target));
             else {
-                // Clone target but disrupt the logic property
                 shape = JSON.parse(JSON.stringify(target));
+                // Disrupt the logic feature
                 if (varFeature === 'rotation') shape.rotation = (shape.rotation + 90) % 360;
                 else if (varFeature === 'color') shape.color = pickRandom(COLORS.filter(c => c !== target.color));
                 else shape.size = target.size === 75 ? 60 : 75;
                 
-                // Add noise color uniquely to avoid 4-vs-1 collision
-                if (varFeature !== 'color') shape.color = noiseColors[i];
+                // Diversify other features to prevent 4-vs-1 patterns
+                if (varFeature !== 'color') shape.color = shuffles.color[i];
+                if (varFeature !== 'rotation') shape.rotation = shuffles.rotation[i];
+                if (varFeature !== 'fill') shape.fill = shuffles.fill[i];
             }
             attempts++;
         } while (options.some(o => areShapesEqual(o, shape)) && attempts < 15);
@@ -390,21 +399,28 @@ function genMatrices(level) {
     const correctIdx = getRandomInt(0, 4);
     const noiseColors = [...COLORS].sort(() => Math.random() - 0.5);
 
+    const shuffles = {
+        color: [...COLORS].sort(() => Math.random() - 0.5),
+        rotation: [0, 45, 90, 180, 270].sort(() => Math.random() - 0.5),
+        fill: [true, true, false, false, true].sort(() => Math.random() - 0.5)
+    };
+
     for (let i = 0; i < 5; i++) {
         let shape;
         let attempts = 0;
         do {
             if (i === correctIdx) shape = JSON.parse(JSON.stringify(baseD));
             else {
-                // Clone target but disrupt the logic property
                 shape = JSON.parse(JSON.stringify(baseD));
                 if (varFeature === 'type') shape.type = pickRandom(SHAPES.filter(s => s !== baseD.type));
                 else if (varFeature === 'rotation') shape.rotation = (baseD.rotation + 90) % 360;
                 else if (varFeature === 'color') shape.color = pickRandom(COLORS.filter(c => c !== baseD.color));
                 else shape.fill = !baseD.fill;
 
-                // Add unique noise to ensure unique looks
-                if (varFeature !== 'color') shape.color = noiseColors[i];
+                // Diversify non-tested properties
+                if (varFeature !== 'color') shape.color = shuffles.color[i];
+                if (varFeature !== 'rotation') shape.rotation = shuffles.rotation[i];
+                if (varFeature !== 'fill') shape.fill = shuffles.fill[i];
             }
             attempts++;
         } while (options.some(o => areShapesEqual(o, shape)) && attempts < 15);
@@ -459,6 +475,12 @@ function genAnalogies(level) {
     const correctIdx = getRandomInt(0, 4);
     const noiseColors = [...COLORS].sort(() => Math.random() - 0.5);
 
+    const shuffles = {
+        color: [...COLORS].sort(() => Math.random() - 0.5),
+        rotation: [0, 45, 90, 180, 270].sort(() => Math.random() - 0.5),
+        fill: [true, true, false, false, true].sort(() => Math.random() - 0.5)
+    };
+
     for (let i = 0; i < 5; i++) {
         let shape;
         let attempts = 0;
@@ -474,7 +496,10 @@ function genAnalogies(level) {
                 }
                 else shape.fill = !baseD.fill;
 
-                if (varFeature !== 'color') shape.color = noiseColors[i];
+                // Diversify non-tested properties
+                if (varFeature !== 'color') shape.color = shuffles.color[i];
+                if (varFeature !== 'rotation') shape.rotation = shuffles.rotation[i];
+                if (varFeature !== 'fill') shape.fill = shuffles.fill[i];
             }
             attempts++;
         } while (options.some(o => areShapesEqual(o, shape)) && attempts < 15);
