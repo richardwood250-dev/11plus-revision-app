@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Dimensions, ScrollView, Platform } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { Colors } from '../constants/Colors';
-import { generateNVRSkillQuestion } from '../utils/nvrSkills';
+import { generateNVRSkillQuestion, getNVRStrandInstruction, NVR_STRANDS } from '../utils/nvrSkills';
 import { NVRVisualizer } from '../components/NVRVisualizer';
 import { saveDojoRecord } from '../utils/storage';
 
@@ -24,14 +24,23 @@ export const NVRSkillsQuizScreen = () => {
     const [elapsedTime, setElapsedTime] = useState(0);
     const [isNewRecord, setIsNewRecord] = useState(false);
     const [showLogic, setShowLogic] = useState(false);
+    const [showIntro, setShowIntro] = useState(true);
+    const [strandTitle, setStrandTitle] = useState('');
     
     const timerRef = useRef(null);
 
     useEffect(() => {
-        loadNextQuestion();
-        startTimer();
+        const strand = NVR_STRANDS.find(s => s.id === strandId);
+        if (strand) setStrandTitle(strand.title);
+    }, [strandId]);
+
+    useEffect(() => {
+        if (!showIntro) {
+            loadNextQuestion();
+            startTimer();
+        }
         return () => stopTimer();
-    }, []);
+    }, [showIntro]);
 
     const startTimer = () => {
         timerRef.current = setInterval(() => {
@@ -159,73 +168,100 @@ export const NVRSkillsQuizScreen = () => {
             </View>
 
             <View style={styles.questionContainer}>
-                <Text style={styles.questionText}>{question.questionText}</Text>
-                
-                {showLogic && (
-                    <View style={styles.logicBanner}>
-                        <Text style={styles.logicTitle}>💡 Logic Explainer</Text>
-                        <Text style={styles.logicText}>{question.logic}</Text>
-                    </View>
-                )}
-                
-                {/* Visuals Area */}
-                <View style={styles.visualsArea}>
-                    {question.isMatrix ? (
-                        <View style={styles.matrixGrid}>
-                            <View style={styles.matrixCell}><NVRVisualizer shape={question.testShapes[0]} size={80} /></View>
-                            <View style={styles.matrixCell}><NVRVisualizer shape={question.testShapes[1]} size={80} /></View>
-                            <View style={styles.matrixCell}><NVRVisualizer shape={question.testShapes[2]} size={80} /></View>
-                            <View style={[styles.matrixCell, styles.matrixTarget]}><Text style={styles.matrixQ}>?</Text></View>
-                        </View>
-                    ) : (
-                        <View style={styles.testShapesRow}>
-                            {question.testShapes.map((s, i) => (
-                                <View key={i} style={styles.testShapeWrapper}>
-                                    {s ? <NVRVisualizer shape={s} size={70} /> : <Text style={styles.matrixQ}>?</Text>}
-                                    {question.isAnalogy && i === 0 && <Text style={styles.analogyArrow}>→</Text>}
-                                    {question.isAnalogy && i === 1 && <Text style={styles.analogyColon}>::</Text>}
-                                </View>
-                            ))}
-                        </View>
-                    ) || <View style={{ height: 20 }} />}
-                </View>
+                {showIntro ? (
+                    <View style={styles.introOverlay}>
+                        <View style={styles.introCard}>
+                            <Text style={styles.introEmoji}>🥋</Text>
+                            <Text style={styles.introTitle}>Ninja Training</Text>
+                            <View style={[styles.introBeltBadge, { backgroundColor: beltColor }]}>
+                                <Text style={[styles.introBeltText, { color: beltText }]}>{beltName}</Text>
+                            </View>
+                            <Text style={styles.introStrand}>{strandTitle}</Text>
+                            
+                            <View style={styles.tipBox}>
+                                <Text style={styles.tipTitle}>TRAINING TIP:</Text>
+                                <Text style={styles.tipText}>{getNVRStrandInstruction(strandId)}</Text>
+                            </View>
 
-                {/* Options Area */}
-                <View style={styles.optionsGrid}>
-                    {question.options.map((opt, i) => {
-                        const label = ['A', 'B', 'C', 'D', 'E'][i];
-                        const isCorrect = label === question.correctAnswer;
-                        const isSelected = label === selectedAnswer;
-                        
-                        let borderColor = '#E5E7EB';
-                        if (isAnswered) {
-                            if (isCorrect) borderColor = '#10B981';
-                            else if (isSelected) borderColor = '#EF4444';
-                        }
-
-                        return (
                             <TouchableOpacity 
-                                key={label}
-                                style={[styles.optionCard, { borderColor: borderColor }]}
-                                onPress={() => handleOptionPress(label)}
-                                disabled={isAnswered}
+                                style={[styles.startBtn, { backgroundColor: Colors.primary }]}
+                                onPress={() => setShowIntro(false)}
                             >
-                                <NVRVisualizer shape={opt} size={60} />
-                                <Text style={styles.optionLabel}>{label}</Text>
+                                <Text style={styles.startBtnText}>Start Training</Text>
                             </TouchableOpacity>
-                        );
-                    })}
-                </View>
-
-                {isAnswered && (
-                    <TouchableOpacity 
-                        style={[styles.nextBtn, { backgroundColor: beltColor }]}
-                        onPress={moveToNextQuestion}
-                    >
-                        <Text style={[styles.nextBtnText, { color: beltText }]}>
-                            {currentQuestionNumber >= MAX_QUESTIONS ? 'Finish Quiz' : 'Next Question'}
-                        </Text>
-                    </TouchableOpacity>
+                        </View>
+                    </View>
+                ) : (
+                    <>
+                        <Text style={styles.questionText}>{question.questionText}</Text>
+                        
+                        {showLogic && (
+                            <View style={styles.logicBanner}>
+                                <Text style={styles.logicTitle}>💡 Logic Explainer</Text>
+                                <Text style={styles.logicText}>{question.logic}</Text>
+                            </View>
+                        )}
+                        
+                        {/* Visuals Area */}
+                        <View style={styles.visualsArea}>
+                            {question.isMatrix ? (
+                                <View style={styles.matrixGrid}>
+                                    <View style={styles.matrixCell}><NVRVisualizer shape={question.testShapes[0]} size={80} /></View>
+                                    <View style={styles.matrixCell}><NVRVisualizer shape={question.testShapes[1]} size={80} /></View>
+                                    <View style={styles.matrixCell}><NVRVisualizer shape={question.testShapes[2]} size={80} /></View>
+                                    <View style={[styles.matrixCell, styles.matrixTarget]}><Text style={styles.matrixQ}>?</Text></View>
+                                </View>
+                            ) : (
+                                <View style={styles.testShapesRow}>
+                                    {question.testShapes.map((s, i) => (
+                                        <View key={i} style={styles.testShapeWrapper}>
+                                            {s ? <NVRVisualizer shape={s} size={70} /> : <Text style={styles.matrixQ}>?</Text>}
+                                            {question.isAnalogy && i === 0 && <Text style={styles.analogyArrow}>→</Text>}
+                                            {question.isAnalogy && i === 1 && <Text style={styles.analogyColon}>::</Text>}
+                                        </View>
+                                    ))}
+                                </View>
+                            ) || <View style={{ height: 20 }} />}
+                        </View>
+ 
+                        {/* Options Area */}
+                        <View style={styles.optionsGrid}>
+                            {question.options.map((opt, i) => {
+                                const label = ['A', 'B', 'C', 'D', 'E'][i];
+                                const isCorrect = label === question.correctAnswer;
+                                const isSelected = label === selectedAnswer;
+                                
+                                let borderColor = '#E5E7EB';
+                                if (isAnswered) {
+                                    if (isCorrect) borderColor = '#10B981';
+                                    else if (isSelected) borderColor = '#EF4444';
+                                }
+ 
+                                return (
+                                    <TouchableOpacity 
+                                        key={label}
+                                        style={[styles.optionCard, { borderColor: borderColor }]}
+                                        onPress={() => handleOptionPress(label)}
+                                        disabled={isAnswered}
+                                    >
+                                        <NVRVisualizer shape={opt} size={60} />
+                                        <Text style={styles.optionLabel}>{label}</Text>
+                                    </TouchableOpacity>
+                                );
+                            })}
+                        </View>
+ 
+                        {isAnswered && (
+                            <TouchableOpacity 
+                                style={[styles.nextBtn, { backgroundColor: beltColor }]}
+                                onPress={moveToNextQuestion}
+                            >
+                                <Text style={[styles.nextBtnText, { color: beltText }]}>
+                                    {currentQuestionNumber >= MAX_QUESTIONS ? 'Finish Quiz' : 'Next Question'}
+                                </Text>
+                            </TouchableOpacity>
+                        )}
+                    </>
                 )}
             </View>
         </ScrollView>
@@ -350,8 +386,90 @@ const styles = StyleSheet.create({
     },
     logicText: {
         fontSize: 16,
-        color: '#713F12',
+        color: '#444',
         lineHeight: 22,
+    },
+    // Intro Overlay Styles
+    introOverlay: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 20,
+    },
+    introCard: {
+        backgroundColor: '#FFF',
+        width: '100%',
+        borderRadius: 24,
+        padding: 30,
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 10 },
+        shadowOpacity: 0.1,
+        shadowRadius: 20,
+        elevation: 10,
+    },
+    introEmoji: {
+        fontSize: 50,
+        marginBottom: 10,
+    },
+    introTitle: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: '#1E293B',
+        marginBottom: 15,
+    },
+    introBeltBadge: {
+        paddingHorizontal: 16,
+        paddingVertical: 6,
+        borderRadius: 20,
+        marginBottom: 8,
+    },
+    introBeltText: {
+        fontWeight: 'bold',
+        fontSize: 14,
+        textTransform: 'uppercase',
+    },
+    introStrand: {
+        fontSize: 18,
+        color: '#64748B',
+        marginBottom: 25,
+        fontWeight: '600',
+    },
+    tipBox: {
+        backgroundColor: '#F8FAFC',
+        padding: 20,
+        borderRadius: 16,
+        width: '100%',
+        marginBottom: 30,
+        borderLeftWidth: 4,
+        borderLeftColor: Colors.primary,
+    },
+    tipTitle: {
+        fontSize: 12,
+        fontWeight: 'bold',
+        color: '#64748B',
+        marginBottom: 8,
+        letterSpacing: 1,
+    },
+    tipText: {
+        fontSize: 16,
+        color: '#334155',
+        lineHeight: 24,
+    },
+    startBtn: {
+        width: '100%',
+        paddingVertical: 18,
+        borderRadius: 30,
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.2,
+        elevation: 5,
+    },
+    startBtnText: {
+        color: '#FFF',
+        fontSize: 18,
+        fontWeight: 'bold',
     },
     optionsGrid: {
         flexDirection: 'row',

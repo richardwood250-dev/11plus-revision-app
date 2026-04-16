@@ -111,7 +111,7 @@ export const StudentHomeScreen = () => {
     } else if (title === 'English') {
       navigation.navigate('QuizConfig', { subject: 'English' });
     } else if (title === 'Verbal') {
-      navigation.navigate('QuizConfig', { subject: 'Verbal' });
+      navigation.navigate('VRSkillsHome');
     } else if (title === 'NonVerbal' || title === 'Non-Verbal') {
       navigation.navigate('NVRSkillsHome');
     } else {
@@ -299,6 +299,14 @@ export const StudentHomeScreen = () => {
               >
                 <Text style={[styles.vocabTitle, { color: '#8B5CF6', fontSize: 16 }]}>NVR</Text>
                 <Text style={{ fontSize: 12, color: '#666', marginTop: 5 }}>Visual Logic</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity 
+                style={[styles.vocabContainer, { borderLeftColor: '#6D28D9', marginTop: 0, marginBottom: 12, padding: 15 }]} 
+                onPress={() => navigation.navigate('VRSkillsHome')}
+              >
+                <Text style={[styles.vocabTitle, { color: '#6D28D9', fontSize: 16 }]}>Verbal</Text>
+                <Text style={{ fontSize: 12, color: '#666', marginTop: 5 }}>Logic & Codes</Text>
               </TouchableOpacity>
            </View>
 

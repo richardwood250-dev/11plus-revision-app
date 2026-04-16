@@ -31,6 +31,9 @@ import { EnglishSkillsQuizScreen } from './screens/EnglishSkillsQuizScreen';
 import { NVRSkillsHomeScreen } from './screens/NVRSkillsHomeScreen';
 import { NVRStrandScreen } from './screens/NVRStrandScreen';
 import { NVRSkillsQuizScreen } from './screens/NVRSkillsQuizScreen';
+import { VRSkillsHomeScreen } from './screens/VRSkillsHomeScreen';
+import { VRStrandScreen } from './screens/VRStrandScreen';
+import { VRSkillsQuizScreen } from './screens/VRSkillsQuizScreen';
 import { initializeAuth, getProfile } from './utils/storage';
 
 // --- Components ---
@@ -132,9 +135,10 @@ export default function App() {
                     <Stack.Screen name="EnglishSkillsHome" component={EnglishSkillsHomeScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="EnglishStrand" component={EnglishStrandScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="EnglishSkillsQuiz" component={EnglishSkillsQuizScreen} options={{ headerShown: false }} />
-                    <Stack.Screen name="NVRSkillsHome" component={NVRSkillsHomeScreen} options={{ headerShown: false }} />
-                    <Stack.Screen name="NVRStrand" component={NVRStrandScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="NVRSkillsQuiz" component={NVRSkillsQuizScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="VRSkillsHome" component={VRSkillsHomeScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="VRStrand" component={VRStrandScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="VRSkillsQuiz" component={VRSkillsQuizScreen} options={{ headerShown: false }} />
                   </>
                 )}
               </Stack.Navigator>

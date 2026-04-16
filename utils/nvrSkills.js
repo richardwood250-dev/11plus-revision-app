@@ -517,3 +517,14 @@ function genAnalogies(level) {
         logic: `Logic: The transformation between A and B (a change in ${featureNames[varFeature] || varFeature}) must be applied to C.`
     };
 }
+
+export function getNVRStrandInstruction(strandId) {
+    const instructions = {
+        'similarities': "Find the common rule! Look at the features shared by the first set of shapes (e.g., all have 3 sides) and find the answer that matches.",
+        'odd_one_out': "Find the rebel! Look for the shape that breaks the logic. Check features like: Color, Number of Sides, Shading, and Rotation.",
+        'series': "What comes next? Patterns change in steps. Look for rotations (90° or 45°), color cycling, or shapes moving around a grid.",
+        'matrices': "Solve the multi-way grid! Patterns usually work both horizontally and vertically. Look for addition/subtraction of shapes or property shifts.",
+        'analogies': "A is to B as C is to...? Identify the exact transformation that happened in the first pair and apply it to the final shape."
+    };
+    return instructions[strandId] || "Master visual logical deduction with these premium NVR training puzzles!";
+}

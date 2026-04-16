@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Dimensions, Platform, ScrollView } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { Colors } from '../constants/Colors';
-import { generateMathsSkillQuestion } from '../utils/mathsSkills';
+import { generateMathsSkillQuestion, getMathsStrandInstruction, MATHS_STRANDS } from '../utils/mathsSkills';
 import { NumPad } from '../components/NumPad';
 import { GeometryVisualizer } from '../components/GeometryVisualizer';
 import { saveDojoRecord } from '../utils/storage';
@@ -43,16 +43,25 @@ export const MathsSkillsQuizScreen = () => {
     const [quizComplete, setQuizComplete] = useState(false);
     const [elapsedTime, setElapsedTime] = useState(0);
     const [isNewRecord, setIsNewRecord] = useState(false);
+    const [showIntro, setShowIntro] = useState(true);
+    const [strandTitle, setStrandTitle] = useState('');
     
     // Timer interval ref
     const timerRef = useRef(null);
 
-    // Initial Load
     useEffect(() => {
-        loadNextQuestion();
-        startTimer();
+        const strand = MATHS_STRANDS.find(s => s.id === strandId);
+        if (strand) setStrandTitle(strand.title);
+    }, [strandId]);
+
+    // Initial Load - Only after intro
+    useEffect(() => {
+        if (!showIntro) {
+            loadNextQuestion();
+            startTimer();
+        }
         return () => stopTimer();
-    }, []);
+    }, [showIntro]);
 
     const startTimer = () => {
         timerRef.current = setInterval(() => {
@@ -188,38 +197,65 @@ export const MathsSkillsQuizScreen = () => {
                 </View>
             </View>
 
-            {/* Question Area */}
-            <View style={styles.questionContainer}>
-                <Text style={[styles.questionText, question.geometryData && { fontSize: 28 }]}>{question.questionText}</Text>
-                
-                {question.geometryData && (
-                    <View style={styles.geometryWrapper}>
-                        <GeometryVisualizer data={question.geometryData} />
+            {showIntro ? (
+                <View style={styles.introOverlay}>
+                    <View style={styles.introCard}>
+                        <Text style={styles.introEmoji}>🥋</Text>
+                        <Text style={styles.introTitle}>Ninja Training</Text>
+                        <View style={[styles.introBeltBadge, { backgroundColor: beltColor }]}>
+                            <Text style={[styles.introBeltText, { color: beltText }]}>{beltName}</Text>
+                        </View>
+                        <Text style={styles.introStrand}>{strandTitle}</Text>
+                        
+                        <View style={styles.tipBox}>
+                            <Text style={styles.tipTitle}>TRAINING TIP:</Text>
+                            <Text style={styles.tipText}>{getMathsStrandInstruction(strandId)}</Text>
+                        </View>
+
+                        <TouchableOpacity 
+                            style={[styles.startBtn, { backgroundColor: Colors.primary }]}
+                            onPress={() => setShowIntro(false)}
+                        >
+                            <Text style={styles.startBtnText}>Start Training</Text>
+                        </TouchableOpacity>
                     </View>
-                )}
-
-                <View style={[styles.answerBox, { borderColor: isAnswered ? feedbackColor : '#E5E7EB' }]}>
-                   <Text style={[styles.answerText, { color: feedbackColor }]}>
-                       {userAnswer || '?'}
-                   </Text>
                 </View>
-            </View>
+            ) : (
+                <>
+                    {/* Question Area */}
+                    <View style={styles.questionContainer}>
+                        <Text style={[styles.questionText, question.geometryData && { fontSize: 28 }]}>{question.questionText}</Text>
+                        
+                        {question.geometryData && (
+                            <View style={styles.geometryWrapper}>
+                                <GeometryVisualizer data={question.geometryData} />
+                            </View>
+                        )}
 
-            {question.isAssisted && (
-                <View style={styles.assistedContainer}>
-                    <TimesTableGrid />
-                </View>
+                        <View style={[styles.answerBox, { borderColor: isAnswered ? feedbackColor : '#E5E7EB' }]}>
+                           <Text style={[styles.answerText, { color: feedbackColor }]}>
+                               {userAnswer || '?'}
+                           </Text>
+                        </View>
+                    </View>
+
+                    {question.isAssisted && (
+                        <View style={styles.assistedContainer}>
+                            <TimesTableGrid />
+                        </View>
+                    )}
+
+                    {/* NumPad string entry */}
+                    <View style={styles.inputArea}>
+                        <NumPad 
+                            onKeyPress={handleKeyPress}
+                            onBackspace={handleBackspace}
+                            onSubmit={handleSubmit}
+                            disabled={isAnswered}
+                        />
+                    </View>
+                </>
             )}
-
-            {/* NumPad string entry */}
-            <View style={styles.inputArea}>
-                <NumPad 
-                    onKeyPress={handleKeyPress}
-                    onBackspace={handleBackspace}
-                    onSubmit={handleSubmit}
-                    disabled={isAnswered}
-                />
-            </View>
         </ScrollView>
     );
 };
@@ -308,6 +344,92 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         padding: 20,
+    },
+    resultEmoji: {
+        fontSize: 60,
+        marginBottom: 20,
+    },
+    // Intro Overlay Styles
+    introOverlay: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 20,
+    },
+    introCard: {
+        backgroundColor: '#FFF',
+        width: '100%',
+        borderRadius: 24,
+        padding: 30,
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 10 },
+        shadowOpacity: 0.1,
+        shadowRadius: 20,
+        elevation: 10,
+    },
+    introEmoji: {
+        fontSize: 50,
+        marginBottom: 10,
+    },
+    introTitle: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: '#1E293B',
+        marginBottom: 15,
+    },
+    introBeltBadge: {
+        paddingHorizontal: 16,
+        paddingVertical: 6,
+        borderRadius: 20,
+        marginBottom: 8,
+    },
+    introBeltText: {
+        fontWeight: 'bold',
+        fontSize: 14,
+        textTransform: 'uppercase',
+    },
+    introStrand: {
+        fontSize: 18,
+        color: '#64748B',
+        marginBottom: 25,
+        fontWeight: '600',
+    },
+    tipBox: {
+        backgroundColor: '#F8FAFC',
+        padding: 20,
+        borderRadius: 16,
+        width: '100%',
+        marginBottom: 30,
+        borderLeftWidth: 4,
+        borderLeftColor: Colors.primary,
+    },
+    tipTitle: {
+        fontSize: 12,
+        fontWeight: 'bold',
+        color: '#64748B',
+        marginBottom: 8,
+        letterSpacing: 1,
+    },
+    tipText: {
+        fontSize: 16,
+        color: '#334155',
+        lineHeight: 24,
+    },
+    startBtn: {
+        width: '100%',
+        paddingVertical: 18,
+        borderRadius: 30,
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.2,
+        elevation: 5,
+    },
+    startBtnText: {
+        color: '#FFF',
+        fontSize: 18,
+        fontWeight: 'bold',
     },
     resultsTitle: {
         fontSize: 32,

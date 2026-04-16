@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Animated, TextInput, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { useNavigation, useRoute } from '@react-navigation/native';
 import { Colors } from '../constants/Colors';
-import { generateEnglishSkillQuestion } from '../utils/englishSkills';
+import { generateEnglishSkillQuestion, getEnglishStrandInstruction } from '../utils/englishSkills';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { saveDojoResult } from '../utils/storage';
 
 const MAX_QUESTIONS = 10;
 
@@ -20,13 +21,18 @@ export const EnglishSkillsQuizScreen = () => {
     const [userInput, setUserInput] = useState('');
     const [feedback, setFeedback] = useState(null); // 'correct', 'incorrect'
     const [isFinished, setIsFinished] = useState(false);
+    const [showIntro, setShowIntro] = useState(true);
+    const [startTime, setStartTime] = useState(Date.now());
 
     const fadeAnim = useRef(new Animated.Value(1)).current;
     const inputRef = useRef(null);
 
     useEffect(() => {
-        loadNextQuestion();
-    }, []);
+        if (!showIntro) {
+            setStartTime(Date.now());
+            loadNextQuestion();
+        }
+    }, [showIntro]);
 
     const loadNextQuestion = () => {
         if (questionIndex >= MAX_QUESTIONS) {
@@ -159,7 +165,30 @@ export const EnglishSkillsQuizScreen = () => {
             </View>
 
             <ScrollView contentContainerStyle={styles.scrollContent} keyboardShouldPersistTaps="handled">
-                {isFinished ? (
+                {showIntro ? (
+                    <View style={styles.introOverlay}>
+                        <View style={styles.introCard}>
+                            <Text style={styles.introEmoji}>🥋</Text>
+                            <Text style={styles.introTitle}>Ninja Training</Text>
+                            <View style={[styles.introBeltBadge, { backgroundColor: strandColor === '#FFFFFF' ? '#F1F5F9' : strandColor }]}>
+                                <Text style={[styles.introBeltText, { color: '#FFF' }]}>{beltName}</Text>
+                            </View>
+                            <Text style={styles.introStrand}>{strandTitle}</Text>
+                            
+                            <View style={styles.tipBox}>
+                                <Text style={styles.tipTitle}>TRAINING TIP:</Text>
+                                <Text style={styles.tipText}>{getEnglishStrandInstruction(strandId)}</Text>
+                            </View>
+
+                            <TouchableOpacity 
+                                style={[styles.startBtn, { backgroundColor: strandColor }]}
+                                onPress={() => setShowIntro(false)}
+                            >
+                                <Text style={styles.startBtnText}>Start Training</Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+                ) : isFinished ? (
                     <View style={styles.finishedContainer}>
                         <Text style={styles.finishedEmoji}>🎉</Text>
                         <Text style={styles.finishedTitle}>Training Complete!</Text>
@@ -395,6 +424,88 @@ const styles = StyleSheet.create({
     },
     doneBtnText: {
         color: 'white',
+        fontSize: 18,
+        fontWeight: 'bold',
+    },
+    // Intro Overlay Styles
+    introOverlay: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 20,
+    },
+    introCard: {
+        backgroundColor: '#FFF',
+        width: '100%',
+        borderRadius: 24,
+        padding: 30,
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 10 },
+        shadowOpacity: 0.1,
+        shadowRadius: 20,
+        elevation: 10,
+    },
+    introEmoji: {
+        fontSize: 50,
+        marginBottom: 10,
+    },
+    introTitle: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: '#1E293B',
+        marginBottom: 15,
+    },
+    introBeltBadge: {
+        paddingHorizontal: 16,
+        paddingVertical: 6,
+        borderRadius: 20,
+        marginBottom: 8,
+    },
+    introBeltText: {
+        fontWeight: 'bold',
+        fontSize: 14,
+        textTransform: 'uppercase',
+    },
+    introStrand: {
+        fontSize: 18,
+        color: '#64748B',
+        marginBottom: 25,
+        fontWeight: '600',
+    },
+    tipBox: {
+        backgroundColor: '#F8FAFC',
+        padding: 20,
+        borderRadius: 16,
+        width: '100%',
+        marginBottom: 30,
+        borderLeftWidth: 4,
+        borderLeftColor: Colors.primary,
+    },
+    tipTitle: {
+        fontSize: 12,
+        fontWeight: 'bold',
+        color: '#64748B',
+        marginBottom: 8,
+        letterSpacing: 1,
+    },
+    tipText: {
+        fontSize: 16,
+        color: '#334155',
+        lineHeight: 24,
+    },
+    startBtn: {
+        width: '100%',
+        paddingVertical: 18,
+        borderRadius: 30,
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.2,
+        elevation: 5,
+    },
+    startBtnText: {
+        color: '#FFF',
         fontSize: 18,
         fontWeight: 'bold',
     }

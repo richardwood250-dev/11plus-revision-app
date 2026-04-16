@@ -129,6 +129,18 @@ export function generateMathsSkillQuestion(strandId, beltId) {
     };
 }
 
+export function getMathsStrandInstruction(strandId) {
+    const instructions = {
+        'mental': "Fast-fire multiplication and basic arithmetic! Focus on rapid recall. No pens or paper allowed - try to solve everything in your head!",
+        'arithmetic': "Master the four operations! Take your time to ensure your carries and subtractions are accurate. This is the foundation of 11+ Maths.",
+        'fractions': "Relationships between parts and wholes! Remember your conversion rules between fractions, decimals, and percentages.",
+        'time_money': "Practical maths for everyday life! Pay close attention to hours vs minutes, and always double-check your change calculations.",
+        'geometry': "Shapes, space, and measure! Look for clues in the angles and remember your formulas for area and perimeter.",
+        'ratio': "Understanding proportions! Use scaling factors and simplified fractions to find the missing values in these relationship puzzles."
+    };
+    return instructions[strandId] || "Sharpen your mathematical mind with these targeted drills!";
+}
+
 // ------ MENTAL MATHS STRAND ------
 function generateMental(belt) {
     const type = getRandomInt(0, 1);

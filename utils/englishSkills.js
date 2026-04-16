@@ -173,3 +173,14 @@ export function generateEnglishSkillQuestion(strandId, beltId) {
         id: Math.random().toString(36).substr(2, 9)
     };
 }
+
+export function getEnglishStrandInstruction(strandId) {
+    const instructions = {
+        'spelling': "Identify the spelling error! Look closely at every segment of the sentence. Common 11+ traps include silent letters and double consonants.",
+        'grammar': "Watch for grammar and syntax slips! Check verb tenses, subject-verb agreement, and clause structure in each sentence.",
+        'punctuation': "Precision is everything! Look for missing commas, misplaced apostrophes, and correct usage of speech marks.",
+        'vocab': "Word association and definitions! Think carefully about the nuance of each word. Synonyms are similar, but rarely exactly the same.",
+        'verbal': "Apply your verbal logic! Use word roots, compound patterns, and relationships to find the logical hidden answer."
+    };
+    return instructions[strandId] || "Hone your literacy skills with these rigorous 11+ English drills!";
+}
