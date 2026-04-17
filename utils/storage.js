@@ -17,6 +17,9 @@ const _getDocRef = (profileId = null) => {
     const user = auth.currentUser;
     if (!user) return null;
     const docId = profileId ? `${user.uid}_${profileId}` : user.uid;
+    return doc(db, "users", docId);
+};
+
 // Sync data to cloud
 const _syncToCloud = async (key, data, profileId = null) => {
     try {

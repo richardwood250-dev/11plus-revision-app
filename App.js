@@ -137,6 +137,8 @@ export default function App() {
                     <Stack.Screen name="EnglishSkillsHome" component={EnglishSkillsHomeScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="EnglishStrand" component={EnglishStrandScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="EnglishSkillsQuiz" component={EnglishSkillsQuizScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="NVRSkillsHome" component={NVRSkillsHomeScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="NVRStrand" component={NVRStrandScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="NVRSkillsQuiz" component={NVRSkillsQuizScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="VRSkillsHome" component={VRSkillsHomeScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="VRStrand" component={VRStrandScreen} options={{ headerShown: false }} />
