@@ -1,7 +1,8 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Alert, ScrollView, Linking } from 'react-native';
 import { useNavigation, CommonActions } from '@react-navigation/native';
-import { clearStats } from '../utils/storage';
+import { clearStats, logout } from '../utils/storage';
+import { auth } from '../firebase-config';
 
 import { Colors } from '../constants/Colors';
 
@@ -37,17 +38,42 @@ export const SettingsScreen = () => {
             <Text style={styles.header}>Settings</Text>
 
             <View style={styles.section}>
-                <Text style={styles.sectionTitle}>Privacy & Data</Text>
+                <Text style={styles.sectionTitle}>Ninja Account</Text>
                 <View style={styles.card}>
-                    <Text style={styles.infoText}>
-                        🛡️ Your privacy is important.
-                    </Text>
-                    <Text style={styles.bodyText}>
-
-                        We use **anonymous authentication** to securely sync your progress.
-                        No personal data (email, name, phone) is collected or stored.
-                        Your unique ID is used solely for feature access.
-                    </Text>
+                    {auth.currentUser && !auth.currentUser.isAnonymous ? (
+                        <>
+                            <Text style={styles.infoText}>
+                                ✅ Logged in as: {auth.currentUser.email.split('@')[0].toUpperCase()}
+                            </Text>
+                            <Text style={styles.bodyText}>
+                                Your progress is currently synced to the cloud. You can log in on any device with your Ninja Name and password.
+                            </Text>
+                            <TouchableOpacity 
+                                style={[styles.feedbackBtn, { marginTop: 15, backgroundColor: Colors.background, elevation: 0 }]} 
+                                onPress={async () => {
+                                    await logout();
+                                    navigation.reset({ index: 0, routes: [{ name: 'Setup' }] });
+                                }}
+                            >
+                                <Text style={styles.feedbackBtnText}>Logout from Account</Text>
+                            </TouchableOpacity>
+                        </>
+                    ) : (
+                        <>
+                            <Text style={styles.infoText}>
+                                🛡️ Sync your progress
+                            </Text>
+                            <Text style={styles.bodyText}>
+                                Create a Ninja Account to log in on multiple devices and keep your scores safe!
+                            </Text>
+                            <TouchableOpacity 
+                                style={[styles.feedbackBtn, { marginTop: 15, backgroundColor: Colors.primary }]} 
+                                onPress={() => navigation.navigate('Auth', { mode: 'signup' })}
+                            >
+                                <Text style={[styles.feedbackBtnText, { color: '#fff' }]}>Sign Up / Login 🚀</Text>
+                            </TouchableOpacity>
+                        </>
+                    )}
                 </View>
             </View>
 

@@ -1,7 +1,14 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { db, auth } from '../firebase-config';
-import { doc, setDoc, getDoc } from 'firebase/firestore';
-import { signInAnonymously } from 'firebase/auth';
+import { doc, setDoc, getDoc, updateDoc } from 'firebase/firestore';
+import { 
+    signInAnonymously, 
+    createUserWithEmailAndPassword, 
+    signInWithEmailAndPassword, 
+    linkWithCredential,
+    EmailAuthProvider,
+    signOut
+} from 'firebase/auth';
 
 const STATS_KEY = 'QUIZ_STATS_V1';
 
@@ -10,20 +17,18 @@ const _getDocRef = (profileId = null) => {
     const user = auth.currentUser;
     if (!user) return null;
     const docId = profileId ? `${user.uid}_${profileId}` : user.uid;
-    return doc(db, "users", docId);
-};
-
-// Sync ONLY stats to cloud (Privacy: No Name/Profile)
-const _syncToCloud = async (stats, profileId = null) => {
+// Sync data to cloud
+const _syncToCloud = async (key, data, profileId = null) => {
     try {
-        const ref = _getDocRef(profileId);
-        if (ref && stats) {
-            // We strip any potential future PII here just to be safe, though stats object currently has none.
-            // Stats object structure is purely numerical/categorical.
-            await setDoc(ref, stats, { merge: true });
-        }
+        const user = auth.currentUser;
+        if (!user || user.isAnonymous && key !== 'stats') return; // Only sync stats for anon users
+
+        const docId = profileId ? `${user.uid}_${profileId}` : user.uid;
+        const ref = doc(db, "users", docId);
+        
+        await setDoc(ref, { [key]: data }, { merge: true });
     } catch (e) {
-        console.log("Cloud sync failed (offline?):", e);
+        console.log(`Cloud sync failed for ${key}:`, e);
     }
 };
 
@@ -208,8 +213,8 @@ export const saveSession = async (subject, results, timeInSeconds, topic = 'Gene
         // 1. Save Local
         await AsyncStorage.setItem(CURRENT_STATS_KEY, JSON.stringify(stats));
 
-        // 2. Sync to Cloud (Fire & Forget mostly, but we await to ensure it kicks off)
-        await _syncToCloud(stats, activeProfileId);
+        // 2. Sync to Cloud
+        await _syncToCloud('stats', stats, activeProfileId);
 
         return stats;
     } catch (e) {
@@ -281,18 +286,20 @@ export const getStats = async () => {
         const CURRENT_STATS_KEY = activeProfileId ? `${STATS_KEY}_${activeProfileId}` : STATS_KEY;
 
         // 1. Attempt Cloud Fetch (if online & auth)
-        // We prefer cloud as it might have data from other devices
-        const ref = _getDocRef(activeProfileId);
-        if (ref) {
+        const user = auth.currentUser;
+        if (user) {
             try {
+                const docId = activeProfileId ? `${user.uid}_${activeProfileId}` : user.uid;
+                const ref = doc(db, "users", docId);
                 const docSnap = await getDoc(ref);
                 if (docSnap.exists()) {
-                    stats = docSnap.data();
-                    // Update Local Cache immediately so next offline load is fresh
-                    await AsyncStorage.setItem(CURRENT_STATS_KEY, JSON.stringify(stats));
+                    const cloudData = docSnap.data();
+                    if (cloudData.stats) {
+                        stats = cloudData.stats;
+                        await AsyncStorage.setItem(CURRENT_STATS_KEY, JSON.stringify(stats));
+                    }
                 }
             } catch (cloudErr) {
-                // Cloud failed (offline), continue to local
                 console.log("Cloud fetch failed, using local");
             }
         }
@@ -319,12 +326,12 @@ export const clearStats = async () => {
     const CURRENT_STATS_KEY = activeProfileId ? `${STATS_KEY}_${activeProfileId}` : STATS_KEY;
 
     await AsyncStorage.removeItem(CURRENT_STATS_KEY);
-    // Optional: Clear cloud too?
-    // For now, let's leave cloud as a "backup" unless user specifically asked for full deletion logic.
-    // The requirement was to RESET progress.
-    // To comply with 'Delete Everything', we should probably wipe cloud too.
-    const ref = _getDocRef(activeProfileId);
-    if (ref) {
+    
+    // Clear cloud too
+    const user = auth.currentUser;
+    if (user) {
+        const docId = activeProfileId ? `${user.uid}_${activeProfileId}` : user.uid;
+        const ref = doc(db, "users", docId);
         // We can't easily delete the doc without more cleanup, but we can set it to empty/null or overwrite.
         // Let's just overwrite with empty stats structure if we wanted to be thorough, but
         // for "clearStats" usually just local is standard unless explicitly "Delete Account".
@@ -377,8 +384,10 @@ export const saveProfile = async (name, testDate, icon = '🤖') => {
         await AsyncStorage.setItem(PROFILES_ALL_KEY, JSON.stringify(profiles));
         await AsyncStorage.setItem(ACTIVE_PROFILE_KEY, id);
 
-        // PRIVACY NOTE: We do NOT sync this profile to Firebase. 
-        // 'name' stays local on the device.
+        // Sync profiles to cloud if logged in
+        if (auth.currentUser && !auth.currentUser.isAnonymous) {
+            await _syncToCloud('profiles', profiles);
+        }
 
         return newProfile;
     } catch (e) {
@@ -514,6 +523,11 @@ export const saveDojoRecord = async (strandId, beltId, score, maxScore, timeInSe
 
         if (isNewRecord) {
             await AsyncStorage.setItem(key, JSON.stringify(records));
+            
+            // Sync to cloud if permanent
+            if (auth.currentUser && !auth.currentUser.isAnonymous) {
+                await _syncToCloud('dojoRecords', records, activeProfileId);
+            }
         }
 
         return isNewRecord;
@@ -537,10 +551,122 @@ export const getDojoRecords = async () => {
 export const initializeAuth = async () => {
     try {
         if (!auth.currentUser) {
-            await signInAnonymously(auth);
-            console.log("Signed in anonymously:", auth.currentUser.uid);
+            // Attempt to recover previous session implicitly by Firebase SDK
+            // If none, sign in anonymously
+            console.log("Auth init starting...");
         }
     } catch (e) {
         console.error("Auth init failed:", e);
+    }
+};
+
+export const signUp = async (username, password) => {
+    try {
+        const email = `${username.toLowerCase()}@11plusninja.com`;
+        const user = auth.currentUser;
+
+        if (user && user.isAnonymous) {
+            // Link anonymous account to permanent credentials
+            const credential = EmailAuthProvider.credential(email, password);
+            await linkWithCredential(user, credential);
+        } else {
+            // Create fresh account
+            await createUserWithEmailAndPassword(auth, email, password);
+        }
+
+        // After signup, sync everything to cloud immediately
+        await syncAllToCloud();
+        return { success: true };
+    } catch (e) {
+        console.error("Signup failed:", e);
+        return { success: false, error: e.message };
+    }
+};
+
+export const logIn = async (username, password) => {
+    try {
+        const email = `${username.toLowerCase()}@11plusninja.com`;
+        await signInWithEmailAndPassword(auth, email, password);
+        
+        // Download all cloud data
+        await fetchAllFromCloud();
+        return { success: true };
+    } catch (e) {
+        return { success: false, error: e.message };
+    }
+};
+
+export const logout = async () => {
+    await signOut(auth);
+    // We stay as logged out (anon) until App.js re-inits or user logs in.
+    // For now, let's just clear sensitive local storage that shouldn't persist across users
+    await AsyncStorage.removeItem(PROFILES_ALL_KEY);
+    await AsyncStorage.removeItem(ACTIVE_PROFILE_KEY);
+    await AsyncStorage.removeItem(STATS_KEY);
+    await AsyncStorage.removeItem(DOJO_RECORDS_KEY);
+};
+
+export const syncAllToCloud = async () => {
+    if (!auth.currentUser || auth.currentUser.isAnonymous) return;
+
+    const profiles = await getProfiles();
+    if (profiles.length > 0) await _syncToCloud('profiles', profiles);
+
+    // Sync stats and records for EACH profile
+    for (const p of profiles) {
+        const statsKey = p.id === 'legacy_user_1' ? STATS_KEY : `${STATS_KEY}_${p.id}`;
+        const dojoKey = p.id === 'legacy_user_1' ? DOJO_RECORDS_KEY : `${DOJO_RECORDS_KEY}_${p.id}`;
+        
+        const stats = await AsyncStorage.getItem(statsKey);
+        const records = await AsyncStorage.getItem(dojoKey);
+
+        if (stats) await _syncToCloud('stats', JSON.parse(stats), p.id);
+        if (records) await _syncToCloud('dojoRecords', JSON.parse(records), p.id);
+    }
+};
+
+export const fetchAllFromCloud = async () => {
+    const user = auth.currentUser;
+    if (!user || user.isAnonymous) return;
+
+    try {
+        const ref = doc(db, "users", user.uid);
+        const snap = await getDoc(ref);
+        if (snap.exists()) {
+            const data = snap.data();
+            
+            // 1. Sync Profiles
+            if (data.profiles) {
+                await AsyncStorage.setItem(PROFILES_ALL_KEY, JSON.stringify(data.profiles));
+                if (data.profiles.length > 0) {
+                    await AsyncStorage.setItem(ACTIVE_PROFILE_KEY, data.profiles[0].id);
+                }
+            }
+
+            // 2. Sync Stats & Records for each profile
+            // We need to fetch individual profile documents if they are stored separately,
+            // but our _syncToCloud handles them as individual docs with ID uid_profileId.
+            // Let's assume for now we only fetch the main user doc if we put everything there, 
+            // OR we iterate.
+            
+            // Actually, my _syncToCloud uses `profileId ? ${user.uid}_${profileId} : user.uid`.
+            // So we need to fetch those too.
+            if (data.profiles) {
+                for (const p of data.profiles) {
+                    const pRef = doc(db, "users", `${user.uid}_${p.id}`);
+                    const pSnap = await getDoc(pRef);
+                    if (pSnap.exists()) {
+                        const pData = pSnap.data();
+                        const statsKey = p.id === 'legacy_user_1' ? STATS_KEY : `${STATS_KEY}_${p.id}`;
+                        const dojoKey = p.id === 'legacy_user_1' ? DOJO_RECORDS_KEY : `${DOJO_RECORDS_KEY}_${p.id}`;
+
+                        if (pData.stats) await AsyncStorage.setItem(statsKey, JSON.stringify(pData.stats));
+                        if (pData.dojoRecords) await AsyncStorage.setItem(dojoKey, JSON.stringify(pData.dojoRecords));
+                    }
+                }
+            }
+        }
+    } catch (e) {
+        console.error("Fetch all failed:", e);
     }
 };

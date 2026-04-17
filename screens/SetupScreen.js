@@ -142,6 +142,13 @@ export const SetupScreen = ({ navigation, onFinish }) => {
                 <TouchableOpacity style={styles.skipButton} onPress={handleSkip}>
                     <Text style={styles.skipBtnText}>Skip for now</Text>
                 </TouchableOpacity>
+
+                <TouchableOpacity 
+                    style={[styles.skipButton, { borderTopWidth: 1, borderTopColor: '#f0f0f0', marginTop: 15 }]} 
+                    onPress={() => navigation.navigate('Auth', { mode: 'login' })}
+                >
+                    <Text style={[styles.skipBtnText, { color: Colors.primary }]}>Already have a Ninja Name? Login</Text>
+                </TouchableOpacity>
             </View>
         </ScrollView>
     );
