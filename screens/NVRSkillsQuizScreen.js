@@ -144,7 +144,7 @@ export const NVRSkillsQuizScreen = () => {
         );
     }
 
-    if (!question) return <View style={styles.container}><Text>Generating...</Text></View>;
+    if (!showIntro && !question) return <View style={styles.container}><Text>Generating...</Text></View>;
 
     return (
         <ScrollView style={styles.container} contentContainerStyle={{ flexGrow: 1, backgroundColor: Colors.background }}>
