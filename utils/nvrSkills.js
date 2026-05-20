@@ -216,12 +216,27 @@ function genSimilarities(level) {
     }
     const winValue = varFeature === 'inner' ? (base.inner?.type || 'circle') : base[varFeature];
 
-    const examples = [
-        createShape({ [varFeature]: winValue, type: base.type }, level),
-        createShape({ [varFeature]: winValue, type: base.type }, level)
-    ];
-    // Ensure examples are unique
-    if (areShapesEqual(examples[0], examples[1])) examples[1].rotation = (examples[1].rotation + 90) % 360;
+    let example1 = createShape({}, level);
+    let example2 = createShape({}, level);
+    
+    // Apply winning logic feature to both examples
+    if (varFeature === 'inner') {
+        if (!example1.inner) example1.inner = { type: winValue, color: pickRandom(COLORS), fill: true };
+        if (!example2.inner) example2.inner = { type: winValue, color: pickRandom(COLORS), fill: true };
+        example1.inner.type = winValue;
+        example2.inner.type = winValue;
+    } else {
+        example1[varFeature] = winValue;
+        example2[varFeature] = winValue;
+    }
+
+    // Force key properties to be DIFFERENT between the two examples (except the varFeature)
+    // to clarify what the logic actually is.
+    if (varFeature !== 'type') example2.type = pickRandom(SHAPES.filter(s => s !== example1.type));
+    if (varFeature !== 'color') example2.color = pickRandom(COLORS.filter(c => c !== example1.color));
+    if (varFeature !== 'fill' && level >= 1) example2.fill = !example1.fill;
+
+    const examples = [example1, example2];
 
     let options = [];
     const correctIdx = getRandomInt(0, 4);

@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Colors } from '../constants/Colors';
 import { MATHS_STRANDS } from '../utils/mathsSkills';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Helmet } from 'react-helmet-async';
 
 export const MathsSkillsHomeScreen = () => {
     const navigation = useNavigation();
@@ -32,17 +33,21 @@ export const MathsSkillsHomeScreen = () => {
 
     return (
         <View style={styles.container}>
+            <Helmet>
+                <title>Maths Dojo | 11+ Ninja</title>
+                <meta name="description" content="Train your maths skills for the 11+ exam in the Maths Dojo." />
+            </Helmet>
             <View style={[styles.header, { paddingTop: Math.max(insets.top, 20) }]}>
                 <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backBtn}>
                     <Text style={styles.backBtnText}>← Back</Text>
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>Maths Dojo</Text>
+                <Text accessibilityRole="header" aria-level="1" style={styles.headerTitle}>Maths Dojo</Text>
                 <View style={{ width: 60 }} />
             </View>
 
             <ScrollView contentContainerStyle={styles.scrollContent}>
                 <View style={styles.introContainer}>
-                    <Text style={styles.introTitle}>Choose Your Discipline</Text>
+                    <Text accessibilityRole="header" aria-level="2" style={styles.introTitle}>Choose Your Discipline</Text>
                     <Text style={styles.introText}>
                         Select a math strand to begin your training. Master each belt from White to Black to become a true Maths Ninja!
                     </Text>

@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Colors } from '../constants/Colors';
 import { VR_STRANDS } from '../utils/vrSkills';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Helmet } from 'react-helmet-async';
 
 export const VRSkillsHomeScreen = () => {
     const navigation = useNavigation();
@@ -33,17 +34,21 @@ export const VRSkillsHomeScreen = () => {
 
     return (
         <View style={styles.container}>
+            <Helmet>
+                <title>Verbal Dojo | 11+ Ninja</title>
+                <meta name="description" content="Train your verbal reasoning skills for the 11+ exam in the Verbal Dojo." />
+            </Helmet>
             <View style={[styles.header, { paddingTop: Math.max(insets.top, 20) }]}>
                 <TouchableOpacity onPress={() => navigation.navigate('Home')} style={styles.backBtn}>
                     <Text style={styles.backBtnText}>← Home</Text>
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>Verbal Dojo</Text>
+                <Text accessibilityRole="header" aria-level="1" style={styles.headerTitle}>Verbal Dojo</Text>
                 <View style={{ width: 60 }} />
             </View>
 
             <ScrollView contentContainerStyle={styles.scrollContent}>
                 <View style={styles.introContainer}>
-                    <Text style={styles.introTitle}>Master the Word</Text>
+                    <Text accessibilityRole="header" aria-level="2" style={styles.introTitle}>Master the Word</Text>
                     <Text style={styles.introText}>
                         Verbal Reasoning is about patterns in language and logic. Practice each discipline to improve your speed and accuracy for the 11+!
                     </Text>

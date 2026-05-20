@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Colors } from '../constants/Colors';
 import { ENGLISH_STRANDS } from '../utils/englishSkills';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Helmet } from 'react-helmet-async';
 
 export const EnglishSkillsHomeScreen = () => {
     const navigation = useNavigation();
@@ -32,17 +33,21 @@ export const EnglishSkillsHomeScreen = () => {
 
     return (
         <View style={styles.container}>
+            <Helmet>
+                <title>Word Dojo | 11+ Ninja</title>
+                <meta name="description" content="Train your English and vocabulary skills for the 11+ exam in the Word Dojo." />
+            </Helmet>
             <View style={[styles.header, { paddingTop: Math.max(insets.top, 20) }]}>
                 <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backBtn}>
                     <Text style={styles.backBtnText}>← Back</Text>
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>Word Dojo</Text>
+                <Text accessibilityRole="header" aria-level="1" style={styles.headerTitle}>Word Dojo</Text>
                 <View style={{ width: 60 }} />
             </View>
 
             <ScrollView contentContainerStyle={styles.scrollContent}>
                 <View style={styles.introContainer}>
-                    <Text style={styles.introTitle}>Choose Your Discipline</Text>
+                    <Text accessibilityRole="header" aria-level="2" style={styles.introTitle}>Choose Your Discipline</Text>
                     <Text style={styles.introText}>
                         Select an English strand to begin your training. Master each belt from White to Black to become a true Word Ninja!
                     </Text>

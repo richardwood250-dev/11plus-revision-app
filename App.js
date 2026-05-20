@@ -104,6 +104,10 @@ export default function App() {
                   Blog: 'blog',
                   BlogPost: 'blog/:slug',
                   Dashboard: 'dashboard',
+                  MathsSkillsHome: 'maths',
+                  EnglishSkillsHome: 'english',
+                  NVRSkillsHome: 'nvr',
+                  VRSkillsHome: 'verbal',
                 }
               }
             }}>

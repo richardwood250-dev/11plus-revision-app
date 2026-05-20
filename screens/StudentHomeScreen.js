@@ -8,6 +8,7 @@ import { getRecommendation } from '../utils/recommendations';
 import { getStats, getProfiles, switchProfile } from '../utils/storage';
 import { getDailyWord } from '../data/vocab';
 import { useFocusEffect } from '@react-navigation/native';
+import { Helmet } from 'react-helmet-async';
 
 import { Colors } from '../constants/Colors';
 import { FlatIcon } from '../components/Icons';
@@ -160,6 +161,10 @@ export const StudentHomeScreen = () => {
 
   return (
     <View style={[styles.container, { paddingTop: insets.top, paddingBottom: insets.bottom }]}>
+      <Helmet>
+        <title>Student Training Dojo | 11+ Ninja</title>
+        <meta name="description" content="Quick 11+ quizzes for Maths, English, Verbal and Non-Verbal Reasoning." />
+      </Helmet>
       <ScrollView
         style={styles.scrollView}
         contentContainerStyle={styles.scroll}
@@ -246,7 +251,7 @@ export const StudentHomeScreen = () => {
 
         <View style={styles.contentContainer}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%', marginBottom: 15 }}>
-            <Text style={styles.subtitle}>Hi, {activeProfile?.name || 'Student'}!</Text>
+            <Text accessibilityRole="header" aria-level="1" style={styles.subtitle}>Hi, {activeProfile?.name || 'Student'}!</Text>
             <TouchableOpacity onPress={() => setShowProfileSwitcher(true)} style={styles.switchUserBtn}>
               <Text style={styles.switchUserBtnText}>{profiles.length > 1 ? 'Switch User' : '+ Add User'}</Text>
             </TouchableOpacity>
@@ -276,7 +281,7 @@ export const StudentHomeScreen = () => {
            
            {/* LEFT COLUMN: Dojos */}
            <View style={{ width: '48%' }}>
-              <Text style={[styles.sectionHeader, { fontSize: 18 }]}>Training Dojos</Text>
+              <Text accessibilityRole="header" aria-level="2" style={[styles.sectionHeader, { fontSize: 18 }]}>Training Dojos</Text>
               <TouchableOpacity 
                 style={[styles.vocabContainer, { borderLeftColor: '#3B82F6', marginTop: 5, marginBottom: 12, padding: 15 }]} 
                 onPress={() => navigation.navigate('MathsSkillsHome')}
@@ -312,7 +317,7 @@ export const StudentHomeScreen = () => {
 
            {/* RIGHT COLUMN: Trials */}
            <View style={{ width: '48%' }}>
-              <Text style={[styles.sectionHeader, { fontSize: 18 }]}>11+ Mock Trials</Text>
+              <Text accessibilityRole="header" aria-level="2" style={[styles.sectionHeader, { fontSize: 18 }]}>11+ Mock Trials</Text>
               <SubjectBtn title="Maths" color={Colors.primary} type="maths" />
               <SubjectBtn title="English" color={Colors.orange} type="english" />
               <SubjectBtn title="Verbal" color={Colors.purple} type="verbal" />

@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { Colors } from '../constants/Colors';
 import { NVR_STRANDS } from '../utils/nvrSkills';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Helmet } from 'react-helmet-async';
 
 export const NVRSkillsHomeScreen = () => {
     const navigation = useNavigation();
@@ -32,17 +33,21 @@ export const NVRSkillsHomeScreen = () => {
 
     return (
         <View style={styles.container}>
+            <Helmet>
+                <title>NVR Dojo | 11+ Ninja</title>
+                <meta name="description" content="Train your non-verbal reasoning skills for the 11+ exam in the NVR Dojo." />
+            </Helmet>
             <View style={[styles.header, { paddingTop: Math.max(insets.top, 20) }]}>
                 <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backBtn}>
                     <Text style={styles.backBtnText}>← Back</Text>
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>NVR Dojo</Text>
+                <Text accessibilityRole="header" aria-level="1" style={styles.headerTitle}>NVR Dojo</Text>
                 <View style={{ width: 60 }} />
             </View>
 
             <ScrollView contentContainerStyle={styles.scrollContent}>
                 <View style={styles.introContainer}>
-                    <Text style={styles.introTitle}>Non-Verbal Mastery</Text>
+                    <Text accessibilityRole="header" aria-level="2" style={styles.introTitle}>Non-Verbal Mastery</Text>
                     <Text style={styles.introText}>
                         Sharpen your visual logic. Master the patterns and sequences to become a Non-Verbal Ninja!
                     </Text>
