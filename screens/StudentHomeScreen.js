@@ -112,9 +112,9 @@ export const StudentHomeScreen = () => {
     } else if (title === 'English') {
       navigation.navigate('QuizConfig', { subject: 'English' });
     } else if (title === 'Verbal') {
-      navigation.navigate('VRSkillsHome');
+      navigation.navigate('QuizConfig', { subject: 'Verbal' });
     } else if (title === 'NonVerbal' || title === 'Non-Verbal') {
-      navigation.navigate('NVRSkillsHome');
+      navigation.navigate('QuizConfig', { subject: 'Non-Verbal' });
     } else {
       alert(`Pressed ${title} (Test Mode)`);
     }
