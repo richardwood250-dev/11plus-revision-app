@@ -298,13 +298,13 @@ export const StudentHomeScreen = () => {
                 <Text style={{ fontSize: 12, color: '#666', marginTop: 5 }}>Grammar & Spelling</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity 
+              {/* <TouchableOpacity 
                 style={[styles.vocabContainer, { borderLeftColor: '#8B5CF6', marginTop: 0, marginBottom: 12, padding: 15 }]} 
                 onPress={() => navigation.navigate('NVRSkillsHome')}
               >
                 <Text style={[styles.vocabTitle, { color: '#8B5CF6', fontSize: 16 }]}>NVR</Text>
                 <Text style={{ fontSize: 12, color: '#666', marginTop: 5 }}>Visual Logic</Text>
-              </TouchableOpacity>
+              </TouchableOpacity> */}
 
               <TouchableOpacity 
                 style={[styles.vocabContainer, { borderLeftColor: '#6D28D9', marginTop: 0, marginBottom: 12, padding: 15 }]} 
