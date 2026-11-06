@@ -172,6 +172,94 @@ export const ClassroomScreen = () => {
     checkAuthStatus();
   }, []);
 
+  // Keep callStatus in a ref to avoid stale closures in event listeners
+  const callStatusRef = useRef(callStatus);
+  useEffect(() => {
+    callStatusRef.current = callStatus;
+  }, [callStatus]);
+
+  const lastCanvasElementsRef = useRef([]);
+
+  // --- Peer Broadcast Helper (Stable Reference via Refs) ---
+  const broadcastToPeer = useCallback((payload) => {
+    // 1. Send via Daily.co WebRTC data channel if in call
+    if (dailyCallRef.current) {
+      try {
+        const state = typeof dailyCallRef.current.meetingState === 'function' 
+          ? dailyCallRef.current.meetingState() 
+          : null;
+        if (state === 'joined-meeting' || callStatusRef.current === 'in-call') {
+          dailyCallRef.current.sendAppMessage(payload, '*');
+        }
+      } catch (err) {
+        console.warn('Daily sendAppMessage error:', err);
+      }
+    }
+
+    // 2. Send via BroadcastChannel for same-machine tabs
+    if (broadcastChannelRef.current) {
+      try {
+        broadcastChannelRef.current.postMessage(payload);
+      } catch (err) {
+        // ignore
+      }
+    }
+  }, []);
+
+  const broadcastToPeerRef = useRef(broadcastToPeer);
+  useEffect(() => {
+    broadcastToPeerRef.current = broadcastToPeer;
+  }, [broadcastToPeer]);
+
+  // --- Incoming Peer Message Handler ---
+  const handleIncomingPeerMessage = useCallback((msg) => {
+    if (!msg || !msg.type) return;
+
+    if (msg.type === 'CANVAS_SYNC') {
+      lastCanvasElementsRef.current = msg.elements || [];
+      // Forward synced drawing to Excalidraw iframe
+      if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
+        canvasIframeRef.current.contentWindow.postMessage({
+          type: 'SYNC_ELEMENTS',
+          elements: msg.elements,
+        }, '*');
+      }
+    } else if (msg.type === 'REQUEST_STATE_SYNC') {
+      if (lastRenderedPageRef.current && broadcastToPeerRef.current) {
+        broadcastToPeerRef.current(lastRenderedPageRef.current);
+      }
+      if (lastCanvasElementsRef.current && lastCanvasElementsRef.current.length > 0 && broadcastToPeerRef.current) {
+        broadcastToPeerRef.current({
+          type: 'CANVAS_SYNC',
+          elements: lastCanvasElementsRef.current,
+        });
+      }
+    } else if (msg.type === 'PDF_PAGE_LOADED') {
+      // Load peer's active PDF page on local canvas
+      if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
+        canvasIframeRef.current.contentWindow.postMessage({
+          type: 'LOAD_PDF_PAGE',
+          fileId: msg.fileId,
+          dataUrl: msg.dataUrl,
+          width: msg.width,
+          height: msg.height,
+          pageNumber: msg.pageNumber,
+        }, '*');
+      }
+      setCurrentPdfPage(msg.pageNumber);
+      if (msg.totalPdfPages) setTotalPdfPages(msg.totalPdfPages);
+      if (msg.fileName) setPdfFileName(msg.fileName);
+      lastRenderedPageRef.current = msg;
+    } else if (msg.type === 'NOTES_SYNC') {
+      setSessionNotes(msg.notes);
+    }
+  }, []);
+
+  const handleIncomingPeerMessageRef = useRef(handleIncomingPeerMessage);
+  useEffect(() => {
+    handleIncomingPeerMessageRef.current = handleIncomingPeerMessage;
+  }, [handleIncomingPeerMessage]);
+
   // 3. Listen to messages from Excalidraw Iframe and BroadcastChannel
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -182,7 +270,9 @@ export const ClassroomScreen = () => {
       broadcastChannelRef.current = channel;
 
       channel.onmessage = (event) => {
-        handleIncomingPeerMessage(event.data);
+        if (handleIncomingPeerMessageRef.current) {
+          handleIncomingPeerMessageRef.current(event.data);
+        }
       };
     } catch (e) {
       console.warn('BroadcastChannel error:', e);
@@ -195,13 +285,18 @@ export const ClassroomScreen = () => {
 
       if (data.type === 'CANVAS_READY') {
         setIsCanvasReady(true);
-        broadcastToPeer({ type: 'REQUEST_STATE_SYNC' });
+        if (broadcastToPeerRef.current) {
+          broadcastToPeerRef.current({ type: 'REQUEST_STATE_SYNC' });
+        }
       } else if (data.type === 'CANVAS_CHANGE') {
-        // Forward drawing changes to peer
-        broadcastToPeer({
-          type: 'CANVAS_SYNC',
-          elements: data.elements,
-        });
+        lastCanvasElementsRef.current = data.elements || [];
+        // Forward drawing changes to peer in real time
+        if (broadcastToPeerRef.current) {
+          broadcastToPeerRef.current({
+            type: 'CANVAS_SYNC',
+            elements: data.elements,
+          });
+        }
       }
     };
 
@@ -236,64 +331,6 @@ export const ClassroomScreen = () => {
     }
     return () => clearInterval(timerIntervalRef.current);
   }, [timerRunning]);
-
-  // --- Peer Broadcast Helper ---
-  const broadcastToPeer = useCallback((payload) => {
-    // 1. Send via Daily.co WebRTC channel if in call
-    if (dailyCallRef.current && callStatus === 'in-call') {
-      try {
-        dailyCallRef.current.sendAppMessage(payload, '*');
-      } catch (err) {
-        console.warn('Daily sendAppMessage error:', err);
-      }
-    }
-
-    // 2. Send via BroadcastChannel for multi-tab testing
-    if (broadcastChannelRef.current) {
-      try {
-        broadcastChannelRef.current.postMessage(payload);
-      } catch (err) {
-        // ignore
-      }
-    }
-  }, [callStatus]);
-
-  // --- Incoming Peer Message Handler ---
-  const handleIncomingPeerMessage = useCallback((msg) => {
-    if (!msg || !msg.type) return;
-
-    if (msg.type === 'CANVAS_SYNC') {
-      // Forward synced drawing to Excalidraw iframe
-      if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
-        canvasIframeRef.current.contentWindow.postMessage({
-          type: 'SYNC_ELEMENTS',
-          elements: msg.elements,
-        }, '*');
-      }
-    } else if (msg.type === 'REQUEST_STATE_SYNC') {
-      if (lastRenderedPageRef.current) {
-        broadcastToPeer(lastRenderedPageRef.current);
-      }
-    } else if (msg.type === 'PDF_PAGE_LOADED') {
-      // Load peer's active PDF page on local canvas
-      if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
-        canvasIframeRef.current.contentWindow.postMessage({
-          type: 'LOAD_PDF_PAGE',
-          fileId: msg.fileId,
-          dataUrl: msg.dataUrl,
-          width: msg.width,
-          height: msg.height,
-          pageNumber: msg.pageNumber,
-        }, '*');
-      }
-      setCurrentPdfPage(msg.pageNumber);
-      if (msg.totalPdfPages) setTotalPdfPages(msg.totalPdfPages);
-      if (msg.fileName) setPdfFileName(msg.fileName);
-      lastRenderedPageRef.current = msg;
-    } else if (msg.type === 'NOTES_SYNC') {
-      setSessionNotes(msg.notes);
-    }
-  }, []);
 
   // --- PDF Loading & Rendering ---
   const loadPdfFromSource = async (source, fileName = '11plus_paper.pdf') => {
@@ -596,11 +633,19 @@ export const ClassroomScreen = () => {
 
       callFrame.on('joined-meeting', () => {
         setCallStatus('in-call');
+        callStatusRef.current = 'in-call';
         setCallErrorReason('');
+        // Request state sync from peer once connected to the call
+        setTimeout(() => {
+          if (broadcastToPeerRef.current) {
+            broadcastToPeerRef.current({ type: 'REQUEST_STATE_SYNC' });
+          }
+        }, 800);
       });
 
       callFrame.on('left-meeting', () => {
         setCallStatus('idle');
+        callStatusRef.current = 'idle';
       });
 
       callFrame.on('error', (err) => {
@@ -617,8 +662,8 @@ export const ClassroomScreen = () => {
       });
 
       callFrame.on('app-message', (evt) => {
-        if (evt && evt.data) {
-          handleIncomingPeerMessage(evt.data);
+        if (evt && evt.data && handleIncomingPeerMessageRef.current) {
+          handleIncomingPeerMessageRef.current(evt.data);
         }
       });
 

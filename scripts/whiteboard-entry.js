@@ -8,6 +8,8 @@ function WhiteboardApp() {
   const [api, setApi] = useState(null);
   const isRemoteUpdate = useRef(false);
   const lastSentTime = useRef(0);
+  const pendingUpdateRef = useRef(null);
+  const throttleTimerRef = useRef(null);
 
   useEffect(() => {
     window.parent.postMessage({ type: 'CANVAS_READY' }, '*');
@@ -70,14 +72,36 @@ function WhiteboardApp() {
       } else if (data.type === 'SYNC_ELEMENTS') {
         isRemoteUpdate.current = true;
         try {
+          const currentElements = api.getSceneElements();
+          const bgElement = currentElements.find(el => el.id && el.id.startsWith('pdf_bg_'));
+
+          // Reconcile and merge remote elements into local scene by ID and version
+          const elementMap = new Map();
+          if (bgElement) {
+            elementMap.set(bgElement.id, bgElement);
+          }
+          for (const el of currentElements) {
+            if (el.id && !el.id.startsWith('pdf_bg_')) {
+              elementMap.set(el.id, el);
+            }
+          }
+          for (const rEl of data.elements || []) {
+            if (!rEl || !rEl.id) continue;
+            if (rEl.id.startsWith('pdf_bg_')) continue; // Preserve local bg
+            const local = elementMap.get(rEl.id);
+            if (!local || (rEl.version || 0) >= (local.version || 0)) {
+              elementMap.set(rEl.id, rEl);
+            }
+          }
+
           api.updateScene({
-            elements: data.elements,
+            elements: Array.from(elementMap.values()),
             commitToHistory: false,
           });
         } catch (err) {
           console.warn('Sync elements error:', err);
         }
-        setTimeout(() => { isRemoteUpdate.current = false; }, 150);
+        setTimeout(() => { isRemoteUpdate.current = false; }, 80);
       } else if (data.type === 'FIT_PAGE') {
         const bg = api.getSceneElements().find(el => el.id.startsWith('pdf_bg_'));
         if (bg) {
@@ -98,14 +122,37 @@ function WhiteboardApp() {
 
   const handleChange = (elements) => {
     if (isRemoteUpdate.current) return;
-    const now = Date.now();
-    if (now - lastSentTime.current < 60) return;
-    lastSentTime.current = now;
 
-    window.parent.postMessage({
-      type: 'CANVAS_CHANGE',
-      elements: elements,
-    }, '*');
+    // Filter out deleted elements to keep payload compact
+    const activeElements = (elements || []).filter(el => !el.isDeleted);
+    pendingUpdateRef.current = activeElements;
+
+    const now = Date.now();
+    const elapsed = now - lastSentTime.current;
+
+    const dispatchChange = () => {
+      if (!pendingUpdateRef.current || isRemoteUpdate.current) return;
+      lastSentTime.current = Date.now();
+      window.parent.postMessage({
+        type: 'CANVAS_CHANGE',
+        elements: pendingUpdateRef.current,
+      }, '*');
+      pendingUpdateRef.current = null;
+    };
+
+    // Throttle to 50ms while drawing, with trailing debounce to guarantee final stroke is sent
+    if (elapsed >= 50) {
+      if (throttleTimerRef.current) {
+        clearTimeout(throttleTimerRef.current);
+        throttleTimerRef.current = null;
+      }
+      dispatchChange();
+    } else if (!throttleTimerRef.current) {
+      throttleTimerRef.current = setTimeout(() => {
+        throttleTimerRef.current = null;
+        dispatchChange();
+      }, 50 - elapsed);
+    }
   };
 
   return React.createElement(
