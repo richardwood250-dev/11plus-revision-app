@@ -2,6 +2,12 @@
 (function () {
     console.log('Ninja Share: Initializing...');
 
+    function isClassroomPage() {
+        return window.location.pathname.startsWith('/classroom') || 
+               window.location.search.includes('room=') ||
+               document.body.classList.contains('classroom-active');
+    }
+
     const shareUrl = encodeURIComponent(window.location.href);
     const shareText = encodeURIComponent(document.title);
 
@@ -11,6 +17,11 @@
         container = document.createElement('div');
         container.id = 'social-share-container';
         document.body.appendChild(container);
+    }
+
+    // Hide if on classroom / whiteboard page
+    if (isClassroomPage()) {
+        container.style.display = 'none';
     }
 
     // HTML Structure
@@ -43,6 +54,13 @@
 
     // Update Links function
     function updateShareLinks() {
+        if (isClassroomPage()) {
+            container.style.display = 'none';
+            return;
+        } else {
+            container.style.display = '';
+        }
+
         const currentUrl = encodeURIComponent(window.location.href);
         const currentTitle = encodeURIComponent(document.title);
 
@@ -73,13 +91,12 @@
     }
 
     // SPA Navigation Listener
-    // Monkey patch pushState and replaceState to detect URL changes
     const pushState = history.pushState;
     const replaceState = history.replaceState;
 
     history.pushState = function () {
         pushState.apply(history, arguments);
-        setTimeout(updateShareLinks, 100); // Small delay to let title update (if any)
+        setTimeout(updateShareLinks, 100);
     };
 
     history.replaceState = function () {
@@ -91,9 +108,10 @@
         setTimeout(updateShareLinks, 100);
     });
 
-    // Also observe document title changes as React Helmet might update title after route change
-    new MutationObserver(() => {
-        updateShareLinks();
-    }).observe(document.querySelector('title'), { subtree: true, characterData: true, childList: true });
+    if (document.querySelector('title')) {
+        new MutationObserver(() => {
+            updateShareLinks();
+        }).observe(document.querySelector('title'), { subtree: true, characterData: true, childList: true });
+    }
 
 })();

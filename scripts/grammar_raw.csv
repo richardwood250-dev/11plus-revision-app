@@ -215,7 +215,7 @@ Story_17_Fishing,8,I have,one',I,shouted.,B,Missing exclamation mark in Part B: 
 Story_17_Fishing,9,I pulled,the fish,in,fast.,N,No error.
 Story_17_Fishing,10,It was,"silver,",and,shiny.,B,"Extra comma inserted in Part B: 'silver,'."
 Story_17_Fishing,11,We put,it back,in the,water,D,Missing full stop in Part D: 'water' should be 'water.'.
-Story_17_Fishing,12,It swam,"away,",very,quickly.,C,"Extra comma inserted in Part C: 'away,'."
+Story_17_Fishing,12,It swam,"away,",very,quickly.,B,"Extra comma inserted in Part B: 'away,'."
 Story_18_SkatePark,1,I went,to the,skate,park.,N,No error.
 Story_18_SkatePark,2,I took,my new,skateboard,there,D,Missing full stop in Part D: 'there' should be 'there.'.
 Story_18_SkatePark,3,Watch this',I said,to,Ben.,A,Missing exclamation mark in Part A: 'this'' should be 'this!'.
@@ -248,7 +248,7 @@ Story_20_ForestWalk,4,A squirrel,ran up,"a,",tree.,C,"Extra comma inserted in Pa
 Story_20_ForestWalk,5,It had,"a bushy,",tail,behind.,B,"Extra comma inserted in Part B: 'bushy,'."
 Story_20_ForestWalk,6,we walked,along the,muddy,path.,A,Capitalization error in Part A: 'we' should be 'We'.
 Story_20_ForestWalk,7,Be careful',said,Dad,warned.,A,"Missing punctuation in Part A: 'careful'' should be 'careful,' (and delete 'said' or 'warned' to make grammar sense? No, 'said Dad warned' is clumsy. Text should be '''Be careful'' Dad warned.' Error is missing comma in A)."
-Story_20_ForestWalk,7,Be careful',Dad,warned.,(removed 'said' to fix grammar),A,"Missing comma in Part A: 'careful'' should be 'careful,'."
+Story_20_ForestWalk,7,Be careful',Dad,warned,loudly.,A,"Missing comma in Part A: 'careful'' should be 'careful,'."
 Story_20_ForestWalk,8,I slipped,on the,Wet,mud.,C,Capitalization error in Part C: 'Wet' should be 'wet'.
 Story_20_ForestWalk,9,I got,"mud on,",my,jeans.,B,"Extra comma inserted in Part B: 'on,'."
 Story_20_ForestWalk,10,Dad helped,me up,straight,away.,N,No error.
@@ -410,7 +410,7 @@ Story_34_StormyNight,4,Whats that,noise',asked,Lily.,A,Apostrophe error in Part 
 Story_34_StormyNight,5,Its thunder',I shouted,grabbing,my coat.,A,Apostrophe error in Part A: 'Its' should be 'It's'.
 Story_34_StormyNight,6,Rain started,to fall,heavy and,fast.,N,No error.
 Story_34_StormyNight,7,We ran,towards the,"bus, shelter",quickly.,C,"Extra comma inserted in Part C: 'bus,'."
-Story_34_StormyNight,8,Lightning flashed,lighting up,the whole,sky.,B,"Missing comma in Part B: 'flashed' should be 'flashed,' (before participle)."
+Story_34_StormyNight,8,Lightning flashed,lighting up,the whole,sky.,A,"Missing comma in Part A: 'flashed' should be 'flashed,' (before participle)."
 Story_34_StormyNight,9,I dont,like this',cried,Lily.,A,Apostrophe error in Part A: 'dont' should be 'don't'.
 Story_34_StormyNight,10,Dont worry,it will,pass',I said.,A,Apostrophe error in Part A: 'Dont' should be 'Don't'.
 Story_34_StormyNight,11,"Soon, the",sun came,out again,brightly.,A,"Extra comma inserted in Part A: 'Soon,' (Optional, but often N. Let's make error in B: 'came,'. Part B: 'sun came,'.)"
@@ -698,7 +698,7 @@ Story_57_PlaneRide,11,Our gate,"opened,",at,last.,B,"Extra comma inserted in Par
 Story_57_PlaneRide,12,We walked,onto,the,plane.,N,No error.
 Story_58_BirdSpotting,1,We hid,in the,bushes,quietly.,N,No error.
 Story_58_BirdSpotting,2,Dad had,his,Binoculars,ready.,C,Capitalization error in Part C: 'Binoculars' should be 'binoculars'.
-Story_58_BirdSpotting,3,Be very,still',he,whispered.,A,"Missing punctuation in Part A: 'still'' should be 'still,'."
+Story_58_BirdSpotting,3,Be very,still',he,whispered.,B,"Missing punctuation in Part B: 'still'' should be 'still,'."
 Story_58_BirdSpotting,4,A small,bird,"flew,",down.,C,"Extra comma inserted in Part C: 'flew,'."
 Story_58_BirdSpotting,5,It had,a red,chest,and beak,D,Missing full stop in Part D: 'beak' should be 'beak.'.
 Story_58_BirdSpotting,6,'It is,a robin',said,Dad.,B,"Missing comma in Part B: 'robin'' should be 'robin,'."
@@ -926,7 +926,7 @@ Story_76_CampingWoods,11,It was,"cold,",at,night.,B,"Extra comma inserted in Par
 Story_76_CampingWoods,12,An owl,hooted,in a,Tree.,D,Capitalization error in Part D: 'Tree' should be 'tree'.
 Story_77_FishingLake,1,Dad took,me fishing,at the,lake.,N,No error.
 Story_77_FishingLake,2,We sat,on the,Grass,bank.,C,Capitalization error in Part C: 'Grass' should be 'grass'.
-Story_77_FishingLake,3,Hold the,rod',he,said.,A,"Missing comma in Part A: 'rod' should be 'rod,'."
+Story_77_FishingLake,3,Hold the,rod',he,said.,B,"Missing comma in Part B: 'rod'' should be 'rod,'."
 Story_77_FishingLake,4,I waited,"for a,",long,time.,B,"Extra comma inserted in Part B: 'a,'."
 Story_77_FishingLake,5,Nothing,happened,at,all,D,Missing full stop in Part D: 'all' should be 'all.'.
 Story_77_FishingLake,6,Be patient',said,Dad,softly.,A,"Missing comma in Part A: 'patient' should be 'patient,'."
@@ -978,7 +978,7 @@ Story_81_RainyWalk,3,I am,wet',said,Tom.,B,"Missing punctuation in Part B: 'wet'
 Story_81_RainyWalk,4,I had,"a blue,",coat,on.,B,"Extra comma inserted in Part B: 'blue,'."
 Story_81_RainyWalk,5,my boots,were,full of,water.,A,Capitalization error in Part A: 'my' should be 'My'.
 Story_81_RainyWalk,6,Tom jumped,in a,puddle,he splashed,D,Run-on sentence in Part D: 'puddle. He'.
-Story_81_RainyWalk,7,me with,muddy,water,Hey',D,"Missing punctuation in Part D: 'water. ""Hey""'."
+Story_81_RainyWalk,7,me with,muddy,water,"'Hey'",D,"Missing punctuation in Part D: 'water. ""Hey""'."
 Story_81_RainyWalk,8,I shouted,loudly,at,him.,B,"Extra comma inserted in Part B: 'loudly,' (Wait, I need to insert it). Let's make error A: 'I, shouted'."
 Story_81_RainyWalk_Fix,8,"I, shouted",loudly,at,him.,A,"Extra comma inserted in Part A: 'I,'."
 Story_81_RainyWalk,9,Are you,cross',he,asked.,B,Missing question mark in Part B: 'cross'' should be 'cross?'.
@@ -1126,7 +1126,7 @@ Story_90_LibraryVisit,12,I took,it home,in my,bag,D,Missing full stop in Part D:
 Story_91_FishingTrip,1,Dad took,me fishing,at the,river.,N,No error.
 Story_91_FishingTrip,2,We sat,on the,green,bank.,C,Capitalization error in Part C: 'Green' should be 'green'.
 Story_91_FishingTrip_Fix,2,We sat,on the,Green,bank.,C,Capitalization error in Part C: 'Green' should be 'green'.
-Story_91_FishingTrip,3,Hold the,rod',he,said.,A,"Missing comma in Part A: 'rod' should be 'rod,'."
+Story_91_FishingTrip,3,Hold the,rod',he,said.,B,"Missing comma in Part B: 'rod'' should be 'rod,'."
 Story_91_FishingTrip,4,I waited,for a,long,time.,B,"Extra comma inserted in Part B: 'a,'."
 Story_91_FishingTrip_Fix2,4,I waited,"for a,",long,time.,B,"Extra comma inserted in Part B: 'a,'."
 Story_91_FishingTrip,5,Nothing,happened,at,all,D,Missing full stop in Part D: 'all' should be 'all.'.
@@ -1886,8 +1886,8 @@ Story_137_SpaceDream,4,I would,see the,moon,close.,B,"Extra comma inserted in Pa
 Story_137_SpaceDream_Fix2,4,I would,"see the,",moon,close.,B,"Extra comma inserted in Part B: 'the,'."
 Story_137_SpaceDream,5,The stars,would,shine,bright.,B,Capitalization error in Part B: 'Would' should be 'would'.
 Story_137_SpaceDream_Fix3,5,The stars,Would,shine,bright.,B,Capitalization error in Part B: 'Would' should be 'would'.
-Story_137_SpaceDream,6,Look at,earth',I would,say.,A,Capitalization error in Part A: 'earth' should be 'Earth'.
-Story_137_SpaceDream_Fix4,6,Look at,earth',I would,say.,A,Capitalization error in Part A: 'earth' should be 'Earth'.
+Story_137_SpaceDream,6,Look at,earth',I would,say.,B,Capitalization error in Part B: 'earth' should be 'Earth'.
+Story_137_SpaceDream_Fix4,6,Look at,earth',I would,say.,B,Capitalization error in Part B: 'earth' should be 'Earth'.
 Story_137_SpaceDream,7,It would,look,like a,ball.,B,"Extra comma inserted in Part B: 'look,'."
 Story_137_SpaceDream_Fix5,7,It would,"look,",like a,ball.,B,"Extra comma inserted in Part B: 'look,'."
 Story_137_SpaceDream,8,I would,float,in the,air.,N,No error.
@@ -2143,8 +2143,8 @@ Story_151_BoardingSkate,12,It was,a good,day,out,D,Missing full stop in Part D: 
 Story_152_PizzaCook,1,We made,pizza,for,tea.,N,No error.
 Story_152_PizzaCook,2,Mum got,the,dough,out.,B,Capitalization error in Part B: 'The' should be 'the'.
 Story_152_PizzaCook_Fix,2,Mum got,The,dough,out.,B,Capitalization error in Part B: 'The' should be 'the'.
-Story_152_PizzaCook,3,Roll it,flat',she,said.,A,"Missing punctuation in Part A: 'flat'' should be 'flat!' or 'flat,'."
-Story_152_PizzaCook_Fix2,3,Roll it,flat,she,said.,A,"Missing comma in Part A: 'flat'' should be 'flat,'."
+Story_152_PizzaCook,3,Roll it,flat',she,said.,B,"Missing punctuation in Part B: 'flat'' should be 'flat!' or 'flat,'."
+Story_152_PizzaCook_Fix2,3,Roll it,flat',she,said.,B,"Missing comma in Part B: 'flat'' should be 'flat,'."
 Story_152_PizzaCook,4,I used,a rolling,pin,well.,B,"Extra comma inserted in Part B: 'rolling,'."
 Story_152_PizzaCook_Fix3,4,I used,"a rolling,",pin,well.,B,"Extra comma inserted in Part B: 'rolling,'."
 Story_152_PizzaCook,5,We put,sauce,on,it.,C,"Extra comma inserted in Part C: 'on,'."
@@ -2231,8 +2231,8 @@ Story_156_GardenCamp,11,It was,hard,to,sleep.,B,"Extra comma inserted in Part B:
 Story_156_GardenCamp_Fix5,11,It was,"hard,",to,sleep.,B,"Extra comma inserted in Part B: 'hard,'."
 Story_156_GardenCamp,12,We went,inside,at,midnight,D,Missing full stop in Part D: 'midnight' should be 'midnight.'.
 Story_157_MagicStore,1,The shop,was full,of,magic.,N,No error.
-Story_157_MagicStore,2,There were,wands,and,jars.,C,Capitalization error in Part C: 'Jars' should be 'jars'.
-Story_157_MagicStore_Fix,2,There were,wands,and,Jars.,C,Capitalization error in Part C: 'Jars' should be 'jars'.
+Story_157_MagicStore,2,There were,wands,and,jars.,D,Capitalization error in Part D: 'Jars' should be 'jars'.
+Story_157_MagicStore_Fix,2,There were,wands,and,Jars.,D,Capitalization error in Part D: 'Jars' should be 'jars'.
 Story_157_MagicStore,3,Look at,this',said,Harry.,B,Missing exclamation mark in Part B: 'this'' should be 'this!'.
 Story_157_MagicStore,4,He held,a blue,glass,bottle.,B,"Extra comma inserted in Part B: 'blue,'."
 Story_157_MagicStore_Fix2,4,He held,"a blue,",glass,bottle.,B,"Extra comma inserted in Part B: 'blue,'."
@@ -2270,7 +2270,7 @@ Story_158_PlaneTrip,12,We walked,onto,the,plane,D,Missing full stop in Part D: '
 Story_159_BirdWatching,1,We hid,in the,bushes,today.,N,No error.
 Story_159_BirdWatching,2,Dad had,his,binoculars,ready.,C,Capitalization error in Part C: 'Binoculars' should be 'binoculars'.
 Story_159_BirdWatching_Fix,2,Dad had,his,Binoculars,ready.,C,Capitalization error in Part C: 'Binoculars' should be 'binoculars'.
-Story_159_BirdWatching,3,Be very,still',he,whispered.,A,Missing exclamation mark in Part A: 'still'' should be 'still!'.
+Story_159_BirdWatching,3,Be very,still',he,whispered.,B,Missing exclamation mark in Part B: 'still'' should be 'still!'.
 Story_159_BirdWatching,4,A small,bird,flew,down.,B,"Extra comma inserted in Part B: 'bird,'."
 Story_159_BirdWatching_Fix2,4,A small,"bird,",flew,down.,B,"Extra comma inserted in Part B: 'bird,'."
 Story_159_BirdWatching,5,It had,a red,chest,and beak.,C,Capitalization error in Part C: 'Chest' should be 'chest'.

@@ -35,6 +35,7 @@ import { NVRSkillsQuizScreen } from './screens/NVRSkillsQuizScreen';
 import { VRSkillsHomeScreen } from './screens/VRSkillsHomeScreen';
 import { VRStrandScreen } from './screens/VRStrandScreen';
 import { VRSkillsQuizScreen } from './screens/VRSkillsQuizScreen';
+import { ClassroomScreen } from './screens/ClassroomScreen';
 import { initializeAuth, getProfile } from './utils/storage';
 
 // --- Components ---
@@ -54,6 +55,15 @@ export default function App() {
   const [showInterstitial, setShowInterstitial] = useState(false);
   const [isSetupComplete, setIsSetupComplete] = useState(false);
   const [isCheckingSetup, setIsCheckingSetup] = useState(true);
+  const [currentRoute, setCurrentRoute] = useState(() => {
+    if (Platform.OS === 'web' && typeof window !== 'undefined') {
+      return window.location.pathname.includes('classroom') ? 'Classroom' : '';
+    }
+    return '';
+  });
+
+  const isClassroom = currentRoute === 'Classroom' || 
+    (Platform.OS === 'web' && typeof window !== 'undefined' && window.location.pathname.includes('classroom'));
 
   useEffect(() => {
     const initApp = async () => {
@@ -71,10 +81,10 @@ export default function App() {
 
   return (
     <HelmetProvider>
-    <GestureHandlerRootView style={{ flex: 1, ...Platform.select({ web: { height: '100vh', backgroundColor: '#F0F2F5' } }) }}>
+    <GestureHandlerRootView style={{ flex: 1, ...Platform.select({ web: { height: '100vh', width: '100vw', backgroundColor: isClassroom ? '#0F172A' : '#F0F2F5', overflow: isClassroom ? 'hidden' : 'auto' } }) }}>
       <SafeAreaProvider>
         <Analytics />
-        <NotificationBanner />
+        {!isClassroom && <NotificationBanner />}
 
         {/* Ad Rails (Web Desktop Only) - HIDDEN */}
         {/* {showAds && Platform.OS === 'web' && (
@@ -85,16 +95,21 @@ export default function App() {
         )} */}
 
         {/* ... rest of app ... */}
-        <InterstitialAd visible={showInterstitial} onClose={() => setShowInterstitial(false)} />
+        {!isClassroom && <InterstitialAd visible={showInterstitial} onClose={() => setShowInterstitial(false)} />}
 
         {isCheckingSetup ? (
           <View style={styles.container}>
             <Text style={{ marginTop: 100, fontSize: 18, color: '#666' }}>Loading...</Text>
           </View>
         ) : (
-          <View style={styles.webContainer}>
+          <View style={[styles.webContainer, isClassroom && styles.classroomWebContainer]}>
             {/* ... navigation container ... */}
-            <NavigationContainer linking={{
+            <NavigationContainer 
+              onStateChange={(state) => {
+                const route = state?.routes?.[state.index]?.name;
+                setCurrentRoute(route || '');
+              }}
+              linking={{
               prefixes: [Linking.createURL('/'), 'https://11plusninja.com'],
               config: {
                 screens: {
@@ -108,6 +123,7 @@ export default function App() {
                   EnglishSkillsHome: 'english',
                   NVRSkillsHome: 'nvr',
                   VRSkillsHome: 'verbal',
+                  Classroom: 'classroom',
                 }
               }
             }}>
@@ -117,9 +133,12 @@ export default function App() {
                 headerStatusBarHeight: Platform.OS === 'android' ? StatusBar.currentHeight : undefined
               }}>
                 {!isSetupComplete ? (
-                  <Stack.Screen name="InitialSetup" options={{ headerShown: false }}>
-                    {props => <SetupScreen {...props} onFinish={() => setIsSetupComplete(true)} />}
-                  </Stack.Screen>
+                  <>
+                    <Stack.Screen name="InitialSetup" options={{ headerShown: false }}>
+                      {props => <SetupScreen {...props} onFinish={() => setIsSetupComplete(true)} />}
+                    </Stack.Screen>
+                    <Stack.Screen name="Classroom" component={ClassroomScreen} options={{ headerShown: false }} />
+                  </>
                 ) : (
                   <>
                     <Stack.Screen name="Home" component={StudentHomeScreen} options={{ headerShown: false }} />
@@ -147,13 +166,14 @@ export default function App() {
                     <Stack.Screen name="VRSkillsHome" component={VRSkillsHomeScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="VRStrand" component={VRStrandScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="VRSkillsQuiz" component={VRSkillsQuizScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="Classroom" component={ClassroomScreen} options={{ headerShown: false }} />
                   </>
                 )}
               </Stack.Navigator>
             </NavigationContainer>
 
             {/* Dev Trigger for Interstitial */}
-            {!showAds && <TouchableOpacity
+            {!showAds && !isClassroom && <TouchableOpacity
               style={{ position: 'absolute', bottom: 10, right: 10, backgroundColor: 'rgba(0,0,0,0.5)', padding: 5, borderRadius: 5 }}
               onPress={() => setShowInterstitial(true)}
             >
@@ -198,5 +218,17 @@ const styles = StyleSheet.create({
         elevation: isLargeScreen ? 5 : 0
       }
     })
+  },
+  classroomWebContainer: {
+    maxWidth: '100%',
+    width: '100%',
+    height: '100%',
+    minHeight: '100%',
+    alignSelf: 'stretch',
+    marginHorizontal: 0,
+    paddingBottom: 0,
+    boxShadow: 'none',
+    borderRadius: 0,
+    backgroundColor: '#0F172A',
   },
 });

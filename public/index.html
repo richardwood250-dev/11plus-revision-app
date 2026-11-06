@@ -541,7 +541,7 @@
         const search = window.location.search;
         const urlParams = new URLSearchParams(search);
 
-        if (path === '/test-dojo' || path.includes('test-dojo') || path.startsWith('/blog') || path.startsWith('/dashboard') || urlParams.get('mode') === 'student') {
+        if (path === '/test-dojo' || path.includes('test-dojo') || path.startsWith('/blog') || path.startsWith('/dashboard') || path.startsWith('/classroom') || urlParams.get('mode') === 'student') {
             const gateway = document.getElementById('gateway-overlay');
             if (gateway) {
                 gateway.classList.add('gateway-hidden');

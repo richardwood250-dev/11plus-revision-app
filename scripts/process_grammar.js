@@ -36,17 +36,8 @@ function parseCSV(text) {
 }
 
 async function run() {
-    console.log(`Downloading latest Grammar question list from GitHub...`);
-    let rawData;
-    try {
-        const response = await fetch(GITHUB_CSV_URL);
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        rawData = await response.text();
-    } catch (e) {
-        console.error("Failed to fetch Grammar CSV:", e);
-        // Fallback to local if fetch fails
-        rawData = fs.readFileSync(path.join(__dirname, 'grammar_raw.csv'), 'utf8');
-    }
+    console.log(`Reading Grammar question list from local grammar_raw.csv...`);
+    const rawData = fs.readFileSync(path.join(__dirname, 'grammar_raw.csv'), 'utf8');
 
     const rows = parseCSV(rawData);
     const passages = {};
@@ -65,25 +56,49 @@ async function run() {
         // PartA to PartD
         let parts = [row[2], row[3], row[4], row[5]];
 
-        // Speech Marks Heuristic
-        // If the passage contains a trailing single quote, ensure an opening one exists.
-        // E.g. part ends with ' or '! or ',
-        const containsClosingQuote = parts.some(p => {
-            const trimmed = p.trim();
-            // Don't flag contractions as closing quotes
-            if (trimmed.endsWith("n't") || trimmed.endsWith("s'")) return false;
-            return trimmed.match(/['][.,!?]*$/);
-        });
-
-        if (containsClosingQuote) {
-            // Check if first part actually starts with a single quote or has a quote inside
-            if (!parts[0].trim().match(/^['"]/)) {
-                parts[0] = "'" + parts[0];
-            }
-        }
-
         const correctRaw = row[6].trim().toUpperCase();
         const correctAnswer = correctRaw === 'N' ? 'E' : correctRaw;
+        const targetIndex = { 'A': 0, 'B': 1, 'C': 2, 'D': 3 }[correctAnswer];
+
+        // Speech Marks & Dialogue Punctuation Heuristic
+        // Find closing quote in parts (ends with ' optionally followed by punctuation or punct followed by ')
+        const closingQuoteIndex = parts.findIndex(p => {
+            const trimmed = p.trim();
+            // Don't flag contractions (e.g. don't, can't) as closing speech quotes
+            if (trimmed.endsWith("n't")) return false;
+            return /['"][.,!?]*$/.test(trimmed);
+        });
+
+        if (closingQuoteIndex !== -1) {
+            // Restore opening single quote on Part A if missing
+            // (Exception: Story_81_RainyWalk line 7 where quote is only in Part D)
+            if (!parts[0].trim().match(/^['"]/)) {
+                if (!(baseId === 'Story_81_RainyWalk' && lineNum === '7')) {
+                    parts[0] = "'" + parts[0];
+                }
+            }
+
+            // Check if the explanation is specifically testing missing punctuation at the closing speech quote
+            const closingLetter = ['A', 'B', 'C', 'D'][closingQuoteIndex];
+            const partMatch = (row[7] || "").match(/Part\s+([A-D])/i);
+            const targetsDifferentPart = partMatch && partMatch[1].toUpperCase() !== closingLetter;
+
+            const closingWord = parts[closingQuoteIndex].replace(/['"][.,!?]*$/, '').split(/\s+/).pop().replace(/[^a-zA-Z]/g, '').toLowerCase();
+            const wordRegex = new RegExp(`\\b${closingWord}\\b`, 'i');
+            const isExplTestingClosingPunct = !targetsDifferentPart &&
+                /missing (comma|punctuation|question mark|exclamation mark)/i.test(row[7] || "") && 
+                (wordRegex.test(row[7] || "") || /speech/i.test(row[7] || ""));
+
+            // If the question is NOT specifically testing the closing speech punctuation:
+            if (!isExplTestingClosingPunct) {
+                const closingPart = parts[closingQuoteIndex].trim();
+                const hasPunctBeforeQuote = /[.,!?]['"]$/.test(closingPart);
+                const hasPunctAfterQuote = /['"][.,!?]$/.test(closingPart);
+                if (!hasPunctBeforeQuote && !hasPunctAfterQuote && closingPart.endsWith("'")) {
+                    parts[closingQuoteIndex] = parts[closingQuoteIndex].replace(/['"]$/, ",'");
+                }
+            }
+        }
 
         // Add "No Error" to the options
         const options = [...parts, "No Error"];

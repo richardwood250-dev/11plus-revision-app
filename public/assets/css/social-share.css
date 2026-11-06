@@ -122,3 +122,6 @@
         transform: translateX(0) translateY(0);
     }
 }
+
+/* Hide on Classroom / Whiteboard Page */
+.classroom-active #social-share-container, .classroom-active #social-share-bar, #classroom-root #social-share-container, #classroom-root #social-share-bar { display: none !important; }

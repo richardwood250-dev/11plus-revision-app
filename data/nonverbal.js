@@ -5086,19 +5086,6 @@ export const nonverbal = {
         "correctAnswer": "A"
       },
       {
-        "id": "nv_mat_443",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/q22_variant_17.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
         "id": "nv_mat_444",
         "question": "Which option completes the matrix?",
         "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/q22_variant_18.png",
@@ -6176,656 +6163,6 @@ export const nonverbal = {
           "E"
         ],
         "correctAnswer": "C"
-      },
-      {
-        "id": "nv_mat_527",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_01.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "nv_mat_528",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_02.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "nv_mat_529",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_03.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "nv_mat_530",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_04.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "nv_mat_531",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_05.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_mat_532",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_06.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "nv_mat_533",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_07.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "nv_mat_534",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_08.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_mat_535",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_09.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_mat_536",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_10.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "nv_mat_537",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_11.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_mat_538",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_12.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "nv_mat_539",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_13.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "nv_mat_540",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_14.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_mat_541",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_15.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_mat_542",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_16.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "nv_mat_543",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_17.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "nv_mat_544",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_18.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "nv_mat_545",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_19.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "nv_mat_546",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_20.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "nv_mat_547",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_21.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "nv_mat_548",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_22.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_mat_549",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_23.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "nv_mat_550",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_24.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "nv_mat_551",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_25.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "nv_mat_552",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_26.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "nv_mat_553",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_27.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_mat_554",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_28.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "nv_mat_555",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_29.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "nv_mat_556",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_30.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_mat_557",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_31.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_mat_558",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_32.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "nv_mat_559",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_33.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "nv_mat_560",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_34.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "nv_mat_561",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_35.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "nv_mat_562",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_36.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "nv_mat_563",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_37.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "nv_mat_564",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_38.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "nv_mat_565",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_39.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "nv_mat_566",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_40.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "nv_mat_567",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_41.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "nv_mat_568",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_42.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
-        "id": "nv_mat_569",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_43.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_mat_570",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_44.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "nv_mat_571",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_45.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "nv_mat_572",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_46.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "nv_mat_573",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_47.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "nv_mat_574",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_48.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "nv_mat_575",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_49.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_mat_576",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q23_Complex_50.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
       },
       {
         "id": "nv_mat_577",
@@ -8027,19 +7364,6 @@ export const nonverbal = {
         "id": "nv_mat_420",
         "question": "Which option completes the matrix?",
         "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q31_Fixed_44.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "E"
-      },
-      {
-        "id": "nv_mat_421",
-        "question": "Which option completes the matrix?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/Q31_Fixed_45.png",
         "options": [
           "A",
           "B",
@@ -11981,32 +11305,6 @@ export const nonverbal = {
         "correctAnswer": "D"
       },
       {
-        "id": "nv_seq_148",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/seq_48%20(2).png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "nv_seq_149",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/seq_49%20(2).png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
         "id": "nv_seq_150",
         "question": "Which option completes the sequence?",
         "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/seq_50%20(2).png",
@@ -12930,19 +12228,6 @@ export const nonverbal = {
         "correctAnswer": "B"
       },
       {
-        "id": "nv_seq_221",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/hard_series_21.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "nv_seq_222",
         "question": "Which option completes the sequence?",
         "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/hard_series_22.png",
@@ -13359,19 +12644,6 @@ export const nonverbal = {
         "correctAnswer": "B"
       },
       {
-        "id": "nv_seq_254",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_4.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "nv_seq_255",
         "question": "Which option completes the sequence?",
         "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_5.png",
@@ -13435,19 +12707,6 @@ export const nonverbal = {
           "E"
         ],
         "correctAnswer": "D"
-      },
-      {
-        "id": "nv_seq_260",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_10.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
       },
       {
         "id": "nv_seq_261",
@@ -13606,19 +12865,6 @@ export const nonverbal = {
         "correctAnswer": "C"
       },
       {
-        "id": "nv_seq_273",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_23.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "nv_seq_274",
         "question": "Which option completes the sequence?",
         "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_24.png",
@@ -13736,61 +12982,9 @@ export const nonverbal = {
         "correctAnswer": "D"
       },
       {
-        "id": "nv_seq_283",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_33.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "nv_seq_284",
         "question": "Which option completes the sequence?",
         "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_34.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
-        "id": "nv_seq_285",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_35.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
-        "id": "nv_seq_286",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_36.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "D"
-      },
-      {
-        "id": "nv_seq_287",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_37.png",
         "options": [
           "A",
           "B",
@@ -13840,19 +13034,6 @@ export const nonverbal = {
         "correctAnswer": "A"
       },
       {
-        "id": "nv_seq_291",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_41.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
-      },
-      {
         "id": "nv_seq_292",
         "question": "Which option completes the sequence?",
         "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_42.png",
@@ -13877,19 +13058,6 @@ export const nonverbal = {
           "E"
         ],
         "correctAnswer": "A"
-      },
-      {
-        "id": "nv_seq_294",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_44.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "C"
       },
       {
         "id": "nv_seq_295",
@@ -13918,19 +13086,6 @@ export const nonverbal = {
         "correctAnswer": "A"
       },
       {
-        "id": "nv_seq_297",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_47.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "B"
-      },
-      {
         "id": "nv_seq_298",
         "question": "Which option completes the sequence?",
         "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_48.png",
@@ -13955,19 +13110,6 @@ export const nonverbal = {
           "E"
         ],
         "correctAnswer": "B"
-      },
-      {
-        "id": "nv_seq_300",
-        "question": "Which option completes the sequence?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/opposing_50.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
       },
       {
         "id": "nv_seq_301",
@@ -25779,19 +24921,6 @@ export const nonverbal = {
         "correctAnswer": "B"
       },
       {
-        "id": "NV_Q_161",
-        "question": "Which figure is the odd one out?",
-        "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/NV_Quant_161.png",
-        "options": [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E"
-        ],
-        "correctAnswer": "A"
-      },
-      {
         "id": "NV_Q_162",
         "question": "Which figure is the odd one out?",
         "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-nonverbal/main/NV_Quant_162.png",
@@ -28059,7 +27188,7 @@ export const nonverbal = {
           "E"
         ],
         "correctAnswer": "D",
-        "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option D (Octagon) breaks this rule."
+        "explanation": "If the center circle has lines inside it, the radiating lines connect to the corners. If the center circle is empty, the radiating lines connect to the sides. Option D breaks this rule by having an empty circle but lines connecting to the corners."
       },
       {
         "id": "NV_7_21_35",
@@ -28073,7 +27202,7 @@ export const nonverbal = {
           "E"
         ],
         "correctAnswer": "D",
-        "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option D (Octagon) breaks this rule."
+        "explanation": "If the center circle has lines inside it, the radiating lines connect to the corners. If the center circle is empty, the radiating lines connect to the sides. Option D breaks this rule by having an empty circle but lines connecting to the corners."
       },
       {
         "id": "NV_7_21_36",
@@ -28199,7 +27328,7 @@ export const nonverbal = {
           "E"
         ],
         "correctAnswer": "D",
-        "explanation": "Thick Outer lines must connect to Sides; Thick Inner lines must connect to Corners. Option D (Octagon) breaks this rule."
+        "explanation": "If the center circle has lines inside it, the radiating lines connect to the corners. If the center circle is empty, the radiating lines connect to the sides. Option D breaks this rule by having an empty circle but lines connecting to the corners."
       },
       {
         "id": "NV_7_21_45",
@@ -31908,7 +31037,7 @@ export const nonverbal = {
           "NM",
           "UV"
         ],
-        "correctAnswer": "B"
+        "correctAnswer": "A"
       },
       {
         "id": "hc_21",
@@ -44289,7 +43418,8 @@ export const nonverbal = {
           "D",
           "E"
         ],
-        "correctAnswer": "A"
+        "correctAnswer": "A",
+        "explanation": "The inner shape is multiplied. The number of shapes in the result is (2 × number of sides of the outer shape) - 1. For the square (4 sides), 2×4 - 1 = 7 circles. For the pentagon (5 sides), 2×5 - 1 = 9 speckled squares. Option A shows 9 speckled squares."
       },
       {
         "id": "NVR_FA_226",

@@ -3265,7 +3265,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P4Q2_16",
-    "question": "The graph shows the number of toys sold on five days.\nHow many more toys were sold on Thu than on Fri?",
+    "question": "The graph shows the number of toys sold on five days.\nHow many more toys were sold on Thu than on Wed?",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P4Q2_16.png",
     "options": [
       "25",
@@ -16545,7 +16545,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_1",
-    "question": "A bag holds 84 marbles. $\\frac{2}{7}$ of them are cat-eyes. How many marbles are cat-eyes?",
+    "question": "A bag holds 84 marbles. 2/7 of them are cat-eyes. How many marbles are cat-eyes?",
     "image": null,
     "options": [
       "82",
@@ -16561,7 +16561,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_2",
-    "question": "A parking lot holds 76 cars. $\\frac{1}{4}$ of them are SUVs. How many cars are SUVs?",
+    "question": "A parking lot holds 76 cars. 1/4 of them are SUVs. How many cars are SUVs?",
     "image": null,
     "options": [
       "75",
@@ -16577,7 +16577,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_3",
-    "question": "A parking lot holds 276 cars. $\\frac{1}{4}$ of them are SUVs. How many cars are SUVs?",
+    "question": "A parking lot holds 276 cars. 1/4 of them are SUVs. How many cars are SUVs?",
     "image": null,
     "options": [
       "273",
@@ -16593,7 +16593,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_4",
-    "question": "A magazine holds 20 pages. $\\frac{1}{2}$ of them have pictures. How many pages have pictures?",
+    "question": "A magazine holds 20 pages. 1/2 of them have pictures. How many pages have pictures?",
     "image": null,
     "options": [
       "5",
@@ -16609,7 +16609,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_5",
-    "question": "A class holds 108 students. $\\frac{1}{3}$ of them walk to school. How many students walk to school?",
+    "question": "A class holds 108 students. 1/3 of them walk to school. How many students walk to school?",
     "image": null,
     "options": [
       "72",
@@ -16625,7 +16625,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_6",
-    "question": "A tray holds 228 cupcakes. $\\frac{5}{12}$ of them have vanilla icing. How many cupcakes have vanilla icing?",
+    "question": "A tray holds 228 cupcakes. 5/12 of them have vanilla icing. How many cupcakes have vanilla icing?",
     "image": null,
     "options": [
       "133",
@@ -16641,7 +16641,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_7",
-    "question": "A theater holds 285 seats. $\\frac{2}{3}$ of them are empty. How many seats are empty?",
+    "question": "A theater holds 285 seats. 2/3 of them are empty. How many seats are empty?",
     "image": null,
     "options": [
       "275",
@@ -16657,7 +16657,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_8",
-    "question": "A bag holds 66 marbles. $\\frac{1}{3}$ of them are cat-eyes. How many marbles are cat-eyes?",
+    "question": "A bag holds 66 marbles. 1/3 of them are cat-eyes. How many marbles are cat-eyes?",
     "image": null,
     "options": [
       "12",
@@ -16673,7 +16673,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_9",
-    "question": "A theater holds 162 seats. $\\frac{7}{9}$ of them are empty. How many seats are empty?",
+    "question": "A theater holds 162 seats. 7/9 of them are empty. How many seats are empty?",
     "image": null,
     "options": [
       "129",
@@ -16689,7 +16689,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_10",
-    "question": "A box holds 66 chocolates. $\\frac{2}{3}$ of them are dark chocolate. How many chocolates are dark chocolate?",
+    "question": "A box holds 66 chocolates. 2/3 of them are dark chocolate. How many chocolates are dark chocolate?",
     "image": null,
     "options": [
       "42",
@@ -16705,7 +16705,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_11",
-    "question": "A bag holds 100 marbles. $\\frac{2}{5}$ of them are cat-eyes. How many marbles are cat-eyes?",
+    "question": "A bag holds 100 marbles. 2/5 of them are cat-eyes. How many marbles are cat-eyes?",
     "image": null,
     "options": [
       "41",
@@ -16721,7 +16721,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_12",
-    "question": "A class holds 49 students. $\\frac{1}{7}$ of them walk to school. How many students walk to school?",
+    "question": "A class holds 49 students. 1/7 of them walk to school. How many students walk to school?",
     "image": null,
     "options": [
       "8",
@@ -16737,7 +16737,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_13",
-    "question": "A bag holds 119 marbles. $\\frac{6}{7}$ of them are cat-eyes. How many marbles are cat-eyes?",
+    "question": "A bag holds 119 marbles. 6/7 of them are cat-eyes. How many marbles are cat-eyes?",
     "image": null,
     "options": [
       "102",
@@ -16753,7 +16753,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_14",
-    "question": "A box holds 54 chocolates. $\\frac{5}{6}$ of them are dark chocolate. How many chocolates are dark chocolate?",
+    "question": "A box holds 54 chocolates. 5/6 of them are dark chocolate. How many chocolates are dark chocolate?",
     "image": null,
     "options": [
       "51",
@@ -16769,7 +16769,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_15",
-    "question": "A packet holds 90 balloons. $\\frac{1}{6}$ of them are blue. How many balloons are blue?",
+    "question": "A packet holds 90 balloons. 1/6 of them are blue. How many balloons are blue?",
     "image": null,
     "options": [
       "75",
@@ -16785,7 +16785,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_16",
-    "question": "A box holds 75 chocolates. $\\frac{4}{5}$ of them are dark chocolate. How many chocolates are dark chocolate?",
+    "question": "A box holds 75 chocolates. 4/5 of them are dark chocolate. How many chocolates are dark chocolate?",
     "image": null,
     "options": [
       "63",
@@ -16801,7 +16801,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_17",
-    "question": "A magazine holds 70 pages. $\\frac{3}{5}$ of them have pictures. How many pages have pictures?",
+    "question": "A magazine holds 70 pages. 3/5 of them have pictures. How many pages have pictures?",
     "image": null,
     "options": [
       "42",
@@ -16817,7 +16817,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_18",
-    "question": "A crate holds 40 apples. $\\frac{3}{4}$ of them are green. How many apples are green?",
+    "question": "A crate holds 40 apples. 3/4 of them are green. How many apples are green?",
     "image": null,
     "options": [
       "37",
@@ -16833,7 +16833,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_19",
-    "question": "A box holds 80 chocolates. $\\frac{1}{8}$ of them are dark chocolate. How many chocolates are dark chocolate?",
+    "question": "A box holds 80 chocolates. 1/8 of them are dark chocolate. How many chocolates are dark chocolate?",
     "image": null,
     "options": [
       "14",
@@ -16849,7 +16849,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_20",
-    "question": "A bag holds 36 marbles. $\\frac{8}{9}$ of them are cat-eyes. How many marbles are cat-eyes?",
+    "question": "A bag holds 36 marbles. 8/9 of them are cat-eyes. How many marbles are cat-eyes?",
     "image": null,
     "options": [
       "28",
@@ -16865,7 +16865,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_21",
-    "question": "A theater holds 360 seats. $\\frac{3}{5}$ of them are empty. How many seats are empty?",
+    "question": "A theater holds 360 seats. 3/5 of them are empty. How many seats are empty?",
     "image": null,
     "options": [
       "216",
@@ -16881,7 +16881,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_22",
-    "question": "A tray holds 92 cupcakes. $\\frac{3}{4}$ of them have vanilla icing. How many cupcakes have vanilla icing?",
+    "question": "A tray holds 92 cupcakes. 3/4 of them have vanilla icing. How many cupcakes have vanilla icing?",
     "image": null,
     "options": [
       "89",
@@ -16897,7 +16897,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_23",
-    "question": "A packet holds 54 balloons. $\\frac{1}{2}$ of them are blue. How many balloons are blue?",
+    "question": "A packet holds 54 balloons. 1/2 of them are blue. How many balloons are blue?",
     "image": null,
     "options": [
       "9",
@@ -16913,7 +16913,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_24",
-    "question": "A bag holds 35 marbles. $\\frac{5}{7}$ of them are cat-eyes. How many marbles are cat-eyes?",
+    "question": "A bag holds 35 marbles. 5/7 of them are cat-eyes. How many marbles are cat-eyes?",
     "image": null,
     "options": [
       "25",
@@ -16929,7 +16929,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_25",
-    "question": "A parking lot holds 21 cars. $\\frac{1}{3}$ of them are SUVs. How many cars are SUVs?",
+    "question": "A parking lot holds 21 cars. 1/3 of them are SUVs. How many cars are SUVs?",
     "image": null,
     "options": [
       "11",
@@ -16945,7 +16945,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_26",
-    "question": "A theater holds 72 seats. $\\frac{5}{6}$ of them are empty. How many seats are empty?",
+    "question": "A theater holds 72 seats. 5/6 of them are empty. How many seats are empty?",
     "image": null,
     "options": [
       "60",
@@ -16961,7 +16961,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_27",
-    "question": "A class holds 60 students. $\\frac{3}{5}$ of them walk to school. How many students walk to school?",
+    "question": "A class holds 60 students. 3/5 of them walk to school. How many students walk to school?",
     "image": null,
     "options": [
       "36",
@@ -16977,7 +16977,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_28",
-    "question": "A box holds 340 chocolates. $\\frac{3}{20}$ of them are dark chocolate. How many chocolates are dark chocolate?",
+    "question": "A box holds 340 chocolates. 3/20 of them are dark chocolate. How many chocolates are dark chocolate?",
     "image": null,
     "options": [
       "323",
@@ -16993,7 +16993,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_29",
-    "question": "A library shelf holds 88 books. $\\frac{1}{4}$ of them have torn covers. How many books have torn covers?",
+    "question": "A library shelf holds 88 books. 1/4 of them have torn covers. How many books have torn covers?",
     "image": null,
     "options": [
       "87",
@@ -17009,7 +17009,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P2Q11_30",
-    "question": "A box holds 400 chocolates. $\\frac{7}{10}$ of them are dark chocolate. How many chocolates are dark chocolate?",
+    "question": "A box holds 400 chocolates. 7/10 of them are dark chocolate. How many chocolates are dark chocolate?",
     "image": null,
     "options": [
       "280",
@@ -23299,14 +23299,8 @@ export const MATHS_QUIZ = [
     "id": "P4Q15_11",
     "question": "How many of the shapes below are trapeziums?",
     "image": "https://raw.githubusercontent.com/richardwood250-dev/11plus-maths/main/P4Q15_11.png",
-    "options": [
-      "5",
-      "1",
-      "4",
-      "3",
-      "0"
-    ],
-    "correctAnswer": "3",
+    "options": ["Five", "One", "Four", "Three", "Zero"],
+      "correctAnswer": "Three",
     "topic": "Geometry",
     "difficultyIndex": 15,
     "prefix": "P4Q15"
@@ -25777,7 +25771,7 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P3Q17_5",
-    "question": "There are 16 pupils in a class. 1/2 go home for lunch. 1/4 buy a school lunch. The rest bring sandwiches. How many pupils bring sandwiches?",
+    "question": "There are 16 pupils in a class. 1/2 go home for lunch. 1/4 of the class buy a school lunch. The rest bring sandwiches. How many pupils bring sandwiches?",
     "image": null,
     "options": [
       "8",
@@ -43156,13 +43150,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 36 apples in a box, 15 are bruised. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{3}{5}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{2}{5}$"
+      "3/5",
+      "4/5",
+      "3/10",
+      "1/5",
+      "2/5"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43172,13 +43166,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 65 biscuits in a tin, 23 are chocolate. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{4}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{4}{5}$"
+      "1/4",
+      "2/3",
+      "1/3",
+      "1/2",
+      "4/5"
     ],
-    "correctAnswer": "$\\frac{1}{3}$",
+    "correctAnswer": "1/3",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43188,13 +43182,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 80 animals in a shelter, 41 are cats. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{10}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{2}{3}$"
+      "1/10",
+      "1/5",
+      "1/3",
+      "1/2",
+      "2/3"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43204,13 +43198,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 70 apples in a box, 53 are bruised. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{2}{3}$"
+      "2/5",
+      "1/4",
+      "3/4",
+      "1/3",
+      "2/3"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43220,13 +43214,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 80 children in a class, 32 have younger brothers and sisters. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{3}{5}$"
+      "2/5",
+      "1/2",
+      "2/3",
+      "1/4",
+      "3/5"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43236,13 +43230,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 37 children in a class, 6 have younger brothers and sisters. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{1}{5}$"
+      "2/3",
+      "1/2",
+      "1/8",
+      "4/5",
+      "1/5"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43252,13 +43246,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 74 biscuits in a tin, 56 are chocolate. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{10}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{3}{4}$"
+      "1/10",
+      "1/2",
+      "3/5",
+      "1/4",
+      "3/4"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43268,13 +43262,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 71 biscuits in a tin, 24 are chocolate. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{2}{3}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{1}{3}$"
+      "2/3",
+      "4/5",
+      "1/4",
+      "1/2",
+      "1/3"
     ],
-    "correctAnswer": "$\\frac{1}{3}$",
+    "correctAnswer": "1/3",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43284,13 +43278,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 22 apples in a box, 5 are bruised. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{5}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{8}$"
+      "1/5",
+      "4/5",
+      "2/3",
+      "1/3",
+      "1/8"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43300,13 +43294,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 75 cars in a car park, 18 are silver. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{10}$"
+      "1/3",
+      "1/5",
+      "3/4",
+      "1/4",
+      "1/10"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43316,13 +43310,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 68 days in a month, 27 were rainy. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{2}{5}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{4}$"
+      "2/5",
+      "3/5",
+      "1/5",
+      "1/3",
+      "1/4"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43332,13 +43326,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 46 students in a year group, 5 walk to school. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{3}{5}$",
-      "$\\frac{1}{10}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{9}{10}$"
+      "3/5",
+      "1/10",
+      "1/4",
+      "3/10",
+      "9/10"
     ],
-    "correctAnswer": "$\\frac{1}{10}$",
+    "correctAnswer": "1/10",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43348,13 +43342,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 27 children in a class, 19 have younger brothers and sisters. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{3}{4}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{10}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{3}{10}$"
+      "3/4",
+      "2/3",
+      "1/10",
+      "1/4",
+      "3/10"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43364,13 +43358,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 35 children in a class, 24 have younger brothers and sisters. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{5}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{2}{3}$"
+      "1/5",
+      "3/4",
+      "2/5",
+      "1/3",
+      "2/3"
     ],
-    "correctAnswer": "$\\frac{2}{3}$",
+    "correctAnswer": "2/3",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43380,13 +43374,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 52 biscuits in a tin, 42 are chocolate. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{4}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{2}$"
+      "1/4",
+      "2/5",
+      "4/5",
+      "1/5",
+      "1/2"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43396,13 +43390,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 51 days in a month, 20 were rainy. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{10}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{3}{5}$"
+      "2/5",
+      "1/10",
+      "3/4",
+      "1/3",
+      "3/5"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43412,13 +43406,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 29 biscuits in a tin, 23 are chocolate. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{5}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{4}{5}$"
+      "1/5",
+      "3/4",
+      "2/3",
+      "1/3",
+      "4/5"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43428,13 +43422,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 37 people on a bus, 21 are wearing glasses. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{3}{5}$",
-      "$\\frac{1}{10}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{4}$"
+      "3/5",
+      "1/10",
+      "2/5",
+      "3/4",
+      "1/4"
     ],
-    "correctAnswer": "$\\frac{3}{5}$",
+    "correctAnswer": "3/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43444,13 +43438,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 69 days in a month, 56 were rainy. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{5}$"
+      "1/3",
+      "1/8",
+      "4/5",
+      "2/5",
+      "1/5"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43460,13 +43454,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 59 people on a bus, 13 are wearing glasses. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{8}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{1}{5}$"
+      "1/8",
+      "4/5",
+      "2/3",
+      "3/5",
+      "1/5"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43476,13 +43470,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 29 books on a shelf, 3 are non-fiction. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{5}$",
-      "$\\frac{9}{10}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{10}$",
-      "$\\frac{4}{5}$"
+      "1/5",
+      "9/10",
+      "2/3",
+      "1/10",
+      "4/5"
     ],
-    "correctAnswer": "$\\frac{1}{10}$",
+    "correctAnswer": "1/10",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43492,13 +43486,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 42 people on a bus, 16 are wearing glasses. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{3}{5}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{2}{5}$"
+      "3/5",
+      "3/4",
+      "1/5",
+      "1/8",
+      "2/5"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43508,13 +43502,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 36 students in a year group, 11 walk to school. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{3}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{3}{5}$"
+      "1/3",
+      "2/3",
+      "1/2",
+      "1/4",
+      "3/5"
     ],
-    "correctAnswer": "$\\frac{1}{3}$",
+    "correctAnswer": "1/3",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43524,13 +43518,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 27 apples in a box, 4 are bruised. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{8}$",
-      "$\\frac{7}{8}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{1}{3}$"
+      "1/8",
+      "7/8",
+      "1/4",
+      "3/10",
+      "1/3"
     ],
-    "correctAnswer": "$\\frac{1}{8}$",
+    "correctAnswer": "1/8",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43540,13 +43534,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 54 children in a class, 5 have younger brothers and sisters. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{10}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{9}{10}$"
+      "1/10",
+      "2/3",
+      "3/10",
+      "1/5",
+      "9/10"
     ],
-    "correctAnswer": "$\\frac{1}{10}$",
+    "correctAnswer": "1/10",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43556,13 +43550,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 78 biscuits in a tin, 39 are chocolate. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{3}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{2}$"
+      "1/3",
+      "2/3",
+      "2/5",
+      "3/4",
+      "1/2"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43572,13 +43566,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 73 cars in a car park, 24 are silver. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{2}$"
+      "2/3",
+      "1/8",
+      "1/3",
+      "1/4",
+      "1/2"
     ],
-    "correctAnswer": "$\\frac{1}{3}$",
+    "correctAnswer": "1/3",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43588,13 +43582,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 39 books on a shelf, 8 are non-fiction. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{4}{5}$"
+      "1/5",
+      "1/8",
+      "3/10",
+      "1/3",
+      "4/5"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43604,13 +43598,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 72 animals in a shelter, 7 are cats. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{10}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{9}{10}$",
-      "$\\frac{3}{5}$"
+      "1/10",
+      "1/5",
+      "2/5",
+      "9/10",
+      "3/5"
     ],
-    "correctAnswer": "$\\frac{1}{10}$",
+    "correctAnswer": "1/10",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43620,13 +43614,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 75 students in a year group, 26 walk to school. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{4}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{3}{5}$"
+      "1/4",
+      "2/3",
+      "1/3",
+      "1/2",
+      "3/5"
     ],
-    "correctAnswer": "$\\frac{1}{3}$",
+    "correctAnswer": "1/3",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43636,13 +43630,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 43 people on a bus, 32 are wearing glasses. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{1}{10}$"
+      "3/4",
+      "1/4",
+      "1/5",
+      "1/8",
+      "1/10"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43652,13 +43646,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 60 students in a year group, 20 walk to school. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{2}{3}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{2}$"
+      "2/3",
+      "3/5",
+      "1/3",
+      "1/4",
+      "1/2"
     ],
-    "correctAnswer": "$\\frac{1}{3}$",
+    "correctAnswer": "1/3",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43668,13 +43662,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 55 cars in a car park, 43 are silver. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{4}{5}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{1}{5}$"
+      "4/5",
+      "3/4",
+      "1/3",
+      "1/8",
+      "1/5"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43684,13 +43678,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 72 students in a year group, 24 walk to school. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{4}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{1}{3}$"
+      "1/4",
+      "2/3",
+      "2/5",
+      "1/2",
+      "1/3"
     ],
-    "correctAnswer": "$\\frac{1}{3}$",
+    "correctAnswer": "1/3",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43700,13 +43694,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 79 books on a shelf, 11 are non-fiction. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{8}$",
-      "$\\frac{7}{8}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{1}{4}$"
+      "1/8",
+      "7/8",
+      "3/4",
+      "4/5",
+      "1/4"
     ],
-    "correctAnswer": "$\\frac{1}{8}$",
+    "correctAnswer": "1/8",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43716,13 +43710,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 48 biscuits in a tin, 28 are chocolate. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{3}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{1}{10}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{4}$"
+      "1/3",
+      "3/5",
+      "1/10",
+      "2/5",
+      "1/4"
     ],
-    "correctAnswer": "$\\frac{3}{5}$",
+    "correctAnswer": "3/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43732,13 +43726,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 67 children in a class, 12 have younger brothers and sisters. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{10}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{3}{10}$"
+      "1/10",
+      "1/5",
+      "1/4",
+      "4/5",
+      "3/10"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43748,13 +43742,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 65 apples in a box, 26 are bruised. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{2}{5}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{3}{5}$"
+      "2/5",
+      "3/10",
+      "3/4",
+      "4/5",
+      "3/5"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43764,13 +43758,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 68 animals in a shelter, 40 are cats. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{4}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{3}$"
+      "1/4",
+      "2/5",
+      "3/5",
+      "3/4",
+      "1/3"
     ],
-    "correctAnswer": "$\\frac{3}{5}$",
+    "correctAnswer": "3/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43780,13 +43774,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 24 cars in a car park, 13 are silver. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{4}{5}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{2}{5}$"
+      "4/5",
+      "1/5",
+      "1/8",
+      "3/5",
+      "2/5"
     ],
-    "correctAnswer": "$\\frac{3}{5}$",
+    "correctAnswer": "3/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43796,13 +43790,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 59 people on a bus, 40 are wearing glasses. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{4}$"
+      "1/3",
+      "1/5",
+      "2/5",
+      "2/3",
+      "1/4"
     ],
-    "correctAnswer": "$\\frac{2}{3}$",
+    "correctAnswer": "2/3",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43812,13 +43806,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 21 children in a class, 4 have younger brothers and sisters. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{3}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{5}$"
+      "1/3",
+      "2/3",
+      "3/4",
+      "1/4",
+      "1/5"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43828,13 +43822,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 75 cars in a car park, 38 are silver. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{10}$"
+      "1/2",
+      "2/3",
+      "2/5",
+      "1/3",
+      "1/10"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43844,13 +43838,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 33 people on a bus, 11 are wearing glasses. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{2}{3}$"
+      "1/4",
+      "1/3",
+      "1/2",
+      "1/8",
+      "2/3"
     ],
-    "correctAnswer": "$\\frac{1}{3}$",
+    "correctAnswer": "1/3",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43860,13 +43854,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 77 biscuits in a tin, 37 are chocolate. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{3}{4}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{2}$"
+      "3/4",
+      "2/3",
+      "3/10",
+      "1/3",
+      "1/2"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43876,13 +43870,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 79 children in a class, 8 have younger brothers and sisters. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{10}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{9}{10}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{1}{8}$"
+      "1/10",
+      "1/2",
+      "9/10",
+      "4/5",
+      "1/8"
     ],
-    "correctAnswer": "$\\frac{1}{10}$",
+    "correctAnswer": "1/10",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43892,13 +43886,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 21 people on a bus, 1 are wearing glasses. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{10}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{9}{10}$"
+      "1/10",
+      "1/8",
+      "2/3",
+      "1/3",
+      "9/10"
     ],
-    "correctAnswer": "$\\frac{1}{10}$",
+    "correctAnswer": "1/10",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43908,13 +43902,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 77 people on a bus, 47 are wearing glasses. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{1}{5}$"
+      "2/5",
+      "1/8",
+      "3/4",
+      "3/5",
+      "1/5"
     ],
-    "correctAnswer": "$\\frac{3}{5}$",
+    "correctAnswer": "3/5",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43924,13 +43918,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 74 books on a shelf, 18 are non-fiction. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{3}{10}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{3}$"
+      "3/10",
+      "3/4",
+      "1/5",
+      "1/4",
+      "1/3"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -43940,13 +43934,13 @@ export const MATHS_QUIZ = [
     "question": "Out of 34 books on a shelf, 4 are non-fiction. Approximately what proportion is this?",
     "image": null,
     "options": [
-      "$\\frac{1}{8}$",
-      "$\\frac{7}{8}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{2}$"
+      "1/8",
+      "7/8",
+      "1/3",
+      "2/3",
+      "1/2"
     ],
-    "correctAnswer": "$\\frac{1}{8}$",
+    "correctAnswer": "1/8",
     "topic": "Fractions, Decimals and Percentages",
     "difficultyIndex": 31,
     "prefix": "P3Q31"
@@ -49249,800 +49243,800 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P3Q35_1",
-    "question": "Which fraction is equivalent to $\\frac{18}{24}$?",
+    "question": "Which fraction is equivalent to 18/24?",
     "image": null,
     "options": [
-      "$\\frac{4}{3}$",
-      "$\\frac{4}{4}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{5}{8}$",
-      "$\\frac{3}{3}$"
+      "4/3",
+      "4/4",
+      "3/4",
+      "5/8",
+      "3/3"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_2",
-    "question": "Which fraction is equivalent to $\\frac{12}{15}$?",
+    "question": "Which fraction is equivalent to 12/15?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$",
-      "$\\frac{5}{4}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{5}{5}$",
-      "$\\frac{4}{4}$"
+      "1/2",
+      "5/4",
+      "4/5",
+      "5/5",
+      "4/4"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_3",
-    "question": "Which fraction is equivalent to $\\frac{6}{24}$?",
+    "question": "Which fraction is equivalent to 6/24?",
     "image": null,
     "options": [
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{4}{1}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{2}{4}$"
+      "3/4",
+      "1/4",
+      "4/1",
+      "1/3",
+      "2/4"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_4",
-    "question": "Which fraction is equivalent to $\\frac{25}{30}$?",
+    "question": "Which fraction is equivalent to 25/30?",
     "image": null,
     "options": [
-      "$\\frac{5}{6}$",
-      "$\\frac{6}{5}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{6}{6}$",
-      "$\\frac{5}{5}$"
+      "5/6",
+      "6/5",
+      "1/5",
+      "6/6",
+      "5/5"
     ],
-    "correctAnswer": "$\\frac{5}{6}$",
+    "correctAnswer": "5/6",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_5",
-    "question": "Which fraction is equivalent to $\\frac{6}{30}$?",
+    "question": "Which fraction is equivalent to 6/30?",
     "image": null,
     "options": [
-      "$\\frac{5}{1}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{3}$"
+      "5/1",
+      "1/4",
+      "2/5",
+      "1/5",
+      "1/3"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_6",
-    "question": "Which fraction is equivalent to $\\frac{10}{60}$?",
+    "question": "Which fraction is equivalent to 10/60?",
     "image": null,
     "options": [
-      "$\\frac{6}{1}$",
-      "$\\frac{2}{6}$",
-      "$\\frac{1}{6}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{5}{6}$"
+      "6/1",
+      "2/6",
+      "1/6",
+      "1/5",
+      "5/6"
     ],
-    "correctAnswer": "$\\frac{1}{6}$",
+    "correctAnswer": "1/6",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_7",
-    "question": "Which fraction is equivalent to $\\frac{18}{24}$?",
+    "question": "Which fraction is equivalent to 18/24?",
     "image": null,
     "options": [
-      "$\\frac{4}{3}$",
-      "$\\frac{3}{3}$",
-      "$\\frac{4}{4}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{5}{6}$"
+      "4/3",
+      "3/3",
+      "4/4",
+      "3/4",
+      "5/6"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_8",
-    "question": "Which fraction is equivalent to $\\frac{12}{60}$?",
+    "question": "Which fraction is equivalent to 12/60?",
     "image": null,
     "options": [
-      "$\\frac{1}{3}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{5}{1}$",
-      "$\\frac{1}{5}$"
+      "1/3",
+      "2/5",
+      "1/4",
+      "5/1",
+      "1/5"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_9",
-    "question": "Which fraction is equivalent to $\\frac{10}{50}$?",
+    "question": "Which fraction is equivalent to 10/50?",
     "image": null,
     "options": [
-      "$\\frac{2}{5}$",
-      "$\\frac{5}{1}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{4}$"
+      "2/5",
+      "5/1",
+      "1/3",
+      "1/5",
+      "1/4"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_10",
-    "question": "Which fraction is equivalent to $\\frac{36}{48}$?",
+    "question": "Which fraction is equivalent to 36/48?",
     "image": null,
     "options": [
-      "$\\frac{3}{3}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{4}{3}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{4}{4}$"
+      "3/3",
+      "1/2",
+      "4/3",
+      "3/4",
+      "4/4"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_11",
-    "question": "Which fraction is equivalent to $\\frac{5}{40}$?",
+    "question": "Which fraction is equivalent to 5/40?",
     "image": null,
     "options": [
-      "$\\frac{1}{8}$",
-      "$\\frac{2}{8}$",
-      "$\\frac{1}{7}$",
-      "$\\frac{8}{1}$",
-      "$\\frac{1}{2}$"
+      "1/8",
+      "2/8",
+      "1/7",
+      "8/1",
+      "1/2"
     ],
-    "correctAnswer": "$\\frac{1}{8}$",
+    "correctAnswer": "1/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_12",
-    "question": "Which fraction is equivalent to $\\frac{24}{36}$?",
+    "question": "Which fraction is equivalent to 24/36?",
     "image": null,
     "options": [
-      "$\\frac{3}{3}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{3}{2}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{2}{2}$"
+      "3/3",
+      "1/5",
+      "3/2",
+      "2/3",
+      "2/2"
     ],
-    "correctAnswer": "$\\frac{2}{3}$",
+    "correctAnswer": "2/3",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_13",
-    "question": "Which fraction is equivalent to $\\frac{70}{80}$?",
+    "question": "Which fraction is equivalent to 70/80?",
     "image": null,
     "options": [
-      "$\\frac{4}{5}$",
-      "$\\frac{7}{7}$",
-      "$\\frac{7}{8}$",
-      "$\\frac{8}{7}$",
-      "$\\frac{8}{8}$"
+      "4/5",
+      "7/7",
+      "7/8",
+      "8/7",
+      "8/8"
     ],
-    "correctAnswer": "$\\frac{7}{8}$",
+    "correctAnswer": "7/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_14",
-    "question": "Which fraction is equivalent to $\\frac{56}{64}$?",
+    "question": "Which fraction is equivalent to 56/64?",
     "image": null,
     "options": [
-      "$\\frac{7}{7}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{8}{8}$",
-      "$\\frac{8}{7}$",
-      "$\\frac{7}{8}$"
+      "7/7",
+      "4/5",
+      "8/8",
+      "8/7",
+      "7/8"
     ],
-    "correctAnswer": "$\\frac{7}{8}$",
+    "correctAnswer": "7/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_15",
-    "question": "Which fraction is equivalent to $\\frac{5}{40}$?",
+    "question": "Which fraction is equivalent to 5/40?",
     "image": null,
     "options": [
-      "$\\frac{3}{4}$",
-      "$\\frac{8}{1}$",
-      "$\\frac{2}{8}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{1}{7}$"
+      "3/4",
+      "8/1",
+      "2/8",
+      "1/8",
+      "1/7"
     ],
-    "correctAnswer": "$\\frac{1}{8}$",
+    "correctAnswer": "1/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_16",
-    "question": "Which fraction is equivalent to $\\frac{42}{48}$?",
+    "question": "Which fraction is equivalent to 42/48?",
     "image": null,
     "options": [
-      "$\\frac{4}{5}$",
-      "$\\frac{8}{8}$",
-      "$\\frac{7}{8}$",
-      "$\\frac{8}{7}$",
-      "$\\frac{7}{7}$"
+      "4/5",
+      "8/8",
+      "7/8",
+      "8/7",
+      "7/7"
     ],
-    "correctAnswer": "$\\frac{7}{8}$",
+    "correctAnswer": "7/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_17",
-    "question": "Which fraction is equivalent to $\\frac{10}{20}$?",
+    "question": "Which fraction is equivalent to 10/20?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$",
-      "$\\frac{2}{2}$",
-      "$\\frac{2}{1}$",
-      "$\\frac{5}{6}$",
-      "$\\frac{1}{5}$"
+      "1/2",
+      "2/2",
+      "2/1",
+      "5/6",
+      "1/5"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_18",
-    "question": "Which fraction is equivalent to $\\frac{30}{48}$?",
+    "question": "Which fraction is equivalent to 30/48?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$",
-      "$\\frac{8}{5}$",
-      "$\\frac{5}{8}$",
-      "$\\frac{6}{8}$",
-      "$\\frac{5}{7}$"
+      "1/2",
+      "8/5",
+      "5/8",
+      "6/8",
+      "5/7"
     ],
-    "correctAnswer": "$\\frac{5}{8}$",
+    "correctAnswer": "5/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_19",
-    "question": "Which fraction is equivalent to $\\frac{6}{48}$?",
+    "question": "Which fraction is equivalent to 6/48?",
     "image": null,
     "options": [
-      "$\\frac{1}{7}$",
-      "$\\frac{8}{1}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{2}{8}$",
-      "$\\frac{5}{8}$"
+      "1/7",
+      "8/1",
+      "1/8",
+      "2/8",
+      "5/8"
     ],
-    "correctAnswer": "$\\frac{1}{8}$",
+    "correctAnswer": "1/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_20",
-    "question": "Which fraction is equivalent to $\\frac{12}{96}$?",
+    "question": "Which fraction is equivalent to 12/96?",
     "image": null,
     "options": [
-      "$\\frac{3}{5}$",
-      "$\\frac{2}{8}$",
-      "$\\frac{1}{7}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{8}{1}$"
+      "3/5",
+      "2/8",
+      "1/7",
+      "1/8",
+      "8/1"
     ],
-    "correctAnswer": "$\\frac{1}{8}$",
+    "correctAnswer": "1/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_21",
-    "question": "Which fraction is equivalent to $\\frac{5}{25}$?",
+    "question": "Which fraction is equivalent to 5/25?",
     "image": null,
     "options": [
-      "$\\frac{5}{1}$",
-      "$\\frac{7}{8}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{2}{5}$"
+      "5/1",
+      "7/8",
+      "1/4",
+      "1/5",
+      "2/5"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_22",
-    "question": "Which fraction is equivalent to $\\frac{35}{40}$?",
+    "question": "Which fraction is equivalent to 35/40?",
     "image": null,
     "options": [
-      "$\\frac{3}{5}$",
-      "$\\frac{8}{8}$",
-      "$\\frac{7}{7}$",
-      "$\\frac{8}{7}$",
-      "$\\frac{7}{8}$"
+      "3/5",
+      "8/8",
+      "7/7",
+      "8/7",
+      "7/8"
     ],
-    "correctAnswer": "$\\frac{7}{8}$",
+    "correctAnswer": "7/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_23",
-    "question": "Which fraction is equivalent to $\\frac{15}{25}$?",
+    "question": "Which fraction is equivalent to 15/25?",
     "image": null,
     "options": [
-      "$\\frac{3}{4}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{5}{3}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{5}{8}$"
+      "3/4",
+      "4/5",
+      "5/3",
+      "3/5",
+      "5/8"
     ],
-    "correctAnswer": "$\\frac{3}{5}$",
+    "correctAnswer": "3/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_24",
-    "question": "Which fraction is equivalent to $\\frac{10}{16}$?",
+    "question": "Which fraction is equivalent to 10/16?",
     "image": null,
     "options": [
-      "$\\frac{5}{6}$",
-      "$\\frac{5}{8}$",
-      "$\\frac{6}{8}$",
-      "$\\frac{5}{7}$",
-      "$\\frac{8}{5}$"
+      "5/6",
+      "5/8",
+      "6/8",
+      "5/7",
+      "8/5"
     ],
-    "correctAnswer": "$\\frac{5}{8}$",
+    "correctAnswer": "5/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_25",
-    "question": "Which fraction is equivalent to $\\frac{40}{50}$?",
+    "question": "Which fraction is equivalent to 40/50?",
     "image": null,
     "options": [
-      "$\\frac{5}{4}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{4}{4}$",
-      "$\\frac{5}{5}$"
+      "5/4",
+      "1/4",
+      "4/5",
+      "4/4",
+      "5/5"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_26",
-    "question": "Which fraction is equivalent to $\\frac{12}{16}$?",
+    "question": "Which fraction is equivalent to 12/16?",
     "image": null,
     "options": [
-      "$\\frac{5}{6}$",
-      "$\\frac{4}{4}$",
-      "$\\frac{3}{3}$",
-      "$\\frac{4}{3}$",
-      "$\\frac{3}{4}$"
+      "5/6",
+      "4/4",
+      "3/3",
+      "4/3",
+      "3/4"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_27",
-    "question": "Which fraction is equivalent to $\\frac{3}{12}$?",
+    "question": "Which fraction is equivalent to 3/12?",
     "image": null,
     "options": [
-      "$\\frac{1}{3}$",
-      "$\\frac{2}{4}$",
-      "$\\frac{5}{8}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{4}{1}$"
+      "1/3",
+      "2/4",
+      "5/8",
+      "1/4",
+      "4/1"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_28",
-    "question": "Which fraction is equivalent to $\\frac{4}{12}$?",
+    "question": "Which fraction is equivalent to 4/12?",
     "image": null,
     "options": [
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{3}{1}$"
+      "2/3",
+      "1/2",
+      "1/3",
+      "4/5",
+      "3/1"
     ],
-    "correctAnswer": "$\\frac{1}{3}$",
+    "correctAnswer": "1/3",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_29",
-    "question": "Which fraction is equivalent to $\\frac{6}{48}$?",
+    "question": "Which fraction is equivalent to 6/48?",
     "image": null,
     "options": [
-      "$\\frac{8}{1}$",
-      "$\\frac{1}{7}$",
-      "$\\frac{3}{8}$",
-      "$\\frac{2}{8}$",
-      "$\\frac{1}{8}$"
+      "8/1",
+      "1/7",
+      "3/8",
+      "2/8",
+      "1/8"
     ],
-    "correctAnswer": "$\\frac{1}{8}$",
+    "correctAnswer": "1/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_30",
-    "question": "Which fraction is equivalent to $\\frac{18}{48}$?",
+    "question": "Which fraction is equivalent to 18/48?",
     "image": null,
     "options": [
-      "$\\frac{8}{3}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{3}{8}$",
-      "$\\frac{4}{8}$",
-      "$\\frac{3}{7}$"
+      "8/3",
+      "3/5",
+      "3/8",
+      "4/8",
+      "3/7"
     ],
-    "correctAnswer": "$\\frac{3}{8}$",
+    "correctAnswer": "3/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_31",
-    "question": "Which fraction is equivalent to $\\frac{20}{50}$?",
+    "question": "Which fraction is equivalent to 20/50?",
     "image": null,
     "options": [
-      "$\\frac{1}{5}$",
-      "$\\frac{2}{4}$",
-      "$\\frac{5}{2}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{3}{5}$"
+      "1/5",
+      "2/4",
+      "5/2",
+      "2/5",
+      "3/5"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_32",
-    "question": "Which fraction is equivalent to $\\frac{2}{12}$?",
+    "question": "Which fraction is equivalent to 2/12?",
     "image": null,
     "options": [
-      "$\\frac{1}{6}$",
-      "$\\frac{2}{6}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{6}{1}$",
-      "$\\frac{1}{2}$"
+      "1/6",
+      "2/6",
+      "1/5",
+      "6/1",
+      "1/2"
     ],
-    "correctAnswer": "$\\frac{1}{6}$",
+    "correctAnswer": "1/6",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_33",
-    "question": "Which fraction is equivalent to $\\frac{50}{80}$?",
+    "question": "Which fraction is equivalent to 50/80?",
     "image": null,
     "options": [
-      "$\\frac{5}{7}$",
-      "$\\frac{5}{8}$",
-      "$\\frac{6}{8}$",
-      "$\\frac{3}{8}$",
-      "$\\frac{8}{5}$"
+      "5/7",
+      "5/8",
+      "6/8",
+      "3/8",
+      "8/5"
     ],
-    "correctAnswer": "$\\frac{5}{8}$",
+    "correctAnswer": "5/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_34",
-    "question": "Which fraction is equivalent to $\\frac{48}{60}$?",
+    "question": "Which fraction is equivalent to 48/60?",
     "image": null,
     "options": [
-      "$\\frac{5}{4}$",
-      "$\\frac{4}{4}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{5}{5}$",
-      "$\\frac{4}{5}$"
+      "5/4",
+      "4/4",
+      "1/4",
+      "5/5",
+      "4/5"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_35",
-    "question": "Which fraction is equivalent to $\\frac{20}{24}$?",
+    "question": "Which fraction is equivalent to 20/24?",
     "image": null,
     "options": [
-      "$\\frac{5}{6}$",
-      "$\\frac{6}{5}$",
-      "$\\frac{6}{6}$",
-      "$\\frac{5}{5}$",
-      "$\\frac{1}{6}$"
+      "5/6",
+      "6/5",
+      "6/6",
+      "5/5",
+      "1/6"
     ],
-    "correctAnswer": "$\\frac{5}{6}$",
+    "correctAnswer": "5/6",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_36",
-    "question": "Which fraction is equivalent to $\\frac{5}{25}$?",
+    "question": "Which fraction is equivalent to 5/25?",
     "image": null,
     "options": [
-      "$\\frac{5}{1}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{4}{5}$"
+      "5/1",
+      "1/4",
+      "1/5",
+      "2/5",
+      "4/5"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_37",
-    "question": "Which fraction is equivalent to $\\frac{6}{18}$?",
+    "question": "Which fraction is equivalent to 6/18?",
     "image": null,
     "options": [
-      "$\\frac{3}{5}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{3}{1}$",
-      "$\\frac{2}{3}$"
+      "3/5",
+      "1/3",
+      "1/2",
+      "3/1",
+      "2/3"
     ],
-    "correctAnswer": "$\\frac{1}{3}$",
+    "correctAnswer": "1/3",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_38",
-    "question": "Which fraction is equivalent to $\\frac{3}{15}$?",
+    "question": "Which fraction is equivalent to 3/15?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{5}{1}$",
-      "$\\frac{2}{5}$"
+      "1/2",
+      "1/5",
+      "1/4",
+      "5/1",
+      "2/5"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_39",
-    "question": "Which fraction is equivalent to $\\frac{8}{64}$?",
+    "question": "Which fraction is equivalent to 8/64?",
     "image": null,
     "options": [
-      "$\\frac{1}{8}$",
-      "$\\frac{1}{6}$",
-      "$\\frac{8}{1}$",
-      "$\\frac{2}{8}$",
-      "$\\frac{1}{7}$"
+      "1/8",
+      "1/6",
+      "8/1",
+      "2/8",
+      "1/7"
     ],
-    "correctAnswer": "$\\frac{1}{8}$",
+    "correctAnswer": "1/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_40",
-    "question": "Which fraction is equivalent to $\\frac{4}{20}$?",
+    "question": "Which fraction is equivalent to 4/20?",
     "image": null,
     "options": [
-      "$\\frac{1}{4}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{5}{1}$",
-      "$\\frac{1}{3}$"
+      "1/4",
+      "2/5",
+      "1/5",
+      "5/1",
+      "1/3"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_41",
-    "question": "Which fraction is equivalent to $\\frac{25}{40}$?",
+    "question": "Which fraction is equivalent to 25/40?",
     "image": null,
     "options": [
-      "$\\frac{6}{8}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{5}{7}$",
-      "$\\frac{8}{5}$",
-      "$\\frac{5}{8}$"
+      "6/8",
+      "1/4",
+      "5/7",
+      "8/5",
+      "5/8"
     ],
-    "correctAnswer": "$\\frac{5}{8}$",
+    "correctAnswer": "5/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_42",
-    "question": "Which fraction is equivalent to $\\frac{4}{24}$?",
+    "question": "Which fraction is equivalent to 4/24?",
     "image": null,
     "options": [
-      "$\\frac{6}{1}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{6}$",
-      "$\\frac{2}{6}$"
+      "6/1",
+      "4/5",
+      "1/5",
+      "1/6",
+      "2/6"
     ],
-    "correctAnswer": "$\\frac{1}{6}$",
+    "correctAnswer": "1/6",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_43",
-    "question": "Which fraction is equivalent to $\\frac{24}{60}$?",
+    "question": "Which fraction is equivalent to 24/60?",
     "image": null,
     "options": [
-      "$\\frac{5}{2}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{2}{4}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{5}{6}$"
+      "5/2",
+      "3/5",
+      "2/4",
+      "2/5",
+      "5/6"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_44",
-    "question": "Which fraction is equivalent to $\\frac{5}{40}$?",
+    "question": "Which fraction is equivalent to 5/40?",
     "image": null,
     "options": [
-      "$\\frac{2}{8}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{1}{7}$",
-      "$\\frac{8}{1}$"
+      "2/8",
+      "2/5",
+      "1/8",
+      "1/7",
+      "8/1"
     ],
-    "correctAnswer": "$\\frac{1}{8}$",
+    "correctAnswer": "1/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_45",
-    "question": "Which fraction is equivalent to $\\frac{16}{20}$?",
+    "question": "Which fraction is equivalent to 16/20?",
     "image": null,
     "options": [
-      "$\\frac{4}{5}$",
-      "$\\frac{5}{4}$",
-      "$\\frac{4}{4}$",
-      "$\\frac{5}{5}$",
-      "$\\frac{3}{8}$"
+      "4/5",
+      "5/4",
+      "4/4",
+      "5/5",
+      "3/8"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_46",
-    "question": "Which fraction is equivalent to $\\frac{20}{25}$?",
+    "question": "Which fraction is equivalent to 20/25?",
     "image": null,
     "options": [
-      "$\\frac{4}{5}$",
-      "$\\frac{5}{5}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{5}{4}$",
-      "$\\frac{4}{4}$"
+      "4/5",
+      "5/5",
+      "1/8",
+      "5/4",
+      "4/4"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_47",
-    "question": "Which fraction is equivalent to $\\frac{12}{32}$?",
+    "question": "Which fraction is equivalent to 12/32?",
     "image": null,
     "options": [
-      "$\\frac{8}{3}$",
-      "$\\frac{4}{8}$",
-      "$\\frac{3}{7}$",
-      "$\\frac{1}{6}$",
-      "$\\frac{3}{8}$"
+      "8/3",
+      "4/8",
+      "3/7",
+      "1/6",
+      "3/8"
     ],
-    "correctAnswer": "$\\frac{3}{8}$",
+    "correctAnswer": "3/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_48",
-    "question": "Which fraction is equivalent to $\\frac{15}{20}$?",
+    "question": "Which fraction is equivalent to 15/20?",
     "image": null,
     "options": [
-      "$\\frac{4}{4}$",
-      "$\\frac{3}{3}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{4}{3}$",
-      "$\\frac{7}{8}$"
+      "4/4",
+      "3/3",
+      "3/4",
+      "4/3",
+      "7/8"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_49",
-    "question": "Which fraction is equivalent to $\\frac{24}{36}$?",
+    "question": "Which fraction is equivalent to 24/36?",
     "image": null,
     "options": [
-      "$\\frac{3}{3}$",
-      "$\\frac{3}{2}$",
-      "$\\frac{2}{2}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{2}{3}$"
+      "3/3",
+      "3/2",
+      "2/2",
+      "1/8",
+      "2/3"
     ],
-    "correctAnswer": "$\\frac{2}{3}$",
+    "correctAnswer": "2/3",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
   },
   {
     "id": "P3Q35_50",
-    "question": "Which fraction is equivalent to $\\frac{4}{10}$?",
+    "question": "Which fraction is equivalent to 4/10?",
     "image": null,
     "options": [
-      "$\\frac{5}{8}$",
-      "$\\frac{2}{4}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{5}{2}$"
+      "5/8",
+      "2/4",
+      "2/5",
+      "3/5",
+      "5/2"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 35,
     "prefix": "P3Q35"
@@ -56292,13 +56286,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 1 kg is 750 g?",
     "image": null,
     "options": [
-      "$\\frac{2}{6}$",
-      "$\\frac{4}{7}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{4}{3}$"
+      "2/6",
+      "4/7",
+      "1/4",
+      "3/4",
+      "4/3"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56308,13 +56302,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 4 m is 120 cm?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{7}{10}$",
-      "$\\frac{10}{3}$",
-      "$\\frac{3}{10}$"
+      "1/2",
+      "3/5",
+      "7/10",
+      "10/3",
+      "3/10"
     ],
-    "correctAnswer": "$\\frac{3}{10}$",
+    "correctAnswer": "3/10",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56324,13 +56318,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 4 m is 50 cm?",
     "image": null,
     "options": [
-      "$\\frac{1}{8}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{8}{1}$",
-      "$\\frac{7}{8}$"
+      "1/8",
+      "2/3",
+      "1/2",
+      "8/1",
+      "7/8"
     ],
-    "correctAnswer": "$\\frac{1}{8}$",
+    "correctAnswer": "1/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56340,13 +56334,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 1 hours is 45 minutes?",
     "image": null,
     "options": [
-      "$\\frac{9}{10}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{4}{3}$"
+      "9/10",
+      "3/4",
+      "1/4",
+      "2/3",
+      "4/3"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56356,13 +56350,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 1 kg is 200 g?",
     "image": null,
     "options": [
-      "$\\frac{5}{1}$",
-      "$\\frac{4}{6}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{7}{10}$",
-      "$\\frac{1}{5}$"
+      "5/1",
+      "4/6",
+      "4/5",
+      "7/10",
+      "1/5"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56372,13 +56366,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 1 hours is 30 minutes?",
     "image": null,
     "options": [
-      "$\\frac{3}{9}$",
-      "$\\frac{2}{1}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{7}{9}$",
-      "$\\frac{2}{3}$"
+      "3/9",
+      "2/1",
+      "1/2",
+      "7/9",
+      "2/3"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56388,13 +56382,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 1 hours is 24 minutes?",
     "image": null,
     "options": [
-      "$\\frac{3}{5}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{5}{2}$",
-      "$\\frac{9}{10}$"
+      "3/5",
+      "2/5",
+      "1/2",
+      "5/2",
+      "9/10"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56404,13 +56398,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 4 m is 200 cm?",
     "image": null,
     "options": [
-      "$\\frac{1}{6}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{2}{1}$"
+      "1/6",
+      "1/5",
+      "1/2",
+      "3/4",
+      "2/1"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56420,13 +56414,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 3 m is 180 cm?",
     "image": null,
     "options": [
-      "$\\frac{1}{5}$",
-      "$\\frac{3}{7}$",
-      "$\\frac{5}{3}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{2}{5}$"
+      "1/5",
+      "3/7",
+      "5/3",
+      "3/5",
+      "2/5"
     ],
-    "correctAnswer": "$\\frac{3}{5}$",
+    "correctAnswer": "3/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56436,13 +56430,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 1 m is 25 cm?",
     "image": null,
     "options": [
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{4}{1}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{2}{3}$"
+      "3/4",
+      "1/4",
+      "4/1",
+      "3/5",
+      "2/3"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56452,13 +56446,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 4 hours is 216 minutes?",
     "image": null,
     "options": [
-      "$\\frac{10}{9}$",
-      "$\\frac{9}{10}$",
-      "$\\frac{5}{7}$",
-      "$\\frac{1}{10}$",
-      "$\\frac{1}{7}$"
+      "10/9",
+      "9/10",
+      "5/7",
+      "1/10",
+      "1/7"
     ],
-    "correctAnswer": "$\\frac{9}{10}$",
+    "correctAnswer": "9/10",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56468,13 +56462,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 3 hours is 90 minutes?",
     "image": null,
     "options": [
-      "$\\frac{2}{3}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{2}{1}$",
-      "$\\frac{1}{5}$"
+      "2/3",
+      "3/10",
+      "1/2",
+      "2/1",
+      "1/5"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56484,13 +56478,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 3 m is 120 cm?",
     "image": null,
     "options": [
-      "$\\frac{1}{3}$",
-      "$\\frac{5}{9}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{5}{2}$"
+      "1/3",
+      "5/9",
+      "2/5",
+      "3/5",
+      "5/2"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56500,13 +56494,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 4 hours is 192 minutes?",
     "image": null,
     "options": [
-      "$\\frac{2}{4}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{5}{10}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{5}{4}$"
+      "2/4",
+      "4/5",
+      "5/10",
+      "1/5",
+      "5/4"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56516,13 +56510,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 2 m is 50 cm?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$",
-      "$\\frac{4}{1}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{1}{7}$"
+      "1/2",
+      "4/1",
+      "1/4",
+      "3/4",
+      "1/7"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56532,13 +56526,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 2 kg is 1500 g?",
     "image": null,
     "options": [
-      "$\\frac{3}{7}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{7}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{4}{3}$"
+      "3/7",
+      "1/4",
+      "1/7",
+      "3/4",
+      "4/3"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56548,13 +56542,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 1 m is 25 cm?",
     "image": null,
     "options": [
-      "$\\frac{2}{4}$",
-      "$\\frac{3}{6}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{4}{1}$",
-      "$\\frac{1}{4}$"
+      "2/4",
+      "3/6",
+      "3/4",
+      "4/1",
+      "1/4"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56564,13 +56558,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of £5 is 250p?",
     "image": null,
     "options": [
-      "$\\frac{3}{9}$",
-      "$\\frac{6}{9}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{2}{9}$",
-      "$\\frac{2}{1}$"
+      "3/9",
+      "6/9",
+      "1/2",
+      "2/9",
+      "2/1"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56580,13 +56574,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 3 m is 150 cm?",
     "image": null,
     "options": [
-      "$\\frac{1}{7}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{2}{1}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{6}{7}$"
+      "1/7",
+      "1/2",
+      "2/1",
+      "1/8",
+      "6/7"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56596,13 +56590,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 1 kg is 800 g?",
     "image": null,
     "options": [
-      "$\\frac{4}{5}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{5}{4}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{3}{4}$"
+      "4/5",
+      "1/5",
+      "5/4",
+      "1/2",
+      "3/4"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56612,13 +56606,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 2 hours is 45 minutes?",
     "image": null,
     "options": [
-      "$\\frac{5}{8}$",
-      "$\\frac{3}{8}$",
-      "$\\frac{8}{3}$",
-      "$\\frac{1}{10}$",
-      "$\\frac{3}{4}$"
+      "5/8",
+      "3/8",
+      "8/3",
+      "1/10",
+      "3/4"
     ],
-    "correctAnswer": "$\\frac{3}{8}$",
+    "correctAnswer": "3/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56628,13 +56622,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of £1 is 40p?",
     "image": null,
     "options": [
-      "$\\frac{5}{2}$",
-      "$\\frac{1}{9}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{8}{9}$",
-      "$\\frac{2}{5}$"
+      "5/2",
+      "1/9",
+      "3/5",
+      "8/9",
+      "2/5"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56644,13 +56638,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 5 m is 350 cm?",
     "image": null,
     "options": [
-      "$\\frac{2}{8}$",
-      "$\\frac{10}{7}$",
-      "$\\frac{5}{8}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{7}{10}$"
+      "2/8",
+      "10/7",
+      "5/8",
+      "3/10",
+      "7/10"
     ],
-    "correctAnswer": "$\\frac{7}{10}$",
+    "correctAnswer": "7/10",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56660,13 +56654,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of £5 is 350p?",
     "image": null,
     "options": [
-      "$\\frac{3}{6}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{10}{7}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{7}{10}$"
+      "3/6",
+      "1/3",
+      "10/7",
+      "3/10",
+      "7/10"
     ],
-    "correctAnswer": "$\\frac{7}{10}$",
+    "correctAnswer": "7/10",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56676,13 +56670,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of £5 is 350p?",
     "image": null,
     "options": [
-      "$\\frac{4}{5}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{7}{10}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{10}{7}$"
+      "4/5",
+      "3/10",
+      "7/10",
+      "1/2",
+      "10/7"
     ],
-    "correctAnswer": "$\\frac{7}{10}$",
+    "correctAnswer": "7/10",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56692,13 +56686,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of £5 is 125p?",
     "image": null,
     "options": [
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{8}{10}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{4}{1}$"
+      "1/4",
+      "1/2",
+      "8/10",
+      "3/4",
+      "4/1"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56708,13 +56702,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 3 kg is 750 g?",
     "image": null,
     "options": [
-      "$\\frac{1}{4}$",
-      "$\\frac{4}{1}$",
-      "$\\frac{2}{6}$",
-      "$\\frac{1}{8}$",
-      "$\\frac{3}{4}$"
+      "1/4",
+      "4/1",
+      "2/6",
+      "1/8",
+      "3/4"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56724,13 +56718,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 3 kg is 2100 g?",
     "image": null,
     "options": [
-      "$\\frac{7}{10}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{6}{10}$",
-      "$\\frac{10}{7}$",
-      "$\\frac{7}{8}$"
+      "7/10",
+      "3/10",
+      "6/10",
+      "10/7",
+      "7/8"
     ],
-    "correctAnswer": "$\\frac{7}{10}$",
+    "correctAnswer": "7/10",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56740,13 +56734,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of £5 is 150p?",
     "image": null,
     "options": [
-      "$\\frac{7}{10}$",
-      "$\\frac{1}{7}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{10}{3}$",
-      "$\\frac{3}{10}$"
+      "7/10",
+      "1/7",
+      "1/5",
+      "10/3",
+      "3/10"
     ],
-    "correctAnswer": "$\\frac{3}{10}$",
+    "correctAnswer": "3/10",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56756,13 +56750,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 3 kg is 1500 g?",
     "image": null,
     "options": [
-      "$\\frac{3}{5}$",
-      "$\\frac{9}{10}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{6}{8}$",
-      "$\\frac{2}{1}$"
+      "3/5",
+      "9/10",
+      "1/2",
+      "6/8",
+      "2/1"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56772,13 +56766,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of £5 is 200p?",
     "image": null,
     "options": [
-      "$\\frac{3}{10}$",
-      "$\\frac{5}{2}$",
-      "$\\frac{7}{9}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{3}{5}$"
+      "3/10",
+      "5/2",
+      "7/9",
+      "2/5",
+      "3/5"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56788,13 +56782,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 1 hours is 24 minutes?",
     "image": null,
     "options": [
-      "$\\frac{2}{7}$",
-      "$\\frac{5}{2}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{2}$"
+      "2/7",
+      "5/2",
+      "3/5",
+      "2/5",
+      "1/2"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56804,13 +56798,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 4 m is 250 cm?",
     "image": null,
     "options": [
-      "$\\frac{3}{8}$",
-      "$\\frac{5}{8}$",
-      "$\\frac{8}{10}$",
-      "$\\frac{6}{9}$",
-      "$\\frac{8}{5}$"
+      "3/8",
+      "5/8",
+      "8/10",
+      "6/9",
+      "8/5"
     ],
-    "correctAnswer": "$\\frac{5}{8}$",
+    "correctAnswer": "5/8",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56820,13 +56814,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of £5 is 125p?",
     "image": null,
     "options": [
-      "$\\frac{3}{4}$",
-      "$\\frac{6}{10}$",
-      "$\\frac{4}{1}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{2}{10}$"
+      "3/4",
+      "6/10",
+      "4/1",
+      "1/4",
+      "2/10"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56836,13 +56830,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 4 m is 280 cm?",
     "image": null,
     "options": [
-      "$\\frac{7}{9}$",
-      "$\\frac{7}{10}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{10}{7}$",
-      "$\\frac{2}{5}$"
+      "7/9",
+      "7/10",
+      "3/10",
+      "10/7",
+      "2/5"
     ],
-    "correctAnswer": "$\\frac{7}{10}$",
+    "correctAnswer": "7/10",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56852,13 +56846,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 3 kg is 2500 g?",
     "image": null,
     "options": [
-      "$\\frac{1}{6}$",
-      "$\\frac{6}{7}$",
-      "$\\frac{5}{6}$",
-      "$\\frac{6}{5}$",
-      "$\\frac{3}{9}$"
+      "1/6",
+      "6/7",
+      "5/6",
+      "6/5",
+      "3/9"
     ],
-    "correctAnswer": "$\\frac{5}{6}$",
+    "correctAnswer": "5/6",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56868,13 +56862,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of £5 is 125p?",
     "image": null,
     "options": [
-      "$\\frac{1}{7}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{4}{1}$",
-      "$\\frac{3}{7}$",
-      "$\\frac{3}{4}$"
+      "1/7",
+      "1/4",
+      "4/1",
+      "3/7",
+      "3/4"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56884,13 +56878,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 5 m is 375 cm?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{4}{3}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{5}{6}$"
+      "1/2",
+      "1/4",
+      "4/3",
+      "3/4",
+      "5/6"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56900,13 +56894,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of £2 is 100p?",
     "image": null,
     "options": [
-      "$\\frac{2}{3}$",
-      "$\\frac{5}{10}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{2}{1}$",
-      "$\\frac{3}{8}$"
+      "2/3",
+      "5/10",
+      "1/2",
+      "2/1",
+      "3/8"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56916,13 +56910,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 2 kg is 1500 g?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$",
-      "$\\frac{4}{3}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{6}{8}$",
-      "$\\frac{3}{4}$"
+      "1/2",
+      "4/3",
+      "1/4",
+      "6/8",
+      "3/4"
     ],
-    "correctAnswer": "$\\frac{3}{4}$",
+    "correctAnswer": "3/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56932,13 +56926,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 3 kg is 2000 g?",
     "image": null,
     "options": [
-      "$\\frac{1}{7}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{4}{9}$",
-      "$\\frac{3}{2}$",
-      "$\\frac{1}{3}$"
+      "1/7",
+      "2/3",
+      "4/9",
+      "3/2",
+      "1/3"
     ],
-    "correctAnswer": "$\\frac{2}{3}$",
+    "correctAnswer": "2/3",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56948,13 +56942,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 1 kg is 600 g?",
     "image": null,
     "options": [
-      "$\\frac{1}{4}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{5}{3}$",
-      "$\\frac{3}{5}$"
+      "1/4",
+      "1/3",
+      "2/5",
+      "5/3",
+      "3/5"
     ],
-    "correctAnswer": "$\\frac{3}{5}$",
+    "correctAnswer": "3/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56964,13 +56958,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 2 m is 50 cm?",
     "image": null,
     "options": [
-      "$\\frac{5}{9}$",
-      "$\\frac{4}{1}$",
-      "$\\frac{4}{6}$",
-      "$\\frac{1}{4}$",
-      "$\\frac{3}{4}$"
+      "5/9",
+      "4/1",
+      "4/6",
+      "1/4",
+      "3/4"
     ],
-    "correctAnswer": "$\\frac{1}{4}$",
+    "correctAnswer": "1/4",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56980,13 +56974,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 4 m is 320 cm?",
     "image": null,
     "options": [
-      "$\\frac{2}{4}$",
-      "$\\frac{4}{5}$",
-      "$\\frac{5}{4}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{5}{7}$"
+      "2/4",
+      "4/5",
+      "5/4",
+      "1/5",
+      "5/7"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -56996,13 +56990,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 3 kg is 1000 g?",
     "image": null,
     "options": [
-      "$\\frac{2}{3}$",
-      "$\\frac{3}{1}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{7}{10}$"
+      "2/3",
+      "3/1",
+      "1/3",
+      "1/2",
+      "7/10"
     ],
-    "correctAnswer": "$\\frac{1}{3}$",
+    "correctAnswer": "1/3",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -57012,13 +57006,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 1 m is 20 cm?",
     "image": null,
     "options": [
-      "$\\frac{4}{5}$",
-      "$\\frac{3}{4}$",
-      "$\\frac{2}{3}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{5}{1}$"
+      "4/5",
+      "3/4",
+      "2/3",
+      "1/5",
+      "5/1"
     ],
-    "correctAnswer": "$\\frac{1}{5}$",
+    "correctAnswer": "1/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -57028,13 +57022,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 4 hours is 120 minutes?",
     "image": null,
     "options": [
-      "$\\frac{1}{6}$",
-      "$\\frac{1}{9}$",
-      "$\\frac{2}{1}$",
-      "$\\frac{1}{2}$",
-      "$\\frac{3}{7}$"
+      "1/6",
+      "1/9",
+      "2/1",
+      "1/2",
+      "3/7"
     ],
-    "correctAnswer": "$\\frac{1}{2}$",
+    "correctAnswer": "1/2",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -57044,13 +57038,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 2 hours is 96 minutes?",
     "image": null,
     "options": [
-      "$\\frac{1}{10}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{5}{4}$",
-      "$\\frac{1}{3}$",
-      "$\\frac{4}{5}$"
+      "1/10",
+      "1/5",
+      "5/4",
+      "1/3",
+      "4/5"
     ],
-    "correctAnswer": "$\\frac{4}{5}$",
+    "correctAnswer": "4/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -57060,13 +57054,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of 2 kg is 1800 g?",
     "image": null,
     "options": [
-      "$\\frac{4}{6}$",
-      "$\\frac{1}{10}$",
-      "$\\frac{9}{10}$",
-      "$\\frac{4}{9}$",
-      "$\\frac{10}{9}$"
+      "4/6",
+      "1/10",
+      "9/10",
+      "4/9",
+      "10/9"
     ],
-    "correctAnswer": "$\\frac{9}{10}$",
+    "correctAnswer": "9/10",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -57076,13 +57070,13 @@ export const MATHS_QUIZ = [
     "question": "What fraction of £1 is 40p?",
     "image": null,
     "options": [
-      "$\\frac{4}{7}$",
-      "$\\frac{3}{5}$",
-      "$\\frac{5}{2}$",
-      "$\\frac{2}{5}$",
-      "$\\frac{1}{2}$"
+      "4/7",
+      "3/5",
+      "5/2",
+      "2/5",
+      "1/2"
     ],
-    "correctAnswer": "$\\frac{2}{5}$",
+    "correctAnswer": "2/5",
     "topic": "Number - Fractions",
     "difficultyIndex": 39,
     "prefix": "P3Q39"
@@ -70177,800 +70171,800 @@ export const MATHS_QUIZ = [
   },
   {
     "id": "P3Q48_1",
-    "question": "Which of these areas is the same as 1.5 $m^{2}$?",
+    "question": "Which of these areas is the same as 1.5 m²?",
     "image": null,
     "options": [
-      "15 $cm^{2}$",
-      "7500 $cm^{2}$",
-      "150 $cm^{2}$",
-      "150000 $cm^{2}$",
-      "15000 $cm^{2}$"
+      "15 cm²",
+      "7500 cm²",
+      "150 cm²",
+      "150000 cm²",
+      "15000 cm²"
     ],
-    "correctAnswer": "15000 $cm^{2}$",
+    "correctAnswer": "15000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_2",
-    "question": "Which of these areas is the same as 0.1 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.1 m²?",
     "image": null,
     "options": [
-      "1000 $cm^{2}$",
-      "1 $cm^{2}$",
-      "10 $cm^{2}$",
-      "100 $cm^{2}$",
-      "10000 $cm^{2}$"
+      "1000 cm²",
+      "1 cm²",
+      "10 cm²",
+      "100 cm²",
+      "10000 cm²"
     ],
-    "correctAnswer": "1000 $cm^{2}$",
+    "correctAnswer": "1000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_3",
-    "question": "Which of these areas is the same as 0.5 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.5 m²?",
     "image": null,
     "options": [
-      "5 $cm^{2}$",
-      "50 $cm^{2}$",
-      "2500 $cm^{2}$",
-      "50000 $cm^{2}$",
-      "5000 $cm^{2}$"
+      "5 cm²",
+      "50 cm²",
+      "2500 cm²",
+      "50000 cm²",
+      "5000 cm²"
     ],
-    "correctAnswer": "5000 $cm^{2}$",
+    "correctAnswer": "5000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_4",
-    "question": "Which of these areas is the same as 1.2 $m^{2}$?",
+    "question": "Which of these areas is the same as 1.2 m²?",
     "image": null,
     "options": [
-      "12000 $cm^{2}$",
-      "120000 $cm^{2}$",
-      "1200 $cm^{2}$",
-      "6000 $cm^{2}$",
-      "12 $cm^{2}$"
+      "12000 cm²",
+      "120000 cm²",
+      "1200 cm²",
+      "6000 cm²",
+      "12 cm²"
     ],
-    "correctAnswer": "12000 $cm^{2}$",
+    "correctAnswer": "12000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_5",
-    "question": "Which of these areas is the same as 2.5 $m^{2}$?",
+    "question": "Which of these areas is the same as 2.5 m²?",
     "image": null,
     "options": [
-      "25 $cm^{2}$",
-      "25000 $cm^{2}$",
-      "2500 $cm^{2}$",
-      "250000 $cm^{2}$",
-      "12500 $cm^{2}$"
+      "25 cm²",
+      "25000 cm²",
+      "2500 cm²",
+      "250000 cm²",
+      "12500 cm²"
     ],
-    "correctAnswer": "25000 $cm^{2}$",
+    "correctAnswer": "25000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_6",
-    "question": "Which of these areas is the same as 0.25 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.25 m²?",
     "image": null,
     "options": [
-      "25 $cm^{2}$",
-      "2 $cm^{2}$",
-      "1250 $cm^{2}$",
-      "25000 $cm^{2}$",
-      "2500 $cm^{2}$"
+      "25 cm²",
+      "2 cm²",
+      "1250 cm²",
+      "25000 cm²",
+      "2500 cm²"
     ],
-    "correctAnswer": "2500 $cm^{2}$",
+    "correctAnswer": "2500 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_7",
-    "question": "Which of these areas is the same as 10 $m^{2}$?",
+    "question": "Which of these areas is the same as 10 m²?",
     "image": null,
     "options": [
-      "1000 $cm^{2}$",
-      "1000000 $cm^{2}$",
-      "10000 $cm^{2}$",
-      "100000 $cm^{2}$",
-      "100 $cm^{2}$"
+      "1000 cm²",
+      "1000000 cm²",
+      "10000 cm²",
+      "100000 cm²",
+      "100 cm²"
     ],
-    "correctAnswer": "100000 $cm^{2}$",
+    "correctAnswer": "100000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_8",
-    "question": "Which of these areas is the same as 1.2 $m^{2}$?",
+    "question": "Which of these areas is the same as 1.2 m²?",
     "image": null,
     "options": [
-      "12000 $cm^{2}$",
-      "12 $cm^{2}$",
-      "1200 $cm^{2}$",
-      "120000 $cm^{2}$",
-      "6000 $cm^{2}$"
+      "12000 cm²",
+      "12 cm²",
+      "1200 cm²",
+      "120000 cm²",
+      "6000 cm²"
     ],
-    "correctAnswer": "12000 $cm^{2}$",
+    "correctAnswer": "12000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_9",
-    "question": "Which of these areas is the same as 0.8 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.8 m²?",
     "image": null,
     "options": [
-      "80000 $cm^{2}$",
-      "8 $cm^{2}$",
-      "4000 $cm^{2}$",
-      "8000 $cm^{2}$",
-      "800 $cm^{2}$"
+      "80000 cm²",
+      "8 cm²",
+      "4000 cm²",
+      "8000 cm²",
+      "800 cm²"
     ],
-    "correctAnswer": "8000 $cm^{2}$",
+    "correctAnswer": "8000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_10",
-    "question": "Which of these areas is the same as 0.2 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.2 m²?",
     "image": null,
     "options": [
-      "2000 $cm^{2}$",
-      "1000 $cm^{2}$",
-      "200 $cm^{2}$",
-      "2 $cm^{2}$",
-      "20000 $cm^{2}$"
+      "2000 cm²",
+      "1000 cm²",
+      "200 cm²",
+      "2 cm²",
+      "20000 cm²"
     ],
-    "correctAnswer": "2000 $cm^{2}$",
+    "correctAnswer": "2000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_11",
-    "question": "Which of these areas is the same as 0.4 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.4 m²?",
     "image": null,
     "options": [
-      "40 $cm^{2}$",
-      "4 $cm^{2}$",
-      "4000 $cm^{2}$",
-      "400 $cm^{2}$",
-      "40000 $cm^{2}$"
+      "40 cm²",
+      "4 cm²",
+      "4000 cm²",
+      "400 cm²",
+      "40000 cm²"
     ],
-    "correctAnswer": "4000 $cm^{2}$",
+    "correctAnswer": "4000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_12",
-    "question": "Which of these areas is the same as 0.5 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.5 m²?",
     "image": null,
     "options": [
-      "50000 $cm^{2}$",
-      "50 $cm^{2}$",
-      "5 $cm^{2}$",
-      "2500 $cm^{2}$",
-      "5000 $cm^{2}$"
+      "50000 cm²",
+      "50 cm²",
+      "5 cm²",
+      "2500 cm²",
+      "5000 cm²"
     ],
-    "correctAnswer": "5000 $cm^{2}$",
+    "correctAnswer": "5000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_13",
-    "question": "Which of these areas is the same as 1.2 $m^{2}$?",
+    "question": "Which of these areas is the same as 1.2 m²?",
     "image": null,
     "options": [
-      "1200 $cm^{2}$",
-      "6000 $cm^{2}$",
-      "12000 $cm^{2}$",
-      "12 $cm^{2}$",
-      "120000 $cm^{2}$"
+      "1200 cm²",
+      "6000 cm²",
+      "12000 cm²",
+      "12 cm²",
+      "120000 cm²"
     ],
-    "correctAnswer": "12000 $cm^{2}$",
+    "correctAnswer": "12000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_14",
-    "question": "Which of these areas is the same as 0.25 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.25 m²?",
     "image": null,
     "options": [
-      "1250 $cm^{2}$",
-      "2 $cm^{2}$",
-      "25000 $cm^{2}$",
-      "2500 $cm^{2}$",
-      "25 $cm^{2}$"
+      "1250 cm²",
+      "2 cm²",
+      "25000 cm²",
+      "2500 cm²",
+      "25 cm²"
     ],
-    "correctAnswer": "2500 $cm^{2}$",
+    "correctAnswer": "2500 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_15",
-    "question": "Which of these areas is the same as 0.1 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.1 m²?",
     "image": null,
     "options": [
-      "1 $cm^{2}$",
-      "10 $cm^{2}$",
-      "10000 $cm^{2}$",
-      "1000 $cm^{2}$",
-      "100 $cm^{2}$"
+      "1 cm²",
+      "10 cm²",
+      "10000 cm²",
+      "1000 cm²",
+      "100 cm²"
     ],
-    "correctAnswer": "1000 $cm^{2}$",
+    "correctAnswer": "1000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_16",
-    "question": "Which of these areas is the same as 10 $m^{2}$?",
+    "question": "Which of these areas is the same as 10 m²?",
     "image": null,
     "options": [
-      "1000 $cm^{2}$",
-      "10000 $cm^{2}$",
-      "1000000 $cm^{2}$",
-      "100000 $cm^{2}$",
-      "100 $cm^{2}$"
+      "1000 cm²",
+      "10000 cm²",
+      "1000000 cm²",
+      "100000 cm²",
+      "100 cm²"
     ],
-    "correctAnswer": "100000 $cm^{2}$",
+    "correctAnswer": "100000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_17",
-    "question": "Which of these areas is the same as 0.4 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.4 m²?",
     "image": null,
     "options": [
-      "40 $cm^{2}$",
-      "40000 $cm^{2}$",
-      "4000 $cm^{2}$",
-      "400 $cm^{2}$",
-      "4 $cm^{2}$"
+      "40 cm²",
+      "40000 cm²",
+      "4000 cm²",
+      "400 cm²",
+      "4 cm²"
     ],
-    "correctAnswer": "4000 $cm^{2}$",
+    "correctAnswer": "4000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_18",
-    "question": "Which of these areas is the same as 0.5 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.5 m²?",
     "image": null,
     "options": [
-      "5000 $cm^{2}$",
-      "50 $cm^{2}$",
-      "50000 $cm^{2}$",
-      "2500 $cm^{2}$",
-      "5 $cm^{2}$"
+      "5000 cm²",
+      "50 cm²",
+      "50000 cm²",
+      "2500 cm²",
+      "5 cm²"
     ],
-    "correctAnswer": "5000 $cm^{2}$",
+    "correctAnswer": "5000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_19",
-    "question": "Which of these areas is the same as 0.5 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.5 m²?",
     "image": null,
     "options": [
-      "2500 $cm^{2}$",
-      "50000 $cm^{2}$",
-      "5000 $cm^{2}$",
-      "5 $cm^{2}$",
-      "50 $cm^{2}$"
+      "2500 cm²",
+      "50000 cm²",
+      "5000 cm²",
+      "5 cm²",
+      "50 cm²"
     ],
-    "correctAnswer": "5000 $cm^{2}$",
+    "correctAnswer": "5000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_20",
-    "question": "Which of these areas is the same as 1.5 $m^{2}$?",
+    "question": "Which of these areas is the same as 1.5 m²?",
     "image": null,
     "options": [
-      "150000 $cm^{2}$",
-      "7500 $cm^{2}$",
-      "15 $cm^{2}$",
-      "150 $cm^{2}$",
-      "15000 $cm^{2}$"
+      "150000 cm²",
+      "7500 cm²",
+      "15 cm²",
+      "150 cm²",
+      "15000 cm²"
     ],
-    "correctAnswer": "15000 $cm^{2}$",
+    "correctAnswer": "15000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_21",
-    "question": "Which of these areas is the same as 1.5 $m^{2}$?",
+    "question": "Which of these areas is the same as 1.5 m²?",
     "image": null,
     "options": [
-      "15 $cm^{2}$",
-      "150 $cm^{2}$",
-      "7500 $cm^{2}$",
-      "15000 $cm^{2}$",
-      "150000 $cm^{2}$"
+      "15 cm²",
+      "150 cm²",
+      "7500 cm²",
+      "15000 cm²",
+      "150000 cm²"
     ],
-    "correctAnswer": "15000 $cm^{2}$",
+    "correctAnswer": "15000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_22",
-    "question": "Which of these areas is the same as 0.1 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.1 m²?",
     "image": null,
     "options": [
-      "1000 $cm^{2}$",
-      "10 $cm^{2}$",
-      "1 $cm^{2}$",
-      "10000 $cm^{2}$",
-      "100 $cm^{2}$"
+      "1000 cm²",
+      "10 cm²",
+      "1 cm²",
+      "10000 cm²",
+      "100 cm²"
     ],
-    "correctAnswer": "1000 $cm^{2}$",
+    "correctAnswer": "1000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_23",
-    "question": "Which of these areas is the same as 5 $m^{2}$?",
+    "question": "Which of these areas is the same as 5 m²?",
     "image": null,
     "options": [
-      "500000 $cm^{2}$",
-      "50000 $cm^{2}$",
-      "25000 $cm^{2}$",
-      "5000 $cm^{2}$",
-      "50 $cm^{2}$"
+      "500000 cm²",
+      "50000 cm²",
+      "25000 cm²",
+      "5000 cm²",
+      "50 cm²"
     ],
-    "correctAnswer": "50000 $cm^{2}$",
+    "correctAnswer": "50000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_24",
-    "question": "Which of these areas is the same as 0.1 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.1 m²?",
     "image": null,
     "options": [
-      "1000 $cm^{2}$",
-      "10000 $cm^{2}$",
-      "100 $cm^{2}$",
-      "10 $cm^{2}$",
-      "1 $cm^{2}$"
+      "1000 cm²",
+      "10000 cm²",
+      "100 cm²",
+      "10 cm²",
+      "1 cm²"
     ],
-    "correctAnswer": "1000 $cm^{2}$",
+    "correctAnswer": "1000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_25",
-    "question": "Which of these areas is the same as 0.25 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.25 m²?",
     "image": null,
     "options": [
-      "2 $cm^{2}$",
-      "1250 $cm^{2}$",
-      "25000 $cm^{2}$",
-      "25 $cm^{2}$",
-      "2500 $cm^{2}$"
+      "2 cm²",
+      "1250 cm²",
+      "25000 cm²",
+      "25 cm²",
+      "2500 cm²"
     ],
-    "correctAnswer": "2500 $cm^{2}$",
+    "correctAnswer": "2500 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_26",
-    "question": "Which of these areas is the same as 0.2 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.2 m²?",
     "image": null,
     "options": [
-      "20000 $cm^{2}$",
-      "1000 $cm^{2}$",
-      "2000 $cm^{2}$",
-      "2 $cm^{2}$",
-      "200 $cm^{2}$"
+      "20000 cm²",
+      "1000 cm²",
+      "2000 cm²",
+      "2 cm²",
+      "200 cm²"
     ],
-    "correctAnswer": "2000 $cm^{2}$",
+    "correctAnswer": "2000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_27",
-    "question": "Which of these areas is the same as 0.8 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.8 m²?",
     "image": null,
     "options": [
-      "8000 $cm^{2}$",
-      "80000 $cm^{2}$",
-      "4000 $cm^{2}$",
-      "800 $cm^{2}$",
-      "8 $cm^{2}$"
+      "8000 cm²",
+      "80000 cm²",
+      "4000 cm²",
+      "800 cm²",
+      "8 cm²"
     ],
-    "correctAnswer": "8000 $cm^{2}$",
+    "correctAnswer": "8000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_28",
-    "question": "Which of these areas is the same as 1.2 $m^{2}$?",
+    "question": "Which of these areas is the same as 1.2 m²?",
     "image": null,
     "options": [
-      "120000 $cm^{2}$",
-      "12 $cm^{2}$",
-      "1200 $cm^{2}$",
-      "6000 $cm^{2}$",
-      "12000 $cm^{2}$"
+      "120000 cm²",
+      "12 cm²",
+      "1200 cm²",
+      "6000 cm²",
+      "12000 cm²"
     ],
-    "correctAnswer": "12000 $cm^{2}$",
+    "correctAnswer": "12000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_29",
-    "question": "Which of these areas is the same as 0.1 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.1 m²?",
     "image": null,
     "options": [
-      "10000 $cm^{2}$",
-      "10 $cm^{2}$",
-      "1 $cm^{2}$",
-      "1000 $cm^{2}$",
-      "100 $cm^{2}$"
+      "10000 cm²",
+      "10 cm²",
+      "1 cm²",
+      "1000 cm²",
+      "100 cm²"
     ],
-    "correctAnswer": "1000 $cm^{2}$",
+    "correctAnswer": "1000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_30",
-    "question": "Which of these areas is the same as 0.05 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.05 m²?",
     "image": null,
     "options": [
-      "5000 $cm^{2}$",
-      "50 $cm^{2}$",
-      "0 $cm^{2}$",
-      "500 $cm^{2}$",
-      "5 $cm^{2}$"
+      "5000 cm²",
+      "50 cm²",
+      "0 cm²",
+      "500 cm²",
+      "5 cm²"
     ],
-    "correctAnswer": "500 $cm^{2}$",
+    "correctAnswer": "500 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_31",
-    "question": "Which of these areas is the same as 1.2 $m^{2}$?",
+    "question": "Which of these areas is the same as 1.2 m²?",
     "image": null,
     "options": [
-      "12000 $cm^{2}$",
-      "12 $cm^{2}$",
-      "1200 $cm^{2}$",
-      "6000 $cm^{2}$",
-      "120000 $cm^{2}$"
+      "12000 cm²",
+      "12 cm²",
+      "1200 cm²",
+      "6000 cm²",
+      "120000 cm²"
     ],
-    "correctAnswer": "12000 $cm^{2}$",
+    "correctAnswer": "12000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_32",
-    "question": "Which of these areas is the same as 2.5 $m^{2}$?",
+    "question": "Which of these areas is the same as 2.5 m²?",
     "image": null,
     "options": [
-      "25 $cm^{2}$",
-      "12500 $cm^{2}$",
-      "2500 $cm^{2}$",
-      "25000 $cm^{2}$",
-      "250000 $cm^{2}$"
+      "25 cm²",
+      "12500 cm²",
+      "2500 cm²",
+      "25000 cm²",
+      "250000 cm²"
     ],
-    "correctAnswer": "25000 $cm^{2}$",
+    "correctAnswer": "25000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_33",
-    "question": "Which of these areas is the same as 0.25 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.25 m²?",
     "image": null,
     "options": [
-      "2 $cm^{2}$",
-      "1250 $cm^{2}$",
-      "25000 $cm^{2}$",
-      "25 $cm^{2}$",
-      "2500 $cm^{2}$"
+      "2 cm²",
+      "1250 cm²",
+      "25000 cm²",
+      "25 cm²",
+      "2500 cm²"
     ],
-    "correctAnswer": "2500 $cm^{2}$",
+    "correctAnswer": "2500 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_34",
-    "question": "Which of these areas is the same as 0.5 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.5 m²?",
     "image": null,
     "options": [
-      "5 $cm^{2}$",
-      "50000 $cm^{2}$",
-      "5000 $cm^{2}$",
-      "2500 $cm^{2}$",
-      "50 $cm^{2}$"
+      "5 cm²",
+      "50000 cm²",
+      "5000 cm²",
+      "2500 cm²",
+      "50 cm²"
     ],
-    "correctAnswer": "5000 $cm^{2}$",
+    "correctAnswer": "5000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_35",
-    "question": "Which of these areas is the same as 0.25 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.25 m²?",
     "image": null,
     "options": [
-      "25000 $cm^{2}$",
-      "2500 $cm^{2}$",
-      "1250 $cm^{2}$",
-      "2 $cm^{2}$",
-      "25 $cm^{2}$"
+      "25000 cm²",
+      "2500 cm²",
+      "1250 cm²",
+      "2 cm²",
+      "25 cm²"
     ],
-    "correctAnswer": "2500 $cm^{2}$",
+    "correctAnswer": "2500 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_36",
-    "question": "Which of these areas is the same as 0.2 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.2 m²?",
     "image": null,
     "options": [
-      "20000 $cm^{2}$",
-      "200 $cm^{2}$",
-      "1000 $cm^{2}$",
-      "2 $cm^{2}$",
-      "2000 $cm^{2}$"
+      "20000 cm²",
+      "200 cm²",
+      "1000 cm²",
+      "2 cm²",
+      "2000 cm²"
     ],
-    "correctAnswer": "2000 $cm^{2}$",
+    "correctAnswer": "2000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_37",
-    "question": "Which of these areas is the same as 0.8 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.8 m²?",
     "image": null,
     "options": [
-      "4000 $cm^{2}$",
-      "8000 $cm^{2}$",
-      "800 $cm^{2}$",
-      "8 $cm^{2}$",
-      "80000 $cm^{2}$"
+      "4000 cm²",
+      "8000 cm²",
+      "800 cm²",
+      "8 cm²",
+      "80000 cm²"
     ],
-    "correctAnswer": "8000 $cm^{2}$",
+    "correctAnswer": "8000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_38",
-    "question": "Which of these areas is the same as 0.8 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.8 m²?",
     "image": null,
     "options": [
-      "800 $cm^{2}$",
-      "80000 $cm^{2}$",
-      "4000 $cm^{2}$",
-      "8000 $cm^{2}$",
-      "8 $cm^{2}$"
+      "800 cm²",
+      "80000 cm²",
+      "4000 cm²",
+      "8000 cm²",
+      "8 cm²"
     ],
-    "correctAnswer": "8000 $cm^{2}$",
+    "correctAnswer": "8000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_39",
-    "question": "Which of these areas is the same as 0.2 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.2 m²?",
     "image": null,
     "options": [
-      "20000 $cm^{2}$",
-      "1000 $cm^{2}$",
-      "2000 $cm^{2}$",
-      "200 $cm^{2}$",
-      "2 $cm^{2}$"
+      "20000 cm²",
+      "1000 cm²",
+      "2000 cm²",
+      "200 cm²",
+      "2 cm²"
     ],
-    "correctAnswer": "2000 $cm^{2}$",
+    "correctAnswer": "2000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_40",
-    "question": "Which of these areas is the same as 1.2 $m^{2}$?",
+    "question": "Which of these areas is the same as 1.2 m²?",
     "image": null,
     "options": [
-      "12000 $cm^{2}$",
-      "12 $cm^{2}$",
-      "1200 $cm^{2}$",
-      "6000 $cm^{2}$",
-      "120000 $cm^{2}$"
+      "12000 cm²",
+      "12 cm²",
+      "1200 cm²",
+      "6000 cm²",
+      "120000 cm²"
     ],
-    "correctAnswer": "12000 $cm^{2}$",
+    "correctAnswer": "12000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_41",
-    "question": "Which of these areas is the same as 0.4 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.4 m²?",
     "image": null,
     "options": [
-      "40000 $cm^{2}$",
-      "400 $cm^{2}$",
-      "4 $cm^{2}$",
-      "40 $cm^{2}$",
-      "4000 $cm^{2}$"
+      "40000 cm²",
+      "400 cm²",
+      "4 cm²",
+      "40 cm²",
+      "4000 cm²"
     ],
-    "correctAnswer": "4000 $cm^{2}$",
+    "correctAnswer": "4000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_42",
-    "question": "Which of these areas is the same as 0.1 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.1 m²?",
     "image": null,
     "options": [
-      "100 $cm^{2}$",
-      "10000 $cm^{2}$",
-      "1 $cm^{2}$",
-      "10 $cm^{2}$",
-      "1000 $cm^{2}$"
+      "100 cm²",
+      "10000 cm²",
+      "1 cm²",
+      "10 cm²",
+      "1000 cm²"
     ],
-    "correctAnswer": "1000 $cm^{2}$",
+    "correctAnswer": "1000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_43",
-    "question": "Which of these areas is the same as 10 $m^{2}$?",
+    "question": "Which of these areas is the same as 10 m²?",
     "image": null,
     "options": [
-      "100000 $cm^{2}$",
-      "1000 $cm^{2}$",
-      "100 $cm^{2}$",
-      "10000 $cm^{2}$",
-      "1000000 $cm^{2}$"
+      "100000 cm²",
+      "1000 cm²",
+      "100 cm²",
+      "10000 cm²",
+      "1000000 cm²"
     ],
-    "correctAnswer": "100000 $cm^{2}$",
+    "correctAnswer": "100000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_44",
-    "question": "Which of these areas is the same as 0.2 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.2 m²?",
     "image": null,
     "options": [
-      "20000 $cm^{2}$",
-      "2 $cm^{2}$",
-      "2000 $cm^{2}$",
-      "1000 $cm^{2}$",
-      "200 $cm^{2}$"
+      "20000 cm²",
+      "2 cm²",
+      "2000 cm²",
+      "1000 cm²",
+      "200 cm²"
     ],
-    "correctAnswer": "2000 $cm^{2}$",
+    "correctAnswer": "2000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_45",
-    "question": "Which of these areas is the same as 0.1 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.1 m²?",
     "image": null,
     "options": [
-      "1 $cm^{2}$",
-      "10000 $cm^{2}$",
-      "100 $cm^{2}$",
-      "10 $cm^{2}$",
-      "1000 $cm^{2}$"
+      "1 cm²",
+      "10000 cm²",
+      "100 cm²",
+      "10 cm²",
+      "1000 cm²"
     ],
-    "correctAnswer": "1000 $cm^{2}$",
+    "correctAnswer": "1000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_46",
-    "question": "Which of these areas is the same as 10 $m^{2}$?",
+    "question": "Which of these areas is the same as 10 m²?",
     "image": null,
     "options": [
-      "1000 $cm^{2}$",
-      "100000 $cm^{2}$",
-      "10000 $cm^{2}$",
-      "1000000 $cm^{2}$",
-      "100 $cm^{2}$"
+      "1000 cm²",
+      "100000 cm²",
+      "10000 cm²",
+      "1000000 cm²",
+      "100 cm²"
     ],
-    "correctAnswer": "100000 $cm^{2}$",
+    "correctAnswer": "100000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_47",
-    "question": "Which of these areas is the same as 5 $m^{2}$?",
+    "question": "Which of these areas is the same as 5 m²?",
     "image": null,
     "options": [
-      "50000 $cm^{2}$",
-      "500000 $cm^{2}$",
-      "50 $cm^{2}$",
-      "5000 $cm^{2}$",
-      "25000 $cm^{2}$"
+      "50000 cm²",
+      "500000 cm²",
+      "50 cm²",
+      "5000 cm²",
+      "25000 cm²"
     ],
-    "correctAnswer": "50000 $cm^{2}$",
+    "correctAnswer": "50000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_48",
-    "question": "Which of these areas is the same as 10 $m^{2}$?",
+    "question": "Which of these areas is the same as 10 m²?",
     "image": null,
     "options": [
-      "1000 $cm^{2}$",
-      "100 $cm^{2}$",
-      "1000000 $cm^{2}$",
-      "10000 $cm^{2}$",
-      "100000 $cm^{2}$"
+      "1000 cm²",
+      "100 cm²",
+      "1000000 cm²",
+      "10000 cm²",
+      "100000 cm²"
     ],
-    "correctAnswer": "100000 $cm^{2}$",
+    "correctAnswer": "100000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_49",
-    "question": "Which of these areas is the same as 0.1 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.1 m²?",
     "image": null,
     "options": [
-      "1 $cm^{2}$",
-      "10 $cm^{2}$",
-      "1000 $cm^{2}$",
-      "100 $cm^{2}$",
-      "10000 $cm^{2}$"
+      "1 cm²",
+      "10 cm²",
+      "1000 cm²",
+      "100 cm²",
+      "10000 cm²"
     ],
-    "correctAnswer": "1000 $cm^{2}$",
+    "correctAnswer": "1000 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
   },
   {
     "id": "P3Q48_50",
-    "question": "Which of these areas is the same as 0.25 $m^{2}$?",
+    "question": "Which of these areas is the same as 0.25 m²?",
     "image": null,
     "options": [
-      "25 $cm^{2}$",
-      "25000 $cm^{2}$",
-      "2 $cm^{2}$",
-      "2500 $cm^{2}$",
-      "1250 $cm^{2}$"
+      "25 cm²",
+      "25000 cm²",
+      "2 cm²",
+      "2500 cm²",
+      "1250 cm²"
     ],
-    "correctAnswer": "2500 $cm^{2}$",
+    "correctAnswer": "2500 cm²",
     "topic": "Unit Conversion",
     "difficultyIndex": 48,
     "prefix": "P3Q48"
@@ -72423,10 +72417,10 @@ export const MATHS_QUIZ = [
       "20% of 200",
       "0.2 of 200",
       "89",
-      "$\\frac{1}{2}$ of 200",
-      "$\\frac{2}{10}$ of 200"
+      "1/2 of 200",
+      "2/10 of 200"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 200",
+    "correctAnswer": "1/2 of 200",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72436,13 +72430,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$ of 300",
+      "1/2 of 300",
       "137",
       "30% of 300",
       "0.2 of 300",
-      "$\\frac{2}{10}$ of 300"
+      "2/10 of 300"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 300",
+    "correctAnswer": "1/2 of 300",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72453,12 +72447,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "25% of 200",
-      "$\\frac{2}{10}$ of 200",
+      "2/10 of 200",
       "0.2 of 200",
-      "$\\frac{1}{2}$ of 200",
+      "1/2 of 200",
       "92"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 200",
+    "correctAnswer": "1/2 of 200",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72468,13 +72462,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$ of 120",
-      "$\\frac{2}{10}$ of 120",
+      "1/2 of 120",
+      "2/10 of 120",
       "30% of 120",
       "0.2 of 120",
       "45"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 120",
+    "correctAnswer": "1/2 of 120",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72487,10 +72481,10 @@ export const MATHS_QUIZ = [
       "0.2 of 240",
       "101",
       "25% of 240",
-      "$\\frac{2}{10}$ of 240",
-      "$\\frac{1}{2}$ of 240"
+      "2/10 of 240",
+      "1/2 of 240"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 240",
+    "correctAnswer": "1/2 of 240",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72501,12 +72495,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "30% of 300",
-      "$\\frac{1}{2}$ of 300",
+      "1/2 of 300",
       "137",
-      "$\\frac{2}{10}$ of 300",
+      "2/10 of 300",
       "0.2 of 300"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 300",
+    "correctAnswer": "1/2 of 300",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72517,12 +72511,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "25% of 100",
-      "$\\frac{2}{10}$ of 100",
+      "2/10 of 100",
       "0.2 of 100",
       "43",
-      "$\\frac{1}{2}$ of 100"
+      "1/2 of 100"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 100",
+    "correctAnswer": "1/2 of 100",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72532,13 +72526,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{2}{10}$ of 240",
+      "2/10 of 240",
       "101",
       "0.2 of 240",
       "25% of 240",
-      "$\\frac{1}{2}$ of 240"
+      "1/2 of 240"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 240",
+    "correctAnswer": "1/2 of 240",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72549,12 +72543,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "131",
-      "$\\frac{2}{10}$ of 300",
+      "2/10 of 300",
       "0.2 of 300",
-      "$\\frac{1}{2}$ of 300",
+      "1/2 of 300",
       "20% of 300"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 300",
+    "correctAnswer": "1/2 of 300",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72564,13 +72558,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{2}{10}$ of 200",
-      "$\\frac{1}{2}$ of 200",
+      "2/10 of 200",
+      "1/2 of 200",
       "0.2 of 200",
       "30% of 200",
       "90"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 200",
+    "correctAnswer": "1/2 of 200",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72583,10 +72577,10 @@ export const MATHS_QUIZ = [
       "0.2 of 100",
       "41",
       "30% of 100",
-      "$\\frac{1}{2}$ of 100",
-      "$\\frac{2}{10}$ of 100"
+      "1/2 of 100",
+      "2/10 of 100"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 100",
+    "correctAnswer": "1/2 of 100",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72599,10 +72593,10 @@ export const MATHS_QUIZ = [
       "30% of 220",
       "99",
       "0.2 of 220",
-      "$\\frac{2}{10}$ of 220",
-      "$\\frac{1}{2}$ of 220"
+      "2/10 of 220",
+      "1/2 of 220"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 220",
+    "correctAnswer": "1/2 of 220",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72614,11 +72608,11 @@ export const MATHS_QUIZ = [
     "options": [
       "0.2 of 200",
       "25% of 200",
-      "$\\frac{2}{10}$ of 200",
-      "$\\frac{1}{2}$ of 200",
+      "2/10 of 200",
+      "1/2 of 200",
       "83"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 200",
+    "correctAnswer": "1/2 of 200",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72630,11 +72624,11 @@ export const MATHS_QUIZ = [
     "options": [
       "33",
       "25% of 100",
-      "$\\frac{1}{2}$ of 100",
-      "$\\frac{2}{10}$ of 100",
+      "1/2 of 100",
+      "2/10 of 100",
       "0.2 of 100"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 100",
+    "correctAnswer": "1/2 of 100",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72644,13 +72638,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{2}{10}$ of 240",
+      "2/10 of 240",
       "0.2 of 240",
       "106",
       "30% of 240",
-      "$\\frac{1}{2}$ of 240"
+      "1/2 of 240"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 240",
+    "correctAnswer": "1/2 of 240",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72660,13 +72654,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$ of 240",
+      "1/2 of 240",
       "108",
       "0.2 of 240",
-      "$\\frac{2}{10}$ of 240",
+      "2/10 of 240",
       "30% of 240"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 240",
+    "correctAnswer": "1/2 of 240",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72676,13 +72670,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{2}{10}$ of 240",
+      "2/10 of 240",
       "30% of 240",
       "0.2 of 240",
       "104",
-      "$\\frac{1}{2}$ of 240"
+      "1/2 of 240"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 240",
+    "correctAnswer": "1/2 of 240",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72694,11 +72688,11 @@ export const MATHS_QUIZ = [
     "options": [
       "30% of 200",
       "0.2 of 200",
-      "$\\frac{2}{10}$ of 200",
-      "$\\frac{1}{2}$ of 200",
+      "2/10 of 200",
+      "1/2 of 200",
       "88"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 200",
+    "correctAnswer": "1/2 of 200",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72710,11 +72704,11 @@ export const MATHS_QUIZ = [
     "options": [
       "41",
       "25% of 120",
-      "$\\frac{2}{10}$ of 120",
-      "$\\frac{1}{2}$ of 120",
+      "2/10 of 120",
+      "1/2 of 120",
       "0.2 of 120"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 120",
+    "correctAnswer": "1/2 of 120",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72724,13 +72718,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{2}{10}$ of 100",
-      "$\\frac{1}{2}$ of 100",
+      "2/10 of 100",
+      "1/2 of 100",
       "32",
       "25% of 100",
       "0.2 of 100"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 100",
+    "correctAnswer": "1/2 of 100",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72740,13 +72734,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$ of 300",
+      "1/2 of 300",
       "0.2 of 300",
       "25% of 300",
-      "$\\frac{2}{10}$ of 300",
+      "2/10 of 300",
       "139"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 300",
+    "correctAnswer": "1/2 of 300",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72758,11 +72752,11 @@ export const MATHS_QUIZ = [
     "options": [
       "102",
       "0.2 of 240",
-      "$\\frac{2}{10}$ of 240",
-      "$\\frac{1}{2}$ of 240",
+      "2/10 of 240",
+      "1/2 of 240",
       "20% of 240"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 240",
+    "correctAnswer": "1/2 of 240",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72773,12 +72767,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "33",
-      "$\\frac{2}{10}$ of 100",
-      "$\\frac{1}{2}$ of 100",
+      "2/10 of 100",
+      "1/2 of 100",
       "0.2 of 100",
       "30% of 100"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 100",
+    "correctAnswer": "1/2 of 100",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72789,12 +72783,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "112",
-      "$\\frac{1}{2}$ of 240",
+      "1/2 of 240",
       "20% of 240",
-      "$\\frac{2}{10}$ of 240",
+      "2/10 of 240",
       "0.2 of 240"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 240",
+    "correctAnswer": "1/2 of 240",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72805,12 +72799,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "40",
-      "$\\frac{1}{2}$ of 100",
-      "$\\frac{2}{10}$ of 100",
+      "1/2 of 100",
+      "2/10 of 100",
       "30% of 100",
       "0.2 of 100"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 100",
+    "correctAnswer": "1/2 of 100",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72822,11 +72816,11 @@ export const MATHS_QUIZ = [
     "options": [
       "30% of 100",
       "42",
-      "$\\frac{2}{10}$ of 100",
+      "2/10 of 100",
       "0.2 of 100",
-      "$\\frac{1}{2}$ of 100"
+      "1/2 of 100"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 100",
+    "correctAnswer": "1/2 of 100",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72837,12 +72831,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "101",
-      "$\\frac{1}{2}$ of 240",
+      "1/2 of 240",
       "30% of 240",
-      "$\\frac{2}{10}$ of 240",
+      "2/10 of 240",
       "0.2 of 240"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 240",
+    "correctAnswer": "1/2 of 240",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72853,12 +72847,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "94",
-      "$\\frac{1}{2}$ of 200",
+      "1/2 of 200",
       "30% of 200",
-      "$\\frac{2}{10}$ of 200",
+      "2/10 of 200",
       "0.2 of 200"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 200",
+    "correctAnswer": "1/2 of 200",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72868,13 +72862,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{2}{10}$ of 120",
-      "$\\frac{1}{2}$ of 120",
+      "2/10 of 120",
+      "1/2 of 120",
       "20% of 120",
       "0.2 of 120",
       "42"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 120",
+    "correctAnswer": "1/2 of 120",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72884,13 +72878,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{2}{10}$ of 100",
-      "$\\frac{1}{2}$ of 100",
+      "2/10 of 100",
+      "1/2 of 100",
       "25% of 100",
       "0.2 of 100",
       "32"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 100",
+    "correctAnswer": "1/2 of 100",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72901,12 +72895,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "25% of 200",
-      "$\\frac{2}{10}$ of 200",
+      "2/10 of 200",
       "86",
-      "$\\frac{1}{2}$ of 200",
+      "1/2 of 200",
       "0.2 of 200"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 200",
+    "correctAnswer": "1/2 of 200",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72919,10 +72913,10 @@ export const MATHS_QUIZ = [
       "99",
       "0.2 of 220",
       "30% of 220",
-      "$\\frac{1}{2}$ of 220",
-      "$\\frac{2}{10}$ of 220"
+      "1/2 of 220",
+      "2/10 of 220"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 220",
+    "correctAnswer": "1/2 of 220",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72935,10 +72929,10 @@ export const MATHS_QUIZ = [
       "141",
       "20% of 300",
       "0.2 of 300",
-      "$\\frac{2}{10}$ of 300",
-      "$\\frac{1}{2}$ of 300"
+      "2/10 of 300",
+      "1/2 of 300"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 300",
+    "correctAnswer": "1/2 of 300",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72948,13 +72942,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$ of 100",
+      "1/2 of 100",
       "0.2 of 100",
       "38",
       "30% of 100",
-      "$\\frac{2}{10}$ of 100"
+      "2/10 of 100"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 100",
+    "correctAnswer": "1/2 of 100",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72967,10 +72961,10 @@ export const MATHS_QUIZ = [
       "0.2 of 220",
       "92",
       "30% of 220",
-      "$\\frac{1}{2}$ of 220",
-      "$\\frac{2}{10}$ of 220"
+      "1/2 of 220",
+      "2/10 of 220"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 220",
+    "correctAnswer": "1/2 of 220",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72981,12 +72975,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "0.2 of 120",
-      "$\\frac{1}{2}$ of 120",
-      "$\\frac{2}{10}$ of 120",
+      "1/2 of 120",
+      "2/10 of 120",
       "43",
       "20% of 120"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 120",
+    "correctAnswer": "1/2 of 120",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -72997,12 +72991,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "0.2 of 120",
-      "$\\frac{1}{2}$ of 120",
+      "1/2 of 120",
       "30% of 120",
       "52",
-      "$\\frac{2}{10}$ of 120"
+      "2/10 of 120"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 120",
+    "correctAnswer": "1/2 of 120",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73013,12 +73007,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "20% of 220",
-      "$\\frac{1}{2}$ of 220",
-      "$\\frac{2}{10}$ of 220",
+      "1/2 of 220",
+      "2/10 of 220",
       "0.2 of 220",
       "94"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 220",
+    "correctAnswer": "1/2 of 220",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73030,11 +73024,11 @@ export const MATHS_QUIZ = [
     "options": [
       "41",
       "20% of 100",
-      "$\\frac{1}{2}$ of 100",
+      "1/2 of 100",
       "0.2 of 100",
-      "$\\frac{2}{10}$ of 100"
+      "2/10 of 100"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 100",
+    "correctAnswer": "1/2 of 100",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73044,13 +73038,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$ of 220",
+      "1/2 of 220",
       "97",
       "0.2 of 220",
       "20% of 220",
-      "$\\frac{2}{10}$ of 220"
+      "2/10 of 220"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 220",
+    "correctAnswer": "1/2 of 220",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73062,11 +73056,11 @@ export const MATHS_QUIZ = [
     "options": [
       "42",
       "0.2 of 120",
-      "$\\frac{2}{10}$ of 120",
+      "2/10 of 120",
       "25% of 120",
-      "$\\frac{1}{2}$ of 120"
+      "1/2 of 120"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 120",
+    "correctAnswer": "1/2 of 120",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73077,12 +73071,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "50",
-      "$\\frac{1}{2}$ of 120",
+      "1/2 of 120",
       "30% of 120",
-      "$\\frac{2}{10}$ of 120",
+      "2/10 of 120",
       "0.2 of 120"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 120",
+    "correctAnswer": "1/2 of 120",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73093,12 +73087,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "94",
-      "$\\frac{1}{2}$ of 200",
-      "$\\frac{2}{10}$ of 200",
+      "1/2 of 200",
+      "2/10 of 200",
       "0.2 of 200",
       "20% of 200"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 200",
+    "correctAnswer": "1/2 of 200",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73110,11 +73104,11 @@ export const MATHS_QUIZ = [
     "options": [
       "0.2 of 220",
       "20% of 220",
-      "$\\frac{1}{2}$ of 220",
-      "$\\frac{2}{10}$ of 220",
+      "1/2 of 220",
+      "2/10 of 220",
       "97"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 220",
+    "correctAnswer": "1/2 of 220",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73124,13 +73118,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{1}{2}$ of 300",
+      "1/2 of 300",
       "25% of 300",
       "143",
       "0.2 of 300",
-      "$\\frac{2}{10}$ of 300"
+      "2/10 of 300"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 300",
+    "correctAnswer": "1/2 of 300",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73140,13 +73134,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{2}{10}$ of 100",
+      "2/10 of 100",
       "0.2 of 100",
       "42",
-      "$\\frac{1}{2}$ of 100",
+      "1/2 of 100",
       "20% of 100"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 100",
+    "correctAnswer": "1/2 of 100",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73158,11 +73152,11 @@ export const MATHS_QUIZ = [
     "options": [
       "30% of 220",
       "0.2 of 220",
-      "$\\frac{2}{10}$ of 220",
-      "$\\frac{1}{2}$ of 220",
+      "2/10 of 220",
+      "1/2 of 220",
       "103"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 220",
+    "correctAnswer": "1/2 of 220",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73173,12 +73167,12 @@ export const MATHS_QUIZ = [
     "image": null,
     "options": [
       "0.2 of 240",
-      "$\\frac{1}{2}$ of 240",
+      "1/2 of 240",
       "108",
       "20% of 240",
-      "$\\frac{2}{10}$ of 240"
+      "2/10 of 240"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 240",
+    "correctAnswer": "1/2 of 240",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73188,13 +73182,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{2}{10}$ of 300",
+      "2/10 of 300",
       "20% of 300",
       "0.2 of 300",
       "142",
-      "$\\frac{1}{2}$ of 300"
+      "1/2 of 300"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 300",
+    "correctAnswer": "1/2 of 300",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
@@ -73204,13 +73198,13 @@ export const MATHS_QUIZ = [
     "question": "Which of these has the greatest value?",
     "image": null,
     "options": [
-      "$\\frac{2}{10}$ of 120",
+      "2/10 of 120",
       "52",
       "25% of 120",
-      "$\\frac{1}{2}$ of 120",
+      "1/2 of 120",
       "0.2 of 120"
     ],
-    "correctAnswer": "$\\frac{1}{2}$ of 120",
+    "correctAnswer": "1/2 of 120",
     "topic": "Fractions, Decimals, Percentages",
     "difficultyIndex": 49,
     "prefix": "P4Q49"
