@@ -694,9 +694,9 @@ export const ClassroomScreen = () => {
 
   const copyInviteLink = () => {
     if (typeof window !== 'undefined' && navigator.clipboard) {
-      const shareUrl = `${window.location.origin}/classroom?room=${roomName}&role=${userRole === 'tutor' ? 'student' : 'tutor'}`;
+      const shareUrl = `${window.location.origin}/classroom?room=${roomName}&role=${userRole === 'tutor' ? 'student' : 'tutor'}&token=ninja`;
       navigator.clipboard.writeText(shareUrl);
-      setCopyStatus('Invite link copied!');
+      setCopyStatus('Invite link copied! 📋');
       setTimeout(() => setCopyStatus(''), 2500);
     }
   };
