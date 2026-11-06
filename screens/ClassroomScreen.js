@@ -8,7 +8,7 @@ import { auth } from '../firebase-config';
 import { logIn, getProfile } from '../utils/storage';
 import { 
   DAILY_DOMAIN, DEFAULT_ROOM_NAME, 
-  createDailyMeetingToken 
+  createDailyMeetingToken, createDailyRoom 
 } from '../utils/dailyService';
 import { 
   loadPdfDocument, renderPdfPageToImage 
@@ -125,10 +125,20 @@ export const ClassroomScreen = () => {
         
         if (typeof window !== 'undefined') {
           const urlParams = new URLSearchParams(window.location.search);
-          const roomParam = urlParams.get('room');
+          let roomParam = urlParams.get('room');
           const roleParam = urlParams.get('role');
           const tokenParam = urlParams.get('token');
-          if (roomParam) setRoomName(roomParam);
+
+          // Ensure each session has a unique private room by default to prevent overlap
+          if (!roomParam) {
+            const randomCode = Math.random().toString(36).substring(2, 8);
+            roomParam = `session-${randomCode}`;
+            const newUrl = new URL(window.location.href);
+            newUrl.searchParams.set('room', roomParam);
+            window.history.replaceState({}, '', newUrl.toString());
+          }
+
+          setRoomName(roomParam);
           if (roleParam === 'student' || roleParam === 'tutor') setUserRole(roleParam);
           if (tokenParam === 'ninja' || tokenParam === 'tutor') {
             setIsAuthenticated(true);
@@ -535,6 +545,10 @@ export const ClassroomScreen = () => {
 
     setCallStatus('connecting');
     try {
+      // 1. Ensure private 2-person Daily room exists for this unique session
+      await createDailyRoom(roomName, 'private');
+
+      // 2. Generate meeting token
       const token = await createDailyMeetingToken(
         roomName, 
         userName, 
