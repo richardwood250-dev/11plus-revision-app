@@ -34,10 +34,13 @@ export const ClassroomScreen = () => {
     Platform.OS === 'web' && typeof window !== 'undefined' ? window.innerWidth : 1200
   );
 
+  // --- Master Tutor Password ---
+  const TUTOR_MASTER_PASSWORD = 'Ninjatutor81!';
+
   // --- Auth / Access State ---
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isAuthChecking, setIsAuthChecking] = useState(true);
-  const [authMode, setAuthMode] = useState('demo'); // 'demo' | 'login' | 'passcode'
+  const [authMode, setAuthMode] = useState('tutor'); // 'tutor' | 'login'
   const [authUsername, setAuthUsername] = useState('');
   const [authPassword, setAuthPassword] = useState('');
   const [authPasscode, setAuthPasscode] = useState('');
@@ -46,7 +49,7 @@ export const ClassroomScreen = () => {
 
   // User Role & Session
   const [userRole, setUserRole] = useState('tutor'); // 'tutor' | 'student'
-  const [userName, setUserName] = useState('Sensei Tutor');
+  const [userName, setUserName] = useState('Sensei Richard');
   const [roomName, setRoomName] = useState(DEFAULT_ROOM_NAME);
 
   // --- Layout State (Desktop 75/25, Mobile Tabs) ---
@@ -139,9 +142,18 @@ export const ClassroomScreen = () => {
           }
 
           setRoomName(roomParam);
-          if (roleParam === 'student' || roleParam === 'tutor') setUserRole(roleParam);
-          if (tokenParam === 'ninja' || tokenParam === 'tutor') {
+
+          // A. Student Access via Tutor's Invite Link:
+          // When a student arrives via invite link (role=student and a token), grant automatic entry!
+          if (roleParam === 'student' && (tokenParam === 'ninja-student' || tokenParam === 'ninja' || tokenParam === 'student')) {
             setIsAuthenticated(true);
+            setUserRole('student');
+            setUserName('Alex (Student)');
+          } else if (sessionStorage.getItem('ninja_tutor_authorized') === 'true') {
+            // Tutor already entered password in this browser session
+            setIsAuthenticated(true);
+            setUserRole('tutor');
+            setUserName('Sensei Richard');
           }
         }
 
@@ -676,27 +688,39 @@ export const ClassroomScreen = () => {
     setIsSubmittingAuth(true);
 
     try {
-      if (authMode === 'demo') {
-        setIsAuthenticated(true);
-      } else if (authMode === 'passcode') {
-        const cleaned = authPasscode.trim().toUpperCase();
-        if (cleaned === 'NINJA11' || cleaned === 'NINJA11PLUS' || cleaned === 'TUTOR2026' || cleaned.length >= 4) {
+      if (authMode === 'tutor') {
+        const entered = authPassword.trim();
+        if (!entered) {
+          setAuthError('Please enter your tutor password.');
+          setIsSubmittingAuth(false);
+          return;
+        }
+        if (entered === TUTOR_MASTER_PASSWORD) {
           setIsAuthenticated(true);
+          setUserRole('tutor');
+          setUserName('Sensei Richard');
+          if (typeof window !== 'undefined') {
+            sessionStorage.setItem('ninja_tutor_authorized', 'true');
+          }
         } else {
-          setAuthError('Invalid tutoring passcode. Please check with your tutor.');
+          setAuthError('Incorrect tutor password. Access denied.');
         }
       } else if (authMode === 'login') {
         if (!authUsername || !authPassword) {
-          setAuthError('Please enter username and password.');
+          setAuthError('Please enter your ninja username and password.');
           setIsSubmittingAuth(false);
           return;
         }
         const res = await logIn(authUsername, authPassword);
         if (res.success) {
           setIsAuthenticated(true);
+          setUserRole('tutor');
           setUserName(authUsername);
+          if (typeof window !== 'undefined') {
+            sessionStorage.setItem('ninja_tutor_authorized', 'true');
+          }
         } else {
-          setAuthError(res.error || 'Authentication failed. Please verify credentials.');
+          setAuthError(res.error || 'Authentication failed. Please check credentials.');
         }
       }
     } catch (e) {
@@ -708,9 +732,9 @@ export const ClassroomScreen = () => {
 
   const copyInviteLink = () => {
     if (typeof window !== 'undefined' && navigator.clipboard) {
-      const shareUrl = `${window.location.origin}/classroom?room=${roomName}&role=${userRole === 'tutor' ? 'student' : 'tutor'}&token=ninja`;
+      const shareUrl = `${window.location.origin}/classroom?room=${roomName}&role=${userRole === 'tutor' ? 'student' : 'tutor'}&token=ninja-student`;
       navigator.clipboard.writeText(shareUrl);
-      setCopyStatus('Invite link copied! 📋');
+      setCopyStatus('Student invite link copied! 📋');
       setTimeout(() => setCopyStatus(''), 2500);
     }
   };
@@ -730,86 +754,52 @@ export const ClassroomScreen = () => {
         <View style={styles.authCard}>
           <Text style={styles.authNinjaIcon}>🥋</Text>
           <Text style={styles.authTitle}>11+ Ninja Classroom</Text>
-          <Text style={styles.authSubtitle}>Protected 1-on-1 Online Tutoring Dojo</Text>
+          <Text style={styles.authSubtitle}>Private 1-on-1 Tutoring Dojo</Text>
 
           {/* Mode Switcher */}
           <View style={styles.authTabsRow}>
             <TouchableOpacity 
-              style={[styles.authTab, authMode === 'demo' && styles.authTabActive]}
-              onPress={() => { setAuthMode('demo'); setAuthError(''); }}
+              style={[styles.authTab, authMode === 'tutor' && styles.authTabActive]}
+              onPress={() => { setAuthMode('tutor'); setAuthError(''); }}
             >
-              <Text style={[styles.authTabText, authMode === 'demo' && styles.authTabTextActive]}>Quick Access</Text>
-            </TouchableOpacity>
-            <TouchableOpacity 
-              style={[styles.authTab, authMode === 'passcode' && styles.authTabActive]}
-              onPress={() => { setAuthMode('passcode'); setAuthError(''); }}
-            >
-              <Text style={[styles.authTabText, authMode === 'passcode' && styles.authTabTextActive]}>Passcode</Text>
+              <Text style={[styles.authTabText, authMode === 'tutor' && styles.authTabTextActive]}>🔐 Tutor Password</Text>
             </TouchableOpacity>
             <TouchableOpacity 
               style={[styles.authTab, authMode === 'login' && styles.authTabActive]}
               onPress={() => { setAuthMode('login'); setAuthError(''); }}
             >
-              <Text style={[styles.authTabText, authMode === 'login' && styles.authTabTextActive]}>Ninja Login</Text>
+              <Text style={[styles.authTabText, authMode === 'login' && styles.authTabTextActive]}>👤 Ninja Account</Text>
             </TouchableOpacity>
           </View>
 
-          {/* Role Selection */}
-          <View style={styles.roleRow}>
-            <Text style={styles.roleLabel}>I am entering as:</Text>
-            <TouchableOpacity 
-              style={[styles.roleBtn, userRole === 'tutor' && styles.roleBtnActive]}
-              onPress={() => { setUserRole('tutor'); setUserName('Sensei Tutor'); }}
-            >
-              <Text style={[styles.roleBtnText, userRole === 'tutor' && styles.roleBtnTextActive]}>🧑‍🏫 Tutor</Text>
-            </TouchableOpacity>
-            <TouchableOpacity 
-              style={[styles.roleBtn, userRole === 'student' && styles.roleBtnActive]}
-              onPress={() => { setUserRole('student'); setUserName('Alex (Student)'); }}
-            >
-              <Text style={[styles.roleBtnText, userRole === 'student' && styles.roleBtnTextActive]}>🥋 Student</Text>
-            </TouchableOpacity>
-          </View>
-
-          {/* Inputs per mode */}
-          {authMode === 'demo' && (
+          {/* Tutor Password View */}
+          {authMode === 'tutor' && (
             <View style={styles.authSection}>
               <Text style={styles.authHelperText}>
-                Instant access to test the 75% drawing canvas, Daily.co video embed, and 11+ PDF loader.
+                This classroom is password protected. Enter your Tutor Password to unlock:
               </Text>
               <TextInput 
                 style={styles.authInput}
-                placeholder="Enter your name (e.g. Sensei Richard)"
+                placeholder="Enter Tutor Password"
                 placeholderTextColor="#94A3B8"
-                value={userName}
-                onChangeText={setUserName}
+                secureTextEntry={true}
+                value={authPassword}
+                onChangeText={setAuthPassword}
+                onSubmitEditing={handleAuthSubmit}
+                autoFocus={true}
               />
-              <TextInput 
-                style={styles.authInput}
-                placeholder="Room Name (default: mathstutor)"
-                placeholderTextColor="#94A3B8"
-                value={roomName}
-                onChangeText={setRoomName}
-              />
+              <View style={{ backgroundColor: '#1E293B', padding: 12, borderRadius: 8, marginTop: 10, borderLeftWidth: 3, borderLeftColor: '#3B82F6' }}>
+                <Text style={{ color: '#94A3B8', fontSize: 12, lineHeight: 18 }}>
+                  💡 <Text style={{ color: '#E2E8F0', fontWeight: 'bold' }}>Students:</Text> You do not need a password. Simply click the direct invite link provided by your tutor to enter your tutoring session automatically.
+                </Text>
+              </View>
             </View>
           )}
 
-          {authMode === 'passcode' && (
-            <View style={styles.authSection}>
-              <Text style={styles.authHelperText}>Enter the session passcode provided for this 1-on-1 tutorial.</Text>
-              <TextInput 
-                style={styles.authInput}
-                placeholder="e.g. NINJA11PLUS"
-                placeholderTextColor="#94A3B8"
-                value={authPasscode}
-                onChangeText={setAuthPasscode}
-                autoCapitalize="characters"
-              />
-            </View>
-          )}
-
+          {/* Ninja Account Login View */}
           {authMode === 'login' && (
             <View style={styles.authSection}>
+              <Text style={styles.authHelperText}>Sign in with your registered 11+ Ninja account:</Text>
               <TextInput 
                 style={styles.authInput}
                 placeholder="Ninja Username"
@@ -822,9 +812,10 @@ export const ClassroomScreen = () => {
                 style={styles.authInput}
                 placeholder="Password"
                 placeholderTextColor="#94A3B8"
-                secureTextEntry
+                secureTextEntry={true}
                 value={authPassword}
                 onChangeText={setAuthPassword}
+                onSubmitEditing={handleAuthSubmit}
               />
             </View>
           )}
@@ -839,7 +830,7 @@ export const ClassroomScreen = () => {
             {isSubmittingAuth ? (
               <ActivityIndicator color="#fff" />
             ) : (
-              <Text style={styles.authSubmitBtnText}>Enter Classroom 🚀</Text>
+              <Text style={styles.authSubmitBtnText}>Unlock Classroom 🚀</Text>
             )}
           </TouchableOpacity>
 
