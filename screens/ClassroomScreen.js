@@ -54,7 +54,7 @@ export const ClassroomScreen = () => {
 
   // --- Layout State (Desktop 75/25, Mobile Tabs) ---
   const [activeMobileTab, setActiveMobileTab] = useState('canvas'); // 'canvas' | 'sidebar'
-  const [activeSidebarTab, setActiveSidebarTab] = useState('notes'); // 'notes' | 'timer' | 'formulas'
+  const [isNotesMinimized, setIsNotesMinimized] = useState(false);
 
   // --- Excalidraw Canvas Iframe Reference ---
   const canvasIframeRef = useRef(null);
@@ -103,11 +103,6 @@ export const ClassroomScreen = () => {
     `## Assigned Homework\n- Complete Practice Paper 1 (Questions 8-10)\n`
   );
   const [copyStatus, setCopyStatus] = useState('');
-
-  // --- Exam Timer State ---
-  const [timerSeconds, setTimerSeconds] = useState(120); // 2 minutes default
-  const [timerRunning, setTimerRunning] = useState(false);
-  const timerIntervalRef = useRef(null);
 
   // Multi-tab sync BroadcastChannel
   const broadcastChannelRef = useRef(null);
@@ -323,28 +318,6 @@ export const ClassroomScreen = () => {
       }
     };
   }, [roomName]);
-
-  // 4. Exam Timer Ticking
-  useEffect(() => {
-    if (timerRunning) {
-      timerIntervalRef.current = setInterval(() => {
-        setTimerSeconds((prev) => {
-          if (prev <= 1) {
-            clearInterval(timerIntervalRef.current);
-            setTimerRunning(false);
-            if (typeof window !== 'undefined' && window.alert) {
-              window.alert('⏰ 11+ Practice Time is up! Review your working out.');
-            }
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-    } else {
-      clearInterval(timerIntervalRef.current);
-    }
-    return () => clearInterval(timerIntervalRef.current);
-  }, [timerRunning]);
 
   // --- PDF Loading & Rendering ---
   const loadPdfFromSource = async (source, fileName = '11plus_paper.pdf') => {
@@ -633,6 +606,7 @@ export const ClassroomScreen = () => {
           borderRadius: '8px',
           backgroundColor: '#0F172A',
         },
+        activeSpeakerMode: false,
         showLeaveButton: true,
         showFullscreenButton: true,
         theme: {
@@ -947,15 +921,7 @@ export const ClassroomScreen = () => {
             onPress={handlePdfUploadClick}
             disabled={isLoadingPdf}
           >
-            <Text style={styles.pdfActionBtnText}>📄 Upload 11+ PDF</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity 
-            style={[styles.pdfActionBtn, styles.pdfSampleBtn]} 
-            onPress={handleLoadSamplePdf}
-            disabled={isLoadingPdf}
-          >
-            <Text style={styles.pdfActionBtnText}>⚡ Load Sample Exam</Text>
+            <Text style={styles.pdfActionBtnText}>📁 Import resources</Text>
           </TouchableOpacity>
 
           <TouchableOpacity 
@@ -1100,7 +1066,7 @@ export const ClassroomScreen = () => {
         {(isDesktop || activeMobileTab === 'sidebar') && (
           <View style={[styles.sidebarColumn, !isDesktop && styles.columnFullWidth]}>
             {/* Top Section: Daily.co Video Call Container */}
-            <View style={styles.videoSection}>
+            <View style={[styles.videoSection, isNotesMinimized && styles.videoSectionExpanded]}>
               <View style={styles.videoSectionHeader}>
                 <View style={styles.videoHeaderLeft}>
                   <Text style={styles.videoTitle}>📹 Live 1-on-1 Call</Text>
@@ -1134,7 +1100,7 @@ export const ClassroomScreen = () => {
               </View>
 
               {/* Prebuilt Daily.co Call Iframe Target Container */}
-              <View style={styles.videoFrameHolder}>
+              <View style={[styles.videoFrameHolder, isNotesMinimized && styles.videoFrameHolderExpanded]}>
                 <div 
                   ref={videoContainerRef} 
                   id="daily-call-container"
@@ -1261,40 +1227,22 @@ export const ClassroomScreen = () => {
               )}
             </View>
 
-            {/* Bottom Section: Session Notes & Tutoring Toolkit */}
-            <View style={styles.toolkitSection}>
-              {/* Sidebar Tabs */}
-              <View style={styles.sidebarTabsRow}>
+            {/* Bottom Section: Minimisable Session Notes */}
+            <View style={[styles.toolkitSection, isNotesMinimized && styles.toolkitSectionMinimized]}>
+              {/* Notes Header Bar with Minimise Toggle */}
+              <View style={styles.notesHeaderBar}>
+                <Text style={styles.notesHeaderTitle}>📝 Session Notes</Text>
                 <TouchableOpacity 
-                  style={[styles.sidebarTab, activeSidebarTab === 'notes' && styles.sidebarTabActive]}
-                  onPress={() => setActiveSidebarTab('notes')}
+                  style={styles.notesMinimizeToggleBtn}
+                  onPress={() => setIsNotesMinimized(!isNotesMinimized)}
                 >
-                  <Text style={[styles.sidebarTabText, activeSidebarTab === 'notes' && styles.sidebarTabTextActive]}>
-                    📝 Notes
-                  </Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity 
-                  style={[styles.sidebarTab, activeSidebarTab === 'timer' && styles.sidebarTabActive]}
-                  onPress={() => setActiveSidebarTab('timer')}
-                >
-                  <Text style={[styles.sidebarTabText, activeSidebarTab === 'timer' && styles.sidebarTabTextActive]}>
-                    ⏱️ Timer
-                  </Text>
-                </TouchableOpacity>
-
-                <TouchableOpacity 
-                  style={[styles.sidebarTab, activeSidebarTab === 'formulas' && styles.sidebarTabActive]}
-                  onPress={() => setActiveSidebarTab('formulas')}
-                >
-                  <Text style={[styles.sidebarTabText, activeSidebarTab === 'formulas' && styles.sidebarTabTextActive]}>
-                    📐 Formulas
+                  <Text style={styles.notesMinimizeToggleText}>
+                    {isNotesMinimized ? '▲ Expand Notes' : '▼ Minimise Notes'}
                   </Text>
                 </TouchableOpacity>
               </View>
 
-              {/* Tab 1: Session Notes Editor */}
-              {activeSidebarTab === 'notes' && (
+              {!isNotesMinimized && (
                 <View style={styles.notesContainer}>
                   {/* Quick Action Snippets */}
                   <View style={styles.notesQuickSnippets}>
@@ -1360,80 +1308,6 @@ export const ClassroomScreen = () => {
                     </TouchableOpacity>
                   </View>
                 </View>
-              )}
-
-              {/* Tab 2: Exam Drill Stopwatch */}
-              {activeSidebarTab === 'timer' && (
-                <View style={styles.timerContainer}>
-                  <Text style={styles.timerDisplay}>
-                    {Math.floor(timerSeconds / 60).toString().padStart(2, '0')}:
-                    {(timerSeconds % 60).toString().padStart(2, '0')}
-                  </Text>
-
-                  <View style={styles.timerPresetsRow}>
-                    <TouchableOpacity 
-                      style={styles.timerPresetBtn}
-                      onPress={() => { setTimerSeconds(60); setTimerRunning(false); }}
-                    >
-                      <Text style={styles.timerPresetBtnText}>1 Min Drill</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity 
-                      style={styles.timerPresetBtn}
-                      onPress={() => { setTimerSeconds(120); setTimerRunning(false); }}
-                    >
-                      <Text style={styles.timerPresetBtnText}>2 Min Exam Q</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity 
-                      style={styles.timerPresetBtn}
-                      onPress={() => { setTimerSeconds(300); setTimerRunning(false); }}
-                    >
-                      <Text style={styles.timerPresetBtnText}>5 Min Section</Text>
-                    </TouchableOpacity>
-                  </View>
-
-                  <View style={styles.timerControlsRow}>
-                    <TouchableOpacity 
-                      style={[styles.timerMainBtn, timerRunning ? styles.timerPauseBtn : styles.timerStartBtn]}
-                      onPress={() => setTimerRunning(!timerRunning)}
-                    >
-                      <Text style={styles.timerMainBtnText}>{timerRunning ? '⏸️ Pause' : '▶️ Start Timer'}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity 
-                      style={styles.timerResetBtn}
-                      onPress={() => { setTimerRunning(false); setTimerSeconds(120); }}
-                    >
-                      <Text style={styles.timerResetBtnText}>🔄 Reset</Text>
-                    </TouchableOpacity>
-                  </View>
-                </View>
-              )}
-
-              {/* Tab 3: Quick 11+ Cheat Sheet */}
-              {activeSidebarTab === 'formulas' && (
-                <ScrollView style={styles.formulasContainer}>
-                  <View style={styles.formulaCard}>
-                    <Text style={styles.formulaTitle}>🏎️ Speed, Distance, Time</Text>
-                    <Text style={styles.formulaBody}>• Speed = Distance ÷ Time</Text>
-                    <Text style={styles.formulaBody}>• Distance = Speed × Time</Text>
-                    <Text style={styles.formulaBody}>• Time = Distance ÷ Speed</Text>
-                  </View>
-
-                  <View style={styles.formulaCard}>
-                    <Text style={styles.formulaTitle}>🍰 Key Fractions to Decimals</Text>
-                    <Text style={styles.formulaBody}>• 1/8 = 0.125 = 12.5%</Text>
-                    <Text style={styles.formulaBody}>• 1/6 ≈ 0.167 = 16.7%</Text>
-                    <Text style={styles.formulaBody}>• 3/8 = 0.375 = 37.5%</Text>
-                    <Text style={styles.formulaBody}>• 5/8 = 0.625 = 62.5%</Text>
-                  </View>
-
-                  <View style={styles.formulaCard}>
-                    <Text style={styles.formulaTitle}>📐 Geometry Essentials</Text>
-                    <Text style={styles.formulaBody}>• Area of Triangle = ½ × base × height</Text>
-                    <Text style={styles.formulaBody}>• Area of Trapezium = ½(a + b) × h</Text>
-                    <Text style={styles.formulaBody}>• Angles in Triangle = 180°</Text>
-                    <Text style={styles.formulaBody}>• Angles in Quadrilateral = 360°</Text>
-                  </View>
-                </ScrollView>
               )}
             </View>
           </View>
@@ -1737,10 +1611,18 @@ const styles = StyleSheet.create({
 
   // Video Call Section
   videoSection: {
-    padding: 12,
+    padding: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#334155',
     backgroundColor: '#0F172A',
+    flex: 1.2,
+    display: 'flex',
+    flexDirection: 'column',
+    minHeight: 280,
+  },
+  videoSectionExpanded: {
+    flex: 1,
+    minHeight: 0,
   },
   videoSectionHeader: {
     flexDirection: 'row',
@@ -1801,11 +1683,15 @@ const styles = StyleSheet.create({
   },
   videoFrameHolder: {
     width: '100%',
-    height: 220,
-    backgroundColor: '#1E293B',
+    flex: 1,
+    minHeight: 240,
+    backgroundColor: '#0F172A',
     borderRadius: 8,
     overflow: 'hidden',
     position: 'relative',
+  },
+  videoFrameHolderExpanded: {
+    flex: 1,
   },
   videoPlaceholder: {
     flex: 1,
@@ -1871,41 +1757,49 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
 
-  // Notes & Toolkit Section
+  // Notes Section
   toolkitSection: {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#1E293B',
+    minHeight: 200,
   },
-  sidebarTabsRow: {
+  toolkitSectionMinimized: {
+    flex: 0,
+    minHeight: 44,
+    height: 44,
+  },
+  notesHeaderBar: {
     flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    backgroundColor: '#0F172A',
     borderBottomWidth: 1,
     borderBottomColor: '#334155',
-    backgroundColor: '#0F172A',
   },
-  sidebarTab: {
-    flex: 1,
-    paddingVertical: 10,
-    alignItems: 'center',
-    borderBottomWidth: 2,
-    borderBottomColor: 'transparent',
-  },
-  sidebarTabActive: {
-    borderBottomColor: '#BE1E2D',
-    backgroundColor: '#1E293B',
-  },
-  sidebarTabText: {
-    color: '#94A3B8',
+  notesHeaderTitle: {
+    color: '#F8FAFC',
     fontSize: 12,
-    fontWeight: '600',
-  },
-  sidebarTabTextActive: {
-    color: '#FFFFFF',
     fontWeight: '700',
   },
+  notesMinimizeToggleBtn: {
+    backgroundColor: '#334155',
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: '#475569',
+  },
+  notesMinimizeToggleText: {
+    color: '#CBD5E1',
+    fontSize: 11,
+    fontWeight: '600',
+  },
 
-  // Notes Tab
+  // Notes Content
   notesContainer: {
     flex: 1,
     padding: 10,
@@ -1959,94 +1853,6 @@ const styles = StyleSheet.create({
     color: '#F8FAFC',
     fontSize: 11,
     fontWeight: '600',
-  },
-
-  // Timer Tab
-  timerContainer: {
-    flex: 1,
-    padding: 16,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  timerDisplay: {
-    color: '#F8FAFC',
-    fontSize: 52,
-    fontWeight: '800',
-    fontFamily: Platform.OS === 'web' ? 'monospace' : undefined,
-    letterSpacing: 2,
-    marginBottom: 16,
-  },
-  timerPresetsRow: {
-    flexDirection: 'row',
-    gap: 8,
-    marginBottom: 20,
-  },
-  timerPresetBtn: {
-    backgroundColor: '#334155',
-    paddingHorizontal: 10,
-    paddingVertical: 6,
-    borderRadius: 6,
-  },
-  timerPresetBtnText: {
-    color: '#E2E8F0',
-    fontSize: 11,
-    fontWeight: '600',
-  },
-  timerControlsRow: {
-    flexDirection: 'row',
-    gap: 12,
-  },
-  timerMainBtn: {
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    borderRadius: 8,
-  },
-  timerStartBtn: {
-    backgroundColor: '#10B981',
-  },
-  timerPauseBtn: {
-    backgroundColor: '#F59E0B',
-  },
-  timerMainBtnText: {
-    color: '#FFFFFF',
-    fontWeight: 'bold',
-    fontSize: 14,
-  },
-  timerResetBtn: {
-    backgroundColor: '#475569',
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    borderRadius: 8,
-  },
-  timerResetBtnText: {
-    color: '#FFFFFF',
-    fontSize: 14,
-    fontWeight: '600',
-  },
-
-  // Formulas Tab
-  formulasContainer: {
-    flex: 1,
-    padding: 12,
-  },
-  formulaCard: {
-    backgroundColor: '#0F172A',
-    padding: 12,
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: '#334155',
-    marginBottom: 10,
-  },
-  formulaTitle: {
-    color: '#F1F5F9',
-    fontSize: 12,
-    fontWeight: '700',
-    marginBottom: 6,
-  },
-  formulaBody: {
-    color: '#94A3B8',
-    fontSize: 11,
-    lineHeight: 18,
   },
 
   // --- Auth Gate Styles ---
