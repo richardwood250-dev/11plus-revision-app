@@ -24,6 +24,76 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: #64748B;
     }
+
+    /* ============================================================ */
+    /* MINIMIZABLE TOOLBAR & PEN MENU STYLES                        */
+    /* ============================================================ */
+
+    /* Top Tool Menu (Main Toolbar) */
+    body.menus-minimized .excalidraw .App-menu_top .Island.App-toolbar {
+      transform: translateY(-80%);
+      opacity: 0.35;
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+    body.menus-minimized .excalidraw .App-menu_top .Island.App-toolbar:hover,
+    body.menus-minimized .excalidraw .App-menu_top .Island.App-toolbar:focus-within {
+      transform: translateY(0);
+      opacity: 1;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Left Pen Menu / Properties Panel (Stroke Color, Width, etc.) */
+    body.menus-minimized .excalidraw .App-menu__left,
+    body.menus-minimized .excalidraw .App-menu_left {
+      transform: translateX(-92%);
+      opacity: 0.25;
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease, box-shadow 0.2s ease;
+      z-index: 20;
+      cursor: pointer;
+    }
+    body.menus-minimized .excalidraw .App-menu__left:hover,
+    body.menus-minimized .excalidraw .App-menu_left:hover,
+    body.menus-minimized .excalidraw .App-menu__left:focus-within,
+    body.menus-minimized .excalidraw .App-menu_left:focus-within {
+      transform: translateX(0);
+      opacity: 1;
+      box-shadow: 10px 0 25px -5px rgba(0, 0, 0, 0.25);
+    }
+
+    /* Subtle indicator icon on the peek edge of the collapsed pen menu */
+    body.menus-minimized .excalidraw .App-menu__left::after,
+    body.menus-minimized .excalidraw .App-menu_left::after {
+      content: '✏️';
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 13px;
+      pointer-events: none;
+    }
+
+    /* Hide hint viewer and secondary sidebar trigger when minimized */
+    body.menus-minimized .excalidraw .HintViewer {
+      display: none !important;
+    }
+    body.menus-minimized .excalidraw .default-sidebar-trigger,
+    body.menus-minimized .excalidraw .sidebar-trigger {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+    body.menus-minimized .excalidraw .default-sidebar-trigger:hover,
+    body.menus-minimized .excalidraw .sidebar-trigger:hover {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Minimize floating toggle button inside canvas */
+    #toggle-canvas-menus-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
 <body>

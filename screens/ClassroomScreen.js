@@ -59,6 +59,18 @@ export const ClassroomScreen = () => {
   // --- Excalidraw Canvas Iframe Reference ---
   const canvasIframeRef = useRef(null);
   const [isCanvasReady, setIsCanvasReady] = useState(false);
+  const [isCanvasMenusMinimized, setIsCanvasMenusMinimized] = useState(false);
+
+  const toggleCanvasMenus = () => {
+    const next = !isCanvasMenusMinimized;
+    setIsCanvasMenusMinimized(next);
+    if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
+      canvasIframeRef.current.contentWindow.postMessage({
+        type: 'TOGGLE_MENUS',
+        minimized: next,
+      }, '*');
+    }
+  };
 
   // --- PDF & Worksheet State ---
   const pdfDocRef = useRef(null);
@@ -297,6 +309,8 @@ export const ClassroomScreen = () => {
             elements: data.elements,
           });
         }
+      } else if (data.type === 'MENUS_MINIMIZED_CHANGED') {
+        setIsCanvasMenusMinimized(data.minimized);
       }
     };
 
@@ -957,6 +971,19 @@ export const ClassroomScreen = () => {
             <Text style={styles.quizImportBtnText}>🎯 Import Dojo Quiz</Text>
           </TouchableOpacity>
 
+          <TouchableOpacity 
+            nativeID="toggle-menus-btn"
+            accessibilityRole="button"
+            style={[styles.pdfActionBtn, isCanvasMenusMinimized ? styles.menuMinimizedBtnActive : styles.menuMinimizedBtn]} 
+            onPress={toggleCanvasMenus}
+            disabled={isLoadingPdf}
+            title={isCanvasMenusMinimized ? 'Expand toolbars' : 'Minimise toolbars to maximise worksheet drawing space'}
+          >
+            <Text style={styles.pdfActionBtnText}>
+              {isCanvasMenusMinimized ? '🛠️ Expand Menus' : '🪄 Minimise Menus'}
+            </Text>
+          </TouchableOpacity>
+
           {/* Page Switcher */}
           {totalPdfPages > 1 && (
             <View style={styles.pdfPaginationRow}>
@@ -1539,6 +1566,14 @@ const styles = StyleSheet.create({
   },
   quizImportBtn: {
     backgroundColor: '#8B5CF6',
+  },
+  menuMinimizedBtn: {
+    backgroundColor: '#334155',
+  },
+  menuMinimizedBtnActive: {
+    backgroundColor: '#059669',
+    borderWidth: 1,
+    borderColor: '#34D399',
   },
   quizImportBtnText: {
     color: '#FFFFFF',

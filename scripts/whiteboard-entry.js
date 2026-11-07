@@ -6,10 +6,34 @@ window.EXCALIDRAW_ASSET_PATH = 'https://unpkg.com/@excalidraw/excalidraw@0.18.1/
 
 function WhiteboardApp() {
   const [api, setApi] = useState(null);
+  const [isMinimized, setIsMinimized] = useState(false);
   const isRemoteUpdate = useRef(false);
   const lastSentTime = useRef(0);
   const pendingUpdateRef = useRef(null);
   const throttleTimerRef = useRef(null);
+
+  const toggleMinimized = (forceState) => {
+    setIsMinimized((prev) => {
+      const next = typeof forceState === 'boolean' ? forceState : !prev;
+      if (next) {
+        document.body.classList.add('menus-minimized');
+      } else {
+        document.body.classList.remove('menus-minimized');
+      }
+      if (api) {
+        try {
+          api.updateScene({
+            appState: { zenModeEnabled: next }
+          });
+        } catch (e) {}
+      }
+      window.parent.postMessage({
+        type: 'MENUS_MINIMIZED_CHANGED',
+        minimized: next
+      }, '*');
+      return next;
+    });
+  };
 
   useEffect(() => {
     window.parent.postMessage({ type: 'CANVAS_READY' }, '*');
@@ -102,6 +126,8 @@ function WhiteboardApp() {
           console.warn('Sync elements error:', err);
         }
         setTimeout(() => { isRemoteUpdate.current = false; }, 80);
+      } else if (data.type === 'TOGGLE_MENUS') {
+        toggleMinimized(data.minimized);
       } else if (data.type === 'FIT_PAGE') {
         const bg = api.getSceneElements().find(el => el.id.startsWith('pdf_bg_'));
         if (bg) {
@@ -118,6 +144,18 @@ function WhiteboardApp() {
 
     window.addEventListener('message', handleParentMessage);
     return () => window.removeEventListener('message', handleParentMessage);
+  }, [api]);
+
+  // Keyboard shortcut: Alt+Z or Ctrl+M to toggle menus
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if ((e.altKey && (e.key === 'z' || e.key === 'Z')) || (e.ctrlKey && (e.key === 'm' || e.key === 'M'))) {
+        e.preventDefault();
+        toggleMinimized();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, [api]);
 
   const handleChange = (elements) => {
@@ -161,6 +199,7 @@ function WhiteboardApp() {
     React.createElement(Excalidraw, {
       excalidrawAPI: (inst) => {
         setApi(inst);
+        window.whiteboardApi = inst;
       },
       onChange: handleChange,
       initialData: {
@@ -168,6 +207,7 @@ function WhiteboardApp() {
           viewBackgroundColor: '#F8FAFC',
           currentItemStrokeColor: '#1E293B',
           theme: 'light',
+          zenModeEnabled: false,
         },
       },
       UIOptions: {
@@ -175,7 +215,36 @@ function WhiteboardApp() {
           saveAsImage: true,
         },
       },
-    })
+    }),
+    React.createElement(
+      'button',
+      {
+        id: 'toggle-canvas-menus-btn',
+        onClick: () => toggleMinimized(),
+        title: isMinimized ? 'Expand full tool & pen menus' : 'Minimise menus to maximise canvas drawing space (Alt+Z)',
+        style: {
+          position: 'absolute',
+          top: '16px',
+          right: '16px',
+          zIndex: 100,
+          backgroundColor: isMinimized ? '#2563EB' : '#1E293B',
+          color: '#FFFFFF',
+          border: '1px solid ' + (isMinimized ? '#3B82F6' : '#475569'),
+          borderRadius: '20px',
+          padding: '6px 14px',
+          fontSize: '12px',
+          fontWeight: '600',
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '6px',
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
+          transition: 'all 0.2s ease',
+          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        }
+      },
+      isMinimized ? '🛠️ Expand Menus' : '🪄 Minimise Menus'
+    )
   );
 }
 
