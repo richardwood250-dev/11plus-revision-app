@@ -4,6 +4,49 @@ import { Excalidraw } from '@excalidraw/excalidraw';
 
 window.EXCALIDRAW_ASSET_PATH = 'https://unpkg.com/@excalidraw/excalidraw@0.18.1/dist/prod/';
 
+// Version-aware reconciliation that preserves deletions so erased elements stay deleted
+function reconcileDrawings(localElements, remoteElements) {
+  const localMap = new Map();
+  for (const el of localElements || []) {
+    if (el && el.id) localMap.set(el.id, el);
+  }
+
+  const reconciledMap = new Map();
+
+  for (const remote of remoteElements || []) {
+    if (!remote || !remote.id) continue;
+    const local = localMap.get(remote.id);
+    if (!local) {
+      reconciledMap.set(remote.id, remote);
+    } else {
+      const localVer = local.version || 0;
+      const remoteVer = remote.version || 0;
+      if (remoteVer > localVer) {
+        reconciledMap.set(remote.id, remote);
+      } else if (localVer > remoteVer) {
+        reconciledMap.set(local.id, local);
+      } else {
+        // Tie-breaker: if either is deleted, prefer deleted so erased elements never resurrect
+        if (remote.isDeleted || local.isDeleted) {
+          reconciledMap.set(remote.id, remote.isDeleted ? remote : local);
+        } else {
+          const localNonce = local.versionNonce || 0;
+          const remoteNonce = remote.versionNonce || 0;
+          reconciledMap.set(remote.id, localNonce < remoteNonce ? local : remote);
+        }
+      }
+    }
+  }
+
+  for (const local of localElements || []) {
+    if (local && local.id && !reconciledMap.has(local.id)) {
+      reconciledMap.set(local.id, local);
+    }
+  }
+
+  return Array.from(reconciledMap.values());
+}
+
 function WhiteboardApp() {
   const [api, setApi] = useState(null);
   const [isMinimized, setIsMinimized] = useState(false);
@@ -11,6 +54,10 @@ function WhiteboardApp() {
   const lastSentTime = useRef(0);
   const pendingUpdateRef = useRef(null);
   const throttleTimerRef = useRef(null);
+
+  // Per-page drawings storage: Map<pageNumber, Array<ExcalidrawElement>>
+  const pageDrawingsMapRef = useRef(new Map());
+  const activePageRef = useRef(1);
 
   const toggleMinimized = (forceState) => {
     setIsMinimized((prev) => {
@@ -43,9 +90,21 @@ function WhiteboardApp() {
       if (!data || !api) return;
 
       if (data.type === 'LOAD_PDF_PAGE') {
-        const { fileId, dataUrl, width, height } = data;
+        const { fileId, dataUrl, width, height, isNewDocument } = data;
+        const targetPage = Number(data.pageNumber) || 1;
         isRemoteUpdate.current = true;
         try {
+          if (isNewDocument) {
+            pageDrawingsMapRef.current.clear();
+          } else {
+            // Save drawings of the page we are navigating away from
+            const currentSceneElements = api.getSceneElementsIncludingDeleted();
+            const currentDrawings = currentSceneElements.filter(el => !el.id.startsWith('pdf_bg_'));
+            pageDrawingsMapRef.current.set(activePageRef.current, currentDrawings);
+          }
+
+          activePageRef.current = targetPage;
+
           api.addFiles([{
             id: fileId,
             dataURL: dataUrl,
@@ -82,10 +141,12 @@ function WhiteboardApp() {
             locked: true,
           };
 
-          const currentElements = api.getSceneElements().filter(el => !el.id.startsWith('pdf_bg_'));
+          // Retrieve drawings specifically for the target page
+          const targetPageDrawings = pageDrawingsMapRef.current.get(targetPage) || [];
+
           api.updateScene({
-            elements: [bgElement, ...currentElements],
-            commitToHistory: true,
+            elements: [bgElement, ...targetPageDrawings],
+            commitToHistory: false,
           });
 
           api.scrollToContent(bgElement, { fitToViewport: true });
@@ -96,32 +157,37 @@ function WhiteboardApp() {
       } else if (data.type === 'SYNC_ELEMENTS') {
         isRemoteUpdate.current = true;
         try {
-          const currentElements = api.getSceneElements();
-          const bgElement = currentElements.find(el => el.id && el.id.startsWith('pdf_bg_'));
-
-          // Reconcile and merge remote elements into local scene by ID and version
-          const elementMap = new Map();
-          if (bgElement) {
-            elementMap.set(bgElement.id, bgElement);
-          }
-          for (const el of currentElements) {
-            if (el.id && !el.id.startsWith('pdf_bg_')) {
-              elementMap.set(el.id, el);
-            }
-          }
-          for (const rEl of data.elements || []) {
-            if (!rEl || !rEl.id) continue;
-            if (rEl.id.startsWith('pdf_bg_')) continue; // Preserve local bg
-            const local = elementMap.get(rEl.id);
-            if (!local || (rEl.version || 0) >= (local.version || 0)) {
-              elementMap.set(rEl.id, rEl);
+          // If bulk map of pages is provided, sync all background pages into map
+          if (data.allPages && typeof data.allPages === 'object') {
+            for (const [pStr, pElements] of Object.entries(data.allPages)) {
+              const pNum = Number(pStr);
+              if (pNum) {
+                const existing = pageDrawingsMapRef.current.get(pNum) || [];
+                const nonBgRemote = (pElements || []).filter(el => !el.id.startsWith('pdf_bg_'));
+                pageDrawingsMapRef.current.set(pNum, reconcileDrawings(existing, nonBgRemote));
+              }
             }
           }
 
-          api.updateScene({
-            elements: Array.from(elementMap.values()),
-            commitToHistory: false,
-          });
+          const msgPage = Number(data.pageNumber) || activePageRef.current;
+          const remoteElements = (data.elements || []).filter(el => !el.id.startsWith('pdf_bg_'));
+
+          if (msgPage === activePageRef.current) {
+            const currentSceneElements = api.getSceneElementsIncludingDeleted();
+            const bgElement = currentSceneElements.find(el => el.id && el.id.startsWith('pdf_bg_'));
+            const localDrawings = currentSceneElements.filter(el => !el.id.startsWith('pdf_bg_'));
+
+            const reconciled = reconcileDrawings(localDrawings, remoteElements);
+            pageDrawingsMapRef.current.set(activePageRef.current, reconciled);
+
+            api.updateScene({
+              elements: bgElement ? [bgElement, ...reconciled] : reconciled,
+              commitToHistory: false,
+            });
+          } else {
+            const existing = pageDrawingsMapRef.current.get(msgPage) || [];
+            pageDrawingsMapRef.current.set(msgPage, reconcileDrawings(existing, remoteElements));
+          }
         } catch (err) {
           console.warn('Sync elements error:', err);
         }
@@ -135,10 +201,16 @@ function WhiteboardApp() {
         }
       } else if (data.type === 'CLEAR_CANVAS') {
         const bg = api.getSceneElements().find(el => el.id.startsWith('pdf_bg_'));
+        pageDrawingsMapRef.current.set(activePageRef.current, []);
         api.updateScene({
           elements: bg ? [bg] : [],
           commitToHistory: true,
         });
+        window.parent.postMessage({
+          type: 'CANVAS_CHANGE',
+          pageNumber: activePageRef.current,
+          elements: [],
+        }, '*');
       }
     };
 
@@ -161,9 +233,10 @@ function WhiteboardApp() {
   const handleChange = (elements) => {
     if (isRemoteUpdate.current) return;
 
-    // Filter out deleted elements to keep payload compact
-    const activeElements = (elements || []).filter(el => !el.isDeleted);
-    pendingUpdateRef.current = activeElements;
+    // Filter out PDF background, but preserve deleted elements so deletion broadcasts to peer!
+    const drawings = (elements || []).filter(el => !el.id.startsWith('pdf_bg_'));
+    pageDrawingsMapRef.current.set(activePageRef.current, drawings);
+    pendingUpdateRef.current = drawings;
 
     const now = Date.now();
     const elapsed = now - lastSentTime.current;
@@ -173,6 +246,7 @@ function WhiteboardApp() {
       lastSentTime.current = Date.now();
       window.parent.postMessage({
         type: 'CANVAS_CHANGE',
+        pageNumber: activePageRef.current,
         elements: pendingUpdateRef.current,
       }, '*');
       pendingUpdateRef.current = null;

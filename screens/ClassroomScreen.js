@@ -186,6 +186,12 @@ export const ClassroomScreen = () => {
   }, [callStatus]);
 
   const lastCanvasElementsRef = useRef([]);
+  // Per-page drawings store: { [pageNumber]: Array<ExcalidrawElement> }
+  const pageDrawingsRef = useRef({});
+  const currentPdfPageRef = useRef(currentPdfPage);
+  useEffect(() => {
+    currentPdfPageRef.current = currentPdfPage;
+  }, [currentPdfPage]);
 
   // --- Peer Broadcast Helper (Stable Reference via Refs) ---
   const broadcastToPeer = useCallback((payload) => {
@@ -223,22 +229,34 @@ export const ClassroomScreen = () => {
     if (!msg || !msg.type) return;
 
     if (msg.type === 'CANVAS_SYNC') {
-      lastCanvasElementsRef.current = msg.elements || [];
+      const pNum = Number(msg.pageNumber) || currentPdfPageRef.current || 1;
+      if (msg.allPages && typeof msg.allPages === 'object') {
+        pageDrawingsRef.current = { ...pageDrawingsRef.current, ...msg.allPages };
+      }
+      if (msg.elements) {
+        pageDrawingsRef.current[pNum] = msg.elements;
+        lastCanvasElementsRef.current = msg.elements;
+      }
       // Forward synced drawing to Excalidraw iframe
       if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
         canvasIframeRef.current.contentWindow.postMessage({
           type: 'SYNC_ELEMENTS',
+          pageNumber: pNum,
           elements: msg.elements,
+          allPages: msg.allPages || pageDrawingsRef.current,
         }, '*');
       }
     } else if (msg.type === 'REQUEST_STATE_SYNC') {
       if (lastRenderedPageRef.current && broadcastToPeerRef.current) {
         broadcastToPeerRef.current(lastRenderedPageRef.current);
       }
-      if (lastCanvasElementsRef.current && lastCanvasElementsRef.current.length > 0 && broadcastToPeerRef.current) {
+      const pNum = currentPdfPageRef.current || 1;
+      if (broadcastToPeerRef.current) {
         broadcastToPeerRef.current({
           type: 'CANVAS_SYNC',
-          elements: lastCanvasElementsRef.current,
+          pageNumber: pNum,
+          elements: pageDrawingsRef.current[pNum] || lastCanvasElementsRef.current || [],
+          allPages: pageDrawingsRef.current,
         });
       }
     } else if (msg.type === 'PDF_PAGE_LOADED') {
@@ -251,6 +269,7 @@ export const ClassroomScreen = () => {
           width: msg.width,
           height: msg.height,
           pageNumber: msg.pageNumber,
+          isNewDocument: msg.isNewDocument,
         }, '*');
       }
       setCurrentPdfPage(msg.pageNumber);
@@ -296,12 +315,16 @@ export const ClassroomScreen = () => {
           broadcastToPeerRef.current({ type: 'REQUEST_STATE_SYNC' });
         }
       } else if (data.type === 'CANVAS_CHANGE') {
+        const pNum = Number(data.pageNumber) || currentPdfPageRef.current || 1;
+        pageDrawingsRef.current[pNum] = data.elements || [];
         lastCanvasElementsRef.current = data.elements || [];
         // Forward drawing changes to peer in real time
         if (broadcastToPeerRef.current) {
           broadcastToPeerRef.current({
             type: 'CANVAS_SYNC',
+            pageNumber: pNum,
             elements: data.elements,
+            allPages: pageDrawingsRef.current,
           });
         }
       } else if (data.type === 'MENUS_MINIMIZED_CHANGED') {
@@ -324,6 +347,8 @@ export const ClassroomScreen = () => {
     setIsLoadingPdf(true);
     setPdfStatusMessage('Parsing PDF pages...');
     quizPagesRef.current = null;
+    pageDrawingsRef.current = {};
+    lastCanvasElementsRef.current = [];
     try {
       const doc = await loadPdfDocument(source);
       pdfDocRef.current = doc;
@@ -331,8 +356,8 @@ export const ClassroomScreen = () => {
       setTotalPdfPages(doc.numPages);
       setPdfStatusMessage(`Loaded ${doc.numPages} pages. Rendering Page 1...`);
 
-      // Render first page onto canvas
-      await renderAndInjectPage(doc, 1);
+      // Render first page onto canvas as a new document
+      await renderAndInjectPage(doc, 1, true);
       setPdfStatusMessage(`Page 1 active`);
     } catch (err) {
       console.error('Error loading PDF:', err);
@@ -343,7 +368,7 @@ export const ClassroomScreen = () => {
     }
   };
 
-  const renderAndInjectPage = async (doc, pageNum) => {
+  const renderAndInjectPage = async (doc, pageNum, isNewDocument = false) => {
     if (!doc) return;
     setIsLoadingPdf(true);
     try {
@@ -359,6 +384,7 @@ export const ClassroomScreen = () => {
           width: rendered.displayWidth,
           height: rendered.displayHeight,
           pageNumber: pageNum,
+          isNewDocument,
         }, '*');
       }
 
@@ -374,6 +400,7 @@ export const ClassroomScreen = () => {
         height: rendered.displayHeight,
         fileName: pdfFileName || 'Sample 11+ Maths Paper.pdf',
         totalPdfPages: doc.numPages || totalPdfPages,
+        isNewDocument,
       };
       lastRenderedPageRef.current = pagePayload;
       broadcastToPeer(pagePayload);
@@ -409,6 +436,8 @@ export const ClassroomScreen = () => {
   const handleLoadQuizQuestion = async ({ question, rendered }) => {
     pdfDocRef.current = null;
     quizPagesRef.current = [{ question, rendered }];
+    pageDrawingsRef.current = {};
+    lastCanvasElementsRef.current = [];
     const fileId = `quiz_${question.id}_${Date.now()}`;
     const fileName = `11+ ${question.subject}: ${question.topic} (${question.id})`;
 
@@ -424,6 +453,7 @@ export const ClassroomScreen = () => {
         width: rendered.displayWidth,
         height: rendered.displayHeight,
         pageNumber: 1,
+        isNewDocument: true,
       }, '*');
     }
 
@@ -436,6 +466,7 @@ export const ClassroomScreen = () => {
       height: rendered.displayHeight,
       fileName,
       totalPdfPages: 1,
+      isNewDocument: true,
     };
     lastRenderedPageRef.current = payload;
     broadcastToPeer(payload);
@@ -445,6 +476,8 @@ export const ClassroomScreen = () => {
     if (!set || set.length === 0) return;
     pdfDocRef.current = null;
     quizPagesRef.current = set;
+    pageDrawingsRef.current = {};
+    lastCanvasElementsRef.current = [];
     const first = set[0];
     const fileId = `quiz_set_p1_${Date.now()}`;
     const fileName = `11+ ${first.question.subject}: ${first.question.topic} (Set of ${set.length})`;
@@ -461,6 +494,7 @@ export const ClassroomScreen = () => {
         width: first.rendered.displayWidth,
         height: first.rendered.displayHeight,
         pageNumber: 1,
+        isNewDocument: true,
       }, '*');
     }
 
@@ -473,6 +507,7 @@ export const ClassroomScreen = () => {
       height: first.rendered.displayHeight,
       fileName,
       totalPdfPages: set.length,
+      isNewDocument: true,
     };
     lastRenderedPageRef.current = payload;
     broadcastToPeer(payload);
