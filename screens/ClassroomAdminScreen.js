@@ -33,7 +33,6 @@ export const ClassroomAdminScreen = () => {
   // --- Create Modal State ---
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [tuteeName, setTuteeName] = useState('');
-  const [selectedSubject, setSelectedSubject] = useState('Maths');
   const [topic, setTopic] = useState('');
   const [customRoomId, setCustomRoomId] = useState('');
   const [isCreating, setIsCreating] = useState(false);
@@ -71,25 +70,17 @@ export const ClassroomAdminScreen = () => {
     }
   };
 
-  // Generate suggested room code as user types name/subject
+  // Generate suggested room code as user types student name
   const handleTuteeNameChange = (name) => {
     setTuteeName(name);
     const clean = name.trim().toLowerCase().replace(/[^a-z0-9]/g, '-');
-    const sub = selectedSubject.toLowerCase().replace(/[^a-z0-9]/g, '-');
-    setCustomRoomId(clean ? `${clean}-${sub}` : '');
-  };
-
-  const handleSubjectSelect = (sub) => {
-    setSelectedSubject(sub);
-    const clean = tuteeName.trim().toLowerCase().replace(/[^a-z0-9]/g, '-');
-    const s = sub.toLowerCase().replace(/[^a-z0-9]/g, '-');
-    setCustomRoomId(clean ? `${clean}-${s}` : '');
+    setCustomRoomId(clean || '');
   };
 
   // Create Classroom
   const handleCreateSubmit = async () => {
     if (!tuteeName.trim()) {
-      Alert.alert('Required', 'Please enter a tutee or student name.');
+      Alert.alert('Required', 'Please enter a student name.');
       return;
     }
 
@@ -97,8 +88,7 @@ export const ClassroomAdminScreen = () => {
     try {
       const created = await createNewClassroom({
         tuteeName: tuteeName.trim(),
-        subject: selectedSubject,
-        topic: topic.trim() || 'General Revision',
+        topic: topic.trim() || 'All Topics & Revision',
         customRoomId: customRoomId.trim() || undefined,
       });
 
@@ -165,6 +155,7 @@ export const ClassroomAdminScreen = () => {
       (c.tuteeName && c.tuteeName.toLowerCase().includes(q)) ||
       (c.title && c.title.toLowerCase().includes(q)) ||
       (c.roomId && c.roomId.toLowerCase().includes(q)) ||
+      (c.topic && c.topic.toLowerCase().includes(q)) ||
       (c.subject && c.subject.toLowerCase().includes(q))
     );
   }, [classrooms, searchQuery]);
@@ -173,17 +164,6 @@ export const ClassroomAdminScreen = () => {
   const totalPagesSum = useMemo(() => {
     return classrooms.reduce((acc, c) => acc + (Number(c.totalPdfPages) || 1), 0);
   }, [classrooms]);
-
-  // Subject icon helper
-  const getSubjectIcon = (sub) => {
-    if (!sub) return '🥋';
-    const s = sub.toLowerCase();
-    if (s.includes('math')) return '📐';
-    if (s.includes('english')) return '📖';
-    if (s.includes('non')) return '🔷';
-    if (s.includes('verbal')) return '🧩';
-    return '🥋';
-  };
 
   // Format relative timestamp
   const formatTimeAgo = (isoString) => {
@@ -330,21 +310,20 @@ export const ClassroomAdminScreen = () => {
           <View style={styles.classroomsGrid}>
             {filteredClassrooms.map((c) => {
               const isCopied = copiedRoomId === c.roomId;
-              const subIcon = getSubjectIcon(c.subject || c.title);
 
               return (
                 <View key={c.roomId} style={styles.classroomCard}>
                   {/* Card Header */}
                   <View style={styles.cardHeader}>
                     <View style={styles.cardSubjectIconBox}>
-                      <Text style={styles.cardSubjectIcon}>{subIcon}</Text>
+                      <Text style={styles.cardSubjectIcon}>🥋</Text>
                     </View>
                     <View style={styles.cardTitleBox}>
                       <Text style={styles.cardTuteeName} numberOfLines={1}>
-                        {c.tuteeName || c.title || c.roomId}
+                        {c.tuteeName ? `${c.tuteeName}'s Classroom` : c.title || c.roomId}
                       </Text>
                       <Text style={styles.cardTopicText} numberOfLines={1}>
-                        {c.subject ? `${c.subject} • ` : ''}{c.topic || c.title}
+                        {c.topic || 'All Topics & Revision'}
                       </Text>
                     </View>
                     <View style={styles.pagesBadge}>
@@ -429,7 +408,7 @@ export const ClassroomAdminScreen = () => {
 
             {/* Tutee Name Input */}
             <View style={styles.inputGroup}>
-              <Text style={styles.inputLabel}>Tutee / Student Name *</Text>
+              <Text style={styles.inputLabel}>Student Name *</Text>
               <TextInput
                 style={styles.textInput}
                 placeholder="e.g. Alex, Maya, Leo"
@@ -440,45 +419,12 @@ export const ClassroomAdminScreen = () => {
               />
             </View>
 
-            {/* Subject Selector */}
-            <View style={styles.inputGroup}>
-              <Text style={styles.inputLabel}>Subject</Text>
-              <View style={styles.subjectRow}>
-                {['Maths', 'English', 'Verbal Reasoning', 'Non-Verbal Reasoning'].map((sub) => {
-                  const isSelected = selectedSubject === sub;
-                  return (
-                    <TouchableOpacity
-                      key={sub}
-                      style={[styles.subjectPill, isSelected && styles.subjectPillSelected]}
-                      onPress={() => handleSubjectSelect(sub)}
-                    >
-                      <Text style={[styles.subjectPillText, isSelected && styles.subjectPillTextSelected]}>
-                        {sub}
-                      </Text>
-                    </TouchableOpacity>
-                  );
-                })}
-              </View>
-            </View>
-
-            {/* Topic / Focus */}
-            <View style={styles.inputGroup}>
-              <Text style={styles.inputLabel}>Lesson Topic / Focus</Text>
-              <TextInput
-                style={styles.textInput}
-                placeholder="e.g. Fractions & Decimals, Word Problems, Codes"
-                placeholderTextColor="#64748B"
-                value={topic}
-                onChangeText={setTopic}
-              />
-            </View>
-
             {/* Custom Room Code (Auto-suggested) */}
             <View style={styles.inputGroup}>
-              <Text style={styles.inputLabel}>Custom Room Code (URL identifier)</Text>
+              <Text style={styles.inputLabel}>Room Code (URL Identifier)</Text>
               <TextInput
                 style={styles.textInput}
-                placeholder="e.g. alex-maths"
+                placeholder="e.g. alex"
                 placeholderTextColor="#64748B"
                 value={customRoomId}
                 onChangeText={setCustomRoomId}
@@ -486,6 +432,18 @@ export const ClassroomAdminScreen = () => {
               <Text style={styles.roomUrlPreview}>
                 Student Link: 11plusninja.com/classroom?room={customRoomId || '...'}
               </Text>
+            </View>
+
+            {/* Optional Notes / Focus */}
+            <View style={styles.inputGroup}>
+              <Text style={styles.inputLabel}>Lesson Notes / Focus (Optional)</Text>
+              <TextInput
+                style={styles.textInput}
+                placeholder="e.g. All Topics, Weak Areas, Exam Prep"
+                placeholderTextColor="#64748B"
+                value={topic}
+                onChangeText={setTopic}
+              />
             </View>
 
             {/* Modal Actions */}

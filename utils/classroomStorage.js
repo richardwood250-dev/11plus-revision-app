@@ -57,31 +57,30 @@ const updateClassroomIndex = async (roomId, partialInfo) => {
 };
 
 /**
- * Create a new named classroom for a tutee
+ * Create a new named classroom for a tutee (works across all topics)
  */
-export const createNewClassroom = async ({ tuteeName, subject, topic, customRoomId }) => {
+export const createNewClassroom = async ({ tuteeName, topic, customRoomId }) => {
   const cleanTutee = (tuteeName || 'Student').trim();
-  const cleanSubject = subject || 'Maths';
-  const cleanTopic = (topic || 'General Revision').trim();
+  const cleanTopic = (topic || 'All Topics & Revision').trim();
   const randomSuffix = Math.random().toString(36).substring(2, 6);
 
-  const baseSlug = (customRoomId || `${cleanTutee.toLowerCase()}-${cleanSubject.toLowerCase()}`)
+  const baseSlug = (customRoomId || cleanTutee.toLowerCase())
     .replace(/[^a-zA-Z0-9_\-]/g, '-')
     .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '') || `session-${randomSuffix}`;
+    .replace(/^-|-$/g, '') || `student-${randomSuffix}`;
 
   const roomId = baseSlug;
-  const title = `${cleanTutee} — ${cleanSubject}: ${cleanTopic}`;
+  const title = `${cleanTutee}'s Classroom`;
 
   const meta = {
     roomId,
     title,
     tuteeName: cleanTutee,
-    subject: cleanSubject,
+    subject: 'All Topics',
     topic: cleanTopic,
     totalPdfPages: 1,
     currentPdfPage: 1,
-    sessionNotes: `# Tutoring Session: ${cleanTutee}\nSubject: ${cleanSubject}\nTopic: ${cleanTopic}\nDate: ${new Date().toLocaleDateString('en-GB')}\n\n## Key Concepts\n- \n\n## Questions Reviewed\n- \n\n## Homework & Next Steps\n- \n`,
+    sessionNotes: `# Tutoring Session: ${cleanTutee}\nFocus: All 11+ Topics (Maths, English, Verbal & Non-Verbal)\nDate: ${new Date().toLocaleDateString('en-GB')}\n\n## Key Concepts & Workings\n- \n\n## Questions Reviewed\n- \n\n## Homework & Next Steps\n- \n`,
   };
 
   await saveClassroomMeta(roomId, meta);
