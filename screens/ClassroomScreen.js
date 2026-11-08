@@ -14,6 +14,13 @@ import {
   loadPdfDocument, renderPdfPageToImage 
 } from '../utils/pdfService';
 import { QuizImporterModal } from '../components/QuizImporterModal';
+import { 
+  loadClassroomSession, 
+  saveClassroomMeta, 
+  saveClassroomPage, 
+  saveClassroomPageDrawings, 
+  saveClassroomNotes 
+} from '../utils/classroomStorage';
 
 // Daily.co Iframe embed SDK
 let DailyIframe = null;
@@ -88,6 +95,12 @@ export const ClassroomScreen = () => {
   const [showExportModal, setShowExportModal] = useState(false);
   const [exportStatusText, setExportStatusText] = useState('');
 
+  // --- Persistent Classroom Storage State ---
+  const savedPagesMapRef = useRef({});
+  const [cloudSyncStatus, setCloudSyncStatus] = useState('saved'); // 'saved' | 'saving'
+  const saveDebounceTimerRef = useRef(null);
+  const notesDebounceTimerRef = useRef(null);
+
   // --- Daily.co Call State ---
   const videoContainerRef = useRef(null);
   const dailyCallRef = useRef(null);
@@ -154,6 +167,31 @@ export const ClassroomScreen = () => {
           }
 
           setRoomName(roomParam);
+
+          // Load any previously saved session for this room
+          try {
+            const saved = await loadClassroomSession(roomParam);
+            if (saved && saved.exists) {
+              if (saved.meta) {
+                if (saved.meta.title) setPdfFileName(saved.meta.title);
+                if (saved.meta.totalPdfPages) setTotalPdfPages(saved.meta.totalPdfPages);
+                if (saved.meta.currentPdfPage) setCurrentPdfPage(saved.meta.currentPdfPage);
+                if (saved.meta.sessionNotes) setSessionNotes(saved.meta.sessionNotes);
+              }
+              if (saved.pages) {
+                savedPagesMapRef.current = saved.pages;
+                const drawingsObj = {};
+                for (const [pNum, pData] of Object.entries(saved.pages)) {
+                  if (pData && pData.drawings) {
+                    drawingsObj[Number(pNum)] = pData.drawings;
+                  }
+                }
+                pageDrawingsRef.current = drawingsObj;
+              }
+            }
+          } catch (loadErr) {
+            console.warn('Error loading saved session on init:', loadErr);
+          }
 
           // A. Student Access via Tutor's Invite Link:
           // When a student arrives via invite link (role=student and a token), grant automatic entry!
@@ -319,6 +357,28 @@ export const ClassroomScreen = () => {
         if (broadcastToPeerRef.current) {
           broadcastToPeerRef.current({ type: 'REQUEST_STATE_SYNC' });
         }
+        // If we restored a saved session from persistence, load active page into canvas
+        const activeP = currentPdfPageRef.current || 1;
+        const savedPage = savedPagesMapRef.current && savedPagesMapRef.current[activeP];
+        if (savedPage && savedPage.background && canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
+          canvasIframeRef.current.contentWindow.postMessage({
+            type: 'LOAD_PDF_PAGE',
+            fileId: savedPage.fileId || `saved_p${activeP}`,
+            dataUrl: savedPage.background.dataUrl,
+            width: savedPage.background.width,
+            height: savedPage.background.height,
+            pageNumber: activeP,
+            isNewDocument: false,
+          }, '*');
+        }
+        if (pageDrawingsRef.current && Object.keys(pageDrawingsRef.current).length > 0 && canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
+          canvasIframeRef.current.contentWindow.postMessage({
+            type: 'SYNC_ELEMENTS',
+            pageNumber: activeP,
+            elements: pageDrawingsRef.current[activeP] || [],
+            allPages: pageDrawingsRef.current,
+          }, '*');
+        }
       } else if (data.type === 'CANVAS_CHANGE') {
         const pNum = Number(data.pageNumber) || currentPdfPageRef.current || 1;
         pageDrawingsRef.current[pNum] = data.elements || [];
@@ -332,6 +392,15 @@ export const ClassroomScreen = () => {
             allPages: pageDrawingsRef.current,
           });
         }
+        // Debounce auto-save drawings to persistent storage
+        setCloudSyncStatus('saving');
+        if (saveDebounceTimerRef.current) {
+          clearTimeout(saveDebounceTimerRef.current);
+        }
+        saveDebounceTimerRef.current = setTimeout(() => {
+          saveClassroomPageDrawings(roomName, pNum, data.elements);
+          setCloudSyncStatus('saved');
+        }, 1200);
       } else if (data.type === 'MENUS_MINIMIZED_CHANGED') {
         setIsCanvasMenusMinimized(data.minimized);
       } else if (data.type === 'REQUEST_EXPORT_PDF') {
@@ -423,6 +492,25 @@ export const ClassroomScreen = () => {
       };
       lastRenderedPageRef.current = pagePayload;
       broadcastToPeer(pagePayload);
+
+      // Save page background and metadata to persistent storage
+      const pageInfo = {
+        pageNumber: pageNum,
+        fileId,
+        background: {
+          dataUrl: rendered.dataUrl,
+          width: rendered.displayWidth,
+          height: rendered.displayHeight,
+        },
+        drawings: pageDrawingsRef.current[pageNum] || [],
+      };
+      savedPagesMapRef.current[pageNum] = pageInfo;
+      saveClassroomPage(roomName, pageNum, pageInfo);
+      saveClassroomMeta(roomName, {
+        title: pdfFileName || '11+ Practice Paper',
+        totalPdfPages: doc.numPages || totalPdfPages,
+        currentPdfPage: pageNum,
+      });
     } catch (err) {
       console.error('Failed to render PDF page:', err);
     } finally {
@@ -489,6 +577,29 @@ export const ClassroomScreen = () => {
     };
     lastRenderedPageRef.current = payload;
     broadcastToPeer(payload);
+
+    // Save all pages of the quiz set to persistent storage
+    const initialPages = {};
+    set.forEach((item, idx) => {
+      const p = idx + 1;
+      initialPages[p] = {
+        pageNumber: p,
+        fileId: `quiz_set_p${p}_${Date.now()}`,
+        background: {
+          dataUrl: item.rendered.dataUrl,
+          width: item.rendered.displayWidth,
+          height: item.rendered.displayHeight,
+        },
+        drawings: [],
+      };
+      saveClassroomPage(roomName, p, initialPages[p]);
+    });
+    savedPagesMapRef.current = initialPages;
+    saveClassroomMeta(roomName, {
+      title: fileName,
+      totalPdfPages: set.length,
+      currentPdfPage: 1,
+    });
   };
 
   const handleLoadQuizSet = async (set) => {
@@ -530,6 +641,29 @@ export const ClassroomScreen = () => {
     };
     lastRenderedPageRef.current = payload;
     broadcastToPeer(payload);
+
+    // Save all pages of the quiz set to persistent storage
+    const initialPages = {};
+    set.forEach((item, idx) => {
+      const p = idx + 1;
+      initialPages[p] = {
+        pageNumber: p,
+        fileId: `quiz_set_p${p}_${Date.now()}`,
+        background: {
+          dataUrl: item.rendered.dataUrl,
+          width: item.rendered.displayWidth,
+          height: item.rendered.displayHeight,
+        },
+        drawings: [],
+      };
+      saveClassroomPage(roomName, p, initialPages[p]);
+    });
+    savedPagesMapRef.current = initialPages;
+    saveClassroomMeta(roomName, {
+      title: fileName,
+      totalPdfPages: set.length,
+      currentPdfPage: 1,
+    });
   };
 
   const handlePageNavigation = async (targetPage) => {
@@ -566,6 +700,35 @@ export const ClassroomScreen = () => {
       }
     } else if (pdfDocRef.current) {
       await renderAndInjectPage(pdfDocRef.current, targetPage);
+    } else if (savedPagesMapRef.current && savedPagesMapRef.current[targetPage]) {
+      const item = savedPagesMapRef.current[targetPage];
+      if (item && item.background) {
+        const fileId = item.fileId || `saved_p${targetPage}`;
+        if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
+          canvasIframeRef.current.contentWindow.postMessage({
+            type: 'LOAD_PDF_PAGE',
+            fileId,
+            dataUrl: item.background.dataUrl,
+            width: item.background.width,
+            height: item.background.height,
+            pageNumber: targetPage,
+          }, '*');
+        }
+        setCurrentPdfPage(targetPage);
+        saveClassroomMeta(roomName, { currentPdfPage: targetPage });
+        const payload = {
+          type: 'PDF_PAGE_LOADED',
+          pageNumber: targetPage,
+          fileId,
+          dataUrl: item.background.dataUrl,
+          width: item.background.width,
+          height: item.background.height,
+          fileName: pdfFileName,
+          totalPdfPages: totalPdfPages,
+        };
+        lastRenderedPageRef.current = payload;
+        broadcastToPeer(payload);
+      }
     }
   };
 
@@ -625,6 +788,13 @@ export const ClassroomScreen = () => {
             height: rendered.displayHeight,
             fileId: `pdf_p${p}`,
           };
+        } else if (savedPagesMapRef.current && savedPagesMapRef.current[p] && savedPagesMapRef.current[p].background) {
+          background = {
+            dataUrl: savedPagesMapRef.current[p].background.dataUrl,
+            width: savedPagesMapRef.current[p].background.width,
+            height: savedPagesMapRef.current[p].background.height,
+            fileId: savedPagesMapRef.current[p].fileId || `saved_p${p}`,
+          };
         }
 
         pagesToExport.push({
@@ -667,6 +837,7 @@ export const ClassroomScreen = () => {
     setSessionNotes((prev) => {
       const updated = prev + block;
       broadcastToPeer({ type: 'NOTES_SYNC', notes: updated });
+      saveClassroomNotes(roomName, updated);
       return updated;
     });
 
@@ -699,6 +870,7 @@ export const ClassroomScreen = () => {
     setSessionNotes((prev) => {
       const updated = prev + block;
       broadcastToPeer({ type: 'NOTES_SYNC', notes: updated });
+      saveClassroomNotes(roomName, updated);
       return updated;
     });
 
@@ -1047,6 +1219,15 @@ export const ClassroomScreen = () => {
             <Text style={styles.copyLinkBtnText}>🔗 Share Link</Text>
           </TouchableOpacity>
           {copyStatus ? <Text style={styles.copyToast}>{copyStatus}</Text> : null}
+
+          <View style={styles.syncStatusBadge} title={cloudSyncStatus === 'saving' ? 'Auto-saving classroom session...' : 'Session auto-saved'}>
+            <Text style={styles.syncStatusIcon}>
+              {cloudSyncStatus === 'saving' ? '🔄' : '☁️'}
+            </Text>
+            <Text style={styles.syncStatusText}>
+              {cloudSyncStatus === 'saving' ? 'Saving...' : 'Saved'}
+            </Text>
+          </View>
         </View>
 
         {/* PDF Question Sheet Quick Controls */}
@@ -1421,6 +1602,10 @@ export const ClassroomScreen = () => {
                     onChangeText={(text) => {
                       setSessionNotes(text);
                       broadcastToPeer({ type: 'NOTES_SYNC', notes: text });
+                      if (notesDebounceTimerRef.current) clearTimeout(notesDebounceTimerRef.current);
+                      notesDebounceTimerRef.current = setTimeout(() => {
+                        saveClassroomNotes(roomName, text);
+                      }, 1000);
                     }}
                     placeholder="Enter tutoring session notes, homework, feedback..."
                     placeholderTextColor="#64748B"
@@ -1639,6 +1824,25 @@ const styles = StyleSheet.create({
   },
   copyToast: {
     color: '#10B981',
+    fontSize: 11,
+    fontWeight: '600',
+  },
+  syncStatusBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
+  },
+  syncStatusIcon: {
+    fontSize: 11,
+  },
+  syncStatusText: {
+    color: '#94A3B8',
     fontSize: 11,
     fontWeight: '600',
   },
