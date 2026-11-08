@@ -434,19 +434,91 @@ export const ClassroomScreen = () => {
   const loadPdfFromSource = async (source, fileName = '11plus_paper.pdf') => {
     setIsLoadingPdf(true);
     setPdfStatusMessage('Parsing PDF pages...');
-    quizPagesRef.current = null;
-    pageDrawingsRef.current = {};
-    lastCanvasElementsRef.current = [];
     try {
       const doc = await loadPdfDocument(source);
       pdfDocRef.current = doc;
-      setPdfFileName(fileName);
-      setTotalPdfPages(doc.numPages);
-      setPdfStatusMessage(`Loaded ${doc.numPages} pages. Rendering Page 1...`);
 
-      // Render first page onto canvas as a new document
-      await renderAndInjectPage(doc, 1, true);
-      setPdfStatusMessage(`Page 1 active`);
+      const hasExisting = totalPdfPages > 0 && Object.keys(savedPagesMapRef.current || {}).length > 0;
+      let shouldAppend = false;
+
+      if (hasExisting && typeof window !== 'undefined') {
+        shouldAppend = window.confirm(
+          `You already have ${totalPdfPages} page(s) in this session.\n\nClick OK to APPEND the new PDF pages (Pages ${totalPdfPages + 1} to ${totalPdfPages + doc.numPages}), or Cancel to REPLACE existing pages.`
+        );
+      }
+
+      if (shouldAppend) {
+        const startingPage = totalPdfPages;
+        const newTotal = startingPage + doc.numPages;
+        const firstNewPage = startingPage + 1;
+
+        // Render and save all pages of the appended PDF
+        setPdfStatusMessage(`Appending ${doc.numPages} pages...`);
+        for (let p = 1; p <= doc.numPages; p++) {
+          const targetP = startingPage + p;
+          const rendered = await renderPdfPageToImage(doc, p, 1.75);
+          const fileId = `pdf_p${targetP}_${Date.now()}`;
+          const pageInfo = {
+            pageNumber: targetP,
+            fileId,
+            background: {
+              dataUrl: rendered.dataUrl,
+              width: rendered.displayWidth,
+              height: rendered.displayHeight,
+            },
+            drawings: [],
+            title: `${fileName} (Page ${p})`,
+          };
+          savedPagesMapRef.current[targetP] = pageInfo;
+          saveClassroomPage(roomName, targetP, pageInfo);
+        }
+
+        setTotalPdfPages(newTotal);
+        setCurrentPdfPage(firstNewPage);
+        saveClassroomMeta(roomName, {
+          totalPdfPages: newTotal,
+          currentPdfPage: firstNewPage,
+        });
+
+        const firstNewPageInfo = savedPagesMapRef.current[firstNewPage];
+        if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
+          canvasIframeRef.current.contentWindow.postMessage({
+            type: 'LOAD_PDF_PAGE',
+            fileId: firstNewPageInfo.fileId,
+            dataUrl: firstNewPageInfo.background.dataUrl,
+            width: firstNewPageInfo.background.width,
+            height: firstNewPageInfo.background.height,
+            pageNumber: firstNewPage,
+            isNewDocument: false,
+          }, '*');
+        }
+
+        const payload = {
+          type: 'PDF_PAGE_LOADED',
+          pageNumber: firstNewPage,
+          fileId: firstNewPageInfo.fileId,
+          dataUrl: firstNewPageInfo.background.dataUrl,
+          width: firstNewPageInfo.background.width,
+          height: firstNewPageInfo.background.height,
+          fileName: pdfFileName || fileName,
+          totalPdfPages: newTotal,
+          isNewDocument: false,
+        };
+        lastRenderedPageRef.current = payload;
+        broadcastToPeer(payload);
+        setPdfStatusMessage(`Appended ${doc.numPages} pages (Pages ${firstNewPage}-${newTotal}) 📄`);
+      } else {
+        // Start fresh
+        quizPagesRef.current = null;
+        pageDrawingsRef.current = {};
+        lastCanvasElementsRef.current = [];
+        savedPagesMapRef.current = {};
+        setPdfFileName(fileName);
+        setTotalPdfPages(doc.numPages);
+        setPdfStatusMessage(`Loaded ${doc.numPages} pages. Rendering Page 1...`);
+        await renderAndInjectPage(doc, 1, true);
+        setPdfStatusMessage(`Page 1 active`);
+      }
     } catch (err) {
       console.error('Error loading PDF:', err);
       Alert.alert('PDF Error', 'Failed to parse the PDF document. Please try another file.');
@@ -541,16 +613,50 @@ export const ClassroomScreen = () => {
 
   // --- Quiz Worksheet Handlers ---
   const handleLoadQuizQuestion = async ({ question, rendered }) => {
-    pdfDocRef.current = null;
-    quizPagesRef.current = [{ question, rendered }];
-    pageDrawingsRef.current = {};
-    lastCanvasElementsRef.current = [];
+    // Check if room already has existing pages (append mode)
+    const hasExistingPages = totalPdfPages > 0 && Object.keys(savedPagesMapRef.current || {}).length > 0;
+    const targetPage = hasExistingPages ? totalPdfPages + 1 : 1;
     const fileId = `quiz_${question.id}_${Date.now()}`;
-    const fileName = `11+ ${question.subject}: ${question.topic} (${question.id})`;
+    const questionTitle = `11+ ${question.subject}: ${question.topic} (Q${targetPage})`;
 
-    setPdfFileName(fileName);
-    setTotalPdfPages(1);
-    setCurrentPdfPage(1);
+    // Save drawings of the page we are navigating away from
+    if (hasExistingPages && pageDrawingsRef.current[currentPdfPageRef.current]) {
+      saveClassroomPageDrawings(roomName, currentPdfPageRef.current, pageDrawingsRef.current[currentPdfPageRef.current]);
+    }
+
+    const pageInfo = {
+      pageNumber: targetPage,
+      fileId,
+      background: {
+        dataUrl: rendered.dataUrl,
+        width: rendered.displayWidth,
+        height: rendered.displayHeight,
+      },
+      drawings: [],
+      question,
+      title: questionTitle,
+    };
+
+    savedPagesMapRef.current[targetPage] = pageInfo;
+    saveClassroomPage(roomName, targetPage, pageInfo);
+
+    if (hasExistingPages) {
+      setTotalPdfPages(targetPage);
+      setCurrentPdfPage(targetPage);
+      saveClassroomMeta(roomName, {
+        totalPdfPages: targetPage,
+        currentPdfPage: targetPage,
+      });
+    } else {
+      setPdfFileName(questionTitle);
+      setTotalPdfPages(1);
+      setCurrentPdfPage(1);
+      saveClassroomMeta(roomName, {
+        title: questionTitle,
+        totalPdfPages: 1,
+        currentPdfPage: 1,
+      });
+    }
 
     if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
       canvasIframeRef.current.contentWindow.postMessage({
@@ -559,111 +665,161 @@ export const ClassroomScreen = () => {
         dataUrl: rendered.dataUrl,
         width: rendered.displayWidth,
         height: rendered.displayHeight,
-        pageNumber: 1,
-        isNewDocument: true,
+        pageNumber: targetPage,
+        isNewDocument: !hasExistingPages,
       }, '*');
     }
 
     const payload = {
       type: 'PDF_PAGE_LOADED',
-      pageNumber: 1,
+      pageNumber: targetPage,
       fileId,
       dataUrl: rendered.dataUrl,
       width: rendered.displayWidth,
       height: rendered.displayHeight,
-      fileName,
-      totalPdfPages: 1,
-      isNewDocument: true,
+      fileName: pdfFileName || questionTitle,
+      totalPdfPages: targetPage,
+      isNewDocument: !hasExistingPages,
     };
     lastRenderedPageRef.current = payload;
     broadcastToPeer(payload);
 
-    // Save all pages of the quiz set to persistent storage
-    const initialPages = {};
+    setPdfStatusMessage(hasExistingPages ? `Added Question as Page ${targetPage} of ${targetPage} 📄` : 'Page 1 active');
+    setTimeout(() => setPdfStatusMessage(''), 3000);
+  };
+
+  const handleLoadQuizSet = async (set, title) => {
+    if (!set || set.length === 0) return;
+
+    // Check if room already has existing pages (append mode)
+    const hasExistingPages = totalPdfPages > 0 && Object.keys(savedPagesMapRef.current || {}).length > 0;
+    const startingPage = hasExistingPages ? totalPdfPages : 0;
+    const newTotal = startingPage + set.length;
+    const firstActivePage = startingPage + 1;
+    const setTitle = title || `11+ Practice: Set of ${set.length}`;
+
+    // Save drawings of the page we are navigating away from
+    if (hasExistingPages && pageDrawingsRef.current[currentPdfPageRef.current]) {
+      saveClassroomPageDrawings(roomName, currentPdfPageRef.current, pageDrawingsRef.current[currentPdfPageRef.current]);
+    }
+
+    // Save all pages of the set
     set.forEach((item, idx) => {
-      const p = idx + 1;
-      initialPages[p] = {
-        pageNumber: p,
-        fileId: `quiz_set_p${p}_${Date.now()}`,
+      const pNum = startingPage + idx + 1;
+      const fileId = `quiz_set_p${pNum}_${Date.now()}`;
+      const pageInfo = {
+        pageNumber: pNum,
+        fileId,
         background: {
           dataUrl: item.rendered.dataUrl,
           width: item.rendered.displayWidth,
           height: item.rendered.displayHeight,
         },
         drawings: [],
+        question: item.question,
       };
-      saveClassroomPage(roomName, p, initialPages[p]);
+      savedPagesMapRef.current[pNum] = pageInfo;
+      saveClassroomPage(roomName, pNum, pageInfo);
     });
-    savedPagesMapRef.current = initialPages;
+
+    if (!hasExistingPages) {
+      setPdfFileName(setTitle);
+    }
+    setTotalPdfPages(newTotal);
+    setCurrentPdfPage(firstActivePage);
+
     saveClassroomMeta(roomName, {
-      title: fileName,
-      totalPdfPages: set.length,
-      currentPdfPage: 1,
+      title: pdfFileName || setTitle,
+      totalPdfPages: newTotal,
+      currentPdfPage: firstActivePage,
     });
+
+    const firstItem = set[0];
+    const firstFileId = savedPagesMapRef.current[firstActivePage].fileId;
+
+    if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
+      canvasIframeRef.current.contentWindow.postMessage({
+        type: 'LOAD_PDF_PAGE',
+        fileId: firstFileId,
+        dataUrl: firstItem.rendered.dataUrl,
+        width: firstItem.rendered.displayWidth,
+        height: firstItem.rendered.displayHeight,
+        pageNumber: firstActivePage,
+        isNewDocument: !hasExistingPages,
+      }, '*');
+    }
+
+    const payload = {
+      type: 'PDF_PAGE_LOADED',
+      pageNumber: firstActivePage,
+      fileId: firstFileId,
+      dataUrl: firstItem.rendered.dataUrl,
+      width: firstItem.rendered.displayWidth,
+      height: firstItem.rendered.displayHeight,
+      fileName: pdfFileName || setTitle,
+      totalPdfPages: newTotal,
+      isNewDocument: !hasExistingPages,
+    };
+    lastRenderedPageRef.current = payload;
+    broadcastToPeer(payload);
+
+    setPdfStatusMessage(hasExistingPages 
+      ? `Added ${set.length} questions (Pages ${firstActivePage}-${newTotal}) 📚` 
+      : `Loaded ${set.length} questions`);
+    setTimeout(() => setPdfStatusMessage(''), 3500);
   };
 
-  const handleLoadQuizSet = async (set) => {
-    if (!set || set.length === 0) return;
-    pdfDocRef.current = null;
-    quizPagesRef.current = set;
-    pageDrawingsRef.current = {};
-    lastCanvasElementsRef.current = [];
-    const first = set[0];
-    const fileId = `quiz_set_p1_${Date.now()}`;
-    const fileName = `11+ ${first.question.subject}: ${first.question.topic} (Set of ${set.length})`;
+  const handleAddBlankPage = () => {
+    const newPage = (totalPdfPages || 1) + 1;
+    // Save current drawings before navigating
+    if (pageDrawingsRef.current[currentPdfPageRef.current]) {
+      saveClassroomPageDrawings(roomName, currentPdfPageRef.current, pageDrawingsRef.current[currentPdfPageRef.current]);
+    }
 
-    setPdfFileName(fileName);
-    setTotalPdfPages(set.length);
-    setCurrentPdfPage(1);
+    const fileId = `blank_p${newPage}_${Date.now()}`;
+    const pageInfo = {
+      pageNumber: newPage,
+      fileId,
+      background: null,
+      drawings: [],
+      title: `Page ${newPage} (Blank Canvas)`,
+    };
+
+    savedPagesMapRef.current[newPage] = pageInfo;
+    saveClassroomPage(roomName, newPage, pageInfo);
+    setTotalPdfPages(newPage);
+    setCurrentPdfPage(newPage);
+    saveClassroomMeta(roomName, {
+      totalPdfPages: newPage,
+      currentPdfPage: newPage,
+    });
 
     if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
       canvasIframeRef.current.contentWindow.postMessage({
         type: 'LOAD_PDF_PAGE',
         fileId,
-        dataUrl: first.rendered.dataUrl,
-        width: first.rendered.displayWidth,
-        height: first.rendered.displayHeight,
-        pageNumber: 1,
-        isNewDocument: true,
+        dataUrl: null,
+        width: 800,
+        height: 1130,
+        pageNumber: newPage,
+        isNewDocument: false,
       }, '*');
     }
 
     const payload = {
       type: 'PDF_PAGE_LOADED',
-      pageNumber: 1,
+      pageNumber: newPage,
       fileId,
-      dataUrl: first.rendered.dataUrl,
-      width: first.rendered.displayWidth,
-      height: first.rendered.displayHeight,
-      fileName,
-      totalPdfPages: set.length,
-      isNewDocument: true,
+      dataUrl: null,
+      fileName: pdfFileName,
+      totalPdfPages: newPage,
+      isNewDocument: false,
     };
     lastRenderedPageRef.current = payload;
     broadcastToPeer(payload);
 
-    // Save all pages of the quiz set to persistent storage
-    const initialPages = {};
-    set.forEach((item, idx) => {
-      const p = idx + 1;
-      initialPages[p] = {
-        pageNumber: p,
-        fileId: `quiz_set_p${p}_${Date.now()}`,
-        background: {
-          dataUrl: item.rendered.dataUrl,
-          width: item.rendered.displayWidth,
-          height: item.rendered.displayHeight,
-        },
-        drawings: [],
-      };
-      saveClassroomPage(roomName, p, initialPages[p]);
-    });
-    savedPagesMapRef.current = initialPages;
-    saveClassroomMeta(roomName, {
-      title: fileName,
-      totalPdfPages: set.length,
-      currentPdfPage: 1,
-    });
+    setPdfStatusMessage(`Added Blank Page ${newPage} 📄`);
+    setTimeout(() => setPdfStatusMessage(''), 2500);
   };
 
   const handlePageNavigation = async (targetPage) => {
@@ -1279,30 +1435,42 @@ export const ClassroomScreen = () => {
             </Text>
           </TouchableOpacity>
 
-          {/* Page Switcher */}
-          {totalPdfPages > 1 && (
-            <View style={styles.pdfPaginationRow}>
-              <TouchableOpacity 
-                style={[styles.pageNavBtn, currentPdfPage <= 1 && styles.pageNavBtnDisabled]}
-                onPress={() => handlePageNavigation(currentPdfPage - 1)}
-                disabled={currentPdfPage <= 1 || isLoadingPdf}
-              >
-                <Text style={styles.pageNavBtnText}>◀</Text>
-              </TouchableOpacity>
-              
-              <Text style={styles.pageIndicatorText}>
-                Page {currentPdfPage} / {totalPdfPages}
-              </Text>
+          {/* Page Switcher & Add Blank Page */}
+          <View style={styles.pdfPaginationRow}>
+            {totalPdfPages > 1 && (
+              <>
+                <TouchableOpacity 
+                  style={[styles.pageNavBtn, currentPdfPage <= 1 && styles.pageNavBtnDisabled]}
+                  onPress={() => handlePageNavigation(currentPdfPage - 1)}
+                  disabled={currentPdfPage <= 1 || isLoadingPdf}
+                  title="Previous page"
+                >
+                  <Text style={styles.pageNavBtnText}>◀</Text>
+                </TouchableOpacity>
+                
+                <Text style={styles.pageIndicatorText}>
+                  Page {currentPdfPage} / {totalPdfPages}
+                </Text>
 
-              <TouchableOpacity 
-                style={[styles.pageNavBtn, currentPdfPage >= totalPdfPages && styles.pageNavBtnDisabled]}
-                onPress={() => handlePageNavigation(currentPdfPage + 1)}
-                disabled={currentPdfPage >= totalPdfPages || isLoadingPdf}
-              >
-                <Text style={styles.pageNavBtnText}>▶</Text>
-              </TouchableOpacity>
-            </View>
-          )}
+                <TouchableOpacity 
+                  style={[styles.pageNavBtn, currentPdfPage >= totalPdfPages && styles.pageNavBtnDisabled]}
+                  onPress={() => handlePageNavigation(currentPdfPage + 1)}
+                  disabled={currentPdfPage >= totalPdfPages || isLoadingPdf}
+                  title="Next page"
+                >
+                  <Text style={styles.pageNavBtnText}>▶</Text>
+                </TouchableOpacity>
+              </>
+            )}
+
+            <TouchableOpacity 
+              style={styles.addPageBtn}
+              onPress={handleAddBlankPage}
+              title="Add a new blank page to the session"
+            >
+              <Text style={styles.addPageBtnText}>➕ Page</Text>
+            </TouchableOpacity>
+          </View>
 
           {isLoadingPdf && (
             <View style={styles.pdfLoadingBadge}>
@@ -1921,6 +2089,19 @@ const styles = StyleSheet.create({
     color: '#E2E8F0',
     fontSize: 12,
     fontWeight: '600',
+  },
+  addPageBtn: {
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    backgroundColor: '#334155',
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: '#475569',
+  },
+  addPageBtnText: {
+    color: '#38BDF8',
+    fontSize: 11,
+    fontWeight: '700',
   },
   pdfLoadingBadge: {
     flexDirection: 'row',

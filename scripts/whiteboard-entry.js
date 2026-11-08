@@ -264,51 +264,60 @@ function WhiteboardApp() {
 
           activePageRef.current = targetPage;
 
-          api.addFiles([{
-            id: fileId,
-            dataURL: dataUrl,
-            mimeType: 'image/png',
-            created: Date.now(),
-            lastRetrieved: Date.now(),
-          }]);
+          if (dataUrl) {
+            api.addFiles([{
+              id: fileId,
+              dataURL: dataUrl,
+              mimeType: 'image/png',
+              created: Date.now(),
+              lastRetrieved: Date.now(),
+            }]);
 
-          const bgElement = {
-            id: `pdf_bg_${fileId}`,
-            type: 'image',
-            x: 60,
-            y: 60,
-            width: width || 800,
-            height: height || 1130,
-            angle: 0,
-            strokeColor: 'transparent',
-            backgroundColor: '#ffffff',
-            fillStyle: 'solid',
-            strokeWidth: 1,
-            strokeStyle: 'solid',
-            roughness: 0,
-            opacity: 100,
-            groupIds: [],
-            frameId: null,
-            roundness: null,
-            seed: Math.floor(Math.random() * 100000),
-            version: 1,
-            versionNonce: Math.floor(Math.random() * 100000),
-            isDeleted: false,
-            fileId: fileId,
-            status: 'saved',
-            scale: [1, 1],
-            locked: true,
-          };
+            const bgElement = {
+              id: `pdf_bg_${fileId}`,
+              type: 'image',
+              x: 60,
+              y: 60,
+              width: width || 800,
+              height: height || 1130,
+              angle: 0,
+              strokeColor: 'transparent',
+              backgroundColor: '#ffffff',
+              fillStyle: 'solid',
+              strokeWidth: 1,
+              strokeStyle: 'solid',
+              roughness: 0,
+              opacity: 100,
+              groupIds: [],
+              frameId: null,
+              roundness: null,
+              seed: Math.floor(Math.random() * 100000),
+              version: 1,
+              versionNonce: Math.floor(Math.random() * 100000),
+              isDeleted: false,
+              fileId: fileId,
+              status: 'saved',
+              scale: [1, 1],
+              locked: true,
+            };
 
-          // Retrieve drawings specifically for the target page
-          const targetPageDrawings = pageDrawingsMapRef.current.get(targetPage) || [];
+            // Retrieve drawings specifically for the target page
+            const targetPageDrawings = pageDrawingsMapRef.current.get(targetPage) || [];
 
-          api.updateScene({
-            elements: [bgElement, ...targetPageDrawings],
-            commitToHistory: false,
-          });
+            api.updateScene({
+              elements: [bgElement, ...targetPageDrawings],
+              commitToHistory: false,
+            });
 
-          api.scrollToContent(bgElement, { fitToViewport: true });
+            api.scrollToContent(bgElement, { fitToViewport: true });
+          } else {
+            // Blank canvas page (no background worksheet)
+            const targetPageDrawings = pageDrawingsMapRef.current.get(targetPage) || [];
+            api.updateScene({
+              elements: targetPageDrawings,
+              commitToHistory: false,
+            });
+          }
         } catch (err) {
           console.error('Error in LOAD_PDF_PAGE:', err);
         }
