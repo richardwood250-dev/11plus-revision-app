@@ -1,8 +1,167 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom/client';
-import { Excalidraw } from '@excalidraw/excalidraw';
+import { Excalidraw, exportToCanvas, MainMenu } from '@excalidraw/excalidraw';
 
 window.EXCALIDRAW_ASSET_PATH = 'https://unpkg.com/@excalidraw/excalidraw@0.18.1/dist/prod/';
+
+// Standalone PDF 1.4 Builder for JPEGs (Zero-dependency fallback)
+function buildNativePdfFromJpegs(images) {
+  const offsets = [];
+  let currentOffset = 0;
+  const parts = [];
+
+  function writeString(str) {
+    return new TextEncoder().encode(str);
+  }
+
+  function addPart(data) {
+    if (typeof data === 'string') data = writeString(data);
+    parts.push(data);
+    currentOffset += data.length;
+  }
+
+  addPart('%PDF-1.4\n%\xFF\xFF\xFF\xFF\n');
+
+  const numPages = images.length;
+  const pageObjIds = [];
+  for (let i = 0; i < numPages; i++) {
+    pageObjIds.push(3 + 3 * i);
+  }
+
+  // 1 0 obj Catalog
+  offsets.push(currentOffset);
+  addPart('1 0 obj\n<< /Type /Catalog /Pages 2 0 R >>\nendobj\n');
+
+  // 2 0 obj Pages
+  offsets.push(currentOffset);
+  const kidsStr = pageObjIds.map(id => `${id} 0 R`).join(' ');
+  addPart(`2 0 obj\n<< /Type /Pages /Kids [${kidsStr}] /Count ${numPages} >>\nendobj\n`);
+
+  for (let i = 0; i < numPages; i++) {
+    const img = images[i];
+    const pageId = 3 + 3 * i;
+    const contentId = pageId + 1;
+    const imgId = pageId + 2;
+
+    const ptWidth = Math.round(img.width * 0.75); // 96 DPI to 72 pt
+    const ptHeight = Math.round(img.height * 0.75);
+
+    // Page object
+    offsets.push(currentOffset);
+    addPart(
+      `${pageId} 0 obj\n<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${ptWidth} ${ptHeight}] ` +
+      `/Contents ${contentId} 0 R /Resources << /XObject << /Im${i} ${imgId} 0 R >> >> >>\nendobj\n`
+    );
+
+    // Content stream: scale image to fit page
+    const contentStream = `q ${ptWidth} 0 0 ${ptHeight} 0 0 cm /Im${i} Do Q\n`;
+    offsets.push(currentOffset);
+    addPart(
+      `${contentId} 0 obj\n<< /Length ${contentStream.length} >>\nstream\n${contentStream}endstream\nendobj\n`
+    );
+
+    // Image object
+    offsets.push(currentOffset);
+    addPart(
+      `${imgId} 0 obj\n<< /Type /XObject /Subtype /Image /Width ${img.width} /Height ${img.height} ` +
+      `/ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${img.jpegBytes.length} >>\nstream\n`
+    );
+    addPart(img.jpegBytes);
+    addPart('\nendstream\nendobj\n');
+  }
+
+  // Xref table
+  const startXref = currentOffset;
+  const totalObjs = 1 + 2 + numPages * 3;
+  addPart(`xref\n0 ${totalObjs}\n0000000000 65535 f \n`);
+  for (const offset of offsets) {
+    const padded = String(offset).padStart(10, '0');
+    addPart(`${padded} 00000 n \n`);
+  }
+
+  addPart(`trailer\n<< /Size ${totalObjs} /Root 1 0 R >>\nstartxref\n${startXref}\n%%EOF\n`);
+
+  const totalLen = parts.reduce((acc, a) => acc + a.length, 0);
+  const result = new Uint8Array(totalLen);
+  let offset = 0;
+  for (const p of parts) {
+    result.set(p, offset);
+    offset += p.length;
+  }
+  return result;
+}
+
+// Generate and trigger download of PDF from an array of HTMLCanvasElement
+async function generateAndDownloadPdf(canvases, defaultFilename = '11plus_lesson_export.pdf') {
+  if (!canvases || canvases.length === 0) {
+    throw new Error('No canvas pages to export');
+  }
+
+  const filename = defaultFilename.endsWith('.pdf') ? defaultFilename : `${defaultFilename}.pdf`;
+
+  // 1. Try window.jspdf if loaded
+  if (typeof window !== 'undefined' && window.jspdf && window.jspdf.jsPDF) {
+    try {
+      const { jsPDF } = window.jspdf;
+      let doc = null;
+
+      for (let i = 0; i < canvases.length; i++) {
+        const c = canvases[i];
+        const isLandscape = c.width > c.height;
+        const ptWidth = Math.round(c.width * 0.75);
+        const ptHeight = Math.round(c.height * 0.75);
+        const imgData = c.toDataURL('image/jpeg', 0.92);
+
+        if (i === 0) {
+          doc = new jsPDF({
+            orientation: isLandscape ? 'landscape' : 'portrait',
+            unit: 'pt',
+            format: [ptWidth, ptHeight],
+          });
+          doc.addImage(imgData, 'JPEG', 0, 0, ptWidth, ptHeight, undefined, 'FAST');
+        } else {
+          doc.addPage([ptWidth, ptHeight], isLandscape ? 'landscape' : 'portrait');
+          doc.addImage(imgData, 'JPEG', 0, 0, ptWidth, ptHeight, undefined, 'FAST');
+        }
+      }
+
+      if (doc) {
+        doc.save(filename);
+        return true;
+      }
+    } catch (jspdfErr) {
+      console.warn('jsPDF export error, falling back to native builder:', jspdfErr);
+    }
+  }
+
+  // 2. Native PDF builder fallback (100% offline, zero dependencies)
+  const imagesData = canvases.map((c) => {
+    const dataUrl = c.toDataURL('image/jpeg', 0.92);
+    const base64 = dataUrl.split(',')[1];
+    const binary = atob(base64);
+    const bytes = new Uint8Array(binary.length);
+    for (let j = 0; j < binary.length; j++) {
+      bytes[j] = binary.charCodeAt(j);
+    }
+    return {
+      jpegBytes: bytes,
+      width: c.width,
+      height: c.height,
+    };
+  });
+
+  const pdfBytes = buildNativePdfFromJpegs(imagesData);
+  const blob = new Blob([pdfBytes], { type: 'application/pdf' });
+  const blobUrl = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = blobUrl;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  setTimeout(() => URL.revokeObjectURL(blobUrl), 10000);
+  return true;
+}
 
 // Version-aware reconciliation that preserves deletions so erased elements stay deleted
 function reconcileDrawings(localElements, remoteElements) {
@@ -211,6 +370,177 @@ function WhiteboardApp() {
           pageNumber: activePageRef.current,
           elements: [],
         }, '*');
+      } else if (data.type === 'EXPORT_PDF_COMMAND') {
+        const { mode, pages, fileName } = data;
+        const cleanTitle = (fileName || '11plus_lesson')
+          .replace(/\.[^/.]+$/, '')
+          .replace(/[^a-zA-Z0-9_\-\s]/g, '_')
+          .trim();
+        const dateStr = new Date().toISOString().slice(0, 10);
+        const pdfDownloadName = `${cleanTitle}_${dateStr}.pdf`;
+
+        (async () => {
+          try {
+            // Save current drawings before exporting
+            const currentScene = api.getSceneElementsIncludingDeleted();
+            const nonBgDrawings = currentScene.filter(el => !el.id.startsWith('pdf_bg_'));
+            pageDrawingsMapRef.current.set(activePageRef.current, nonBgDrawings);
+
+            const canvases = [];
+
+            if (mode === 'all' && Array.isArray(pages) && pages.length > 0) {
+              for (let idx = 0; idx < pages.length; idx++) {
+                const pageInfo = pages[idx];
+                const pNum = pageInfo.pageNumber || (idx + 1);
+
+                window.parent.postMessage({
+                  type: 'EXPORT_PROGRESS',
+                  current: idx + 1,
+                  total: pages.length,
+                }, '*');
+
+                // Assemble elements for this page
+                const drawings = (pNum === activePageRef.current)
+                  ? nonBgDrawings.filter(el => !el.isDeleted)
+                  : (pageDrawingsMapRef.current.get(pNum) || pageInfo.elements || []).filter(el => !el.isDeleted);
+
+                const filesMap = { ...(api.getFiles() || {}) };
+                let pageElements = [...drawings];
+
+                if (pageInfo.background && pageInfo.background.dataUrl) {
+                  const bgFileId = pageInfo.background.fileId || `export_bg_p${pNum}`;
+                  filesMap[bgFileId] = {
+                    id: bgFileId,
+                    dataURL: pageInfo.background.dataUrl,
+                    mimeType: 'image/png',
+                    created: Date.now(),
+                    lastRetrieved: Date.now(),
+                  };
+                  const bgElement = {
+                    id: `pdf_bg_${bgFileId}`,
+                    type: 'image',
+                    x: 60,
+                    y: 60,
+                    width: pageInfo.background.width || 800,
+                    height: pageInfo.background.height || 1130,
+                    angle: 0,
+                    strokeColor: 'transparent',
+                    backgroundColor: '#ffffff',
+                    fillStyle: 'solid',
+                    strokeWidth: 1,
+                    strokeStyle: 'solid',
+                    roughness: 0,
+                    opacity: 100,
+                    groupIds: [],
+                    frameId: null,
+                    roundness: null,
+                    seed: 12345,
+                    version: 1,
+                    versionNonce: 12345,
+                    isDeleted: false,
+                    fileId: bgFileId,
+                    status: 'saved',
+                    scale: [1, 1],
+                    locked: true,
+                  };
+                  pageElements = [bgElement, ...drawings];
+                }
+
+                if (pageElements.length === 0) {
+                  pageElements = [{
+                    id: `blank_p${pNum}`,
+                    type: 'rectangle',
+                    x: 60,
+                    y: 60,
+                    width: 800,
+                    height: 1130,
+                    strokeColor: 'transparent',
+                    backgroundColor: '#ffffff',
+                    fillStyle: 'solid',
+                    strokeWidth: 1,
+                    strokeStyle: 'solid',
+                    roughness: 0,
+                    opacity: 100,
+                    groupIds: [],
+                    frameId: null,
+                    roundness: null,
+                    seed: 12345,
+                    version: 1,
+                    versionNonce: 12345,
+                    isDeleted: false,
+                  }];
+                }
+
+                const pageCanvas = await exportToCanvas({
+                  elements: pageElements,
+                  appState: {
+                    viewBackgroundColor: '#FFFFFF',
+                    exportBackground: true,
+                    exportWithDarkMode: false,
+                  },
+                  files: filesMap,
+                  exportPadding: 20,
+                });
+                canvases.push(pageCanvas);
+              }
+            } else {
+              // Current page export
+              const visibleElements = api.getSceneElements();
+              let exportElements = visibleElements;
+              if (exportElements.length === 0) {
+                exportElements = [{
+                  id: 'blank_current',
+                  type: 'rectangle',
+                  x: 60,
+                  y: 60,
+                  width: 800,
+                  height: 1130,
+                  strokeColor: 'transparent',
+                  backgroundColor: '#ffffff',
+                  fillStyle: 'solid',
+                  strokeWidth: 1,
+                  strokeStyle: 'solid',
+                  roughness: 0,
+                  opacity: 100,
+                  groupIds: [],
+                  frameId: null,
+                  roundness: null,
+                  seed: 12345,
+                  version: 1,
+                  versionNonce: 12345,
+                  isDeleted: false,
+                }];
+              }
+
+              const currentCanvas = await exportToCanvas({
+                elements: exportElements,
+                appState: {
+                  viewBackgroundColor: '#FFFFFF',
+                  exportBackground: true,
+                  exportWithDarkMode: false,
+                },
+                files: api.getFiles(),
+                exportPadding: 20,
+              });
+              canvases.push(currentCanvas);
+            }
+
+            await generateAndDownloadPdf(canvases, pdfDownloadName);
+
+            window.parent.postMessage({
+              type: 'EXPORT_COMPLETE',
+              success: true,
+              fileName: pdfDownloadName,
+            }, '*');
+          } catch (exportErr) {
+            console.error('Export PDF error:', exportErr);
+            window.parent.postMessage({
+              type: 'EXPORT_COMPLETE',
+              success: false,
+              error: exportErr.message || 'Export failed',
+            }, '*');
+          }
+        })();
       }
     };
 
@@ -286,10 +616,29 @@ function WhiteboardApp() {
       },
       UIOptions: {
         canvasActions: {
+          export: false,
           saveAsImage: true,
         },
       },
-    }),
+    },
+    React.createElement(
+      MainMenu,
+      null,
+      React.createElement(
+        MainMenu.Item,
+        {
+          onSelect: () => {
+            window.parent.postMessage({ type: 'REQUEST_EXPORT_PDF' }, '*');
+          },
+          icon: React.createElement('span', { style: { fontSize: '18px' } }, '📥'),
+        },
+        'Export as PDF'
+      ),
+      React.createElement(MainMenu.DefaultItems.SaveAsImage),
+      React.createElement(MainMenu.DefaultItems.ClearCanvas),
+      React.createElement(MainMenu.DefaultItems.ToggleTheme),
+      React.createElement(MainMenu.DefaultItems.ChangeCanvasBackground)
+    )),
     React.createElement(
       'button',
       {

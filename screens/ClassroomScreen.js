@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { 
   View, Text, TouchableOpacity, TextInput, StyleSheet, 
-  Platform, ActivityIndicator, Alert, Dimensions, ScrollView 
+  Platform, ActivityIndicator, Alert, Dimensions, ScrollView, Modal 
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { auth } from '../firebase-config';
@@ -82,6 +82,11 @@ export const ClassroomScreen = () => {
   const [currentPdfPage, setCurrentPdfPage] = useState(0);
   const [isLoadingPdf, setIsLoadingPdf] = useState(false);
   const [pdfStatusMessage, setPdfStatusMessage] = useState('');
+
+  // --- PDF Export State ---
+  const [isExportingPdf, setIsExportingPdf] = useState(false);
+  const [showExportModal, setShowExportModal] = useState(false);
+  const [exportStatusText, setExportStatusText] = useState('');
 
   // --- Daily.co Call State ---
   const videoContainerRef = useRef(null);
@@ -329,6 +334,20 @@ export const ClassroomScreen = () => {
         }
       } else if (data.type === 'MENUS_MINIMIZED_CHANGED') {
         setIsCanvasMenusMinimized(data.minimized);
+      } else if (data.type === 'REQUEST_EXPORT_PDF') {
+        if (handleExportPdfClickRef.current) {
+          handleExportPdfClickRef.current();
+        }
+      } else if (data.type === 'EXPORT_PROGRESS') {
+        setExportStatusText(`Rendering page ${data.current} of ${data.total}...`);
+      } else if (data.type === 'EXPORT_COMPLETE') {
+        setIsExportingPdf(false);
+        setShowExportModal(false);
+        if (data.success) {
+          Alert.alert('PDF Exported 🎉', `Successfully downloaded ${data.fileName || 'your lesson PDF'}!`);
+        } else {
+          Alert.alert('Export Error', data.error || 'Failed to generate PDF. Please try again.');
+        }
       }
     };
 
@@ -547,6 +566,87 @@ export const ClassroomScreen = () => {
       }
     } else if (pdfDocRef.current) {
       await renderAndInjectPage(pdfDocRef.current, targetPage);
+    }
+  };
+
+  // --- PDF Export Logic ---
+  const handleExportPdfClick = () => {
+    if (isLoadingPdf || isExportingPdf) return;
+    if (totalPdfPages > 1) {
+      setShowExportModal(true);
+    } else {
+      executeExportPdf('current');
+    }
+  };
+
+  const handleExportPdfClickRef = useRef(handleExportPdfClick);
+  useEffect(() => {
+    handleExportPdfClickRef.current = handleExportPdfClick;
+  });
+
+  const executeExportPdf = async (mode = 'all') => {
+    if (isExportingPdf) return;
+    setIsExportingPdf(true);
+    setExportStatusText('Preparing pages for PDF...');
+
+    try {
+      if (mode === 'current' || totalPdfPages <= 1) {
+        if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
+          canvasIframeRef.current.contentWindow.postMessage({
+            type: 'EXPORT_PDF_COMMAND',
+            mode: 'current',
+            fileName: pdfFileName || '11plus_lesson_export',
+          }, '*');
+        }
+        return;
+      }
+
+      // Multi-page export: gather background info and drawings for all pages
+      const pagesToExport = [];
+      for (let p = 1; p <= totalPdfPages; p++) {
+        let background = null;
+
+        if (quizPagesRef.current && quizPagesRef.current.length >= p) {
+          const quizItem = quizPagesRef.current[p - 1];
+          if (quizItem && quizItem.rendered) {
+            background = {
+              dataUrl: quizItem.rendered.dataUrl,
+              width: quizItem.rendered.displayWidth,
+              height: quizItem.rendered.displayHeight,
+              fileId: `quiz_page_${p}`,
+            };
+          }
+        } else if (pdfDocRef.current) {
+          setExportStatusText(`Rendering background for page ${p} of ${totalPdfPages}...`);
+          const rendered = await renderPdfPageToImage(pdfDocRef.current, p, 1.75);
+          background = {
+            dataUrl: rendered.dataUrl,
+            width: rendered.displayWidth,
+            height: rendered.displayHeight,
+            fileId: `pdf_p${p}`,
+          };
+        }
+
+        pagesToExport.push({
+          pageNumber: p,
+          background,
+          elements: pageDrawingsRef.current[p] || [],
+        });
+      }
+
+      setExportStatusText('Compiling PDF document...');
+      if (canvasIframeRef.current && canvasIframeRef.current.contentWindow) {
+        canvasIframeRef.current.contentWindow.postMessage({
+          type: 'EXPORT_PDF_COMMAND',
+          mode: 'all',
+          pages: pagesToExport,
+          fileName: pdfFileName || '11plus_lesson_export',
+        }, '*');
+      }
+    } catch (err) {
+      console.error('Error preparing PDF export:', err);
+      setIsExportingPdf(false);
+      Alert.alert('Export Error', 'Failed to prepare PDF pages: ' + (err.message || 'Unknown error'));
     }
   };
 
@@ -973,6 +1073,19 @@ export const ClassroomScreen = () => {
           </TouchableOpacity>
 
           <TouchableOpacity 
+            nativeID="export-pdf-btn"
+            accessibilityRole="button"
+            style={[styles.pdfActionBtn, styles.exportPdfBtn]} 
+            onPress={handleExportPdfClick}
+            disabled={isLoadingPdf || isExportingPdf}
+            title="Download worksheet and annotations as a PDF document"
+          >
+            <Text style={styles.pdfActionBtnText}>
+              {isExportingPdf ? '⏳ Exporting...' : '📥 Export PDF'}
+            </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
             nativeID="toggle-menus-btn"
             accessibilityRole="button"
             style={[styles.pdfActionBtn, isCanvasMenusMinimized ? styles.menuMinimizedBtnActive : styles.menuMinimizedBtn]} 
@@ -1358,6 +1471,82 @@ export const ClassroomScreen = () => {
         onInsertNotes={handleInsertQuestionNotes}
         onInsertFullQuizNotes={handleInsertFullQuizNotes}
       />
+
+      {/* PDF Export Choice Modal */}
+      <Modal
+        visible={showExportModal}
+        transparent={true}
+        animationType="fade"
+        onRequestClose={() => {
+          if (!isExportingPdf) setShowExportModal(false);
+        }}
+      >
+        <View style={styles.exportModalOverlay}>
+          <View style={styles.exportModalCard}>
+            <View style={styles.exportModalHeader}>
+              <Text style={styles.exportModalTitle}>📥 Export Worksheet as PDF</Text>
+              {!isExportingPdf && (
+                <TouchableOpacity onPress={() => setShowExportModal(false)} style={styles.exportModalCloseBtn}>
+                  <Text style={styles.exportModalCloseText}>✕</Text>
+                </TouchableOpacity>
+              )}
+            </View>
+
+            <Text style={styles.exportModalDescription}>
+              This lesson worksheet contains {totalPdfPages} pages. How would you like to export?
+            </Text>
+
+            {isExportingPdf ? (
+              <View style={styles.exportProgressContainer}>
+                <ActivityIndicator size="large" color="#059669" />
+                <Text style={styles.exportProgressText}>{exportStatusText || 'Generating PDF...'}</Text>
+                <Text style={styles.exportProgressSubtext}>Please keep this tab open while your PDF is being generated.</Text>
+              </View>
+            ) : (
+              <View style={styles.exportOptionsList}>
+                <TouchableOpacity
+                  style={[styles.exportOptionCard, styles.exportOptionPrimary]}
+                  onPress={() => executeExportPdf('all')}
+                >
+                  <View style={styles.exportOptionIconBox}>
+                    <Text style={styles.exportOptionIcon}>📚</Text>
+                  </View>
+                  <View style={styles.exportOptionTextBox}>
+                    <Text style={styles.exportOptionTitle}>Export All Pages (Pages 1 to {totalPdfPages})</Text>
+                    <Text style={styles.exportOptionSubtitle}>
+                      Combines all worked question sheets and drawing annotations into a single multi-page PDF.
+                    </Text>
+                  </View>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                  style={styles.exportOptionCard}
+                  onPress={() => executeExportPdf('current')}
+                >
+                  <View style={styles.exportOptionIconBox}>
+                    <Text style={styles.exportOptionIcon}>📄</Text>
+                  </View>
+                  <View style={styles.exportOptionTextBox}>
+                    <Text style={styles.exportOptionTitle}>Export Current Page Only (Page {currentPdfPage})</Text>
+                    <Text style={styles.exportOptionSubtitle}>
+                      Downloads only the current active worksheet as a 1-page PDF.
+                    </Text>
+                  </View>
+                </TouchableOpacity>
+
+                <View style={styles.exportModalFooter}>
+                  <TouchableOpacity
+                    style={styles.exportCancelBtn}
+                    onPress={() => setShowExportModal(false)}
+                  >
+                    <Text style={styles.exportCancelBtnText}>Cancel</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            )}
+          </View>
+        </View>
+      </Modal>
     </View>
   );
 };
@@ -1475,6 +1664,11 @@ const styles = StyleSheet.create({
   },
   quizImportBtn: {
     backgroundColor: '#8B5CF6',
+  },
+  exportPdfBtn: {
+    backgroundColor: '#059669',
+    borderWidth: 1,
+    borderColor: '#10B981',
   },
   menuMinimizedBtn: {
     backgroundColor: '#334155',
@@ -2035,5 +2229,122 @@ const styles = StyleSheet.create({
   authBackBtnText: {
     color: '#64748B',
     fontSize: 13,
+  },
+
+  // --- PDF Export Modal Styles ---
+  exportModalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(15, 23, 42, 0.75)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+    zIndex: 9999,
+  },
+  exportModalCard: {
+    width: '100%',
+    maxWidth: 520,
+    backgroundColor: '#1E293B',
+    borderRadius: 16,
+    padding: 24,
+    borderWidth: 1,
+    borderColor: '#334155',
+  },
+  exportModalHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 12,
+  },
+  exportModalTitle: {
+    fontSize: 18,
+    fontWeight: '800',
+    color: '#F8FAFC',
+  },
+  exportModalCloseBtn: {
+    padding: 4,
+  },
+  exportModalCloseText: {
+    fontSize: 18,
+    color: '#94A3B8',
+    fontWeight: '700',
+  },
+  exportModalDescription: {
+    fontSize: 14,
+    color: '#CBD5E1',
+    lineHeight: 20,
+    marginBottom: 20,
+  },
+  exportOptionsList: {
+    gap: 12,
+  },
+  exportOptionCard: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#0F172A',
+    borderWidth: 1,
+    borderColor: '#334155',
+    borderRadius: 12,
+    padding: 16,
+    gap: 14,
+  },
+  exportOptionPrimary: {
+    borderColor: '#059669',
+    backgroundColor: '#064E3B20',
+  },
+  exportOptionIconBox: {
+    width: 44,
+    height: 44,
+    borderRadius: 10,
+    backgroundColor: '#334155',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  exportOptionIcon: {
+    fontSize: 22,
+  },
+  exportOptionTextBox: {
+    flex: 1,
+  },
+  exportOptionTitle: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: '#FFFFFF',
+    marginBottom: 4,
+  },
+  exportOptionSubtitle: {
+    fontSize: 12,
+    color: '#94A3B8',
+    lineHeight: 16,
+  },
+  exportProgressContainer: {
+    paddingVertical: 30,
+    alignItems: 'center',
+    gap: 12,
+  },
+  exportProgressText: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#34D399',
+    marginTop: 8,
+  },
+  exportProgressSubtext: {
+    fontSize: 12,
+    color: '#94A3B8',
+  },
+  exportModalFooter: {
+    marginTop: 16,
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+  },
+  exportCancelBtn: {
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    backgroundColor: '#334155',
+  },
+  exportCancelBtnText: {
+    color: '#E2E8F0',
+    fontSize: 13,
+    fontWeight: '600',
   },
 });
