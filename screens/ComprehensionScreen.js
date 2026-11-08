@@ -127,7 +127,7 @@ export const ComprehensionScreen = ({ route }) => {
     const isSpelling = configTopic === 'Spelling' || title.includes('Spelling');
 
     const settingsTopic = isGrammar ? 'Grammar' : (isSpelling ? 'Spelling' : (configTopic || 'Comprehension'));
-    const instructions = getInstruction(route.params.title, settingsTopic);
+    const instructions = getInstruction(route.params.title, settingsTopic, 'English');
 
     // Explicitly check for Grammar or Spelling to use single pane
     const useSinglePane = isGrammar || isSpelling;

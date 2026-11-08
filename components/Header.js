@@ -38,6 +38,11 @@ export const Header = ({ activeTab }) => {
                             Blog
                         </Text>
                     </TouchableOpacity>
+                    <TouchableOpacity onPress={() => { if (Platform.OS === 'web' && typeof window !== 'undefined') { window.location.href = '/classrooms'; } else { navigation.navigate('ClassroomsAdmin'); } }}>
+                        <Text style={[styles.menuLink, activeTab === 'classrooms' ? styles.activeLink : styles.inactiveLink]}>
+                            Classrooms
+                        </Text>
+                    </TouchableOpacity>
                 </View>
             </View>
         </View>

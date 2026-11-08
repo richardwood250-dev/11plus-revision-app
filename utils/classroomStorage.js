@@ -34,6 +34,9 @@ const updateClassroomIndex = async (roomId, partialInfo) => {
     const entry = {
       roomId,
       title: partialInfo.title || (existingIndex >= 0 ? list[existingIndex].title : `Room: ${roomId}`),
+      tuteeName: partialInfo.tuteeName || (existingIndex >= 0 ? list[existingIndex].tuteeName : ''),
+      subject: partialInfo.subject || (existingIndex >= 0 ? list[existingIndex].subject : ''),
+      topic: partialInfo.topic || (existingIndex >= 0 ? list[existingIndex].topic : ''),
       totalPdfPages: partialInfo.totalPdfPages !== undefined 
         ? partialInfo.totalPdfPages 
         : (existingIndex >= 0 ? list[existingIndex].totalPdfPages : 1),
@@ -51,6 +54,38 @@ const updateClassroomIndex = async (roomId, partialInfo) => {
   } catch (err) {
     console.warn('Error updating classroom index:', err);
   }
+};
+
+/**
+ * Create a new named classroom for a tutee
+ */
+export const createNewClassroom = async ({ tuteeName, subject, topic, customRoomId }) => {
+  const cleanTutee = (tuteeName || 'Student').trim();
+  const cleanSubject = subject || 'Maths';
+  const cleanTopic = (topic || 'General Revision').trim();
+  const randomSuffix = Math.random().toString(36).substring(2, 6);
+
+  const baseSlug = (customRoomId || `${cleanTutee.toLowerCase()}-${cleanSubject.toLowerCase()}`)
+    .replace(/[^a-zA-Z0-9_\-]/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '') || `session-${randomSuffix}`;
+
+  const roomId = baseSlug;
+  const title = `${cleanTutee} — ${cleanSubject}: ${cleanTopic}`;
+
+  const meta = {
+    roomId,
+    title,
+    tuteeName: cleanTutee,
+    subject: cleanSubject,
+    topic: cleanTopic,
+    totalPdfPages: 1,
+    currentPdfPage: 1,
+    sessionNotes: `# Tutoring Session: ${cleanTutee}\nSubject: ${cleanSubject}\nTopic: ${cleanTopic}\nDate: ${new Date().toLocaleDateString('en-GB')}\n\n## Key Concepts\n- \n\n## Questions Reviewed\n- \n\n## Homework & Next Steps\n- \n`,
+  };
+
+  await saveClassroomMeta(roomId, meta);
+  return { roomId, meta };
 };
 
 /**

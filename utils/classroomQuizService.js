@@ -8,6 +8,7 @@ import { nonverbal } from '../data/nonverbal.js';
 import { GRAMMAR_QUIZ } from '../data/grammar.js';
 import { SPELLING_QUIZ } from '../data/spelling.js';
 import { CLOZE_QUIZ } from '../data/cloze.js';
+import { getQuestionPrompt } from '../data/instructions.js';
 
 export const SUBJECTS = [
   { id: 'maths', name: 'Maths 🔢', color: '#BE1E2D' },
@@ -57,11 +58,16 @@ export function getTopicsForSubject(subjectId) {
  */
 function normalizeQuestion(raw, subjectId, topicName) {
   const options = Array.isArray(raw.options) ? raw.options.map(String) : [];
+  let qText = raw.question || 'Answer the following question:';
+  const prompt = getQuestionPrompt(qText, topicName, raw.topic, subjectId);
+  if (prompt && !qText.includes(prompt)) {
+    qText = `${prompt}\n${qText}`;
+  }
   return {
     id: raw.id || `q_${Math.random().toString(36).slice(2, 8)}`,
     subject: subjectId,
     topic: raw.topic || topicName || 'General',
-    question: raw.question || 'Answer the following question:',
+    question: qText,
     passage: raw.passage || raw.text || null,
     image: raw.image || null,
     options: options,

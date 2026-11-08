@@ -92,7 +92,7 @@ function genMeanings(belt) {
     const q = pickRandom(items);
     return {
         ...q,
-        questionText: q.question,
+        questionText: `Which word has a meaning related to both pairs in brackets?\n\n${q.question}`,
         correctAnswerIndex: ['A', 'B', 'C', 'D', 'E'].indexOf(q.correctAnswer),
         logic: "Logic: Find the single word that fits both sets of meanings provided in the brackets."
     };
@@ -138,7 +138,7 @@ function genCodes(belt) {
     const q = pickRandom(VERBAL_QUIZ.Corresponding_letters.questions);
     return {
         ...q,
-        questionText: q.question,
+        questionText: `Which word completes the second pair using the same rule?\n\n${q.question}`,
         correctAnswerIndex: ['A', 'B', 'C', 'D', 'E'].indexOf(q.correctAnswer),
         logic: "Logic: Identify the letter-to-letter mapping used in the first examples and apply it to the final word."
     };

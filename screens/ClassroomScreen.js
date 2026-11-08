@@ -1366,6 +1366,22 @@ export const ClassroomScreen = () => {
             <Text style={styles.homeBadgeText}>11+ Ninja Classroom</Text>
           </TouchableOpacity>
 
+          {userRole === 'tutor' && (
+            <TouchableOpacity 
+              style={styles.adminHubBtn}
+              onPress={() => {
+                if (Platform.OS === 'web' && typeof window !== 'undefined') {
+                  window.location.href = '/classrooms';
+                } else {
+                  navigation.navigate('ClassroomsAdmin');
+                }
+              }}
+              title="Open Tutor Classrooms Hub"
+            >
+              <Text style={styles.adminHubBtnText}>🗂️ Hub</Text>
+            </TouchableOpacity>
+          )}
+
           <View style={styles.roomBadge}>
             <View style={styles.liveDot} />
             <Text style={styles.roomBadgeText}>Room: {roomName}</Text>
@@ -1965,6 +1981,21 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     borderWidth: 1,
     borderColor: '#334155',
+  },
+  adminHubBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#1E293B',
+    paddingHorizontal: 9,
+    paddingVertical: 4,
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: '#38BDF8',
+  },
+  adminHubBtnText: {
+    color: '#38BDF8',
+    fontSize: 12,
+    fontWeight: '700',
   },
   liveDot: {
     width: 8,

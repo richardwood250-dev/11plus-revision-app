@@ -5,7 +5,7 @@ import { AlphabetStrip } from '../components/AlphabetStrip';
 import { ZoomableImage } from '../components/ZoomableImage';
 import { ReportButton } from '../components/ReportButton';
 import { saveSession } from '../utils/storage';
-import { getInstruction } from '../data/instructions';
+import { getInstruction, getQuestionPrompt } from '../data/instructions';
 import { getQuizFeedback } from '../utils/motivation';
 import { ResilientImage } from '../components/ResilientImage';
 
@@ -17,7 +17,7 @@ export const QuizScreen = ({ route }) => {
     const { topic, subject } = config || {};
     console.log('[QuizScreen] Params:', { title, topic, subject, config });
 
-    const instructions = getInstruction(title, topic);
+    const instructions = getInstruction(title, topic, subject);
 
     const [answers, setAnswers] = useState({}); // { [index]: 'A' or ['A','B'] }
     const [status, setStatus] = useState('active'); // 'active' | 'review'
@@ -263,7 +263,9 @@ export const QuizScreen = ({ route }) => {
                 )}
 
                 {/* Render All Questions */}
-                {questions.map((q, qIndex) => (
+                {questions.map((q, qIndex) => {
+                    const promptText = getQuestionPrompt(q.question, title, topic, subject);
+                    return (
                     <View key={q.id || qIndex} style={styles.questionBlock}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                             <Text style={styles.qIndex}>Question {qIndex + 1}</Text>
@@ -278,8 +280,12 @@ export const QuizScreen = ({ route }) => {
                                 </View>
                             )}
 
+                            {promptText ? (
+                                <Text style={styles.questionPromptText}>{promptText}</Text>
+                            ) : null}
+
                             {/* Special rendering for "Move a letter" which uses "WORD1 & WORD2" format */}
-                            {q.question.includes(' & ') && (title === 'Move a letter' || title === 'Move A Letter' || topic === 'Move a letter') ? (
+                            {q.question.includes(' & ') && (title === 'Move a letter' || title === 'Move A Letter' || topic === 'Move a letter' || topic === 'Move_a_letter') ? (
                                 <View style={styles.twoWordContainer}>
                                     <Text style={styles.wordBox}>{q.question.split(' & ')[0]}</Text>
                                     <View style={styles.wordConnector}>
@@ -357,7 +363,8 @@ export const QuizScreen = ({ route }) => {
                         {/* Divider */}
                         <View style={styles.divider} />
                     </View>
-                ))}
+                    );
+                })}
 
                 {/* Submit Button */}
                 {status === 'active' && (
@@ -539,6 +546,13 @@ const styles = StyleSheet.create({
     proTipText: {
         fontSize: 16,
         color: '#856404',
+        lineHeight: 22,
+    },
+    questionPromptText: {
+        fontSize: 16,
+        fontWeight: '600',
+        color: '#4B5563',
+        marginBottom: 8,
         lineHeight: 22,
     },
     questionCard: {

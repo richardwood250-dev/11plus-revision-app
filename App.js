@@ -36,6 +36,7 @@ import { VRSkillsHomeScreen } from './screens/VRSkillsHomeScreen';
 import { VRStrandScreen } from './screens/VRStrandScreen';
 import { VRSkillsQuizScreen } from './screens/VRSkillsQuizScreen';
 import { ClassroomScreen } from './screens/ClassroomScreen';
+import { ClassroomAdminScreen } from './screens/ClassroomAdminScreen';
 import { initializeAuth, getProfile } from './utils/storage';
 
 // --- Components ---
@@ -57,13 +58,15 @@ export default function App() {
   const [isCheckingSetup, setIsCheckingSetup] = useState(true);
   const [currentRoute, setCurrentRoute] = useState(() => {
     if (Platform.OS === 'web' && typeof window !== 'undefined') {
-      return window.location.pathname.includes('classroom') ? 'Classroom' : '';
+      if (window.location.pathname.includes('classrooms')) return 'ClassroomsAdmin';
+      if (window.location.pathname.includes('classroom')) return 'Classroom';
     }
     return '';
   });
 
-  const isClassroom = currentRoute === 'Classroom' || 
-    (Platform.OS === 'web' && typeof window !== 'undefined' && window.location.pathname.includes('classroom'));
+  const isClassroom = currentRoute === 'Classroom' || currentRoute === 'ClassroomsAdmin' || 
+    (Platform.OS === 'web' && typeof window !== 'undefined' && 
+      (window.location.pathname.includes('classroom') || window.location.pathname.includes('classrooms')));
 
   useEffect(() => {
     const initApp = async () => {
@@ -124,6 +127,7 @@ export default function App() {
                   NVRSkillsHome: 'nvr',
                   VRSkillsHome: 'verbal',
                   Classroom: 'classroom',
+                  ClassroomsAdmin: 'classrooms',
                 }
               }
             }}>
@@ -138,6 +142,7 @@ export default function App() {
                       {props => <SetupScreen {...props} onFinish={() => setIsSetupComplete(true)} />}
                     </Stack.Screen>
                     <Stack.Screen name="Classroom" component={ClassroomScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="ClassroomsAdmin" component={ClassroomAdminScreen} options={{ headerShown: false }} />
                   </>
                 ) : (
                   <>
@@ -167,6 +172,7 @@ export default function App() {
                     <Stack.Screen name="VRStrand" component={VRStrandScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="VRSkillsQuiz" component={VRSkillsQuizScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="Classroom" component={ClassroomScreen} options={{ headerShown: false }} />
+                    <Stack.Screen name="ClassroomsAdmin" component={ClassroomAdminScreen} options={{ headerShown: false }} />
                   </>
                 )}
               </Stack.Navigator>
