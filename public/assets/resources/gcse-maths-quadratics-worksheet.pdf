@@ -1,0 +1,99 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 1532 >>
+stream
+BT
+/F2 18 Tf 50 800 Td (GCSE Mathematics - Topic Masterclass Worksheet) Tj
+/F2 14 Tf 0 -24 Td (Topic: Quadratic Equations, Factoring & The Discriminant) Tj
+/F1 10 Tf 0 -18 Td (Grade Target: Grades 6 to 9 | Focus: Fluency, Decomposition, Difference of Two Squares) Tj
+ET
+50 745 m 545 745 l S
+BT
+/F2 12 Tf 50 715 Td (Section A: Monic & Non-Monic Factorisation) Tj
+/F1 11 Tf 0 -22 Td (Factorise each of the following quadratic expressions completely:) Tj
+/F1 11 Tf 0 -24 Td (1.   x^2 + 7x + 12 = ________________________________) Tj
+/F1 11 Tf 0 -24 Td (2.   x^2 - 9x + 20 = ________________________________) Tj
+/F1 11 Tf 0 -24 Td (3.   x^2 - 4x - 21 = ________________________________) Tj
+/F1 11 Tf 0 -24 Td (4.   2x^2 + 7x + 3 = ________________________________) Tj
+/F1 11 Tf 0 -24 Td (5.   3x^2 - 10x + 8 = ________________________________) Tj
+/F1 11 Tf 0 -24 Td (6.   4x^2 - 25 = ________________________________  (Difference of Two Squares)) Tj
+ET
+50 510 m 545 510 l S
+BT
+/F2 12 Tf 50 480 Td (Section B: Solving by Factorising) Tj
+/F1 11 Tf 0 -22 Td (Solve the following equations by first factorising:) Tj
+/F2 11 Tf 0 -24 Td (7.   x^2 - 5x - 24 = 0) Tj
+/F1 10 Tf 0 -50 Td ([Answer: x = _____________ or x = _____________]                                    [2 Marks]) Tj
+/F2 11 Tf 0 -30 Td (8.   2x^2 + 11x - 6 = 0) Tj
+/F1 10 Tf 0 -50 Td ([Answer: x = _____________ or x = _____________]                                    [3 Marks]) Tj
+ET
+50 280 m 545 280 l S
+BT
+/F1 9 Tf 230 40 Td (Page 1 of 2 - 11+ & GCSE Revision Ninja) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 1318 >>
+stream
+BT
+/F2 18 Tf 50 800 Td (GCSE Topic Worksheet: Quadratics (Page 2)) Tj
+/F2 13 Tf 0 -22 Td (Section C: Completing the Square & The Quadratic Formula) Tj
+ET
+50 765 m 545 765 l S
+BT
+/F2 12 Tf 50 735 Td (Section C1: Completing the Square for Turning Points) Tj
+/F1 11 Tf 0 -20 Td (Consider the quadratic:   f(x) = x^2 + 6x - 7) Tj
+/F2 11 Tf 0 -24 Td ((a)  Express x^2 + 6x - 7 in the form (x + p)^2 + q.) Tj
+/F1 10 Tf 0 -50 Td ([Answer: (x + ____)^2 + ____ ]                                                       [2 Marks]) Tj
+/F2 11 Tf 0 -30 Td ((b)  Hence, state the exact coordinates of the minimum turning point of the graph.) Tj
+/F1 10 Tf 0 -50 Td ([Answer: Coordinates = (__________, __________) ]                                     [2 Marks]) Tj
+ET
+50 540 m 545 540 l S
+BT
+/F2 12 Tf 50 510 Td (Section C2: Using the Quadratic Formula) Tj
+/F1 10 Tf 0 -18 Td (Recall:   x = [ -b +/- sqrt(b^2 - 4ac) ] / (2a) ) Tj
+/F1 11 Tf 0 -24 Td (Solve the quadratic equation:   3x^2 + 8x - 2 = 0) Tj
+/F1 11 Tf 0 -18 Td (Give your answers correct to 2 decimal places. Show clearly your values for a, b, and c.) Tj
+/F1 10 Tf 0 -90 Td ([Answer: x = _____________ or x = _____________]                                    [3 Marks]) Tj
+ET
+50 340 m 545 340 l S
+BT
+/F2 11 Tf 220 40 Td (COMPLETED DRILL - CHECK SOLUTIONS WITH TUTOR) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000001850 00000 n 
+0000001986 00000 n 
+0000003356 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+3492
+%%EOF

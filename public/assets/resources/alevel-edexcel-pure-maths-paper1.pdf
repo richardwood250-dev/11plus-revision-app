@@ -1,0 +1,131 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 1691 >>
+stream
+BT
+/F2 18 Tf 50 800 Td (Pearson Edexcel A-Level Mathematics) Tj
+/F2 14 Tf 0 -22 Td (Paper 1: Pure Mathematics (9MA0/01) - Practice Paper) Tj
+/F1 10 Tf 0 -18 Td (Time: 2 hours | Formulae Book & Approved Calculator allowed) Tj
+ET
+50 745 m 545 745 l S
+BT
+/F1 9 Tf 50 730 Td (Candidate Name: ____________________________________    Centre No: _________    Candidate No: _________) Tj
+/F1 9 Tf 0 -15 Td (Instructions: Answer ALL questions. In calculus problems, show analytical integration/differentiation.) Tj
+ET
+50 705 m 545 705 l S
+BT
+/F2 12 Tf 50 675 Td (Question 1 - Binomial Series Expansion) Tj
+/F1 11 Tf 0 -20 Td (Find the binomial expansion of (1 - 3x)^(-2) in ascending powers of x up to and including x^3.) Tj
+/F2 11 Tf 0 -22 Td ((a)  State the range of values of x for which the expansion is valid.) Tj
+/F1 10 Tf 0 -35 Td ([Answer: |x| < ___________]                                                          [1 Mark]) Tj
+/F2 11 Tf 0 -30 Td ((b)  Write down the expansion in simplified form.) Tj
+/F1 10 Tf 0 -70 Td ([Answer: 1 + _____ x + _____ x^2 + _____ x^3]                                        [3 Marks]) Tj
+ET
+50 480 m 545 480 l S
+BT
+/F2 12 Tf 50 450 Td (Question 2 - Integration by Parts) Tj
+/F1 11 Tf 0 -20 Td (Use integration by parts to evaluate the indefinite integral:) Tj
+/F2 12 Tf 0 -24 Td (                 integral of   x * e^(2x) dx) Tj
+/F1 11 Tf 0 -18 Td (Show all intermediate working clearly, identifying your choices for u and dv/dx.) Tj
+/F1 10 Tf 0 -110 Td ([Answer: _________________________________________________ + C]                     [5 Marks]) Tj
+ET
+50 260 m 545 260 l S
+BT
+/F1 9 Tf 240 40 Td (Turn over for Page 2 - 11+ & A-Level Revision Ninja) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 1394 >>
+stream
+BT
+/F2 16 Tf 50 800 Td (Edexcel A-Level Pure Mathematics - Paper 1 (Page 2)) Tj
+/F1 10 Tf 0 -18 Td (Topic: Parametric Equations & Coordinate Geometry) Tj
+ET
+50 765 m 545 765 l S
+BT
+/F2 12 Tf 50 735 Td (Question 3 - Parametric Tangents) Tj
+/F1 11 Tf 0 -20 Td (A curve C is defined by the parametric equations:) Tj
+/F2 11 Tf 0 -22 Td (                 x = 2t + 1,       y = t^2 - 4) Tj
+/F2 11 Tf 0 -24 Td ((a)  Find an expression for dy/dx in terms of the parameter t.) Tj
+/F1 10 Tf 0 -50 Td ([Answer: dy/dx = ___________________________]                                        [2 Marks]) Tj
+/F2 11 Tf 0 -30 Td ((b)  Find the Cartesian equation of the tangent to curve C at the point where t = 3.) Tj
+/F1 10 Tf 0 -70 Td ([Answer: Tangent equation: y = ________________________]                             [4 Marks]) Tj
+ET
+50 515 m 545 515 l S
+BT
+/F2 12 Tf 50 485 Td (Question 4 - Proof by Contradiction) Tj
+/F1 11 Tf 0 -20 Td (Use proof by contradiction to prove that:) Tj
+/F2 11 Tf 0 -22 Td (        "If n is an integer such that n^2 is even, then n must be even.") Tj
+/F1 11 Tf 0 -18 Td (Set out your initial assumption clearly and conclude with the contradiction.) Tj
+/F1 10 Tf 0 -120 Td ([Space for rigorous algebraic proof by contradiction]                               [4 Marks]) Tj
+ET
+50 280 m 545 280 l S
+BT
+/F1 9 Tf 240 40 Td (Turn over for Page 3 - 11+ & A-Level Revision Ninja) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 1014 >>
+stream
+BT
+/F2 16 Tf 50 800 Td (Edexcel A-Level Pure Mathematics - Paper 1 (Page 3)) Tj
+/F1 10 Tf 0 -18 Td (Topic: Differential Equations & Modelling) Tj
+ET
+50 765 m 545 765 l S
+BT
+/F2 12 Tf 50 735 Td (Question 5 - First Order Differential Equation) Tj
+/F1 11 Tf 0 -20 Td (A chemical solution reacts such that the rate of change of mass M with respect to time t satisfies:) Tj
+/F2 12 Tf 0 -25 Td (                 dM/dt = -0.05 * (M - 20)) Tj
+/F1 11 Tf 0 -20 Td (Given that initially at t = 0, the mass M = 120 kg:) Tj
+/F2 11 Tf 0 -24 Td ((a)  Separate the variables and integrate to express M in terms of t.) Tj
+/F1 10 Tf 0 -90 Td ([Answer: M(t) = _____________________________________]                               [4 Marks]) Tj
+/F2 11 Tf 0 -30 Td ((b)  Find the mass remaining after t = 40 minutes.) Tj
+/F1 10 Tf 0 -60 Td ([Answer: Mass = ________________ kg (to 1 d.p.)]                                     [2 Marks]) Tj
+ET
+50 480 m 545 480 l S
+BT
+/F2 11 Tf 220 40 Td (END OF EXAMINATION PAPER - TOTAL 25 MARKS) Tj
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000128 00000 n 
+0000000198 00000 n 
+0000000273 00000 n 
+0000002016 00000 n 
+0000002152 00000 n 
+0000003598 00000 n 
+0000003734 00000 n 
+0000004800 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+4937
+%%EOF

@@ -1,0 +1,93 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 1361 >>
+stream
+BT
+/F2 18 Tf 50 800 Td (A-Level Mathematics - Advanced Integration Worksheet) Tj
+/F2 13 Tf 0 -22 Td (Topic: Integration by Substitution & Partial Fractions) Tj
+/F1 10 Tf 0 -18 Td (Specification: Pure Mathematics (Year 2) | Mastery Level: High A* Target) Tj
+ET
+50 745 m 545 745 l S
+BT
+/F2 12 Tf 50 715 Td (Part 1: Integration by Substitution) Tj
+/F1 11 Tf 0 -20 Td (Use the given substitutions to evaluate the following integrals:) Tj
+/F2 11 Tf 0 -24 Td (1.   integral of   x * sqrt(x^2 + 5) dx       [Use substitution: u = x^2 + 5]) Tj
+/F1 10 Tf 0 -80 Td ([Answer: _________________________________________________ + C]                     [3 Marks]) Tj
+/F2 11 Tf 0 -30 Td (2.   integral of   cos(x) * sin^3(x) dx       [Use substitution: u = sin(x)]) Tj
+/F1 10 Tf 0 -80 Td ([Answer: _________________________________________________ + C]                     [3 Marks]) Tj
+ET
+50 460 m 545 460 l S
+BT
+/F2 12 Tf 50 430 Td (Part 2: Integration via Partial Fractions) Tj
+/F1 11 Tf 0 -20 Td (Express the following algebraic fraction in partial fractions and integrate:) Tj
+/F2 12 Tf 0 -25 Td (                 f(x) = (5x + 3) / [ (x + 1)(x - 1) ]) Tj
+/F1 10 Tf 0 -120 Td ([Answer: integral = ______________________________________ + C]                     [4 Marks]) Tj
+ET
+50 240 m 545 240 l S
+BT
+/F1 9 Tf 230 40 Td (Page 1 of 2 - 11+ & A-Level Revision Ninja) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 1097 >>
+stream
+BT
+/F2 18 Tf 50 800 Td (A-Level Topic Worksheet: Advanced Integration (Page 2)) Tj
+/F2 13 Tf 0 -22 Td (Part 3: Definite Integrals & Area Under Parametric Curves) Tj
+ET
+50 765 m 545 765 l S
+BT
+/F2 12 Tf 50 735 Td (Part 3: Definite Integration by Parts) Tj
+/F1 11 Tf 0 -20 Td (Evaluate the exact value of the definite integral between limits 1 and e:) Tj
+/F2 12 Tf 0 -25 Td (                 integral from 1 to e of   x * ln(x) dx) Tj
+/F1 11 Tf 0 -18 Td (Leave your answer in terms of e in simplified exact form.) Tj
+/F1 10 Tf 0 -110 Td ([Answer: Exact Value = ___________________________________]                         [4 Marks]) Tj
+ET
+50 540 m 545 540 l S
+BT
+/F2 12 Tf 50 510 Td (Part 4: Differential Equations with Initial Conditions) Tj
+/F1 11 Tf 0 -20 Td (Solve the differential equation:   dy/dx = 2xy) Tj
+/F1 11 Tf 0 -18 Td (given that y = 3 when x = 0. Give y in terms of x.) Tj
+/F1 10 Tf 0 -110 Td ([Answer: y(x) = __________________________________________]                         [4 Marks]) Tj
+ET
+50 340 m 545 340 l S
+BT
+/F2 11 Tf 220 40 Td (END OF WORKSHEET - REVISE WITH TUTOR) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000001679 00000 n 
+0000001815 00000 n 
+0000002964 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+3100
+%%EOF

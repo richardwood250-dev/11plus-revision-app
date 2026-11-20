@@ -14,12 +14,17 @@ import {
   loadPdfDocument, renderPdfPageToImage 
 } from '../utils/pdfService';
 import { QuizImporterModal } from '../components/QuizImporterModal';
+import { ResourceBankModal } from '../components/ResourceBankModal';
 import { 
   loadClassroomSession, 
   saveClassroomMeta, 
   saveClassroomPage, 
   saveClassroomPageDrawings, 
-  saveClassroomNotes 
+  saveClassroomNotes,
+  checkTutorAuthorized,
+  persistTutorAuthorized,
+  isRunningInIframe,
+  buildFullscreenUrl,
 } from '../utils/classroomStorage';
 
 // Daily.co Iframe embed SDK
@@ -67,6 +72,55 @@ export const ClassroomScreen = () => {
   const canvasIframeRef = useRef(null);
   const [isCanvasReady, setIsCanvasReady] = useState(false);
   const [isCanvasMenusMinimized, setIsCanvasMenusMinimized] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const isEmbedded = Platform.OS === 'web' && isRunningInIframe();
+
+  useEffect(() => {
+    if (Platform.OS !== 'web' || typeof document === 'undefined') return;
+    const onFsChange = () => {
+      setIsFullscreen(Boolean(document.fullscreenElement || document.webkitFullscreenElement));
+    };
+    document.addEventListener('fullscreenchange', onFsChange);
+    document.addEventListener('webkitfullscreenchange', onFsChange);
+    return () => {
+      document.removeEventListener('fullscreenchange', onFsChange);
+      document.removeEventListener('webkitfullscreenchange', onFsChange);
+    };
+  }, []);
+
+  const handleToggleFullscreen = () => {
+    if (Platform.OS !== 'web' || typeof window === 'undefined') return;
+
+    // If embedded in Google Classroom / Google Sites iframe, pop out directly into a clean
+    // full-screen tab on 11plusninja.com with seamless auth handoff (no second login, no Google wrapper).
+    if (isEmbedded) {
+      const targetPath = userRole === 'student'
+        ? `/classroom?room=${encodeURIComponent(roomName)}&role=student&token=ninja-student`
+        : `/classroom?room=${encodeURIComponent(roomName)}`;
+      const fullUrl = buildFullscreenUrl(targetPath, { isTutor: userRole === 'tutor' && isAuthenticated });
+      const popup = window.open(fullUrl, '_blank');
+      if (popup) return;
+      // If popup was blocked, fall through to native fullscreen API
+    }
+
+    const docEl = document.documentElement;
+    const fsEl = document.fullscreenElement || document.webkitFullscreenElement;
+    if (!fsEl) {
+      const req = docEl.requestFullscreen || docEl.webkitRequestFullscreen;
+      if (req) {
+        Promise.resolve(req.call(docEl)).catch(() => {
+          // Last-resort fallback if iframe denies fullscreen
+          const targetPath = userRole === 'student'
+            ? `/classroom?room=${encodeURIComponent(roomName)}&role=student&token=ninja-student`
+            : `/classroom?room=${encodeURIComponent(roomName)}`;
+          window.open(buildFullscreenUrl(targetPath, { isTutor: userRole === 'tutor' && isAuthenticated }), '_blank');
+        });
+      }
+    } else {
+      const exit = document.exitFullscreen || document.webkitExitFullscreen;
+      if (exit) Promise.resolve(exit.call(document)).catch(() => {});
+    }
+  };
 
   const toggleCanvasMenus = () => {
     const next = !isCanvasMenusMinimized;
@@ -83,6 +137,7 @@ export const ClassroomScreen = () => {
   const pdfDocRef = useRef(null);
   const quizPagesRef = useRef(null);
   const lastRenderedPageRef = useRef(null);
+  const [showResourceModal, setShowResourceModal] = useState(false);
   const [showQuizModal, setShowQuizModal] = useState(false);
   const [pdfFileName, setPdfFileName] = useState('');
   const [totalPdfPages, setTotalPdfPages] = useState(0);
@@ -168,6 +223,18 @@ export const ClassroomScreen = () => {
 
           setRoomName(roomParam);
 
+          if (urlParams.get('openResourceBank') === '1' || urlParams.get('resourceBank') === '1') {
+            setShowResourceModal(true);
+          }
+
+          const initialPdfUrl = urlParams.get('pdfUrl');
+          const initialPdfTitle = urlParams.get('pdfTitle') || 'Imported Resource.pdf';
+          if (initialPdfUrl) {
+            setTimeout(() => {
+              loadPdfFromSource(initialPdfUrl, initialPdfTitle);
+            }, 800);
+          }
+
           // Load any previously saved session for this room
           try {
             const saved = await loadClassroomSession(roomParam);
@@ -199,8 +266,8 @@ export const ClassroomScreen = () => {
             setIsAuthenticated(true);
             setUserRole('student');
             setUserName('Alex (Student)');
-          } else if (sessionStorage.getItem('ninja_tutor_authorized') === 'true') {
-            // Tutor already entered password in this browser session
+          } else if (checkTutorAuthorized()) {
+            // Tutor already entered password (persisted in localStorage/sessionStorage or seamless full-screen handoff)
             setIsAuthenticated(true);
             setUserRole('tutor');
             setUserName('Sensei Richard');
@@ -605,6 +672,36 @@ export const ClassroomScreen = () => {
     if (file) {
       loadPdfFromSource(file, file.name);
     }
+  };
+
+  // --- Resource Bank Handlers ---
+  const handleLoadBankResource = async (resource) => {
+    if (!resource || !resource.pdfUrl) return;
+    setShowResourceModal(false);
+    await loadPdfFromSource(resource.pdfUrl, resource.title);
+  };
+
+  const handleInsertResourceMarkScheme = (resource) => {
+    if (!resource || (!resource.markSchemeNotes && !resource.description)) return;
+    setSessionNotes(prev => {
+      const divider = '\n\n' + '═'.repeat(45) + '\n';
+      const addition = `${divider}📑 MARK SCHEME & TUTOR GUIDE: ${resource.title}\n` +
+        `Level: ${resource.level?.toUpperCase()} | Board: ${resource.examBoard?.toUpperCase() || 'General'}` +
+        (resource.tier ? ` | ${resource.tier} Tier` : '') + '\n\n' +
+        (resource.markSchemeNotes || 'No notes available.') +
+        `${divider}`;
+      const updated = prev + addition;
+      saveClassroomNotes(roomName, updated);
+      return updated;
+    });
+    if (typeof window !== 'undefined') {
+      window.alert(`✅ Mark scheme for "${resource.title}" copied into your Session Notes!`);
+    }
+  };
+
+  const handleUploadFromResourceModal = () => {
+    setShowResourceModal(false);
+    handlePdfUploadClick();
   };
 
   const handleLoadSamplePdf = () => {
@@ -1195,9 +1292,7 @@ export const ClassroomScreen = () => {
           setIsAuthenticated(true);
           setUserRole('tutor');
           setUserName('Sensei Richard');
-          if (typeof window !== 'undefined') {
-            sessionStorage.setItem('ninja_tutor_authorized', 'true');
-          }
+          persistTutorAuthorized();
         } else {
           setAuthError('Incorrect tutor password. Access denied.');
         }
@@ -1212,9 +1307,7 @@ export const ClassroomScreen = () => {
           setIsAuthenticated(true);
           setUserRole('tutor');
           setUserName(authUsername);
-          if (typeof window !== 'undefined') {
-            sessionStorage.setItem('ninja_tutor_authorized', 'true');
-          }
+          persistTutorAuthorized();
         } else {
           setAuthError(res.error || 'Authentication failed. Please check credentials.');
         }
@@ -1330,6 +1423,15 @@ export const ClassroomScreen = () => {
             )}
           </TouchableOpacity>
 
+          {isEmbedded && (
+            <TouchableOpacity
+              style={styles.authPopoutBtn}
+              onPress={handleToggleFullscreen}
+            >
+              <Text style={styles.authPopoutBtnText}>↗️ Open in Full Screen Tab</Text>
+            </TouchableOpacity>
+          )}
+
           <TouchableOpacity 
             style={styles.authBackBtn}
             onPress={() => navigation.navigate('Home')}
@@ -1405,11 +1507,25 @@ export const ClassroomScreen = () => {
         {/* PDF Question Sheet Quick Controls */}
         <View style={styles.topNavCenter}>
           <TouchableOpacity 
+            nativeID="resource-bank-btn"
+            accessibilityRole="button"
+            style={[styles.pdfActionBtn, styles.resourceBankBtn]} 
+            onPress={() => setShowResourceModal(true)}
+            disabled={isLoadingPdf}
+            title="Browse GCSE, A-Level & 11+ past papers, specimen exams, and topic worksheets"
+          >
+            <Text style={styles.resourceBankBtnText}>📚 Resource Bank</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            nativeID="upload-file-btn"
+            accessibilityRole="button"
             style={[styles.pdfActionBtn, styles.pdfUploadBtn]} 
             onPress={handlePdfUploadClick}
             disabled={isLoadingPdf}
+            title="Directly upload any PDF from your computer during this session"
           >
-            <Text style={styles.pdfActionBtnText}>📁 Import resources</Text>
+            <Text style={styles.pdfActionBtnText}>📁 Upload File</Text>
           </TouchableOpacity>
 
           <TouchableOpacity 
@@ -1421,8 +1537,9 @@ export const ClassroomScreen = () => {
               setShowQuizModal(true);
             }}
             disabled={isLoadingPdf}
+            title="Generate interactive 11+ Dojo quiz questions"
           >
-            <Text style={styles.quizImportBtnText}>🎯 Import Dojo Quiz</Text>
+            <Text style={styles.quizImportBtnText}>🎯 11+ Dojo Quiz</Text>
           </TouchableOpacity>
 
           <TouchableOpacity 
@@ -1498,6 +1615,18 @@ export const ClassroomScreen = () => {
 
         {/* Role & Status */}
         <View style={styles.topNavRight}>
+          {Platform.OS === 'web' && (
+            <TouchableOpacity
+              style={styles.fullscreenBtn}
+              onPress={handleToggleFullscreen}
+              title={isEmbedded ? 'Open classroom in a clean full-screen tab without re-logging in' : (isFullscreen ? 'Exit full screen' : 'Enter full screen')}
+            >
+              <Text style={styles.fullscreenBtnText}>
+                {isEmbedded ? '↗️ Full Screen' : (isFullscreen ? '✕ Exit Full' : '⛶ Full Screen')}
+              </Text>
+            </TouchableOpacity>
+          )}
+
           <TouchableOpacity 
             style={styles.roleToggleBtn}
             onPress={() => setUserRole(userRole === 'tutor' ? 'student' : 'tutor')}
@@ -1553,11 +1682,34 @@ export const ClassroomScreen = () => {
             )}
 
             {/* Canvas Bottom Floating Helper */}
-            {pdfFileName ? (
+            {!pdfFileName ? (
+              <View style={styles.canvasFloatingBar}>
+                <TouchableOpacity 
+                  style={[styles.canvasActionBtn, styles.canvasResourceBtn]}
+                  onPress={() => setShowResourceModal(true)}
+                >
+                  <Text style={styles.canvasResourceBtnText}>📚 Open Resource Bank (GCSE, A-Level & 11+)</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                  style={[styles.canvasActionBtn, styles.canvasUploadBtn]}
+                  onPress={handlePdfUploadClick}
+                >
+                  <Text style={styles.canvasUploadBtnText}>📁 Upload PDF File</Text>
+                </TouchableOpacity>
+              </View>
+            ) : (
               <View style={styles.canvasFloatingBar}>
                 <Text style={styles.canvasFloatingText}>
                   📋 Active Sheet: <Text style={{ fontWeight: '700' }}>{pdfFileName}</Text> (Page {currentPdfPage} of {totalPdfPages})
                 </Text>
+                <TouchableOpacity 
+                  style={[styles.canvasActionBtn, styles.canvasResourceMiniBtn]}
+                  onPress={() => setShowResourceModal(true)}
+                  title="Open Resource Bank"
+                >
+                  <Text style={styles.canvasResourceMiniBtnText}>📚 Bank</Text>
+                </TouchableOpacity>
                 <TouchableOpacity 
                   style={styles.canvasFitBtn}
                   onPress={() => {
@@ -1569,7 +1721,7 @@ export const ClassroomScreen = () => {
                   <Text style={styles.canvasFitBtnText}>🔍 Fit Page</Text>
                 </TouchableOpacity>
               </View>
-            ) : null}
+            )}
           </View>
         )}
 
@@ -1831,6 +1983,16 @@ export const ClassroomScreen = () => {
         )}
       </View>
 
+      {/* Resource Bank Modal (GCSE, A-Level, 11+ Exam Papers & Worksheets) */}
+      <ResourceBankModal
+        visible={showResourceModal}
+        onClose={() => setShowResourceModal(false)}
+        onLoadResource={handleLoadBankResource}
+        onUploadCustomPdf={handleUploadFromResourceModal}
+        onInsertMarkSchemeNotes={handleInsertResourceMarkScheme}
+        onOpenDojoQuiz={() => setShowQuizModal(true)}
+      />
+
       {/* Quiz Importer Modal */}
       <QuizImporterModal
         visible={showQuizModal}
@@ -1939,20 +2101,27 @@ const styles = StyleSheet.create({
 
   // --- Top Navigation Bar ---
   topNavbar: {
-    height: 56,
+    minHeight: 56,
     backgroundColor: '#1E293B',
     borderBottomWidth: 1,
     borderBottomColor: '#334155',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 16,
+    paddingHorizontal: 12,
     zIndex: 100,
+    ...Platform.select({
+      web: {
+        overflowX: 'auto',
+        overflowY: 'hidden',
+      },
+    }),
   },
   topNavLeft: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
+    gap: 10,
+    flexShrink: 0,
   },
   homeBadge: {
     flexDirection: 'row',
@@ -2050,7 +2219,8 @@ const styles = StyleSheet.create({
   topNavCenter: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
+    gap: 8,
+    flexShrink: 0,
   },
   pdfActionBtn: {
     paddingHorizontal: 12,
@@ -2058,6 +2228,16 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  resourceBankBtn: {
+    backgroundColor: '#0284C7',
+    borderWidth: 1,
+    borderColor: '#38BDF8',
+  },
+  resourceBankBtnText: {
+    color: '#FFFFFF',
+    fontSize: 12,
+    fontWeight: '800',
   },
   pdfUploadBtn: {
     backgroundColor: '#BE1E2D',
@@ -2148,6 +2328,20 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
+    flexShrink: 0,
+  },
+  fullscreenBtn: {
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    backgroundColor: 'rgba(16, 185, 129, 0.16)',
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: 'rgba(16, 185, 129, 0.45)',
+  },
+  fullscreenBtnText: {
+    color: '#34D399',
+    fontSize: 12,
+    fontWeight: '700',
   },
   roleToggleBtn: {
     paddingHorizontal: 10,
@@ -2241,6 +2435,41 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 11,
     fontWeight: 'bold',
+  },
+  canvasActionBtn: {
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 6,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  canvasResourceBtn: {
+    backgroundColor: '#0284C7',
+    borderWidth: 1,
+    borderColor: '#38BDF8',
+  },
+  canvasResourceBtnText: {
+    color: '#FFFFFF',
+    fontSize: 12,
+    fontWeight: '700',
+  },
+  canvasUploadBtn: {
+    backgroundColor: '#BE1E2D',
+  },
+  canvasUploadBtnText: {
+    color: '#FFFFFF',
+    fontSize: 12,
+    fontWeight: '700',
+  },
+  canvasResourceMiniBtn: {
+    backgroundColor: '#0284C7',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+  },
+  canvasResourceMiniBtnText: {
+    color: '#FFFFFF',
+    fontSize: 11,
+    fontWeight: '700',
   },
 
   // RIGHT COLUMN: 25% WIDTH
@@ -2636,6 +2865,21 @@ const styles = StyleSheet.create({
   authSubmitBtnText: {
     color: '#FFFFFF',
     fontSize: 15,
+    fontWeight: '700',
+  },
+  authPopoutBtn: {
+    marginTop: 12,
+    width: '100%',
+    paddingVertical: 10,
+    borderRadius: 8,
+    backgroundColor: 'rgba(16, 185, 129, 0.15)',
+    borderWidth: 1,
+    borderColor: 'rgba(16, 185, 129, 0.4)',
+    alignItems: 'center',
+  },
+  authPopoutBtnText: {
+    color: '#34D399',
+    fontSize: 13,
     fontWeight: '700',
   },
   authBackBtn: {

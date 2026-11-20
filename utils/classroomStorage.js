@@ -5,6 +5,83 @@ import { doc, setDoc, getDoc, collection, getDocs, deleteDoc } from 'firebase/fi
 const CLASSROOM_INDEX_KEY = 'NINJA_CLASSROOMS_INDEX_V1';
 const META_KEY_PREFIX = 'NINJA_CLASSROOM_META_';
 const PAGES_KEY_PREFIX = 'NINJA_CLASSROOM_PAGES_';
+const TUTOR_AUTH_KEY = 'ninja_tutor_authorized';
+const TUTOR_HANDOFF_HASH = 'tutorAuth=ninja-tutor-81';
+
+/**
+ * Persist tutor authorization across both localStorage and sessionStorage
+ * so full-screen launches and new tabs stay logged in.
+ */
+export const persistTutorAuthorized = () => {
+  if (typeof window === 'undefined') return;
+  try {
+    if (window.localStorage) {
+      window.localStorage.setItem(TUTOR_AUTH_KEY, 'true');
+    }
+  } catch (e) {}
+  try {
+    if (window.sessionStorage) {
+      window.sessionStorage.setItem(TUTOR_AUTH_KEY, 'true');
+    }
+  } catch (e) {}
+};
+
+/**
+ * Check if tutor is authorized via URL hash handoff (iframe -> full-screen breakout),
+ * localStorage, or sessionStorage. Strips the handoff hash immediately after reading.
+ */
+export const checkTutorAuthorized = () => {
+  if (typeof window === 'undefined') return false;
+
+  // 1. Check URL hash handoff (used when breaking out of embedded Google Classroom iframe)
+  try {
+    const hash = window.location.hash || '';
+    if (hash.includes(TUTOR_HANDOFF_HASH)) {
+      persistTutorAuthorized();
+      const cleanUrl = window.location.pathname + window.location.search;
+      window.history.replaceState({}, '', cleanUrl);
+      return true;
+    }
+  } catch (e) {}
+
+  // 2. Check localStorage (persists across tabs, full-screen windows, and reloads)
+  try {
+    if (window.localStorage && window.localStorage.getItem(TUTOR_AUTH_KEY) === 'true') {
+      return true;
+    }
+  } catch (e) {}
+
+  // 3. Fallback to sessionStorage
+  try {
+    if (window.sessionStorage && window.sessionStorage.getItem(TUTOR_AUTH_KEY) === 'true') {
+      return true;
+    }
+  } catch (e) {}
+
+  return false;
+};
+
+/**
+ * Detect if the app is currently running inside an embedded iframe (e.g. Google Classroom / Google Sites)
+ */
+export const isRunningInIframe = () => {
+  if (typeof window === 'undefined') return false;
+  try {
+    return window.self !== window.top;
+  } catch (e) {
+    return true;
+  }
+};
+
+/**
+ * Build a clean full-screen URL that seamlessly preserves tutor login when popping out of an embed
+ */
+export const buildFullscreenUrl = (pathWithQuery, { isTutor = false } = {}) => {
+  if (typeof window === 'undefined') return pathWithQuery;
+  const origin = window.location.origin;
+  const hash = isTutor ? `#${TUTOR_HANDOFF_HASH}` : '';
+  return `${origin}${pathWithQuery}${hash}`;
+};
 
 // Cloud sync capability flag (cached after first attempt)
 let isCloudAvailable = true;

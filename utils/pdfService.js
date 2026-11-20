@@ -13,7 +13,19 @@ export async function loadPdfDocument(source) {
   try {
     let loadingTask;
     if (typeof source === 'string') {
-      loadingTask = pdfjsLib.getDocument(source);
+      if (source.startsWith('data:') || source.includes(';base64,')) {
+        // Convert Base64 Data URL to Uint8Array for PDF.js (avoids network stream / headersReady error)
+        const base64 = source.includes(';base64,') ? source.split(';base64,')[1] : source;
+        const binaryStr = typeof window !== 'undefined' ? window.atob(base64) : Buffer.from(base64, 'base64').toString('binary');
+        const len = binaryStr.length;
+        const bytes = new Uint8Array(len);
+        for (let i = 0; i < len; i++) {
+          bytes[i] = binaryStr.charCodeAt(i);
+        }
+        loadingTask = pdfjsLib.getDocument({ data: bytes });
+      } else {
+        loadingTask = pdfjsLib.getDocument(source);
+      }
     } else if (source instanceof File || source instanceof Blob) {
       const buffer = await source.arrayBuffer();
       loadingTask = pdfjsLib.getDocument({ data: buffer });

@@ -1,0 +1,99 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 2005 >>
+stream
+BT
+/F2 18 Tf 50 800 Td (AQA GCSE (9-1) Physics) Tj
+/F2 14 Tf 0 -22 Td (Paper 1: Energy & Electricity (8463/1H) - Specimen Practice) Tj
+/F1 10 Tf 0 -18 Td (Time: 1 hour 45 minutes | Calculator & Physics Equation Sheet Allowed) Tj
+ET
+50 745 m 545 745 l S
+BT
+/F1 9 Tf 50 730 Td (Candidate Name: ____________________________________    Centre No: _________    Candidate No: _________) Tj
+/F1 9 Tf 0 -15 Td (Instructions: Answer all questions. Show your calculations clearly and state units.) Tj
+ET
+50 705 m 545 705 l S
+BT
+/F2 12 Tf 50 675 Td (Question 1 - Kinetic Energy & Braking Distance) Tj
+/F1 11 Tf 0 -20 Td (A car of mass 1200 kg is travelling at a constant velocity of 20 m/s.) Tj
+/F2 11 Tf 0 -22 Td ((a)  Calculate the kinetic energy of the car. Use: E_k = 0.5 * m * v^2) Tj
+/F1 10 Tf 0 -50 Td ([Answer: Kinetic Energy = __________________________ J]                              [2 Marks]) Tj
+/F2 11 Tf 0 -30 Td ((b)  The driver applies the brakes and the car stops over a distance of 40 m.) Tj
+/F1 11 Tf 0 -18 Td (      Calculate the mean braking force applied to the car. (Work done = Force * distance)) Tj
+/F1 10 Tf 0 -60 Td ([Answer: Braking Force = __________________________ N]                              [3 Marks]) Tj
+ET
+50 470 m 545 470 l S
+BT
+/F2 12 Tf 50 440 Td (Question 2 - Electrical Circuits & Ohm's Law) Tj
+/F1 11 Tf 0 -20 Td (A student sets up a series circuit containing a 12V d.c. power supply, a resistor R, and an ammeter.) Tj
+/F1 11 Tf 0 -18 Td (The ammeter reading is 0.4 A.) Tj
+/F2 11 Tf 0 -22 Td ((a)  Calculate the resistance of resistor R.) Tj
+/F1 10 Tf 0 -50 Td ([Answer: Resistance = __________________________ Ohms]                               [2 Marks]) Tj
+/F2 11 Tf 0 -30 Td ((b)  Calculate the electrical power dissipated in the resistor.) Tj
+/F1 10 Tf 0 -60 Td ([Answer: Power = _______________________________ W]                                  [2 Marks]) Tj
+ET
+50 240 m 545 240 l S
+BT
+/F1 9 Tf 240 40 Td (Turn over for Page 2 - 11+ & GCSE Revision Ninja) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 1194 >>
+stream
+BT
+/F2 16 Tf 50 800 Td (AQA GCSE Physics - Paper 1 (Page 2)) Tj
+/F1 10 Tf 0 -18 Td (Topic: Specific Heat Capacity & Internal Energy) Tj
+ET
+50 765 m 545 765 l S
+BT
+/F2 12 Tf 50 735 Td (Question 3 - Specific Heat Capacity of an Aluminium Block) Tj
+/F1 11 Tf 0 -20 Td (A 1.0 kg block of aluminium is heated using an electric immersion heater.) Tj
+/F1 11 Tf 0 -18 Td (The heater transfers 18 000 J of thermal energy into the block.) Tj
+/F1 11 Tf 0 -18 Td (The specific heat capacity of aluminium is 900 J/(kg deg C).) Tj
+/F2 11 Tf 0 -24 Td ((a)  Calculate the temperature increase of the aluminium block. Use: delta_E = m * c * delta_theta) Tj
+/F1 10 Tf 0 -70 Td ([Answer: Temperature Rise = ____________________ deg C]                               [3 Marks]) Tj
+/F2 11 Tf 0 -30 Td ((b)  In the real experiment, the measured temperature rise is less than calculated.) Tj
+/F1 11 Tf 0 -18 Td (      Explain one reason why and suggest an improvement to the experimental apparatus.) Tj
+/F1 10 Tf 0 -80 Td ([Answer: Reason & Improvement: ____________________________________]                 [2 Marks]) Tj
+ET
+50 470 m 545 470 l S
+BT
+/F2 11 Tf 220 40 Td (END OF QUESTION PAPER - REVISE WITH TUTOR) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000002323 00000 n 
+0000002459 00000 n 
+0000003705 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+3841
+%%EOF

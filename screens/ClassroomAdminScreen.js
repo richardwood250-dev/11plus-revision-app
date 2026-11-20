@@ -8,19 +8,20 @@ import {
   getAllClassroomsIndex,
   createNewClassroom,
   deleteClassroomSession,
+  checkTutorAuthorized,
+  persistTutorAuthorized,
+  isRunningInIframe,
+  buildFullscreenUrl,
 } from '../utils/classroomStorage';
+import { ResourceBankModal } from '../components/ResourceBankModal';
 
 export const ClassroomAdminScreen = () => {
   const navigation = useNavigation();
+  const isEmbedded = Platform.OS === 'web' && isRunningInIframe();
 
   // --- Auth State ---
   const TUTOR_MASTER_PASSWORD = 'Ninjatutor81!';
-  const [isAuthenticated, setIsAuthenticated] = useState(() => {
-    if (typeof window !== 'undefined' && window.sessionStorage) {
-      return window.sessionStorage.getItem('ninja_tutor_authorized') === 'true';
-    }
-    return false;
-  });
+  const [isAuthenticated, setIsAuthenticated] = useState(() => checkTutorAuthorized());
   const [authPassword, setAuthPassword] = useState('');
   const [authError, setAuthError] = useState('');
 
@@ -32,10 +33,25 @@ export const ClassroomAdminScreen = () => {
 
   // --- Create Modal State ---
   const [showCreateModal, setShowCreateModal] = useState(false);
+  const [showResourceModal, setShowResourceModal] = useState(false);
   const [tuteeName, setTuteeName] = useState('');
   const [topic, setTopic] = useState('');
   const [customRoomId, setCustomRoomId] = useState('');
   const [isCreating, setIsCreating] = useState(false);
+
+  const handleLoadResourceFromHub = (resource) => {
+    setShowResourceModal(false);
+    const targetRoomId = classrooms.length > 0 ? classrooms[0].roomId : 'main-session';
+    if (Platform.OS === 'web' && typeof window !== 'undefined') {
+      window.location.href = `/classroom?room=${encodeURIComponent(targetRoomId)}&pdfUrl=${encodeURIComponent(resource.pdfUrl)}&pdfTitle=${encodeURIComponent(resource.title)}`;
+    } else {
+      navigation.navigate('Classroom', {
+        room: targetRoomId,
+        pdfUrl: resource.pdfUrl,
+        pdfTitle: resource.title,
+      });
+    }
+  };
 
   // Load classrooms on mount and when authorized
   const loadClassrooms = async () => {
@@ -59,9 +75,7 @@ export const ClassroomAdminScreen = () => {
   // Auth Submit
   const handleAuthSubmit = () => {
     if (authPassword === TUTOR_MASTER_PASSWORD) {
-      if (typeof window !== 'undefined' && window.sessionStorage) {
-        window.sessionStorage.setItem('ninja_tutor_authorized', 'true');
-      }
+      persistTutorAuthorized();
       setIsAuthenticated(true);
       setAuthError('');
       loadClassrooms();
@@ -214,6 +228,15 @@ export const ClassroomAdminScreen = () => {
             <Text style={styles.authSubmitBtnText}>Unlock Classroom Hub 🔓</Text>
           </TouchableOpacity>
 
+          {isEmbedded && (
+            <TouchableOpacity
+              style={styles.authPopoutBtn}
+              onPress={() => window.open(buildFullscreenUrl('/classrooms', { isTutor: false }), '_blank')}
+            >
+              <Text style={styles.authPopoutBtnText}>↗️ Open Hub in Full Screen Tab</Text>
+            </TouchableOpacity>
+          )}
+
           <TouchableOpacity style={styles.authBackBtn} onPress={() => navigation.navigate('Home')}>
             <Text style={styles.authBackBtnText}>← Return to 11+ Ninja Home</Text>
           </TouchableOpacity>
@@ -238,6 +261,24 @@ export const ClassroomAdminScreen = () => {
         </View>
 
         <View style={styles.headerRight}>
+          {isEmbedded && (
+            <TouchableOpacity
+              style={styles.fullscreenHubBtn}
+              onPress={() => window.open(buildFullscreenUrl('/classrooms', { isTutor: true }), '_blank')}
+              title="Open Classroom Hub in a clean full-screen tab without re-logging in"
+            >
+              <Text style={styles.fullscreenHubBtnText}>↗️ Full Screen</Text>
+            </TouchableOpacity>
+          )}
+
+          <TouchableOpacity
+            style={styles.resourceBankBtn}
+            onPress={() => setShowResourceModal(true)}
+            title="Browse GCSE, A-Level & 11+ past papers, specimen exams, and topic worksheets"
+          >
+            <Text style={styles.resourceBankBtnText}>📚 Resource Bank</Text>
+          </TouchableOpacity>
+
           <TouchableOpacity
             style={styles.newRoomBtn}
             onPress={() => setShowCreateModal(true)}
@@ -248,6 +289,25 @@ export const ClassroomAdminScreen = () => {
       </View>
 
       <ScrollView style={styles.scrollArea} contentContainerStyle={styles.scrollContent}>
+        {/* Resource Bank Banner */}
+        <View style={styles.resourceBankBanner}>
+          <View style={styles.resourceBankBannerLeft}>
+            <Text style={styles.resourceBankBannerIcon}>📚</Text>
+            <View style={styles.resourceBankBannerTextBox}>
+              <Text style={styles.resourceBankBannerTitle}>GCSE & A-Level Resource Bank</Text>
+              <Text style={styles.resourceBankBannerSubtitle}>
+                Browse past exam papers (Edexcel, AQA, OCR), topic drills (Quadratics, Integration, Mechanics), and worked mark schemes.
+              </Text>
+            </View>
+          </View>
+          <TouchableOpacity
+            style={styles.resourceBankBannerBtn}
+            onPress={() => setShowResourceModal(true)}
+          >
+            <Text style={styles.resourceBankBannerBtnText}>Explore Resources ↗</Text>
+          </TouchableOpacity>
+        </View>
+
         {/* Metrics Overview Bar */}
         <View style={styles.metricsRow}>
           <View style={styles.metricCard}>
@@ -350,13 +410,20 @@ export const ClassroomAdminScreen = () => {
                       style={styles.launchBtn}
                       onPress={() => {
                         if (typeof window !== 'undefined') {
-                          window.location.href = `/classroom?room=${encodeURIComponent(c.roomId)}`;
+                          const targetPath = `/classroom?room=${encodeURIComponent(c.roomId)}`;
+                          if (isEmbedded) {
+                            const pop = window.open(buildFullscreenUrl(targetPath, { isTutor: true }), '_blank');
+                            if (pop) return;
+                          }
+                          window.location.href = targetPath;
                         } else {
                           navigation.navigate('Classroom', { room: c.roomId });
                         }
                       }}
                     >
-                      <Text style={styles.launchBtnText}>🚀 Open Classroom</Text>
+                      <Text style={styles.launchBtnText}>
+                        {isEmbedded ? '↗️ Open Full Screen' : '🚀 Open Classroom'}
+                      </Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
@@ -471,6 +538,22 @@ export const ClassroomAdminScreen = () => {
           </View>
         </View>
       </Modal>
+
+      {/* Resource Bank Modal */}
+      <ResourceBankModal
+        visible={showResourceModal}
+        onClose={() => setShowResourceModal(false)}
+        onLoadResource={handleLoadResourceFromHub}
+        onUploadCustomPdf={() => {
+          setShowResourceModal(false);
+          const targetRoomId = classrooms.length > 0 ? classrooms[0].roomId : 'main-session';
+          if (Platform.OS === 'web' && typeof window !== 'undefined') {
+            window.location.href = `/classroom?room=${encodeURIComponent(targetRoomId)}`;
+          } else {
+            navigation.navigate('Classroom', { room: targetRoomId });
+          }
+        }}
+      />
     </View>
   );
 };
@@ -557,6 +640,21 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '700',
   },
+  authPopoutBtn: {
+    marginTop: 12,
+    width: '100%',
+    paddingVertical: 10,
+    borderRadius: 8,
+    backgroundColor: 'rgba(16, 185, 129, 0.15)',
+    borderWidth: 1,
+    borderColor: 'rgba(16, 185, 129, 0.4)',
+    alignItems: 'center',
+  },
+  authPopoutBtnText: {
+    color: '#34D399',
+    fontSize: 13,
+    fontWeight: '700',
+  },
   authBackBtn: {
     marginTop: 16,
     paddingVertical: 6,
@@ -617,6 +715,32 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 12,
   },
+  fullscreenHubBtn: {
+    backgroundColor: 'rgba(16, 185, 129, 0.16)',
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: 'rgba(16, 185, 129, 0.45)',
+  },
+  fullscreenHubBtnText: {
+    color: '#34D399',
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  resourceBankBtn: {
+    backgroundColor: '#0284C7',
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#38BDF8',
+  },
+  resourceBankBtnText: {
+    color: '#FFFFFF',
+    fontWeight: '800',
+    fontSize: 13,
+  },
   newRoomBtn: {
     backgroundColor: '#059669',
     paddingHorizontal: 16,
@@ -626,6 +750,56 @@ const styles = StyleSheet.create({
     borderColor: '#10B981',
   },
   newRoomBtnText: {
+    color: '#FFFFFF',
+    fontWeight: '700',
+    fontSize: 13,
+  },
+
+  // Resource Bank Banner
+  resourceBankBanner: {
+    backgroundColor: '#1E293B',
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#38BDF844',
+    padding: 16,
+    marginBottom: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    flexWrap: 'wrap',
+    gap: 12,
+  },
+  resourceBankBannerLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    flex: 1,
+    minWidth: 280,
+  },
+  resourceBankBannerIcon: {
+    fontSize: 28,
+  },
+  resourceBankBannerTextBox: {
+    flex: 1,
+  },
+  resourceBankBannerTitle: {
+    fontSize: 15,
+    fontWeight: '800',
+    color: '#F8FAFC',
+  },
+  resourceBankBannerSubtitle: {
+    fontSize: 12,
+    color: '#94A3B8',
+    marginTop: 2,
+    lineHeight: 16,
+  },
+  resourceBankBannerBtn: {
+    backgroundColor: '#0284C7',
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    borderRadius: 8,
+  },
+  resourceBankBannerBtnText: {
     color: '#FFFFFF',
     fontWeight: '700',
     fontSize: 13,
