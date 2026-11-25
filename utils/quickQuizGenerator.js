@@ -199,3 +199,69 @@ export const getRandomQuiz = () => {
         }
     };
 };
+
+/**
+ * Zero-cost local adaptive sprint generator.
+ * Ranks MCQ-compatible topics (Maths, Verbal, Non-Verbal) by weakness,
+ * unplayed status, and staleness to build a targeted 8-question Quick Play sprint.
+ */
+export const getAdaptiveQuickQuiz = (stats, count = 8) => {
+    const sources = getSources().filter(s => s.type !== 'English' && Array.isArray(s.data) && s.data.length > 0);
+    const now = Date.now();
+    const threeDays = 3 * 24 * 60 * 60 * 1000;
+
+    const scored = sources.map(s => {
+        const subjStats = stats?.bySubject?.[s.type];
+        const topicStats = subjStats?.topics?.[s.topic];
+        let total = 0;
+        let accuracy = 100;
+        let lastPlayed = 0;
+
+        if (topicStats) {
+            total = topicStats.total || 0;
+            if (Array.isArray(topicStats.recentScores) && topicStats.recentScores.length > 0) {
+                accuracy = topicStats.recentScores.reduce((a, b) => a + b, 0) / topicStats.recentScores.length;
+            } else if (total > 0) {
+                accuracy = (topicStats.correct / total) * 100;
+            }
+        }
+
+        if (Array.isArray(stats?.history)) {
+            const hItem = stats.history.find(h => h.subject === s.type && h.topic === s.topic);
+            if (hItem?.date) {
+                lastPlayed = new Date(hItem.date).getTime();
+            }
+        }
+
+        // Priority score (higher = more urgent to practice)
+        let priority = Math.random() * 10;
+        let tag = 'Confidence Boost';
+        if (total > 0 && accuracy < 65) {
+            priority += 100 + (65 - accuracy);
+            tag = `Weak Spot (${Math.round(accuracy)}%)`;
+        } else if (total === 0) {
+            priority += 60;
+            tag = 'New Topic';
+        } else if (now - lastPlayed > threeDays) {
+            priority += 40;
+            tag = 'Due for Revision';
+        }
+
+        return { source: s, priority, tag, accuracy, total };
+    });
+
+    scored.sort((a, b) => b.priority - a.priority);
+    const primary = scored[0];
+    if (!primary) return getRandomQuiz();
+
+    // Pick questions from the top priority topic (keeps QuizScreen instructions & NVR/Maths styling consistent)
+    const quiz = getQuiz(primary.source.type, primary.source.topic);
+    const trimmed = quiz.questions.slice(0, count);
+
+    return {
+        ...quiz,
+        questions: trimmed,
+        title: quiz.title,
+        adaptiveReason: `${primary.tag} • ${primary.source.type}: ${quiz.title}`,
+    };
+};

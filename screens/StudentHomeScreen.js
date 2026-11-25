@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image, Platform, Dimensions } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { getRandomQuiz, getQuiz } from '../utils/quickQuizGenerator';
+import { getRandomQuiz, getQuiz, getAdaptiveQuickQuiz } from '../utils/quickQuizGenerator';
 import { fetchEnglishQuiz } from '../utils/englishLoader';
 import { getRecommendation } from '../utils/recommendations';
 import { getStats, getProfiles, switchProfile } from '../utils/storage';
@@ -30,48 +30,12 @@ export const StudentHomeScreen = () => {
   const [showWordModal, setShowWordModal] = React.useState(false);
 
   const handleQuickStart = async () => {
-    if (recommendation) {
-        if (recommendation.type === 'route') {
-          navigation.navigate(recommendation.route);
-          return;
-        } else if (recommendation.type === 'action' || recommendation.action) {
-          const actionResult = recommendation.action ? recommendation.action() : getRandomQuiz();
-          if (actionResult && actionResult.config) {
-            if (actionResult.config.subject === 'English') {
-              try {
-                setIsLoadingEnglish(true);
-                const data = await fetchEnglishQuiz();
-                setIsLoadingEnglish(false);
-                navigation.navigate('Comprehension', data);
-              } catch (err) {
-                setIsLoadingEnglish(false);
-                alert("Error: Could not load quiz: " + err.message);
-              }
-            } else {
-              navigation.navigate('Quiz', actionResult);
-            }
-          }
-          return;
-        } else if (recommendation.type === 'quiz' || recommendation.config) {
-          const { subject, topic } = recommendation.config;
-          if (subject === 'English' && topic === 'Comprehension') {
-            try {
-              setIsLoadingEnglish(true);
-              const data = await fetchEnglishQuiz();
-              setIsLoadingEnglish(false);
-              navigation.navigate('Comprehension', data);
-            } catch (err) {
-              setIsLoadingEnglish(false);
-              alert("Error: Could not load quiz: " + err.message);
-            }
-          } else {
-            const quizData = getQuiz(subject, topic);
-            navigation.navigate('Quiz', quizData);
-          }
-          return;
-        }
+    const adaptiveQuiz = getAdaptiveQuickQuiz(stats, 8);
+    if (adaptiveQuiz && adaptiveQuiz.questions && adaptiveQuiz.questions.length > 0) {
+      navigation.navigate('Quiz', adaptiveQuiz);
+      return;
     }
-    
+
     // Fallback
     const quizConfig = getRandomQuiz();
     if (quizConfig.config.subject === 'English') {
@@ -286,6 +250,33 @@ export const StudentHomeScreen = () => {
               <Text style={styles.topActionText}>Daily Word</Text>
            </TouchableOpacity>
         </View>
+
+        <TouchableOpacity
+          onPress={handleQuickStart}
+          style={{
+            width: '100%',
+            backgroundColor: '#EFF6FF',
+            borderLeftWidth: 4,
+            borderLeftColor: Colors.primary,
+            borderRadius: 12,
+            paddingVertical: 12,
+            paddingHorizontal: 14,
+            marginBottom: 18,
+          }}
+        >
+          <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+            <Text style={{ fontSize: 12, fontWeight: '800', color: Colors.primary, letterSpacing: 0.4 }}>
+              ⚡ SMART QUICK PLAY • ADAPTIVE 8-QUESTION SPRINT
+            </Text>
+            <Text style={{ fontSize: 12, fontWeight: '700', color: Colors.primary }}>Play →</Text>
+          </View>
+          <Text style={{ fontSize: 13, color: '#1E293B', fontWeight: '600', marginBottom: 3 }}>
+            {recommendation?.reason || 'Ready to build your personalised 11+ training mix!'}
+          </Text>
+          <Text style={{ fontSize: 12, color: '#475569', lineHeight: 17 }}>
+            How it works: automatically targets your trickiest topics, unlocks new ones you haven't tried yet, and refreshes skills due for revision—adapting after every quiz.
+          </Text>
+        </TouchableOpacity>
 
         {/* --- DUAL COLUMN CONTENT --- */}
         <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
