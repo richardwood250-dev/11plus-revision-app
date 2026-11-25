@@ -92,15 +92,37 @@ export function generateEnglishSkillQuestion(strandId, beltId) {
     const getMock = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
     if (strandId === 'spelling') {
-        const spellingItem = getMock(SPELLING_QUIZ);
-        // The options array holds the sliced sentence. We can rebuild the target sentence!
-        const sentence = spellingItem.options.slice(0, 4).join(' ');
-        questionText = `Find the spelling error:\n\n"${sentence}"`;
-        options = [...spellingItem.options];
-        // The correctAnswer is A, B, C, D, E. Map it to the actual option text:
-        const ansIndex = spellingItem.correctAnswer.charCodeAt(0) - 65; // 'A' -> 0
-        correctAnswer = options[ansIndex];
-        inputMode = 'multiple_choice'; // Overwrite to MC since we use options now
+        if (beltId === 'white') {
+            const simplePlurals = [
+                { q: 'Choose the correct plural of "box":', a: 'boxes', opts: ['boxs', 'boxes', 'boxies', 'boxves', 'boxen'] },
+                { q: 'Choose the correct plural of "church":', a: 'churches', opts: ['churchs', 'churches', 'churchies', 'churchs\'', 'church'] },
+                { q: 'Choose the correct plural of "brush":', a: 'brushes', opts: ['brushs', 'brushes', 'brushies', 'brushves', 'brushe'] },
+                { q: 'Choose the correct plural of "fox":', a: 'foxes', opts: ['foxs', 'foxes', 'foxies', 'foxen', 'foxe'] },
+                { q: 'Choose the correct plural of "glass":', a: 'glasses', opts: ['glasss', 'glasses', 'glassies', 'glases', 'glass'] },
+                { q: 'Choose the correct plural of "baby":', a: 'babies', opts: ['babys', 'babies', 'babyes', 'babeys', 'babiess'] },
+                { q: 'Choose the correct plural of "story":', a: 'stories', opts: ['storys', 'stories', 'storyes', 'storeys', 'storis'] },
+                { q: 'Choose the correct plural of "leaf":', a: 'leaves', opts: ['leafs', 'leaves', 'leafes', 'leavs', 'leafies'] },
+                { q: 'Choose the correct plural of "wolf":', a: 'wolves', opts: ['wolfs', 'wolves', 'wolfes', 'wolvs', 'wolfies'] },
+                { q: 'Choose the correct plural of "tomato":', a: 'tomatoes', opts: ['tomatos', 'tomatoes', 'tomatoies', 'tomatoves', 'tomatose'] },
+                { q: 'Choose the correct plural of "bus":', a: 'buses', opts: ['buss', 'buses', 'busies', 'busses', 'buse'] },
+                { q: 'Choose the correct plural of "key":', a: 'keys', opts: ['keies', 'keys', 'keyes', 'keyies', 'keis'] },
+            ];
+            const item = getMock(simplePlurals);
+            questionText = item.q;
+            correctAnswer = item.a;
+            options = [...item.opts].sort(() => Math.random() - 0.5);
+            inputMode = 'multiple_choice';
+        } else {
+            const spellingItem = getMock(SPELLING_QUIZ);
+            // The options array holds the sliced sentence. We can rebuild the target sentence!
+            const sentence = spellingItem.options.slice(0, 4).join(' ');
+            questionText = `Find the spelling error:\n\n"${sentence}"`;
+            options = [...spellingItem.options];
+            // The correctAnswer is A, B, C, D, E. Map it to the actual option text:
+            const ansIndex = spellingItem.correctAnswer.charCodeAt(0) - 65; // 'A' -> 0
+            correctAnswer = options[ansIndex];
+            inputMode = 'multiple_choice'; // Overwrite to MC since we use options now
+        }
 
     } else if (strandId === 'grammar') {
         const grammarItem = getMock(GRAMMAR_QUIZ);

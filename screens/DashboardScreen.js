@@ -208,6 +208,75 @@ export const DashboardScreen = ({ navigation }) => {
             <ScrollView style={{ width: '100%' }} contentContainerStyle={styles.scroll}>
                 <Text style={styles.title}>{profile ? `${profile.name}'s Progress 📊` : 'Your Progress 🏆'}</Text>
 
+                {/* --- ZERO-COST STUDY DIGEST --- */}
+                {(() => {
+                    const playedSubjects = subjects.filter(s => stats.bySubject?.[s]?.total > 0);
+                    const overallAcc = stats.totalQuestions > 0
+                        ? Math.round((stats.totalCorrect / stats.totalQuestions) * 100)
+                        : 0;
+
+                    let strongestSubj = null;
+                    let strongestAcc = -1;
+                    playedSubjects.forEach(s => {
+                        const a = getAcc(s);
+                        if (a > strongestAcc) {
+                            strongestAcc = a;
+                            strongestSubj = s;
+                        }
+                    });
+
+                    let weakestTopic = null;
+                    let weakestAcc = 101;
+                    playedSubjects.forEach(s => {
+                        const topicsObj = stats.bySubject[s]?.topics || {};
+                        Object.entries(topicsObj).forEach(([tName, tData]) => {
+                            if (!tData || !tData.total) return;
+                            const acc = Array.isArray(tData.recentScores) && tData.recentScores.length > 0
+                                ? Math.round(tData.recentScores.reduce((a, b) => a + b, 0) / tData.recentScores.length)
+                                : Math.round((tData.correct / tData.total) * 100);
+                            if (acc < weakestAcc) {
+                                weakestAcc = acc;
+                                weakestTopic = { subject: s, topic: tName, acc };
+                            }
+                        });
+                    });
+
+                    const unplayedSubj = subjects.find(s => !stats.bySubject?.[s]?.total);
+
+                    return (
+                        <View style={{
+                            width: '100%',
+                            backgroundColor: '#FFFFFF',
+                            borderRadius: 16,
+                            padding: 16,
+                            marginBottom: 22,
+                            borderLeftWidth: 4,
+                            borderLeftColor: Colors.primary,
+                            elevation: 2,
+                        }}>
+                            <Text style={{ fontSize: 16, fontWeight: '800', color: Colors.text, marginBottom: 8 }}>
+                                📋 Study Digest (Parent & Tutor Summary)
+                            </Text>
+                            <Text style={{ fontSize: 13, color: '#334155', marginBottom: 5, lineHeight: 19 }}>
+                                • <Text style={{ fontWeight: '700' }}>Overall:</Text> {stats.totalQuestions} questions answered ({overallAcc}% accuracy) • 🔥 {stats.streak || 0}-day streak.
+                            </Text>
+                            {strongestSubj && (
+                                <Text style={{ fontSize: 13, color: '#334155', marginBottom: 5, lineHeight: 19 }}>
+                                    • <Text style={{ fontWeight: '700' }}>Strongest Subject:</Text> {strongestSubj} ({strongestAcc}% recent average).
+                                </Text>
+                            )}
+                            <Text style={{ fontSize: 13, color: '#334155', lineHeight: 19 }}>
+                                • <Text style={{ fontWeight: '700' }}>Next Focus:</Text>{' '}
+                                {weakestTopic && weakestTopic.acc < 75
+                                    ? `${weakestTopic.subject} — ${weakestTopic.topic} (${weakestTopic.acc}%). Try a Smart Quick Play or Dojo drill next.`
+                                    : unplayedSubj
+                                        ? `Explore ${unplayedSubj} next to build balanced 11+ coverage.`
+                                        : 'Great consistency! Challenge a harder belt in the Training Dojos.'}
+                            </Text>
+                        </View>
+                    );
+                })()}
+
                 {/* --- CHARTS ROW --- */}
                 <Text style={styles.sectionHeader}>Overview</Text>
                 <Text style={styles.hintText}>Tap charts to enlarge</Text>
@@ -217,12 +286,20 @@ export const DashboardScreen = ({ navigation }) => {
                     <TouchableOpacity style={styles.miniChartCard} onPress={() => setExpandedChart('bar')}>
                         <Text style={styles.miniChartTitle}>Accuracy</Text>
                         <View style={styles.miniBarContainer}>
-                            {subjects.map((subj) => (
-                                <View key={subj} style={[styles.miniBar, {
-                                    height: Math.max(getAcc(subj), 10) + '%',
-                                    backgroundColor: getSubjColor(subj)
-                                }]} />
-                            ))}
+                            {subjects.map((subj) => {
+                                const acc = getAcc(subj);
+                                const shortLabel = subj === 'Non-Verbal' ? 'NVR' : subj === 'Verbal' ? 'VR' : subj === 'English' ? 'Eng' : 'Maths';
+                                return (
+                                    <View key={subj} style={{ alignItems: 'center', flex: 1, height: '100%', justifyContent: 'flex-end' }}>
+                                        <Text style={{ fontSize: 10, color: '#64748B', marginBottom: 2 }}>{acc}%</Text>
+                                        <View style={[styles.miniBar, {
+                                            height: Math.max(acc * 0.72, 6) + '%',
+                                            backgroundColor: getSubjColor(subj)
+                                        }]} />
+                                        <Text style={{ fontSize: 10, fontWeight: '600', color: '#475569', marginTop: 4 }}>{shortLabel}</Text>
+                                    </View>
+                                );
+                            })}
                         </View>
                     </TouchableOpacity>
 
@@ -230,7 +307,18 @@ export const DashboardScreen = ({ navigation }) => {
                     <TouchableOpacity style={styles.miniChartCard} onPress={() => setExpandedChart('pie')}>
                         <Text style={styles.miniChartTitle}>Time Spent</Text>
                         <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
-                            <PieChart data={pieData} size={100} onPress={() => setExpandedChart('pie')} />
+                            <PieChart data={pieData} size={88} onPress={() => setExpandedChart('pie')} />
+                        </View>
+                        <View style={{ flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: 6, marginTop: 4 }}>
+                            {subjects.map((subj) => {
+                                const shortLabel = subj === 'Non-Verbal' ? 'NVR' : subj === 'Verbal' ? 'VR' : subj === 'English' ? 'Eng' : 'Maths';
+                                return (
+                                    <View key={subj} style={{ flexDirection: 'row', alignItems: 'center', gap: 3 }}>
+                                        <View style={{ width: 7, height: 7, borderRadius: 4, backgroundColor: getSubjColor(subj) }} />
+                                        <Text style={{ fontSize: 10, color: '#475569' }}>{shortLabel}</Text>
+                                    </View>
+                                );
+                            })}
                         </View>
                     </TouchableOpacity>
                 </View>
