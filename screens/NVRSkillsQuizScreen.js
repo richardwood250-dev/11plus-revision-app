@@ -5,6 +5,7 @@ import { Colors } from '../constants/Colors';
 import { generateNVRSkillQuestion, getNVRStrandInstruction, NVR_STRANDS } from '../utils/nvrSkills';
 import { NVRVisualizer } from '../components/NVRVisualizer';
 import { saveDojoRecord } from '../utils/storage';
+import { SenseiExplainButton } from '../components/SenseiExplainButton';
 
 const { width } = Dimensions.get('window');
 const MAX_QUESTIONS = 10;
@@ -251,6 +252,14 @@ export const NVRSkillsQuizScreen = () => {
                             })}
                         </View>
  
+                        <SenseiExplainButton
+                            subject="Non-Verbal Reasoning"
+                            topic={strandTitle || strandId}
+                            question={question.questionText}
+                            mode={isAnswered ? 'explain' : 'hint'}
+                            fallbackReasoning={question.logic || ''}
+                        />
+
                         {isAnswered && (
                             <TouchableOpacity 
                                 style={[styles.nextBtn, { backgroundColor: beltColor }]}

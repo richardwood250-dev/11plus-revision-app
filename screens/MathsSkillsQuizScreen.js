@@ -6,6 +6,7 @@ import { generateMathsSkillQuestion, getMathsStrandInstruction, MATHS_STRANDS } 
 import { NumPad } from '../components/NumPad';
 import { GeometryVisualizer } from '../components/GeometryVisualizer';
 import { saveDojoRecord } from '../utils/storage';
+import { SenseiExplainButton } from '../components/SenseiExplainButton';
 
 const { width } = Dimensions.get('window');
 const MAX_QUESTIONS = 10;
@@ -39,6 +40,8 @@ export const MathsSkillsQuizScreen = () => {
     const [question, setQuestion] = useState(null);
     const [userAnswer, setUserAnswer] = useState('');
     const [isAnswered, setIsAnswered] = useState(false);
+    const [wasIncorrect, setWasIncorrect] = useState(false);
+    const [submittedWrongAnswer, setSubmittedWrongAnswer] = useState('');
     const [feedbackColor, setFeedbackColor] = useState(Colors.text); // For text flashing
     const [quizComplete, setQuizComplete] = useState(false);
     const [elapsedTime, setElapsedTime] = useState(0);
@@ -91,6 +94,20 @@ export const MathsSkillsQuizScreen = () => {
         setUserAnswer(prev => prev.slice(0, -1));
     };
 
+    const advanceMathsQuestion = (nextScore) => {
+        if (currentQuestionNumber >= Math.min(MAX_QUESTIONS, 20)) {
+            stopTimer();
+            saveDojoRecord(strandId, beltId, nextScore, Math.min(MAX_QUESTIONS, 20), elapsedTime)
+                .then(newRec => setIsNewRecord(newRec));
+            setQuizComplete(true);
+        } else {
+            setWasIncorrect(false);
+            setSubmittedWrongAnswer('');
+            setCurrentQuestionNumber(prev => prev + 1);
+            loadNextQuestion();
+        }
+    };
+
     const handleSubmit = () => {
         if (isAnswered || !userAnswer) return;
         
@@ -98,27 +115,16 @@ export const MathsSkillsQuizScreen = () => {
         const isCorrect = userAnswer === question.correctAnswer;
         
         if (isCorrect) {
-            setScore(prev => prev + 1);
+            const nextScore = score + 1;
+            setScore(nextScore);
             setFeedbackColor('#10B981'); // Green
+            setTimeout(() => advanceMathsQuestion(nextScore), 500);
         } else {
             setFeedbackColor('#EF4444'); // Red
+            setSubmittedWrongAnswer(userAnswer);
             setUserAnswer(question.correctAnswer); // Show correct answer
+            setWasIncorrect(true);
         }
-
-        setTimeout(() => {
-            if (currentQuestionNumber >= Math.min(MAX_QUESTIONS, 20)) {
-                stopTimer();
-                const finalScore = isCorrect ? score + 1 : score;
-                // Save Dojo record locally
-                saveDojoRecord(strandId, beltId, finalScore, Math.min(MAX_QUESTIONS, 20), elapsedTime)
-                    .then(newRec => setIsNewRecord(newRec));
-                
-                setQuizComplete(true);
-            } else {
-                setCurrentQuestionNumber(prev => prev + 1);
-                loadNextQuestion();
-            }
-        }, isCorrect ? 500 : 1500);
     };
 
     const formatTime = (seconds) => {
@@ -237,6 +243,26 @@ export const MathsSkillsQuizScreen = () => {
                                {userAnswer || '?'}
                            </Text>
                         </View>
+
+                        <SenseiExplainButton
+                            subject="Maths"
+                            topic={strandTitle || strandId}
+                            question={question.questionText}
+                            userAnswer={submittedWrongAnswer}
+                            correctAnswer={String(question.correctAnswer)}
+                            mode={wasIncorrect ? 'explain' : 'hint'}
+                        />
+
+                        {wasIncorrect && (
+                            <TouchableOpacity
+                                style={[styles.startBtn, { backgroundColor: Colors.primary, marginTop: 12 }]}
+                                onPress={() => advanceMathsQuestion(score)}
+                            >
+                                <Text style={styles.startBtnText}>
+                                    {currentQuestionNumber >= Math.min(MAX_QUESTIONS, 20) ? 'Finish Training >' : 'Next Question >'}
+                                </Text>
+                            </TouchableOpacity>
+                        )}
                     </View>
 
                     {question.isAssisted && (

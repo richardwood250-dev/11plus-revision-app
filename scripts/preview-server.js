@@ -60,8 +60,8 @@ const server = http.createServer((req, res) => {
   const parsedUrl = new URL(req.url, `http://localhost:${PORT}`);
   let pathname = decodeURIComponent(parsedUrl.pathname);
 
-  // Local handler for /api/explain
-  if (pathname === '/api/explain' && req.method === 'POST') {
+  // Local handler for /api/explain and /api/comprehension
+  if ((pathname === '/api/explain' || pathname === '/api/comprehension') && req.method === 'POST') {
     let rawBody = '';
     req.on('data', chunk => { rawBody += chunk; });
     req.on('end', async () => {
@@ -86,8 +86,9 @@ const server = http.createServer((req, res) => {
           res.end();
         },
       };
-      const explainHandler = require(path.resolve(__dirname, '..', 'api', 'explain.js'));
-      await explainHandler(req, expressLikeRes);
+      const handlerFile = pathname === '/api/comprehension' ? 'comprehension.js' : 'explain.js';
+      const apiHandler = require(path.resolve(__dirname, '..', 'api', handlerFile));
+      await apiHandler(req, expressLikeRes);
     });
     return;
   }

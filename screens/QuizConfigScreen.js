@@ -13,7 +13,8 @@ import { VR_COMPOUND_QUIZ } from '../data/vr_compound';
 import { VERBAL_QUIZ } from '../data/verbal';
 import { nonverbal } from '../data/nonverbal';
 
-import { fetchEnglishQuiz } from '../utils/englishLoader';
+import { fetchEnglishQuiz, generateAIComprehension } from '../utils/englishLoader';
+import { showAlert } from '../utils/alert';
 
 // Helper for true randomization (Fisher-Yates) instead of biased Math.random sort
 const shuffleArray = (array) => {
@@ -363,6 +364,26 @@ export const QuizConfigScreen = ({ route }) => {
                     >
                         <Text style={styles.startBtnText}>{isLoading ? 'Loading...' : 'Start Test 🚀'}</Text>
                     </TouchableOpacity>
+
+                    {subject === 'English' && topic === 'Comprehension' && (
+                        <TouchableOpacity
+                            style={[styles.startBtn, { backgroundColor: '#1E293B', marginTop: 12, opacity: isLoading ? 0.7 : 1 }]}
+                            disabled={isLoading}
+                            onPress={async () => {
+                                try {
+                                    setIsLoading(true);
+                                    const data = await generateAIComprehension();
+                                    setIsLoading(false);
+                                    navigation.navigate('Comprehension', { ...data, title: data.title || 'AI Comprehension' });
+                                } catch (err) {
+                                    setIsLoading(false);
+                                    showAlert('AI Passage Unavailable', err.message);
+                                }
+                            }}
+                        >
+                            <Text style={styles.startBtnText}>✨ Generate Fresh AI Passage</Text>
+                        </TouchableOpacity>
+                    )}
                 </View>
             </View>
         </ScrollView>

@@ -1,0 +1,4106 @@
+[
+  {
+    "word": "Abandon",
+    "type": "Verb",
+    "definition": "To leave or give up completely.",
+    "synonyms": "Desert, Forsake, Quit",
+    "antonyms": "Keep, Retain, Stay",
+    "belt": "White"
+  },
+  {
+    "word": "Anxious",
+    "type": "Adjective",
+    "definition": "Feeling worried or nervous.",
+    "synonyms": "Uneasy, Apprehensive, Worried",
+    "antonyms": "Confident, Calm, Serene",
+    "belt": "White"
+  },
+  {
+    "word": "Boast",
+    "type": "Verb",
+    "definition": "Talk with excessive pride.",
+    "synonyms": "Brag, Crow, Gloat",
+    "antonyms": "Modest, Humble, Belittle",
+    "belt": "White"
+  },
+  {
+    "word": "Consent",
+    "type": "Noun",
+    "definition": "Permission for something to happen.",
+    "synonyms": "Agreement, Assent, Approval",
+    "antonyms": "Refusal, Dissent, Denial",
+    "belt": "White"
+  },
+  {
+    "word": "Dread",
+    "type": "Verb",
+    "definition": "Anticipate with great apprehension.",
+    "synonyms": "Fear, Foreboding, Terror",
+    "antonyms": "Confidence, Courage, Bravery",
+    "belt": "White"
+  },
+  {
+    "word": "Envy",
+    "type": "Noun",
+    "definition": "A feeling of discontented longing.",
+    "synonyms": "Jealousy, Resentment, Covetousness",
+    "antonyms": "Goodwill, Contentment, Satisfaction",
+    "belt": "White"
+  },
+  {
+    "word": "Fierce",
+    "type": "Adjective",
+    "definition": "Having an aggressive or powerful intensity.",
+    "synonyms": "Ferocious, Savage, Wild",
+    "antonyms": "Gentle, Mild, Tame",
+    "belt": "White"
+  },
+  {
+    "word": "Grief",
+    "type": "Noun",
+    "definition": "Deep sorrow, especially caused by death.",
+    "synonyms": "Sorrow, Anguish, Misery",
+    "antonyms": "Joy, Happiness, Delight",
+    "belt": "White"
+  },
+  {
+    "word": "Haste",
+    "type": "Noun",
+    "definition": "Excessive speed or urgency.",
+    "synonyms": "Speed, Hurry, Rush",
+    "antonyms": "Slowness, Delay, Caution",
+    "belt": "White"
+  },
+  {
+    "word": "Idle",
+    "type": "Adjective",
+    "definition": "Avoiding work; lazy.",
+    "synonyms": "Lazy, Inactive, Sluggish",
+    "antonyms": "Busy, Active, Industrious",
+    "belt": "White"
+  },
+  {
+    "word": "Jeer",
+    "type": "Verb",
+    "definition": "Make rude and mocking remarks.",
+    "synonyms": "Mock, Taunt, Ridicule",
+    "antonyms": "Cheer, Praise, Applaud",
+    "belt": "White"
+  },
+  {
+    "word": "Keen",
+    "type": "Adjective",
+    "definition": "Having or showing eagerness or enthusiasm.",
+    "synonyms": "Eager, Sharp, Intense",
+    "antonyms": "Dull, Indifferent, Apathetic",
+    "belt": "White"
+  },
+  {
+    "word": "Limb",
+    "type": "Noun",
+    "definition": "An arm or leg of a person or four-legged animal.",
+    "synonyms": "Appendage, Member, Extremity",
+    "antonyms": "Body, Trunk, Torso",
+    "belt": "White"
+  },
+  {
+    "word": "Marvel",
+    "type": "Verb",
+    "definition": "Be filled with wonder or astonishment.",
+    "synonyms": "Wonder, Awe, Amaze",
+    "antonyms": "Ignore, Disregard, Overlook",
+    "belt": "White"
+  },
+  {
+    "word": "Neglect",
+    "type": "Verb",
+    "definition": "Fail to care for properly.",
+    "synonyms": "Ignore, Disregard, Slight",
+    "antonyms": "Cherish, Nurture, Attend",
+    "belt": "White"
+  },
+  {
+    "word": "Oath",
+    "type": "Noun",
+    "definition": "A solemn promise.",
+    "synonyms": "Vow, Pledge, Promise",
+    "antonyms": "Lie, Falsehood, Denial",
+    "belt": "White"
+  },
+  {
+    "word": "Pave",
+    "type": "Verb",
+    "definition": "Cover (a piece of ground) with concrete, asphalt, etc.",
+    "synonyms": "Surface, Cover, Tile",
+    "antonyms": "Strip, Uncover, Excavate",
+    "belt": "White"
+  },
+  {
+    "word": "Quench",
+    "type": "Verb",
+    "definition": "Satisfy (one's thirst) by drinking.",
+    "synonyms": "Satisfy, Slake, Extinguish",
+    "antonyms": "Ignite, Kindle, Parched",
+    "belt": "White"
+  },
+  {
+    "word": "Realm",
+    "type": "Noun",
+    "definition": "A kingdom.",
+    "synonyms": "Kingdom, Domain, Empire",
+    "antonyms": "None",
+    "belt": "White"
+  },
+  {
+    "word": "Seize",
+    "type": "Verb",
+    "definition": "Take hold of suddenly and forcibly.",
+    "synonyms": "Grab, Grasp, Snatch",
+    "antonyms": "Release, Let go, Drop",
+    "belt": "White"
+  },
+  {
+    "word": "Abundant",
+    "type": "Adjective",
+    "definition": "Existing in large quantities.",
+    "synonyms": "Plentiful, Copious, Ample",
+    "antonyms": "Scarce, Sparse, Rare",
+    "belt": "Blue"
+  },
+  {
+    "word": "Barren",
+    "type": "Adjective",
+    "definition": "Too poor to produce much or any vegetation.",
+    "synonyms": "Infertile, Arid, Desolate",
+    "antonyms": "Fertile, Fruitful, Lush",
+    "belt": "Blue"
+  },
+  {
+    "word": "Candid",
+    "type": "Adjective",
+    "definition": "Truthful and straightforward.",
+    "synonyms": "Frank, Honest, Open",
+    "antonyms": "Secretive, Deceitful, Guarded",
+    "belt": "Blue"
+  },
+  {
+    "word": "Diligent",
+    "type": "Adjective",
+    "definition": "Having or showing care in one's work.",
+    "synonyms": "Hard-working, Assiduous, Conscientious",
+    "antonyms": "Lazy, Negligent, Careless",
+    "belt": "Blue"
+  },
+  {
+    "word": "Emerge",
+    "type": "Verb",
+    "definition": "Move out of or away from something and come into view.",
+    "synonyms": "Appear, Surface, Arise",
+    "antonyms": "Disappear, Vanish, Fade",
+    "belt": "Blue"
+  },
+  {
+    "word": "Famine",
+    "type": "Noun",
+    "definition": "Extreme scarcity of food.",
+    "synonyms": "Starvation, Scarcity, Drought",
+    "antonyms": "Feast, Plenty, Abundance",
+    "belt": "Blue"
+  },
+  {
+    "word": "Gaunt",
+    "type": "Adjective",
+    "definition": "Lean and haggard, especially because of suffering.",
+    "synonyms": "Haggard, Thin, Emaciated",
+    "antonyms": "Plump, Chubby, Healthy",
+    "belt": "Blue"
+  },
+  {
+    "word": "Hinder",
+    "type": "Verb",
+    "definition": "Create difficulties for, resulting in delay.",
+    "synonyms": "Hamper, Obstruct, Impede",
+    "antonyms": "Help, Assist, Facilitate",
+    "belt": "Blue"
+  },
+  {
+    "word": "Ignite",
+    "type": "Verb",
+    "definition": "Catch fire or cause to catch fire.",
+    "synonyms": "Kindle, Spark, Light",
+    "antonyms": "Extinguish, Quench, Douse",
+    "belt": "Blue"
+  },
+  {
+    "word": "Jolly",
+    "type": "Adjective",
+    "definition": "Happy and cheerful.",
+    "synonyms": "Cheerful, Jovial, Merry",
+    "antonyms": "Miserable, Gloomy, Sad",
+    "belt": "Blue"
+  },
+  {
+    "word": "Knack",
+    "type": "Noun",
+    "definition": "An acquired or natural skill at performing a task.",
+    "synonyms": "Talent, Skill, Aptitude",
+    "antonyms": "Inability, Ineptitude, Clumsiness",
+    "belt": "Blue"
+  },
+  {
+    "word": "Linger",
+    "type": "Verb",
+    "definition": "Stay in a place longer than necessary.",
+    "synonyms": "Stay, Remain, Loiter",
+    "antonyms": "Leave, Depart, Rush",
+    "belt": "Blue"
+  },
+  {
+    "word": "Mingle",
+    "type": "Verb",
+    "definition": "Mix or cause to mix together.",
+    "synonyms": "Mix, Blend, Socialize",
+    "antonyms": "Separate, Divide, Isolate",
+    "belt": "Blue"
+  },
+  {
+    "word": "Nuisance",
+    "type": "Noun",
+    "definition": "A person, thing, or circumstance causing inconvenience or annoyance.",
+    "synonyms": "Annoyance, Pest, Bother",
+    "antonyms": "Blessing, Help, Comfort",
+    "belt": "Blue"
+  },
+  {
+    "word": "Obstinate",
+    "type": "Adjective",
+    "definition": "Stubbornly refusing to change one's opinion.",
+    "synonyms": "Stubborn, Pig-headed, Headstrong",
+    "antonyms": "Flexible, Compliant, Yielding",
+    "belt": "Blue"
+  },
+  {
+    "word": "Parched",
+    "type": "Adjective",
+    "definition": "Dried out with heat.",
+    "synonyms": "Dry, Arid, Thirsty",
+    "antonyms": "Wet, Moist, Drenched",
+    "belt": "Blue"
+  },
+  {
+    "word": "Quest",
+    "type": "Noun",
+    "definition": "A long or arduous search for something.",
+    "synonyms": "Search, Hunt, Pursuit",
+    "antonyms": "Retreat, Withdrawal, Surrender",
+    "belt": "Blue"
+  },
+  {
+    "word": "Rural",
+    "type": "Adjective",
+    "definition": "In, relating to, or characteristic of the countryside.",
+    "synonyms": "Country, Rustic, Pastoral",
+    "antonyms": "Urban, City, Metropolitan",
+    "belt": "Blue"
+  },
+  {
+    "word": "Savage",
+    "type": "Adjective",
+    "definition": "Fierce, violent, and uncontrolled.",
+    "synonyms": "Fierce, Wild, Ferocious",
+    "antonyms": "Tame, Gentle, Civilized",
+    "belt": "Blue"
+  },
+  {
+    "word": "Thrive",
+    "type": "Verb",
+    "definition": "Grow or develop well or vigorously.",
+    "synonyms": "Flourish, Prosper, Bloom",
+    "antonyms": "Fail, Wither, Decline",
+    "belt": "Blue"
+  },
+  {
+    "word": "Acquiesce",
+    "type": "Verb",
+    "definition": "Accept something reluctantly but without protest.",
+    "synonyms": "Permit, Allow, Yield",
+    "antonyms": "Forbid, Protest, Refuse",
+    "belt": "Black"
+  },
+  {
+    "word": "Benevolent",
+    "type": "Adjective",
+    "definition": "Well meaning and kindly.",
+    "synonyms": "Kind, Charitable, Benign",
+    "antonyms": "Malevolent, Cruel, Unkind",
+    "belt": "Black"
+  },
+  {
+    "word": "Cacophony",
+    "type": "Noun",
+    "definition": "A harsh, discordant mixture of sounds.",
+    "synonyms": "Din, Racket, Discord",
+    "antonyms": "Harmony, Melody, Silence",
+    "belt": "Black"
+  },
+  {
+    "word": "Deceit",
+    "type": "Noun",
+    "definition": "The action or practice of deceiving someone.",
+    "synonyms": "Deception, Fraud, Trickery",
+    "antonyms": "Honesty, Truth, Sincerity",
+    "belt": "Black"
+  },
+  {
+    "word": "Eccentric",
+    "type": "Adjective",
+    "definition": "Unconventional and slightly strange.",
+    "synonyms": "Unconventional, Odd, Quirky",
+    "antonyms": "Conventional, Normal, Regular",
+    "belt": "Black"
+  },
+  {
+    "word": "Facetious",
+    "type": "Adjective",
+    "definition": "Treating serious issues with inappropriate humor.",
+    "synonyms": "Flippant, Glib, Waggish",
+    "antonyms": "Serious, Grave, Solemn",
+    "belt": "Black"
+  },
+  {
+    "word": "Garrulous",
+    "type": "Adjective",
+    "definition": "Excessively talkative.",
+    "synonyms": "Talkative, Loquacious, Chatty",
+    "antonyms": "Taciturn, Silent, Quiet",
+    "belt": "Black"
+  },
+  {
+    "word": "Haughty",
+    "type": "Adjective",
+    "definition": "Arrogantly superior and disdainful.",
+    "synonyms": "Arrogant, Conceited, Proud",
+    "antonyms": "Humble, Modest, Meek",
+    "belt": "Black"
+  },
+  {
+    "word": "Impeccable",
+    "type": "Adjective",
+    "definition": "In accordance with the highest standards; faultless.",
+    "synonyms": "Flawless, Perfect, Pristine",
+    "antonyms": "Imperfect, Flawed, Defective",
+    "belt": "Black"
+  },
+  {
+    "word": "Judicious",
+    "type": "Adjective",
+    "definition": "Having, showing, or done with good judgment.",
+    "synonyms": "Wise, Sensible, Prudent",
+    "antonyms": "Foolish, Rash, Imprudent",
+    "belt": "Black"
+  },
+  {
+    "word": "Kindle",
+    "type": "Verb",
+    "definition": "Light or set on fire; arouse or inspire.",
+    "synonyms": "Ignite, Spark, Inspire",
+    "antonyms": "Extinguish, Quench, Dampen",
+    "belt": "Black"
+  },
+  {
+    "word": "Lethargic",
+    "type": "Adjective",
+    "definition": "Affected by lethargy; sluggish and apathetic.",
+    "synonyms": "Sluggish, Inert, Listless",
+    "antonyms": "Energetic, Active, Lively",
+    "belt": "Black"
+  },
+  {
+    "word": "Malicious",
+    "type": "Adjective",
+    "definition": "Characterized by malice; intending or intended to do harm.",
+    "synonyms": "Spiteful, Vengeful, Mean",
+    "antonyms": "Benevolent, Kind, Friendly",
+    "belt": "Black"
+  },
+  {
+    "word": "Nostalgia",
+    "type": "Noun",
+    "definition": "A sentimental longing for the past.",
+    "synonyms": "Reminiscence, Remembrance, Longing",
+    "antonyms": "Future-focused (concept)",
+    "belt": "Black"
+  },
+  {
+    "word": "Obscure",
+    "type": "Adjective",
+    "definition": "Not discovered or known about; uncertain.",
+    "synonyms": "Unclear, Vague, Unknown",
+    "antonyms": "Clear, Obvious, Famous",
+    "belt": "Black"
+  },
+  {
+    "word": "Placate",
+    "type": "Verb",
+    "definition": "Make (someone) less angry or hostile.",
+    "synonyms": "Pacify, Calm, Soothe",
+    "antonyms": "Provoke, Anger, Enrage",
+    "belt": "Black"
+  },
+  {
+    "word": "Quandary",
+    "type": "Noun",
+    "definition": "A state of perplexity or uncertainty.",
+    "synonyms": "Dilemma, Predicament, Puzzle",
+    "antonyms": "Solution, Certainty, Resolution",
+    "belt": "Black"
+  },
+  {
+    "word": "Replicant",
+    "type": "Noun",
+    "definition": "A copy or exact reproduction.",
+    "synonyms": "Replica, Copy, Duplicate",
+    "antonyms": "Original, Prototype, Master",
+    "belt": "Black"
+  },
+  {
+    "word": "Superfluous",
+    "type": "Adjective",
+    "definition": "Unnecessary, especially through being more than enough.",
+    "synonyms": "Excess, Surplus, Redundant",
+    "antonyms": "Necessary, Essential, Scant",
+    "belt": "Black"
+  },
+  {
+    "word": "Treacherous",
+    "type": "Adjective",
+    "definition": "Guilty of or involving betrayal or deception.",
+    "synonyms": "Traitorous, Disloyal, Dangerous",
+    "antonyms": "Loyal, Faithful, Safe",
+    "belt": "Black"
+  },
+  {
+    "word": "Abrupt",
+    "type": "Adjective",
+    "definition": "Sudden and unexpected.",
+    "synonyms": "Sudden, Hasty, Blunt",
+    "antonyms": "Gradual, Gentle, Smooth",
+    "belt": "White"
+  },
+  {
+    "word": "Absorb",
+    "type": "Verb",
+    "definition": "Soak up liquid or take in information.",
+    "synonyms": "Soak, Assimilate, Engross",
+    "antonyms": "Repel, Eject, Emit",
+    "belt": "White"
+  },
+  {
+    "word": "Accurate",
+    "type": "Adjective",
+    "definition": "Correct in all details; exact.",
+    "synonyms": "Exact, Precise, True",
+    "antonyms": "Inaccurate, Wrong, Flawed",
+    "belt": "White"
+  },
+  {
+    "word": "Achieve",
+    "type": "Verb",
+    "definition": "Successfully reach a desired goal.",
+    "synonyms": "Accomplish, Attain, Fulfil",
+    "antonyms": "Fail, Miss, Lose",
+    "belt": "White"
+  },
+  {
+    "word": "Admire",
+    "type": "Verb",
+    "definition": "Regard with respect or warm approval.",
+    "synonyms": "Respect, Esteem, Praise",
+    "antonyms": "Despise, Scorn, Loath",
+    "belt": "White"
+  },
+  {
+    "word": "Admit",
+    "type": "Verb",
+    "definition": "Confess to be true or allow entry.",
+    "synonyms": "Confess, Acknowledge, Allow",
+    "antonyms": "Deny, Conceal, Refuse",
+    "belt": "White"
+  },
+  {
+    "word": "Advance",
+    "type": "Verb",
+    "definition": "Move forward in a purposeful way.",
+    "synonyms": "Proceed, Progress, Promote",
+    "antonyms": "Retreat, Recede, Delay",
+    "belt": "White"
+  },
+  {
+    "word": "Affection",
+    "type": "Noun",
+    "definition": "A gentle feeling of fondness or liking.",
+    "synonyms": "Fondness, Love, Warmth",
+    "antonyms": "Hatred, Dislike, Coldness",
+    "belt": "White"
+  },
+  {
+    "word": "Agile",
+    "type": "Adjective",
+    "definition": "Able to move quickly and easily.",
+    "synonyms": "Nimble, Spry, Lithe",
+    "antonyms": "Clumsy, Stiff, Awkward",
+    "belt": "White"
+  },
+  {
+    "word": "Alert",
+    "type": "Adjective",
+    "definition": "Quick to notice any unusual or dangerous circumstances.",
+    "synonyms": "Vigilant, Watchful, Attentive",
+    "antonyms": "Unaware, Careless, Drowsy",
+    "belt": "White"
+  },
+  {
+    "word": "Allow",
+    "type": "Verb",
+    "definition": "Give permission for something to happen.",
+    "synonyms": "Permit, Grant, Enable",
+    "antonyms": "Forbid, Prohibit, Ban",
+    "belt": "White"
+  },
+  {
+    "word": "Alter",
+    "type": "Verb",
+    "definition": "Change in character or composition.",
+    "synonyms": "Change, Modify, Adjust",
+    "antonyms": "Preserve, Keep, Maintain",
+    "belt": "White"
+  },
+  {
+    "word": "Amaze",
+    "type": "Verb",
+    "definition": "Surprise someone greatly; fill with astonishment.",
+    "synonyms": "Astonish, Astound, Stun",
+    "antonyms": "Bore, Expect, Dull",
+    "belt": "White"
+  },
+  {
+    "word": "Ambition",
+    "type": "Noun",
+    "definition": "A strong desire to do or achieve something.",
+    "synonyms": "Aspiration, Goal, Drive",
+    "antonyms": "Apathy, Laziness, Indifference",
+    "belt": "White"
+  },
+  {
+    "word": "Amuse",
+    "type": "Verb",
+    "definition": "Cause someone to find something funny or entertaining.",
+    "synonyms": "Entertain, Delight, Tickle",
+    "antonyms": "Bore, Annoy, Bore",
+    "belt": "White"
+  },
+  {
+    "word": "Ancient",
+    "type": "Adjective",
+    "definition": "Belonging to the very distant past.",
+    "synonyms": "Old, Antique, Archaic",
+    "antonyms": "Modern, New, Recent",
+    "belt": "White"
+  },
+  {
+    "word": "Anger",
+    "type": "Noun",
+    "definition": "A strong feeling of annoyance or hostility.",
+    "synonyms": "Rage, Fury, Wrath",
+    "antonyms": "Calm, Peace, Patience",
+    "belt": "White"
+  },
+  {
+    "word": "Announce",
+    "type": "Verb",
+    "definition": "Make a formal public statement.",
+    "synonyms": "Declare, Proclaim, State",
+    "antonyms": "Conceal, Hide, Suppress",
+    "belt": "White"
+  },
+  {
+    "word": "Annual",
+    "type": "Adjective",
+    "definition": "Occurring once every year.",
+    "synonyms": "Yearly, Seasonal",
+    "antonyms": "Daily, Weekly, Monthly",
+    "belt": "White"
+  },
+  {
+    "word": "Appear",
+    "type": "Verb",
+    "definition": "Come into sight; become visible.",
+    "synonyms": "Emerge, Surface, Arrive",
+    "antonyms": "Vanish, Disappear, Fade",
+    "belt": "White"
+  },
+  {
+    "word": "Approve",
+    "type": "Verb",
+    "definition": "Officially agree to or accept as satisfactory.",
+    "synonyms": "Endorse, Accept, Sanction",
+    "antonyms": "Reject, Disapprove, Veto",
+    "belt": "White"
+  },
+  {
+    "word": "Argue",
+    "type": "Verb",
+    "definition": "Exchange or express diverging views, often heatedly.",
+    "synonyms": "Debate, Dispute, Quarrel",
+    "antonyms": "Agree, Harmonize, Concur",
+    "belt": "White"
+  },
+  {
+    "word": "Arrange",
+    "type": "Verb",
+    "definition": "Put things in a neat, attractive, or required order.",
+    "synonyms": "Organize, Order, Plan",
+    "antonyms": "Scatter, Disorder, Jumble",
+    "belt": "White"
+  },
+  {
+    "word": "Arrive",
+    "type": "Verb",
+    "definition": "Reach a place at the end of a journey.",
+    "synonyms": "Reach, Come, Enter",
+    "antonyms": "Depart, Leave, Exit",
+    "belt": "White"
+  },
+  {
+    "word": "Assemble",
+    "type": "Verb",
+    "definition": "Gather together in one place for a common purpose.",
+    "synonyms": "Gather, Collect, Build",
+    "antonyms": "Disperse, Scatter, Dismantle",
+    "belt": "White"
+  },
+  {
+    "word": "Assist",
+    "type": "Verb",
+    "definition": "Help someone, typically by doing a share of the work.",
+    "synonyms": "Help, Aid, Support",
+    "antonyms": "Hinder, Obstruct, Impede",
+    "belt": "White"
+  },
+  {
+    "word": "Assume",
+    "type": "Verb",
+    "definition": "Suppose to be the case, without proof.",
+    "synonyms": "Presume, Suppose, Guess",
+    "antonyms": "Prove, Know, Doubt",
+    "belt": "White"
+  },
+  {
+    "word": "Attempt",
+    "type": "Verb",
+    "definition": "Make an effort to achieve or complete something.",
+    "synonyms": "Try, Endeavour, Strive",
+    "antonyms": "Quit, Abandon, Neglect",
+    "belt": "White"
+  },
+  {
+    "word": "Attend",
+    "type": "Verb",
+    "definition": "Be present at an event or pay attention.",
+    "synonyms": "Visit, Frequent, Heed",
+    "antonyms": "Miss, Skip, Ignore",
+    "belt": "White"
+  },
+  {
+    "word": "Attract",
+    "type": "Verb",
+    "definition": "Cause to come to a place or participate.",
+    "synonyms": "Draw, Lure, Entice",
+    "antonyms": "Repel, Deter, Drive away",
+    "belt": "White"
+  },
+  {
+    "word": "Avoid",
+    "type": "Verb",
+    "definition": "Keep away from or stop oneself from doing something.",
+    "synonyms": "Evade, Dodge, Shun",
+    "antonyms": "Confront, Face, Seek",
+    "belt": "White"
+  },
+  {
+    "word": "Awake",
+    "type": "Adjective",
+    "definition": "Not asleep; alert.",
+    "synonyms": "Conscious, Alert, Vigilant",
+    "antonyms": "Asleep, Drowsy, Unconscious",
+    "belt": "White"
+  },
+  {
+    "word": "Awkward",
+    "type": "Adjective",
+    "definition": "Causing difficulty; hard to do or deal with.",
+    "synonyms": "Clumsy, Tricky, Embarrassing",
+    "antonyms": "Graceful, Easy, Smooth",
+    "belt": "White"
+  },
+  {
+    "word": "Baffled",
+    "type": "Adjective",
+    "definition": "Totally bewildered or perplexed.",
+    "synonyms": "Confused, Puzzled, Stumped",
+    "antonyms": "Clear, Certain, Enlightened",
+    "belt": "White"
+  },
+  {
+    "word": "Banish",
+    "type": "Verb",
+    "definition": "Send someone away as an official punishment.",
+    "synonyms": "Exile, Expel, Oust",
+    "antonyms": "Welcome, Admit, Recall",
+    "belt": "White"
+  },
+  {
+    "word": "Bargain",
+    "type": "Noun",
+    "definition": "An agreement or something bought cheaply.",
+    "synonyms": "Deal, Pact, Discount",
+    "antonyms": "Overcharge, Rip-off",
+    "belt": "White"
+  },
+  {
+    "word": "Bashful",
+    "type": "Adjective",
+    "definition": "Reluctant to draw attention to oneself; shy.",
+    "synonyms": "Shy, Timid, Modest",
+    "antonyms": "Bold, Confident, Brazen",
+    "belt": "White"
+  },
+  {
+    "word": "Beacon",
+    "type": "Noun",
+    "definition": "A fire or light set up in a high position as a signal.",
+    "synonyms": "Signal, Lighthouse, Guide",
+    "antonyms": "Darkness, Shadow",
+    "belt": "White"
+  },
+  {
+    "word": "Bitter",
+    "type": "Adjective",
+    "definition": "Having a sharp, pungent taste; feeling resentful.",
+    "synonyms": "Sour, Sharp, Resentful",
+    "antonyms": "Sweet, Mild, Kind",
+    "belt": "White"
+  },
+  {
+    "word": "Blame",
+    "type": "Verb",
+    "definition": "Assign responsibility for a fault or wrong.",
+    "synonyms": "Accuse, Fault, Censure",
+    "antonyms": "Praise, Excuse, Absolve",
+    "belt": "White"
+  },
+  {
+    "word": "Bleak",
+    "type": "Adjective",
+    "definition": "Cold, miserable, and lacking vegetation or hope.",
+    "synonyms": "Grim, Dreary, Bare",
+    "antonyms": "Cheerful, Bright, Lush",
+    "belt": "White"
+  },
+  {
+    "word": "Blend",
+    "type": "Verb",
+    "definition": "Mix a substance with another so they combine.",
+    "synonyms": "Mix, Mingle, Merge",
+    "antonyms": "Separate, Divide, Split",
+    "belt": "White"
+  },
+  {
+    "word": "Bliss",
+    "type": "Noun",
+    "definition": "Perfect happiness; great joy.",
+    "synonyms": "Joy, Ecstasy, Delight",
+    "antonyms": "Misery, Sorrow, Agony",
+    "belt": "White"
+  },
+  {
+    "word": "Blunt",
+    "type": "Adjective",
+    "definition": "Having a worn-down edge; uncompromisingly forthright.",
+    "synonyms": "Dull, Frank, Direct",
+    "antonyms": "Sharp, Tactful, Subtle",
+    "belt": "White"
+  },
+  {
+    "word": "Bold",
+    "type": "Adjective",
+    "definition": "Showing a willingness to take risks; confident.",
+    "synonyms": "Brave, Daring, Fearless",
+    "antonyms": "Timid, Shy, Cowardly",
+    "belt": "White"
+  },
+  {
+    "word": "Border",
+    "type": "Noun",
+    "definition": "A line separating two countries or areas.",
+    "synonyms": "Boundary, Edge, Frontier",
+    "antonyms": "Centre, Interior, Inside",
+    "belt": "White"
+  },
+  {
+    "word": "Bother",
+    "type": "Verb",
+    "definition": "Take the trouble to do something; annoy.",
+    "synonyms": "Annoy, Pester, Trouble",
+    "antonyms": "Comfort, Soothe, Please",
+    "belt": "White"
+  },
+  {
+    "word": "Brave",
+    "type": "Adjective",
+    "definition": "Ready to face and endure danger or pain.",
+    "synonyms": "Courageous, Bold, Valiant",
+    "antonyms": "Cowardly, Fearful, Timid",
+    "belt": "White"
+  },
+  {
+    "word": "Brief",
+    "type": "Adjective",
+    "definition": "Of short duration; concise.",
+    "synonyms": "Short, Concise, Fleeting",
+    "antonyms": "Long, Lengthy, Endless",
+    "belt": "White"
+  },
+  {
+    "word": "Brisk",
+    "type": "Adjective",
+    "definition": "Active, fast, and energetic.",
+    "synonyms": "Quick, Lively, Energetic",
+    "antonyms": "Slow, Sluggish, Lazy",
+    "belt": "White"
+  },
+  {
+    "word": "Brittle",
+    "type": "Adjective",
+    "definition": "Hard but liable to break or shatter easily.",
+    "synonyms": "Fragile, Crisp, Delicate",
+    "antonyms": "Tough, Flexible, Sturdy",
+    "belt": "White"
+  },
+  {
+    "word": "Broad",
+    "type": "Adjective",
+    "definition": "Having a distance larger than usual from side to side.",
+    "synonyms": "Wide, Expansive, Vast",
+    "antonyms": "Narrow, Thin, Cramped",
+    "belt": "White"
+  },
+  {
+    "word": "Brutal",
+    "type": "Adjective",
+    "definition": "Savagely violent or harsh.",
+    "synonyms": "Cruel, Savage, Harsh",
+    "antonyms": "Gentle, Kind, Merciful",
+    "belt": "White"
+  },
+  {
+    "word": "Burden",
+    "type": "Noun",
+    "definition": "A load, typically a heavy one.",
+    "synonyms": "Load, Weight, Duty",
+    "antonyms": "Relief, Ease, Aid",
+    "belt": "White"
+  },
+  {
+    "word": "Calm",
+    "type": "Adjective",
+    "definition": "Not showing or feeling nervousness or anger.",
+    "synonyms": "Peaceful, Serene, Placid",
+    "antonyms": "Agitated, Stormy, Chaotic",
+    "belt": "White"
+  },
+  {
+    "word": "Capture",
+    "type": "Verb",
+    "definition": "Take into one's possession or control by force.",
+    "synonyms": "Seize, Catch, Trap",
+    "antonyms": "Release, Free, Liberate",
+    "belt": "White"
+  },
+  {
+    "word": "Careless",
+    "type": "Adjective",
+    "definition": "Not giving sufficient attention to avoiding harm or errors.",
+    "synonyms": "Negligent, Reckless, Sloppy",
+    "antonyms": "Careful, Attentive, Cautious",
+    "belt": "White"
+  },
+  {
+    "word": "Caution",
+    "type": "Noun",
+    "definition": "Care taken to avoid danger or mistakes.",
+    "synonyms": "Care, Prudence, Wariness",
+    "antonyms": "Recklessness, Rashness",
+    "belt": "White"
+  },
+  {
+    "word": "Cease",
+    "type": "Verb",
+    "definition": "Bring or come to an end.",
+    "synonyms": "Stop, Halt, End",
+    "antonyms": "Start, Begin, Continue",
+    "belt": "White"
+  },
+  {
+    "word": "Certain",
+    "type": "Adjective",
+    "definition": "Known for sure; established beyond doubt.",
+    "synonyms": "Sure, Definite, Positive",
+    "antonyms": "Uncertain, Doubtful, Vague",
+    "belt": "White"
+  },
+  {
+    "word": "Challenge",
+    "type": "Noun",
+    "definition": "A call to take part in a contest or difficult task.",
+    "synonyms": "Test, Dare, Obstacle",
+    "antonyms": "Ease, Certainty, Agreement",
+    "belt": "White"
+  },
+  {
+    "word": "Charm",
+    "type": "Noun",
+    "definition": "The power or quality of delighting or attracting.",
+    "synonyms": "Appeal, Allure, Grace",
+    "antonyms": "Repulsion, Ugliness",
+    "belt": "White"
+  },
+  {
+    "word": "Chase",
+    "type": "Verb",
+    "definition": "Pursue in order to catch or catch up with.",
+    "synonyms": "Pursue, Hunt, Follow",
+    "antonyms": "Flee, Escape, Retreat",
+    "belt": "White"
+  },
+  {
+    "word": "Cheerful",
+    "type": "Adjective",
+    "definition": "Noticeably happy and optimistic.",
+    "synonyms": "Happy, Joyful, Merry",
+    "antonyms": "Gloomy, Sad, Morose",
+    "belt": "White"
+  },
+  {
+    "word": "Cherish",
+    "type": "Verb",
+    "definition": "Protect and care for lovingly.",
+    "synonyms": "Treasure, Value, Nurture",
+    "antonyms": "Neglect, Abandon, Despise",
+    "belt": "White"
+  },
+  {
+    "word": "Chief",
+    "type": "Adjective",
+    "definition": "Most important; main.",
+    "synonyms": "Main, Primary, Principal",
+    "antonyms": "Minor, Secondary, Trivial",
+    "belt": "White"
+  },
+  {
+    "word": "Chilly",
+    "type": "Adjective",
+    "definition": "Uncomfortably or noticeably cold.",
+    "synonyms": "Cold, Crisp, Frosty",
+    "antonyms": "Warm, Hot, Mild",
+    "belt": "White"
+  },
+  {
+    "word": "Claim",
+    "type": "Verb",
+    "definition": "State or assert that something is the case.",
+    "synonyms": "Assert, Declare, Demand",
+    "antonyms": "Deny, Disclaim, Renounce",
+    "belt": "White"
+  },
+  {
+    "word": "Clarity",
+    "type": "Noun",
+    "definition": "The quality of being coherent and intelligible.",
+    "synonyms": "Clearness, Precision, Lucidity",
+    "antonyms": "Confusion, Vagueness, Obscurity",
+    "belt": "White"
+  },
+  {
+    "word": "Clash",
+    "type": "Verb",
+    "definition": "Meet and come into violent conflict.",
+    "synonyms": "Collide, Conflict, Disagree",
+    "antonyms": "Agree, Harmonize, Match",
+    "belt": "White"
+  },
+  {
+    "word": "Clever",
+    "type": "Adjective",
+    "definition": "Quick to understand, learn, and devise ideas.",
+    "synonyms": "Smart, Bright, Ingenious",
+    "antonyms": "Foolish, Dull, Stupid",
+    "belt": "White"
+  },
+  {
+    "word": "Clumsy",
+    "type": "Adjective",
+    "definition": "Awkward in movement or in handling things.",
+    "synonyms": "Awkward, Bungling, Ungainly",
+    "antonyms": "Graceful, Agile, Skilful",
+    "belt": "White"
+  },
+  {
+    "word": "Coarse",
+    "type": "Adjective",
+    "definition": "Rough or loose in texture or grain; rude.",
+    "synonyms": "Rough, Harsh, Crude",
+    "antonyms": "Smooth, Fine, Polite",
+    "belt": "White"
+  },
+  {
+    "word": "Coax",
+    "type": "Verb",
+    "definition": "Gently and persistently persuade someone.",
+    "synonyms": "Persuade, Cajole, Urge",
+    "antonyms": "Force, Bully, Deter",
+    "belt": "White"
+  },
+  {
+    "word": "Collapse",
+    "type": "Verb",
+    "definition": "Suddenly fall down or give way.",
+    "synonyms": "Crumble, Fall, Cave in",
+    "antonyms": "Rise, Stand, Strengthen",
+    "belt": "White"
+  },
+  {
+    "word": "Collect",
+    "type": "Verb",
+    "definition": "Bring or gather together.",
+    "synonyms": "Gather, Assemble, Accumulate",
+    "antonyms": "Scatter, Disperse, Distribute",
+    "belt": "White"
+  },
+  {
+    "word": "Combine",
+    "type": "Verb",
+    "definition": "Join or merge to form a single unit.",
+    "synonyms": "Merge, Unite, Blend",
+    "antonyms": "Separate, Divide, Split",
+    "belt": "White"
+  },
+  {
+    "word": "Comfort",
+    "type": "Noun",
+    "definition": "A state of physical ease and freedom from pain.",
+    "synonyms": "Ease, Relief, Solace",
+    "antonyms": "Discomfort, Pain, Distress",
+    "belt": "White"
+  },
+  {
+    "word": "Command",
+    "type": "Verb",
+    "definition": "Give an authoritative order.",
+    "synonyms": "Order, Direct, Instruct",
+    "antonyms": "Obey, Follow, Request",
+    "belt": "White"
+  },
+  {
+    "word": "Common",
+    "type": "Adjective",
+    "definition": "Occurring, found, or done often.",
+    "synonyms": "Usual, Ordinary, Frequent",
+    "antonyms": "Rare, Unusual, Scarce",
+    "belt": "White"
+  },
+  {
+    "word": "Compact",
+    "type": "Adjective",
+    "definition": "Closely and neatly packed together; small.",
+    "synonyms": "Dense, Tight, Small",
+    "antonyms": "Loose, Bulky, Sprawling",
+    "belt": "White"
+  },
+  {
+    "word": "Compare",
+    "type": "Verb",
+    "definition": "Estimate, measure, or note the similarity or dissimilarity.",
+    "synonyms": "Contrast, Match, Weigh",
+    "antonyms": "Separate, Ignore",
+    "belt": "White"
+  },
+  {
+    "word": "Compete",
+    "type": "Verb",
+    "definition": "Strive to gain or win something by defeating others.",
+    "synonyms": "Contend, Rival, Vie",
+    "antonyms": "Cooperate, Surrender",
+    "belt": "White"
+  },
+  {
+    "word": "Complain",
+    "type": "Verb",
+    "definition": "Express dissatisfaction or annoyance about something.",
+    "synonyms": "Grumble, Protest, Moan",
+    "antonyms": "Praise, Applaud, Accept",
+    "belt": "White"
+  },
+  {
+    "word": "Complete",
+    "type": "Adjective",
+    "definition": "Having all the necessary or appropriate parts.",
+    "synonyms": "Whole, Entire, Finished",
+    "antonyms": "Incomplete, Partial, Lacking",
+    "belt": "White"
+  },
+  {
+    "word": "Conceal",
+    "type": "Verb",
+    "definition": "Keep from sight; hide.",
+    "synonyms": "Hide, Cover, Mask",
+    "antonyms": "Reveal, Expose, Show",
+    "belt": "White"
+  },
+  {
+    "word": "Concern",
+    "type": "Noun",
+    "definition": "Anxiety; worry; a matter of interest.",
+    "synonyms": "Worry, Care, Anxiety",
+    "antonyms": "Indifference, Calm, Relief",
+    "belt": "White"
+  },
+  {
+    "word": "Conclude",
+    "type": "Verb",
+    "definition": "Bring or come to an end; arrive at a judgment.",
+    "synonyms": "Finish, End, Deduce",
+    "antonyms": "Begin, Start, Commence",
+    "belt": "White"
+  },
+  {
+    "word": "Confess",
+    "type": "Verb",
+    "definition": "Admit or state that one has committed a crime or fault.",
+    "synonyms": "Admit, Own up, Acknowledge",
+    "antonyms": "Deny, Conceal, Hide",
+    "belt": "White"
+  },
+  {
+    "word": "Confident",
+    "type": "Adjective",
+    "definition": "Feeling or showing confidence in oneself.",
+    "synonyms": "Assured, Certain, Bold",
+    "antonyms": "Doubtful, Shy, Nervous",
+    "belt": "White"
+  },
+  {
+    "word": "Confuse",
+    "type": "Verb",
+    "definition": "Make someone bewildered or perplexed.",
+    "synonyms": "Bewilder, Puzzle, Muddy",
+    "antonyms": "Clarify, Enlighten, Explain",
+    "belt": "White"
+  },
+  {
+    "word": "Connect",
+    "type": "Verb",
+    "definition": "Bring together or into contact so a link is established.",
+    "synonyms": "Join, Link, Attach",
+    "antonyms": "Disconnect, Separate, Detach",
+    "belt": "White"
+  },
+  {
+    "word": "Conquer",
+    "type": "Verb",
+    "definition": "Overcome and take control of by military force or effort.",
+    "synonyms": "Defeat, Overcome, Vanquish",
+    "antonyms": "Surrender, Lose, Yield",
+    "belt": "White"
+  },
+  {
+    "word": "Consider",
+    "type": "Verb",
+    "definition": "Think carefully about, typically before making a decision.",
+    "synonyms": "Ponder, Reflect, Weigh",
+    "antonyms": "Ignore, Dismiss, Neglect",
+    "belt": "White"
+  },
+  {
+    "word": "Constant",
+    "type": "Adjective",
+    "definition": "Occurring continuously over a period of time.",
+    "synonyms": "Steady, Continuous, Unchanging",
+    "antonyms": "Variable, Occasional, Inconstant",
+    "belt": "White"
+  },
+  {
+    "word": "Construct",
+    "type": "Verb",
+    "definition": "Build or erect something.",
+    "synonyms": "Build, Erect, Assemble",
+    "antonyms": "Destroy, Demolish, Wreck",
+    "belt": "White"
+  },
+  {
+    "word": "Consume",
+    "type": "Verb",
+    "definition": "Eat, drink, or ingest; use up.",
+    "synonyms": "Devour, Eat, Exhaust",
+    "antonyms": "Save, Conserve, Preserve",
+    "belt": "White"
+  },
+  {
+    "word": "Contain",
+    "type": "Verb",
+    "definition": "Have or hold someone or something within.",
+    "synonyms": "Hold, Include, Enclose",
+    "antonyms": "Exclude, Release, Lack",
+    "belt": "White"
+  },
+  {
+    "word": "Content",
+    "type": "Adjective",
+    "definition": "In a state of peaceful happiness.",
+    "synonyms": "Satisfied, Pleased, Happy",
+    "antonyms": "Discontented, Restless, Sad",
+    "belt": "White"
+  },
+  {
+    "word": "Continue",
+    "type": "Verb",
+    "definition": "Persist in an activity or process.",
+    "synonyms": "Persist, Proceed, Carry on",
+    "antonyms": "Stop, Cease, Halt",
+    "belt": "White"
+  },
+  {
+    "word": "Contrast",
+    "type": "Noun",
+    "definition": "The state of being strikingly different from something else.",
+    "synonyms": "Difference, Comparison, Disparity",
+    "antonyms": "Similarity, Likeness, Sameness",
+    "belt": "White"
+  },
+  {
+    "word": "Control",
+    "type": "Verb",
+    "definition": "Determine the behaviour or supervise the running of.",
+    "synonyms": "Manage, Direct, Govern",
+    "antonyms": "Neglect, Surrender, Lose",
+    "belt": "White"
+  },
+  {
+    "word": "Convenient",
+    "type": "Adjective",
+    "definition": "Fitting in well with a person's needs and plans.",
+    "synonyms": "Handy, Useful, Suitable",
+    "antonyms": "Inconvenient, Awkward, Unsuitable",
+    "belt": "White"
+  },
+  {
+    "word": "Convert",
+    "type": "Verb",
+    "definition": "Cause to change in form, character, or function.",
+    "synonyms": "Transform, Change, Adapt",
+    "antonyms": "Preserve, Keep, Maintain",
+    "belt": "White"
+  },
+  {
+    "word": "Convince",
+    "type": "Verb",
+    "definition": "Cause someone to believe firmly in the truth of something.",
+    "synonyms": "Persuade, Assure, Sway",
+    "antonyms": "Dissuade, Deter, Doubt",
+    "belt": "White"
+  },
+  {
+    "word": "Cooperate",
+    "type": "Verb",
+    "definition": "Work jointly towards the same end.",
+    "synonyms": "Collaborate, Assist, Unite",
+    "antonyms": "Oppose, Hinder, Compete",
+    "belt": "White"
+  },
+  {
+    "word": "Copy",
+    "type": "Noun",
+    "definition": "A thing made to be similar or identical to another.",
+    "synonyms": "Duplicate, Replica, Imitation",
+    "antonyms": "Original, Prototype",
+    "belt": "White"
+  },
+  {
+    "word": "Courage",
+    "type": "Noun",
+    "definition": "The ability to do something that frightens one.",
+    "synonyms": "Bravery, Valour, Nerve",
+    "antonyms": "Cowardice, Fear, Timidity",
+    "belt": "White"
+  },
+  {
+    "word": "Courteous",
+    "type": "Adjective",
+    "definition": "Polite, respectful, or considerate in manner.",
+    "synonyms": "Polite, Civil, Gracious",
+    "antonyms": "Rude, Impolite, Discourteous",
+    "belt": "White"
+  },
+  {
+    "word": "Coward",
+    "type": "Noun",
+    "definition": "A person who lacks the courage to do dangerous things.",
+    "synonyms": "Wimp, Craven, Quitter",
+    "antonyms": "Hero, Champion, Brave",
+    "belt": "White"
+  },
+  {
+    "word": "Create",
+    "type": "Verb",
+    "definition": "Bring something into existence.",
+    "synonyms": "Invent, Make, Produce",
+    "antonyms": "Destroy, Ruin, Demolish",
+    "belt": "White"
+  },
+  {
+    "word": "Creep",
+    "type": "Verb",
+    "definition": "Move slowly and carefully in order to avoid being heard.",
+    "synonyms": "Crawl, Sneak, Tiploe",
+    "antonyms": "Sprint, Dash, Stomp",
+    "belt": "White"
+  },
+  {
+    "word": "Crisp",
+    "type": "Adjective",
+    "definition": "Firm, dry, and brittle; briskly cold.",
+    "synonyms": "Crunchy, Brittle, Fresh",
+    "antonyms": "Soggy, Limp, Soft",
+    "belt": "White"
+  },
+  {
+    "word": "Crucial",
+    "type": "Adjective",
+    "definition": "Decisive or critical, especially in the success of something.",
+    "synonyms": "Vital, Essential, Critical",
+    "antonyms": "Trivial, Minor, Unimportant",
+    "belt": "White"
+  },
+  {
+    "word": "Cruel",
+    "type": "Adjective",
+    "definition": "Wilfully causing pain or suffering to others.",
+    "synonyms": "Brutal, Harsh, Merciless",
+    "antonyms": "Kind, Gentle, Merciful",
+    "belt": "White"
+  },
+  {
+    "word": "Crumble",
+    "type": "Verb",
+    "definition": "Break or fall apart into small fragments.",
+    "synonyms": "Disintegrate, Collapse, Decay",
+    "antonyms": "Build, Solidify, Unite",
+    "belt": "White"
+  },
+  {
+    "word": "Curious",
+    "type": "Adjective",
+    "definition": "Eager to know or learn something; strange.",
+    "synonyms": "Inquisitive, Interested, Odd",
+    "antonyms": "Indifferent, Uninterested, Ordinary",
+    "belt": "White"
+  },
+  {
+    "word": "Current",
+    "type": "Adjective",
+    "definition": "Belonging to the present time.",
+    "synonyms": "Present, Modern, Ongoing",
+    "antonyms": "Past, Outdated, Former",
+    "belt": "White"
+  },
+  {
+    "word": "Custom",
+    "type": "Noun",
+    "definition": "A traditional and widely accepted way of behaving.",
+    "synonyms": "Tradition, Habit, Practice",
+    "antonyms": "Novelty, Innovation",
+    "belt": "White"
+  },
+  {
+    "word": "Damage",
+    "type": "Noun",
+    "definition": "Physical harm caused to something.",
+    "synonyms": "Harm, Injury, Destruction",
+    "antonyms": "Repair, Benefit, Healing",
+    "belt": "White"
+  },
+  {
+    "word": "Damp",
+    "type": "Adjective",
+    "definition": "Slightly wet.",
+    "synonyms": "Moist, Humid, Clammy",
+    "antonyms": "Dry, Parched, Arid",
+    "belt": "White"
+  },
+  {
+    "word": "Danger",
+    "type": "Noun",
+    "definition": "The possibility of suffering harm or injury.",
+    "synonyms": "Peril, Risk, Hazard",
+    "antonyms": "Safety, Security, Shelter",
+    "belt": "White"
+  },
+  {
+    "word": "Daring",
+    "type": "Adjective",
+    "definition": "Adventurous or audaciously bold.",
+    "synonyms": "Bold, Brave, Fearless",
+    "antonyms": "Timid, Cautious, Cowardly",
+    "belt": "White"
+  },
+  {
+    "word": "Dazzle",
+    "type": "Verb",
+    "definition": "Blind temporarily with a sudden bright light; amaze.",
+    "synonyms": "Blind, Impress, Astound",
+    "antonyms": "Dull, Bore, Dim",
+    "belt": "White"
+  },
+  {
+    "word": "Deadly",
+    "type": "Adjective",
+    "definition": "Causing or able to cause death.",
+    "synonyms": "Fatal, Lethal, Mortal",
+    "antonyms": "Harmless, Safe, Benign",
+    "belt": "White"
+  },
+  {
+    "word": "Deafening",
+    "type": "Adjective",
+    "definition": "So loud as to make it impossible to hear anything else.",
+    "synonyms": "Thunderous, Ear-splitting, Loud",
+    "antonyms": "Quiet, Silent, Soft",
+    "belt": "White"
+  },
+  {
+    "word": "Debate",
+    "type": "Noun",
+    "definition": "A formal discussion on a particular topic.",
+    "synonyms": "Argument, Discussion, Dispute",
+    "antonyms": "Agreement, Harmony, Silence",
+    "belt": "White"
+  },
+  {
+    "word": "Decay",
+    "type": "Verb",
+    "definition": "Rot or decompose through the action of bacteria and fungi.",
+    "synonyms": "Rot, Decompose, Spoil",
+    "antonyms": "Grow, Flourish, Bloom",
+    "belt": "White"
+  },
+  {
+    "word": "Decide",
+    "type": "Verb",
+    "definition": "Come to a resolution in the mind as a result of consideration.",
+    "synonyms": "Choose, Determine, Resolve",
+    "antonyms": "Hesitate, Waver, Doubt",
+    "belt": "White"
+  },
+  {
+    "word": "Declare",
+    "type": "Verb",
+    "definition": "Say something in a solemn and emphatic manner.",
+    "synonyms": "Announce, State, Proclaim",
+    "antonyms": "Conceal, Deny, Whisper",
+    "belt": "White"
+  },
+  {
+    "word": "Decline",
+    "type": "Verb",
+    "definition": "Become smaller, fewer, or less; politely refuse.",
+    "synonyms": "Decrease, Drop, Refuse",
+    "antonyms": "Increase, Rise, Accept",
+    "belt": "White"
+  },
+  {
+    "word": "Decorate",
+    "type": "Verb",
+    "definition": "Make something look more attractive by adding extra items.",
+    "synonyms": "Adorn, Embellish, Ornament",
+    "antonyms": "Strip, Bare, Deface",
+    "belt": "White"
+  },
+  {
+    "word": "Decrease",
+    "type": "Verb",
+    "definition": "Make or become smaller or fewer in size or amount.",
+    "synonyms": "Reduce, Lower, Diminish",
+    "antonyms": "Increase, Grow, Expand",
+    "belt": "White"
+  },
+  {
+    "word": "Dedicate",
+    "type": "Verb",
+    "definition": "Devote time or effort to a particular task or purpose.",
+    "synonyms": "Devote, Commit, Pledge",
+    "antonyms": "Neglect, Abandon, Waste",
+    "belt": "White"
+  },
+  {
+    "word": "Defeat",
+    "type": "Verb",
+    "definition": "Win a victory over someone in a battle or contest.",
+    "synonyms": "Beat, Conquer, Overcome",
+    "antonyms": "Lose, Surrender, Fail",
+    "belt": "White"
+  },
+  {
+    "word": "Defend",
+    "type": "Verb",
+    "definition": "Resist an attack made on someone or something.",
+    "synonyms": "Protect, Guard, Shield",
+    "antonyms": "Attack, Assault, Abandon",
+    "belt": "White"
+  },
+  {
+    "word": "Defiant",
+    "type": "Adjective",
+    "definition": "Showing defiance; boldly resisting.",
+    "synonyms": "Rebellious, Bold, Obstinate",
+    "antonyms": "Obedient, Submissive, Meek",
+    "belt": "White"
+  },
+  {
+    "word": "Delay",
+    "type": "Verb",
+    "definition": "Make someone or something late or slow.",
+    "synonyms": "Postpone, Stall, Defer",
+    "antonyms": "Hasten, Hurry, Advance",
+    "belt": "White"
+  },
+  {
+    "word": "Delicate",
+    "type": "Adjective",
+    "definition": "Very fine in texture or structure; easily broken.",
+    "synonyms": "Fragile, Dainty, Subtle",
+    "antonyms": "Sturdy, Tough, Coarse",
+    "belt": "White"
+  },
+  {
+    "word": "Delight",
+    "type": "Noun",
+    "definition": "Great pleasure.",
+    "synonyms": "Joy, Pleasure, Bliss",
+    "antonyms": "Displeasure, Sorrow, Misery",
+    "belt": "White"
+  },
+  {
+    "word": "Deliver",
+    "type": "Verb",
+    "definition": "Bring and hand over a letter, parcel, or goods.",
+    "synonyms": "Transport, Bring, Supply",
+    "antonyms": "Keep, Retain, Withhold",
+    "belt": "White"
+  },
+  {
+    "word": "Demand",
+    "type": "Verb",
+    "definition": "Ask authoritatively or insistently.",
+    "synonyms": "Require, Insist, Claim",
+    "antonyms": "Offer, Request, Surrender",
+    "belt": "White"
+  },
+  {
+    "word": "Demolish",
+    "type": "Verb",
+    "definition": "Pull or knock down a building.",
+    "synonyms": "Destroy, Wreck, Raze",
+    "antonyms": "Build, Construct, Erect",
+    "belt": "White"
+  },
+  {
+    "word": "Dense",
+    "type": "Adjective",
+    "definition": "Closely compacted in substance; thick.",
+    "synonyms": "Thick, Solid, Crowded",
+    "antonyms": "Sparse, Thin, Light",
+    "belt": "White"
+  },
+  {
+    "word": "Deny",
+    "type": "Verb",
+    "definition": "State that one refuses to admit the truth or existence of.",
+    "synonyms": "Refuse, Reject, Contradict",
+    "antonyms": "Admit, Confirm, Accept",
+    "belt": "White"
+  },
+  {
+    "word": "Depart",
+    "type": "Verb",
+    "definition": "Leave, especially in order to start a journey.",
+    "synonyms": "Leave, Exit, Go",
+    "antonyms": "Arrive, Stay, Return",
+    "belt": "White"
+  },
+  {
+    "word": "Depend",
+    "type": "Verb",
+    "definition": "Be controlled or determined by; rely on.",
+    "synonyms": "Rely, Trust, Count on",
+    "antonyms": "Distrust, Doubt",
+    "belt": "White"
+  },
+  {
+    "word": "Depict",
+    "type": "Verb",
+    "definition": "Show or represent by a drawing, painting, or words.",
+    "synonyms": "Portray, Illustrate, Describe",
+    "antonyms": "Conceal, Distort",
+    "belt": "White"
+  },
+  {
+    "word": "Desert",
+    "type": "Verb",
+    "definition": "Abandon a person, cause, or organization.",
+    "synonyms": "Abandon, Forsake, Leave",
+    "antonyms": "Stay, Support, Aid",
+    "belt": "White"
+  },
+  {
+    "word": "Deserve",
+    "type": "Verb",
+    "definition": "Do something or have qualities worthy of reward or punishment.",
+    "synonyms": "Earn, Merit, Warrant",
+    "antonyms": "Forfeit, Lose",
+    "belt": "White"
+  },
+  {
+    "word": "Despair",
+    "type": "Noun",
+    "definition": "The complete loss or absence of hope.",
+    "synonyms": "Hopelessness, Gloom, Misery",
+    "antonyms": "Hope, Optimism, Joy",
+    "belt": "White"
+  },
+  {
+    "word": "Despise",
+    "type": "Verb",
+    "definition": "Feel contempt or a deep repugnance for.",
+    "synonyms": "Hate, Loathe, Scorn",
+    "antonyms": "Admire, Love, Respect",
+    "belt": "White"
+  },
+  {
+    "word": "Destroy",
+    "type": "Verb",
+    "definition": "Put an end to the existence of something by damaging it.",
+    "synonyms": "Ruin, Wreck, Demolish",
+    "antonyms": "Create, Build, Repair",
+    "belt": "White"
+  },
+  {
+    "word": "Detail",
+    "type": "Noun",
+    "definition": "An individual fact or item.",
+    "synonyms": "Particular, Feature, Element",
+    "antonyms": "Whole, Summary, Outline",
+    "belt": "White"
+  },
+  {
+    "word": "Detect",
+    "type": "Verb",
+    "definition": "Discover or identify the presence or existence of.",
+    "synonyms": "Discover, Spot, Notice",
+    "antonyms": "Miss, Overlook, Ignore",
+    "belt": "White"
+  },
+  {
+    "word": "Determined",
+    "type": "Adjective",
+    "definition": "Having made a firm decision and being resolved not to change it.",
+    "synonyms": "Resolute, Firm, Steadfast",
+    "antonyms": "Hesitant, Weak, Indecisive",
+    "belt": "White"
+  },
+  {
+    "word": "Devote",
+    "type": "Verb",
+    "definition": "Give all or most of one's time or resources to.",
+    "synonyms": "Dedicate, Commit, Pledge",
+    "antonyms": "Neglect, Waste, Abandon",
+    "belt": "White"
+  },
+  {
+    "word": "Devour",
+    "type": "Verb",
+    "definition": "Eat food or prey hungrily or quickly.",
+    "synonyms": "Gobble, Consume, Swallow",
+    "antonyms": "Nibble, Fast, Starve",
+    "belt": "White"
+  },
+  {
+    "word": "Abolish",
+    "type": "Verb",
+    "definition": "Formally put an end to a system, practice, or institution.",
+    "synonyms": "End, Cancel, Eliminate",
+    "antonyms": "Establish, Create, Keep",
+    "belt": "Blue"
+  },
+  {
+    "word": "Absurd",
+    "type": "Adjective",
+    "definition": "Wildly unreasonable, illogical, or inappropriate.",
+    "synonyms": "Ridiculous, Silly, Foolish",
+    "antonyms": "Sensible, Logical, Reasonable",
+    "belt": "Blue"
+  },
+  {
+    "word": "Abuse",
+    "type": "Verb",
+    "definition": "Use something to bad effect or for a bad purpose.",
+    "synonyms": "Misuse, Mistreat, Harm",
+    "antonyms": "Respect, Cherish, Protect",
+    "belt": "Blue"
+  },
+  {
+    "word": "Accelerate",
+    "type": "Verb",
+    "definition": "Begin to move more quickly.",
+    "synonyms": "Speed up, Hasten, Quicken",
+    "antonyms": "Slow, Decelerate, Delay",
+    "belt": "Blue"
+  },
+  {
+    "word": "Accessible",
+    "type": "Adjective",
+    "definition": "Able to be reached or entered.",
+    "synonyms": "Reachable, Available, Open",
+    "antonyms": "Inaccessible, Closed, Remote",
+    "belt": "Blue"
+  },
+  {
+    "word": "Accommodate",
+    "type": "Verb",
+    "definition": "Fit in with the wishes or needs of; provide lodging.",
+    "synonyms": "House, Adapt, Assist",
+    "antonyms": "Hinder, Reject, Disoblige",
+    "belt": "Blue"
+  },
+  {
+    "word": "Accompany",
+    "type": "Verb",
+    "definition": "Go somewhere with someone as a companion.",
+    "synonyms": "Escort, Join, Attend",
+    "antonyms": "Abandon, Leave, Desert",
+    "belt": "Blue"
+  },
+  {
+    "word": "Accumulate",
+    "type": "Verb",
+    "definition": "Gather together or acquire an increasing number or quantity.",
+    "synonyms": "Gather, Collect, Amass",
+    "antonyms": "Disperse, Scatter, Spend",
+    "belt": "Blue"
+  },
+  {
+    "word": "Accuse",
+    "type": "Verb",
+    "definition": "Charge someone with an offence or crime.",
+    "synonyms": "Blame, Charge, Indict",
+    "antonyms": "Defend, Exonerate, Praise",
+    "belt": "Blue"
+  },
+  {
+    "word": "Acknowledge",
+    "type": "Verb",
+    "definition": "Accept or admit the existence or truth of.",
+    "synonyms": "Admit, Recognize, Accept",
+    "antonyms": "Deny, Ignore, Reject",
+    "belt": "Blue"
+  },
+  {
+    "word": "Acquire",
+    "type": "Verb",
+    "definition": "Buy or obtain an asset or object for oneself.",
+    "synonyms": "Obtain, Gain, Get",
+    "antonyms": "Lose, Forfeit, Surrender",
+    "belt": "Blue"
+  },
+  {
+    "word": "Adapt",
+    "type": "Verb",
+    "definition": "Make something suitable for a new use or purpose.",
+    "synonyms": "Adjust, Modify, Alter",
+    "antonyms": "Maintain, Keep, Resist",
+    "belt": "Blue"
+  },
+  {
+    "word": "Adequate",
+    "type": "Adjective",
+    "definition": "Satisfactory or acceptable in quality or quantity.",
+    "synonyms": "Sufficient, Enough, Acceptable",
+    "antonyms": "Inadequate, Insufficient, Lacking",
+    "belt": "Blue"
+  },
+  {
+    "word": "Adhere",
+    "type": "Verb",
+    "definition": "Stick fast to a surface or substance; follow closely.",
+    "synonyms": "Stick, Cling, Follow",
+    "antonyms": "Detach, Separate, Abandon",
+    "belt": "Blue"
+  },
+  {
+    "word": "Adjacent",
+    "type": "Adjective",
+    "definition": "Next to or adjoining something else.",
+    "synonyms": "Next to, Bordering, Neighbouring",
+    "antonyms": "Distant, Remote, Separate",
+    "belt": "Blue"
+  },
+  {
+    "word": "Adjust",
+    "type": "Verb",
+    "definition": "Alter or move something slightly to achieve the desired fit.",
+    "synonyms": "Adapt, Modify, Regulate",
+    "antonyms": "Disrupt, Disturb, Leave",
+    "belt": "Blue"
+  },
+  {
+    "word": "Adore",
+    "type": "Verb",
+    "definition": "Love and respect someone deeply.",
+    "synonyms": "Love, Worship, Idolize",
+    "antonyms": "Hate, Detest, Despise",
+    "belt": "Blue"
+  },
+  {
+    "word": "Adversary",
+    "type": "Noun",
+    "definition": "One's opponent in a contest, conflict, or dispute.",
+    "synonyms": "Opponent, Rival, Foe",
+    "antonyms": "Ally, Friend, Supporter",
+    "belt": "Blue"
+  },
+  {
+    "word": "Advocate",
+    "type": "Verb",
+    "definition": "Publicly recommend or support.",
+    "synonyms": "Support, Back, Promote",
+    "antonyms": "Oppose, Attack, Discourage",
+    "belt": "Blue"
+  },
+  {
+    "word": "Aesthetic",
+    "type": "Adjective",
+    "definition": "Concerned with beauty or the appreciation of beauty.",
+    "synonyms": "Artistic, Attractive, Tasteful",
+    "antonyms": "Ugly, Unattractive, Plain",
+    "belt": "Blue"
+  },
+  {
+    "word": "Afflict",
+    "type": "Verb",
+    "definition": "Cause pain or suffering to; affect or trouble.",
+    "synonyms": "Trouble, Burden, Torment",
+    "antonyms": "Comfort, Soothe, Relieve",
+    "belt": "Blue"
+  },
+  {
+    "word": "Affluent",
+    "type": "Adjective",
+    "definition": "Having a great deal of money; wealthy.",
+    "synonyms": "Wealthy, Rich, Prosperous",
+    "antonyms": "Poor, Destitute, Needy",
+    "belt": "Blue"
+  },
+  {
+    "word": "Aggravate",
+    "type": "Verb",
+    "definition": "Make a problem, injury, or offence worse.",
+    "synonyms": "Worsen, Irritate, Annoy",
+    "antonyms": "Improve, Soothe, Alleviate",
+    "belt": "Blue"
+  },
+  {
+    "word": "Agitate",
+    "type": "Verb",
+    "definition": "Make someone troubled or nervous.",
+    "synonyms": "Disturb, Rattle, Stir",
+    "antonyms": "Calm, Soothe, Pacify",
+    "belt": "Blue"
+  },
+  {
+    "word": "Allege",
+    "type": "Verb",
+    "definition": "Claim or assert that someone has done something illegal or wrong.",
+    "synonyms": "Claim, Assert, State",
+    "antonyms": "Prove, Deny, Refute",
+    "belt": "Blue"
+  },
+  {
+    "word": "Alleviate",
+    "type": "Verb",
+    "definition": "Make suffering, deficiency, or a problem less severe.",
+    "synonyms": "Ease, Relieve, Lessen",
+    "antonyms": "Aggravate, Worsen, Intensify",
+    "belt": "Blue"
+  },
+  {
+    "word": "Allocate",
+    "type": "Verb",
+    "definition": "Distribute resources or duties for a particular purpose.",
+    "synonyms": "Assign, Allot, Distribute",
+    "antonyms": "Withhold, Keep, Hoard",
+    "belt": "Blue"
+  },
+  {
+    "word": "Allude",
+    "type": "Verb",
+    "definition": "Suggest or call attention to indirectly; hint at.",
+    "synonyms": "Hint, Refer, Mention",
+    "antonyms": "State, Specify, Declare",
+    "belt": "Blue"
+  },
+  {
+    "word": "Aloof",
+    "type": "Adjective",
+    "definition": "Not friendly or forthcoming; cool and distant.",
+    "synonyms": "Distant, Detached, Cold",
+    "antonyms": "Friendly, Warm, Approachable",
+    "belt": "Blue"
+  },
+  {
+    "word": "Ambiguous",
+    "type": "Adjective",
+    "definition": "Open to more than one interpretation; not clear.",
+    "synonyms": "Unclear, Vague, Uncertain",
+    "antonyms": "Clear, Explicit, Definite",
+    "belt": "Blue"
+  },
+  {
+    "word": "Ample",
+    "type": "Adjective",
+    "definition": "Enough or more than enough; plentiful.",
+    "synonyms": "Plentiful, Abundant, Generous",
+    "antonyms": "Scarce, Meagre, Insufficient",
+    "belt": "Blue"
+  },
+  {
+    "word": "Analogy",
+    "type": "Noun",
+    "definition": "A comparison between one thing and another for explanation.",
+    "synonyms": "Comparison, Parallel, Likeness",
+    "antonyms": "Contrast, Difference",
+    "belt": "Blue"
+  },
+  {
+    "word": "Anchor",
+    "type": "Verb",
+    "definition": "Secure firmly in position.",
+    "synonyms": "Fasten, Fix, Moor",
+    "antonyms": "Release, Loosen, Detach",
+    "belt": "Blue"
+  },
+  {
+    "word": "Anguish",
+    "type": "Noun",
+    "definition": "Severe mental or physical pain or suffering.",
+    "synonyms": "Agony, Torment, Distress",
+    "antonyms": "Joy, Comfort, Relief",
+    "belt": "Blue"
+  },
+  {
+    "word": "Animate",
+    "type": "Verb",
+    "definition": "Bring to life.",
+    "synonyms": "Enliven, Energize, Inspire",
+    "antonyms": "Deaden, Dull, Bore",
+    "belt": "Blue"
+  },
+  {
+    "word": "Anticipate",
+    "type": "Verb",
+    "definition": "Regard as probable; expect or predict.",
+    "synonyms": "Expect, Foresee, Predict",
+    "antonyms": "Doubt, Surprise, Neglect",
+    "belt": "Blue"
+  },
+  {
+    "word": "Apparent",
+    "type": "Adjective",
+    "definition": "Clearly visible or understood; obvious.",
+    "synonyms": "Obvious, Clear, Evident",
+    "antonyms": "Hidden, Obscure, Unclear",
+    "belt": "Blue"
+  },
+  {
+    "word": "Appeal",
+    "type": "Verb",
+    "definition": "Make a serious, urgent, or heartfelt request.",
+    "synonyms": "Plead, Request, Attract",
+    "antonyms": "Refuse, Repel, Demand",
+    "belt": "Blue"
+  },
+  {
+    "word": "Appease",
+    "type": "Verb",
+    "definition": "Pacify or placate someone by acceding to their demands.",
+    "synonyms": "Pacify, Calm, Soothe",
+    "antonyms": "Provoke, Anger, Agitate",
+    "belt": "Blue"
+  },
+  {
+    "word": "Appetite",
+    "type": "Noun",
+    "definition": "A natural desire to satisfy a bodily need, especially for food.",
+    "synonyms": "Hunger, Craving, Desire",
+    "antonyms": "Aversion, Disgust, Fullness",
+    "belt": "Blue"
+  },
+  {
+    "word": "Applaud",
+    "type": "Verb",
+    "definition": "Show approval or praise by clapping.",
+    "synonyms": "Clap, Praise, Cheer",
+    "antonyms": "Boo, Jeer, Criticize",
+    "belt": "Blue"
+  },
+  {
+    "word": "Apprehensive",
+    "type": "Adjective",
+    "definition": "Anxious or fearful that something bad will happen.",
+    "synonyms": "Anxious, Worried, Nervous",
+    "antonyms": "Confident, Calm, Fearless",
+    "belt": "Blue"
+  },
+  {
+    "word": "Approach",
+    "type": "Verb",
+    "definition": "Come near or nearer to in distance or time.",
+    "synonyms": "Near, Advance, Reach",
+    "antonyms": "Retreat, Leave, Avoid",
+    "belt": "Blue"
+  },
+  {
+    "word": "Arbitrary",
+    "type": "Adjective",
+    "definition": "Based on random choice or personal whim, rather than reason.",
+    "synonyms": "Random, Whimsical, Unfair",
+    "antonyms": "Reasonable, Logical, Fair",
+    "belt": "Blue"
+  },
+  {
+    "word": "Arduous",
+    "type": "Adjective",
+    "definition": "Involving or requiring strenuous effort; difficult and tiring.",
+    "synonyms": "Difficult, Gruelling, Hard",
+    "antonyms": "Easy, Effortless, Simple",
+    "belt": "Blue"
+  },
+  {
+    "word": "Arid",
+    "type": "Adjective",
+    "definition": "Having little or no rain; too dry or barren to support vegetation.",
+    "synonyms": "Dry, Barren, Parched",
+    "antonyms": "Wet, Damp, Fertile",
+    "belt": "Blue"
+  },
+  {
+    "word": "Arrogant",
+    "type": "Adjective",
+    "definition": "Having or revealing an exaggerated sense of one's own importance.",
+    "synonyms": "Haughty, Conceited, Proud",
+    "antonyms": "Humble, Modest, Meek",
+    "belt": "Blue"
+  },
+  {
+    "word": "Articulate",
+    "type": "Adjective",
+    "definition": "Having or showing the ability to speak fluently and coherently.",
+    "synonyms": "Eloquent, Fluent, Clear",
+    "antonyms": "Inarticulate, Mumbled, Unclear",
+    "belt": "Blue"
+  },
+  {
+    "word": "Artificial",
+    "type": "Adjective",
+    "definition": "Made or produced by human beings rather than occurring naturally.",
+    "synonyms": "Fake, Synthetic, Man-made",
+    "antonyms": "Natural, Real, Genuine",
+    "belt": "Blue"
+  },
+  {
+    "word": "Ascend",
+    "type": "Verb",
+    "definition": "Go up or climb.",
+    "synonyms": "Climb, Rise, Mount",
+    "antonyms": "Descend, Fall, Drop",
+    "belt": "Blue"
+  },
+  {
+    "word": "Aspire",
+    "type": "Verb",
+    "definition": "Direct one's hopes or ambitions towards achieving something.",
+    "synonyms": "Aim, Hope, Strive",
+    "antonyms": "Despair, Neglect, Quit",
+    "belt": "Blue"
+  },
+  {
+    "word": "Assert",
+    "type": "Verb",
+    "definition": "State a fact or belief confidently and forcefully.",
+    "synonyms": "Claim, Declare, Insist",
+    "antonyms": "Deny, Hesitate, Retract",
+    "belt": "Blue"
+  },
+  {
+    "word": "Assess",
+    "type": "Verb",
+    "definition": "Evaluate or estimate the nature, ability, or quality of.",
+    "synonyms": "Evaluate, Judge, Gauge",
+    "antonyms": "Ignore, Guess, Neglect",
+    "belt": "Blue"
+  },
+  {
+    "word": "Astonish",
+    "type": "Verb",
+    "definition": "Surprise or impress someone greatly.",
+    "synonyms": "Amaze, Astound, Stun",
+    "antonyms": "Bore, Expect, Dull",
+    "belt": "Blue"
+  },
+  {
+    "word": "Astute",
+    "type": "Adjective",
+    "definition": "Having or showing an ability to accurately assess situations.",
+    "synonyms": "Shrewd, Sharp, Clever",
+    "antonyms": "Foolish, Naive, Dull",
+    "belt": "Blue"
+  },
+  {
+    "word": "Attach",
+    "type": "Verb",
+    "definition": "Join or fasten something to something else.",
+    "synonyms": "Fasten, Connect, Join",
+    "antonyms": "Detach, Separate, Remove",
+    "belt": "Blue"
+  },
+  {
+    "word": "Attain",
+    "type": "Verb",
+    "definition": "Succeed in achieving something that one has worked for.",
+    "synonyms": "Achieve, Reach, Accomplish",
+    "antonyms": "Fail, Miss, Lose",
+    "belt": "Blue"
+  },
+  {
+    "word": "Attentive",
+    "type": "Adjective",
+    "definition": "Paying close attention to something.",
+    "synonyms": "Alert, Watchful, Mindful",
+    "antonyms": "Inattentive, Careless, Distracted",
+    "belt": "Blue"
+  },
+  {
+    "word": "Attribute",
+    "type": "Verb",
+    "definition": "Regard something as being caused by.",
+    "synonyms": "Ascribe, Credit, Assign",
+    "antonyms": "Disconnect, Deny",
+    "belt": "Blue"
+  },
+  {
+    "word": "Audacious",
+    "type": "Adjective",
+    "definition": "Showing a willingness to take surprisingly bold risks.",
+    "synonyms": "Bold, Daring, Fearless",
+    "antonyms": "Timid, Cautious, Cowardly",
+    "belt": "Blue"
+  },
+  {
+    "word": "Authentic",
+    "type": "Adjective",
+    "definition": "Of undisputed origin and not a copy; genuine.",
+    "synonyms": "Genuine, Real, True",
+    "antonyms": "Fake, Counterfeit, False",
+    "belt": "Blue"
+  },
+  {
+    "word": "Authority",
+    "type": "Noun",
+    "definition": "The power or right to give orders, make decisions, and enforce obedience.",
+    "synonyms": "Power, Control, Command",
+    "antonyms": "Weakness, Powerlessness",
+    "belt": "Blue"
+  },
+  {
+    "word": "Avert",
+    "type": "Verb",
+    "definition": "Turn away one's eyes or thoughts; prevent or ward off.",
+    "synonyms": "Prevent, Avoid, Divert",
+    "antonyms": "Cause, Invite, Confront",
+    "belt": "Blue"
+  },
+  {
+    "word": "Awed",
+    "type": "Adjective",
+    "definition": "Filled with awe or wonder.",
+    "synonyms": "Amazed, Astonished, Reverent",
+    "antonyms": "Unimpressed, Bored, Indifferent",
+    "belt": "Blue"
+  },
+  {
+    "word": "Baffle",
+    "type": "Verb",
+    "definition": "Totally bewilder or perplex.",
+    "synonyms": "Confuse, Puzzle, Mystify",
+    "antonyms": "Clarify, Explain, Enlighten",
+    "belt": "Blue"
+  },
+  {
+    "word": "Ban",
+    "type": "Verb",
+    "definition": "Officially or legally prohibit.",
+    "synonyms": "Forbid, Prohibit, Outlaw",
+    "antonyms": "Allow, Permit, Legalize",
+    "belt": "Blue"
+  },
+  {
+    "word": "Barbaric",
+    "type": "Adjective",
+    "definition": "Savagely cruel; exceedingly brutal.",
+    "synonyms": "Brutal, Cruel, Savage",
+    "antonyms": "Civilized, Gentle, Kind",
+    "belt": "Blue"
+  },
+  {
+    "word": "Beckon",
+    "type": "Verb",
+    "definition": "Make a gesture with the hand, arm, or head to encourage someone to approach.",
+    "synonyms": "Summon, Signal, Wave",
+    "antonyms": "Dismiss, Repel, Ignore",
+    "belt": "Blue"
+  },
+  {
+    "word": "Befriend",
+    "type": "Verb",
+    "definition": "Act as a friend to someone; become a friend of.",
+    "synonyms": "Welcome, Support, Aid",
+    "antonyms": "Reject, Shun, Oppose",
+    "belt": "Blue"
+  },
+  {
+    "word": "Belittle",
+    "type": "Verb",
+    "definition": "Make someone or something seem unimportant.",
+    "synonyms": "Disparage, Mock, Minimize",
+    "antonyms": "Praise, Exalt, Magnify",
+    "belt": "Blue"
+  },
+  {
+    "word": "Beneficial",
+    "type": "Adjective",
+    "definition": "Resulting in good; favourable or advantageous.",
+    "synonyms": "Helpful, Useful, Advantageous",
+    "antonyms": "Harmful, Detrimental, Useless",
+    "belt": "Blue"
+  },
+  {
+    "word": "Benevolence",
+    "type": "Noun",
+    "definition": "The quality of being well meaning; kindness.",
+    "synonyms": "Kindness, Charity, Goodwill",
+    "antonyms": "Malice, Cruelty, Spite",
+    "belt": "Blue"
+  },
+  {
+    "word": "Bereft",
+    "type": "Adjective",
+    "definition": "Deprived of or lacking something.",
+    "synonyms": "Deprived, Lacking, Robbed",
+    "antonyms": "Full, Blessed, Rich",
+    "belt": "Blue"
+  },
+  {
+    "word": "Besiege",
+    "type": "Verb",
+    "definition": "Surround a place with armed forces in order to capture it.",
+    "synonyms": "Surround, Blockade, Hound",
+    "antonyms": "Abandon, Aid, Free",
+    "belt": "Blue"
+  },
+  {
+    "word": "Betray",
+    "type": "Verb",
+    "definition": "Expose one's country, a group, or a person to danger by treachery.",
+    "synonyms": "Deceive, Double-cross, Forsake",
+    "antonyms": "Protect, Support, Defend",
+    "belt": "Blue"
+  },
+  {
+    "word": "Bewilder",
+    "type": "Verb",
+    "definition": "Cause someone to become perplexed and confused.",
+    "synonyms": "Confuse, Baffle, Puzzle",
+    "antonyms": "Clarify, Enlighten, Orient",
+    "belt": "Blue"
+  },
+  {
+    "word": "Bias",
+    "type": "Noun",
+    "definition": "Prejudice in favour of or against one thing, person, or group.",
+    "synonyms": "Prejudice, Partiality, Slant",
+    "antonyms": "Fairness, Neutrality, Objectivity",
+    "belt": "Blue"
+  },
+  {
+    "word": "Bizarre",
+    "type": "Adjective",
+    "definition": "Very strange or unusual.",
+    "synonyms": "Strange, Odd, Weird",
+    "antonyms": "Normal, Ordinary, Usual",
+    "belt": "Blue"
+  },
+  {
+    "word": "Blaze",
+    "type": "Noun",
+    "definition": "A very large or fiercely burning fire.",
+    "synonyms": "Inferno, Flame, Fire",
+    "antonyms": "Spark, Ash, Darkness",
+    "belt": "Blue"
+  },
+  {
+    "word": "Blemish",
+    "type": "Noun",
+    "definition": "A small mark or flaw which spoils the appearance of something.",
+    "synonyms": "Flaw, Stain, Imperfection",
+    "antonyms": "Perfection, Purity, Spotlessness",
+    "belt": "Blue"
+  },
+  {
+    "word": "Blunder",
+    "type": "Noun",
+    "definition": "A stupid or careless mistake.",
+    "synonyms": "Mistake, Error, Slip",
+    "antonyms": "Success, Triumph, Accuracy",
+    "belt": "Blue"
+  },
+  {
+    "word": "Boisterous",
+    "type": "Adjective",
+    "definition": "Noisy, energetic, and cheerful; rowdy.",
+    "synonyms": "Rowdy, Loud, Lively",
+    "antonyms": "Quiet, Calm, Restrained",
+    "belt": "Blue"
+  },
+  {
+    "word": "Bolster",
+    "type": "Verb",
+    "definition": "Support or strengthen.",
+    "synonyms": "Support, Reinforce, Boost",
+    "antonyms": "Undermine, Weaken, Hinder",
+    "belt": "Blue"
+  },
+  {
+    "word": "Bombard",
+    "type": "Verb",
+    "definition": "Attack a place or person continuously with bombs or questions.",
+    "synonyms": "Pelt, Barrage, Assail",
+    "antonyms": "Protect, Shield, Defend",
+    "belt": "Blue"
+  },
+  {
+    "word": "Bond",
+    "type": "Noun",
+    "definition": "A thing used to tie something or to fasten things together; a connection.",
+    "synonyms": "Tie, Link, Connection",
+    "antonyms": "Separation, Division",
+    "belt": "Blue"
+  },
+  {
+    "word": "Bountiful",
+    "type": "Adjective",
+    "definition": "Large in quantity; abundant.",
+    "synonyms": "Abundant, Plentiful, Generous",
+    "antonyms": "Scarce, Meagre, Sparse",
+    "belt": "Blue"
+  },
+  {
+    "word": "Brace",
+    "type": "Verb",
+    "definition": "Prepare oneself for something difficult or unpleasant.",
+    "synonyms": "Prepare, Steady, Fortify",
+    "antonyms": "Relax, Unwind, Weaken",
+    "belt": "Blue"
+  },
+  {
+    "word": "Brevity",
+    "type": "Noun",
+    "definition": "Concise and exact use of words in writing or speech.",
+    "synonyms": "Conciseness, Shortness",
+    "antonyms": "Length, Wordiness",
+    "belt": "Blue"
+  },
+  {
+    "word": "Brink",
+    "type": "Noun",
+    "definition": "The extreme edge of land before a steep slope or body of water.",
+    "synonyms": "Edge, Verge, Rim",
+    "antonyms": "Centre, Middle, Interior",
+    "belt": "Blue"
+  },
+  {
+    "word": "Broadcast",
+    "type": "Verb",
+    "definition": "Transmit a programme or some information by radio or television.",
+    "synonyms": "Air, Transmit, Spread",
+    "antonyms": "Conceal, Suppress, Hide",
+    "belt": "Blue"
+  },
+  {
+    "word": "Brood",
+    "type": "Verb",
+    "definition": "Think deeply about something that makes one unhappy.",
+    "synonyms": "Mope, Ponder, Dwell",
+    "antonyms": "Rejoice, Forget, Ignore",
+    "belt": "Blue"
+  },
+  {
+    "word": "Brusque",
+    "type": "Adjective",
+    "definition": "Abrupt or offhand in speech or manner.",
+    "synonyms": "Blunt, Curt, Terse",
+    "antonyms": "Polite, Courteous, Gentle",
+    "belt": "Blue"
+  },
+  {
+    "word": "Buoyant",
+    "type": "Adjective",
+    "definition": "Able or apt to stay afloat or rise to the top of a liquid or gas.",
+    "synonyms": "Floating, Cheerful, Upbeat",
+    "antonyms": "Sinking, Heavy, Gloomy",
+    "belt": "Blue"
+  },
+  {
+    "word": "Burrow",
+    "type": "Verb",
+    "definition": "Dig a hole or tunnel, typically for use as a dwelling.",
+    "synonyms": "Dig, Tunnel, Excavate",
+    "antonyms": "Fill, Bury, Cover",
+    "belt": "Blue"
+  },
+  {
+    "word": "Calamity",
+    "type": "Noun",
+    "definition": "An event causing great and often sudden damage or distress.",
+    "synonyms": "Disaster, Catastrophe, Tragedy",
+    "antonyms": "Blessing, Triumph, Fortune",
+    "belt": "Blue"
+  },
+  {
+    "word": "Calculate",
+    "type": "Verb",
+    "definition": "Determine the amount or number of something mathematically.",
+    "synonyms": "Compute, Reckon, Work out",
+    "antonyms": "Guess, Estimate, Neglect",
+    "belt": "Blue"
+  },
+  {
+    "word": "Callous",
+    "type": "Adjective",
+    "definition": "Showing or having an insensitive and cruel disregard for others.",
+    "synonyms": "Heartless, Cruel, Cold",
+    "antonyms": "Kind, Compassionate, Sensitive",
+    "belt": "Blue"
+  },
+  {
+    "word": "Camouflage",
+    "type": "Noun",
+    "definition": "The disguising of military personnel, equipment, or animals.",
+    "synonyms": "Disguise, Concealment, Mask",
+    "antonyms": "Exposure, Visibility",
+    "belt": "Blue"
+  },
+  {
+    "word": "Campaign",
+    "type": "Noun",
+    "definition": "An organized course of action to achieve a goal.",
+    "synonyms": "Drive, Crusade, Effort",
+    "antonyms": "Inaction, Neglect",
+    "belt": "Blue"
+  },
+  {
+    "word": "Cancel",
+    "type": "Verb",
+    "definition": "Decide or announce that a planned event will not take place.",
+    "synonyms": "Call off, Scrap, Annul",
+    "antonyms": "Schedule, Confirm, Continue",
+    "belt": "Blue"
+  },
+  {
+    "word": "Capable",
+    "type": "Adjective",
+    "definition": "Having the ability, fitness, or quality necessary to do something.",
+    "synonyms": "Able, Competent, Skilled",
+    "antonyms": "Incapable, Incompetent, Helpless",
+    "belt": "Blue"
+  },
+  {
+    "word": "Captivate",
+    "type": "Verb",
+    "definition": "Attract and hold the interest and attention of; charm.",
+    "synonyms": "Charm, Enchant, Fascinate",
+    "antonyms": "Bore, Repel, Disgust",
+    "belt": "Blue"
+  },
+  {
+    "word": "Captive",
+    "type": "Noun",
+    "definition": "A person who has been taken prisoner or an animal confined.",
+    "synonyms": "Prisoner, Hostage, Detainee",
+    "antonyms": "Free person, Captor",
+    "belt": "Blue"
+  },
+  {
+    "word": "Carefree",
+    "type": "Adjective",
+    "definition": "Free from anxiety or responsibility.",
+    "synonyms": "Lighthearted, Easygoing, Relaxed",
+    "antonyms": "Worried, Anxious, Stressed",
+    "belt": "Blue"
+  },
+  {
+    "word": "Cascade",
+    "type": "Noun",
+    "definition": "A small waterfall, typically one of several falling down a steep rocky slope.",
+    "synonyms": "Waterfall, Torrent, Shower",
+    "antonyms": "Dribble, Trickle, Drought",
+    "belt": "Blue"
+  },
+  {
+    "word": "Catastrophe",
+    "type": "Noun",
+    "definition": "An event causing great and usually sudden damage or suffering.",
+    "synonyms": "Disaster, Calamity, Ruin",
+    "antonyms": "Miracle, Triumph, Blessing",
+    "belt": "Blue"
+  },
+  {
+    "word": "Cautious",
+    "type": "Adjective",
+    "definition": "Careful to avoid potential problems or dangers.",
+    "synonyms": "Careful, Wary, Prudent",
+    "antonyms": "Reckless, Rash, Careless",
+    "belt": "Blue"
+  },
+  {
+    "word": "Cavern",
+    "type": "Noun",
+    "definition": "A large cave or chamber in a cave.",
+    "synonyms": "Cave, Grotto, Hollow",
+    "antonyms": "Mountain, Peak",
+    "belt": "Blue"
+  },
+  {
+    "word": "Celebrate",
+    "type": "Verb",
+    "definition": "Acknowledge a significant or happy day or event with an enjoyable activity.",
+    "synonyms": "Commemorate, Honour, Rejoice",
+    "antonyms": "Mourn, Grieve, Ignore",
+    "belt": "Blue"
+  },
+  {
+    "word": "Censor",
+    "type": "Verb",
+    "definition": "Examine and suppress unacceptable parts of a book or film.",
+    "synonyms": "Suppress, Ban, Edit",
+    "antonyms": "Approve, Publish, Release",
+    "belt": "Blue"
+  },
+  {
+    "word": "Chronicle",
+    "type": "Noun",
+    "definition": "A factual written account of important or historical events in order.",
+    "synonyms": "Record, History, Account",
+    "antonyms": "Fiction, Myth",
+    "belt": "Blue"
+  },
+  {
+    "word": "Circulate",
+    "type": "Verb",
+    "definition": "Move continuously or freely through a closed system or area.",
+    "synonyms": "Spread, Flow, Distribute",
+    "antonyms": "Stagnate, Stop, Hoard",
+    "belt": "Blue"
+  },
+  {
+    "word": "Cite",
+    "type": "Verb",
+    "definition": "Refer to a passage, book, or author as evidence.",
+    "synonyms": "Quote, Mention, Reference",
+    "antonyms": "Ignore, Omit, Hide",
+    "belt": "Blue"
+  },
+  {
+    "word": "Civic",
+    "type": "Adjective",
+    "definition": "Relating to a city or town, especially its administration.",
+    "synonyms": "Municipal, Public, Urban",
+    "antonyms": "Private, Rural",
+    "belt": "Blue"
+  },
+  {
+    "word": "Clamour",
+    "type": "Noun",
+    "definition": "A loud and confused noise, especially that of people shouting.",
+    "synonyms": "Uproar, Din, Racket",
+    "antonyms": "Silence, Quiet, Peace",
+    "belt": "Blue"
+  },
+  {
+    "word": "Clarify",
+    "type": "Verb",
+    "definition": "Make a statement or situation less confused and more comprehensible.",
+    "synonyms": "Explain, Clear up, Elucidate",
+    "antonyms": "Confuse, Obscure, Muddy",
+    "belt": "Blue"
+  },
+  {
+    "word": "Clemency",
+    "type": "Noun",
+    "definition": "Mercy; lenience.",
+    "synonyms": "Mercy, Leniency, Pardon",
+    "antonyms": "Cruelty, Harshness, Vengeance",
+    "belt": "Blue"
+  },
+  {
+    "word": "Clench",
+    "type": "Verb",
+    "definition": "Close into a tight ball, especially the teeth or fingers.",
+    "synonyms": "Grip, Grasp, Tighten",
+    "antonyms": "Release, Relax, Open",
+    "belt": "Blue"
+  },
+  {
+    "word": "Climax",
+    "type": "Noun",
+    "definition": "The most intense, exciting, or important point of something.",
+    "synonyms": "Peak, Pinnacle, Height",
+    "antonyms": "Anti-climax, Bottom, Base",
+    "belt": "Blue"
+  },
+  {
+    "word": "Cling",
+    "type": "Verb",
+    "definition": "Hold on tightly to.",
+    "synonyms": "Grip, Hold, Stick",
+    "antonyms": "Release, Let go, Detach",
+    "belt": "Blue"
+  },
+  {
+    "word": "Cloak",
+    "type": "Verb",
+    "definition": "Hide, cover, or disguise something.",
+    "synonyms": "Hide, Mask, Conceal",
+    "antonyms": "Reveal, Expose, Uncover",
+    "belt": "Blue"
+  },
+  {
+    "word": "Coerce",
+    "type": "Verb",
+    "definition": "Persuade an unwilling person to do something by using force or threats.",
+    "synonyms": "Force, Pressure, Compel",
+    "antonyms": "Persuade, Coax, Allow",
+    "belt": "Blue"
+  },
+  {
+    "word": "Coherent",
+    "type": "Adjective",
+    "definition": "Logical and consistent.",
+    "synonyms": "Logical, Clear, Unified",
+    "antonyms": "Incoherent, Confused, Rambling",
+    "belt": "Blue"
+  },
+  {
+    "word": "Coincide",
+    "type": "Verb",
+    "definition": "Occur at the same time.",
+    "synonyms": "Overlap, Match, Concur",
+    "antonyms": "Differ, Diverge, Clash",
+    "belt": "Blue"
+  },
+  {
+    "word": "Collaborate",
+    "type": "Verb",
+    "definition": "Work jointly on an activity or project.",
+    "synonyms": "Cooperate, Team up, Partner",
+    "antonyms": "Compete, Oppose, Divide",
+    "belt": "Blue"
+  },
+  {
+    "word": "Collide",
+    "type": "Verb",
+    "definition": "Hit with force when moving.",
+    "synonyms": "Crash, Smash, Impact",
+    "antonyms": "Miss, Avoid, Dodge",
+    "belt": "Blue"
+  },
+  {
+    "word": "Colossal",
+    "type": "Adjective",
+    "definition": "Extremely large or great.",
+    "synonyms": "Huge, Gigantic, Enormous",
+    "antonyms": "Tiny, Minute, Miniature",
+    "belt": "Blue"
+  },
+  {
+    "word": "Combative",
+    "type": "Adjective",
+    "definition": "Ready or eager to fight or argue.",
+    "synonyms": "Aggressive, Belligerent, Hostile",
+    "antonyms": "Peaceful, Passive, Friendly",
+    "belt": "Blue"
+  },
+  {
+    "word": "Commence",
+    "type": "Verb",
+    "definition": "Begin; start.",
+    "synonyms": "Start, Begin, Initiate",
+    "antonyms": "End, Finish, Conclude",
+    "belt": "Blue"
+  },
+  {
+    "word": "Commend",
+    "type": "Verb",
+    "definition": "Praise formally or officially.",
+    "synonyms": "Praise, Applaud, Compliment",
+    "antonyms": "Criticize, Condemn, Blame",
+    "belt": "Blue"
+  },
+  {
+    "word": "Compassion",
+    "type": "Noun",
+    "definition": "Sympathetic pity and concern for the sufferings or misfortunes of others.",
+    "synonyms": "Sympathy, Empathy, Pity",
+    "antonyms": "Cruelty, Indifference, Harshness",
+    "belt": "Blue"
+  },
+  {
+    "word": "Compel",
+    "type": "Verb",
+    "definition": "Force or oblige someone to do something.",
+    "synonyms": "Force, Oblige, Pressure",
+    "antonyms": "Allow, Persuade, Deter",
+    "belt": "Blue"
+  },
+  {
+    "word": "Compensate",
+    "type": "Verb",
+    "definition": "Give someone something, typically money, in recognition of loss or injury.",
+    "synonyms": "Repay, Reimburse, Offset",
+    "antonyms": "Deprive, Penalize, Harm",
+    "belt": "Blue"
+  },
+  {
+    "word": "Competent",
+    "type": "Adjective",
+    "definition": "Having the necessary ability, knowledge, or skill to do something successfully.",
+    "synonyms": "Capable, Skilled, Proficient",
+    "antonyms": "Incompetent, Unskilled, Inept",
+    "belt": "Blue"
+  },
+  {
+    "word": "Compile",
+    "type": "Verb",
+    "definition": "Produce a list or book by assembling information collected from other sources.",
+    "synonyms": "Assemble, Gather, Collect",
+    "antonyms": "Scatter, Disperse, Divide",
+    "belt": "Blue"
+  },
+  {
+    "word": "Complacent",
+    "type": "Adjective",
+    "definition": "Showing smug or uncritical satisfaction with oneself.",
+    "synonyms": "Smug, Self-satisfied, Unconcerned",
+    "antonyms": "Anxious, Humble, Dissatisfied",
+    "belt": "Blue"
+  },
+  {
+    "word": "Complement",
+    "type": "Verb",
+    "definition": "Add to something in a way that enhances or improves it.",
+    "synonyms": "Enhance, Complete, Match",
+    "antonyms": "Clash, Spoil, Detract",
+    "belt": "Blue"
+  },
+  {
+    "word": "Complex",
+    "type": "Adjective",
+    "definition": "Consisting of many different and connected parts.",
+    "synonyms": "Complicated, Intricate, Involved",
+    "antonyms": "Simple, Easy, Plain",
+    "belt": "Blue"
+  },
+  {
+    "word": "Comply",
+    "type": "Verb",
+    "definition": "Act in accordance with a wish or command.",
+    "synonyms": "Obey, Follow, Conform",
+    "antonyms": "Disobey, Rebel, Resist",
+    "belt": "Blue"
+  },
+  {
+    "word": "Compose",
+    "type": "Verb",
+    "definition": "Write or create a work of art, especially music or poetry.",
+    "synonyms": "Create, Write, Form",
+    "antonyms": "Destroy, Dismantle",
+    "belt": "Blue"
+  },
+  {
+    "word": "Comprehend",
+    "type": "Verb",
+    "definition": "Grasp mentally; understand.",
+    "synonyms": "Understand, Grasp, Fathom",
+    "antonyms": "Misunderstand, Confuse",
+    "belt": "Blue"
+  },
+  {
+    "word": "Compress",
+    "type": "Verb",
+    "definition": "Flatten by pressure; squeeze or press.",
+    "synonyms": "Squeeze, Compact, Condense",
+    "antonyms": "Expand, Stretch, Enlarge",
+    "belt": "Blue"
+  },
+  {
+    "word": "Compromise",
+    "type": "Noun",
+    "definition": "An agreement or settlement of a dispute that is reached by each side making concessions.",
+    "synonyms": "Agreement, Deal, Concession",
+    "antonyms": "Dispute, Standoff, Refusal",
+    "belt": "Blue"
+  },
+  {
+    "word": "Conceited",
+    "type": "Adjective",
+    "definition": "Excessively proud of oneself; vain.",
+    "synonyms": "Vain, Arrogant, Boastful",
+    "antonyms": "Humble, Modest, Meek",
+    "belt": "Blue"
+  },
+  {
+    "word": "Conceive",
+    "type": "Verb",
+    "definition": "Form or devise a plan or idea in the mind.",
+    "synonyms": "Imagine, Devise, Create",
+    "antonyms": "Ignore, Neglect",
+    "belt": "Blue"
+  },
+  {
+    "word": "Concentrate",
+    "type": "Verb",
+    "definition": "Focus all one's attention on a particular object or activity.",
+    "synonyms": "Focus, Centre, Gather",
+    "antonyms": "Distract, Scatter, Disperse",
+    "belt": "Blue"
+  },
+  {
+    "word": "Concise",
+    "type": "Adjective",
+    "definition": "Giving a lot of information clearly and in a few words.",
+    "synonyms": "Brief, Short, Succinct",
+    "antonyms": "Wordy, Lengthy, Rambling",
+    "belt": "Blue"
+  },
+  {
+    "word": "Condemn",
+    "type": "Verb",
+    "definition": "Express complete disapproval of; sentence to a punishment.",
+    "synonyms": "Criticize, Blame, Denounce",
+    "antonyms": "Praise, Approve, Acquit",
+    "belt": "Blue"
+  },
+  {
+    "word": "Condense",
+    "type": "Verb",
+    "definition": "Make denser or more concentrated.",
+    "synonyms": "Compress, Shorten, Summarize",
+    "antonyms": "Expand, Lengthen, Dilute",
+    "belt": "Blue"
+  },
+  {
+    "word": "Conduct",
+    "type": "Verb",
+    "definition": "Organize and carry out.",
+    "synonyms": "Lead, Direct, Manage",
+    "antonyms": "Follow, Neglect, Mismanage",
+    "belt": "Blue"
+  },
+  {
+    "word": "Confer",
+    "type": "Verb",
+    "definition": "Grant a title, degree, benefit, or right; have discussions.",
+    "synonyms": "Grant, Bestow, Discuss",
+    "antonyms": "Withhold, Refuse, Take",
+    "belt": "Blue"
+  },
+  {
+    "word": "Confide",
+    "type": "Verb",
+    "definition": "Tell someone about a secret or private matter while trusting them.",
+    "synonyms": "Trust, Reveal, Share",
+    "antonyms": "Conceal, Distrust, Hide",
+    "belt": "Blue"
+  },
+  {
+    "word": "Confine",
+    "type": "Verb",
+    "definition": "Keep or restrict someone or something within certain limits.",
+    "synonyms": "Restrict, Limit, Trap",
+    "antonyms": "Free, Release, Liberate",
+    "belt": "Blue"
+  },
+  {
+    "word": "Confirm",
+    "type": "Verb",
+    "definition": "Establish the truth or correctness of something previously believed.",
+    "synonyms": "Verify, Prove, Validate",
+    "antonyms": "Deny, Disprove, Refute",
+    "belt": "Blue"
+  },
+  {
+    "word": "Conflict",
+    "type": "Noun",
+    "definition": "A serious disagreement or argument.",
+    "synonyms": "Clash, Dispute, Struggle",
+    "antonyms": "Harmony, Peace, Agreement",
+    "belt": "Blue"
+  },
+  {
+    "word": "Conform",
+    "type": "Verb",
+    "definition": "Comply with rules, standards, or laws.",
+    "synonyms": "Obey, Follow, Comply",
+    "antonyms": "Rebel, Differ, Defy",
+    "belt": "Blue"
+  },
+  {
+    "word": "Confront",
+    "type": "Verb",
+    "definition": "Come face to face with someone with hostile or argumentative intent.",
+    "synonyms": "Face, Challenge, Encounter",
+    "antonyms": "Avoid, Evade, Retreat",
+    "belt": "Blue"
+  },
+  {
+    "word": "Aberration",
+    "type": "Noun",
+    "definition": "A departure from what is normal, usual, or expected.",
+    "synonyms": "Anomaly, Deviation, Oddity",
+    "antonyms": "Normality, Standard, Regularity",
+    "belt": "Black"
+  },
+  {
+    "word": "Abhor",
+    "type": "Verb",
+    "definition": "Regard with disgust and hatred.",
+    "synonyms": "Detest, Loathe, Despise",
+    "antonyms": "Love, Adore, Admire",
+    "belt": "Black"
+  },
+  {
+    "word": "Abstain",
+    "type": "Verb",
+    "definition": "Restrain oneself from doing or enjoying something.",
+    "synonyms": "Refrain, Avoid, Forgo",
+    "antonyms": "Indulge, Partake, Yield",
+    "belt": "Black"
+  },
+  {
+    "word": "Acclaim",
+    "type": "Verb",
+    "definition": "Praise enthusiastically and publicly.",
+    "synonyms": "Praise, Applaud, Hail",
+    "antonyms": "Criticize, Condemn, Jeer",
+    "belt": "Black"
+  },
+  {
+    "word": "Acerbic",
+    "type": "Adjective",
+    "definition": "Sharp and forthright, especially in speech or style.",
+    "synonyms": "Sharp, Bitter, Caustic",
+    "antonyms": "Mild, Gentle, Sweet",
+    "belt": "Black"
+  },
+  {
+    "word": "Acrimony",
+    "type": "Noun",
+    "definition": "Bitterness or ill feeling.",
+    "synonyms": "Bitterness, Rancour, Hostility",
+    "antonyms": "Goodwill, Harmony, Kindness",
+    "belt": "Black"
+  },
+  {
+    "word": "Adamant",
+    "type": "Adjective",
+    "definition": "Refusing to be persuaded or to change one's mind.",
+    "synonyms": "Unyielding, Firm, Stubborn",
+    "antonyms": "Flexible, Yielding, Uncertain",
+    "belt": "Black"
+  },
+  {
+    "word": "Adept",
+    "type": "Adjective",
+    "definition": "Very skilled or proficient at something.",
+    "synonyms": "Skilled, Expert, Proficient",
+    "antonyms": "Inept, Clumsy, Unskilled",
+    "belt": "Black"
+  },
+  {
+    "word": "Admonish",
+    "type": "Verb",
+    "definition": "Warn or reprimand someone firmly.",
+    "synonyms": "Reprimand, Scold, Warn",
+    "antonyms": "Praise, Applaud, Encourage",
+    "belt": "Black"
+  },
+  {
+    "word": "Adulation",
+    "type": "Noun",
+    "definition": "Excessive admiration or praise.",
+    "synonyms": "Worship, Flattery, Praise",
+    "antonyms": "Criticism, Scorn, Contempt",
+    "belt": "Black"
+  },
+  {
+    "word": "Adversity",
+    "type": "Noun",
+    "definition": "A difficult or unpleasant situation.",
+    "synonyms": "Hardship, Misfortune, Trouble",
+    "antonyms": "Prosperity, Fortune, Ease",
+    "belt": "Black"
+  },
+  {
+    "word": "Affable",
+    "type": "Adjective",
+    "definition": "Friendly, good-natured, or easy to talk to.",
+    "synonyms": "Friendly, Amiable, Cordial",
+    "antonyms": "Unfriendly, Aloof, Hostile",
+    "belt": "Black"
+  },
+  {
+    "word": "Alacrity",
+    "type": "Noun",
+    "definition": "Brisk and cheerful readiness.",
+    "synonyms": "Eagerness, Readiness, Enthusiasm",
+    "antonyms": "Reluctance, Apathy, Hesitation",
+    "belt": "Black"
+  },
+  {
+    "word": "Altruistic",
+    "type": "Adjective",
+    "definition": "Showing a disinterested and selfless concern for the well-being of others.",
+    "synonyms": "Selfless, Generous, Charitable",
+    "antonyms": "Selfish, Greedy, Egoistic",
+    "belt": "Black"
+  },
+  {
+    "word": "Amalgamate",
+    "type": "Verb",
+    "definition": "Combine or unite to form one organization or structure.",
+    "synonyms": "Merge, Unite, Combine",
+    "antonyms": "Separate, Divide, Split",
+    "belt": "Black"
+  },
+  {
+    "word": "Ambivalent",
+    "type": "Adjective",
+    "definition": "Having mixed feelings or contradictory ideas about something.",
+    "synonyms": "Uncertain, Torn, Conflicted",
+    "antonyms": "Certain, Decisive, Sure",
+    "belt": "Black"
+  },
+  {
+    "word": "Ameliorate",
+    "type": "Verb",
+    "definition": "Make something bad or unsatisfactory better.",
+    "synonyms": "Improve, Ease, Mitigate",
+    "antonyms": "Worsen, Aggravate, Harm",
+    "belt": "Black"
+  },
+  {
+    "word": "Amiable",
+    "type": "Adjective",
+    "definition": "Having or displaying a friendly and pleasant manner.",
+    "synonyms": "Friendly, Pleasant, Genial",
+    "antonyms": "Hostile, Surly, Unfriendly",
+    "belt": "Black"
+  },
+  {
+    "word": "Anachronism",
+    "type": "Noun",
+    "definition": "A thing belonging or appropriate to a period other than that in which it exists.",
+    "synonyms": "Misplacement, Relic",
+    "antonyms": "Modernity, Timeliness",
+    "belt": "Black"
+  },
+  {
+    "word": "Animosity",
+    "type": "Noun",
+    "definition": "Strong hostility.",
+    "synonyms": "Hostility, Hatred, Bitterness",
+    "antonyms": "Friendliness, Goodwill, Love",
+    "belt": "Black"
+  },
+  {
+    "word": "Anomaly",
+    "type": "Noun",
+    "definition": "Something that deviates from what is standard, normal, or expected.",
+    "synonyms": "Oddity, Exception, Irregularity",
+    "antonyms": "Norm, Standard, Rule",
+    "belt": "Black"
+  },
+  {
+    "word": "Antagonize",
+    "type": "Verb",
+    "definition": "Cause someone to become hostile.",
+    "synonyms": "Provoke, Irritate, Annoy",
+    "antonyms": "Pacify, Appease, Soothe",
+    "belt": "Black"
+  },
+  {
+    "word": "Apathy",
+    "type": "Noun",
+    "definition": "Lack of interest, enthusiasm, or concern.",
+    "synonyms": "Indifference, Unconcern, Lethargy",
+    "antonyms": "Enthusiasm, Interest, Passion",
+    "belt": "Black"
+  },
+  {
+    "word": "Apex",
+    "type": "Noun",
+    "definition": "The top or highest part of something.",
+    "synonyms": "Peak, Summit, Pinnacle",
+    "antonyms": "Bottom, Base, Nadir",
+    "belt": "Black"
+  },
+  {
+    "word": "Apprehension",
+    "type": "Noun",
+    "definition": "Anxiety or fear that something bad or unpleasant will happen.",
+    "synonyms": "Anxiety, Dread, Worry",
+    "antonyms": "Confidence, Calm, Certainty",
+    "belt": "Black"
+  },
+  {
+    "word": "Arbitrate",
+    "type": "Verb",
+    "definition": "Reach an authoritative judgment or settlement.",
+    "synonyms": "Mediate, Judge, Settle",
+    "antonyms": "Aggravate, Escalate, Dispute",
+    "belt": "Black"
+  },
+  {
+    "word": "Archaic",
+    "type": "Adjective",
+    "definition": "Very old or old-fashioned.",
+    "synonyms": "Ancient, Outdated, Obsolete",
+    "antonyms": "Modern, New, Current",
+    "belt": "Black"
+  },
+  {
+    "word": "Ardent",
+    "type": "Adjective",
+    "definition": "Very enthusiastic or passionate.",
+    "synonyms": "Passionate, Fervent, Eager",
+    "antonyms": "Apathetic, Cold, Indifferent",
+    "belt": "Black"
+  },
+  {
+    "word": "Artisan",
+    "type": "Noun",
+    "definition": "A worker in a skilled trade, especially one that involves making things by hand.",
+    "synonyms": "Craftsman, Maker, Wright",
+    "antonyms": "Amateur, Novice",
+    "belt": "Black"
+  },
+  {
+    "word": "Ascetic",
+    "type": "Adjective",
+    "definition": "Characterized by severe self-discipline and abstention from indulgence.",
+    "synonyms": "Austere, Strict, Self-denying",
+    "antonyms": "Indulgent, Luxurious, Lavish",
+    "belt": "Black"
+  },
+  {
+    "word": "Aspersion",
+    "type": "Noun",
+    "definition": "An attack on the reputation or integrity of someone or something.",
+    "synonyms": "Slander, Slur, Defamation",
+    "antonyms": "Praise, Compliment, Tribute",
+    "belt": "Black"
+  },
+  {
+    "word": "Assiduous",
+    "type": "Adjective",
+    "definition": "Showing great care and perseverance.",
+    "synonyms": "Diligent, Hard-working, Thorough",
+    "antonyms": "Lazy, Careless, Negligent",
+    "belt": "Black"
+  },
+  {
+    "word": "Assuage",
+    "type": "Verb",
+    "definition": "Make an unpleasant feeling less intense.",
+    "synonyms": "Soothe, Relieve, Ease",
+    "antonyms": "Aggravate, Intensify, Worsen",
+    "belt": "Black"
+  },
+  {
+    "word": "Astound",
+    "type": "Verb",
+    "definition": "Shock or greatly surprise.",
+    "synonyms": "Amaze, Astonish, Stun",
+    "antonyms": "Expect, Bore, Calm",
+    "belt": "Black"
+  },
+  {
+    "word": "Atrophy",
+    "type": "Verb",
+    "definition": "Waste away, especially as a result of the degeneration of cells or lack of use.",
+    "synonyms": "Wither, Shrink, Decline",
+    "antonyms": "Grow, Flourish, Strengthen",
+    "belt": "Black"
+  },
+  {
+    "word": "Audacity",
+    "type": "Noun",
+    "definition": "A willingness to take bold risks; rude or disrespectful behaviour.",
+    "synonyms": "Boldness, Nerve, Impudence",
+    "antonyms": "Timidity, Respect, Modesty",
+    "belt": "Black"
+  },
+  {
+    "word": "Augment",
+    "type": "Verb",
+    "definition": "Make something greater by adding to it; increase.",
+    "synonyms": "Increase, Expand, Boost",
+    "antonyms": "Decrease, Reduce, Diminish",
+    "belt": "Black"
+  },
+  {
+    "word": "Austere",
+    "type": "Adjective",
+    "definition": "Severe or strict in manner or attitude; having no comforts.",
+    "synonyms": "Strict, Stern, Plain",
+    "antonyms": "Mild, Luxurious, Ornate",
+    "belt": "Black"
+  },
+  {
+    "word": "Avarice",
+    "type": "Noun",
+    "definition": "Extreme greed for wealth or material gain.",
+    "synonyms": "Greed, Cupidity, Covetousness",
+    "antonyms": "Generosity, Charity, Benevolence",
+    "belt": "Black"
+  },
+  {
+    "word": "Aversion",
+    "type": "Noun",
+    "definition": "A strong dislike or disinclination.",
+    "synonyms": "Dislike, Hatred, Loathing",
+    "antonyms": "Liking, Fondness, Desire",
+    "belt": "Black"
+  },
+  {
+    "word": "Banal",
+    "type": "Adjective",
+    "definition": "So lacking in originality as to be obvious and boring.",
+    "synonyms": "Trite, Ordinary, Dull",
+    "antonyms": "Original, Fresh, Novel",
+    "belt": "Black"
+  },
+  {
+    "word": "Belligerent",
+    "type": "Adjective",
+    "definition": "Hostile and aggressive.",
+    "synonyms": "Aggressive, Hostile, Combative",
+    "antonyms": "Peaceful, Friendly, Calm",
+    "belt": "Black"
+  },
+  {
+    "word": "Benign",
+    "type": "Adjective",
+    "definition": "Gentle and kind; not harmful in effect.",
+    "synonyms": "Kind, Harmless, Gentle",
+    "antonyms": "Malignant, Harmful, Cruel",
+    "belt": "Black"
+  },
+  {
+    "word": "Bequest",
+    "type": "Noun",
+    "definition": "A legacy; something handed down by a will.",
+    "synonyms": "Legacy, Inheritance, Gift",
+    "antonyms": "Debt, Loss",
+    "belt": "Black"
+  },
+  {
+    "word": "Berate",
+    "type": "Verb",
+    "definition": "Scold or criticize someone angrily.",
+    "synonyms": "Scold, Reprimand, Rebuke",
+    "antonyms": "Praise, Compliment, Applaud",
+    "belt": "Black"
+  },
+  {
+    "word": "Blasphemy",
+    "type": "Noun",
+    "definition": "The action or offence of speaking sacrilegiously about God or sacred things.",
+    "synonyms": "Irreverence, Profanity",
+    "antonyms": "Reverence, Piety, Respect",
+    "belt": "Black"
+  },
+  {
+    "word": "Blight",
+    "type": "Noun",
+    "definition": "A thing that spoils or damages something.",
+    "synonyms": "Curse, Plague, Scourge",
+    "antonyms": "Blessing, Boon, Benefit",
+    "belt": "Black"
+  },
+  {
+    "word": "Blithe",
+    "type": "Adjective",
+    "definition": "Showing a casual and cheerful indifference considered callous or improper.",
+    "synonyms": "Carefree, Casual, Cheerful",
+    "antonyms": "Anxious, Thoughtful, Serious",
+    "belt": "Black"
+  },
+  {
+    "word": "Cajole",
+    "type": "Verb",
+    "definition": "Persuade someone to do something by sustained coaxing or flattery.",
+    "synonyms": "Coax, Persuade, Flatter",
+    "antonyms": "Force, Bully, Deter",
+    "belt": "Black"
+  },
+  {
+    "word": "Callow",
+    "type": "Adjective",
+    "definition": "Young and inexperienced.",
+    "synonyms": "Inexperienced, Naive, Immature",
+    "antonyms": "Mature, Experienced, Wise",
+    "belt": "Black"
+  },
+  {
+    "word": "Candour",
+    "type": "Noun",
+    "definition": "The quality of being open and honest in expression; frankness.",
+    "synonyms": "Frankness, Honesty, Openness",
+    "antonyms": "Deceit, Dishonesty, Secretiveness",
+    "belt": "Black"
+  },
+  {
+    "word": "Capricious",
+    "type": "Adjective",
+    "definition": "Given to sudden and unaccountable changes of mood or behaviour.",
+    "synonyms": "Fickle, Unpredictable, Impulsive",
+    "antonyms": "Steady, Consistent, Reliable",
+    "belt": "Black"
+  },
+  {
+    "word": "Castigate",
+    "type": "Verb",
+    "definition": "Reprimand someone severely.",
+    "synonyms": "Scold, Rebuke, Punish",
+    "antonyms": "Praise, Reward, Commend",
+    "belt": "Black"
+  },
+  {
+    "word": "Caustic",
+    "type": "Adjective",
+    "definition": "Sarcastic in a scathing and bitter way.",
+    "synonyms": "Biting, Sarcastic, Sharp",
+    "antonyms": "Kind, Gentle, Mild",
+    "belt": "Black"
+  },
+  {
+    "word": "Censure",
+    "type": "Verb",
+    "definition": "Express severe disapproval of someone or something.",
+    "synonyms": "Criticize, Condemn, Rebuke",
+    "antonyms": "Praise, Approve, Endorse",
+    "belt": "Black"
+  },
+  {
+    "word": "Chagrin",
+    "type": "Noun",
+    "definition": "Distress or embarrassment at having failed or been humiliated.",
+    "synonyms": "Embarrassment, Annoyance, Shame",
+    "antonyms": "Pride, Delight, Satisfaction",
+    "belt": "Black"
+  },
+  {
+    "word": "Chastise",
+    "type": "Verb",
+    "definition": "Rebuke or reprimand severely.",
+    "synonyms": "Scold, Punish, Reprimand",
+    "antonyms": "Praise, Reward, Comfort",
+    "belt": "Black"
+  },
+  {
+    "word": "Chicanery",
+    "type": "Noun",
+    "definition": "The use of deception or subterfuge to achieve one's purpose.",
+    "synonyms": "Trickery, Deception, Fraud",
+    "antonyms": "Honesty, Fairness, Truth",
+    "belt": "Black"
+  },
+  {
+    "word": "Circumspect",
+    "type": "Adjective",
+    "definition": "Wary and unwilling to take risks.",
+    "synonyms": "Cautious, Wary, Prudent",
+    "antonyms": "Reckless, Rash, Careless",
+    "belt": "Black"
+  },
+  {
+    "word": "Clandestine",
+    "type": "Adjective",
+    "definition": "Kept secret or done secretively, especially because illicit.",
+    "synonyms": "Secret, Covert, Hidden",
+    "antonyms": "Open, Public, Overt",
+    "belt": "Black"
+  },
+  {
+    "word": "Coalesce",
+    "type": "Verb",
+    "definition": "Come together to form one mass or whole.",
+    "synonyms": "Merge, Unite, Combine",
+    "antonyms": "Separate, Divide, Scatter",
+    "belt": "Black"
+  },
+  {
+    "word": "Cogent",
+    "type": "Adjective",
+    "definition": "Clear, logical, and convincing.",
+    "synonyms": "Convincing, Persuasive, Sound",
+    "antonyms": "Weak, Unconvincing, Vague",
+    "belt": "Black"
+  },
+  {
+    "word": "Cognizant",
+    "type": "Adjective",
+    "definition": "Having knowledge or being aware of.",
+    "synonyms": "Aware, Conscious, Informed",
+    "antonyms": "Ignorant, Unaware, Oblivious",
+    "belt": "Black"
+  },
+  {
+    "word": "Colloquial",
+    "type": "Adjective",
+    "definition": "Used in ordinary or familiar conversation; not formal or literary.",
+    "synonyms": "Informal, Casual, Conversational",
+    "antonyms": "Formal, Literary, Official",
+    "belt": "Black"
+  },
+  {
+    "word": "Commensurate",
+    "type": "Adjective",
+    "definition": "Corresponding in size or degree; in proportion.",
+    "synonyms": "Proportionate, Equal, Matching",
+    "antonyms": "Disproportionate, Unequal",
+    "belt": "Black"
+  },
+  {
+    "word": "Compendium",
+    "type": "Noun",
+    "definition": "A collection of concise but detailed information about a particular subject.",
+    "synonyms": "Summary, Digest, Anthology",
+    "antonyms": "Expansion, Detail",
+    "belt": "Black"
+  },
+  {
+    "word": "Complaisant",
+    "type": "Adjective",
+    "definition": "Willing to please others or to accept what they do or say without protest.",
+    "synonyms": "Agreeable, Obliging, Compliant",
+    "antonyms": "Obstinate, Defiant, Difficult",
+    "belt": "Black"
+  },
+  {
+    "word": "Complicity",
+    "type": "Noun",
+    "definition": "The state of being involved with others in an illegal activity or wrongdoing.",
+    "synonyms": "Collusion, Involvement, Guilt",
+    "antonyms": "Innocence, Opposition",
+    "belt": "Black"
+  },
+  {
+    "word": "Concede",
+    "type": "Verb",
+    "definition": "Admit that something is true or valid after first denying or resisting it.",
+    "synonyms": "Admit, Yield, Grant",
+    "antonyms": "Deny, Resist, Refuse",
+    "belt": "Black"
+  },
+  {
+    "word": "Conciliatory",
+    "type": "Adjective",
+    "definition": "Intended or likely to placate or pacify.",
+    "synonyms": "Pacifying, Appeasing, Peaceful",
+    "antonyms": "Hostile, Provocative, Antagonistic",
+    "belt": "Black"
+  },
+  {
+    "word": "Concur",
+    "type": "Verb",
+    "definition": "Be of the same opinion; agree.",
+    "synonyms": "Agree, Assent, Coincide",
+    "antonyms": "Disagree, Differ, Clash",
+    "belt": "Black"
+  },
+  {
+    "word": "Condescend",
+    "type": "Verb",
+    "definition": "Show feelings of superiority; be patronizing.",
+    "synonyms": "Patronize, Stoop, Deign",
+    "antonyms": "Respect, Honour, Defer",
+    "belt": "Black"
+  },
+  {
+    "word": "Conflagration",
+    "type": "Noun",
+    "definition": "An extensive fire which destroys a great deal of land or property.",
+    "synonyms": "Inferno, Blaze, Wildfire",
+    "antonyms": "Extinguishing, Spark",
+    "belt": "Black"
+  },
+  {
+    "word": "Confound",
+    "type": "Verb",
+    "definition": "Cause surprise or confusion in someone, especially by acting against expectations.",
+    "synonyms": "Baffle, Confuse, Astonish",
+    "antonyms": "Clarify, Enlighten, Explain",
+    "belt": "Black"
+  },
+  {
+    "word": "Congenial",
+    "type": "Adjective",
+    "definition": "Pleasant because of a personality, qualities, or interests similar to one's own.",
+    "synonyms": "Pleasant, Agreeable, Friendly",
+    "antonyms": "Unpleasant, Hostile, Disagreeable",
+    "belt": "Black"
+  },
+  {
+    "word": "Conjecture",
+    "type": "Noun",
+    "definition": "An opinion or conclusion formed on the basis of incomplete information.",
+    "synonyms": "Guess, Speculation, Surmise",
+    "antonyms": "Fact, Proof, Certainty",
+    "belt": "Black"
+  },
+  {
+    "word": "Conscientious",
+    "type": "Adjective",
+    "definition": "Wishing to do one's work or duty well and thoroughly.",
+    "synonyms": "Diligent, Careful, Scrupulous",
+    "antonyms": "Careless, Negligent, Lazy",
+    "belt": "Black"
+  },
+  {
+    "word": "Consecrate",
+    "type": "Verb",
+    "definition": "Make or declare sacred.",
+    "synonyms": "Bless, Sanctify, Dedicate",
+    "antonyms": "Desecrate, Defile, Curse",
+    "belt": "Black"
+  },
+  {
+    "word": "Consensus",
+    "type": "Noun",
+    "definition": "A general agreement.",
+    "synonyms": "Agreement, Harmony, Unity",
+    "antonyms": "Disagreement, Discord, Division",
+    "belt": "Black"
+  },
+  {
+    "word": "Conspicuous",
+    "type": "Adjective",
+    "definition": "Standing out so as to be clearly visible.",
+    "synonyms": "Obvious, Noticeable, Prominent",
+    "antonyms": "Hidden, Inconspicuous, Obscure",
+    "belt": "Black"
+  },
+  {
+    "word": "Consternation",
+    "type": "Noun",
+    "definition": "Feelings of anxiety or dismay, typically at something unexpected.",
+    "synonyms": "Dismay, Alarm, Shock",
+    "antonyms": "Calm, Composure, Serenity",
+    "belt": "Black"
+  },
+  {
+    "word": "Construe",
+    "type": "Verb",
+    "definition": "Interpret a word or action in a particular way.",
+    "synonyms": "Interpret, Understand, Explain",
+    "antonyms": "Misunderstand, Confuse",
+    "belt": "Black"
+  },
+  {
+    "word": "Contempt",
+    "type": "Noun",
+    "definition": "The feeling that a person or a thing is beneath consideration or worthless.",
+    "synonyms": "Scorn, Disdain, Disrespect",
+    "antonyms": "Respect, Admiration, Esteem",
+    "belt": "Black"
+  },
+  {
+    "word": "Contentious",
+    "type": "Adjective",
+    "definition": "Causing or likely to cause an argument; controversial.",
+    "synonyms": "Controversial, Debatable, Quarrelsome",
+    "antonyms": "Agreeable, Peaceful, Uncontroversial",
+    "belt": "Black"
+  },
+  {
+    "word": "Contrite",
+    "type": "Adjective",
+    "definition": "Feeling or expressing remorse or penitence; affected by guilt.",
+    "synonyms": "Remorseful, Sorry, Repentant",
+    "antonyms": "Unrepentant, Defiant, Shameless",
+    "belt": "Black"
+  },
+  {
+    "word": "Conundrum",
+    "type": "Noun",
+    "definition": "A confusing and difficult problem or question.",
+    "synonyms": "Puzzle, Riddle, Dilemma",
+    "antonyms": "Solution, Answer, Certainty",
+    "belt": "Black"
+  },
+  {
+    "word": "Converge",
+    "type": "Verb",
+    "definition": "Tend to meet at a point.",
+    "synonyms": "Meet, Join, Gather",
+    "antonyms": "Diverge, Separate, Scatter",
+    "belt": "Black"
+  },
+  {
+    "word": "Convivial",
+    "type": "Adjective",
+    "definition": "Friendly, lively, and enjoyable.",
+    "synonyms": "Sociable, Cheerful, Genial",
+    "antonyms": "Gloomy, Unfriendly, Aloof",
+    "belt": "Black"
+  },
+  {
+    "word": "Copious",
+    "type": "Adjective",
+    "definition": "Abundant in supply or quantity.",
+    "synonyms": "Abundant, Plentiful, Ample",
+    "antonyms": "Scarce, Meagre, Sparse",
+    "belt": "Black"
+  },
+  {
+    "word": "Corroborate",
+    "type": "Verb",
+    "definition": "Confirm or give support to a statement, theory, or finding.",
+    "synonyms": "Confirm, Verify, Support",
+    "antonyms": "Contradict, Disprove, Refute",
+    "belt": "Black"
+  },
+  {
+    "word": "Countenance",
+    "type": "Noun",
+    "definition": "A person's face or facial expression; support or approval.",
+    "synonyms": "Face, Expression, Approval",
+    "antonyms": "Disapproval, Rejection",
+    "belt": "Black"
+  },
+  {
+    "word": "Covet",
+    "type": "Verb",
+    "definition": "Yearn to possess or have something.",
+    "synonyms": "Desire, Crave, Envy",
+    "antonyms": "Reject, Spurn, Dislike",
+    "belt": "Black"
+  },
+  {
+    "word": "Credulous",
+    "type": "Adjective",
+    "definition": "Having or showing too great a readiness to believe things.",
+    "synonyms": "Gullible, Naive, Trusting",
+    "antonyms": "Skeptical, Suspicious, Cynical",
+    "belt": "Black"
+  },
+  {
+    "word": "Cryptic",
+    "type": "Adjective",
+    "definition": "Having a meaning that is mysterious or obscure.",
+    "synonyms": "Mysterious, Obscure, Enigmatic",
+    "antonyms": "Clear, Obvious, Plain",
+    "belt": "Black"
+  },
+  {
+    "word": "Culpable",
+    "type": "Adjective",
+    "definition": "Deserving blame.",
+    "synonyms": "Guilty, Blameworthy, Liable",
+    "antonyms": "Innocent, Blameless",
+    "belt": "Black"
+  },
+  {
+    "word": "Cursory",
+    "type": "Adjective",
+    "definition": "Hasty and therefore not thorough or detailed.",
+    "synonyms": "Hasty, Brief, Superficial",
+    "antonyms": "Thorough, Detailed, Careful",
+    "belt": "Black"
+  },
+  {
+    "word": "Curtail",
+    "type": "Verb",
+    "definition": "Reduce in extent or quantity; impose a restriction on.",
+    "synonyms": "Reduce, Cut, Limit",
+    "antonyms": "Extend, Expand, Lengthen",
+    "belt": "Black"
+  },
+  {
+    "word": "Cynical",
+    "type": "Adjective",
+    "definition": "Believing that people are motivated purely by self-interest; distrustful.",
+    "synonyms": "Skeptical, Distrustful, Pessimistic",
+    "antonyms": "Trusting, Optimistic, Naive",
+    "belt": "Black"
+  },
+  {
+    "word": "Dainty",
+    "type": "Adjective",
+    "definition": "Delicately small and pretty.",
+    "synonyms": "Delicate, Fine, Exquisite",
+    "antonyms": "Clumsy, Coarse, Bulky",
+    "belt": "Black"
+  },
+  {
+    "word": "Dauntless",
+    "type": "Adjective",
+    "definition": "Showing fearlessness and determination.",
+    "synonyms": "Fearless, Brave, Bold",
+    "antonyms": "Timid, Cowardly, Fearful",
+    "belt": "Black"
+  },
+  {
+    "word": "Debacle",
+    "type": "Noun",
+    "definition": "A sudden and ignominious failure; a fiasco.",
+    "synonyms": "Fiasco, Disaster, Failure",
+    "antonyms": "Success, Triumph, Victory",
+    "belt": "Black"
+  },
+  {
+    "word": "Debilitate",
+    "type": "Verb",
+    "definition": "Make someone weak and infirm.",
+    "synonyms": "Weaken, Exhaust, Drain",
+    "antonyms": "Strengthen, Energize, Invigorate",
+    "belt": "Black"
+  },
+  {
+    "word": "Decorum",
+    "type": "Noun",
+    "definition": "Behaviour in keeping with good taste and propriety.",
+    "synonyms": "Etiquette, Politeness, Dignity",
+    "antonyms": "Rudeness, Impropriety",
+    "belt": "Black"
+  },
+  {
+    "word": "Deference",
+    "type": "Noun",
+    "definition": "Humble submission and respect.",
+    "synonyms": "Respect, Esteem, Politeness",
+    "antonyms": "Disrespect, Defiance, Contempt",
+    "belt": "Black"
+  },
+  {
+    "word": "Defunct",
+    "type": "Adjective",
+    "definition": "No longer existing or functioning.",
+    "synonyms": "Extinct, Obsolete, Dead",
+    "antonyms": "Active, Functioning, Alive",
+    "belt": "Black"
+  },
+  {
+    "word": "Dejected",
+    "type": "Adjective",
+    "definition": "Sad and depressed; dispirited.",
+    "synonyms": "Downcast, Sad, Gloomy",
+    "antonyms": "Cheerful, Elated, Happy",
+    "belt": "Black"
+  },
+  {
+    "word": "Deleterious",
+    "type": "Adjective",
+    "definition": "Causing harm or damage.",
+    "synonyms": "Harmful, Damaging, Toxic",
+    "antonyms": "Beneficial, Helpful, Harmless",
+    "belt": "Black"
+  },
+  {
+    "word": "Deliberate",
+    "type": "Adjective",
+    "definition": "Done consciously and intentionally; careful and unhurried.",
+    "synonyms": "Intentional, Planned, Careful",
+    "antonyms": "Accidental, Hasty, Rash",
+    "belt": "Black"
+  },
+  {
+    "word": "Delineate",
+    "type": "Verb",
+    "definition": "Describe or portray something precisely.",
+    "synonyms": "Outline, Describe, Define",
+    "antonyms": "Confuse, Blur, Distort",
+    "belt": "Black"
+  },
+  {
+    "word": "Demagogue",
+    "type": "Noun",
+    "definition": "A political leader who seeks support by appealing to popular desires and prejudices.",
+    "synonyms": "Agitator, Rabble-rouser",
+    "antonyms": "Statesman, Peacemaker",
+    "belt": "Black"
+  },
+  {
+    "word": "Demeanour",
+    "type": "Noun",
+    "definition": "Outward behaviour or bearing.",
+    "synonyms": "Manner, Attitude, Bearing",
+    "antonyms": "Misbehaviour",
+    "belt": "Black"
+  },
+  {
+    "word": "Demure",
+    "type": "Adjective",
+    "definition": "Reserved, modest, and shy.",
+    "synonyms": "Modest, Shy, Reserved",
+    "antonyms": "Bold, Brazen, Shameless",
+    "belt": "Black"
+  },
+  {
+    "word": "Denounce",
+    "type": "Verb",
+    "definition": "Publicly declare to be wrong or evil.",
+    "synonyms": "Condemn, Criticize, Attack",
+    "antonyms": "Praise, Endorse, Defend",
+    "belt": "Black"
+  },
+  {
+    "word": "Deplore",
+    "type": "Verb",
+    "definition": "Feel or express strong disapproval of something.",
+    "synonyms": "Condemn, Lament, Regret",
+    "antonyms": "Praise, Approve, Celebrate",
+    "belt": "Black"
+  },
+  {
+    "word": "Deprive",
+    "type": "Verb",
+    "definition": "Deny a person or place the possession or use of something.",
+    "synonyms": "Strip, Rob, Deny",
+    "antonyms": "Provide, Supply, Grant",
+    "belt": "Black"
+  },
+  {
+    "word": "Deride",
+    "type": "Verb",
+    "definition": "Express contempt for; ridicule.",
+    "synonyms": "Mock, Ridicule, Taunt",
+    "antonyms": "Praise, Respect, Applaud",
+    "belt": "Black"
+  },
+  {
+    "word": "Desecrate",
+    "type": "Verb",
+    "definition": "Treat a sacred place or thing with violent disrespect.",
+    "synonyms": "Defile, Violate, Vandalize",
+    "antonyms": "Sanctify, Honour, Respect",
+    "belt": "Black"
+  },
+  {
+    "word": "Desolate",
+    "type": "Adjective",
+    "definition": "Feeling or showing great unhappiness or loneliness; bleak and empty.",
+    "synonyms": "Bleak, Lonely, Barren",
+    "antonyms": "Cheerful, Populated, Lush",
+    "belt": "Black"
+  },
+  {
+    "word": "Despondent",
+    "type": "Adjective",
+    "definition": "In low spirits from loss of hope or courage.",
+    "synonyms": "Hopeless, Gloomy, Dejected",
+    "antonyms": "Hopeful, Cheerful, Optimistic",
+    "belt": "Black"
+  },
+  {
+    "word": "Despot",
+    "type": "Noun",
+    "definition": "A ruler or other person who holds absolute power, typically exercising it cruelly.",
+    "synonyms": "Tyrant, Dictator, Autocrat",
+    "antonyms": "Democrat, Liberator",
+    "belt": "Black"
+  },
+  {
+    "word": "Destitute",
+    "type": "Adjective",
+    "definition": "Without the basic necessities of life.",
+    "synonyms": "Poor, Impoverished, Penniless",
+    "antonyms": "Wealthy, Affluent, Rich",
+    "belt": "Black"
+  },
+  {
+    "word": "Detached",
+    "type": "Adjective",
+    "definition": "Separate or disconnected; aloof and objective.",
+    "synonyms": "Aloof, Separate, Neutral",
+    "antonyms": "Connected, Involved, Biased",
+    "belt": "Black"
+  },
+  {
+    "word": "Deter",
+    "type": "Verb",
+    "definition": "Discourage someone from doing something by instilling doubt or fear.",
+    "synonyms": "Discourage, Prevent, Hinder",
+    "antonyms": "Encourage, Urge, Aid",
+    "belt": "Black"
+  },
+  {
+    "word": "Detrimental",
+    "type": "Adjective",
+    "definition": "Tending to cause harm.",
+    "synonyms": "Harmful, Damaging, Injurious",
+    "antonyms": "Beneficial, Helpful, Advantageous",
+    "belt": "Black"
+  },
+  {
+    "word": "Devious",
+    "type": "Adjective",
+    "definition": "Showing a skilful use of underhand tactics to achieve goals.",
+    "synonyms": "Cunning, Sly, Crafty",
+    "antonyms": "Honest, Direct, Straightforward",
+    "belt": "Black"
+  },
+  {
+    "word": "Devout",
+    "type": "Adjective",
+    "definition": "Having or showing deep religious feeling or commitment; totally committed.",
+    "synonyms": "Pious, Dedicated, Sincere",
+    "antonyms": "Irreverent, Insincere, Faithless",
+    "belt": "Black"
+  },
+  {
+    "word": "Dexterous",
+    "type": "Adjective",
+    "definition": "Showing or having skill, especially with the hands.",
+    "synonyms": "Skilful, Agile, Deft",
+    "antonyms": "Clumsy, Awkward, Inept",
+    "belt": "Black"
+  },
+  {
+    "word": "Diabolical",
+    "type": "Adjective",
+    "definition": "Characteristic of the Devil, or so evil as to recall the Devil.",
+    "synonyms": "Wicked, Evil, Fiendish",
+    "antonyms": "Angelic, Good, Kind",
+    "belt": "Black"
+  },
+  {
+    "word": "Dichotomy",
+    "type": "Noun",
+    "definition": "A division or contrast between two things that are represented as being opposed.",
+    "synonyms": "Contrast, Division, Split",
+    "antonyms": "Unity, Agreement, Similarity",
+    "belt": "Black"
+  },
+  {
+    "word": "Didactic",
+    "type": "Adjective",
+    "definition": "Intended to teach, particularly in having moral instruction as an ulterior motive.",
+    "synonyms": "Educational, Instructive, Moralizing",
+    "antonyms": "Uninformative, Entertaining",
+    "belt": "Black"
+  },
+  {
+    "word": "Diffident",
+    "type": "Adjective",
+    "definition": "Modest or shy because of a lack of self-confidence.",
+    "synonyms": "Shy, Timid, Bashful",
+    "antonyms": "Confident, Bold, Assertive",
+    "belt": "Black"
+  },
+  {
+    "word": "Digress",
+    "type": "Verb",
+    "definition": "Leave the main subject temporarily in speech or writing.",
+    "synonyms": "Wander, Stray, Deviate",
+    "antonyms": "Focus, Stick to, Continue",
+    "belt": "Black"
+  },
+  {
+    "word": "Dilapidated",
+    "type": "Adjective",
+    "definition": "In a state of disrepair or ruin as a result of age or neglect.",
+    "synonyms": "Run-down, Ramshackle, Ruined",
+    "antonyms": "Restored, Intact, Pristine",
+    "belt": "Black"
+  },
+  {
+    "word": "Dilemma",
+    "type": "Noun",
+    "definition": "A situation in which a difficult choice has to be made between two alternatives.",
+    "synonyms": "Quandary, Predicament, Puzzle",
+    "antonyms": "Solution, Certainty, Ease",
+    "belt": "Black"
+  },
+  {
+    "word": "Diminutive",
+    "type": "Adjective",
+    "definition": "Extremely or unusually small.",
+    "synonyms": "Tiny, Small, Miniature",
+    "antonyms": "Huge, Gigantic, Enormous",
+    "belt": "Black"
+  },
+  {
+    "word": "Discern",
+    "type": "Verb",
+    "definition": "Perceive or recognize something.",
+    "synonyms": "Detect, Spot, Distinguish",
+    "antonyms": "Overlook, Miss, Confuse",
+    "belt": "Black"
+  },
+  {
+    "word": "Disclose",
+    "type": "Verb",
+    "definition": "Make secret or new information known.",
+    "synonyms": "Reveal, Expose, Divulge",
+    "antonyms": "Conceal, Hide, Secret",
+    "belt": "Black"
+  },
+  {
+    "word": "Disconcert",
+    "type": "Verb",
+    "definition": "Disturb the composure of; unsettle.",
+    "synonyms": "Unsettle, Fluster, Rattle",
+    "antonyms": "Calm, Reassure, Soothe",
+    "belt": "Black"
+  }
+]

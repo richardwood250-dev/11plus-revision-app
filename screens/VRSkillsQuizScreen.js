@@ -5,6 +5,7 @@ import { Colors } from '../constants/Colors';
 import { getVRQuestion, getVRStrandInstruction } from '../utils/vrSkills';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { saveDojoResult } from '../utils/storage';
+import { SenseiExplainButton } from '../components/SenseiExplainButton';
 
 const MAX_QUESTIONS = 10;
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
@@ -118,6 +119,17 @@ export const VRSkillsQuizScreen = () => {
                         )
                     })}
                 </View>
+
+                <SenseiExplainButton
+                    subject="Verbal Reasoning"
+                    topic={strandTitle}
+                    question={currentQuestion.questionText}
+                    options={currentQuestion.options || []}
+                    userAnswer={selectedOption !== null ? (currentQuestion.options?.[selectedOption] || '') : ''}
+                    correctAnswer={currentQuestion.options?.[currentQuestion.correctAnswerIndex] || ''}
+                    mode={feedback ? 'explain' : 'hint'}
+                    fallbackReasoning={currentQuestion.logic || ''}
+                />
 
                 {feedback && (
                     <View style={styles.explainerContainer}>

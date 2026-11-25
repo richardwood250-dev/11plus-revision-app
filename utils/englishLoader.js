@@ -1,5 +1,36 @@
 
 // utils/englishLoader.js
+import { Platform } from 'react-native';
+
+export const generateAIComprehension = async (style = 'GL Assessment', difficulty = 'Medium') => {
+    const endpoint = Platform.OS === 'web' && typeof window !== 'undefined'
+        ? '/api/comprehension'
+        : 'https://11plusninja.com/api/comprehension';
+    const themes = [
+        'a Victorian clockmaker mystery',
+        'an expedition into an ancient sea cave',
+        'a curious fox in a snow-covered village',
+        'the invention of a hot-air balloon',
+        'a secret botanical garden at midnight',
+        'a young astronomer spotting an unusual comet',
+    ];
+    const theme = themes[Math.floor(Math.random() * themes.length)];
+    const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ style, theme, difficulty }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) {
+        throw new Error(data.error || 'Could not generate AI passage');
+    }
+    return {
+        passageText: data.passageText,
+        questions: data.questions,
+        title: data.title,
+        config: { subject: 'English', topic: 'Comprehension' },
+    };
+};
 
 const BASE_URL = 'https://raw.githubusercontent.com/richardwood250-dev/11plus-english/refs/heads/main/';
 const CSV_URL = 'https://raw.githubusercontent.com/richardwood250-dev/11plus-english/refs/heads/main/Questions%20-%20Comprehension.csv';

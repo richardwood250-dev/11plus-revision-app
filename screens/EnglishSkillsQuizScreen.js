@@ -5,6 +5,7 @@ import { Colors } from '../constants/Colors';
 import { generateEnglishSkillQuestion, getEnglishStrandInstruction } from '../utils/englishSkills';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { saveDojoResult } from '../utils/storage';
+import { SenseiExplainButton } from '../components/SenseiExplainButton';
 
 const MAX_QUESTIONS = 10;
 
@@ -65,14 +66,13 @@ export const EnglishSkillsQuizScreen = () => {
         if (isCorrect) {
             setScore(prev => prev + 1);
             setFeedback('correct');
+            setTimeout(() => {
+                setQuestionIndex(prev => prev + 1);
+                loadNextQuestion();
+            }, 1000);
         } else {
             setFeedback('incorrect');
         }
-
-        setTimeout(() => {
-            setQuestionIndex(prev => prev + 1);
-            loadNextQuestion();
-        }, 1500);
     };
 
     const renderQuizContent = () => {
@@ -137,11 +137,32 @@ export const EnglishSkillsQuizScreen = () => {
                     </View>
                 )}
 
+                <SenseiExplainButton
+                    subject="English"
+                    topic={strandTitle}
+                    question={currentQuestion.questionText}
+                    options={currentQuestion.options || []}
+                    userAnswer={userInput}
+                    correctAnswer={currentQuestion.correctAnswer}
+                    mode={feedback ? 'explain' : 'hint'}
+                />
+
                 {feedback && (
                     <View style={[styles.feedbackBox, feedback === 'correct' ? styles.feedbackCorrect : styles.feedbackIncorrect]}>
                         <Text style={styles.feedbackText}>
                             {feedback === 'correct' ? '✅ Correct!' : `❌ Incorrect. Answer was: ${currentQuestion.correctAnswer}`}
                         </Text>
+                        {feedback === 'incorrect' && (
+                            <TouchableOpacity
+                                style={[styles.submitBtn, { backgroundColor: strandColor, marginTop: 12, alignSelf: 'stretch' }]}
+                                onPress={() => {
+                                    setQuestionIndex(prev => prev + 1);
+                                    loadNextQuestion();
+                                }}
+                            >
+                                <Text style={styles.submitBtnText}>Next Question &gt;</Text>
+                            </TouchableOpacity>
+                        )}
                     </View>
                 )}
             </Animated.View>

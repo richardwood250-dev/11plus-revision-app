@@ -2123,8 +2123,23 @@
             { word: "Treacherous", type: "Adjective", definition: "Guilty of or involving betrayal or deception.", synonyms: "Traitorous, Disloyal, Dangerous", antonyms: "Loyal, Faithful, Safe", belt: "Black" }
         ];
 
-        function openVocabModal() {
+        let fullVocabData = null;
+
+        async function openVocabModal() {
             document.getElementById('vocab-modal').classList.add('active');
+            if (!fullVocabData) {
+                try {
+                    const res = await fetch('/assets/data/vocab-500.json');
+                    if (res.ok) {
+                        const json = await res.json();
+                        if (Array.isArray(json) && json.length > 0) {
+                            fullVocabData = json;
+                        }
+                    }
+                } catch (e) {
+                    console.warn('Could not load vocab-500.json, using fallback:', e);
+                }
+            }
             renderVocabTable();
         }
 
@@ -2152,7 +2167,8 @@
 
             tbody.innerHTML = '';
 
-            const filtered = vocabData.filter(item => {
+            const sourceData = fullVocabData || vocabData;
+            const filtered = sourceData.filter(item => {
                 const matchesSearch = item.word.toLowerCase().includes(searchText) || item.synonyms.toLowerCase().includes(searchText);
                 const matchesBelt = filterBelt === 'All' || item.belt === filterBelt;
                 return matchesSearch && matchesBelt;
