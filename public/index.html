@@ -205,9 +205,10 @@
             border-bottom: 4px solid #2563EB;
         }
 
-        /* Mobile Wrapper / Pillarbox */
+        /* Responsive Desktop/Mobile Wrapper */
         .mobile-wrapper {
-            max-width: 480px;
+            max-width: 960px;
+            width: 100%;
             margin: 0 auto;
             background-color: white;
             min-height: 100vh;
@@ -267,10 +268,11 @@
                     <a href="/" class="global-header-logo">
                         <img src="/assets/ninja_header.png" alt="11PlusNinja" class="h-10 w-auto">
                     </a>
-                    <nav class="hidden md:flex gap-6 text-sm font-semibold text-gray-600">
+                    <nav class="flex flex-wrap gap-3 sm:gap-6 text-sm font-semibold text-gray-600">
                         <a href="/?mode=student" class="hover:text-ninja-blue transition">Student</a>
                         <a href="/parent-dojo.html" class="hover:text-ninja-blue transition">Parents</a>
                         <a href="/blog" class="hover:text-ninja-blue transition">Blog</a>
+                        <a href="/classrooms" class="hover:text-ninja-blue transition">Classrooms</a>
                     </nav>
                 </div>
             </header>
@@ -541,7 +543,8 @@
         const search = window.location.search;
         const urlParams = new URLSearchParams(search);
 
-        if (path === '/test-dojo' || path.includes('test-dojo') || path.startsWith('/blog') || path.startsWith('/dashboard') || path.startsWith('/classroom') || urlParams.get('mode') === 'student') {
+        const appRoutes = ['/test-dojo', '/blog', '/dashboard', '/classroom', '/quiz', '/test', '/comprehension', '/maths', '/english', '/verbal', '/nvr', '/vocab-game', '/setup', '/auth', '/settings'];
+        if (appRoutes.some(r => path.startsWith(r)) || path.includes('test-dojo') || urlParams.get('mode') === 'student') {
             const gateway = document.getElementById('gateway-overlay');
             if (gateway) {
                 gateway.classList.add('gateway-hidden');

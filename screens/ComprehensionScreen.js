@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { SenseiExplainButton } from '../components/SenseiExplainButton';
+import { showAlert } from '../utils/alert';
 import { getInstruction } from '../data/instructions';
 
 import { Colors as BaseColors } from '../constants/Colors';
@@ -65,7 +67,8 @@ export const ComprehensionScreen = ({ route }) => {
         if (isSubmitted) return;
 
         if (Object.keys(answers).length < allQuestions.length) {
-            Alert.alert("Incomplete", "Please answer all questions before finishing.");
+            const { showAlert } = require('../utils/alert');
+            showAlert("Incomplete", "Please answer all questions before finishing.");
             return;
         }
 
@@ -99,8 +102,8 @@ export const ComprehensionScreen = ({ route }) => {
             };
             const recordMsg = checkRecords(currentSession, updatedStats);
             if (recordMsg) {
-                // Ensure specific ninja styling
-                Alert.alert("🎉 NINJA RECORD! 🎉", recordMsg.message);
+                const { showAlert } = require('../utils/alert');
+                showAlert("🎉 NINJA RECORD! 🎉", recordMsg.message);
             }
         }
 
@@ -192,16 +195,29 @@ export const ComprehensionScreen = ({ route }) => {
                                             )}
 
                                             <Text style={[styles.optText, useSinglePane && { textAlign: 'center', fontSize: 15 }]}>{opt}</Text>
-                                        </View>
+                    </View>
                                     </TouchableOpacity>
                                 );
                             })}
-                        </View>
+                    </View>
                         {isSubmitted && q.explanation && (
                             <View style={styles.explanationBox}>
                                 <Text style={styles.explanationTitle}>Explanation:</Text>
                                 <Text style={styles.explanationText}>{q.explanation}</Text>
-                            </View>
+                    </View>
+                        )}
+                        {isSubmitted && (
+                            <SenseiExplainButton
+                                subject="English"
+                                topic={route.params.config?.topic || 'Comprehension'}
+                                question={q.question}
+                                options={q.options}
+                                userAnswer={answers[q.id] || ''}
+                                correctAnswer={q.correctAnswer}
+                                passageText={currentGroup.text}
+                                mode="explain"
+                                fallbackReasoning={q.explanation || q.reasoning || ''}
+                            />
                         )}
                     </View>
                 );
@@ -247,7 +263,7 @@ export const ComprehensionScreen = ({ route }) => {
                         <ScrollView contentContainerStyle={styles.passageScroll}>
                             <View style={styles.instructionBox}>
                                 <Text style={styles.instructionText}>ℹ️ {instructions}</Text>
-                            </View>
+                    </View>
                             <Text style={styles.passageText}>{currentGroup.text}</Text>
                         </ScrollView>
                     </View>

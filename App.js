@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Dimensions, Platform, StatusBar } from 'react-native';
 import * as Linking from 'expo-linking';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, getPathFromState as defaultGetPathFromState } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Analytics } from "@vercel/analytics/react";
@@ -122,6 +122,13 @@ export default function App() {
                   Blog: 'blog',
                   BlogPost: 'blog/:slug',
                   Dashboard: 'dashboard',
+                  Quiz: 'quiz',
+                  QuizConfig: 'quiz-config',
+                  Test: 'test',
+                  Comprehension: 'comprehension',
+                  VocabGame: 'vocab-game',
+                  Auth: 'auth',
+                  Setup: 'setup',
                   MathsSkillsHome: 'maths',
                   EnglishSkillsHome: 'english',
                   NVRSkillsHome: 'nvr',
@@ -129,6 +136,18 @@ export default function App() {
                   Classroom: 'classroom',
                   ClassroomsAdmin: 'classrooms',
                 }
+              },
+              getPathFromState: (state, options) => {
+                // Strip large/object route params (questions, passageText, config) so URLs never leak [object Object]
+                const cleanState = state ? {
+                  ...state,
+                  routes: state.routes.map(r => {
+                    if (!r.params) return r;
+                    const { questions, passageText, config, ...safeParams } = r.params;
+                    return { ...r, params: Object.keys(safeParams).length ? safeParams : undefined };
+                  })
+                } : state;
+                return defaultGetPathFromState(cleanState, options);
               }
             }}>
               <Stack.Navigator screenOptions={{
@@ -140,6 +159,9 @@ export default function App() {
                   <>
                     <Stack.Screen name="InitialSetup" options={{ headerShown: false }}>
                       {props => <SetupScreen {...props} onFinish={() => setIsSetupComplete(true)} />}
+                    </Stack.Screen>
+                    <Stack.Screen name="Auth" options={{ headerShown: false }}>
+                      {props => <AuthScreen {...props} onFinish={() => setIsSetupComplete(true)} />}
                     </Stack.Screen>
                     <Stack.Screen name="Classroom" component={ClassroomScreen} options={{ headerShown: false }} />
                     <Stack.Screen name="ClassroomsAdmin" component={ClassroomAdminScreen} options={{ headerShown: false }} />
@@ -177,14 +199,6 @@ export default function App() {
                 )}
               </Stack.Navigator>
             </NavigationContainer>
-
-            {/* Dev Trigger for Interstitial */}
-            {!showAds && !isClassroom && <TouchableOpacity
-              style={{ position: 'absolute', bottom: 10, right: 10, backgroundColor: 'rgba(0,0,0,0.5)', padding: 5, borderRadius: 5 }}
-              onPress={() => setShowInterstitial(true)}
-            >
-              <Text style={{ color: '#fff', fontSize: 10 }}>Ad Test</Text>
-            </TouchableOpacity>}
           </View>
         )}
       </SafeAreaProvider>
@@ -206,11 +220,11 @@ const styles = StyleSheet.create({
       web: { minHeight: '100vh' }
     })
   },
-  // Wrapper for Web/Desktop/Tablet to simulate mobile view
+  // Responsive container for Web/Desktop/Tablet
   webContainer: {
     flex: 1,
     width: '100%',
-    maxWidth: 480, // RESIZED to 480px per requirements
+    maxWidth: 960,
     backgroundColor: '#fff',
     alignSelf: 'center',
     ...Platform.select({

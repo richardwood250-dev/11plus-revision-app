@@ -1,13 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions, Modal, SafeAreaView, Alert, Platform } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Image, Dimensions, Modal, SafeAreaView, Platform } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { AlphabetStrip } from '../components/AlphabetStrip';
 import { ZoomableImage } from '../components/ZoomableImage';
 import { ReportButton } from '../components/ReportButton';
 import { saveSession } from '../utils/storage';
+import { showAlert, showConfirm } from '../utils/alert';
 import { getInstruction, getQuestionPrompt } from '../data/instructions';
 import { getQuizFeedback } from '../utils/motivation';
 import { ResilientImage } from '../components/ResilientImage';
+import { SenseiExplainButton } from '../components/SenseiExplainButton';
 
 import { Colors } from '../constants/Colors';
 
@@ -56,7 +58,7 @@ export const QuizScreen = ({ route }) => {
                     if (newSelection.length < 2) {
                         return { ...prev, [questionIndex]: [...newSelection, option] };
                     } else {
-                        Alert.alert("Maximum 2", "Please deselect one before choosing another.");
+                        showAlert("Maximum 2", "Please deselect one before choosing another.");
                         return prev;
                     }
                 }
@@ -87,7 +89,7 @@ export const QuizScreen = ({ route }) => {
 
     const handleSubmit = async () => {
         if (!questions || questions.length === 0) {
-            Alert.alert("Error", "No questions to submit.");
+            showAlert("Error", "No questions to submit.");
             return;
         }
 
@@ -144,27 +146,18 @@ export const QuizScreen = ({ route }) => {
                     const record = checkRecords(currentSession, updatedStats);
                     if (record) {
                         setTimeout(() => {
-                            Alert.alert("🎉 NEW RECORD! 🎉", record.message);
+                            showAlert("🎉 NEW RECORD! 🎉", record.message);
                         }, 500); // Delay slightly to let UI settle
                     }
                 }
             } catch (error) {
                 console.error("Error submitting quiz:", error);
-                Alert.alert("Error", "There was a problem saving your results. Please screenshot your score.");
+                showAlert("Error", "There was a problem saving your results. Please screenshot your score.");
             }
         };
 
         if (answeredCount < questions.length) {
-            Alert.alert(
-                "Incomplete",
-                `You have answered ${answeredCount} out of ${questions.length} questions. Are you sure you want to finish?`,
-                [
-                    { text: "Cancel", style: "cancel" },
-                    {
-                        text: "Submit", onPress: finishQuiz
-                    }
-                ]
-            );
+            showConfirm("Incomplete", `You have answered ${answeredCount} out of ${questions.length} questions. Are you sure you want to finish?`, finishQuiz, "Submit");
         } else {
             await finishQuiz();
         }
@@ -360,6 +353,18 @@ export const QuizScreen = ({ route }) => {
                             })}
                         </View>
 
+                        <SenseiExplainButton
+                            subject={subject || 'Reasoning'}
+                            topic={topic || title || 'General'}
+                            question={q.question || title || 'Reasoning question'}
+                            options={q.options || []}
+                            userAnswer={Array.isArray(answers[qIndex]) ? answers[qIndex].join('') : (answers[qIndex] || '')}
+                            correctAnswer={q.correctAnswer || ''}
+                            imageUrl={q.image || ''}
+                            mode={status === 'review' ? 'explain' : 'hint'}
+                            fallbackReasoning={q.explanation || q.reasoning || ''}
+                        />
+
                         {/* Divider */}
                         <View style={styles.divider} />
                     </View>
@@ -445,7 +450,7 @@ const styles = StyleSheet.create({
     },
     exitBtnText: {
         fontWeight: 'bold',
-        color: '#333'
+        color: '#FFFFFF'
     },
     scroll: {
         padding: 20,

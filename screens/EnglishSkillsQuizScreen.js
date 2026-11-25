@@ -36,6 +36,8 @@ export const EnglishSkillsQuizScreen = () => {
 
     const loadNextQuestion = () => {
         if (questionIndex >= MAX_QUESTIONS) {
+            const timeTaken = Math.floor((Date.now() - startTime) / 1000);
+            saveDojoResult(`eng_${strandId}_${beltId}`, score, MAX_QUESTIONS, timeTaken);
             setIsFinished(true);
             return;
         }

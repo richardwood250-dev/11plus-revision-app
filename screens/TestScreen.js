@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Image, Modal, SafeAreaView, Dimensions, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { MathText } from '../components/MathText';
+import { SenseiExplainButton } from '../components/SenseiExplainButton';
 import { ReportButton } from '../components/ReportButton';
 import { ResilientImage } from '../components/ResilientImage';
 import { saveSession, getStats } from '../utils/storage';
@@ -82,7 +83,8 @@ export const TestScreen = ({ route }) => {
     const handleSubmit = async () => {
         // Check if all answered
         if (Object.keys(answers).length < testQuestions.length) {
-            Alert.alert("Incomplete", "Please answer all questions before finishing.");
+            const { showAlert } = require('../utils/alert');
+            showAlert("Incomplete", "Please answer all questions before finishing.");
             return;
         }
 
@@ -115,7 +117,8 @@ export const TestScreen = ({ route }) => {
             }
         }
 
-        Alert.alert("Finished!", `You scored ${score}/${testQuestions.length} in ${Math.floor(duration / 60)}m ${duration % 60}s`);
+        const { showAlert } = require('../utils/alert');
+        showAlert("Finished!", `You scored ${score}/${testQuestions.length} in ${Math.floor(duration / 60)}m ${duration % 60}s`);
     };
 
     const calculateScore = () => {
@@ -193,7 +196,7 @@ export const TestScreen = ({ route }) => {
                     return (
                         <View key={q.id} style={cardStyle}>
                             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 5 }}>
-                                <Text style={styles.qNum}>Question {index + 1} (Diff: {q.difficultyIndex})</Text>
+                                <Text style={styles.qNum}>Question {index + 1}</Text>
                                 <ReportButton questionId={q.id} />
                             </View>
                             {q.question.includes(' & ') && (title === 'Move a letter' || title === 'Move A Letter') ? (
@@ -246,6 +249,18 @@ export const TestScreen = ({ route }) => {
                                     );
                                 })}
                             </View>
+
+                            <SenseiExplainButton
+                                subject={subject || 'Maths'}
+                                topic={config?.topic || 'Mock Trial'}
+                                question={q.question}
+                                options={q.options}
+                                userAnswer={userAnswer || ''}
+                                correctAnswer={q.correctAnswer}
+                                imageUrl={q.image || ''}
+                                mode={isSubmitted ? 'explain' : 'hint'}
+                                fallbackReasoning={q.explanation || q.reasoning || ''}
+                            />
                         </View>
                     );
                 })}

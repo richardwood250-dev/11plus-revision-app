@@ -26,17 +26,28 @@
 @media (max-width: 767px) {
     #social-share-bar {
         position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+        bottom: max(12px, env(safe-area-inset-bottom));
+        right: 12px;
+        left: auto;
+        width: auto;
         flex-direction: row;
-        justify-content: space-around;
-        background-color: white;
-        border-top: 1px solid #e5e7eb;
-        padding: 12px 16px;
-        box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
-        /* Ensure it sits above other bottom elements */
-        padding-bottom: max(12px, env(safe-area-inset-bottom));
+        justify-content: center;
+        gap: 8px;
+        background-color: rgba(255, 255, 255, 0.95);
+        border: 1px solid #e5e7eb;
+        border-radius: 999px;
+        padding: 6px 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    #social-share-bar .share-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    #social-share-bar .share-btn svg {
+        width: 16px;
+        height: 16px;
     }
 }
 

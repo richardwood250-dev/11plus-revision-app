@@ -63,7 +63,7 @@ export const DashboardScreen = ({ navigation }) => {
         return (
             <View style={styles.container}>
                 <BackgroundWatermark />
-                <ScrollView contentContainerStyle={styles.scroll}>
+                <ScrollView style={{ width: '100%' }} contentContainerStyle={styles.scroll}>
                     <Text style={styles.title}>{profile ? `${profile.name}'s Progress 📊` : 'Your Progress 🏆'}</Text>
                     <Text style={styles.placeholderText}>No quizzes played yet! Jump into the Dojo to get started.</Text>
                 </ScrollView>
@@ -205,7 +205,7 @@ export const DashboardScreen = ({ navigation }) => {
             <BackgroundWatermark />
             {renderExpandedChart()}
             {renderProfileSwitcher()}
-            <ScrollView contentContainerStyle={styles.scroll}>
+            <ScrollView style={{ width: '100%' }} contentContainerStyle={styles.scroll}>
                 <Text style={styles.title}>{profile ? `${profile.name}'s Progress 📊` : 'Your Progress 🏆'}</Text>
 
                 {/* --- CHARTS ROW --- */}
@@ -338,21 +338,16 @@ export const DashboardScreen = ({ navigation }) => {
                 <TouchableOpacity
                     style={[styles.mainButton, { marginTop: 40, backgroundColor: 'white', borderWidth: 1, borderColor: '#ccc' }]}
                     onPress={() => {
-                        Alert.alert(
+                        const { showConfirm } = require('../utils/alert');
+                        showConfirm(
                             "Reset Statistics?",
                             "Are you sure you want to reset your stats? Your streak will remain safe.",
-                            [
-                                { text: "Cancel", style: "cancel" },
-                                {
-                                    text: "Reset",
-                                    style: "destructive",
-                                    onPress: async () => {
-                                        await clearStats();
-                                        setStats(null);
-                                        setSelectedSubject(null);
-                                    }
-                                }
-                            ]
+                            async () => {
+                                await clearStats();
+                                setStats(null);
+                                setSelectedSubject(null);
+                            },
+                            "Reset"
                         );
                     }}
                 >
@@ -363,7 +358,12 @@ export const DashboardScreen = ({ navigation }) => {
                 <TouchableOpacity
                     style={[styles.mainButton, { marginTop: 15, backgroundColor: Colors.primary }]}
                     onPress={() => {
-                        Linking.openURL('mailto:info@11plusninja.com?subject=App Feedback');
+                        const mailUrl = 'mailto:info@11plusninja.com?subject=App%20Feedback';
+                        if (Platform.OS === 'web' && typeof window !== 'undefined') {
+                            window.open(mailUrl, '_blank');
+                        } else {
+                            Linking.openURL(mailUrl);
+                        }
                     }}
                 >
                     <Text style={styles.btnText}>Give Feedback / Review</Text>

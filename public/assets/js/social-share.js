@@ -2,10 +2,15 @@
 (function () {
     console.log('Ninja Share: Initializing...');
 
-    function isClassroomPage() {
-        return window.location.pathname.startsWith('/classroom') || 
+    function shouldHideShareBar() {
+        const p = window.location.pathname.toLowerCase();
+        return p.startsWith('/classroom') ||
                window.location.search.includes('room=') ||
-               document.body.classList.contains('classroom-active');
+               document.body.classList.contains('classroom-active') ||
+               p.includes('quiz') ||
+               p.includes('/test') ||
+               p.includes('comprehension') ||
+               p.includes('vocab-game');
     }
 
     const shareUrl = encodeURIComponent(window.location.href);
@@ -19,8 +24,8 @@
         document.body.appendChild(container);
     }
 
-    // Hide if on classroom / whiteboard page
-    if (isClassroomPage()) {
+    // Hide if on classroom / quiz / test pages so it never blocks answers
+    if (shouldHideShareBar()) {
         container.style.display = 'none';
     }
 
@@ -54,7 +59,7 @@
 
     // Update Links function
     function updateShareLinks() {
-        if (isClassroomPage()) {
+        if (shouldHideShareBar()) {
             container.style.display = 'none';
             return;
         } else {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Animated, Easing, Dimensions, Platform } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { saveSession } from '../utils/storage';
 import { useNavigation } from '@react-navigation/native';
 import { Colors } from '../constants/Colors';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -98,12 +99,16 @@ export const VocabGame = () => {
     ]).start();
   };
 
+  const sessionResultsRef = useRef([]);
+  const sessionStartRef = useRef(Date.now());
+
   const handleAnswer = (index) => {
     if (isAnimating) return;
     setIsAnimating(true);
     setSelectedAnswerIndex(index);
 
     const isCorrect = index === currentWord.correctIndex;
+    sessionResultsRef.current.push({ isCorrect, difficultyIndex: 50 });
 
     if (isCorrect) {
       triggerStar();
@@ -167,7 +172,12 @@ export const VocabGame = () => {
     setQueue(newQueue);
   };
 
-  const handleQuit = () => {
+  const handleQuit = async () => {
+    if (sessionResultsRef.current.length > 0) {
+      const elapsed = Math.max(1, Math.floor((Date.now() - sessionStartRef.current) / 1000));
+      await saveSession('English', sessionResultsRef.current, elapsed, 'Synonym Shinobi');
+      sessionResultsRef.current = [];
+    }
     navigation.goBack();
   };
 

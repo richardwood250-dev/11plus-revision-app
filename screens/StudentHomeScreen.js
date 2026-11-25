@@ -35,10 +35,21 @@ export const StudentHomeScreen = () => {
           navigation.navigate(recommendation.route);
           return;
         } else if (recommendation.type === 'action' || recommendation.action) {
-          if (recommendation.action) {
-             recommendation.action();
-          } else {
-             getRandomQuiz();
+          const actionResult = recommendation.action ? recommendation.action() : getRandomQuiz();
+          if (actionResult && actionResult.config) {
+            if (actionResult.config.subject === 'English') {
+              try {
+                setIsLoadingEnglish(true);
+                const data = await fetchEnglishQuiz();
+                setIsLoadingEnglish(false);
+                navigation.navigate('Comprehension', data);
+              } catch (err) {
+                setIsLoadingEnglish(false);
+                alert("Error: Could not load quiz: " + err.message);
+              }
+            } else {
+              navigation.navigate('Quiz', actionResult);
+            }
           }
           return;
         } else if (recommendation.type === 'quiz' || recommendation.config) {
@@ -243,7 +254,7 @@ export const StudentHomeScreen = () => {
             <View style={styles.modalContent}>
               <DailyVocabCard />
               <TouchableOpacity style={styles.closeModalBtn} onPress={() => setShowWordModal(false)}>
-                <Text style={styles.closeModalText}>Close Modals</Text>
+                <Text style={styles.closeModalText}>Close</Text>
               </TouchableOpacity>
             </View>
           </View>

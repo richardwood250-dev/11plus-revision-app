@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { 
     View, Text, TextInput, TouchableOpacity, StyleSheet, 
-    KeyboardAvoidingView, Platform, ScrollView, Image, ActivityIndicator, Alert 
+    KeyboardAvoidingView, Platform, ScrollView, Image, ActivityIndicator 
 } from 'react-native';
 import { signUp, logIn } from '../utils/storage';
 import { generateUsername } from '../utils/usernameGenerator';
+import { showAlert } from '../utils/alert';
 import { Colors } from '../constants/Colors';
 import { BackgroundWatermark } from '../components/BackgroundWatermark';
 
-export const AuthScreen = ({ navigation, route }) => {
+export const AuthScreen = ({ navigation, route, onFinish }) => {
     const isLoginMode = route.params?.mode === 'login';
     const [mode, setMode] = useState(isLoginMode ? 'login' : 'signup');
     const [username, setUsername] = useState('');
@@ -27,12 +28,12 @@ export const AuthScreen = ({ navigation, route }) => {
 
     const handleSubmit = async () => {
         if (!username || !password) {
-            Alert.alert("Error", "Please fill in all fields");
+            showAlert("Error", "Please fill in all fields");
             return;
         }
 
         if (password.length < 6) {
-            Alert.alert("Error", "Password must be at least 6 characters");
+            showAlert("Error", "Password must be at least 6 characters");
             return;
         }
 
@@ -44,10 +45,14 @@ export const AuthScreen = ({ navigation, route }) => {
         setIsLoading(false);
 
         if (result.success) {
-            Alert.alert("Success!", mode === 'login' ? "Logged in successfully" : "Account created and progress synced!");
-            navigation.navigate('Home');
+            showAlert("Success!", mode === 'login' ? "Logged in successfully" : "Account created and progress synced!");
+            if (onFinish) {
+                onFinish();
+            } else {
+                navigation.navigate('Home');
+            }
         } else {
-            Alert.alert("Error", result.error || "Authentication failed");
+            showAlert("Error", result.error || "Authentication failed");
         }
     };
 

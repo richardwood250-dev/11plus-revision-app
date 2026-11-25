@@ -76,12 +76,6 @@ const styles = StyleSheet.create({
         paddingHorizontal: 16,
         zIndex: 1000, // Ensure it sits on top
         elevation: 10,
-        ...Platform.select({
-            web: {
-                position: 'sticky', // Sticky at top
-                top: 0,
-            }
-        })
     },
     contentContainer: {
         flexDirection: 'row',

@@ -3,6 +3,28 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
+// Load .env / .env.local into process.env for local preview
+for (const envFile of ['.env.local', '.env']) {
+  const envPath = path.resolve(__dirname, '..', envFile);
+  if (fs.existsSync(envPath)) {
+    const lines = fs.readFileSync(envPath, 'utf8').split(/\r?\n/);
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith('#')) continue;
+      const eqIdx = trimmed.indexOf('=');
+      if (eqIdx === -1) continue;
+      const key = trimmed.slice(0, eqIdx).trim();
+      let val = trimmed.slice(eqIdx + 1).trim();
+      if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+        val = val.slice(1, -1);
+      }
+      if (!process.env[key]) {
+        process.env[key] = val;
+      }
+    }
+  }
+}
+
 const PORT = process.env.PORT || 3000;
 const DIST_DIR = path.resolve(__dirname, '..', 'dist');
 
@@ -26,7 +48,8 @@ const MIME_TYPES = {
 
 const server = http.createServer((req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   if (req.method === 'OPTIONS') {
     res.writeHead(204);
@@ -36,6 +59,38 @@ const server = http.createServer((req, res) => {
 
   const parsedUrl = new URL(req.url, `http://localhost:${PORT}`);
   let pathname = decodeURIComponent(parsedUrl.pathname);
+
+  // Local handler for /api/explain
+  if (pathname === '/api/explain' && req.method === 'POST') {
+    let rawBody = '';
+    req.on('data', chunk => { rawBody += chunk; });
+    req.on('end', async () => {
+      try {
+        req.body = rawBody ? JSON.parse(rawBody) : {};
+      } catch {
+        req.body = {};
+      }
+      const expressLikeRes = {
+        setHeader(k, v) {
+          res.setHeader(k, v);
+        },
+        status(code) {
+          res.statusCode = code;
+          return this;
+        },
+        json(payload) {
+          res.setHeader('Content-Type', 'application/json');
+          res.end(JSON.stringify(payload));
+        },
+        end() {
+          res.end();
+        },
+      };
+      const explainHandler = require(path.resolve(__dirname, '..', 'api', 'explain.js'));
+      await explainHandler(req, expressLikeRes);
+    });
+    return;
+  }
 
   // Mock Vercel insights
   if (pathname.startsWith('/_vercel/')) {

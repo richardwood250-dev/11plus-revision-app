@@ -533,10 +533,31 @@ export const saveDojoRecord = async (strandId, beltId, score, maxScore, timeInSe
             }
         }
 
+        // Also record session into unified Progress Dashboard stats
+        const subject = strandId.startsWith('nvr_')
+            ? 'Non-Verbal'
+            : strandId.startsWith('vr_')
+                ? 'Verbal'
+                : strandId.startsWith('eng_')
+                    ? 'English'
+                    : 'Maths';
+        const results = Array.from({ length: maxScore }, (_, i) => ({
+            isCorrect: i < score,
+            difficultyIndex: 50
+        }));
+        await saveSession(subject, results, timeInSeconds, `${strandId} (${beltId})`);
+
         return isNewRecord;
     } catch (e) {
         return false;
     }
+};
+
+export const saveDojoResult = async (keyId, score, maxScore, timeInSeconds) => {
+    const parts = (keyId || '').split('_');
+    const beltId = parts.length > 1 ? parts[parts.length - 1] : 'white';
+    const strandId = parts.length > 1 ? parts.slice(0, -1).join('_') : keyId;
+    return saveDojoRecord(strandId, beltId, score, maxScore, timeInSeconds);
 };
 
 export const getDojoRecords = async () => {
